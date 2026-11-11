@@ -1,5 +1,5 @@
 /* Static schedule shell only, scoped to this GitHub Pages project. No push subscription. */
-const CACHE='alert-pwa-static-shell-v4';
+const CACHE='alert-pwa-static-shell-v4-1';
 const BASE=new URL('./',self.location.href);
 const FILES=['./','./index.html','./app.js','./feature-core.js','./subscription-core.js','./artist-config.js','./schedule-store.js','./style.css','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 const URLS=FILES.map(p=>new URL(p,BASE).href);

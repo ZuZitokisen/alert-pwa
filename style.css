@@ -21,11 +21,27 @@
 .event-card .card-actions{margin-top:8px;border:0;padding:0;min-height:18px}
 .event-card .card-bottom-note{max-width:calc(100% - 42px);line-height:1.4}
 .favorite-button{position:relative;display:inline-grid;place-items:center;isolation:isolate;width:44px;height:44px;min-width:44px;min-height:44px;padding:7px;border:0;border-radius:50%;background:transparent;color:var(--ink)}
-.favorite-button::before{content:"";position:absolute;inset:7px;z-index:-1;border-radius:50%;background:color-mix(in srgb,var(--surface) 90%,transparent)}
+.favorite-button::before{content:"";position:absolute;inset:7px;z-index:-1;border-radius:50%;background:#fff}
 .favorite-button:hover,.favorite-button[aria-pressed=true]{background:transparent;color:var(--ink)}
-.favorite-button:hover::before{background:var(--surface)}
+.favorite-button:hover::before{background:#fff}
 .favorite-button svg{display:block;width:20px;height:20px}
 .event-card .favorite-button{position:absolute;right:4px;bottom:4px}
 
 /* Source and timing details use the existing modal, without changing card layout. */
 .event-timings,.event-sources{padding-left:1.2rem;line-height:1.65}.event-timings li,.event-sources li{margin:.5rem 0}.event-sources small{display:block;color:var(--muted);font-size:.78rem}.event-sources a{overflow-wrap:anywhere}
+
+/* Contain modal gestures; body position is saved and restored by the dialog lifecycle. */
+html.dialog-scroll-locked{overflow:hidden;overscroll-behavior:none}
+dialog{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
+
+/* The card is the tap target; the favorite remains a separate control above it. */
+.event-card .card-open{touch-action:manipulation}
+.event-card .card-open::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.event-card .card-open:active:not(:disabled){transform:none}
+.event-card .card-open:focus-visible{outline:none}
+.event-card .card-open:focus-visible::after{outline:3px solid #8874db;outline-offset:-3px;border-radius:22px}
+.event-card .favorite-button,.event-card .select-label{z-index:1;touch-action:manipulation}
+.event-card .select-label{position:relative}
+
+@media(min-width:701px){html.dialog-scroll-locked .sidebar{top:var(--dialog-scroll-offset,0px)}}
