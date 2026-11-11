@@ -1,8 +1,8 @@
 'use strict';
 /* Synthetic, device-local demo. No network transport, permissions or real scheduling. */
 (() => {
-  const KEY='alert-pwa-static-v1';
-  const FIELDS=['title','start','end','allDay','status','category','location','note','evidence'];
+  const KEY='alert-pwa-static-v2';
+  const FIELDS=['title','start','end','allDay','status','category','location','note','evidence','artistId','deadline','sourceUrl'];
   const SOURCE='demo-calendar';
   const clone=value=>JSON.parse(JSON.stringify(value));
   const serialize=events=>JSON.stringify([...events].sort((a,b)=>a.id.localeCompare(b.id)).map(e=>[e.id,...FIELDS.map(f=>e[f]??null)]));
