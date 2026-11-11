@@ -45,3 +45,8 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .event-card .select-label{position:relative}
 
 @media(min-width:701px){html.dialog-scroll-locked .sidebar{top:var(--dialog-scroll-offset,0px)}}
+
+/* Keep the existing update control in place and show deliberate progress. */
+#refresh[aria-busy=true] span{display:inline-block;animation:refresh-turn .9s linear infinite}
+@keyframes refresh-turn{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#refresh[aria-busy=true] span{animation:none}}
