@@ -1,0 +1,551 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:RE-GE / 特典会・応募
+BEGIN:VEVENT
+UID:public-v1-36a2a68b9b6a98301a5c04db4147dc1da3b122812716089c7bea4ba41800a
+ 3e9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261206T145900Z
+SUMMARY:2nd Single スペシャルプレゼント抽選 応募締切 封入
+ シリアル抽選 応募締切
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 2nd Singleのダンス部盤・風
+ 紀委員盤・軽音盤に封入された応募券のシリアルが必
+ 要。通常盤は封入なし。\n本人側の公式発表で確認。\nh
+ ttps://re-ge.com/discography/item-773/\nhttps://re-ge.com/news/item-734/
+LOCATION:オンライン応募
+URL:https://re-ge.com/discography/item-773/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e35c0e63447fe94d565718fb3639d28a40eada8cf19deb638b88ffab5a5b6
+ 1d9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261116T145900Z
+SUMMARY:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜 RE-
+ GE BASE会員先行抽選 締切
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/news/item-779/\nhttps://re-ge.com/schedule/item-
+ 781/
+LOCATION:恵比寿ガーデンルーム
+URL:https://re-ge.com/news/item-779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b32af1cadb46ddb817308de4dba351e52ac97f0c3ff8309ef922d806b72f4
+ 10e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270220T130000Z
+SUMMARY:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜 一
+ 般先着 販売終了
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/news/item-779/\nhttps://re-ge.com/schedule/item-
+ 781/
+LOCATION:恵比寿ガーデンルーム
+URL:https://re-ge.com/news/item-779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-71ecf4f34b0503844fc6d98cc564dc81d8343cd7a51d54fad06bb7da28ecd
+ 902@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261221T145900Z
+SUMMARY:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜 先
+ 行抽選 締切
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/news/item-779/\nhttps://re-ge.com/schedule/item-
+ 781/
+LOCATION:恵比寿ガーデンルーム
+URL:https://re-ge.com/news/item-779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5cc90eef3f5dea93dcb7d56671f6afd9698766b79930857e40f137d65831c
+ d3d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜 先
+ 行抽選 受付開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/news/item-779/\nhttps://re-ge.com/schedule/item-
+ 781/
+LOCATION:恵比寿ガーデンルーム
+URL:https://re-ge.com/news/item-779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a659bcd7a9d9495ef3caa426361bf7a691ad835b96ec93370d036d050862e
+ 56b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261225T110000Z
+SUMMARY:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜 一
+ 般先着 発売開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/news/item-779/\nhttps://re-ge.com/schedule/item-
+ 781/
+LOCATION:恵比寿ガーデンルーム
+URL:https://re-ge.com/news/item-779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dbdd3cd01c7f44b39248ebd873a8c4414ce40483385dc5f2c32ec0f1d2db4
+ 28c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T014500Z
+SUMMARY:RE-GE 2nd 大特典会 CD販売・配券開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/schedule/item-767/
+LOCATION:横浜ワールドポーターズ 6F イベントホールA
+URL:https://re-ge.com/schedule/item-767/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-880b405ae28511cb8b75a7ce5658d7d38a9e0ab84c612f6cb1b1a005d307c
+ 276@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T040000Z
+DTEND:20261129T044500Z
+SUMMARY:RE-GE 2nd 大特典会・第1部 2ショット写真撮影会
+DESCRIPTION:部によって専用券が必要。対象商品と参加条件
+ は公式を確認。 欠席予定のメンバーあり。出演者は公
+ 式を確認。\n本人側の公式発表で確認。\nhttps://re-ge.com/s
+ chedule/item-767/
+LOCATION:横浜ワールドポーターズ 6F イベントホールA
+URL:https://re-ge.com/schedule/item-767/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-36432562c1b478f47312187425abf1dad927b04d34fe0f5fffd7e1e9e4d01
+ 23e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T044500Z
+DTEND:20261129T054500Z
+SUMMARY:RE-GE 2nd 大特典会・第2部 ランダムチェキ交換会
+DESCRIPTION:部によって専用券が必要。対象商品と参加条件
+ は公式を確認。 欠席予定のメンバーあり。出演者は公
+ 式を確認。\n本人側の公式発表で確認。\nhttps://re-ge.com/s
+ chedule/item-767/
+LOCATION:横浜ワールドポーターズ 6F イベントホールA
+URL:https://re-ge.com/schedule/item-767/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d12ff3e186c8914a24e113ea7351a4f978083efab380edbd9c6ddbdf40e92
+ d04@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T063000Z
+DTEND:20261129T073000Z
+SUMMARY:RE-GE 2nd 大特典会・第3部 私物サイン会
+DESCRIPTION:部によって専用券が必要。対象商品と参加条件
+ は公式を確認。 欠席予定のメンバーあり。出演者は公
+ 式を確認。\n本人側の公式発表で確認。\nhttps://re-ge.com/s
+ chedule/item-767/
+LOCATION:横浜ワールドポーターズ 6F イベントホールA
+URL:https://re-ge.com/schedule/item-767/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-08b5f0889495b9053d974bd44047b1dfa38e5eb599fb4994c05b5c2cb93f7
+ 3dc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T073000Z
+DTEND:20261129T081500Z
+SUMMARY:RE-GE 2nd 大特典会・第4部 似顔絵会
+DESCRIPTION:部によって専用券が必要。対象商品と参加条件
+ は公式を確認。 欠席予定のメンバーあり。出演者は公
+ 式を確認。\n本人側の公式発表で確認。\nhttps://re-ge.com/s
+ chedule/item-767/
+LOCATION:横浜ワールドポーターズ 6F イベントホールA
+URL:https://re-ge.com/schedule/item-767/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2b840fe71fef42a39fc3dd8db90fe464aaf3c8e98cdeeb928e313448c6bf9
+ 4b2@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T084500Z
+DTEND:20261129T094500Z
+SUMMARY:RE-GE 2nd 大特典会・第5部 個別撮影会
+DESCRIPTION:部によって専用券が必要。対象商品と参加条件
+ は公式を確認。 欠席予定のメンバーあり。出演者は公
+ 式を確認。\n本人側の公式発表で確認。\nhttps://re-ge.com/s
+ chedule/item-767/
+LOCATION:横浜ワールドポーターズ 6F イベントホールA
+URL:https://re-ge.com/schedule/item-767/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-30146c79e72733554c84b73f6607f940d335539751b87e92ea369cc6e2961
+ d4f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T094500Z
+DTEND:20261129T104500Z
+SUMMARY:RE-GE 2nd 大特典会・第6部 お話し会
+DESCRIPTION:部によって専用券が必要。対象商品と参加条件
+ は公式を確認。 欠席予定のメンバーあり。出演者は公
+ 式を確認。\n本人側の公式発表で確認。\nhttps://re-ge.com/s
+ chedule/item-767/
+LOCATION:横浜ワールドポーターズ 6F イベントホールA
+URL:https://re-ge.com/schedule/item-767/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e4e8d785468001b950f9e6e65ba255f0b61c456124132ff9b1c8a98537923
+ 0bd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T010000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会 CD販売・配券
+ 開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/schedule/item-747/
+LOCATION:汐留シオサイト地下歩道
+URL:https://re-ge.com/schedule/item-747/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2dbfcb9f39a0bb2055c3842d3612247f47f3fe9aaab7db90c6930a2179f81
+ ad2@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T030000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・1部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。 欠席予定の
+ メンバーあり。出演者は公式を確認。\n本人側の公式発
+ 表で確認。\nhttps://re-ge.com/schedule/item-747/
+LOCATION:汐留シオサイト地下歩道
+URL:https://re-ge.com/schedule/item-747/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8f4a6555d616adcf3764c2de0d1a4b663dbaa9869d3f49fec93f589a37bfb
+ 780@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T060000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・2部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。 欠席予定の
+ メンバーあり。出演者は公式を確認。\n本人側の公式発
+ 表で確認。\nhttps://re-ge.com/schedule/item-747/
+LOCATION:汐留シオサイト地下歩道
+URL:https://re-ge.com/schedule/item-747/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ebeef20412c26f797723021611afa399d8bee52f0df7ecde950d0a403ea1c
+ 248@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261121T013000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会 CD販売・配券
+ 開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/schedule/item-748/
+LOCATION:あべのキューズモール 3Fスカイコート
+URL:https://re-ge.com/schedule/item-748/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-73c9b07f3dd283147299c8114f7b39293028023b048ee7f0ec931802064ab
+ 8b4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261121T043000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・1部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。 欠席予定の
+ メンバーあり。出演者は公式を確認。\n本人側の公式発
+ 表で確認。\nhttps://re-ge.com/schedule/item-748/
+LOCATION:あべのキューズモール 3Fスカイコート
+URL:https://re-ge.com/schedule/item-748/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-78ea6a8cf98b8ac75cc18cb4827918f0e865c9f1c22c58ac1945c76b8b8e6
+ 7c3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261121T073000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・2部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。 欠席予定の
+ メンバーあり。出演者は公式を確認。\n本人側の公式発
+ 表で確認。\nhttps://re-ge.com/schedule/item-748/
+LOCATION:あべのキューズモール 3Fスカイコート
+URL:https://re-ge.com/schedule/item-748/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-18352af06f0da1baa66fb201d0b75f77a3d7eafe8528aa13c272b8df3fdf3
+ a59@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261122T013000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会 CD販売・配券
+ 開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/schedule/item-749/
+LOCATION:名古屋工学院専門学校 1号館8階 NKCイベントホー
+ ル
+URL:https://re-ge.com/schedule/item-749/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a318e700d1bfdd493b32087df4d33622e8618d768f9abd36e40d56dd01718
+ b8d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261122T043000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・1部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。 欠席予定の
+ メンバーあり。出演者は公式を確認。\n本人側の公式発
+ 表で確認。\nhttps://re-ge.com/schedule/item-749/
+LOCATION:名古屋工学院専門学校 1号館8階 NKCイベントホー
+ ル
+URL:https://re-ge.com/schedule/item-749/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6528240d4823cfce16f6c96a7a8071522bae52d95ffd075c57fc6130cf9b9
+ 09c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261122T073000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・2部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。 欠席予定の
+ メンバーあり。出演者は公式を確認。\n本人側の公式発
+ 表で確認。\nhttps://re-ge.com/schedule/item-749/
+LOCATION:名古屋工学院専門学校 1号館8階 NKCイベントホー
+ ル
+URL:https://re-ge.com/schedule/item-749/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9f6ef3b51d168a44047a7f7b98da4eda8f398f4c15178ffc83cebb5e79a90
+ 849@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261128T010000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会 CD販売・配券
+ 開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/schedule/item-750/
+LOCATION:東武百貨店 池袋店8F屋上 スカイデッキ広場
+URL:https://re-ge.com/schedule/item-750/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-72a8f5cb6df1fd68dad56db2fe19f17012945f8068f9e947e9523913ef07a
+ 0c1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261128T033000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・1部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。\n本人側の公
+ 式発表で確認。\nhttps://re-ge.com/schedule/item-750/
+LOCATION:東武百貨店 池袋店8F屋上 スカイデッキ広場
+URL:https://re-ge.com/schedule/item-750/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cc1b2a6a53b56f15649cf1dc646a8e264a69f333b56fe5c0438184cf6cd17
+ f04@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261128T062000Z
+SUMMARY:2nd Single発売記念ミニライブ＆特典会・2部ミニラ
+ イブ
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。\n本人側の公
+ 式発表で確認。\nhttps://re-ge.com/schedule/item-750/
+LOCATION:東武百貨店 池袋店8F屋上 スカイデッキ広場
+URL:https://re-ge.com/schedule/item-750/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ff1c475d3db20647fc060952ca11c9ff2063a1d9a43ed83f15be12fbdcbc7
+ 33c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261117T090000Z
+SUMMARY:2nd Single発売記念 ユニット特典会【風紀委員】
+DESCRIPTION:会場階は不一致。個別詳細記事の5Fを仮表示す
+ る場合にも警告を残し、断定しない。 対象CDの会場購
+ 入で参加券を配布。上限到達で終了。参加券の枚数・
+ 種類は公式を確認。\n本人側の公式発表で確認。\nhttps:/
+ /re-ge.com/schedule/item-769/
+LOCATION:HMV&BOOKS SHIBUYA（開催階は公式間で不一致）
+URL:https://re-ge.com/schedule/item-769/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-94011ec03df4f2679a79123a96efa85bd4a6a07fea98befddfa9a7a4d74f0
+ 892@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261117T080000Z
+SUMMARY:2nd Single発売記念 ユニット特典会【風紀委員】 CD
+ 販売・配券開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/schedule/item-769/
+LOCATION:HMV&BOOKS SHIBUYA（開催階は公式間で不一致）
+URL:https://re-ge.com/schedule/item-769/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f45071104109d0ebaede728e455967420eae6601faca04594efb1b18172a0
+ 1de@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261125T090000Z
+SUMMARY:2nd Single発売記念 ユニット特典会【軽音】
+DESCRIPTION:森瀬こころは当日の出演ユニット一覧に含まれ
+ ないため、この20時を軽音メンバーの終了時刻へ転用し
+ ない。 対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。\n本人側の公
+ 式発表で確認。\nhttps://re-ge.com/schedule/item-770/
+LOCATION:HMV&BOOKS SHIBUYA 6F イベントスペースA
+URL:https://re-ge.com/schedule/item-770/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-81da86085467468b2fc6ce7c23c891f25eb9b10f3a59d439799a59ea04235
+ daa@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261125T080000Z
+SUMMARY:2nd Single発売記念 ユニット特典会【軽音】 CD販売
+ ・配券開始
+DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
+ 当選・参加を保証しません。 \n本人側の公式発表で確
+ 認。\nhttps://re-ge.com/schedule/item-770/
+LOCATION:HMV&BOOKS SHIBUYA 6F イベントスペースA
+URL:https://re-ge.com/schedule/item-770/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
