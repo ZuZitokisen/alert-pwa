@@ -9,8 +9,8 @@ function fixture(){
 }
 test('precache and shell network requests revalidate and include the updater',async()=>{
  const f=fixture();let pending;f.handlers.install({waitUntil:p=>pending=p});await pending;
- const requests=f.calls[0][2];assert.ok(requests.some(r=>r.url.endsWith('/pwa-update.js')));assert.ok(requests.every(r=>r.cache==='no-cache'));
- f.handlers.fetch({request:new Request('https://example.com/alert-pwa/app.js'),respondWith:p=>pending=p});await pending;assert.equal(f.calls.at(-1)[2].cache,'no-cache');
+ const requests=f.calls[0][2];assert.ok(requests.some(r=>new URL(r.url).pathname.endsWith('/pwa-update.js')));assert.ok(requests.every(r=>r.cache==='no-cache'));
+ f.handlers.fetch({request:new Request('https://example.com/alert-pwa/app.js?v=0.4.3'),respondWith:p=>pending=p});await pending;assert.equal(f.calls.at(-1)[2].cache,'no-cache');
 });
 test('schedule data is not hidden behind a shell cache',()=>{const f=fixture();let intercepted=false;f.handlers.fetch({request:new Request('https://example.com/alert-pwa/schedule-data.json'),respondWith:()=>intercepted=true});assert.equal(intercepted,false);});
 test('activation only cleans old app shells, never other stores',async()=>{const f=fixture();let pending;f.handlers.activate({waitUntil:p=>pending=p});await pending;assert.deepEqual(f.calls.filter(c=>c[0]==='delete'),[['delete','alert-pwa-static-shell-v4-1']]);assert.ok(!source.includes('localStorage'));assert.ok(!source.includes('indexedDB'));});
@@ -19,3 +19,5 @@ test('only the deliberate message from this app window activates early',async()=
  send({type:'ALERT_PWA_SKIP_WAITING'},'https://other.example/alert-pwa/');send({type:'ALERT_PWA_SKIP_WAITING'},'https://example.com/other/');send({type:'other'},'https://example.com/alert-pwa/');send({type:'ALERT_PWA_SKIP_WAITING'},'https://example.com/alert-pwa/','worker');assert.equal(f.calls.length,0);
  send({type:'ALERT_PWA_SKIP_WAITING'},'https://example.com/alert-pwa/');await pending;assert.deepEqual(f.calls,[['activate']]);
 });
+
+test('changed shell assets have identical versioned URLs in document and worker',()=>{const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');for(const asset of ['app.js','pwa-update.js','style.css']){assert.ok(html.includes('./'+asset+'?v=0.4.3'));assert.ok(source.includes("'./"+asset+"?v=0.4.3'"));}});
