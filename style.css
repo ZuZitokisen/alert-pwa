@@ -26,3 +26,6 @@
 .favorite-button:hover::before{background:var(--surface)}
 .favorite-button svg{display:block;width:20px;height:20px}
 .event-card .favorite-button{position:absolute;right:4px;bottom:4px}
+
+/* Source and timing details use the existing modal, without changing card layout. */
+.event-timings,.event-sources{padding-left:1.2rem;line-height:1.65}.event-timings li,.event-sources li{margin:.5rem 0}.event-sources small{display:block;color:var(--muted);font-size:.78rem}.event-sources a{overflow-wrap:anywhere}

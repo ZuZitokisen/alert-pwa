@@ -1,5 +1,5 @@
 'use strict';
-/* Pure, dependency-free helpers for fictional, device-local previews only.
+/* Pure, dependency-free helpers for device-local calendar views and notification previews.
  * No permissions, timers, Push, network, storage or calendar writes.
  * Unzoned ISO date-times explicitly mean JST. Date-only values never gain a time.
  * Reminder rules preview documented historical behavior, not verified current TTM.
@@ -169,7 +169,7 @@
     const rev = revision({ revision: change.revision ?? event.revision });
     const title = str(event.title || '名称未定').replace(/[\r\n]+/g, ' ');
     const body = [
-      '架空サンプルです。実際の通知は送信しません。',
+      options.real ? '表示例です。実際の通知は送信しません。' : '架空サンプルです。実際の通知は送信しません。',
       timing(event),
       artists(event).length ? `アーティスト: ${artists(event).join('、')}` : '',
       `確度: ${event.present === false || kind === 'unavailable' ? '掲載消失（中止とは未確定）' : STATUS[event.status] || '未確認'}`,
@@ -178,9 +178,9 @@
       event.evidence ? `根拠: ${event.evidence}` : '',
       event.deadline || event.deadlineAt ? `締切: ${formatDate(event.deadline ?? event.deadlineAt)}` : ''
     ].filter(Boolean).join('\n');
-    return { title: `[${SAMPLE}] ${KIND[kind] || '予定'} · ${title}${event.status === 'possible' ? '（かも？）' : ''}`, body,
+    return { title: `[${options.real?'通知プレビュー':SAMPLE}] ${KIND[kind] || '予定'} · ${title}${event.status === 'possible' ? '（かも？）' : ''}`, body,
       tag: JSON.stringify([key, rev, kind]),
-      data: { demo: true, previewOnly: true, eventKey: key, source: identity.source ?? null, eventId: identity.id ?? null, revision: rev, kind } };
+      data: { demo: !options.real, previewOnly: true, eventKey: key, source: identity.source ?? null, eventId: identity.id ?? null, revision: rev, kind } };
   }
 
   // RFC 5545 TEXT values: CR/LF must never inject a new property or component.
