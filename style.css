@@ -50,3 +50,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 #refresh[aria-busy=true] span{display:inline-block;animation:refresh-turn .9s linear infinite}
 @keyframes refresh-turn{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){#refresh[aria-busy=true] span{animation:none}}
+
+/* Shared subscription controls reuse the existing detail layout. */
+.subscription-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:10px;text-decoration:none;font-size:12px}
+.subscription-link{border-top:1px solid var(--line);margin-top:18px;padding-top:4px}
+.subscription-url{width:100%;min-height:44px;font-size:12px}
+.subscription-help{font-size:12px;color:var(--accent)}
