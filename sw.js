@@ -1,7 +1,7 @@
 /* Static demo shell only, scoped to this GitHub Pages project. No push subscription. */
-const CACHE='alert-pwa-static-shell-v2';
+const CACHE='alert-pwa-static-shell-v3';
 const BASE=new URL('./',self.location.href);
-const FILES=['./','./index.html','./app.js','./feature-core.js','./artist-config.js','./demo-data.js','./demo-store.js','./style.css','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
+const FILES=['./','./index.html','./app.js','./feature-core.js','./subscription-core.js','./artist-config.js','./demo-data.js','./demo-store.js','./style.css','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 const URLS=FILES.map(p=>new URL(p,BASE).href);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(URLS))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('alert-pwa-static-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
