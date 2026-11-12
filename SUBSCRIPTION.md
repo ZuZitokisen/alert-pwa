@@ -90,6 +90,7 @@ base URL. Do not generate account-specific URLs. Source categories map as follow
 
 - LIVE / EVENT: live
 - BENEFIT / REMIND: benefit
+  - From v0.6.1, the UI displays and sorts BENEFIT together with EVENT. Source data and feed membership remain unchanged so existing benefit subscriptions keep their events.
 - TV / RADIO / STREAM: media
 - MEMO: other
 

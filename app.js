@@ -24,7 +24,9 @@ function addDays(key,days){const d=dayDate(key);d.setUTCDate(d.getUTCDate()+days
 function timing(e){if(!e.start)return e.dateLabel||'日時未定';if(e.allDay)return `${prettyDate(e.start)}${e.end?' 〜 '+prettyDate(addDays(e.end,-1)):''} · 終日`;return `${prettyDate(e.start)}${e.start.length===10?' · 時刻未定':''}${e.end?' 〜 '+prettyDate(e.end):''}`;}
 function colorFor(e){return colors[e.category]||colors.EVENT;}
 function statusBadge(e){return el('span',e.present===false?'掲載消失':statusNames[e.status]||'未確認',`status ${e.present===false?'missing':e.status}`);}
-function matching(extra={}){return F.filterEvents(state.events,{artist,category:'all',status:'all',sort:'date',favorites,...extra});}
+// Keep source categories and subscribed feeds stable; merge special-event categories only in the UI.
+function uiEvent(e){return e.category==='BENEFIT'?{...e,category:'EVENT'}:e;}
+function matching(extra={}){return F.filterEvents(state.events.map(uiEvent),{artist,category:'all',status:'all',sort:'date',favorites,...extra});}
 function activeEvents(){return matching().filter(e=>e.present!==false&&e.status!=='cancelled');}
 function renderArtists(){const list=[{id:'all',name:'すべてのアーティスト'},...artists];$('#artist-filters').replaceChildren(...list.map(a=>{const b=el('button');b.type='button';b.setAttribute('aria-pressed',String(artist===a.id));if(a.accent){const dot=el('i','','artist-dot');dot.style.setProperty('--artist',a.accent);dot.setAttribute('aria-hidden','true');b.append(dot);}b.append(document.createTextNode(a.name));b.onclick=()=>{artist=a.id;render();[...$('#artist-filters').children].find(x=>x.getAttribute('aria-pressed')==='true')?.focus();};return b;}));}
 function toggleFavorite(e){const key=F.stableEventKey(e);favorites.has(key)?favorites.delete(key):favorites.add(key);save('alert-pwa-favorites-v1',[...favorites]);render();}
