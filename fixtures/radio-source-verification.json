@@ -1,0 +1,15 @@
+{
+  "checkedAtMeaning": "公開資料の再閲覧日時。原サイトの更新日時やライブ取得の保証ではありません。",
+  "sources": [
+    {
+      "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+      "checkedAt": "2026-11-12T13:54:39+09:00",
+      "verifiedFacts": ["毎週金曜16:40からのレギュラー番組", "松元寧音", "2025年6月6日開始"]
+    },
+    {
+      "url": "https://radiko.jp/mobile/events/14166483",
+      "checkedAt": "2026-11-12T13:54:39+09:00",
+      "verifiedFacts": ["2026年11月13日16:40〜16:50", "JRT四国放送", "松元寧音"]
+    }
+  ]
+}
