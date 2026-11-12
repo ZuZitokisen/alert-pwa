@@ -1,0 +1,229 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Straight Angeli / 特典会・応募
+BEGIN:VEVENT
+UID:public-v1-e16f69cd5a99a1a21fb8a46ba30be61bd6b24345fb277c0c5c4fdb70abab6
+ 48a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261121T110000Z
+DTEND:20261121T120000Z
+SUMMARY:DOLLttoFes2026 Straight Angeli 特典会
+DESCRIPTION:特典会会場は大須Dt.BLD 1F〜3F。詳細な参加条件
+ は未公表。\n本人公式サイトの掲載を確認。時刻の意味
+ や未発表事項は注記に記載。\nhttps://straight-angeli.com/news/
+ item-1278/
+LOCATION:大須Dt.BLD 特典会A
+URL:https://straight-angeli.com/news/item-1278/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dd759e92939b6d656e291d29146f80b1e31f84200f4f2adcb7cda34e4143d
+ 9fb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261130T145900Z
+SUMMARY:Secret Eden 早期入会特典 決済完了期限
+DESCRIPTION:11月30日23:59までに入会・決済完了した人がリア
+ ル会員証の対象。月額550円または年額6000円。発送は12
+ 月下旬以降順次。応募フォームの締切ではありません
+ 。\n本人公式の早期入会特典案内で、入会・決済完了期
+ 限を確認。\nhttps://straight-angeli.com/news/item-1334/
+LOCATION:Straight Angeli OFFICIAL FANCLUB Secret Eden
+URL:https://straight-angeli.com/news/item-1334/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dc99e5d7a3e445c707093cc630721a50a09359fcc29cd021fa3f602bd0c2c
+ 338@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261215T145900Z
+SUMMARY:「僕ら羽ばたいた日」LINE MUSIC再生キャンペーン締
+ 切
+DESCRIPTION:応募期間は11/1 0:00〜12/15 23:59。111回以上で壁紙
+ 、1101回以上で2ショット撮影会抽選10名。オンライン再
+ 生と回数画面の提出が必要。応募は1人1回。撮影会日時
+ 未発表。再生カウント期間の独立した締切は未確認。
+ 応募方法の最新情報は公式案内で確認。\n本人所属レー
+ ベルA-Sketch公式の11月6日記事に、応募期間11月1日0:00〜12
+ 月15日23:59の明記あり。\nhttps://straight-angeli.com/news/item-133
+ 8/\nhttps://www.a-sketch.com/artist/straight-angeli%EF%BC%88%E3%82%B9%E3%8
+ 2%BF%E3%83%BC%E3%83%80%E3%82%B9%E3%83%88%E3%83%97%E3%83%AD%E3%83%A2%E3%83%
+ BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%89/
+LOCATION:LINE MUSIC／公式応募フォーム
+URL:https://straight-angeli.com/news/item-1338/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-bf8d660a618d32ce03b422595f8f03f0adcb6503328d4dc31d3198b949c6e
+ 50b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261119T145900Z
+SUMMARY:HBCアイドル祭り2027 一次先行抽選締切
+DESCRIPTION:受付11/10 10:00〜11/19 23:59。優先8800円・一般5500円
+ ・2階指定6600円。https://l-tike.com/concert/mevent/?mid=740882\n本
+ 人公式サイトの掲載を確認。時刻の意味や未発表事項
+ は注記に記載。\nhttps://straight-angeli.com/news/item-1343/
+LOCATION:ローソンチケット
+URL:https://straight-angeli.com/news/item-1343/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-97ea9722699958f6ff4eb1ed8760bc16bcab4fddda855206fff23088d48c0
+ 645@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261114T040000Z
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー 渋谷 第1部（ミニライブ・特典会）
+DESCRIPTION:公式サイトは9F、店舗公式は屋上。現地詳細は
+ 両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一
+ 覧17:30は旧情報）。対象商品購入1000円につき特典券1枚
+ 。第1部は私服特典会。特典会の単独開始・終了時刻は
+ 未公表。 8/22中止分の特典券・トライアルチケット保有
+ 者は、12月末までの生写真販売イベントで振替対応。対
+ 象条件は公式案内を確認。\n開催日時は本人公式の更新
+ 後の発表を採用。会場階は本人公式と店舗公式で表記
+ が異なるため未確定。\nhttps://straight-angeli.com/news/item-1167
+ /\nhttps://straight-angeli.com/news/item-1355/\nhttps://towershibuya.jp/20
+ 26/11/14/236995
+LOCATION:タワーレコード渋谷店（階の表記に相違）
+URL:https://straight-angeli.com/news/item-1167/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8f0e16ea8ac178f44c8d6b36596c91d498cc6a0a1b81e2c9a02a5ff4ae02a
+ 3b7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261114T080000Z
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー 渋谷 第2部（ミニライブ・特典会）
+DESCRIPTION:公式サイトは9F、店舗公式は屋上。現地詳細は
+ 両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一
+ 覧17:30は旧情報）。対象商品購入1000円につき特典券1枚
+ 。特典会の単独開始・終了時刻は未公表。 8/22中止分の
+ 特典券・トライアルチケット保有者は、12月末までの生
+ 写真販売イベントで振替対応。対象条件は公式案内を
+ 確認。\n開催日時は本人公式の更新後の発表を採用。会
+ 場階は本人公式と店舗公式で表記が異なるため未確定
+ 。\nhttps://straight-angeli.com/news/item-1167/\nhttps://straight-angeli.
+ com/news/item-1355/\nhttps://towershibuya.jp/2026/11/14/236995
+LOCATION:タワーレコード渋谷店（階の表記に相違）
+URL:https://straight-angeli.com/news/item-1167/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-23271b313405b4d16bdc00485d7c111c2b7dbaefa6658e7c600e6267da570
+ 9ac@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261114T020000Z
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー 渋谷 対象商品販売・配券開始
+DESCRIPTION:対象PHOTO SET vol.5/7/8、優先入場券・特典券はな
+ くなり次第終了。 8/22中止分の特典券・トライアルチケ
+ ット保有者は、12月末までの生写真販売イベントで振替
+ 対応。対象条件は公式案内を確認。\n開催日時は本人公
+ 式の更新後の発表を採用。会場階は本人公式と店舗公
+ 式で表記が異なるため未確定。\nhttps://straight-angeli.com/ne
+ ws/item-1167/\nhttps://straight-angeli.com/news/item-1355/\nhttps://towers
+ hibuya.jp/2026/11/14/236995
+LOCATION:タワーレコード渋谷店（階の表記に相違）
+URL:https://straight-angeli.com/news/item-1167/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6f1fd4d0ab6d1595b2d882453427c8fed96ae62ace0e06fd373b63edf68e4
+ 304@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261122T030000Z
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー 熱田 第1部（ミニライブ・特典会）
+DESCRIPTION:対象商品購入1000円につき特典券1枚。ライブ後
+ の特典会単独時刻は未公表。特典券・入場券はなくな
+ り次第。フリー入場は配券状況により実施しない場合
+ あり。 8/22中止分の特典券・トライアルチケット保有者
+ は、12月末までの生写真販売イベントで振替対応。対象
+ 条件は公式案内を確認。\n本人公式サイトの掲載を確認
+ 。時刻の意味や未発表事項は注記に記載。\nhttps://straigh
+ t-angeli.com/news/item-1167/\nhttps://straight-angeli.com/news/item-1357/
+LOCATION:イオンモール熱田 1F熱田広場
+URL:https://straight-angeli.com/news/item-1167/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6b961317d706717f161a85032420bc49011c75dd04221010fac5ba2316c66
+ 959@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261122T060000Z
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー 熱田 第2部（ミニライブ・特典会）
+DESCRIPTION:対象商品購入1000円につき特典券1枚。ライブ後
+ の特典会単独時刻は未公表。特典券・入場券はなくな
+ り次第。フリー入場は配券状況により実施しない場合
+ あり。 8/22中止分の特典券・トライアルチケット保有者
+ は、12月末までの生写真販売イベントで振替対応。対象
+ 条件は公式案内を確認。\n本人公式サイトの掲載を確認
+ 。時刻の意味や未発表事項は注記に記載。\nhttps://straigh
+ t-angeli.com/news/item-1167/\nhttps://straight-angeli.com/news/item-1357/
+LOCATION:イオンモール熱田 1F熱田広場
+URL:https://straight-angeli.com/news/item-1167/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a1aec99a9b2832bb6db18ff71cd44f3bbf1ea7d465f4c80d63063a5250d7f
+ 234@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261122T010000Z
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー 熱田 対象商品販売・配券開始
+DESCRIPTION:対象PHOTO SET vol.5/7/8、特典券・優先入場券は当
+ 日のみ有効。 8/22中止分の特典券・トライアルチケット
+ 保有者は、12月末までの生写真販売イベントで振替対応
+ 。対象条件は公式案内を確認。\n本人公式サイトの掲載
+ を確認。時刻の意味や未発表事項は注記に記載。\nhttps:
+ //straight-angeli.com/news/item-1167/\nhttps://straight-angeli.com/news/it
+ em-1357/
+LOCATION:イオンモール熱田 1F熱田広場
+URL:https://straight-angeli.com/news/item-1167/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
