@@ -1,6 +1,6 @@
 # 共通予定の購読カレンダー
 
-v0.5.0では calendar-feeds/ の10個の固定URLを公開し、PWAから購読リンクとURLコピーを提供します。iPhone実機での追加・更新・取消表示は未検証です。元の予定の自動収集は未稼働です。
+v0.7.0では calendar-feeds/ の15個の固定URLを公開し、PWAから購読リンクとURLコピーを提供します。iPhone実機での追加・更新・取消表示は未検証です。元の予定の自動収集は未稼働です。
 
 以下の前半は旧試作の記録です。現在の生成・配信契約は後半の「Task 11: production subscriptions」を参照してください。
 
@@ -76,15 +76,15 @@ GitHub Pagesは静的feedを置けますが、収集・改訂stateの保存・�
 
 The real subscription path is now separate from the fictional prototype above.
 `production-feed-core.cjs` and `generate-subscription-feeds.mjs` read only the
-reviewed, public `schedule-data.json`. They do not read localStorage, favorites,
+reviewed, public `schedule-data-v2.json`. They do not read localStorage, favorites,
 notification settings, authentication, or device calendars. The old
 `subscription-core.js` remains a demo and must not be used to generate production
 feeds by marking real records `demo: true`.
 
 ### Fixed public URLs and UI contract
 
-There are ten fixed paths: `calendar-feeds/{artist}-{category}.ics`.
-Artists are `tokisen` and `re-ge`; categories are `all`, `live`, `benefit`, `media`,
+There are fifteen fixed paths: `calendar-feeds/{artist}-{category}.ics`.
+Artists are `tokisen`, `re-ge`, and `straightangeli`; categories are `all`, `live`, `benefit`, `media`,
 and `other`. Resolve these relative paths against this deployed application's
 base URL. Do not generate account-specific URLs. Source categories map as follows:
 
@@ -94,7 +94,7 @@ base URL. Do not generate account-specific URLs. Source categories map as follow
 - TV / RADIO / STREAM: media
 - MEMO: other
 
-`calendar-feeds/manifest.json` has schemaVersion 1, production true, namespace,
+`calendar-feeds/manifest-v2.json` has schemaVersion 2, production true, namespace,
 dataVersion, dataGeneratedAt, coverage `{from, through}`, inputSha256, and feeds.
 Each feed contains id, artist, category, label, path, count, omittedUnknownDate,
 and sha256 of the exact UTF-8 ICS bytes. A zero-count category is a valid empty
@@ -112,7 +112,7 @@ node generate-subscription-feeds.mjs --check
 node --test test-production-feeds.mjs
 ```
 
-1. Review and update the public source facts and source URLs in schedule-data.json.
+1. Review and update the public source facts and source URLs in schedule-data-v2.json.
    Keep each event's artistId, source and id permanently stable, even if its title,
    date, location or category changes. Keep event.revision at 1, matching the shared remote snapshot contract; calendar
    SEQUENCE is tracked independently in the committed feed state. Increase
@@ -120,7 +120,7 @@ node --test test-production-feeds.mjs
    A changed snapshot with the old version, a backwards generation, or different
    content at the same generation timestamp is rejected. Checking an unchanged
    source or changing its checkedAt alone does not increase calendar SEQUENCE.
-2. Run the generation and checks above. Commit schedule-data.json and the whole
+2. Run the generation and checks above. Commit schedule-data-v2.json, the generated legacy schedule-data.json, and the whole
    calendar-feeds directory together, including state.json. Deploy that single
    commit with the application's ordinary static-site deployment.
 3. The updater must call the generator whenever it changes the shared source. This
@@ -183,3 +183,7 @@ permission. One-time ICS import is not subscription and will not continuously
 update. Removing a subscription is done in the calendar app; closing this app or
 clearing its local data does not unsubscribe it. Refresh timing, cancellation
 rendering and alerts ultimately depend on the subscribing calendar app.
+
+### Backward-compatible third artist release
+
+The new client reads the fifteen-feed manifest-v2.json. manifest.json retains the original ten-feed schema for old clients, and schedule-data.json is the generated two-artist projection. The old event content, IDs, UIDs and ten ICS files stay identical when only third-artist events are added. Both JSONs, both manifests, persistent revision state and all fifteen feeds must be deployed together. Generation stages both local output targets and rolls back ordinary errors; it is not crash-atomic.

@@ -6,12 +6,12 @@ import path from 'node:path';
 import {execFileSync,spawnSync} from 'node:child_process';
 import C from './production-feed-core.cjs';
 const data=JSON.parse(fs.readFileSync(new URL('./schedule-data.json',import.meta.url),'utf8'));
-const options={production:true,publicSource:'schedule-data.json'}, initial=C.build(data,null,options);
+const options={production:true,publicSource:'schedule-data-v2.json'}, initial=C.build(data,null,options);
 const copy=v=>structuredClone(v);
 function changed(fn){let d=copy(data);d.generatedAt='2026-11-12T09:32:46Z';d.version='2026-11-12-v1';fn(d);return d;}
 const first=initial.state.records.find(r=>r.event.id===data.events[0].id);
-test('247 real public records generate ten reproducible public feeds without demo or private state',()=>{
- assert.equal(initial.state.records.length,247);assert.equal(initial.manifest.feeds.length,10);
+test('247 real public records generate fifteen reproducible public feeds without demo or private state',()=>{
+ assert.equal(initial.state.records.length,247);assert.equal(initial.manifest.feeds.length,15);
  assert.deepEqual(C.build(data,initial.state,options).files,initial.files);
  for(const [name,body] of Object.entries(initial.files)){assert.ok(!/VALARM|DURATION:|example\.invalid|demo":true|架空サンプル|"favorite"|calendarPermission|deviceToken/.test(body),name);}
  for(const f of initial.manifest.feeds){assert.equal(C.hash(initial.files[f.id+'.ics']),f.sha256);assert.equal((initial.files[f.id+'.ics'].match(/BEGIN:VEVENT/g)||[]).length,f.count);}
@@ -70,7 +70,7 @@ test('RFC5545 UTF-8 folding and escaping do not introduce event properties',()=>
 test('CLI checks missing/stale artifacts and refuses accidental reset',()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'public-feed-test-'));
  try {
- for(const name of ['production-feed-core.cjs','feature-core.js','generate-subscription-feeds.mjs','schedule-data.json'])fs.copyFileSync(new URL('./'+name,import.meta.url),path.join(dir,name));
+ for(const name of ['production-feed-core.cjs','feature-core.js','generate-subscription-feeds.mjs','schedule-data-v2.json'])fs.copyFileSync(new URL('./'+name,import.meta.url),path.join(dir,name));
  const run=(...args)=>spawnSync(process.execPath,['generate-subscription-feeds.mjs',...args],{cwd:dir,encoding:'utf8'});
  assert.notEqual(run('--check').status,0);assert.equal(run('--initialize').status,0);assert.equal(run('--check').status,0);assert.notEqual(run('--initialize').status,0);
  fs.writeFileSync(path.join(dir,'calendar-feeds','tokisen-all.ics'),'stale');assert.notEqual(run('--check').status,0);assert.equal(run().status,0);assert.equal(run('--check').status,0);
