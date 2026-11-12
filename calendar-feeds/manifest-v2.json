@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-12-v3-straightangeli",
-  "dataGeneratedAt": "2026-11-12T04:28:17Z",
+  "dataVersion": "2026-11-12-v4-jrt-radio",
+  "dataGeneratedAt": "2026-11-12T04:55:59.350Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "2aebad745ad029ee8abd3055ef2168db1b8c252af75326c975e99b03ef24b79b",
+  "inputSha256": "c4d8bafd6276a50bf5fda38fc34259e6ee30cc7a1c59a4e69f82e5475dc6777f",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -116,9 +116,9 @@
       "category": "all",
       "label": "Straight Angeli / 全予定",
       "path": "calendar-feeds/straightangeli-all.ics",
-      "count": 16,
+      "count": 36,
       "omittedUnknownDate": 0,
-      "sha256": "1610a6147d84b27d2e3ccc710a0e499135a899d04d8c5adc606785fd1f913d73"
+      "sha256": "7061ef9dd6df683f30c9016e93032711ecceb6fde8e5a119b6b1c0eaea64c2d7"
     },
     {
       "id": "straightangeli-live",
@@ -146,9 +146,9 @@
       "category": "media",
       "label": "Straight Angeli / メディア",
       "path": "calendar-feeds/straightangeli-media.ics",
-      "count": 2,
+      "count": 22,
       "omittedUnknownDate": 0,
-      "sha256": "c33b2618b1876a911f3a8fcc8d1fb603153ad8b7cda9ff7c6ffdf3932b142f8a"
+      "sha256": "99a7a7b0657d58ae388981e1978a0b614add8e9cfae0616b4cd48269d2863e74"
     },
     {
       "id": "straightangeli-other",
