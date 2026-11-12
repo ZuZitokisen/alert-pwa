@@ -6,7 +6,7 @@ const source=fs.readFileSync(new URL('./app.js',import.meta.url),'utf8');
 const routeSource=source.slice(source.indexOf('function route(){'),source.indexOf("\n$('#morning-time').value"));
 const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');
 function fixture(initialHash=''){
- const views=['calendar','cards','favorites','changes','about'].map(name=>({id:name+'-view',hidden:false}));
+ const views=['calendar','cards','favorites','changes'].map(name=>({id:name+'-view',hidden:false}));
  const links=views.map(v=>({dataset:{view:v.id.replace('-view','')},attributes:{},classList:{toggle(){}},setAttribute(k,v){this.attributes[k]=v},removeAttribute(k){delete this.attributes[k]}}));
  const title={textContent:'',focus(){this.focused=(this.focused||0)+1}},back={hidden:true,href:'',attributes:{},setAttribute(k,v){this.attributes[k]=v}},detail={open:false};
  const context={location:{hash:initialHash},document:{querySelectorAll(s){return s==='.view'?views:links}},window:{scrollTo(){context.scrollCount++}},scrollCount:0,closeDialog(){detail.open=false;context.closed=(context.closed||0)+1},$:(s)=>({'#view-title':title,'#back-to-view':back,'#detail':detail}[s])};
@@ -14,14 +14,14 @@ function fixture(initialHash=''){
  function go(hash){context.location.hash=hash;vm.runInContext('route()',context);return views.filter(v=>!v.hidden).map(v=>v.id);}
  return {context,views,links,title,back,detail,go};
 }
-test('normal view does not show a back control',()=>{const f=fixture();assert.deepEqual(f.go('#calendar'),['calendar-view']);assert.equal(f.back.hidden,true);assert.equal(f.title.textContent,'カレンダー');});
-test('information uses explanatory title and returns to calendar',()=>{const f=fixture();f.go('#calendar');assert.deepEqual(f.go('#about'),['about-view']);assert.equal(f.title.textContent,'説明');assert.equal(f.back.hidden,false);assert.equal(f.back.href,'#calendar');assert.equal(f.back.attributes['aria-label'],'カレンダーに戻る');assert.deepEqual(f.go(f.back.href),['calendar-view']);});
-test('information returns to each prior app view',()=>{for(const route of ['cards','favorites','changes']){const f=fixture();f.go('#'+route);f.go('#about');assert.equal(f.back.href,'#'+route);assert.deepEqual(f.go(f.back.href),[route+'-view']);}});
-test('repeated information route preserves return destination',()=>{const f=fixture();f.go('#cards');f.go('#about');f.go('#about');assert.equal(f.back.href,'#cards');});
-test('direct about and legacy settings URLs have safe in-app return',()=>{for(const route of ['about','settings']){const f=fixture();assert.deepEqual(f.go('#'+route),['about-view']);assert.equal(f.back.href,'#calendar');assert.equal(f.back.hidden,false);assert.deepEqual(f.go(f.back.href),['calendar-view']);}});
+test('Schedule does not show a back control',()=>{const f=fixture();assert.deepEqual(f.go('#calendar'),['calendar-view']);assert.equal(f.back.hidden,true);assert.equal(f.title.textContent,'Schedule');});
+test('News owns change history and specifications',()=>{const f=fixture();assert.deepEqual(f.go('#changes'),['changes-view']);assert.equal(f.title.textContent,'News');assert.equal(f.back.hidden,true);assert.ok(!html.includes('id="about-view"'));assert.ok(html.includes('アプリ更新・仕様'));});
+test('Favorite and Schedule remain independent routes',()=>{const f=fixture();assert.deepEqual(f.go('#favorites'),['favorites-view']);assert.equal(f.title.textContent,'Favorite');assert.deepEqual(f.go('#calendar'),['calendar-view']);});
+test('all-events route returns to News without losing legacy access',()=>{const f=fixture();f.go('#cards');assert.equal(f.title.textContent,'すべての予定');assert.equal(f.back.href,'#changes');assert.equal(f.back.attributes['aria-label'],'Newsに戻る');assert.equal(f.back.hidden,false);assert.deepEqual(f.go(f.back.href),['changes-view']);});
+test('direct legacy about and settings URLs resolve to News',()=>{for(const route of ['about','settings']){const f=fixture();assert.deepEqual(f.go('#'+route),['changes-view']);assert.equal(f.title.textContent,'News');assert.equal(f.back.hidden,true);}});
 test('unknown routes stay within app and old watch route remains valid',()=>{const f=fixture();assert.deepEqual(f.go('#unknown'),['calendar-view']);assert.deepEqual(f.go('#watch'),['cards-view']);});
-test('entering and leaving information reveals heading and closes dialogs',()=>{const f=fixture();f.detail.open=true;f.go('#about');assert.equal(f.detail.open,false);assert.equal(f.context.closed,1);assert.equal(f.context.scrollCount,1);assert.equal(f.title.focused,1);f.go('#about');assert.equal(f.context.scrollCount,1);f.go('#calendar');assert.equal(f.context.scrollCount,2);});
-test('accessible information icon is plain i, not settings gear',()=>{assert.match(html,/class="icon-button mobile-info information-icon" aria-label="このアプリについて">i<\/a>/);assert.ok(!html.includes('⚙'));assert.match(html,/id="back-to-view"[^>]+href="#calendar"[^>]+hidden/);assert.ok(!html.includes('配信環境の接続後に設定</button>'));});
+test('entering and leaving News reveals heading and closes dialogs',()=>{const f=fixture();f.detail.open=true;f.go('#changes');assert.equal(f.detail.open,false);assert.equal(f.context.closed,1);assert.equal(f.context.scrollCount,1);assert.equal(f.title.focused,1);f.go('#changes');assert.equal(f.context.scrollCount,1);f.go('#calendar');assert.equal(f.context.scrollCount,2);});
+test('redundant i screen is removed and the existing back control remains available',()=>{assert.ok(!html.includes('class="icon-button mobile-info information-icon"'));assert.ok(!html.includes('⚙'));assert.match(html,/id="back-to-view"[^>]+href="#calendar"[^>]+hidden/);assert.ok(!html.includes('配信環境の接続後に設定</button>'));});
 test('card markup no longer generates redundant decorative color strips',()=>{assert.ok(!source.includes('card-colorbar'));});
 test('primary calendar entry uses production presets rather than a file download',()=>{assert.match(source,/exportButton.onclick=\(\)=>openSubscriptions\(e.artistId\)/);assert.ok(!source.includes('購読先は準備中'));assert.match(html,/<div class="selection-toolbar" hidden>/);assert.ok(!source.includes('card(e,true)'));assert.ok(html.indexOf('calendar-subscriptions.js')<html.indexOf('app.js'));assert.match(source,/subscribe.href=urls.webcal/);assert.ok(source.includes('1種類ずつ追加してください'));});
 
@@ -31,9 +31,9 @@ test('favorite help describes hearts and their saved state',()=>{assert.ok(!sour
 test('heart preserves white circle, card position and touch/icon geometry',()=>{const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');assert.match(css,/\.favorite-button\{position:relative;[^}]*width:44px;height:44px;[^}]*padding:7px/);assert.match(css,/\.favorite-button::before\{[^}]*inset:7px;[^}]*border-radius:50%;background:#fff\}/);assert.match(css,/\.favorite-button svg\{display:block;width:20px;height:20px\}/);assert.match(css,/\.event-card \.favorite-button\{position:absolute;right:4px;bottom:4px\}/);});
 
 test('regular screens omit introductory copy and keep important guidance in information',()=>{
- const regular=html.slice(html.indexOf('<main>'),html.indexOf('<section id="about-view"'));
+ const regular=html.slice(html.indexOf('<main>'),html.indexOf('<section id="changes-view"'));
  for(const text of ['気になる、を集めよう','お気に入りはこの端末','予定を、カードで','新しい発表と、予定の変化','非公式の情報集約'])assert.ok(!regular.includes(text));
- const info=html.slice(html.indexOf('<section id="about-view"'));
+ const info=html.slice(html.indexOf('<section id="changes-view"'));
  for(const text of ['非公式の情報集約','アプリの更新','黒いハートは未登録','別端末との同期はありません','自動監視は未稼働'])assert.ok(info.includes(text));
  assert.ok(source.includes('通知は予約・配信されません。'));assert.ok(html.includes('更新間隔は端末側に依存'));
 });
