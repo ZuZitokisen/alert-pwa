@@ -1,0 +1,732 @@
+[
+  {
+    "id": "straightangeli-nene-jrt-20261113",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2026-11-13T16:40:00+09:00",
+    "end": "2026-11-13T16:50:00+09:00",
+    "allDay": false,
+    "status": "confirmed",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "11/13回はradiko個別番組表で16:40〜16:50を確認。所属事務所の毎週金曜16:40の案内とも一致。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の定例番組案内とradikoの11/13個別回が一致したため確定扱い。",
+    "sourceUrl": "https://radiko.jp/mobile/events/14166483",
+    "sources": [
+      {
+        "url": "https://radiko.jp/mobile/events/14166483",
+        "type": "broadcaster_official",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      },
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "放送開始",
+        "at": "2026-11-13T16:40:00+09:00",
+        "status": "confirmed"
+      },
+      {
+        "kind": "broadcast_end",
+        "label": "放送終了",
+        "at": "2026-11-13T16:50:00+09:00",
+        "status": "confirmed"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20261120",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2026-11-20T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2026-11-20T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20261127",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2026-11-27T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2026-11-27T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20261204",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2026-12-04T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2026-12-04T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20261211",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2026-12-11T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2026-12-11T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20261218",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2026-12-18T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2026-12-18T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20261225",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2026-12-25T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2026-12-25T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270101",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-01-01T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-01-01T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270108",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-01-08T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-01-08T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270115",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-01-15T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-01-15T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270122",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-01-22T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-01-22T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270129",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-01-29T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-01-29T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270205",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-02-05T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-02-05T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270212",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-02-12T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-02-12T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270219",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-02-19T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-02-19T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270226",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-02-26T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-02-26T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270305",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-03-05T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-03-05T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270312",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-03-12T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-03-12T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270319",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-03-19T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-03-19T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  },
+  {
+    "id": "straightangeli-nene-jrt-20270326",
+    "source": "curated-calendar",
+    "artistId": "straightangeli",
+    "title": "ワークスタッフpresents 松元寧音のね～ね～聞いてよ♪",
+    "start": "2027-03-26T16:40:00+09:00",
+    "end": null,
+    "allDay": false,
+    "status": "possible",
+    "category": "RADIO",
+    "location": "JRT四国放送（徳島）",
+    "note": "毎週金曜16:40の公式定例表記から作成した候補。個別回の番組表は未確認で、放送休止・時間変更の可能性があります。終了時刻は未確認。2027年3月までの継続放送を確定するものではありません。radikoの地域外聴取にはプラン条件があります。",
+    "evidence": "本人所属事務所の「毎週金曜16:40」だけを根拠に日付を展開。個別放送回は未確認のため、かも？として掲載。",
+    "sourceUrl": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+    "sources": [
+      {
+        "url": "https://www.stardust.co.jp/talent/section3/matsumotonene/",
+        "type": "artist_official_agency_recurring",
+        "checkedAt": "2026-11-12T13:54:39+09:00"
+      }
+    ],
+    "checkedAt": "2026-11-12T13:54:39+09:00",
+    "timings": [
+      {
+        "kind": "broadcast_start",
+        "label": "定例からの放送開始候補",
+        "at": "2027-03-26T16:40:00+09:00",
+        "status": "possible",
+        "note": "定例由来。個別回未確認。"
+      }
+    ],
+    "deadline": null,
+    "revision": 1,
+    "present": true,
+    "groupId": "straightangeli-nene-jrt"
+  }
+]
