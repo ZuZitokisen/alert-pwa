@@ -5,9 +5,10 @@
  * the last good data. Cache and history are intentionally separate from demos.
  */
 (() => {
-  const KEY = 'alert-pwa-curated-calendar-v1';
+  const KEY = 'alert-pwa-curated-calendar-v2';
+  const LEGACY_KEY = 'alert-pwa-curated-calendar-v1';
   const SOURCE = 'curated-calendar';
-  const DATA_URL = './schedule-data.json';
+  const DATA_URL = './schedule-data-v2.json';
   const MAX_EVENTS = 10000, MAX_HISTORY = 500, MAX_CACHE_LENGTH = 8000000;
   const CONTENT_FIELDS = ['title', 'start', 'end', 'allDay', 'status', 'category', 'location', 'note', 'evidence', 'artistId', 'deadline', 'sourceUrl', 'sources', 'timings', 'dateLabel', 'groupId'];
   const EVENT_REQUIRED = ['id', 'source', 'artistId', 'title', 'start', 'end', 'allDay', 'status', 'category', 'location', 'note', 'evidence', 'sourceUrl', 'sources', 'checkedAt', 'timings', 'revision', 'present'];
@@ -73,7 +74,8 @@
   function event(value, local = false) {
     object(value, EVENT_REQUIRED, EVENT_OPTIONAL);
     identity(value.id); require(value.source === SOURCE);
-    require(['tokisen', 're-ge'].includes(value.artistId));
+    require(['tokisen', 're-ge', 'straightangeli'].includes(value.artistId));
+    require(value.artistId !== 'straightangeli' || value.id.startsWith('straightangeli-'));
     string(value.title, 1000, true);
     require(value.start === null || date(value.start) || instant(value.start));
     require(value.end === null || date(value.end) || instant(value.end));
@@ -133,7 +135,11 @@
 
   function restore() {
     let raw;
-    try { raw = globalThis.localStorage.getItem(KEY); }
+    try {
+      raw = globalThis.localStorage.getItem(KEY);
+      // Read v1 once only when v2 is absent. Never overwrite or delete the old cache.
+      if (raw === null) raw = globalThis.localStorage.getItem(LEGACY_KEY);
+    }
     catch { state.storageAvailable = false; state.storageError = 'このブラウザーの保存領域を利用できません。表示中のデータはメモリー内だけに保持します。'; return; }
     if (raw === null) return;
     try {
@@ -199,7 +205,9 @@
         before: before ? clone(before) : null, after: after ? clone(after) : null, fields, detected: checked });
     };
     for (const [key, item] of incoming) {
-      const before = previous.get(key), fields = changedFields(before, item);
+      const before = previous.get(key);
+      require(!before || before.artistId === item.artistId);
+      const fields = changedFields(before, item);
       const revision = before ? before.revision + Number(fields.length > 0) : 1;
       require(Number.isSafeInteger(revision));
       const after = { ...item, revision, present: true };

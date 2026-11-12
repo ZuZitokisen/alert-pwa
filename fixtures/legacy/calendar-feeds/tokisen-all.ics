@@ -1,0 +1,3404 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:超ときめき♡宣伝部 / 全予定
+BEGIN:VEVENT
+UID:public-v1-4547acf4c60c50d6a85597a75d0837b34b5776e27a34aeb5db413d605a4f8
+ ec4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261227
+SUMMARY:COUNTDOWN JAPAN 26/27（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n出演日は本人公式で確認。個別の出演時刻は未確定
+ 。\n本人側の公式発表で確認。\nhttps://toki-sen.com/contents/1
+ 122614
+LOCATION:幕張メッセ国際展示場1～11ホール・イベントホー
+ ル
+URL:https://toki-sen.com/contents/1122614
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21ffc304e19d16afa2ff0f8f89ea4d4f139f28ab80eae2980c724b3dd4efb
+ 2b0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261212T080000Z
+SUMMARY:どきどきクリスマスパーティー2026
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1124898
+LOCATION:京王アリーナTOKYO
+URL:https://toki-sen.com/contents/1124898
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-42973db43d298a736833bb992696073192b0ee36cacf24e3e49556b10d218
+ f1b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261213T060000Z
+SUMMARY:どきどきクリスマスパーティー2026
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1124898
+LOCATION:京王アリーナTOKYO
+URL:https://toki-sen.com/contents/1124898
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-08a0be3384e4568d42ddb7aecb719ca5f51b2763446edc0d43fda848ec68c
+ 158@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:どきどきクリスマスパーティー2026 応募締切
+DESCRIPTION:対象公演：どきどきクリスマスパーティー2026
+ 。抽選受付。購入・当選を保証しません。\n本人側の公
+ 式発表で確認。\nhttps://toki-sen.com/contents/1124898
+LOCATION:
+URL:https://toki-sen.com/contents/1124898
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6591ac344a34eb791a515b5e2cf8ffd5957f66757d1ff99298cbdfd4cde81
+ 915@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261205T060000Z
+SUMMARY:どきどきクリスマスパーティー2026 発券開始
+DESCRIPTION:本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1124898
+LOCATION:
+URL:https://toki-sen.com/contents/1124898
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a2ea049b7739012dfbebb9d128f3c6a7855ab76cf855c6d0d0ac12183ea78
+ b90@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T145900Z
+SUMMARY:ときクリ2026 グッズ事前通販 締切
+DESCRIPTION: 在庫限り。残数未確認。会場受取・当日物販
+ の詳細は別途発表。\n本人側の公式発表で確認。\nhttps:/
+ /toki-sen.com/contents/1125331
+LOCATION:
+URL:https://toki-sen.com/contents/1125331
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a28a4afb8800b12e47637bc10092ca2f59ec98c01e3b904d0e8abb4692575
+ 718@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270111
+SUMMARY:グループショット撮影会 抽選券付き早期予約締切
+ （時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象店舗の全額前金予約。抽選券は数量限定。 23:59
+ の一律締切ではない。予約とシリアル応募は別手続き
+ 。 締切は各店舗の閉店時刻。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1116324
+LOCATION:
+URL:https://toki-sen.com/contents/1116324
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-93675403e6a04a5de5cb3e2c19900db55238cbc8629fb16815b8889e320ed
+ f60@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270118T145900Z
+SUMMARY:グループショット撮影会 シリアル応募締切
+DESCRIPTION: 特設フォームの稼働状況は未確認。\n本人側の
+ 公式発表で確認。\nhttps://toki-sen.com/contents/1116324
+LOCATION:
+URL:https://toki-sen.com/contents/1116324
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-50963e7f2d766ed12b272a60b26ae07d3a14a420866bd1d8945858c7e696b
+ ddb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261206T145900Z
+SUMMARY:ときめけみらい FC限定リアルサイン会 応募締切
+DESCRIPTION:FC限定。メモリアル盤1枚につき1口。各メンバ
+ ー最大50人。 開催日は未定。アルバム発売日4/1をサイ
+ ン会開催日に流用しない。\n本人側の公式発表で確認。
+ \nhttps://toki-sen.com/contents/1116142
+LOCATION:東京某所、当選者のみ案内
+URL:https://toki-sen.com/contents/1116142
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9a0db02903801f77e474a463a70c4a5f82fe3f403c2ceb3f2b243f29a42c2
+ b5a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261221
+SUMMARY:FC限定リアルサイン会 当選発表予定（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 当選者のみ通知。日内時刻は未発表。\n本人側の公
+ 式発表で確認。\nhttps://toki-sen.com/contents/1116142
+LOCATION:
+URL:https://toki-sen.com/contents/1116142
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fe27ef9c54d51648c5f1b6b03c980ff7cb68c69fd8512a0564e97b4656261
+ 339@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+SUMMARY:GIFT ～Girls Idol Festival Tokyo～（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n出演日は本人公式で確認。個別の出演時刻は未確定
+ 。\n本人側の公式発表で確認。\nhttps://toki-sen.com/contents/1
+ 102025
+LOCATION:SGCホール有明
+URL:https://toki-sen.com/contents/1102025
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3393e1cc4df8126ab1216e744366a5c3a04ef570cf005f769f5a3e9b6376e
+ e9c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261128
+SUMMARY:GIFT ～Girls Idol Festival Tokyo～（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n出演日は本人公式で確認。個別の出演時刻は未確定
+ 。\n本人側の公式発表で確認。\nhttps://toki-sen.com/contents/1
+ 102025
+LOCATION:SGCホール有明・TOYOTA ARENA TOKYO
+URL:https://toki-sen.com/contents/1102025
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2321fef8ecbc37bb7786715830df0a4ab43500e35353dd3106982ece0e5c0
+ a76@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261128
+SUMMARY:GIFT ABEMA配信 11/28（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 配信開催日は本人公式掲載。本人の現地出演日は11
+ /27・28。11/29現地出演として登録しない。放送全体と本
+ 人出演パートは別。\n本人側の公式発表で確認。\nhttps:/
+ /abema.tv/channels/special-plus-2/slots/BDbG4MMo4n7LPy\nhttps://toki-sen.c
+ om/contents/1122612
+LOCATION:ABEMA
+URL:https://abema.tv/channels/special-plus-2/slots/BDbG4MMo4n7LPy
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4a91cf195949f3bbf1455552d9820007987872340ae8793bb53aff4621a2e
+ 66a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261129
+SUMMARY:GIFT ABEMA配信 11/29（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 配信開催日は本人公式掲載。本人の現地出演日は11
+ /27・28。11/29現地出演として登録しない。放送全体と本
+ 人出演パートは別。\n本人側の公式発表で確認。\nhttps:/
+ /abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF\nhttps://toki-sen.c
+ om/contents/1122612
+LOCATION:ABEMA
+URL:https://abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-98a50177ccbbcdf393e6ab21715c3b28ec492514692d05275beb2ced810c6
+ 7ca@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261207
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第10回 配信開
+ 始（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f275d42b0f14effb2e546b73d06e71b4d45c2c7e08634a6b3e335bf4931d3
+ 29a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270108
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第10回 配信終
+ 了日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0846efb34218327f5d9907b682d10acc0abee70ee15528486596db619e7da
+ aac@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第11回 配信開
+ 始（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-31f6e43f265f43a3919766823a71089421213f72f958dc7a7822610c04745
+ 2ca@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270115
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第11回 配信終
+ 了日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ecaaf66011b30eb50e8b4e71619e408b38dd004a26f24dc62ce7f6fac7d8c
+ a1a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261221
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第12回 配信開
+ 始（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-18f01059d323b136df3caf3c1407125a75929925627fd7403fe3418910b5b
+ fd1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270122
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第12回 配信終
+ 了日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-459523053e3e15b87ab5e5ff5a53b5fe87be3305c80137bdc25cdf49ab8d0
+ 173@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261228
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第13回 配信開
+ 始（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-18df000ff1c81882c99fd9259f344397444d478b90e9443f7b111a57d96c4
+ 6a7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270129
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第13回 配信終
+ 了日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1ad9fac86e23891d1ce4c3a2b422de2f660f5763f1af1ab0b4d0d5ff1e8c4
+ 401@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261120
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第6回 配信終了
+ 日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-179d7bc5d74c26cfd49dcf30095d73a09cb648ae07d36fc61947b5f0bf738
+ 874@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第7回 配信終了
+ 日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c15ce1968d8bb509a3af95d0be81b6ee149777ca92306c579668ddc22f236
+ 29c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第8回 配信開始
+ （かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1b0c3ab109b72b76d9e8f9e23d2075c23691edcdae8496cb09e42105fda44
+ 198@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261218
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第8回 配信終了
+ 日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-eaec3ea63022e1f84a298107503648648df2a8fa394b165ba4e2007d41153
+ c7b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261130
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第9回 配信開始
+ （かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8e37acc26ec5dc57d1806c3b214410617e56e3a0ec09529149123c8c26e1e
+ a6f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261231
+SUMMARY:ときめき♡推てがみ!!放送部 第4弾 第9回 配信終了
+ 日（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ先のみの情報。会員登録と乗車中の条件確認
+ が必要。開始・終了時刻は未発表。\n外部発表による候
+ 補。本人側の一致確認が必要です。\nhttps://recommend.jr-cen
+ tral.co.jp/oshi-tabi/tokisen-4th/
+LOCATION:東海道新幹線 車内限定
+URL:https://recommend.jr-central.co.jp/oshi-tabi/tokisen-4th/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-20ec12c3ab9b7fb57e1e3473af9977292576d2b7fe47f37d8abf0945a827b
+ ba1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261127T145900Z
+SUMMARY:LINE MUSIC キャンペーン応募締切
+DESCRIPTION:サイン入り集合チェキ抽選は690回以上、デジタ
+ ル参加賞は5回以上。フォーム等による応募が必要。 特
+ 典物の抽選。本人とのチェキ撮影会ではない。\n本人側
+ の公式発表で確認。\nhttps://toki-sen.com/contents/1123558
+LOCATION:
+URL:https://toki-sen.com/contents/1123558
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dad8f67030ab68bc6657ad7b1b49f9f2b29f80d4087512fdb9a9f06dac7da
+ cfe@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+SUMMARY:LINE MUSIC キャンペーン再生集計対象最終日（時刻
+ 未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 再生回数は翌日反映。11/27の応募に使えるのは11/26
+ までの再生分。\n本人側の公式発表で確認。\nhttps://toki-
+ sen.com/contents/1123558
+LOCATION:
+URL:https://toki-sen.com/contents/1123558
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9f93673b821848014be16703c390b4921a46264231061eabfd9a9da31e93c
+ bae@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T080000Z
+DTEND:20261115T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/1082866
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-52e4d76b250a4390ddbe32b22025ab821078c4df03e03f191de19d60552f0
+ a3c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261122T080000Z
+DTEND:20261122T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/1082866
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a991de8e129cc72869468b94cb3028452cb4262dbcbbcf0c86bbb83b24157
+ e37@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T080000Z
+DTEND:20261129T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/1082866
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a5617263af92dc2fb18c1bb87ad058c1c1bd8a85685f4726ba8f52857eb8a
+ f2f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261206T080000Z
+DTEND:20261206T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/1082866
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c44907d2c55b81959d8990c8ff837a26cc86ddd10b444b0ef0c575195825f
+ 73c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261213T080000Z
+DTEND:20261213T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/1082866
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e006535f08f9e46640b2bf47be0dfcd5322b004e9c3380dc36544a4c9f0dd
+ de7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261220T080000Z
+DTEND:20261220T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/1082866
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-50a8f9b441c6d9e5cd6c288c353f46a52c0a388e3e85986cda96980242822
+ b16@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261227T080000Z
+DTEND:20261227T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/1082866
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-776cb45bf41f28432c8c5306648a25351b563e218b7ea14507eae14f67c7a
+ d5a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270103T080000Z
+DTEND:20270103T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/1
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ccdb78724773ab6c1092766e77a4b28eb24f3179fa5bcf1d07faa6b4d48cb
+ e6f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270110T080000Z
+DTEND:20270110T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/1
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1d6e397180732805942b81cca2efa4ca619d9e9a0da6ffbe4c4eafb74cec8
+ 3a6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270117T080000Z
+DTEND:20270117T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/1
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0f0f5960371f68ea1b1c627ff48a2b746702e0f14a2cb54c16cb81a83f0fd
+ 91f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270124T080000Z
+DTEND:20270124T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/1
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1e4f2139943142ca17ad058e2320ddcdd6602025f3682e6a014891061ff78
+ a98@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270131T080000Z
+DTEND:20270131T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/1
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6e1577472e0bdad3666234af74eb50c5473bf0ea418d2eb758edf126cb2cd
+ 917@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270207T080000Z
+DTEND:20270207T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/2
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-72369fb3fe607316651c7feaa89ebd5f3ee23af3c872446241ac930e4b6fa
+ d75@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270214T080000Z
+DTEND:20270214T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/2
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0f1c6ea806cdcf77feef95907bf9b68964bbba99f0acb4f16ebef2780b6b0
+ cd4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270221T080000Z
+DTEND:20270221T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/2
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4b3a1e9169d98fd6625ff26d61dc4c34b01cc96060f73d6ac298eb666860a
+ e51@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270228T080000Z
+DTEND:20270228T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/2
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-13c31ac9e725813fbad42a1609e7f07215cac07f9fa76027ea313262b86ae
+ 44c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270307T080000Z
+DTEND:20270307T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/3
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f971807b7323c71787e80a798b0e657a728edd8d226dfd9170faebba38544
+ 57c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270314T080000Z
+DTEND:20270314T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/3
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-bb6ca312bc86d795bd434044ff26c6b628dd29e46b05dcd5bea3876e4f989
+ 1a4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270321T080000Z
+DTEND:20270321T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/3
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fa55490c98993bd9e5f4e44815b2b21c68e93455af8463c255536ad7e2b46
+ 1f1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270328T080000Z
+DTEND:20270328T083000Z
+SUMMARY:超ときめき♡宣伝部の超ときめくときを。
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 カレンダーの旧記事IDをシリーズIDとし、
+ 時刻は更新記事1082866を採用。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1082866\nhttps://toki-sen.com/vertic
+ al_calendar/2027/3
+LOCATION:TBSラジオ
+URL:https://toki-sen.com/contents/1082866
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-433b77b6dab03dbd8d29b67791dccbda98973d34e288cb072110947d9d31c
+ d79@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T103000Z
+SUMMARY:MTV VMAJ 2026
+DESCRIPTION:本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1123728
+LOCATION:MTV・TELASA
+URL:https://toki-sen.com/contents/1123728
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-91b9a3437ec48e9a1b11632690ccb266b17ceb22a4b026d128aea71ce3ba7
+ 678@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261114T160000Z
+DTEND:20261114T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/508342
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d6d5ed87c8af681d55281a032a3c37a8c1d917fae750c2fe0b0ce7b6e60f6
+ 601@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261121T160000Z
+DTEND:20261121T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/508342
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-83a24af6d83859f509a1752e92f9e59b7c29f62fe0bb934fa06b49c1ea212
+ fb5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261128T160000Z
+DTEND:20261128T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/508342
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e68abca911e4b52b2bf809a4e14b7de31cffe476e2d739cf35551c32266a6
+ 62f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261205T160000Z
+DTEND:20261205T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/508342
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c606847db9893133b897a7293dda5a9702b9da4c1b0f52d5d0e72559df233
+ a39@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261212T160000Z
+DTEND:20261212T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/508342
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9856237976faa94f3a31ef6217d30c4c3e31d0f8eac2c1bfd56dcf96d45c9
+ 544@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T160000Z
+DTEND:20261219T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/508342
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b5f4120a5896f8ede08899e3c7e52224ec5b6798e7254f3474a7a83da8503
+ 66b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261226T160000Z
+DTEND:20261226T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/508342
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5732bf05c880cb7c3f67438bf95a9eb2a4468d59131d0145bc18ed043192e
+ 084@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270102T160000Z
+DTEND:20270102T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/1
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c4c8104e9e48fd9213620edab6573e5ac27579ffcaefbbea65063e1858580
+ 0b9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270109T160000Z
+DTEND:20270109T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/1
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-22534b426f6260c97500f4a82f946656505d586ba79cba08115c59b39074c
+ 5f6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270116T160000Z
+DTEND:20270116T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/1
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c3ce8a2800d9b1460f10927df622863aadf2d08a4d291576c6789ad5ed233
+ e2e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270123T160000Z
+DTEND:20270123T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/1
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b9dcdbc8d56b0d0e1ee2ce35fbab07c945bd66355a1b24cc1da6ab6596d9a
+ 96d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270130T160000Z
+DTEND:20270130T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/1
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-90256df21a2ad2383b20760babe96f55af794abbb5ecc400659658092d625
+ 26d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270206T160000Z
+DTEND:20270206T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/2
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2b40dec96d59dce88b0f4f6536912521021f338e0064a4c8256f21902439c
+ 22e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270213T160000Z
+DTEND:20270213T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/2
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-db7c5c7b59b839a6f6960ff0d09aceaa6f2f2b4e5d84851dd660ae28b035f
+ d31@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270220T160000Z
+DTEND:20270220T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/2
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7993304c828eb8ffc2b2466dcb0207b2b24a21f5664394b682beb4adba99f
+ 965@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270227T160000Z
+DTEND:20270227T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/2
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6fe0e077299286ab6ebe986c5da6ac5d2c11d8a32779236e9c10f760926bd
+ 602@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270306T160000Z
+DTEND:20270306T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/3
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c9bef26eb357783a214de5bc4cc880b6a74da67e54346d6665b086afaf0c2
+ 1ea@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270313T160000Z
+DTEND:20270313T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/3
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-eb44e1405ef0c201a555b908e6a0b524a1fc0fb9b4cbb95f8a92cc57bc26d
+ ddd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270320T160000Z
+DTEND:20270320T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/3
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4910202d69818737ba038519b7cb9e0839d18ad6f22e122eaafeee242abd1
+ bdf@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270327T160000Z
+DTEND:20270327T163000Z
+SUMMARY:晴れときどき超ときめき♡宣伝部
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。 25時を翌日01時へ正規化。\n本人側の公式
+ 発表で確認。\nhttps://toki-sen.com/contents/508342\nhttps://toki-sen
+ .com/vertical_calendar/2027/3
+LOCATION:ラジオ日本
+URL:https://toki-sen.com/contents/508342
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b13a82e725fcf0a500730a035b552e4f38467ebb7d07142de552aad328cbd
+ 72e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/740481
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2611c9cd9a2feb2bb27eb5ad4a338c33aa38314eb331f1c4849bf1e561add
+ 5b7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261120T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/740481
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9ed6f035b05457df743c94078949233fff3aeea8255eb72fc9fc4a5aa6e8d
+ 54d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261127T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/740481
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-220bdcd0d16dd52de55c73be5900792167f72b8aa5f5f60d87dda4ab574c6
+ 3a6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261204T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/740481
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-71000d0755be60da5ed01114a10e86cbb221b0f107b0de4a9444402bd2e55
+ f3d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261211T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/740481
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5d2bdc2dad9d02c3c1f94b10e8cadc51a0807c6e951ece6c62d103f60a42f
+ f62@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261218T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/740481
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-664bad307cb532203810b92e86659162bf20ea76a10330d8ea48daa8f8342
+ 2cd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261225T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/740481
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d6631f5db184852151a8cef718c1300344d3a9d9f820cd2fa16f76b11c40c
+ 0a1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270101T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9cc408006d2e7c7221a8cdbd1931ff246a9d83e0b58f40e04b23fd5a8b711
+ 00f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270108T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-bba071f817293668028e9708ec0416c60b2633e197c50bf25868cb61b70f2
+ 4b1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270115T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b46bae0e894e490c2278f7567afb213e21a466fff209760e381b81d62829c
+ a62@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270122T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-245369d22a51366fa5f453fbc2fc776777c29af09f8d510c5e7db762219f6
+ 500@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270129T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3519ac7b30c34300fc288e994be9cb5cb79e759f34ca9e273b9a464439c50
+ 88f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270205T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-045a93679dcc9eb48f44bc6a2a882bae30d5fe46f5406cc7142bdc4021172
+ 4d5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270212T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-95f01c134775e9453c1e88a1d6d2e5d4ec4c883bd497048655204caed25bb
+ 054@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270219T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1b5e3df8888d115ba11d123022028fb91892b7b48b172f2e6b73af5b9f216
+ 68a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270226T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-49ae2f8ce92ab6e14e28d23ca0e7c0870b788f4aaa7f560a40136ed7269b5
+ 039@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270305T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-044447baa89b0d0adf3c23bf3640a886780918776bb7ee35f1de997d10c70
+ 6cf@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270312T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0c6c80ba138567d67f687db049d40e1789dfc34ec5e79e23f88a020a8ce9b
+ 800@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270319T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6dcdb06490871b0e811440de3039f8828bb884b5c45c2b686f85372de454e
+ c65@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270326T080000Z
+SUMMARY:ときめき♡プレシャス
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/740481\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:テレ朝動画logirl
+URL:https://toki-sen.com/contents/740481
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4d840a2f165f44b584a87e97c7844c7cd95d6067e2aab9d05391b6f73b548
+ 2c0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+DTEND:20261116T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/896345
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a3c7dc7f820c280cf93b12cc48bbc8367cbeb39f63064d3a67502b9c69d3e
+ b54@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+DTEND:20261123T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/896345
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-06420d56e912b352e4374cca264e9c71f39b050c3136451ce55e8c56b2a1b
+ 908@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+DTEND:20261130T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/896345
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d7d9090377e000f5efaf01f85e4224e2a6430c42e59bc724f57c83cd32473
+ 4b9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+DTEND:20261207T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/896345
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6d43bbb6753b1b5102858dbf952dd3d6085a4ba424c4a94f906bfcccc19d5
+ cb5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+DTEND:20261214T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/896345
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3b29cbd7b89b09903708bde2daef5c2fc86f2e189e0dbc386de04ce9de21a
+ bec@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+DTEND:20261221T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/896345
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c5cef69d025976294ff13a1cc17c8ada31f05209ecc03d509e525d74d67ce
+ c4c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261228T110000Z
+DTEND:20261228T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/896345
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cf68df82a7ede2cf4ee35b92f3464378701189b2db076e7d3ea7c956189fa
+ ebc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+DTEND:20270104T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-010c582a7590f9a2284d6e846fa7ed5b7419b9b0b019bc86fa3aa353bb53e
+ 100@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+DTEND:20270111T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-440039750f5199b9156192306999d2900ddc2f1f5b489c1f3a431deac70f5
+ 6f6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+DTEND:20270118T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dcd694bba48984b4f8caa9552335afb7174f4a205eba8dc6fc9d673ba91ff
+ 172@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270125T110000Z
+DTEND:20270125T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-835a22b296c881a5fdb8ffa7f38f44f15fb139eadd9f580c8e8a4bf51081a
+ fcd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+DTEND:20270201T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fe0a4ed9927af3346e67b37680e01e1319cd051753bac1360a7be550ca7fa
+ f04@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270208T110000Z
+DTEND:20270208T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-012bf87111308e1a561036a420ca3f093870b5af5c6f4b95f13c3f5fc7b8b
+ 87a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270215T110000Z
+DTEND:20270215T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b2a8b974fb701e6564dce46048966db602dc9e9e0f925e549a146efe0f8d2
+ 388@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270222T110000Z
+DTEND:20270222T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f3f28eb22ca2a4c24cc6001c6e4ae000339675ce5d8c9f6c21c192e802aaa
+ 9ab@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270301T110000Z
+DTEND:20270301T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f753aede4e1fa4c27accecb37c8ca025c472bc1123968cd31fde8f275995a
+ e52@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270308T110000Z
+DTEND:20270308T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f3ccf61f146c414a25399c9760407f99ae80a7979c7642e2bb41fb508fc27
+ 24e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270315T110000Z
+DTEND:20270315T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-06bbf9bc2201dc3385dff162731842cf72fc5e82a3723a68808123b2b39d3
+ 025@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270322T110000Z
+DTEND:20270322T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fcaab525680871dea819df1ed000ffdc5da2fc94412ffc369596e836a9bf5
+ 337@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270329T110000Z
+DTEND:20270329T115600Z
+SUMMARY:吉川ひよりの超♡まっ茶りタイム！
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/896345\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM FUJI
+URL:https://toki-sen.com/contents/896345
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f3decd3d37347cf285a995a077e12393f9158822e7471ed6cb586729e8764
+ 42c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261114T003000Z
+DTEND:20261114T005500Z
+SUMMARY:“推したい夢” 超ときめき♡宣伝部のめっちゃわ
+ かりみ〜!!
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/928205
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-99b1602b59cbcc10d2e98fd29b9aff2656806d7868b35f6622c5730c86c7b
+ dfe@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261121T003000Z
+DTEND:20261121T005500Z
+SUMMARY:“推したい夢” 超ときめき♡宣伝部のめっちゃわ
+ かりみ〜!!
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/928205
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-19a74d30f8723954ca0e4926bace5f4d244e00a3fb60be1b72e2b23433996
+ 154@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261128T003000Z
+DTEND:20261128T005500Z
+SUMMARY:“推したい夢” 超ときめき♡宣伝部のめっちゃわ
+ かりみ〜!!
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/928205
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e123a2c287c746a29cbdcfc4a384b7dbcce78c38758cd89ea0926bf4d60f4
+ 9ae@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261205T003000Z
+DTEND:20261205T005500Z
+SUMMARY:“推したい夢” 超ときめき♡宣伝部のめっちゃわ
+ かりみ〜!!
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/928205
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7f0bc51c7a1ed279e9b83c117774c598b1c17254775d86ad6fab878ee6466
+ d22@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261212T003000Z
+DTEND:20261212T005500Z
+SUMMARY:“推したい夢” 超ときめき♡宣伝部のめっちゃわ
+ かりみ〜!!
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/928205
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ee19f47ab080d7037855cf19b2fdd7702ff0646b7610f8fb691feb8567c5a
+ c3b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T003000Z
+DTEND:20261219T005500Z
+SUMMARY:“推したい夢” 超ときめき♡宣伝部のめっちゃわ
+ かりみ〜!!
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/928205
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5efbfbbf4af56853129f55f168b3651441b9422ad39b19d644d0421987192
+ ff9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261226T003000Z
+DTEND:20261226T005500Z
+SUMMARY:“推したい夢” 超ときめき♡宣伝部のめっちゃわ
+ かりみ〜!!
+DESCRIPTION:公式カレンダーに掲載された日付。休止・時間
+ 変更は発表元を確認。\n本人側の公式発表で確認。\nhttp
+ s://toki-sen.com/contents/928205
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d1c2514e9296284e7b35c22a625e08309e7ef92f30538271706076a9f495f
+ ee9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270102T003000Z
+DTEND:20270102T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2d010a7a773bacd36748a18ae97f50b2c47f919991bca720206a9ede8572f
+ 7fc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270109T003000Z
+DTEND:20270109T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f5122fa7f6f6d39c668f6d66c546721a6217672b378110685ba18132590d4
+ 864@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270116T003000Z
+DTEND:20270116T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f2dac574ce2b8ae127cd055fb1152b5a10c42975d882796a0a78821358fcf
+ 26c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270123T003000Z
+DTEND:20270123T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9d7809835fc52c66f062bcc6f5375c01399094d7a6cca7be3bdeab089a94a
+ 859@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270130T003000Z
+DTEND:20270130T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/1
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dd5efff955d1c7c2919688f7a62f7b27d76f934db6f1343c0e0eb79cb0176
+ 90c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270206T003000Z
+DTEND:20270206T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9436011919d925f78b4f414dbc451ef3fd6e987b5fb02c482a354116a0a18
+ 5e7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270213T003000Z
+DTEND:20270213T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-49a76f8532f71283df18550da20fdff24954ff15659a432476ae7aa1bd666
+ 0d6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270220T003000Z
+DTEND:20270220T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cb4659086b6981d41f2a832658b2caa843168f99e62d1ae06f85821d9322b
+ 308@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270227T003000Z
+DTEND:20270227T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/2
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b4f8992c05fa118fba23c65f6136a8b2ab5cac9e9be395177e14e35e1b890
+ 240@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270306T003000Z
+DTEND:20270306T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-55ca8f0663324fddf0f621fe28630e368aa259ff5465af08f51feaf7c317b
+ 5bc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270313T003000Z
+DTEND:20270313T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8322b747336d6cc76d5a16d035a2aefab9ee7b3fce5eb9b0ee703b16b2b04
+ 07e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270320T003000Z
+DTEND:20270320T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b23f12e1c77605c28b1004c588e592fbfadaedfe3add6f623591cd8498705
+ 42b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270327T003000Z
+DTEND:20270327T005500Z
+SUMMARY:超ときめき♡宣伝部のめっちゃわかりみ〜!!
+DESCRIPTION: 時刻は本人公式の番組案内。将来の変更・休
+ 止は未反映。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/928205\nhttps://toki-sen.com/vertical_calendar/2027/3
+LOCATION:FM大阪
+URL:https://toki-sen.com/contents/928205
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a0c1d92a1f467c1dd10a9580541c41b1e0e63b6a72c130e884b242349cb5b
+ d26@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270124T070000Z
+SUMMARY:超ときめき♡STAGE 2027 あけおめ新年会フォーエバ
+ ー
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1123727
+LOCATION:横浜アリーナ
+URL:https://toki-sen.com/contents/1123727
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-548f2109f0021600f24d99e3d7ba85ceeae765adb06c5b49a7b1dbddaadd0
+ c4b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261116T145900Z
+SUMMARY:超ときめき♡STAGE 2027 あけおめ新年会フォーエバ
+ ー 応募締切
+DESCRIPTION:対象公演：超ときめき♡STAGE 2027 あけおめ新年
+ 会フォーエバー。FC会員先行。購入・当選を保証しませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1123727
+LOCATION:
+URL:https://toki-sen.com/contents/1123727
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2909ee9e99a684ff220f18cfdd0aa7dacc30888ac71f5473796978cc9ea2f
+ b4c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270104T145900Z
+SUMMARY:FC年賀状 後期登録情報確認期限
+DESCRIPTION: 後期対象者向け。\n本人側の公式発表で確認。
+ \nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0462c484514ab0990525daacd664fccc580a0812f6f6455738403c54ad77b
+ 4b7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261211T145900Z
+SUMMARY:FC年賀状 初回対象判定・登録情報確認期限
+DESCRIPTION: この時点で有料会員なら1/1到着予定。\n本人側
+ の公式発表で確認。\nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a5d742e9e29a3509980fd7f2efc502abc35b2a65b38a2cae83a307cc7ccd9
+ 728@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261231T145900Z
+SUMMARY:FC年賀状 後期対象判定期限
+DESCRIPTION: 12/12以降の入会者。1/13発送予定。\n本人側の公
+ 式発表で確認。\nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6f8aec5bd6202f26dcf0b92cde4b016e842e9efd5860596b7b8953a5d65b3
+ 9d4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270207
+SUMMARY:FC年賀状 未着問い合わせ期限（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 1/27を過ぎても未着の場合。時刻は未掲載。\n本人
+ 側の公式発表で確認。\nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a1a4cd27f268a54c6540cff976fc2a02a79fcd1ae66c5e1875e66296f8898
+ 324@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+DTEND:20261112T113000Z
+SUMMARY:ときめけみらい オンラインお話し会 1部
+DESCRIPTION:参加条件：対象メンバー盤2枚。確認した販売
+ 期間は11/1に終了。追加販売の有無は公式で確認。\n本
+ 人側の公式発表で確認。\nhttps://toki-sen.com/contents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2196d16f397970855bf3c86233caeac495b9fa0a44ced9242ef280c1d8b61
+ cdf@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261112T115000Z
+DTEND:20261112T130000Z
+SUMMARY:ときめけみらい オンラインお話し会 2部
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚。確
+ 認した販売期間は11/1に終了。追加販売の有無は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e9de0df6145e39a1fbb3a022d82176037b6587e1bddc7a304e660ed8dcf75
+ 0c0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+DTEND:20261217T113000Z
+SUMMARY:ときめけみらい オンラインお話し会 1部
+DESCRIPTION:参加条件：対象メンバー盤2枚。確認した販売
+ 期間は11/1に終了。追加販売の有無は公式で確認。\n本
+ 人側の公式発表で確認。\nhttps://toki-sen.com/contents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7d4c778cbf9aa53fb79a5f33ebb5e1fa9e6f61000ca1f48d43320ae5bc6bd
+ 707@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261217T115000Z
+DTEND:20261217T130000Z
+SUMMARY:ときめけみらい オンラインお話し会 2部
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚。確
+ 認した販売期間は11/1に終了。追加販売の有無は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-91db7200d7512193fcc97bfd0a46224d33bf9df3de3b7414413da63ebc4ec
+ d6d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270114T090000Z
+SUMMARY:オーケストラ超最強説!! 2027
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1116928
+LOCATION:NHKホール
+URL:https://toki-sen.com/contents/1116928
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5fa39cd178b84f0922f515cd1d3ae9ceee444afc77806e608cca738c50b5e
+ f91@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270209T090000Z
+SUMMARY:オーケストラ超最強説!! 2027
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1116928
+LOCATION:グランキューブ大阪 メインホール
+URL:https://toki-sen.com/contents/1116928
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e8bf867c597ecf0eccf528d94293156bf35fdf407db48d6d7e19bd0b448ab
+ b8c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261127T145900Z
+SUMMARY:楽天Music お見送り会抽選キャンペーン締切
+DESCRIPTION:対象プラン・お気に入り登録・アプリで対象曲
+ 合計1000回以上。抽選30人。 \n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1123557
+LOCATION:
+URL:https://toki-sen.com/contents/1123557
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cc31f1a9e3b2115ca58f3514075a7bfa92279acd16e79eb034daf4b7c5762
+ 2d3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261204T145900Z
+SUMMARY:楽天Music お気に入り登録の継続期限
+DESCRIPTION: 応募期間終了後もこの時刻まで登録継続が条
+ 件。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1123557
+LOCATION:
+URL:https://toki-sen.com/contents/1123557
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e84935f259724b0d5095b74aa947fb07d299556d447330f23e0c9461cabcd
+ 157@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261219
+SUMMARY:楽天Music当選者向け お見送り会（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n当選者本人のみ。 既存の同日CD予約特典会との同一
+ 会場・同一部を確認できず。時間や大手町会場を推定
+ で補わない。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/1123557
+LOCATION:東京某所、当選者のみ案内
+URL:https://toki-sen.com/contents/1123557
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8ea81a739cde7868deb7d40ce2d60e2cdfc8fb9f63bcfdaaf948c150a10d6
+ e5a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:11/29 特典会 先着販売締切
+DESCRIPTION:2026-11-29開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2ed0fb6e0a4abc02fe255ddb2ae04728eac3245f34e4ec9ec1d35232bed1e
+ ed6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:11/29 特典会 先着販売開始
+DESCRIPTION:2026-11-29開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d698c9e545f32955d93038eeb06326cbbb6992b9a583c5591dc8c7b51b21e
+ 956@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:11/29 特典会 入金後抽選販売締切
+DESCRIPTION:2026-11-29開催分の2・5部。枠数・在庫は未確認。
+ 終了日時は受付の締切で、開催日時ではありません。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5c2e01e7c991ae7c9e698a1cb14c23e6d51362cd11dd85de00d523ce72024
+ 884@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T030000Z
+DTEND:20261129T040000Z
+SUMMARY:ときめけみらい 特典会 1部・撮影・お見送り
+DESCRIPTION:参加条件：各メンバー盤各1枚、計5枚。申込み
+ ・購入だけで参加確定とは限りません。詳細は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-56d8600b44309fd3522c29812047f91fada1287f0384dbde8dfc16ce9a8b2
+ b08@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T044000Z
+DTEND:20261129T052000Z
+SUMMARY:ときめけみらい 特典会 2部・冬まつり
+DESCRIPTION:参加条件：集合盤1枚で抽選1口。入金後抽選。
+ 申込み・購入だけで参加確定とは限りません。詳細は
+ 公式で確認。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-074f5bcb85dc88ac81aab6248f733913ddb438586977288c70611589c940e
+ f17@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T062000Z
+DTEND:20261129T075000Z
+SUMMARY:ときめけみらい 特典会 3部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-bba99acd74f1b4f2acd10d5dacb02223130462f3a8c56d30308d2998a1f89
+ 322@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T082000Z
+DTEND:20261129T095000Z
+SUMMARY:ときめけみらい 特典会 4部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21dd14bc021bdb088bfa662959e87e58d9bc9b78ac624491d2d562696cb4d
+ 813@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T103000Z
+DTEND:20261129T111500Z
+SUMMARY:ときめけみらい 特典会 5部・ツーショットチェキ
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚で抽
+ 選1口。入金後抽選。申込み・購入だけで参加確定とは
+ 限りません。詳細は公式で確認。\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1124407\nhttps://toki-sen.com/con
+ tents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ba152d62205a0e45a74da817e473538b1447c4a94de8253f7f51c3d939d09
+ d91@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261117
+SUMMARY:11/29 特典会 2・5部 抽選結果予定（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n当選者のみ通知予定。発表時刻は未定。\n本人側の
+ 公式発表で確認。\nhttps://toki-sen.com/contents/1124407\nhttps://t
+ oki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f38420874acd3a7a8dcc7c323ca83e09853c569e29cacefa88350dcab1d3d
+ 9a1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261202T145900Z
+SUMMARY:12/19 特典会 先着販売締切
+DESCRIPTION:2026-12-19開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-665099168288cdbbe700228cdadb12061555ba76bb61c6bdfad25d7971283
+ 542@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:12/19 特典会 先着販売開始
+DESCRIPTION:2026-12-19開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dcfe4baab2d80b6393bb6740ca5dc5db6a4d295e310a36afb6142131d3db7
+ c7e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261202T145900Z
+SUMMARY:12/19 特典会 入金後抽選販売締切
+DESCRIPTION:2026-12-19開催分の2・5部。枠数・在庫は未確認。
+ 終了日時は受付の締切で、開催日時ではありません。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-61701d7649b31810ab487bcd3f74a98d2056e9429f311a8c9048759ac0d65
+ 815@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T030000Z
+DTEND:20261219T040000Z
+SUMMARY:ときめけみらい 特典会 1部・撮影・お見送り
+DESCRIPTION:参加条件：各メンバー盤各1枚、計5枚。申込み
+ ・購入だけで参加確定とは限りません。詳細は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-434d97cec5433fce48f6cbf97bc8cd59294bc628286bd728c1921c5b63612
+ be0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T044000Z
+DTEND:20261219T052000Z
+SUMMARY:ときめけみらい 特典会 2部・冬まつり
+DESCRIPTION:参加条件：集合盤1枚で抽選1口。入金後抽選。
+ 申込み・購入だけで参加確定とは限りません。詳細は
+ 公式で確認。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e97e0c2642c5456f2ee9f2aa2c08ad11f2f4790591c0a28c9eb2d5bf39013
+ 461@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T062000Z
+DTEND:20261219T075000Z
+SUMMARY:ときめけみらい 特典会 3部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-89b2300b3cfec6460c97ba5e8c3247dac0f86d38ae2600e3eb19a58aab1ab
+ 38b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T082000Z
+DTEND:20261219T095000Z
+SUMMARY:ときめけみらい 特典会 4部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7ea7825788914e8de6f66ebad009fddab733a941c7a09655fc9eadfeb46f5
+ 677@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T103000Z
+DTEND:20261219T111500Z
+SUMMARY:ときめけみらい 特典会 5部・ツーショットチェキ
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚で抽
+ 選1口。入金後抽選。申込み・購入だけで参加確定とは
+ 限りません。詳細は公式で確認。\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1124407\nhttps://toki-sen.com/con
+ tents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-db1d9c644e03ce2fefbb328d827b4a1c0ff0755eee74ff8e0b4a44f16759d
+ 1a5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+SUMMARY:12/19 特典会 2・5部 抽選結果予定（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n当選者のみ通知予定。発表時刻は未定。\n本人側の
+ 公式発表で確認。\nhttps://toki-sen.com/contents/1124407\nhttps://t
+ oki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-67d492c9fb038133595c1f28a28ebf09451d731124ba018df0e8a1d4e971b
+ 9ac@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270110T070000Z
+SUMMARY:LIVE SDD 2027
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1122451
+LOCATION:大阪城ホール
+URL:https://toki-sen.com/contents/1122451
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-efff5470385fd6ddc90871a8f4bfa48189b67f150b5687497e7c73ec567b8
+ e8d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:LIVE SDD 2027 第2回応募 締切（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e1d16d54b8bec434b3d434b8c57ee64eb535eeef6de49b481a967d863ffd7
+ 466@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+SUMMARY:LIVE SDD 2027 第2回応募 結果予定（かも？）（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n発表時刻未定。\n外部発表による候補。本人側の一
+ 致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_2027/index.h
+ tml
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c6bac008f877986bad8416351709e9c12943b0984eab6379941ca1a910ad1
+ 6df@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T030000Z
+SUMMARY:LIVE SDD 2027 第2回応募 開始（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-50c9583b213662e9b48c782908d4eae2c7515520f5bbdc7e92fbebc2d68ab
+ 251@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261122T145900Z
+SUMMARY:LIVE SDD 2027 第3回応募 締切（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0f804c9c616a7218a7c3897f25f3a8cf8fa52c337ac8a70e38d087c6398b4
+ ee4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+SUMMARY:LIVE SDD 2027 第3回応募 結果予定（かも？）（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n発表時刻未定。\n外部発表による候補。本人側の一
+ 致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_2027/index.h
+ tml
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ccbe235217b738cd32f6d5aaf4807fcd3e3ac463e684b342d5ad8cf860ba3
+ b8d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261118T030000Z
+SUMMARY:LIVE SDD 2027 第3回応募 開始（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-29e71ea2bb1fa58e8c464c62549f12c3865b0e10a9bce03d8b824bb5fa81c
+ 82b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261130T145900Z
+SUMMARY:LIVE SDD 2027 第4回応募 締切（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3d381622616644ce17f0ee0579b9e8d08802a84a2ebb4734abcbe4c6ffd61
+ 29d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261203
+SUMMARY:LIVE SDD 2027 第4回応募 結果予定（かも？）（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n発表時刻未定。\n外部発表による候補。本人側の一
+ 致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_2027/index.h
+ tml
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fda225e234fe7016bbdd04728dbd6b08b00d756ba7bf7a4687736baf1225b
+ 974@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261126T030000Z
+SUMMARY:LIVE SDD 2027 第4回応募 開始（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e3661da683f5485374e62dd9a5d713c3c23327886a4314637e513a7b32371
+ 7d0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T145900Z
+SUMMARY:LIVE SDD コアメッセンジャー当落確認期間 締切（か
+ も？）
+DESCRIPTION: 応募は11/8終了。一般応募第1回と別枠。\n外部
+ 発表による候補。本人側の一致確認が必要です。\nhttps:
+ //fmosaka.net/sdd/article/202611_01.html
+LOCATION:
+URL:https://fmosaka.net/sdd/article/202611_01.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-83ad6e69c46de6bc20fd8511b9cc60ba925a1afa04a4aaa3eb76c9c34a071
+ 3df@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T030000Z
+SUMMARY:LIVE SDD コアメッセンジャー当落確認期間 開始（か
+ も？）
+DESCRIPTION: 応募は11/8終了。一般応募第1回と別枠。\n外部
+ 発表による候補。本人側の一致確認が必要です。\nhttps:
+ //fmosaka.net/sdd/article/202611_01.html
+LOCATION:
+URL:https://fmosaka.net/sdd/article/202611_01.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a790335dff32e2e85e61493f351d99ea03a094f46ddc96d51617e7bbf03f3
+ 155@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+SUMMARY:LIVE SDD 第1回応募の当落発表（かも？）（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 第1回応募は11/8終了。発表日は主催者掲載。\n外部
+ 発表による候補。本人側の一致確認が必要です。\nhttps:
+ //fmosaka.net/sdd/live_sdd_2027/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d68a3060770b4610d5aebcabc8c2e0bb37172183a4fd8577e73f73740677d
+ f6a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270331
+SUMMARY:アルバム記念スタンプラリー 押印期限（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象CDを10店舗で購入して10種類の押印。4/1新アルバ
+ ムは押印対象外。 時刻記載なし。ステッカー引換であ
+ り対面特典会ではない。\n本人側の公式発表で確認。\nh
+ ttps://toki-sen.com/contents/1116137
+LOCATION:
+URL:https://toki-sen.com/contents/1116137
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2993bc24a2e79fb2ba7c9224f52e95d15b2c2929de47f70f44215902dbe85
+ 88e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261127T145900Z
+SUMMARY:いい推しの日 TikTok企画 投稿期限
+DESCRIPTION:指定音源・ハッシュタグ・公式アカウントへの
+ メンション。 メッセージ動画や画像が景品。対面特典
+ 会ではない。記事の11/4曜日に不整合あり、年月日を採
+ 用。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1123559
+LOCATION:
+URL:https://toki-sen.com/contents/1123559
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-62e99bb11de8b8e93cb65bf1b77433f1faec59f9fd85f698af6a013f9ee8e
+ 98d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261114T080000Z
+SUMMARY:きみのハートにロックオンTOUR 2026 追加公演
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1106084
+LOCATION:iichikoグランシアタ
+URL:https://toki-sen.com/contents/1106084
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6b9bd3f3aeaa4751d80eae1a07d5298fb1f8fdd831c910f40394f97e01504
+ 53a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261114T030000Z
+SUMMARY:物販整理券 受付締切
+DESCRIPTION:先行・開場中は当日公演券必須。整理券1人1枚
+ 。開演後は公演券なしでも購入可\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1125051?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125051?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9efff43103571e838fe4bc8b8c00415da3f8606f21b1a09663923f1c14ce4
+ a15@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T020000Z
+SUMMARY:物販整理券 受付開始
+DESCRIPTION:先行・開場中は当日公演券必須。整理券1人1枚
+ 。開演後は公演券なしでも購入可\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1125051?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125051?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-501ce7e97ac79d5be7ea2e09597cb0b1e3a89e02b0490e37dcab505d95239
+ 3c5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261114T040000Z
+SUMMARY:会場CD販売・予約特典
+DESCRIPTION:CDの購入・予約に付く特典物の案内です。対面
+ 特典会ではありません。配布数・在庫は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112561
+ 4?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125614?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fedcc2b644aef1f68a7c862bd81d18b349b30590a4032d25ee699671ccb0e
+ 6b7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270331T060000Z
+SUMMARY:会場予約CD 店舗受取開始
+DESCRIPTION:対象会場で店頭受取を選んで予約した方のみ。
+ \n本人側の公式発表で確認。\nhttps://toki-sen.com/contents/1125
+ 614?tag=all
+LOCATION:フタバ図書 イオンモール福岡店
+URL:https://toki-sen.com/contents/1125614?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1d9b689c7cf95e28d1941242773f9f837b6b09fee721a12fc53da37291adb
+ 071@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T100000Z
+SUMMARY:超♡わかりみ～てぃんぐ!! Vol.3
+DESCRIPTION:終了時刻は未発表。\n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1101208
+LOCATION:Zepp Osaka Bayside
+URL:https://toki-sen.com/contents/1101208
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1f7c922937aeadabe9aeef172fd7a11adc0bb8d0e458c2a819aa6f250e7e8
+ 907@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T070000Z
+DTEND:20261113T083000Z
+SUMMARY:会場CD販売・予約特典
+DESCRIPTION:CDの購入・予約に付く特典物の案内です。対面
+ 特典会ではありません。配布数・在庫は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112561
+ 6?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125616?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

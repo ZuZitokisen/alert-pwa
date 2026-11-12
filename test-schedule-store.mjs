@@ -6,7 +6,7 @@ import vm from 'node:vm';
 // Everything is local: fetch is a fixture, storage is a Map, and no browser,
 // permission, notification, external upload or real network request is used.
 const script = fs.readFileSync(new URL('./schedule-store.js', import.meta.url), 'utf8');
-const KEY = 'alert-pwa-curated-calendar-v1';
+const KEY = 'alert-pwa-curated-calendar-v2';
 const copy = value => JSON.parse(JSON.stringify(value));
 const checkedAt = '2026-11-11T08:30:00Z';
 function event(overrides = {}) {
@@ -73,10 +73,10 @@ test('every state request fetches only same-origin JSON with no-cache and redire
   const app = context(); await app.get(); await app.get();
   assert.equal(app.calls.length, 2);
   for (const [url, options] of app.calls) {
-    assert.equal(url, './schedule-data.json');
+    assert.equal(url, './schedule-data-v2.json');
     assert.deepEqual(options, { cache: 'no-cache', mode: 'same-origin', credentials: 'same-origin', redirect: 'error' });
   }
-  assert.deepEqual(app.reads, [KEY]); assert.deepEqual(app.writes, [KEY, KEY]);
+  assert.deepEqual(app.reads, [KEY, 'alert-pwa-curated-calendar-v1']); assert.deepEqual(app.writes, [KEY, KEY]);
 });
 
 test('same payload, version-only updates, and provenance check timestamps are quiet', async () => {
@@ -285,7 +285,7 @@ test('demo cache is never read, migrated, deleted or rewritten', async () => {
   const demo = JSON.stringify({ version: 1, events: [{ title: '架空デモ' }], changes: [] });
   const saved = new Map([['alert-pwa-static-v2', demo], ['alert-pwa-static-v1', demo]]);
   const app = context({ saved }); const { state } = await app.get();
-  assert.deepEqual(app.reads, [KEY]); assert.equal(saved.get('alert-pwa-static-v2'), demo); assert.equal(saved.get('alert-pwa-static-v1'), demo);
+  assert.deepEqual(app.reads, [KEY, 'alert-pwa-curated-calendar-v1']); assert.equal(saved.get('alert-pwa-static-v2'), demo); assert.equal(saved.get('alert-pwa-static-v1'), demo);
   assert.equal(state.events[0].title, event().title); assert.deepEqual(state.changes, []);
 });
 
@@ -403,7 +403,7 @@ test('history is bounded without resetting IDs or revisions, including after rel
 });
 
 test('checked-in real schedule snapshot passes the actual production validator', async () => {
-  const data = JSON.parse(fs.readFileSync(new URL('./schedule-data.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(fs.readFileSync(new URL('./schedule-data-v2.json', import.meta.url), 'utf8'));
   const app = context(); const { ok, state } = await app.get(data);
   assert.equal(ok, true, state.sources[0].error || 'snapshot rejected'); assert.equal(state.events.length, data.events.length);
   assert.deepEqual(state.changes, []); assert.equal(state.events.every(item => item.source === 'curated-calendar'), true);

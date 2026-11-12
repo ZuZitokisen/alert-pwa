@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-11-v1",
-  "dataGeneratedAt": "2026-11-11T09:32:46.032709Z",
-  "inputSha256": "6db6a7013a9df59559a70d6952a36e3498038a9f71db153f0587342e99c3bae5",
+  "dataVersion": "2026-11-12-v3-straightangeli",
+  "dataGeneratedAt": "2026-11-12T04:28:17Z",
+  "inputSha256": "2aebad745ad029ee8abd3055ef2168db1b8c252af75326c975e99b03ef24b79b",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1626,6 +1626,529 @@
       "memberships": [
         "re-ge-all",
         "re-ge-live"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1214-live\"]",
+      "uid": "public-v1-6f2aac1c91567974539fe080824c3764fab22bfa1494ef2c402edc41f7943607@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1214-live",
+        "category": "live",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー 仙台",
+        "start": "2026-12-12",
+        "end": null,
+        "allDay": false,
+        "location": "仙台駅前イービーンズ 10階屋上ステージ",
+        "publicNote": "時刻・特典会等の詳細は後日発表。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/schedule/item-1214/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-12-12",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-live"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1278-benefit\"]",
+      "uid": "public-v1-e16f69cd5a99a1a21fb8a46ba30be61bd6b24345fb277c0c5c4fdb70abab648a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1278-benefit",
+        "category": "benefit",
+        "title": "DOLLttoFes2026 Straight Angeli 特典会",
+        "start": "2026-11-21T20:00:00+09:00",
+        "end": "2026-11-21T21:00:00+09:00",
+        "allDay": false,
+        "location": "大須Dt.BLD 特典会A",
+        "publicNote": "特典会会場は大須Dt.BLD 1F〜3F。詳細な参加条件は未公表。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1278/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-21T20:00:00+09:00",
+        "end": "2026-11-21T21:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1278-live\"]",
+      "uid": "public-v1-d10a77280ea8a51122c2c068a1fec9070b675ca33dcc8880f6ac12c8f03f0b8f@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1278-live",
+        "category": "live",
+        "title": "DOLLttoFes2026 Straight Angeli ライブ",
+        "start": "2026-11-21T19:20:00+09:00",
+        "end": "2026-11-21T19:45:00+09:00",
+        "allDay": false,
+        "location": "ElectricLadyLand",
+        "publicNote": "公演全体は13:00開場・14:00開演。チケット・ドリンク代必要。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1278/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-21T19:20:00+09:00",
+        "end": "2026-11-21T19:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-live"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1301-live\"]",
+      "uid": "public-v1-b67b5d64ce6de77d3869b2d065d018b1d846f3b23238b04de28c7681b531d0b7@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1301-live",
+        "category": "live",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー Christmas party!!",
+        "start": "2026-12-25T19:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "タワーレコード渋谷店 B1F CUTUP STUDIO",
+        "publicNote": "その他の詳細・終了時刻は後日発表。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/schedule/item-1301/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-12-25T19:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-live"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1334-early-fc-deadline\"]",
+      "uid": "public-v1-dd759e92939b6d656e291d29146f80b1e31f84200f4f2adcb7cda34e4143d9fb@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1334-early-fc-deadline",
+        "category": "benefit",
+        "title": "Secret Eden 早期入会特典 決済完了期限",
+        "start": "2026-11-30T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Straight Angeli OFFICIAL FANCLUB Secret Eden",
+        "publicNote": "11月30日23:59までに入会・決済完了した人がリアル会員証の対象。月額550円または年額6000円。発送は12月下旬以降順次。応募フォームの締切ではありません。\n本人公式の早期入会特典案内で、入会・決済完了期限を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1334/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-30T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1338-deadline\"]",
+      "uid": "public-v1-dc99e5d7a3e445c707093cc630721a50a09359fcc29cd021fa3f602bd0c2c338@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1338-deadline",
+        "category": "benefit",
+        "title": "「僕ら羽ばたいた日」LINE MUSIC再生キャンペーン締切",
+        "start": "2026-12-15T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "LINE MUSIC／公式応募フォーム",
+        "publicNote": "応募期間は11/1 0:00〜12/15 23:59。111回以上で壁紙、1101回以上で2ショット撮影会抽選10名。オンライン再生と回数画面の提出が必要。応募は1人1回。撮影会日時未発表。再生カウント期間の独立した締切は未確認。応募方法の最新情報は公式案内で確認。\n本人所属レーベルA-Sketch公式の11月6日記事に、応募期間11月1日0:00〜12月15日23:59の明記あり。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1338/",
+          "https://www.a-sketch.com/artist/straight-angeli%EF%BC%88%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%80%E3%82%B9%E3%83%88%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%89/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-12-15T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1343-deadline\"]",
+      "uid": "public-v1-bf8d660a618d32ce03b422595f8f03f0adcb6503328d4dc31d3198b949c6e50b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1343-deadline",
+        "category": "benefit",
+        "title": "HBCアイドル祭り2027 一次先行抽選締切",
+        "start": "2026-11-19T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ローソンチケット",
+        "publicNote": "受付11/10 10:00〜11/19 23:59。優先8800円・一般5500円・2階指定6600円。https://l-tike.com/concert/mevent/?mid=740882\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1343/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-19T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1343-live\"]",
+      "uid": "public-v1-691a3cadb453b7dae8ba77eae0ac9fdea2cc5531775906ee30e8929c49775add@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1343-live",
+        "category": "live",
+        "title": "Pococha presents HBCアイドル祭り2027「なまら推ささるアイドルWinter in Zepp Sapporo」【イベント開演】",
+        "start": "2027-02-11T17:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Zepp Sapporo",
+        "publicNote": "16:15開場。17:00はイベント開演、Straight Angeli個別出演時刻は未公表。別途ドリンク代。年齢条件は本人公式「小学生以下が要チケット」と主催HBC「小学生以上が要チケット」で表記が相違。両公式とも未就学児無料・膝上不可と案内。購入前に両公式で条件を確認。\n開催は本人公式で確認。年齢条件は本人公式と主催HBCの表記が異なるため、どちらかを誤植と断定せず併記。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1343/",
+          "https://www.hbc.co.jp/event/idolfes/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2027-02-11T17:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-live"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1355-part1\"]",
+      "uid": "public-v1-97ea9722699958f6ff4eb1ed8760bc16bcab4fddda855206fff23088d48c0645@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1355-part1",
+        "category": "benefit",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー 渋谷 第1部（ミニライブ・特典会）",
+        "start": "2026-11-14T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "タワーレコード渋谷店（階の表記に相違）",
+        "publicNote": "公式サイトは9F、店舗公式は屋上。現地詳細は両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象商品購入1000円につき特典券1枚。第1部は私服特典会。特典会の単独開始・終了時刻は未公表。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。\n開催日時は本人公式の更新後の発表を採用。会場階は本人公式と店舗公式で表記が異なるため未確定。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1167/",
+          "https://straight-angeli.com/news/item-1355/",
+          "https://towershibuya.jp/2026/11/14/236995"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-14T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1355-part2\"]",
+      "uid": "public-v1-8f0e16ea8ac178f44c8d6b36596c91d498cc6a0a1b81e2c9a02a5ff4ae02a3b7@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1355-part2",
+        "category": "benefit",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー 渋谷 第2部（ミニライブ・特典会）",
+        "start": "2026-11-14T17:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "タワーレコード渋谷店（階の表記に相違）",
+        "publicNote": "公式サイトは9F、店舗公式は屋上。現地詳細は両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象商品購入1000円につき特典券1枚。特典会の単独開始・終了時刻は未公表。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。\n開催日時は本人公式の更新後の発表を採用。会場階は本人公式と店舗公式で表記が異なるため未確定。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1167/",
+          "https://straight-angeli.com/news/item-1355/",
+          "https://towershibuya.jp/2026/11/14/236995"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-14T17:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1355-sales\"]",
+      "uid": "public-v1-23271b313405b4d16bdc00485d7c111c2b7dbaefa6658e7c600e6267da5709ac@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1355-sales",
+        "category": "benefit",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー 渋谷 対象商品販売・配券開始",
+        "start": "2026-11-14T11:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "タワーレコード渋谷店（階の表記に相違）",
+        "publicNote": "対象PHOTO SET vol.5/7/8、優先入場券・特典券はなくなり次第終了。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。\n開催日時は本人公式の更新後の発表を採用。会場階は本人公式と店舗公式で表記が異なるため未確定。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1167/",
+          "https://straight-angeli.com/news/item-1355/",
+          "https://towershibuya.jp/2026/11/14/236995"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-14T11:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1357-part1\"]",
+      "uid": "public-v1-6f1fd4d0ab6d1595b2d882453427c8fed96ae62ace0e06fd373b63edf68e4304@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1357-part1",
+        "category": "benefit",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー 熱田 第1部（ミニライブ・特典会）",
+        "start": "2026-11-22T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イオンモール熱田 1F熱田広場",
+        "publicNote": "対象商品購入1000円につき特典券1枚。ライブ後の特典会単独時刻は未公表。特典券・入場券はなくなり次第。フリー入場は配券状況により実施しない場合あり。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1167/",
+          "https://straight-angeli.com/news/item-1357/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-22T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1357-part2\"]",
+      "uid": "public-v1-6b961317d706717f161a85032420bc49011c75dd04221010fac5ba2316c66959@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1357-part2",
+        "category": "benefit",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー 熱田 第2部（ミニライブ・特典会）",
+        "start": "2026-11-22T15:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イオンモール熱田 1F熱田広場",
+        "publicNote": "対象商品購入1000円につき特典券1枚。ライブ後の特典会単独時刻は未公表。特典券・入場券はなくなり次第。フリー入場は配券状況により実施しない場合あり。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1167/",
+          "https://straight-angeli.com/news/item-1357/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-22T15:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1357-sales\"]",
+      "uid": "public-v1-a1aec99a9b2832bb6db18ff71cd44f3bbf1ea7d465f4c80d63063a5250d7f234@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1357-sales",
+        "category": "benefit",
+        "title": "メジャーデビュー記念！全国ごあいさつフリーライブツアー 熱田 対象商品販売・配券開始",
+        "start": "2026-11-22T10:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イオンモール熱田 1F熱田広場",
+        "publicNote": "対象PHOTO SET vol.5/7/8、特典券・優先入場券は当日のみ有効。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1167/",
+          "https://straight-angeli.com/news/item-1357/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-22T10:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-benefit"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1359-radio\"]",
+      "uid": "public-v1-7af1a3277b27aee2dabbc636b06eca0177d269eaacbce87189129e5e4b0aef59@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1359-radio",
+        "category": "media",
+        "title": "Kiss & Ride（松元寧音・大山蒼生）【番組枠】",
+        "start": "2026-11-16T12:00:00+09:00",
+        "end": "2026-11-16T14:45:00+09:00",
+        "allDay": false,
+        "location": "FMヨコハマ",
+        "publicNote": "12:00〜14:45は案内された番組枠。ゲスト出演の正確な時刻は未公表。radiko地域条件あり。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/schedule/1359/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-16T12:00:00+09:00",
+        "end": "2026-11-16T14:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-media"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1363-radio\"]",
+      "uid": "public-v1-8dd3a8d3bca1504e70bad544ca9b33477d8a0d923fd2fa658de8df7fa5e03743@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1363-radio",
+        "category": "media",
+        "title": "キャッチ！（大山蒼生・織田ひまり）",
+        "start": "2026-11-18",
+        "end": null,
+        "allDay": false,
+        "location": "FM滋賀",
+        "publicNote": "16時台にリモート出演。16:00ちょうどの出演とは断定しない。radiko地域条件あり。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/schedule/item-1363/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-12T04:28:17Z",
+      "lastTiming": {
+        "start": "2026-11-18",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-media"
       ]
     },
     {
@@ -7974,5 +8497,5 @@
       ]
     }
   ],
-  "integritySha256": "82ce1ee6963fc792111e2c38c63b5371cb7e768e71b863838c8034ee871c2db7"
+  "integritySha256": "b828d354d5fa668ee45a09d6bf08f88f0ca6150e92e68d46c56d0b5f57443972"
 }

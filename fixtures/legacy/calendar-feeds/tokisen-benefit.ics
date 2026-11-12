@@ -1,0 +1,1058 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:超ときめき♡宣伝部 / 特典会・応募
+BEGIN:VEVENT
+UID:public-v1-08a0be3384e4568d42ddb7aecb719ca5f51b2763446edc0d43fda848ec68c
+ 158@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:どきどきクリスマスパーティー2026 応募締切
+DESCRIPTION:対象公演：どきどきクリスマスパーティー2026
+ 。抽選受付。購入・当選を保証しません。\n本人側の公
+ 式発表で確認。\nhttps://toki-sen.com/contents/1124898
+LOCATION:
+URL:https://toki-sen.com/contents/1124898
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6591ac344a34eb791a515b5e2cf8ffd5957f66757d1ff99298cbdfd4cde81
+ 915@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261205T060000Z
+SUMMARY:どきどきクリスマスパーティー2026 発券開始
+DESCRIPTION:本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1124898
+LOCATION:
+URL:https://toki-sen.com/contents/1124898
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a2ea049b7739012dfbebb9d128f3c6a7855ab76cf855c6d0d0ac12183ea78
+ b90@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T145900Z
+SUMMARY:ときクリ2026 グッズ事前通販 締切
+DESCRIPTION: 在庫限り。残数未確認。会場受取・当日物販
+ の詳細は別途発表。\n本人側の公式発表で確認。\nhttps:/
+ /toki-sen.com/contents/1125331
+LOCATION:
+URL:https://toki-sen.com/contents/1125331
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a28a4afb8800b12e47637bc10092ca2f59ec98c01e3b904d0e8abb4692575
+ 718@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270111
+SUMMARY:グループショット撮影会 抽選券付き早期予約締切
+ （時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象店舗の全額前金予約。抽選券は数量限定。 23:59
+ の一律締切ではない。予約とシリアル応募は別手続き
+ 。 締切は各店舗の閉店時刻。\n本人側の公式発表で確
+ 認。\nhttps://toki-sen.com/contents/1116324
+LOCATION:
+URL:https://toki-sen.com/contents/1116324
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-93675403e6a04a5de5cb3e2c19900db55238cbc8629fb16815b8889e320ed
+ f60@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270118T145900Z
+SUMMARY:グループショット撮影会 シリアル応募締切
+DESCRIPTION: 特設フォームの稼働状況は未確認。\n本人側の
+ 公式発表で確認。\nhttps://toki-sen.com/contents/1116324
+LOCATION:
+URL:https://toki-sen.com/contents/1116324
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-50963e7f2d766ed12b272a60b26ae07d3a14a420866bd1d8945858c7e696b
+ ddb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261206T145900Z
+SUMMARY:ときめけみらい FC限定リアルサイン会 応募締切
+DESCRIPTION:FC限定。メモリアル盤1枚につき1口。各メンバ
+ ー最大50人。 開催日は未定。アルバム発売日4/1をサイ
+ ン会開催日に流用しない。\n本人側の公式発表で確認。
+ \nhttps://toki-sen.com/contents/1116142
+LOCATION:東京某所、当選者のみ案内
+URL:https://toki-sen.com/contents/1116142
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9a0db02903801f77e474a463a70c4a5f82fe3f403c2ceb3f2b243f29a42c2
+ b5a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261221
+SUMMARY:FC限定リアルサイン会 当選発表予定（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 当選者のみ通知。日内時刻は未発表。\n本人側の公
+ 式発表で確認。\nhttps://toki-sen.com/contents/1116142
+LOCATION:
+URL:https://toki-sen.com/contents/1116142
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-20ec12c3ab9b7fb57e1e3473af9977292576d2b7fe47f37d8abf0945a827b
+ ba1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261127T145900Z
+SUMMARY:LINE MUSIC キャンペーン応募締切
+DESCRIPTION:サイン入り集合チェキ抽選は690回以上、デジタ
+ ル参加賞は5回以上。フォーム等による応募が必要。 特
+ 典物の抽選。本人とのチェキ撮影会ではない。\n本人側
+ の公式発表で確認。\nhttps://toki-sen.com/contents/1123558
+LOCATION:
+URL:https://toki-sen.com/contents/1123558
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dad8f67030ab68bc6657ad7b1b49f9f2b29f80d4087512fdb9a9f06dac7da
+ cfe@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+SUMMARY:LINE MUSIC キャンペーン再生集計対象最終日（時刻
+ 未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 再生回数は翌日反映。11/27の応募に使えるのは11/26
+ までの再生分。\n本人側の公式発表で確認。\nhttps://toki-
+ sen.com/contents/1123558
+LOCATION:
+URL:https://toki-sen.com/contents/1123558
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-548f2109f0021600f24d99e3d7ba85ceeae765adb06c5b49a7b1dbddaadd0
+ c4b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261116T145900Z
+SUMMARY:超ときめき♡STAGE 2027 あけおめ新年会フォーエバ
+ ー 応募締切
+DESCRIPTION:対象公演：超ときめき♡STAGE 2027 あけおめ新年
+ 会フォーエバー。FC会員先行。購入・当選を保証しませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1123727
+LOCATION:
+URL:https://toki-sen.com/contents/1123727
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2909ee9e99a684ff220f18cfdd0aa7dacc30888ac71f5473796978cc9ea2f
+ b4c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270104T145900Z
+SUMMARY:FC年賀状 後期登録情報確認期限
+DESCRIPTION: 後期対象者向け。\n本人側の公式発表で確認。
+ \nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0462c484514ab0990525daacd664fccc580a0812f6f6455738403c54ad77b
+ 4b7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261211T145900Z
+SUMMARY:FC年賀状 初回対象判定・登録情報確認期限
+DESCRIPTION: この時点で有料会員なら1/1到着予定。\n本人側
+ の公式発表で確認。\nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a5d742e9e29a3509980fd7f2efc502abc35b2a65b38a2cae83a307cc7ccd9
+ 728@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261231T145900Z
+SUMMARY:FC年賀状 後期対象判定期限
+DESCRIPTION: 12/12以降の入会者。1/13発送予定。\n本人側の公
+ 式発表で確認。\nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6f8aec5bd6202f26dcf0b92cde4b016e842e9efd5860596b7b8953a5d65b3
+ 9d4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270207
+SUMMARY:FC年賀状 未着問い合わせ期限（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 1/27を過ぎても未着の場合。時刻は未掲載。\n本人
+ 側の公式発表で確認。\nhttps://toki-sen.com/contents/1125189
+LOCATION:
+URL:https://toki-sen.com/contents/1125189
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a1a4cd27f268a54c6540cff976fc2a02a79fcd1ae66c5e1875e66296f8898
+ 324@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+DTEND:20261112T113000Z
+SUMMARY:ときめけみらい オンラインお話し会 1部
+DESCRIPTION:参加条件：対象メンバー盤2枚。確認した販売
+ 期間は11/1に終了。追加販売の有無は公式で確認。\n本
+ 人側の公式発表で確認。\nhttps://toki-sen.com/contents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2196d16f397970855bf3c86233caeac495b9fa0a44ced9242ef280c1d8b61
+ cdf@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261112T115000Z
+DTEND:20261112T130000Z
+SUMMARY:ときめけみらい オンラインお話し会 2部
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚。確
+ 認した販売期間は11/1に終了。追加販売の有無は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e9de0df6145e39a1fbb3a022d82176037b6587e1bddc7a304e660ed8dcf75
+ 0c0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+DTEND:20261217T113000Z
+SUMMARY:ときめけみらい オンラインお話し会 1部
+DESCRIPTION:参加条件：対象メンバー盤2枚。確認した販売
+ 期間は11/1に終了。追加販売の有無は公式で確認。\n本
+ 人側の公式発表で確認。\nhttps://toki-sen.com/contents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7d4c778cbf9aa53fb79a5f33ebb5e1fa9e6f61000ca1f48d43320ae5bc6bd
+ 707@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261217T115000Z
+DTEND:20261217T130000Z
+SUMMARY:ときめけみらい オンラインお話し会 2部
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚。確
+ 認した販売期間は11/1に終了。追加販売の有無は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1121945
+LOCATION:オンライン
+URL:https://toki-sen.com/contents/1121945
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e8bf867c597ecf0eccf528d94293156bf35fdf407db48d6d7e19bd0b448ab
+ b8c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261127T145900Z
+SUMMARY:楽天Music お見送り会抽選キャンペーン締切
+DESCRIPTION:対象プラン・お気に入り登録・アプリで対象曲
+ 合計1000回以上。抽選30人。 \n本人側の公式発表で確認
+ 。\nhttps://toki-sen.com/contents/1123557
+LOCATION:
+URL:https://toki-sen.com/contents/1123557
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cc31f1a9e3b2115ca58f3514075a7bfa92279acd16e79eb034daf4b7c5762
+ 2d3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261204T145900Z
+SUMMARY:楽天Music お気に入り登録の継続期限
+DESCRIPTION: 応募期間終了後もこの時刻まで登録継続が条
+ 件。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1123557
+LOCATION:
+URL:https://toki-sen.com/contents/1123557
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e84935f259724b0d5095b74aa947fb07d299556d447330f23e0c9461cabcd
+ 157@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261219
+SUMMARY:楽天Music当選者向け お見送り会（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n当選者本人のみ。 既存の同日CD予約特典会との同一
+ 会場・同一部を確認できず。時間や大手町会場を推定
+ で補わない。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/1123557
+LOCATION:東京某所、当選者のみ案内
+URL:https://toki-sen.com/contents/1123557
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8ea81a739cde7868deb7d40ce2d60e2cdfc8fb9f63bcfdaaf948c150a10d6
+ e5a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:11/29 特典会 先着販売締切
+DESCRIPTION:2026-11-29開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2ed0fb6e0a4abc02fe255ddb2ae04728eac3245f34e4ec9ec1d35232bed1e
+ ed6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:11/29 特典会 先着販売開始
+DESCRIPTION:2026-11-29開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d698c9e545f32955d93038eeb06326cbbb6992b9a583c5591dc8c7b51b21e
+ 956@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:11/29 特典会 入金後抽選販売締切
+DESCRIPTION:2026-11-29開催分の2・5部。枠数・在庫は未確認。
+ 終了日時は受付の締切で、開催日時ではありません。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5c2e01e7c991ae7c9e698a1cb14c23e6d51362cd11dd85de00d523ce72024
+ 884@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T030000Z
+DTEND:20261129T040000Z
+SUMMARY:ときめけみらい 特典会 1部・撮影・お見送り
+DESCRIPTION:参加条件：各メンバー盤各1枚、計5枚。申込み
+ ・購入だけで参加確定とは限りません。詳細は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-56d8600b44309fd3522c29812047f91fada1287f0384dbde8dfc16ce9a8b2
+ b08@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T044000Z
+DTEND:20261129T052000Z
+SUMMARY:ときめけみらい 特典会 2部・冬まつり
+DESCRIPTION:参加条件：集合盤1枚で抽選1口。入金後抽選。
+ 申込み・購入だけで参加確定とは限りません。詳細は
+ 公式で確認。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-074f5bcb85dc88ac81aab6248f733913ddb438586977288c70611589c940e
+ f17@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T062000Z
+DTEND:20261129T075000Z
+SUMMARY:ときめけみらい 特典会 3部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-bba99acd74f1b4f2acd10d5dacb02223130462f3a8c56d30308d2998a1f89
+ 322@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T082000Z
+DTEND:20261129T095000Z
+SUMMARY:ときめけみらい 特典会 4部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21dd14bc021bdb088bfa662959e87e58d9bc9b78ac624491d2d562696cb4d
+ 813@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261129T103000Z
+DTEND:20261129T111500Z
+SUMMARY:ときめけみらい 特典会 5部・ツーショットチェキ
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚で抽
+ 選1口。入金後抽選。申込み・購入だけで参加確定とは
+ 限りません。詳細は公式で確認。\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1124407\nhttps://toki-sen.com/con
+ tents/1126620?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ba152d62205a0e45a74da817e473538b1447c4a94de8253f7f51c3d939d09
+ d91@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261117
+SUMMARY:11/29 特典会 2・5部 抽選結果予定（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n当選者のみ通知予定。発表時刻は未定。\n本人側の
+ 公式発表で確認。\nhttps://toki-sen.com/contents/1124407\nhttps://t
+ oki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f38420874acd3a7a8dcc7c323ca83e09853c569e29cacefa88350dcab1d3d
+ 9a1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261202T145900Z
+SUMMARY:12/19 特典会 先着販売締切
+DESCRIPTION:2026-12-19開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-665099168288cdbbe700228cdadb12061555ba76bb61c6bdfad25d7971283
+ 542@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:12/19 特典会 先着販売開始
+DESCRIPTION:2026-12-19開催分の1・3・4部。枠数・在庫は未確
+ 認。終了日時は受付の締切で、開催日時ではありませ
+ ん。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dcfe4baab2d80b6393bb6740ca5dc5db6a4d295e310a36afb6142131d3db7
+ c7e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261202T145900Z
+SUMMARY:12/19 特典会 入金後抽選販売締切
+DESCRIPTION:2026-12-19開催分の2・5部。枠数・在庫は未確認。
+ 終了日時は受付の締切で、開催日時ではありません。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-61701d7649b31810ab487bcd3f74a98d2056e9429f311a8c9048759ac0d65
+ 815@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T030000Z
+DTEND:20261219T040000Z
+SUMMARY:ときめけみらい 特典会 1部・撮影・お見送り
+DESCRIPTION:参加条件：各メンバー盤各1枚、計5枚。申込み
+ ・購入だけで参加確定とは限りません。詳細は公式で
+ 確認。\n本人側の公式発表で確認。\nhttps://toki-sen.com/cont
+ ents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-434d97cec5433fce48f6cbf97bc8cd59294bc628286bd728c1921c5b63612
+ be0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T044000Z
+DTEND:20261219T052000Z
+SUMMARY:ときめけみらい 特典会 2部・冬まつり
+DESCRIPTION:参加条件：集合盤1枚で抽選1口。入金後抽選。
+ 申込み・購入だけで参加確定とは限りません。詳細は
+ 公式で確認。\n本人側の公式発表で確認。\nhttps://toki-sen
+ .com/contents/1124407\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e97e0c2642c5456f2ee9f2aa2c08ad11f2f4790591c0a28c9eb2d5bf39013
+ 461@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T062000Z
+DTEND:20261219T075000Z
+SUMMARY:ときめけみらい 特典会 3部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-89b2300b3cfec6460c97ba5e8c3247dac0f86d38ae2600e3eb19a58aab1ab
+ 38b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T082000Z
+DTEND:20261219T095000Z
+SUMMARY:ときめけみらい 特典会 4部・個別トーク
+DESCRIPTION:参加条件：対象メンバー盤2枚。申込み・購入
+ だけで参加確定とは限りません。詳細は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112440
+ 7\nhttps://toki-sen.com/contents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7ea7825788914e8de6f66ebad009fddab733a941c7a09655fc9eadfeb46f5
+ 677@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261219T103000Z
+DTEND:20261219T111500Z
+SUMMARY:ときめけみらい 特典会 5部・ツーショットチェキ
+DESCRIPTION:参加条件：集合盤1枚＋対象メンバー盤1枚で抽
+ 選1口。入金後抽選。申込み・購入だけで参加確定とは
+ 限りません。詳細は公式で確認。\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1124407\nhttps://toki-sen.com/con
+ tents/1126620?tag=all
+LOCATION:大手町プレイス ホール＆カンファレンス
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-db1d9c644e03ce2fefbb328d827b4a1c0ff0755eee74ff8e0b4a44f16759d
+ 1a5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+SUMMARY:12/19 特典会 2・5部 抽選結果予定（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n当選者のみ通知予定。発表時刻は未定。\n本人側の
+ 公式発表で確認。\nhttps://toki-sen.com/contents/1124407\nhttps://t
+ oki-sen.com/contents/1126620?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1124407
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-efff5470385fd6ddc90871a8f4bfa48189b67f150b5687497e7c73ec567b8
+ e8d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261115T145900Z
+SUMMARY:LIVE SDD 2027 第2回応募 締切（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e1d16d54b8bec434b3d434b8c57ee64eb535eeef6de49b481a967d863ffd7
+ 466@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+SUMMARY:LIVE SDD 2027 第2回応募 結果予定（かも？）（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n発表時刻未定。\n外部発表による候補。本人側の一
+ 致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_2027/index.h
+ tml
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c6bac008f877986bad8416351709e9c12943b0984eab6379941ca1a910ad1
+ 6df@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T030000Z
+SUMMARY:LIVE SDD 2027 第2回応募 開始（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-50c9583b213662e9b48c782908d4eae2c7515520f5bbdc7e92fbebc2d68ab
+ 251@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261122T145900Z
+SUMMARY:LIVE SDD 2027 第3回応募 締切（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0f804c9c616a7218a7c3897f25f3a8cf8fa52c337ac8a70e38d087c6398b4
+ ee4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+SUMMARY:LIVE SDD 2027 第3回応募 結果予定（かも？）（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n発表時刻未定。\n外部発表による候補。本人側の一
+ 致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_2027/index.h
+ tml
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ccbe235217b738cd32f6d5aaf4807fcd3e3ac463e684b342d5ad8cf860ba3
+ b8d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261118T030000Z
+SUMMARY:LIVE SDD 2027 第3回応募 開始（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-29e71ea2bb1fa58e8c464c62549f12c3865b0e10a9bce03d8b824bb5fa81c
+ 82b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261130T145900Z
+SUMMARY:LIVE SDD 2027 第4回応募 締切（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3d381622616644ce17f0ee0579b9e8d08802a84a2ebb4734abcbe4c6ffd61
+ 29d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261203
+SUMMARY:LIVE SDD 2027 第4回応募 結果予定（かも？）（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n発表時刻未定。\n外部発表による候補。本人側の一
+ 致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_2027/index.h
+ tml
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fda225e234fe7016bbdd04728dbd6b08b00d756ba7bf7a4687736baf1225b
+ 974@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261126T030000Z
+SUMMARY:LIVE SDD 2027 第4回応募 開始（かも？）
+DESCRIPTION:発券時に募金2000円。 主催FM大阪で確認。本人
+ 公式は公演日時のみ掲載。\n外部発表による候補。本人
+ 側の一致確認が必要です。\nhttps://fmosaka.net/sdd/live_sdd_202
+ 7/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e3661da683f5485374e62dd9a5d713c3c23327886a4314637e513a7b32371
+ 7d0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T145900Z
+SUMMARY:LIVE SDD コアメッセンジャー当落確認期間 締切（か
+ も？）
+DESCRIPTION: 応募は11/8終了。一般応募第1回と別枠。\n外部
+ 発表による候補。本人側の一致確認が必要です。\nhttps:
+ //fmosaka.net/sdd/article/202611_01.html
+LOCATION:
+URL:https://fmosaka.net/sdd/article/202611_01.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-83ad6e69c46de6bc20fd8511b9cc60ba925a1afa04a4aaa3eb76c9c34a071
+ 3df@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261111T030000Z
+SUMMARY:LIVE SDD コアメッセンジャー当落確認期間 開始（か
+ も？）
+DESCRIPTION: 応募は11/8終了。一般応募第1回と別枠。\n外部
+ 発表による候補。本人側の一致確認が必要です。\nhttps:
+ //fmosaka.net/sdd/article/202611_01.html
+LOCATION:
+URL:https://fmosaka.net/sdd/article/202611_01.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a790335dff32e2e85e61493f351d99ea03a094f46ddc96d51617e7bbf03f3
+ 155@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+SUMMARY:LIVE SDD 第1回応募の当落発表（かも？）（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n 第1回応募は11/8終了。発表日は主催者掲載。\n外部
+ 発表による候補。本人側の一致確認が必要です。\nhttps:
+ //fmosaka.net/sdd/live_sdd_2027/index.html
+LOCATION:
+URL:https://fmosaka.net/sdd/live_sdd_2027/index.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d68a3060770b4610d5aebcabc8c2e0bb37172183a4fd8577e73f73740677d
+ f6a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270331
+SUMMARY:アルバム記念スタンプラリー 押印期限（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象CDを10店舗で購入して10種類の押印。4/1新アルバ
+ ムは押印対象外。 時刻記載なし。ステッカー引換であ
+ り対面特典会ではない。\n本人側の公式発表で確認。\nh
+ ttps://toki-sen.com/contents/1116137
+LOCATION:
+URL:https://toki-sen.com/contents/1116137
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2993bc24a2e79fb2ba7c9224f52e95d15b2c2929de47f70f44215902dbe85
+ 88e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261127T145900Z
+SUMMARY:いい推しの日 TikTok企画 投稿期限
+DESCRIPTION:指定音源・ハッシュタグ・公式アカウントへの
+ メンション。 メッセージ動画や画像が景品。対面特典
+ 会ではない。記事の11/4曜日に不整合あり、年月日を採
+ 用。\n本人側の公式発表で確認。\nhttps://toki-sen.com/content
+ s/1123559
+LOCATION:
+URL:https://toki-sen.com/contents/1123559
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6b9bd3f3aeaa4751d80eae1a07d5298fb1f8fdd831c910f40394f97e01504
+ 53a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261114T030000Z
+SUMMARY:物販整理券 受付締切
+DESCRIPTION:先行・開場中は当日公演券必須。整理券1人1枚
+ 。開演後は公演券なしでも購入可\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1125051?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125051?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9efff43103571e838fe4bc8b8c00415da3f8606f21b1a09663923f1c14ce4
+ a15@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T020000Z
+SUMMARY:物販整理券 受付開始
+DESCRIPTION:先行・開場中は当日公演券必須。整理券1人1枚
+ 。開演後は公演券なしでも購入可\n本人側の公式発表で
+ 確認。\nhttps://toki-sen.com/contents/1125051?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125051?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-501ce7e97ac79d5be7ea2e09597cb0b1e3a89e02b0490e37dcab505d95239
+ 3c5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261114T040000Z
+SUMMARY:会場CD販売・予約特典
+DESCRIPTION:CDの購入・予約に付く特典物の案内です。対面
+ 特典会ではありません。配布数・在庫は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112561
+ 4?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125614?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fedcc2b644aef1f68a7c862bd81d18b349b30590a4032d25ee699671ccb0e
+ 6b7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270331T060000Z
+SUMMARY:会場予約CD 店舗受取開始
+DESCRIPTION:対象会場で店頭受取を選んで予約した方のみ。
+ \n本人側の公式発表で確認。\nhttps://toki-sen.com/contents/1125
+ 614?tag=all
+LOCATION:フタバ図書 イオンモール福岡店
+URL:https://toki-sen.com/contents/1125614?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1f7c922937aeadabe9aeef172fd7a11adc0bb8d0e458c2a819aa6f250e7e8
+ 907@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20261113T070000Z
+DTEND:20261113T083000Z
+SUMMARY:会場CD販売・予約特典
+DESCRIPTION:CDの購入・予約に付く特典物の案内です。対面
+ 特典会ではありません。配布数・在庫は公式で確認。\n
+ 本人側の公式発表で確認。\nhttps://toki-sen.com/contents/112561
+ 6?tag=all
+LOCATION:
+URL:https://toki-sen.com/contents/1125616?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

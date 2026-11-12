@@ -1,0 +1,86 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Straight Angeli / ライブ・イベント
+BEGIN:VEVENT
+UID:public-v1-6f2aac1c91567974539fe080824c3764fab22bfa1494ef2c402edc41f7943
+ 607@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261212
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー 仙台（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n時刻・特典会等の詳細は後日発表。\n本人公式サイ
+ トの掲載を確認。時刻の意味や未発表事項は注記に記
+ 載。\nhttps://straight-angeli.com/schedule/item-1214/
+LOCATION:仙台駅前イービーンズ 10階屋上ステージ
+URL:https://straight-angeli.com/schedule/item-1214/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d10a77280ea8a51122c2c068a1fec9070b675ca33dcc8880f6ac12c8f03f0
+ b8f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261121T102000Z
+DTEND:20261121T104500Z
+SUMMARY:DOLLttoFes2026 Straight Angeli ライブ
+DESCRIPTION:公演全体は13:00開場・14:00開演。チケット・ド
+ リンク代必要。\n本人公式サイトの掲載を確認。時刻の
+ 意味や未発表事項は注記に記載。\nhttps://straight-angeli.com
+ /news/item-1278/
+LOCATION:ElectricLadyLand
+URL:https://straight-angeli.com/news/item-1278/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b67b5d64ce6de77d3869b2d065d018b1d846f3b23238b04de28c7681b531d
+ 0b7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261225T100000Z
+SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
+ イブツアー Christmas party!!
+DESCRIPTION:その他の詳細・終了時刻は後日発表。\n本人公
+ 式サイトの掲載を確認。時刻の意味や未発表事項は注
+ 記に記載。\nhttps://straight-angeli.com/schedule/item-1301/
+LOCATION:タワーレコード渋谷店 B1F CUTUP STUDIO
+URL:https://straight-angeli.com/schedule/item-1301/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-691a3cadb453b7dae8ba77eae0ac9fdea2cc5531775906ee30e8929c49775
+ add@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20270211T080000Z
+SUMMARY:Pococha presents HBCアイドル祭り2027「なまら推ささる
+ アイドルWinter in Zepp Sapporo」【イベント開演】
+DESCRIPTION:16:15開場。17:00はイベント開演、Straight Angeli個
+ 別出演時刻は未公表。別途ドリンク代。年齢条件は本
+ 人公式「小学生以下が要チケット」と主催HBC「小学生
+ 以上が要チケット」で表記が相違。両公式とも未就学
+ 児無料・膝上不可と案内。購入前に両公式で条件を確
+ 認。\n開催は本人公式で確認。年齢条件は本人公式と主
+ 催HBCの表記が異なるため、どちらかを誤植と断定せず
+ 併記。\nhttps://straight-angeli.com/news/item-1343/\nhttps://www.hbc.co
+ .jp/event/idolfes/
+LOCATION:Zepp Sapporo
+URL:https://straight-angeli.com/news/item-1343/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Straight Angeli / メディア
+BEGIN:VEVENT
+UID:public-v1-7af1a3277b27aee2dabbc636b06eca0177d269eaacbce87189129e5e4b0ae
+ f59@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART:20261116T030000Z
+DTEND:20261116T054500Z
+SUMMARY:Kiss & Ride（松元寧音・大山蒼生）【番組枠】
+DESCRIPTION:12:00〜14:45は案内された番組枠。ゲスト出演の
+ 正確な時刻は未公表。radiko地域条件あり。\n本人公式サ
+ イトの掲載を確認。時刻の意味や未発表事項は注記に
+ 記載。\nhttps://straight-angeli.com/schedule/1359/
+LOCATION:FMヨコハマ
+URL:https://straight-angeli.com/schedule/1359/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8dd3a8d3bca1504e70bad544ca9b33477d8a0d923fd2fa658de8df7fa5e03
+ 743@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+SUMMARY:キャッチ！（大山蒼生・織田ひまり）（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n16時台にリモート出演。16:00ちょうどの出演とは断
+ 定しない。radiko地域条件あり。\n本人公式サイトの掲載
+ を確認。時刻の意味や未発表事項は注記に記載。\nhttps:
+ //straight-angeli.com/schedule/item-1363/
+LOCATION:FM滋賀
+URL:https://straight-angeli.com/schedule/item-1363/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
