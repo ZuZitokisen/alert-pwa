@@ -1,0 +1,146 @@
+[
+  {
+    "id": "straightangeli-1355-part1",
+    "date": "2026-11-14",
+    "startTime": "13:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1355/",
+    "venue": "タワーレコード渋谷店（階の表記に相違）",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1355-part2",
+    "date": "2026-11-14",
+    "startTime": "17:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1355/",
+    "venue": "タワーレコード渋谷店（階の表記に相違）",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1355-sales",
+    "date": "2026-11-14",
+    "startTime": "11:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1355/",
+    "venue": "タワーレコード渋谷店（階の表記に相違）",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1359-radio",
+    "date": "2026-11-16",
+    "startTime": "12:00",
+    "endTime": "14:45",
+    "sourceUrl": "https://straight-angeli.com/schedule/1359/",
+    "venue": "FMヨコハマ",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1363-radio",
+    "date": "2026-11-18",
+    "startTime": null,
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/schedule/item-1363/",
+    "venue": "FM滋賀",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1278-live",
+    "date": "2026-11-21",
+    "startTime": "19:20",
+    "endTime": "19:45",
+    "sourceUrl": "https://straight-angeli.com/news/item-1278/",
+    "venue": "ElectricLadyLand",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1278-benefit",
+    "date": "2026-11-21",
+    "startTime": "20:00",
+    "endTime": "21:00",
+    "sourceUrl": "https://straight-angeli.com/news/item-1278/",
+    "venue": "大須Dt.BLD 特典会A",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1357-part1",
+    "date": "2026-11-22",
+    "startTime": "12:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1357/",
+    "venue": "イオンモール熱田 1F熱田広場",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1357-part2",
+    "date": "2026-11-22",
+    "startTime": "15:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1357/",
+    "venue": "イオンモール熱田 1F熱田広場",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1357-sales",
+    "date": "2026-11-22",
+    "startTime": "10:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1357/",
+    "venue": "イオンモール熱田 1F熱田広場",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1214-live",
+    "date": "2026-12-12",
+    "startTime": null,
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/schedule/item-1214/",
+    "venue": "仙台駅前イービーンズ 10階屋上ステージ",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1301-live",
+    "date": "2026-12-25",
+    "startTime": "19:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/schedule/item-1301/",
+    "venue": "タワーレコード渋谷店 B1F CUTUP STUDIO",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1343-live",
+    "date": "2027-02-11",
+    "startTime": "17:00",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1343/",
+    "venue": "Zepp Sapporo",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1343-deadline",
+    "date": "2026-11-19",
+    "startTime": "23:59",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1343/",
+    "venue": "ローソンチケット",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1338-deadline",
+    "date": "2026-12-15",
+    "startTime": "23:59",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1338/",
+    "venue": "LINE MUSIC／公式応募フォーム",
+    "certainty": "confirmed"
+  },
+  {
+    "id": "straightangeli-1334-early-fc-deadline",
+    "date": "2026-11-30",
+    "startTime": "23:59",
+    "endTime": null,
+    "sourceUrl": "https://straight-angeli.com/news/item-1334/",
+    "venue": "Straight Angeli OFFICIAL FANCLUB Secret Eden",
+    "certainty": "confirmed"
+  }
+]
