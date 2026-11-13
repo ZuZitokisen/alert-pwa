@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-13-v6-rege-spafes",
-  "dataGeneratedAt": "2026-11-13T14:43:34Z",
-  "inputSha256": "e4935ab97d439805b8d885c82e57147eeec622a6ec5c040cd35808cde319c547",
+  "dataVersion": "2026-11-13-v7-rege-hmv-floor",
+  "dataGeneratedAt": "2026-11-13T15:37:15.444Z",
+  "inputSha256": "5496a896fcf07c3271fb14e5e6c3a1df9ca0dbd8d143cf4c2ea85084bcc82172",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1513,16 +1513,17 @@
         "start": "2026-11-17T18:00:00+09:00",
         "end": null,
         "allDay": false,
-        "location": "HMV&BOOKS SHIBUYA（開催階は公式間で不一致）",
-        "publicNote": "会場階は不一致。個別詳細記事の5Fを仮表示する場合にも警告を残し、断定しない。 対象CDの会場購入で参加券を配布。上限到達で終了。参加券の枚数・種類は公式を確認。\n本人側の公式発表で確認。",
+        "location": "HMV&BOOKS SHIBUYA 5F イベントスペースB",
+        "publicNote": "対象CDの会場購入で参加券を配布。上限到達で終了。参加券の枚数・種類は公式を確認。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://re-ge.com/news/item-766/",
           "https://re-ge.com/schedule/item-769/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-13T15:37:15.444Z",
       "lastTiming": {
         "start": "2026-11-17T18:00:00+09:00",
         "end": null,
@@ -1545,16 +1546,17 @@
         "start": "2026-11-17T17:00:00+09:00",
         "end": null,
         "allDay": false,
-        "location": "HMV&BOOKS SHIBUYA（開催階は公式間で不一致）",
+        "location": "HMV&BOOKS SHIBUYA 5F 特設レジ",
         "publicNote": "開催予定とは別の受付・販売日時です。在庫・当選・参加を保証しません。 \n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://re-ge.com/news/item-766/",
           "https://re-ge.com/schedule/item-769/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-13T15:37:15.444Z",
       "lastTiming": {
         "start": "2026-11-17T17:00:00+09:00",
         "end": null,
@@ -9172,5 +9174,5 @@
       ]
     }
   ],
-  "integritySha256": "4b6d20d3928ff3a5d1891307dde32fd8136397e6b6468ba179146ca31095c120"
+  "integritySha256": "1f93ebb5635e01ea0c4b7953a29413bc7bd340b39557bce96bff5fbbbffdc8d9"
 }

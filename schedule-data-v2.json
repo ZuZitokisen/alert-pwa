@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-13-v6-rege-spafes",
-  "generatedAt": "2026-11-13T14:43:34Z",
+  "version": "2026-11-13-v7-rege-hmv-floor",
+  "generatedAt": "2026-11-13T15:37:15.444Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1768,7 +1768,7 @@
       "allDay": false,
       "status": "confirmed",
       "category": "REMIND",
-      "location": "HMV&BOOKS SHIBUYA（開催階は公式間で不一致）",
+      "location": "HMV&BOOKS SHIBUYA 5F 特設レジ",
       "note": "開催予定とは別の受付・販売日時です。在庫・当選・参加を保証しません。 ",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/schedule/item-769/",
@@ -1776,10 +1776,15 @@
         {
           "url": "https://re-ge.com/schedule/item-769/",
           "type": "artist_official",
-          "checkedAt": "2026-11-11T08:41:14Z"
+          "checkedAt": "2026-11-13T15:37:15.444Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-766/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-13T15:37:15.444Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:41:14Z",
+      "checkedAt": "2026-11-13T15:37:15.444Z",
       "timings": [
         {
           "label": "2nd Single発売記念 ユニット特典会【風紀委員】 CD販売・配券開始",
@@ -1802,18 +1807,23 @@
       "allDay": false,
       "status": "confirmed",
       "category": "BENEFIT",
-      "location": "HMV&BOOKS SHIBUYA（開催階は公式間で不一致）",
-      "note": "会場階は不一致。個別詳細記事の5Fを仮表示する場合にも警告を残し、断定しない。 対象CDの会場購入で参加券を配布。上限到達で終了。参加券の枚数・種類は公式を確認。",
+      "location": "HMV&BOOKS SHIBUYA 5F イベントスペースB",
+      "note": "対象CDの会場購入で参加券を配布。上限到達で終了。参加券の枚数・種類は公式を確認。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/schedule/item-769/",
       "sources": [
         {
           "url": "https://re-ge.com/schedule/item-769/",
           "type": "artist_official",
-          "checkedAt": "2026-11-11T08:41:14Z"
+          "checkedAt": "2026-11-13T15:37:15.444Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-766/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-13T15:37:15.444Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:41:14Z",
+      "checkedAt": "2026-11-13T15:37:15.444Z",
       "timings": [
         {
           "label": "CD販売・配券開始",

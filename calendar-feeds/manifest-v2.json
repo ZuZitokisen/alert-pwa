@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-13-v6-rege-spafes",
-  "dataGeneratedAt": "2026-11-13T14:43:34Z",
+  "dataVersion": "2026-11-13-v7-rege-hmv-floor",
+  "dataGeneratedAt": "2026-11-13T15:37:15.444Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "e4935ab97d439805b8d885c82e57147eeec622a6ec5c040cd35808cde319c547",
+  "inputSha256": "5496a896fcf07c3271fb14e5e6c3a1df9ca0dbd8d143cf4c2ea85084bcc82172",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 51,
       "omittedUnknownDate": 0,
-      "sha256": "6af554052d71f527b5ceab86ca4adeb439cdc89526705f3c168a536bc85bba97"
+      "sha256": "05a5e2ef39887d2193dd6cd93ffb9477082eb825d979d92a1886832c14f30a80"
     },
     {
       "id": "re-ge-live",
@@ -88,7 +88,7 @@
       "path": "calendar-feeds/re-ge-benefit.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "204364ed1515fce4e0f55561b6d830984d55a72e75ca394ae0147b1910033c67"
+      "sha256": "6f97a3e9237e1743229e1bd31293105e1905d0d85753f1d69ff02c541bf9980d"
     },
     {
       "id": "re-ge-media",

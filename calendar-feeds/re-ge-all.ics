@@ -858,37 +858,37 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-ff1c475d3db20647fc060952ca11c9ff2063a1d9a43ed83f15be12fbdcbc7
  33c@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261113T153715Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261113T153715Z
+SEQUENCE:1
 DTSTART:20261117T090000Z
 SUMMARY:2nd Single発売記念 ユニット特典会【風紀委員】
-DESCRIPTION:会場階は不一致。個別詳細記事の5Fを仮表示す
- る場合にも警告を残し、断定しない。 対象CDの会場購
- 入で参加券を配布。上限到達で終了。参加券の枚数・
- 種類は公式を確認。\n本人側の公式発表で確認。\nhttps:/
- /re-ge.com/schedule/item-769/
-LOCATION:HMV&BOOKS SHIBUYA（開催階は公式間で不一致）
-URL:https://re-ge.com/schedule/item-769/
+DESCRIPTION:対象CDの会場購入で参加券を配布。上限到達で
+ 終了。参加券の枚数・種類は公式を確認。\n本人側の公
+ 式発表で確認。\nhttps://re-ge.com/news/item-766/\nhttps://re-ge.com
+ /schedule/item-769/
+LOCATION:HMV&BOOKS SHIBUYA 5F イベントスペースB
+URL:https://re-ge.com/news/item-766/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-94011ec03df4f2679a79123a96efa85bd4a6a07fea98befddfa9a7a4d74f0
  892@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261113T153715Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261113T153715Z
+SEQUENCE:1
 DTSTART:20261117T080000Z
 SUMMARY:2nd Single発売記念 ユニット特典会【風紀委員】 CD
  販売・配券開始
 DESCRIPTION:開催予定とは別の受付・販売日時です。在庫・
  当選・参加を保証しません。 \n本人側の公式発表で確
- 認。\nhttps://re-ge.com/schedule/item-769/
-LOCATION:HMV&BOOKS SHIBUYA（開催階は公式間で不一致）
-URL:https://re-ge.com/schedule/item-769/
+ 認。\nhttps://re-ge.com/news/item-766/\nhttps://re-ge.com/schedule/item-
+ 769/
+LOCATION:HMV&BOOKS SHIBUYA 5F 特設レジ
+URL:https://re-ge.com/news/item-766/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
