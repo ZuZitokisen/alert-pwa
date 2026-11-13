@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-12-v4-jrt-radio",
-  "generatedAt": "2026-11-12T04:55:59.350Z",
+  "version": "2026-11-13-v5-kiss-ride-timing",
+  "generatedAt": "2026-11-13T09:49:34.690Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9453,17 +9453,22 @@
       "status": "confirmed",
       "category": "RADIO",
       "location": "FMヨコハマ",
-      "note": "12:00〜14:45は案内された番組枠。ゲスト出演の正確な時刻は未公表。radiko地域条件あり。",
-      "evidence": "本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+      "note": "12:00〜14:45は本人公式が案内した番組枠。局番組表のゲスト出演目安は13:05頃（松元寧音・大山蒼生）。ゲスト出演の正確な時刻は未公表。目安は変更される場合があります。radiko地域条件あり。",
+      "evidence": "11/16の出演者と番組枠は本人公式で確認。13:05頃はFMヨコハマのradiko番組表に基づく出演目安で、本人公式では個別時刻の記載を確認していません。",
       "sourceUrl": "https://straight-angeli.com/schedule/1359/",
       "sources": [
         {
           "url": "https://straight-angeli.com/schedule/1359/",
           "type": "artist_official_site",
-          "checkedAt": "2026-11-12T13:10:22+09:00"
+          "checkedAt": "2026-11-13T09:48:53.880Z"
+        },
+        {
+          "url": "https://radiko.jp/index/YFM/",
+          "type": "broadcaster_schedule",
+          "checkedAt": "2026-11-13T09:48:57.706Z"
         }
       ],
-      "checkedAt": "2026-11-12T13:10:22+09:00",
+      "checkedAt": "2026-11-13T09:48:57.706Z",
       "timings": [
         {
           "kind": "broadcast_window_start",
@@ -9479,11 +9484,11 @@
         },
         {
           "kind": "appearance_start",
-          "label": "個別出演",
+          "label": "個別出演の目安",
           "at": null,
           "date": "2026-11-16",
-          "status": "confirmed",
-          "note": "個別出演時刻は未発表。"
+          "status": "possible",
+          "note": "13:05頃（局番組表）。本人公式での個別時刻は未確認。正確な開始・終了時刻ではありません。"
         }
       ],
       "deadline": null,
