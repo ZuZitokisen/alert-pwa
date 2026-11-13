@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-13-v7-rege-hmv-floor",
-  "generatedAt": "2026-11-13T15:37:15.444Z",
+  "version": "2026-11-14-v8-straightangeli-shibuya-venue",
+  "generatedAt": "2026-11-13T23:42:16.125Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9366,28 +9366,33 @@
       "allDay": false,
       "status": "confirmed",
       "category": "BENEFIT",
-      "location": "タワーレコード渋谷店（階の表記に相違）",
-      "note": "公式サイトは9F、店舗公式は屋上。現地詳細は両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象商品購入1000円につき特典券1枚。第1部は私服特典会。特典会の単独開始・終了時刻は未公表。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。",
-      "evidence": "開催日時は本人公式の更新後の発表を採用。会場階は本人公式と店舗公式で表記が異なるため未確定。",
+      "location": "タワーレコード渋谷店 屋上イベントスペース（9F／RF）",
+      "note": "会場は屋上イベントスペース（9F／RF）。第2部は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象商品購入1000円につき特典券1枚。第1部は私服特典会。特典会の単独開始・終了時刻は未公表。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。",
+      "evidence": "開催日時は本人公式と店舗公式で一致。本人公式の9F表記と店舗公式の屋上表記は、店舗公式RF案内の9F屋上表記と当該公演掲載により同一会場として照合。",
       "sourceUrl": "https://straight-angeli.com/news/item-1355/",
       "sources": [
         {
           "url": "https://straight-angeli.com/news/item-1355/",
           "type": "artist_official_site",
-          "checkedAt": "2026-11-12T13:10:22+09:00"
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         },
         {
           "url": "https://towershibuya.jp/2026/11/14/236995",
           "type": "venue_official",
-          "checkedAt": "2026-11-12T13:10:22+09:00"
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         },
         {
           "url": "https://straight-angeli.com/news/item-1167/",
           "type": "artist_official_site",
           "checkedAt": "2026-11-12T13:25:46+09:00"
+        },
+        {
+          "url": "https://towershibuya.jp/roof?ym=2026-11",
+          "type": "venue_official",
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         }
       ],
-      "checkedAt": "2026-11-12T13:25:46+09:00",
+      "checkedAt": "2026-11-13T23:42:16.125Z",
       "timings": [
         {
           "kind": "event_start",
@@ -9419,28 +9424,33 @@
       "allDay": false,
       "status": "confirmed",
       "category": "BENEFIT",
-      "location": "タワーレコード渋谷店（階の表記に相違）",
-      "note": "公式サイトは9F、店舗公式は屋上。現地詳細は両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象商品購入1000円につき特典券1枚。特典会の単独開始・終了時刻は未公表。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。",
-      "evidence": "開催日時は本人公式の更新後の発表を採用。会場階は本人公式と店舗公式で表記が異なるため未確定。",
+      "location": "タワーレコード渋谷店 屋上イベントスペース（9F／RF）",
+      "note": "会場は屋上イベントスペース（9F／RF）。第2部は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象商品購入1000円につき特典券1枚。特典会の単独開始・終了時刻は未公表。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。",
+      "evidence": "開催日時は本人公式と店舗公式で一致。本人公式の9F表記と店舗公式の屋上表記は、店舗公式RF案内の9F屋上表記と当該公演掲載により同一会場として照合。",
       "sourceUrl": "https://straight-angeli.com/news/item-1355/",
       "sources": [
         {
           "url": "https://straight-angeli.com/news/item-1355/",
           "type": "artist_official_site",
-          "checkedAt": "2026-11-12T13:10:22+09:00"
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         },
         {
           "url": "https://towershibuya.jp/2026/11/14/236995",
           "type": "venue_official",
-          "checkedAt": "2026-11-12T13:10:22+09:00"
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         },
         {
           "url": "https://straight-angeli.com/news/item-1167/",
           "type": "artist_official_site",
           "checkedAt": "2026-11-12T13:25:46+09:00"
+        },
+        {
+          "url": "https://towershibuya.jp/roof?ym=2026-11",
+          "type": "venue_official",
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         }
       ],
-      "checkedAt": "2026-11-12T13:25:46+09:00",
+      "checkedAt": "2026-11-13T23:42:16.125Z",
       "timings": [
         {
           "kind": "event_start",
@@ -9472,28 +9482,33 @@
       "allDay": false,
       "status": "confirmed",
       "category": "REMIND",
-      "location": "タワーレコード渋谷店（階の表記に相違）",
-      "note": "対象PHOTO SET vol.5/7/8、優先入場券・特典券はなくなり次第終了。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。",
-      "evidence": "開催日時は本人公式の更新後の発表を採用。会場階は本人公式と店舗公式で表記が異なるため未確定。",
+      "location": "タワーレコード渋谷店",
+      "note": "対象PHOTO SET vol.5/7/8、優先入場券・特典券はなくなり次第終了。 8/22中止分の特典券・トライアルチケット保有者は、12月末までの生写真販売イベントで振替対応。対象条件は公式案内を確認。 販売・整列の具体的な場所は未確認。現地案内をご確認ください。",
+      "evidence": "11:00の販売開始は本人公式・店舗公式で一致。ライブ会場は屋上（9F／RF）だが、販売・整列場所の指定は確認できないため店舗名のみ記載。",
       "sourceUrl": "https://straight-angeli.com/news/item-1355/",
       "sources": [
         {
           "url": "https://straight-angeli.com/news/item-1355/",
           "type": "artist_official_site",
-          "checkedAt": "2026-11-12T13:10:22+09:00"
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         },
         {
           "url": "https://towershibuya.jp/2026/11/14/236995",
           "type": "venue_official",
-          "checkedAt": "2026-11-12T13:10:22+09:00"
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         },
         {
           "url": "https://straight-angeli.com/news/item-1167/",
           "type": "artist_official_site",
           "checkedAt": "2026-11-12T13:25:46+09:00"
+        },
+        {
+          "url": "https://towershibuya.jp/roof?ym=2026-11",
+          "type": "venue_official",
+          "checkedAt": "2026-11-13T23:42:16.125Z"
         }
       ],
-      "checkedAt": "2026-11-12T13:25:46+09:00",
+      "checkedAt": "2026-11-13T23:42:16.125Z",
       "timings": [
         {
           "kind": "sales_start",
