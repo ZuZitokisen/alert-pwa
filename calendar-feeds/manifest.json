@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-13-v5-kiss-ride-timing",
-  "dataGeneratedAt": "2026-11-13T09:49:34.690Z",
+  "dataVersion": "2026-11-13-v6-rege-spafes",
+  "dataGeneratedAt": "2026-11-13T14:43:34Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "b444d487a4f3124596ca4255da93e2dc9e7640126103f851636c302afd5fa02c",
+  "inputSha256": "87fad5eb7b77d8fd1806db0a9f10494ad09a094f4d9f8ef779c80716caad0049",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 50,
+      "count": 51,
       "omittedUnknownDate": 0,
-      "sha256": "ebe5a4d74353ed37cba677d51598033a625978f452867457a922909b4de2f8c7"
+      "sha256": "6af554052d71f527b5ceab86ca4adeb439cdc89526705f3c168a536bc85bba97"
     },
     {
       "id": "re-ge-live",
@@ -76,9 +76,9 @@
       "category": "live",
       "label": "RE-GE / ライブ・イベント",
       "path": "calendar-feeds/re-ge-live.ics",
-      "count": 6,
+      "count": 7,
       "omittedUnknownDate": 0,
-      "sha256": "49751685dd9e250c29f51a1a85d6a99ee4901c60b27fcf5e589b6694e13000d7"
+      "sha256": "c15ac56f2b229fb4b968dbfee288cdab86567e5689638881b255e1333f0a7d7d"
     },
     {
       "id": "re-ge-benefit",

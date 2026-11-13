@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-13-v5-kiss-ride-timing",
-  "generatedAt": "2026-11-13T09:49:34.690Z",
+  "version": "2026-11-13-v6-rege-spafes",
+  "generatedAt": "2026-11-13T14:43:34Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -781,16 +781,21 @@
       "source": "curated-calendar",
       "artistId": "re-ge",
       "title": "SPA! FES2026",
-      "start": "2026-11-14T11:45:00+09:00",
-      "end": null,
+      "start": "2026-11-14T16:40:00+09:00",
+      "end": "2026-11-14T17:05:00+09:00",
       "allDay": false,
       "status": "confirmed",
       "category": "LIVE",
-      "location": "Spotify O-WEST / duo MUSIC EXCHANGE / SHIBUYA RING",
-      "note": "欠席予定のメンバーあり。出演者は公式を確認。",
+      "location": "Spotify O-WEST",
+      "note": "RE-GEの出演枠。イベント全体は11:00開場・11:45開演。那須ほほみは不参加。特典会は別会場・別予定を参照。",
       "evidence": "本人側の公式発表で確認。",
-      "sourceUrl": "https://re-ge.com/schedule/item-673/",
+      "sourceUrl": "https://re-ge.com/news/item-803/",
       "sources": [
+        {
+          "url": "https://re-ge.com/news/item-803/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-13T14:43:34Z"
+        },
         {
           "url": "https://re-ge.com/schedule/item-673/",
           "type": "artist_official",
@@ -802,7 +807,7 @@
           "checkedAt": "2026-11-11T08:41:14Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:41:14Z",
+      "checkedAt": "2026-11-13T14:43:34Z",
       "timings": [
         {
           "label": "イベント開場",
@@ -816,6 +821,56 @@
           "kind": "event_start",
           "at": "2026-11-14T11:45:00+09:00",
           "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE出演開始",
+          "kind": "performance_start",
+          "at": "2026-11-14T16:40:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE出演終了",
+          "kind": "performance_end",
+          "at": "2026-11-14T17:05:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-spafes-20261114"
+    },
+    {
+      "id": "rege-spafes-20261114-photo-session",
+      "source": "curated-calendar",
+      "artistId": "re-ge",
+      "title": "SPA! FES2026 RE-GE 2ショット撮影会",
+      "start": "2026-11-14T17:25:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "HARLEM 2F A（東京都渋谷区円山町2-4 Dr.ジーカンス 2F）",
+      "note": "17:25頃から販売・特典会開始予定、列が途切れ次第終了。那須ほほみは不参加。当日のイベントチケットと撮影券が必要。会場で第六弾生写真（1セット税込1,000円）を3セット購入につき撮影券1枚。先着配布・定員で終了。第一弾ミニ生写真と第七弾新作生写真は対象外。希望メンバー1名との撮影、1ショットも可。支払いは現金・PayPay。販売状況・残数は未確認。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://re-ge.com/news/item-803/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-803/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-13T14:43:34Z"
+        }
+      ],
+      "checkedAt": "2026-11-13T14:43:34Z",
+      "timings": [
+        {
+          "label": "販売・特典会開始予定",
+          "kind": "event_start",
+          "at": "2026-11-14T17:25:00+09:00",
+          "note": "開始は予定。列が途切れ次第終了。",
           "status": "confirmed"
         }
       ],
