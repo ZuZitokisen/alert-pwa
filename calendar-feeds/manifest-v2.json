@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-12-v4-jrt-radio",
-  "dataGeneratedAt": "2026-11-12T04:55:59.350Z",
+  "dataVersion": "2026-11-13-v5-kiss-ride-timing",
+  "dataGeneratedAt": "2026-11-13T09:49:34.690Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "c4d8bafd6276a50bf5fda38fc34259e6ee30cc7a1c59a4e69f82e5475dc6777f",
+  "inputSha256": "f17665b4f834e6c04ba35f71925e3da9d06a1bc77a673e1ec71e3c919e38aeea",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all.ics",
       "count": 36,
       "omittedUnknownDate": 0,
-      "sha256": "7061ef9dd6df683f30c9016e93032711ecceb6fde8e5a119b6b1c0eaea64c2d7"
+      "sha256": "d9fa0470c3703897e73bcd1266fea0c2eab0297416cf44f8e8a757f239a3a257"
     },
     {
       "id": "straightangeli-live",
@@ -148,7 +148,7 @@
       "path": "calendar-feeds/straightangeli-media.ics",
       "count": 22,
       "omittedUnknownDate": 0,
-      "sha256": "99a7a7b0657d58ae388981e1978a0b614add8e9cfae0616b4cd48269d2863e74"
+      "sha256": "4fa8506f8cae8a7e94eab110533cb527dd782cac6cc95b3865c57db9c06d9daf"
     },
     {
       "id": "straightangeli-other",
