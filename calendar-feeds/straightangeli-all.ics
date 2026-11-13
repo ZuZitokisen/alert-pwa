@@ -309,19 +309,23 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-7af1a3277b27aee2dabbc636b06eca0177d269eaacbce87189129e5e4b0ae
  f59@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261113T094934Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261113T094934Z
+SEQUENCE:1
 DTSTART:20261116T030000Z
 DTEND:20261116T054500Z
 SUMMARY:Kiss & Ride（松元寧音・大山蒼生）【番組枠】
-DESCRIPTION:12:00〜14:45は案内された番組枠。ゲスト出演の
- 正確な時刻は未公表。radiko地域条件あり。\n本人公式サ
- イトの掲載を確認。時刻の意味や未発表事項は注記に
- 記載。\nhttps://straight-angeli.com/schedule/1359/
+DESCRIPTION:12:00〜14:45は本人公式が案内した番組枠。局番
+ 組表のゲスト出演目安は13:05頃（松元寧音・大山蒼生）
+ 。ゲスト出演の正確な時刻は未公表。目安は変更され
+ る場合があります。radiko地域条件あり。\n11/16の出演者
+ と番組枠は本人公式で確認。13:05頃はFMヨコハマのradiko
+ 番組表に基づく出演目安で、本人公式では個別時刻の
+ 記載を確認していません。\nhttps://radiko.jp/index/YFM/\nhttps:
+ //straight-angeli.com/schedule/1359/
 LOCATION:FMヨコハマ
-URL:https://straight-angeli.com/schedule/1359/
+URL:https://radiko.jp/index/YFM/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

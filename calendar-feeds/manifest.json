@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-12-v4-jrt-radio",
-  "dataGeneratedAt": "2026-11-12T04:55:59.350Z",
+  "dataVersion": "2026-11-13-v5-kiss-ride-timing",
+  "dataGeneratedAt": "2026-11-13T09:49:34.690Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "27cd2512eb1770b0b5d29a1c792fac19548c80487747670ba2af42773b5bd7d3",
+  "inputSha256": "b444d487a4f3124596ca4255da93e2dc9e7640126103f851636c302afd5fa02c",
   "feeds": [
     {
       "id": "tokisen-all",
