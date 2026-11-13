@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-13-v7-rege-hmv-floor",
-  "dataGeneratedAt": "2026-11-13T15:37:15.444Z",
+  "dataVersion": "2026-11-14-v8-straightangeli-shibuya-venue",
+  "dataGeneratedAt": "2026-11-13T23:42:16.125Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "5496a896fcf07c3271fb14e5e6c3a1df9ca0dbd8d143cf4c2ea85084bcc82172",
+  "inputSha256": "352d1421e33f5fde78a43df485ad5d37f6a5ae68feb4e28dc2263875f6d85b53",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all.ics",
       "count": 36,
       "omittedUnknownDate": 0,
-      "sha256": "d9fa0470c3703897e73bcd1266fea0c2eab0297416cf44f8e8a757f239a3a257"
+      "sha256": "bdc45e0abe14d105c1039981bc1c3a418e049f61d541290485d226294e7b6599"
     },
     {
       "id": "straightangeli-live",
@@ -138,7 +138,7 @@
       "path": "calendar-feeds/straightangeli-benefit.ics",
       "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "bd7c6e466b461b294af0455c4d8b894f2bab9adc3239def46658042160451b4e"
+      "sha256": "dba2067ca5cd24010f46b8eeee147ea57f1015ea94d3a61a519bf5744a825739"
     },
     {
       "id": "straightangeli-media",
