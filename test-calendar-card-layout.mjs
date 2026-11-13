@@ -91,14 +91,14 @@ test('week click selects the full row across a month boundary without switching 
  weekButton(f,'2026-11-29').click();assert.equal(f.run('agendaRange'),'week');assert.equal(f.run('period'),'2026-11-01');assert.deepEqual(bounds(f),{start:'2026-11-29',end:'2026-12-06'});assert.deepEqual(f.titles(),['Sunday','December','Saturday']);assert.equal(f.get('agenda-title').textContent,'この週の予定');assert.equal(f.get('calendar').querySelectorAll('.range-selected').length,7);assert.equal(weekButton(f,'2026-11-29').getAttribute('aria-pressed'),'true');assert.ok(f.get('calendar').classList.contains('month-grid'));
  weekButton(f,'2026-11-29').click();assert.deepEqual(bounds(f),{start:'2026-11-29',end:'2026-12-06'});
 });
-test('calendar surface and date clicks select month cards rather than day cards',()=>{
+test('month heading selects month while date clicks select only that day',()=>{
  const f=fixture({events:[event('early','2026-11-01'),event('today','2026-11-12'),event('late','2026-11-30'),event('December','2026-12-01')]});
  f.get('month-label').click();assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['early','today','late']);assert.equal(f.get('agenda-title').textContent,'この月の予定');
- weekButton(f,'2026-11-08').click();dateButton(f,'2026-11-12').click();assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['early','today','late']);assert.equal(f.run('selectedWeekStart'),null);
+ weekButton(f,'2026-11-08').click();dateButton(f,'2026-11-12').click();assert.equal(f.run('agendaRange'),'day');assert.deepEqual(f.titles(),['today']);assert.equal(f.run('selectedWeekStart'),null);
  dateButton(f,'2026-12-01').click();assert.equal(f.run('period'),'2026-12-01');assert.deepEqual(f.titles(),['December']);
 });
-test('clicking a calendar event selects the month without opening the detail dialog',()=>{
- const f=fixture({events:[event('early','2026-11-01'),event('today','2026-11-12')]});f.get('calendar').querySelector('.calendar-event').click();assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['early','today']);assert.equal(f.get('detail').open,false);
+test('clicking a calendar event selects its day without opening the detail dialog',()=>{
+ const f=fixture({events:[event('early','2026-11-01'),event('today','2026-11-12')]});f.get('calendar').querySelector('.calendar-event').click();assert.equal(f.run('agendaRange'),'day');assert.deepEqual(f.titles(),['early']);assert.equal(f.get('detail').open,false);
 });
 test('month arrows switch month card ranges across years and repeated navigation',()=>{
  const f=fixture({events:[event('January','2027-01-01'),event('December','2026-12-31')]});f.run("selectDay('2026-12-31')");f.get('next-period').click();assert.deepEqual(bounds(f),{start:'2027-01-01',end:'2027-02-01'});assert.deepEqual(f.titles(),['January']);assert.equal(f.run('selectedWeekStart'),null);
@@ -110,7 +110,7 @@ test('today button returns from another month and week to today cards only',()=>
 test('week ranges include year boundaries and leap day; month grids handle six rows',()=>{
  const f=fixture();f.run("selectDay('2027-01-01');selectWeek('2026-12-27')");assert.deepEqual(bounds(f),{start:'2026-12-27',end:'2027-01-03'});
  f.run("selectDay('2028-02-01');selectWeek('2028-02-27')");assert.deepEqual(bounds(f),{start:'2028-02-27',end:'2028-03-05'});assert.equal(f.get('calendar').querySelectorAll('.range-selected').length,7);
- f.run("selectDay('2028-02-29')");assert.deepEqual(bounds(f),{start:'2028-02-01',end:'2028-03-01'});
+ f.run("selectDay('2028-02-29')");assert.deepEqual(bounds(f),{start:'2028-02-29',end:'2028-03-01'});
  f.run("selectDay('2027-05-01')");assert.equal(f.get('calendar').querySelectorAll('.week-select').length,6);assert.equal(f.get('calendar').querySelectorAll('.day-cell').length,42);
 });
 test('range inclusion honors all-day exclusive ends and timed overlaps without duplicates',()=>{
@@ -163,5 +163,22 @@ test('legacy information routes show News without losing the selected calendar r
 });
 test('event names in an adjacent-month cell select that cell month just like its date button',()=>{
  const f=fixture({events:[event('November','2026-11-12'),event('December','2026-12-01')]});
- const outside=f.get('calendar').querySelectorAll('.day-cell').find(d=>d.dataset.date==='2026-12-01');assert.ok(outside.classList.contains('outside'));outside.querySelector('.calendar-event').click();assert.equal(f.run('period'),'2026-12-01');assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['December']);assert.equal(f.get('detail').open,false);
+ const outside=f.get('calendar').querySelectorAll('.day-cell').find(d=>d.dataset.date==='2026-12-01');assert.ok(outside.classList.contains('outside'));outside.querySelector('.calendar-event').click();assert.equal(f.run('period'),'2026-12-01');assert.equal(f.run('agendaRange'),'day');assert.deepEqual(f.titles(),['December']);assert.equal(f.get('detail').open,false);
+});
+
+test('consecutive date, cell whitespace and dots clicks preserve day selection, including empty days',()=>{
+ const f=fixture({events:[event('today','2026-11-12'),event('tomorrow','2026-11-13')]});
+ for(const day of ['2026-11-13','2026-11-12','2026-11-13']){
+  dateButton(f,day).click();assert.equal(f.run('agendaRange'),'day');assert.deepEqual(bounds(f),{start:day,end:f.run(`addDays('${day}',1)`)});
+  assert.equal(f.get('calendar').querySelectorAll('.range-selected').length,1);
+ }
+ f.get('calendar').querySelectorAll('.day-cell').find(d=>d.dataset.date==='2026-11-12').querySelector('.event-dots').click();assert.deepEqual(f.titles(),['today']);
+ f.get('calendar').querySelectorAll('.day-cell').find(d=>d.dataset.date==='2026-11-14').click();assert.deepEqual(f.titles(),[]);assert.equal(f.run('agendaRange'),'day');
+ f.get('month-label').click();assert.deepEqual(f.titles(),['today','tomorrow']);assert.equal(f.run('agendaRange'),'month');
+});
+test('week controls keep their full hit target but no tile in either state',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/\.week-select\{[^}]*min-width:44px;min-height:44px/);
+ assert.match(css,/\.week-select\{[^}]*border:0;border-radius:0;box-shadow:none;background:transparent/);
+ assert.match(css,/\.week-select\[aria-pressed=true\]\{background:transparent;color:var\(--accent\)\}/);
 });

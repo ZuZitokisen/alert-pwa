@@ -61,8 +61,8 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .calendar-layout{grid-template-columns:minmax(0,1fr)}
 .calendar.month-grid{grid-template-columns:44px repeat(7,minmax(0,1fr));margin-top:20px}
 .week-selector-heading{min-width:0}
-.week-select{align-self:stretch;width:44px;min-width:44px;min-height:44px;padding:0;border:0;border-top:1px solid var(--line);border-radius:9px;background:transparent;color:var(--muted);font-size:22px}
-.week-select[aria-pressed=true]{background:var(--pink);color:var(--accent)}
+.week-select{align-self:stretch;width:44px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;color:var(--muted);font-size:22px}
+.week-select[aria-pressed=true]{background:transparent;color:var(--accent)}
 .day-cell.range-selected{background:color-mix(in srgb,var(--pink) 45%,transparent)}
 .day-cell.selected{background:var(--pink)}
 #agenda,#undated{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
