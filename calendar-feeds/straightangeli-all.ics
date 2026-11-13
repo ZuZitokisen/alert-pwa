@@ -167,25 +167,27 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-97ea9722699958f6ff4eb1ed8760bc16bcab4fddda855206fff23088d48c0
  645@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261113T234216Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261113T234216Z
+SEQUENCE:1
 DTSTART:20261114T040000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 渋谷 第1部（ミニライブ・特典会）
-DESCRIPTION:公式サイトは9F、店舗公式は屋上。現地詳細は
- 両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一
- 覧17:30は旧情報）。対象商品購入1000円につき特典券1枚
- 。第1部は私服特典会。特典会の単独開始・終了時刻は
- 未公表。 8/22中止分の特典券・トライアルチケット保有
- 者は、12月末までの生写真販売イベントで振替対応。対
- 象条件は公式案内を確認。\n開催日時は本人公式の更新
- 後の発表を採用。会場階は本人公式と店舗公式で表記
- が異なるため未確定。\nhttps://straight-angeli.com/news/item-1167
- /\nhttps://straight-angeli.com/news/item-1355/\nhttps://towershibuya.jp/20
- 26/11/14/236995
-LOCATION:タワーレコード渋谷店（階の表記に相違）
+DESCRIPTION:会場は屋上イベントスペース（9F／RF）。第2部
+ は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象
+ 商品購入1000円につき特典券1枚。第1部は私服特典会。
+ 特典会の単独開始・終了時刻は未公表。 8/22中止分の特
+ 典券・トライアルチケット保有者は、12月末までの生写
+ 真販売イベントで振替対応。対象条件は公式案内を確
+ 認。\n開催日時は本人公式と店舗公式で一致。本人公式
+ の9F表記と店舗公式の屋上表記は、店舗公式RF案内の9F
+ 屋上表記と当該公演掲載により同一会場として照合。\n
+ https://straight-angeli.com/news/item-1167/\nhttps://straight-angeli.com/n
+ ews/item-1355/\nhttps://towershibuya.jp/2026/11/14/236995\nhttps://towersh
+ ibuya.jp/roof?ym=2026-11
+LOCATION:タワーレコード渋谷店 屋上イベントスペース（9F
+ ／RF）
 URL:https://straight-angeli.com/news/item-1167/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -193,24 +195,26 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-8f0e16ea8ac178f44c8d6b36596c91d498cc6a0a1b81e2c9a02a5ff4ae02a
  3b7@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261113T234216Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261113T234216Z
+SEQUENCE:1
 DTSTART:20261114T080000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 渋谷 第2部（ミニライブ・特典会）
-DESCRIPTION:公式サイトは9F、店舗公式は屋上。現地詳細は
- 両公式で要確認。第2部は11/7に17:00へ変更と明示（旧一
- 覧17:30は旧情報）。対象商品購入1000円につき特典券1枚
- 。特典会の単独開始・終了時刻は未公表。 8/22中止分の
- 特典券・トライアルチケット保有者は、12月末までの生
- 写真販売イベントで振替対応。対象条件は公式案内を
- 確認。\n開催日時は本人公式の更新後の発表を採用。会
- 場階は本人公式と店舗公式で表記が異なるため未確定
- 。\nhttps://straight-angeli.com/news/item-1167/\nhttps://straight-angeli.
- com/news/item-1355/\nhttps://towershibuya.jp/2026/11/14/236995
-LOCATION:タワーレコード渋谷店（階の表記に相違）
+DESCRIPTION:会場は屋上イベントスペース（9F／RF）。第2部
+ は11/7に17:00へ変更と明示（旧一覧17:30は旧情報）。対象
+ 商品購入1000円につき特典券1枚。特典会の単独開始・終
+ 了時刻は未公表。 8/22中止分の特典券・トライアルチケ
+ ット保有者は、12月末までの生写真販売イベントで振替
+ 対応。対象条件は公式案内を確認。\n開催日時は本人公
+ 式と店舗公式で一致。本人公式の9F表記と店舗公式の屋
+ 上表記は、店舗公式RF案内の9F屋上表記と当該公演掲載
+ により同一会場として照合。\nhttps://straight-angeli.com/news/
+ item-1167/\nhttps://straight-angeli.com/news/item-1355/\nhttps://towershib
+ uya.jp/2026/11/14/236995\nhttps://towershibuya.jp/roof?ym=2026-11
+LOCATION:タワーレコード渋谷店 屋上イベントスペース（9F
+ ／RF）
 URL:https://straight-angeli.com/news/item-1167/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -218,22 +222,24 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-23271b313405b4d16bdc00485d7c111c2b7dbaefa6658e7c600e6267da570
  9ac@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261113T234216Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261113T234216Z
+SEQUENCE:1
 DTSTART:20261114T020000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 渋谷 対象商品販売・配券開始
 DESCRIPTION:対象PHOTO SET vol.5/7/8、優先入場券・特典券はな
  くなり次第終了。 8/22中止分の特典券・トライアルチケ
  ット保有者は、12月末までの生写真販売イベントで振替
- 対応。対象条件は公式案内を確認。\n開催日時は本人公
- 式の更新後の発表を採用。会場階は本人公式と店舗公
- 式で表記が異なるため未確定。\nhttps://straight-angeli.com/ne
- ws/item-1167/\nhttps://straight-angeli.com/news/item-1355/\nhttps://towers
- hibuya.jp/2026/11/14/236995
-LOCATION:タワーレコード渋谷店（階の表記に相違）
+ 対応。対象条件は公式案内を確認。 販売・整列の具体
+ 的な場所は未確認。現地案内をご確認ください。\n11:00
+ の販売開始は本人公式・店舗公式で一致。ライブ会場
+ は屋上（9F／RF）だが、販売・整列場所の指定は確認で
+ きないため店舗名のみ記載。\nhttps://straight-angeli.com/news/
+ item-1167/\nhttps://straight-angeli.com/news/item-1355/\nhttps://towershib
+ uya.jp/2026/11/14/236995\nhttps://towershibuya.jp/roof?ym=2026-11
+LOCATION:タワーレコード渋谷店
 URL:https://straight-angeli.com/news/item-1167/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT

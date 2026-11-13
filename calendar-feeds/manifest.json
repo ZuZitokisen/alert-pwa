@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-13-v7-rege-hmv-floor",
-  "dataGeneratedAt": "2026-11-13T15:37:15.444Z",
+  "dataVersion": "2026-11-14-v8-straightangeli-shibuya-venue",
+  "dataGeneratedAt": "2026-11-13T23:42:16.125Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "8bd07e9689bb5f325d92ea44df85fb9e0fe245b9687d6f462f06b8a27ae93d96",
+  "inputSha256": "c4baf8c3cae81e1de6ca879a83b0a60563b576276bcd9ac64ab563827cb6bb71",
   "feeds": [
     {
       "id": "tokisen-all",
