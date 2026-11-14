@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-14-v8-straightangeli-shibuya-venue",
-  "generatedAt": "2026-11-13T23:42:16.125Z",
+  "version": "2026-11-14-v9-rege-radio-obs-kry",
+  "generatedAt": "2026-11-14T01:47:20.370Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9355,6 +9355,92 @@
       "revision": 1,
       "present": true,
       "dateLabel": "日時未定（日付未発表）"
+    },
+    {
+      "id": "rege-regenic-OBSラジオ-2026-11-15",
+      "source": "curated-calendar",
+      "artistId": "re-ge",
+      "title": "RE-GEnic radio",
+      "start": "2026-11-15T21:00:00+09:00",
+      "end": "2026-11-15T21:15:00+09:00",
+      "allDay": false,
+      "status": "possible",
+      "category": "RADIO",
+      "location": "OBSラジオ",
+      "note": "番組表の出演者表記はRE-GE。各回の出演メンバー・回数は未確認。",
+      "evidence": "個別放送日時をradikoの番組表で確認。本人側の当該日時の発表本文は未確認のため、かも？として掲載。",
+      "sourceUrl": "https://radiko.jp/mobile/events/14176070",
+      "sources": [
+        {
+          "url": "https://radiko.jp/mobile/events/14176070",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-14T01:47:20.370Z"
+        }
+      ],
+      "checkedAt": "2026-11-14T01:47:20.370Z",
+      "timings": [
+        {
+          "label": "放送開始",
+          "kind": "broadcast_start",
+          "at": "2026-11-15T21:00:00+09:00",
+          "note": "",
+          "status": "possible"
+        },
+        {
+          "label": "放送終了",
+          "kind": "broadcast_end",
+          "at": "2026-11-15T21:15:00+09:00",
+          "note": "",
+          "status": "possible"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-regenic-OBSラジオ-2026-11-15"
+    },
+    {
+      "id": "rege-regenic-KRY山口放送-2026-11-18",
+      "source": "curated-calendar",
+      "artistId": "re-ge",
+      "title": "RE-GEnic radio",
+      "start": "2026-11-18T18:20:00+09:00",
+      "end": "2026-11-18T18:45:00+09:00",
+      "allDay": false,
+      "status": "possible",
+      "category": "RADIO",
+      "location": "KRY山口放送",
+      "note": "番組表の出演者表記はRE-GE。各回の出演メンバー・回数は未確認。",
+      "evidence": "個別放送日時をradikoの番組表で確認。本人側の当該日時の発表本文は未確認のため、かも？として掲載。",
+      "sourceUrl": "https://radiko.jp/mobile/events/14205843",
+      "sources": [
+        {
+          "url": "https://radiko.jp/mobile/events/14205843",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-14T01:47:20.370Z"
+        }
+      ],
+      "checkedAt": "2026-11-14T01:47:20.370Z",
+      "timings": [
+        {
+          "label": "放送開始",
+          "kind": "broadcast_start",
+          "at": "2026-11-18T18:20:00+09:00",
+          "note": "",
+          "status": "possible"
+        },
+        {
+          "label": "放送終了",
+          "kind": "broadcast_end",
+          "at": "2026-11-18T18:45:00+09:00",
+          "note": "",
+          "status": "possible"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-regenic-KRY山口放送-2026-11-18"
     }
   ],
   "notes": [
