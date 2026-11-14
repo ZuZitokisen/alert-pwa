@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-14-v8-straightangeli-shibuya-venue",
-  "dataGeneratedAt": "2026-11-13T23:42:16.125Z",
-  "inputSha256": "352d1421e33f5fde78a43df485ad5d37f6a5ae68feb4e28dc2263875f6d85b53",
+  "dataVersion": "2026-11-14-v9-rege-radio-obs-kry",
+  "dataGeneratedAt": "2026-11-14T01:47:20.370Z",
+  "inputSha256": "3397332e810f2cb5153c9ff3417415b8602a03fbc1dfced5a5d08694091954b2",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -728,6 +728,38 @@
       ]
     },
     {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-regenic-KRY山口放送-2026-11-18\"]",
+      "uid": "public-v1-56cf7add742514e6a3ee9b2af08b3ebeca0ebee34b43b68a54aa0f7bef1053de@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-regenic-KRY山口放送-2026-11-18",
+        "category": "media",
+        "title": "RE-GEnic radio",
+        "start": "2026-11-18T18:20:00+09:00",
+        "end": "2026-11-18T18:45:00+09:00",
+        "allDay": false,
+        "location": "KRY山口放送",
+        "publicNote": "番組表の出演者表記はRE-GE。各回の出演メンバー・回数は未確認。\n個別放送日時をradikoの番組表で確認。本人側の当該日時の発表本文は未確認のため、かも？として掲載。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://radiko.jp/mobile/events/14205843"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-14T01:47:20.370Z",
+      "modified": "2026-11-14T01:47:20.370Z",
+      "lastTiming": {
+        "start": "2026-11-18T18:20:00+09:00",
+        "end": "2026-11-18T18:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-media"
+      ]
+    },
+    {
       "key": "[\"re-ge\",\"curated-calendar\",\"rege-regenic-NBCラジオ-2026-11-15\"]",
       "uid": "public-v1-fa596863c05ac14e4a8b1a44799ecd0d3eaf0d0dbb54985c6267d4aff6469be3@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -753,6 +785,38 @@
       "lastTiming": {
         "start": "2026-11-15T16:00:00+09:00",
         "end": "2026-11-15T16:15:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-media"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-regenic-OBSラジオ-2026-11-15\"]",
+      "uid": "public-v1-96cb33994ebd478f0879c1f0b9481a898167c3510abb403f976da0d40498a665@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-regenic-OBSラジオ-2026-11-15",
+        "category": "media",
+        "title": "RE-GEnic radio",
+        "start": "2026-11-15T21:00:00+09:00",
+        "end": "2026-11-15T21:15:00+09:00",
+        "allDay": false,
+        "location": "OBSラジオ",
+        "publicNote": "番組表の出演者表記はRE-GE。各回の出演メンバー・回数は未確認。\n個別放送日時をradikoの番組表で確認。本人側の当該日時の発表本文は未確認のため、かも？として掲載。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://radiko.jp/mobile/events/14176070"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-14T01:47:20.370Z",
+      "modified": "2026-11-14T01:47:20.370Z",
+      "lastTiming": {
+        "start": "2026-11-15T21:00:00+09:00",
+        "end": "2026-11-15T21:15:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -9177,5 +9241,5 @@
       ]
     }
   ],
-  "integritySha256": "50a707c624121df7e71d341f6d1ff27da3a52e96ac3ef4d530c0feaa7cfd9002"
+  "integritySha256": "469def8707dfa377a03b88d52fb3f3a8b2adb191f6d4ac5a313e1aff22f1ddd5"
 }

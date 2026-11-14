@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-14-v8-straightangeli-shibuya-venue",
-  "dataGeneratedAt": "2026-11-13T23:42:16.125Z",
+  "dataVersion": "2026-11-14-v9-rege-radio-obs-kry",
+  "dataGeneratedAt": "2026-11-14T01:47:20.370Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "c4baf8c3cae81e1de6ca879a83b0a60563b576276bcd9ac64ab563827cb6bb71",
+  "inputSha256": "5ee516c90981a98dcbe2a87b85e4e12103c36fc9675be29c7b2834cec805ad55",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 51,
+      "count": 53,
       "omittedUnknownDate": 0,
-      "sha256": "05a5e2ef39887d2193dd6cd93ffb9477082eb825d979d92a1886832c14f30a80"
+      "sha256": "fd52c7cce7f3a720450e44578a19b6937e22e5dc679fbf20d487d38ad7543ff8"
     },
     {
       "id": "re-ge-live",
@@ -96,9 +96,9 @@
       "category": "media",
       "label": "RE-GE / メディア",
       "path": "calendar-feeds/re-ge-media.ics",
-      "count": 15,
+      "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "992e8ec9191120e244df8fb01e06089f29c7015aed9f22d80235adf1c59da16e"
+      "sha256": "10c31f75143b993688307717d960df30957da6fc240a57b143932292d649c709"
     },
     {
       "id": "re-ge-other",
