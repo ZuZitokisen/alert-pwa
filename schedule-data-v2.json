@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-14-v9-rege-radio-obs-kry",
-  "generatedAt": "2026-11-14T01:47:20.370Z",
+  "version": "2026-11-15-v10-rege-aonoyukue-release",
+  "generatedAt": "2026-11-15T23:46:35.509Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -10894,6 +10894,46 @@
       "revision": 1,
       "present": true,
       "groupId": "rege-regenic-KRY山口放送-2026-11-18"
+    },
+    {
+      "id": "rege-release-806-aonoyukue-20261120",
+      "source": "curated-calendar",
+      "artistId": "re-ge",
+      "title": "「青の行方」デジタルリリース",
+      "start": "2026-11-20T00:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "デジタル配信",
+      "note": "新曲「青の行方」の配信開始。",
+      "evidence": "本人公式の配信案内に11月20日0時と明記。レーベル記事でも同日の配信リリースを確認。",
+      "sourceUrl": "https://re-ge.com/news/item-806/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-806/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-15T23:46:35.509Z"
+        },
+        {
+          "url": "https://pylonport.bandainamcomusiclive.co.jp/news/964",
+          "type": "label_official",
+          "checkedAt": "2026-11-15T23:46:35.509Z"
+        }
+      ],
+      "checkedAt": "2026-11-15T23:46:35.509Z",
+      "timings": [
+        {
+          "label": "配信開始",
+          "kind": "stream_start",
+          "at": "2026-11-20T00:00:00+09:00",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-release-806-aonoyukue-20261120"
     }
   ],
   "notes": [
