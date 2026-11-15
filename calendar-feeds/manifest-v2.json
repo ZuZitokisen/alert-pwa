@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-14-v9-rege-radio-obs-kry",
-  "dataGeneratedAt": "2026-11-14T01:47:20.370Z",
+  "dataVersion": "2026-11-15-v10-rege-aonoyukue-release",
+  "dataGeneratedAt": "2026-11-15T23:46:35.509Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3397332e810f2cb5153c9ff3417415b8602a03fbc1dfced5a5d08694091954b2",
+  "inputSha256": "e5165b5fc1122b33c5f7d594a8489011e81041afbcb740c1db1d195999eb5dcf",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 53,
+      "count": 54,
       "omittedUnknownDate": 0,
-      "sha256": "fd52c7cce7f3a720450e44578a19b6937e22e5dc679fbf20d487d38ad7543ff8"
+      "sha256": "cad3d7db6e7c329ebf2eddd6f173786f4c653b5e0ab04b1c19d4b8c7f23e8277"
     },
     {
       "id": "re-ge-live",
@@ -96,9 +96,9 @@
       "category": "media",
       "label": "RE-GE / メディア",
       "path": "calendar-feeds/re-ge-media.ics",
-      "count": 17,
+      "count": 18,
       "omittedUnknownDate": 0,
-      "sha256": "10c31f75143b993688307717d960df30957da6fc240a57b143932292d649c709"
+      "sha256": "8ef51e5217e6af355945357248144ae3adf006a01eec487e5f66ece60b83655e"
     },
     {
       "id": "re-ge-other",

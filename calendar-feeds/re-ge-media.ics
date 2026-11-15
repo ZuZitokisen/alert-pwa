@@ -204,6 +204,24 @@ STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-8b286f6a361d10502376858dfdc9a85f85eb7075da0f81e265c805b009621
+ 76f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261115T234635Z
+CREATED:20261115T234635Z
+LAST-MODIFIED:20261115T234635Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:「青の行方」デジタルリリース
+DESCRIPTION:新曲「青の行方」の配信開始。\n本人公式の配
+ 信案内に11月20日0時と明記。レーベル記事でも同日の配
+ 信リリースを確認。\nhttps://pylonport.bandainamcomusiclive.co.jp/
+ news/964\nhttps://re-ge.com/news/item-806/
+LOCATION:デジタル配信
+URL:https://pylonport.bandainamcomusiclive.co.jp/news/964
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-31897d1ee5b74a7d42d8c2c8b22be1489588a26c6029d6679c270ef7c59e0
  734@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z
