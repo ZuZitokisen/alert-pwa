@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-14-v9-rege-radio-obs-kry",
-  "dataGeneratedAt": "2026-11-14T01:47:20.370Z",
-  "inputSha256": "3397332e810f2cb5153c9ff3417415b8602a03fbc1dfced5a5d08694091954b2",
+  "dataVersion": "2026-11-15-v10-rege-aonoyukue-release",
+  "dataGeneratedAt": "2026-11-15T23:46:35.509Z",
+  "inputSha256": "e5165b5fc1122b33c5f7d594a8489011e81041afbcb740c1db1d195999eb5dcf",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1273,6 +1273,39 @@
       "memberships": [
         "re-ge-all",
         "re-ge-benefit"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-release-806-aonoyukue-20261120\"]",
+      "uid": "public-v1-8b286f6a361d10502376858dfdc9a85f85eb7075da0f81e265c805b00962176f@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-release-806-aonoyukue-20261120",
+        "category": "media",
+        "title": "「青の行方」デジタルリリース",
+        "start": "2026-11-20T00:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "デジタル配信",
+        "publicNote": "新曲「青の行方」の配信開始。\n本人公式の配信案内に11月20日0時と明記。レーベル記事でも同日の配信リリースを確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://pylonport.bandainamcomusiclive.co.jp/news/964",
+          "https://re-ge.com/news/item-806/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-15T23:46:35.509Z",
+      "modified": "2026-11-15T23:46:35.509Z",
+      "lastTiming": {
+        "start": "2026-11-20T00:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-media"
       ]
     },
     {
@@ -9241,5 +9274,5 @@
       ]
     }
   ],
-  "integritySha256": "469def8707dfa377a03b88d52fb3f3a8b2adb191f6d4ac5a313e1aff22f1ddd5"
+  "integritySha256": "24f341796deefafe2b167f700cff8c05d1559312a86dd69ca64dd71fa30808f7"
 }
