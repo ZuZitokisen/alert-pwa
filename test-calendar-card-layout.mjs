@@ -197,19 +197,21 @@ test('artist first paint contains native named controls and final decorative SVG
  for(const button of buttons){assert.equal(button.getAttribute('type'),'button');assert.ok(button.querySelector('.artist-face'));assert.equal(button.querySelectorAll('.nav-count').length,0);}
  for(const svg of group.querySelectorAll('svg')){assert.equal(svg.getAttribute('aria-hidden'),'true');assert.equal(svg.getAttribute('focusable'),'false');}
 });
-test('artist renders reuse fixed native controls and only one selection including ALL',()=>{
+test('artist renders reuse controls, toggle multiple choices and reset with ALL',()=>{
  const f=fixture(),group=f.get('artist-filters'),buttons=group.querySelectorAll('button'),faces=buttons.map(b=>b.querySelector('.artist-face'));
- for(const index of [1,2,3,0,2,0]){
+ const selected=new Set();
+ for(const index of [1,2,3,2,1,3,1,3,0,0]){
+  if(index===0)selected.clear();else if(selected.has(index))selected.delete(index);else selected.add(index);
   buttons[index].click();f.run('renderArtists();renderArtists()');
   assert.deepEqual(group.querySelectorAll('button'),buttons);assert.deepEqual(buttons.map(b=>b.querySelector('.artist-face')),faces);
-  assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),buttons.map((_,i)=>String(i===index)));
-  assert.equal(group.getAttribute('data-all-selected'),String(index===0));assert.equal(buttons[index].focused,true);
+  assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),buttons.map((_,i)=>String(i===0?selected.size===0:selected.has(i))));
+  assert.equal(group.getAttribute('data-all-selected'),String(selected.size===0));assert.equal(buttons[index].focused,true);
  }
 });
 test('artist choice and day clicks preserve exact filter, date range, route and event data',()=>{
  const events=['tokisen','re-ge','straightangeli'].flatMap(artistId=>['2026-11-12','2026-11-13'].map(start=>event(artistId+' '+start,start,{artistId}))),before=JSON.stringify(events),f=fixture({events}),group=f.get('artist-filters');
  for(const artistId of ['tokisen','re-ge','straightangeli']){
-  group.querySelector(`[data-artist="${artistId}"]`).click();dateButton(f,'2026-11-13').click();
+  group.querySelector('[data-artist="all"]').click();group.querySelector(`[data-artist="${artistId}"]`).click();dateButton(f,'2026-11-13').click();
   assert.deepEqual(f.titles(),[artistId+' 2026-11-13']);assert.equal(f.run('agendaRange'),'day');assert.equal(f.context.location.hash,'#calendar');
   assert.deepEqual(f.get('calendar').querySelectorAll('.calendar-event').map(b=>b.textContent),[artistId+' 2026-11-12',artistId+' 2026-11-13']);
  }
@@ -219,7 +221,7 @@ test('artist choice does not erase favorites or alter the subscription preset pa
  const f=fixture({events:[event('keep favorite','2026-11-12')]}),group=f.get('artist-filters');
  f.get('agenda').querySelector('.favorite-button').click();const saved=f.saved.get('alert-pwa-favorites-v1');
  f.run('globalThis.subscriptionCalls=[];openSubscriptions=id=>subscriptionCalls.push(id)');
- for(const id of ['tokisen','re-ge','straightangeli','all']){group.querySelector(`[data-artist="${id}"]`).click();f.get('agenda-subscriptions').click();assert.equal(f.saved.get('alert-pwa-favorites-v1'),saved);}
+ for(const id of ['tokisen','re-ge','straightangeli','all']){group.querySelector('[data-artist="all"]').click();group.querySelector(`[data-artist="${id}"]`).click();f.get('agenda-subscriptions').click();assert.equal(f.saved.get('alert-pwa-favorites-v1'),saved);}
  assert.deepEqual(Array.from(f.context.subscriptionCalls),['tokisen','re-ge','straightangeli',undefined]);assert.deepEqual(f.titles('favorites'),['keep favorite']);
 });
 test('artist generated fallback matches static labels and paths without adding an RE-GE icon',()=>{
@@ -255,5 +257,17 @@ test('icon-only artist controls hide only two captions while keeping accessible 
  const hideRule='#artist-filters [data-artist=tokisen] .artist-label,#artist-filters [data-artist=straightangeli] .artist-label{display:none}';assert.ok(css.includes(hideRule));
  for(const [id,name,symbol] of [['tokisen','超ときめき♡宣伝部','megaphone'],['straightangeli','Straight Angeli','wings']]){const button=group.querySelector(`[data-artist="${id}"]`);assert.equal(button.getAttribute('aria-label'),name);assert.equal(button.querySelector('svg').getAttribute('data-artist-symbol'),symbol);}
  assert.equal(group.querySelector('[data-artist="all"] .artist-label').textContent,'ALL');assert.equal(group.querySelector('[data-artist="re-ge"] .artist-label').textContent,'RE-GE');assert.equal(group.querySelector('[data-artist="re-ge"]').querySelector('svg'),null);
- assert.match(css,/#artist-filters \.artist-face\{[^}]*align-items:center;justify-content:center/);assert.match(css,/#artist-filters \.artist-symbol\{[^}]*width:28px;height:25px/);
+ assert.match(css,/#artist-filters \.artist-face\{[^}]*align-items:center;justify-content:center/);assert.match(css,/#artist-filters \.artist-symbol\{[^}]*width:24px;height:22px/);
+});
+
+test('multiple artist filtering is a union across calendar, agenda, favorites and news without mutating events',()=>{
+ const ids=['tokisen','re-ge','straightangeli'],events=ids.map(artistId=>event(artistId,'2026-11-12',{artistId})),original=JSON.stringify(events),f=fixture({events}),group=f.get('artist-filters');
+ f.run("favorites=new Set(state.events.map(e=>F.stableEventKey(e)));state.changes=state.events.map((e,i)=>({id:i+1,kind:'new',after:e,fields:[],detected:'2026-11-12T03:00:00Z'}))");
+ for(const id of ['tokisen','straightangeli'])group.querySelector(`[data-artist="${id}"]`).click();
+ assert.deepEqual(f.titles().sort(),['straightangeli','tokisen']);assert.deepEqual(f.titles('favorites').sort(),['straightangeli','tokisen']);
+ assert.deepEqual(f.get('calendar').querySelectorAll('.calendar-event').map(b=>b.textContent).sort(),['straightangeli','tokisen']);
+ assert.equal(f.get('changes').querySelectorAll('.change').length,2);
+ group.querySelector('[data-artist="tokisen"]').click();assert.deepEqual(f.titles(),['straightangeli']);
+ group.querySelector('[data-artist="straightangeli"]').click();assert.equal(f.titles().length,3);assert.equal(group.getAttribute('data-all-selected'),'true');
+ assert.equal(JSON.stringify(events),original);
 });

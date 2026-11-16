@@ -8,7 +8,7 @@ const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
 const getArtist=id=>artists.find(a=>a.id===id);
-let state={events:[],changes:[],sources:[],outboxCount:0},artist='all',filter='all',agendaFilter='all',agendaRange='day',selectedWeekStart=null,view='calendar',returnView='calendar';
+let state={events:[],changes:[],sources:[],outboxCount:0},artist='all',selectedArtists=new Set(),filter='all',agendaFilter='all',agendaRange='day',selectedWeekStart=null,view='calendar',returnView='calendar';
 let selectedDate=F.dateKey(new Date().toISOString()),period=selectedDate.slice(0,7)+'-01',requestGeneration=0,mutating=false,toastTimer,storageFailed=false;
 function stored(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{storageFailed=true;return fallback;}}
 function save(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true;}catch{storageFailed=true;renderStorage();toast('保存領域を利用できません。この画面でのみ設定を保持します。');return false;}}
@@ -29,7 +29,8 @@ function colorFor(e){return colors[e.category]||colors.EVENT;}
 function statusBadge(e){return el('span',e.present===false?'掲載消失':statusNames[e.status]||'未確認',`status ${e.present===false?'missing':e.status}`);}
 // Keep source categories and subscribed feeds stable; merge special-event categories only in the UI.
 function uiEvent(e){return e.category==='BENEFIT'?{...e,category:'EVENT'}:e;}
-function matching(extra={}){return F.filterEvents(state.events.map(uiEvent),{artist,category:'all',status:'all',sort:'date',favorites,...extra});}
+function matchesArtist(id){return selectedArtists.size===0||selectedArtists.has(id);}
+function matching(extra={}){return F.filterEvents(state.events.filter(e=>matchesArtist(e.artistId)).map(uiEvent),{artist:'all',category:'all',status:'all',sort:'date',favorites,...extra});}
 function activeEvents(){return matching().filter(e=>e.present!==false&&e.status!=='cancelled');}
 function artistSymbol(id){
  const specs={tokisen:{viewBox:'0 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'m10 20 3 9h5l-4-8M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 36 28',kind:'wings',paths:[{d:'M17 22C12 25 5 20 2 9c4 4 7 4 10 4C8 10 6 7 5 3c5 5 10 5 12 12zm2 0c5 3 12-2 15-13-4 4-7 4-10 4 4-3 6-6 7-10-5 5-10 5-12 12z',fill:'currentColor'},{d:'M7 15c2 4 5 6 8 6m14-6c-2 4-5 6-8 6',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.1','stroke-linecap':'round'}]}};
@@ -50,15 +51,19 @@ function renderArtists(){
    const symbol=artistSymbol(a.id);if(symbol)face.append(symbol);
    face.append(el('span',a.id==='all'?'ALL':a.name,'artist-label'));button.append(face);
   }
-  button.setAttribute('aria-pressed',String(artist===a.id));button.setAttribute('aria-label',a.name);
+  button.setAttribute('aria-pressed',String(a.id==='all'?selectedArtists.size===0:selectedArtists.has(a.id)));button.setAttribute('aria-label',a.name);
   const label=button.querySelector('.artist-label'),name=a.id==='all'?'ALL':a.name;if(label.textContent!==name)label.textContent=name;
-  button.onclick=()=>{artist=a.id;render();button.focus({preventScroll:true});};
+  button.onclick=()=>{
+   if(a.id==='all')selectedArtists.clear();else if(selectedArtists.has(a.id))selectedArtists.delete(a.id);else selectedArtists.add(a.id);
+   artist=selectedArtists.size===1?[...selectedArtists][0]:'all';
+   render();button.focus({preventScroll:true});
+  };
   return button;
  });
  // Keep the existing elements in place so refreshes do not restart transitions
  // or move focus. The static first-paint markup already has this same shape.
  if(existing.length!==buttons.length||existing.some((button,index)=>button!==buttons[index]))container.replaceChildren(...buttons);
- container.setAttribute('data-all-selected',String(artist==='all'));
+ container.setAttribute('data-all-selected',String(selectedArtists.size===0));
 }
 
 function toggleFavorite(e){const key=F.stableEventKey(e);favorites.has(key)?favorites.delete(key):favorites.add(key);save('alert-pwa-favorites-v1',[...favorites]);render();}
@@ -176,7 +181,7 @@ function renderCalendar(){
  $('#calendar-count').textContent=`${events.filter(e=>e.start&&F.dateKey(e.start).startsWith(period.slice(0,7))).length}件の予定`;
  renderAgenda();
 }
-function renderChanges(){const list=state.changes.filter(c=>artist==='all'||(c.after||c.before)?.artistId===artist).map(c=>{const b=el('button','','change'),copy=el('div');b.append(el('span',c.kind==='new'?'+':'↻','change-mark'));copy.append(el('h3',`${kindNames[c.kind]} · ${(c.after||c.before).title}`),el('p',c.kind==='unavailable'?'掲載消失。中止とは判断していません。':c.fields.map(f=>fields[f]||f).join('・')),el('time',prettyDate(c.detected)));b.append(copy);b.onclick=()=>openChange(c);return b;});$('#changes').replaceChildren(...(list.length?list:[el('p','新着・変更はまだありません。','empty')]));}
+function renderChanges(){const list=state.changes.filter(c=>matchesArtist((c.after||c.before)?.artistId)).map(c=>{const b=el('button','','change'),copy=el('div');b.append(el('span',c.kind==='new'?'+':'↻','change-mark'));copy.append(el('h3',`${kindNames[c.kind]} · ${(c.after||c.before).title}`),el('p',c.kind==='unavailable'?'掲載消失。中止とは判断していません。':c.fields.map(f=>fields[f]||f).join('・')),el('time',prettyDate(c.detected)));b.append(copy);b.onclick=()=>openChange(c);return b;});$('#changes').replaceChildren(...(list.length?list:[el('p','新着・変更はまだありません。','empty')]));}
 function renderStorage(){$('#storage-status').replaceChildren(el('span','このブラウザへの保存'),el('strong',storageFailed?'利用できません':'端末内のみ'));}
 function render(){reconcileReadMarker();renderArtists();renderCalendar();renderCards();renderChanges();renderStorage();$('#favorite-count').textContent=state.events.filter(e=>favorites.has(F.stableEventKey(e))).length;$('#unread').textContent=state.changes.filter(c=>c.id>readThrough).length;const source=state.sources[0];$('#connection').classList.toggle('offline',!!source?.error);$('#connection').textContent=source?.error?source.error:`${state.events.length}件 · データ更新 ${prettyDate(state.generatedAt)}`;if(state.storageAvailable===false){storageFailed=true;renderStorage();}}
 async function refresh({notice=false}={}){const g=++requestGeneration;try{const r=await scheduleRequest('state'),next=await r.json();if(g!==requestGeneration)return false;if(!Array.isArray(next.events))throw Error('read');state=next;render();if(!r.ok){toast(next.baselineReady?'予定の更新を取得できませんでした。保存済みの情報を表示しています。':'予定の初回取得ができませんでした。接続を確認してください。');return false;}if(notice)toast('アプリと予定を再読み込みしました。お気に入りは保持しています。');return true;}catch{if(g!==requestGeneration)return false;toast('予定を読み込めませんでした。接続を確認して再読み込みしてください。');return false;}}
