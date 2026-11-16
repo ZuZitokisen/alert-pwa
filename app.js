@@ -31,7 +31,36 @@ function statusBadge(e){return el('span',e.present===false?'掲載消失':status
 function uiEvent(e){return e.category==='BENEFIT'?{...e,category:'EVENT'}:e;}
 function matching(extra={}){return F.filterEvents(state.events.map(uiEvent),{artist,category:'all',status:'all',sort:'date',favorites,...extra});}
 function activeEvents(){return matching().filter(e=>e.present!==false&&e.status!=='cancelled');}
-function renderArtists(){const list=[{id:'all',name:'すべてのアーティスト'},...artists];$('#artist-filters').replaceChildren(...list.map(a=>{const b=el('button');b.type='button';b.setAttribute('aria-pressed',String(artist===a.id));if(a.accent){const dot=el('i','','artist-dot');dot.style.setProperty('--artist',a.accent);dot.setAttribute('aria-hidden','true');b.append(dot);}b.append(document.createTextNode(a.name));b.onclick=()=>{artist=a.id;render();[...$('#artist-filters').children].find(x=>x.getAttribute('aria-pressed')==='true')?.focus();};return b;}));}
+function artistSymbol(id){
+ const specs={tokisen:{viewBox:'0 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'m10 20 3 9h5l-4-8M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 36 28',kind:'wings',paths:[{d:'M17 22C12 25 5 20 2 9c4 4 7 4 10 4C8 10 6 7 5 3c5 5 10 5 12 12zm2 0c5 3 12-2 15-13-4 4-7 4-10 4 4-3 6-6 7-10-5 5-10 5-12 12z',fill:'currentColor'},{d:'M7 15c2 4 5 6 8 6m14-6c-2 4-5 6-8 6',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.1','stroke-linecap':'round'}]}};
+ const spec=specs[id];if(!spec)return null;
+ const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');
+ for(const [key,value]of Object.entries({class:'artist-symbol','data-artist-symbol':spec.kind,viewBox:spec.viewBox,'aria-hidden':'true',focusable:'false'}))svg.setAttribute(key,value);
+ for(const attrs of spec.paths){const path=document.createElementNS(ns,'path');for(const [key,value]of Object.entries(attrs))path.setAttribute(key,value);svg.append(path);}
+ return svg;
+}
+function renderArtists(){
+ const list=[{id:'all',name:'すべてのアーティスト'},...artists],container=$('#artist-filters');
+ const existing=[...container.querySelectorAll('button[data-artist]')];
+ const buttons=list.map(a=>{
+  let button=existing.find(b=>b.getAttribute('data-artist')===a.id);
+  if(!button){
+   button=el('button','','artist-option');button.type='button';button.setAttribute('data-artist',a.id);
+   const face=el('span','','artist-face');
+   const symbol=artistSymbol(a.id);if(symbol)face.append(symbol);
+   face.append(el('span',a.id==='all'?'ALL':a.name,'artist-label'));button.append(face);
+  }
+  button.setAttribute('aria-pressed',String(artist===a.id));button.setAttribute('aria-label',a.name);
+  const label=button.querySelector('.artist-label'),name=a.id==='all'?'ALL':a.name;if(label.textContent!==name)label.textContent=name;
+  button.onclick=()=>{artist=a.id;render();button.focus({preventScroll:true});};
+  return button;
+ });
+ // Keep the existing elements in place so refreshes do not restart transitions
+ // or move focus. The static first-paint markup already has this same shape.
+ if(existing.length!==buttons.length||existing.some((button,index)=>button!==buttons[index]))container.replaceChildren(...buttons);
+ container.setAttribute('data-all-selected',String(artist==='all'));
+}
+
 function toggleFavorite(e){const key=F.stableEventKey(e);favorites.has(key)?favorites.delete(key):favorites.add(key);save('alert-pwa-favorites-v1',[...favorites]);render();}
 function favoriteMark(active){const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('class','favorite-icon');svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');const heart=document.createElementNS(ns,'path');heart.setAttribute('d','M12 20.5 3.8 12.4C.2 8.8 2.2 3.5 6.5 3.5c2.3 0 4 1.4 5.5 3.2 1.5-1.8 3.2-3.2 5.5-3.2 4.3 0 6.3 5.3 2.7 8.9Z');heart.setAttribute('fill',active?'#fff':'#222332');heart.setAttribute('stroke','#222332');heart.setAttribute('stroke-width','1.4');heart.setAttribute('stroke-linejoin','round');svg.append(heart);return svg;}
 function favoriteButton(e){const b=el('button','','favorite-button');b.append(favoriteMark(favorites.has(F.stableEventKey(e))));b.type='button';b.setAttribute('aria-label',`${e.title}のお気に入り`);b.setAttribute('aria-pressed',String(favorites.has(F.stableEventKey(e))));b.onclick=()=>{const container=b.closest('[id]')?.id;toggleFavorite(e);if(container)[...document.getElementById(container).querySelectorAll('button[aria-label]')].find(x=>x.getAttribute('aria-label')===`${e.title}のお気に入り`)?.focus({preventScroll:true});};return b;}
@@ -188,4 +217,4 @@ $('#open-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:
 $('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-search').oninput=renderAgenda;$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)selectDay(day.dataset.date);else selectMonth();};
 function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+direction);period=F.dateKey(d.toISOString()).slice(0,7)+'-01';selectedDate=period;agendaRange='month';selectedWeekStart=null;renderCalendar();}
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save('alert-pwa-curated-read-v2',readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
-$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));route();refresh({notice:takeAppReloadNotice()});
+$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});

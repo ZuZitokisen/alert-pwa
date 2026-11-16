@@ -82,3 +82,56 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 }
 
 .news-spec-title{margin:30px 0 18px}
+
+/* Artist-menu preview: fixed touch targets, independently animated surfaces. */
+#artist-filters.artist-pills{
+ --artist-all-bg:#e8e8ec;--artist-all-border:#d3d3da;--artist-all-ink:#56545f;
+ position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+ gap:0;width:100%;max-width:760px;min-width:0;margin:22px 0 25px;padding:0;
+}
+#artist-filters::before{
+ content:"";position:absolute;z-index:-1;pointer-events:none;left:4px;top:6px;bottom:6px;
+ width:calc(25% - 8px);border:1px solid var(--artist-all-border);border-radius:999px;
+ background:var(--artist-all-bg);box-sizing:border-box;
+ transition:width 360ms cubic-bezier(.22,.8,.25,1),background-color 280ms ease,border-color 280ms ease;
+}
+#artist-filters[data-all-selected=true]::before{width:calc(100% - 8px);background:#202025;border-color:#202025}
+#artist-filters>button.artist-option{
+ display:flex;align-items:stretch;justify-content:center;position:relative;min-width:0;max-width:100%;
+ width:100%;min-height:86px;height:auto;padding:10px 7px;border:0;border-radius:999px;
+ background:transparent;color:var(--artist-ink,#62606a);font-size:12px;line-height:1.35;transform:none;
+ touch-action:manipulation;
+}
+#artist-filters>button.artist-option:hover,#artist-filters>button.artist-option:active,
+#artist-filters>button.artist-option[aria-pressed=true]{background:transparent;transform:none;color:var(--artist-ink,#62606a)}
+#artist-filters .artist-face{
+ --artist-face-bg:#e9e9ed;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:4px;width:100%;min-width:0;padding:7px 4px;border:1px solid #d5d5dd;border-radius:999px;
+ background:var(--artist-face-bg);transform:scale(1);transform-origin:center;pointer-events:none;
+ transition:transform 280ms cubic-bezier(.22,.8,.25,1),background-color 280ms ease,border-color 280ms ease,color 280ms ease;
+}
+#artist-filters .artist-label{display:block;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;word-break:normal;text-align:center;font-size:inherit;line-height:1.35}
+#artist-filters .artist-symbol{display:block;flex:none;width:28px;height:25px;color:var(--artist-muted);overflow:visible}
+#artist-filters [data-artist=all]{--artist-ink:var(--artist-all-ink)}
+#artist-filters [data-artist=all] .artist-face{border-color:transparent;background:transparent;font-size:13px;letter-spacing:.05em}
+#artist-filters [data-artist=all][aria-pressed=true] .artist-face{color:#f3f2f6}
+#artist-filters [data-artist=tokisen]{--artist-muted:#925b2e;--artist-selected:#f3aa59}
+#artist-filters [data-artist=straightangeli]{--artist-muted:#796228;--artist-selected:#e9cc73}
+#artist-filters [data-artist=re-ge]{--artist-ink:#356b95;--artist-selected:#78b9ee}
+#artist-filters [data-artist=re-ge] .artist-label{font-size:18px;font-weight:800;letter-spacing:.015em;white-space:nowrap}
+#artist-filters>button:not([data-artist=all])[aria-pressed=true] .artist-face{
+ --artist-face-bg:#202025;background:var(--artist-face-bg);border-color:var(--artist-selected);
+ color:var(--artist-selected);transform:scale(1.035);
+}
+#artist-filters>button[aria-pressed=true] .artist-symbol{color:var(--artist-selected)}
+#artist-filters>button:focus-visible{outline:3px solid #8874aa;outline-offset:-3px}
+@media(max-width:700px){#artist-filters.artist-pills{margin:18px 0 21px}#artist-filters>button.artist-option{min-height:96px;padding:10px 4px;font-size:11px}#artist-filters .artist-face{padding:7px 3px}#artist-filters [data-artist=re-ge] .artist-label{font-size:16px}}
+@media(prefers-color-scheme:dark){
+ #artist-filters.artist-pills{--artist-all-bg:#37363d;--artist-all-border:#56545f;--artist-all-ink:#d6d3dd}
+ #artist-filters>button.artist-option{--artist-ink:#d4d1dc}
+ #artist-filters .artist-face{--artist-face-bg:#39383f;border-color:#57555f}
+ #artist-filters [data-artist=tokisen]{--artist-muted:#d29c6f}
+ #artist-filters [data-artist=straightangeli]{--artist-muted:#c2ad72}
+ #artist-filters>button[data-artist=re-ge]{--artist-ink:#92b7d2}
+}
+@media(prefers-reduced-motion:reduce){#artist-filters::before,#artist-filters .artist-face{transition:none}}

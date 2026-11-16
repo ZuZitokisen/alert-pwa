@@ -182,3 +182,71 @@ test('week controls keep their full hit target but no tile in either state',()=>
  assert.match(css,/\.week-select\{[^}]*border:0;border-radius:0;box-shadow:none;background:transparent/);
  assert.match(css,/\.week-select\[aria-pressed=true\]\{background:transparent;color:var\(--accent\)\}/);
 });
+
+// Artist selector preview: visual surfaces change, existing selection semantics do not.
+test('artist first paint contains native named controls and final decorative SVGs before JavaScript',()=>{
+ const doc=parseDocument(html),group=doc.getElementById('artist-filters'),buttons=group.querySelectorAll('button');
+ assert.equal(group.getAttribute('role'),'group');assert.equal(group.getAttribute('data-all-selected'),'true');
+ assert.deepEqual(buttons.map(b=>b.getAttribute('data-artist')),['all','tokisen','re-ge','straightangeli']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-label')),['すべてのアーティスト','超ときめき♡宣伝部','RE-GE','Straight Angeli']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),['true','false','false','false']);
+ assert.equal(buttons[0].querySelector('.artist-label').textContent,'ALL');
+ assert.equal(buttons[1].querySelector('svg').getAttribute('data-artist-symbol'),'megaphone');
+ assert.equal(buttons[3].querySelector('svg').getAttribute('data-artist-symbol'),'wings');
+ assert.equal(buttons[2].querySelector('svg'),null);
+ for(const button of buttons){assert.equal(button.getAttribute('type'),'button');assert.ok(button.querySelector('.artist-face'));assert.equal(button.querySelectorAll('.nav-count').length,0);}
+ for(const svg of group.querySelectorAll('svg')){assert.equal(svg.getAttribute('aria-hidden'),'true');assert.equal(svg.getAttribute('focusable'),'false');}
+});
+test('artist renders reuse fixed native controls and only one selection including ALL',()=>{
+ const f=fixture(),group=f.get('artist-filters'),buttons=group.querySelectorAll('button'),faces=buttons.map(b=>b.querySelector('.artist-face'));
+ for(const index of [1,2,3,0,2,0]){
+  buttons[index].click();f.run('renderArtists();renderArtists()');
+  assert.deepEqual(group.querySelectorAll('button'),buttons);assert.deepEqual(buttons.map(b=>b.querySelector('.artist-face')),faces);
+  assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),buttons.map((_,i)=>String(i===index)));
+  assert.equal(group.getAttribute('data-all-selected'),String(index===0));assert.equal(buttons[index].focused,true);
+ }
+});
+test('artist choice and day clicks preserve exact filter, date range, route and event data',()=>{
+ const events=['tokisen','re-ge','straightangeli'].flatMap(artistId=>['2026-11-12','2026-11-13'].map(start=>event(artistId+' '+start,start,{artistId}))),before=JSON.stringify(events),f=fixture({events}),group=f.get('artist-filters');
+ for(const artistId of ['tokisen','re-ge','straightangeli']){
+  group.querySelector(`[data-artist="${artistId}"]`).click();dateButton(f,'2026-11-13').click();
+  assert.deepEqual(f.titles(),[artistId+' 2026-11-13']);assert.equal(f.run('agendaRange'),'day');assert.equal(f.context.location.hash,'#calendar');
+  assert.deepEqual(f.get('calendar').querySelectorAll('.calendar-event').map(b=>b.textContent),[artistId+' 2026-11-12',artistId+' 2026-11-13']);
+ }
+ group.querySelector('[data-artist="all"]').click();assert.equal(f.titles().length,3);assert.equal(f.run('selectedDate'),'2026-11-13');assert.equal(JSON.stringify(events),before);
+});
+test('artist choice does not erase favorites or alter the subscription preset passed to existing handler',()=>{
+ const f=fixture({events:[event('keep favorite','2026-11-12')]}),group=f.get('artist-filters');
+ f.get('agenda').querySelector('.favorite-button').click();const saved=f.saved.get('alert-pwa-favorites-v1');
+ f.run('globalThis.subscriptionCalls=[];openSubscriptions=id=>subscriptionCalls.push(id)');
+ for(const id of ['tokisen','re-ge','straightangeli','all']){group.querySelector(`[data-artist="${id}"]`).click();f.get('agenda-subscriptions').click();assert.equal(f.saved.get('alert-pwa-favorites-v1'),saved);}
+ assert.deepEqual(Array.from(f.context.subscriptionCalls),['tokisen','re-ge','straightangeli',undefined]);assert.deepEqual(f.titles('favorites'),['keep favorite']);
+});
+test('artist generated fallback matches static labels and paths without adding an RE-GE icon',()=>{
+ const f=fixture(),group=f.get('artist-filters'),original=group.querySelectorAll('button'),svgPaths=original.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d')));
+ group.replaceChildren();f.run('renderArtists()');const next=group.querySelectorAll('button');
+ assert.deepEqual(next.map(b=>b.textContent),original.map(b=>b.textContent));assert.deepEqual(next.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d'))),svgPaths);assert.equal(next[2].querySelector('svg'),null);
+});
+test('artist motion affects only noninteractive surfaces, with reduced-motion and visible keyboard focus',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/#artist-filters\.artist-pills\{[\s\S]*?grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
+ assert.match(css,/#artist-filters::before\{[^}]*pointer-events:none/);assert.match(css,/#artist-filters \.artist-face\{[^}]*pointer-events:none/);
+ assert.match(css,/#artist-filters>button\.artist-option\{[^}]*transform:none/);
+ assert.match(css,/#artist-filters>button:focus-visible\{outline:3px/);
+ assert.match(css,/@media\(prefers-reduced-motion:reduce\)\{#artist-filters::before,#artist-filters \.artist-face\{transition:none\}\}/);
+});
+function contrastRatio(a,b){const luminance=hex=>{const rgb=hex.match(/[a-f\d]{2}/gi).map(x=>parseInt(x,16)/255).map(c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};const x=luminance(a),y=luminance(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);}
+test('selected orange gold and blue plus unselected foregrounds meet normal-text AA contrast',()=>{
+ for(const color of ['f3aa59','e9cc73','78b9ee','f3f2f6'])assert.ok(contrastRatio(color,'202025')>=4.5,color);
+ for(const color of ['925b2e','796228','356b95','62606a'])assert.ok(contrastRatio(color,'e9e9ed')>=4.5,color);
+ for(const color of ['d29c6f','c2ad72','92b7d2','d4d1dc'])assert.ok(contrastRatio(color,'39383f')>=4.5,color);
+});
+test('startup binds static artist controls before a pending or rejected first data request',async()=>{
+ for(const fails of [false,true]){
+  const f=fixture(),buttons=f.get('artist-filters').querySelectorAll('button');for(const b of buttons)b.onclick=null;
+  f.context.scheduleRequest=()=>fails?Promise.reject(Error('offline')):new Promise(()=>{});
+  const startup=source.slice(source.indexOf("window.addEventListener('hashchange',route);"));
+  assert.ok(startup.indexOf('renderArtists();')<startup.indexOf('refresh({notice:'),'bind before awaiting data');f.run(startup);await Promise.resolve();await Promise.resolve();
+  assert.equal(typeof buttons[2].onclick,'function');buttons[2].click();assert.equal(f.run('artist'),'re-ge');assert.equal(buttons[2].getAttribute('aria-pressed'),'true');
+ }
+});
