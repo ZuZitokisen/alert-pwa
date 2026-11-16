@@ -111,6 +111,7 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  transition:transform 280ms cubic-bezier(.22,.8,.25,1),background-color 280ms ease,border-color 280ms ease,color 280ms ease;
 }
 #artist-filters .artist-label{display:block;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;word-break:normal;text-align:center;font-size:inherit;line-height:1.35}
+#artist-filters [data-artist=tokisen] .artist-label,#artist-filters [data-artist=straightangeli] .artist-label{display:none}
 #artist-filters .artist-symbol{display:block;flex:none;width:28px;height:25px;color:var(--artist-muted);overflow:visible}
 #artist-filters [data-artist=all]{--artist-ink:var(--artist-all-ink)}
 #artist-filters [data-artist=all] .artist-face{border-color:transparent;background:transparent;font-size:13px;letter-spacing:.05em}

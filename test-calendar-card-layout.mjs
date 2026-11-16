@@ -250,3 +250,10 @@ test('startup binds static artist controls before a pending or rejected first da
   assert.equal(typeof buttons[2].onclick,'function');buttons[2].click();assert.equal(f.run('artist'),'re-ge');assert.equal(buttons[2].getAttribute('aria-pressed'),'true');
  }
 });
+test('icon-only artist controls hide only two captions while keeping accessible names and typographic marks',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8'),doc=parseDocument(html),group=doc.getElementById('artist-filters');
+ const hideRule='#artist-filters [data-artist=tokisen] .artist-label,#artist-filters [data-artist=straightangeli] .artist-label{display:none}';assert.ok(css.includes(hideRule));
+ for(const [id,name,symbol] of [['tokisen','超ときめき♡宣伝部','megaphone'],['straightangeli','Straight Angeli','wings']]){const button=group.querySelector(`[data-artist="${id}"]`);assert.equal(button.getAttribute('aria-label'),name);assert.equal(button.querySelector('svg').getAttribute('data-artist-symbol'),symbol);}
+ assert.equal(group.querySelector('[data-artist="all"] .artist-label').textContent,'ALL');assert.equal(group.querySelector('[data-artist="re-ge"] .artist-label').textContent,'RE-GE');assert.equal(group.querySelector('[data-artist="re-ge"]').querySelector('svg'),null);
+ assert.match(css,/#artist-filters \.artist-face\{[^}]*align-items:center;justify-content:center/);assert.match(css,/#artist-filters \.artist-symbol\{[^}]*width:28px;height:25px/);
+});
