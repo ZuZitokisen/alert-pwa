@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-16-v11-straightangeli-buzzrhythm",
-  "dataGeneratedAt": "2026-11-16T00:45:11.429Z",
+  "dataVersion": "2026-11-16-v12-primary-source-url-fix",
+  "dataGeneratedAt": "2026-11-16T03:38:12.497Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "fbd18c76e51daf72eee65814c382dea6b408ba900ed35a5ba9d3f3e23660fcb2",
+  "inputSha256": "8995c9ee916e760f924439daf3bf907c5cdf166fc508da4156fcdda3e6f5dbda",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 186,
       "omittedUnknownDate": 11,
-      "sha256": "75b74bbdfb2df3d2aab3bd67e578649378961f4805749ea262cfd8cf35048a9e"
+      "sha256": "0ed6b0f224736c0c1a61a033f4a3ff1f5899e1db9465b72b3906277f6febbeef"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media.ics",
       "count": 117,
       "omittedUnknownDate": 2,
-      "sha256": "198d9e84d04e91ec0a6495ae3019ef1cec4f79dc9e28aaeb6093b64587d6eac4"
+      "sha256": "20b016bf8e0300a26d58657928c32a0010495aa0e36a98c12645d5cd083bfc68"
     },
     {
       "id": "tokisen-other",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 54,
       "omittedUnknownDate": 0,
-      "sha256": "cad3d7db6e7c329ebf2eddd6f173786f4c653b5e0ab04b1c19d4b8c7f23e8277"
+      "sha256": "5d460de990df4bc987f2f0e4061cb0de47f16dbc9013c7b75b4b0ede20bdb6ea"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 7,
       "omittedUnknownDate": 0,
-      "sha256": "c15ac56f2b229fb4b968dbfee288cdab86567e5689638881b255e1333f0a7d7d"
+      "sha256": "7e95c2d1f4583477a7f63a11a85ebe8e299a3150f887c0d6b861a6d553f093db"
     },
     {
       "id": "re-ge-benefit",
@@ -88,7 +88,7 @@
       "path": "calendar-feeds/re-ge-benefit.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "6f97a3e9237e1743229e1bd31293105e1905d0d85753f1d69ff02c541bf9980d"
+      "sha256": "386b1fbbd3cb352173a879704913c8494c495f8bc4972fac23a217a052a37569"
     },
     {
       "id": "re-ge-media",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media.ics",
       "count": 18,
       "omittedUnknownDate": 0,
-      "sha256": "8ef51e5217e6af355945357248144ae3adf006a01eec487e5f66ece60b83655e"
+      "sha256": "8bc2da32cb560685b384dd0ec70daded5021fe1d01420ef8766a0aceed70acc0"
     },
     {
       "id": "re-ge-other",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all.ics",
       "count": 37,
       "omittedUnknownDate": 0,
-      "sha256": "6ebc8dd1115de4b5cb930e7177e1499b784cef5d85e8341b01138c0290bd79c3"
+      "sha256": "b2428b541be268c6f4670c6157a3d6449bc407de9c753e031334c127a41016a0"
     },
     {
       "id": "straightangeli-live",
@@ -138,7 +138,7 @@
       "path": "calendar-feeds/straightangeli-benefit.ics",
       "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "dba2067ca5cd24010f46b8eeee147ea57f1015ea94d3a61a519bf5744a825739"
+      "sha256": "c9c4cc7d9235616bf08df2d94fe5e408e3fafcab13c812bebd5f104aebff89b8"
     },
     {
       "id": "straightangeli-media",
@@ -148,7 +148,7 @@
       "path": "calendar-feeds/straightangeli-media.ics",
       "count": 23,
       "omittedUnknownDate": 0,
-      "sha256": "f21157e659c97de0bea238e94347c0e9131229c1cd11bca18e9d6a7c73f811c5"
+      "sha256": "26aa0f52abf029a936a29c28610aa0ef5ffa9727e7aa10b3b0d6120c0aa70e61"
     },
     {
       "id": "straightangeli-other",

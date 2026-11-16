@@ -6,10 +6,10 @@ X-WR-CALNAME:Straight Angeli / メディア
 BEGIN:VEVENT
 UID:public-v1-7af1a3277b27aee2dabbc636b06eca0177d269eaacbce87189129e5e4b0ae
  f59@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261113T094934Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261113T094934Z
-SEQUENCE:1
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:2
 DTSTART:20261116T030000Z
 DTEND:20261116T054500Z
 SUMMARY:Kiss & Ride（松元寧音・大山蒼生）【番組枠】
@@ -22,7 +22,7 @@ DESCRIPTION:12:00〜14:45は本人公式が案内した番組枠。局番
  記載を確認していません。\nhttps://radiko.jp/index/YFM/\nhttps:
  //straight-angeli.com/schedule/1359/
 LOCATION:FMヨコハマ
-URL:https://radiko.jp/index/YFM/
+URL:https://straight-angeli.com/schedule/1359/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

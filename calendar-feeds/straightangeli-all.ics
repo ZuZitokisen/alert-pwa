@@ -167,10 +167,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-97ea9722699958f6ff4eb1ed8760bc16bcab4fddda855206fff23088d48c0
  645@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261113T234216Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261113T234216Z
-SEQUENCE:1
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:2
 DTSTART:20261114T040000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 渋谷 第1部（ミニライブ・特典会）
@@ -188,17 +188,17 @@ DESCRIPTION:会場は屋上イベントスペース（9F／RF）。第2部
  ibuya.jp/roof?ym=2026-11
 LOCATION:タワーレコード渋谷店 屋上イベントスペース（9F
  ／RF）
-URL:https://straight-angeli.com/news/item-1167/
+URL:https://straight-angeli.com/news/item-1355/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-8f0e16ea8ac178f44c8d6b36596c91d498cc6a0a1b81e2c9a02a5ff4ae02a
  3b7@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261113T234216Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261113T234216Z
-SEQUENCE:1
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:2
 DTSTART:20261114T080000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 渋谷 第2部（ミニライブ・特典会）
@@ -215,17 +215,17 @@ DESCRIPTION:会場は屋上イベントスペース（9F／RF）。第2部
  uya.jp/2026/11/14/236995\nhttps://towershibuya.jp/roof?ym=2026-11
 LOCATION:タワーレコード渋谷店 屋上イベントスペース（9F
  ／RF）
-URL:https://straight-angeli.com/news/item-1167/
+URL:https://straight-angeli.com/news/item-1355/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-23271b313405b4d16bdc00485d7c111c2b7dbaefa6658e7c600e6267da570
  9ac@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261113T234216Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261113T234216Z
-SEQUENCE:1
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:2
 DTSTART:20261114T020000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 渋谷 対象商品販売・配券開始
@@ -240,17 +240,17 @@ DESCRIPTION:対象PHOTO SET vol.5/7/8、優先入場券・特典券はな
  item-1167/\nhttps://straight-angeli.com/news/item-1355/\nhttps://towershib
  uya.jp/2026/11/14/236995\nhttps://towershibuya.jp/roof?ym=2026-11
 LOCATION:タワーレコード渋谷店
-URL:https://straight-angeli.com/news/item-1167/
+URL:https://straight-angeli.com/news/item-1355/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-6f1fd4d0ab6d1595b2d882453427c8fed96ae62ace0e06fd373b63edf68e4
  304@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:1
 DTSTART:20261122T030000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 熱田 第1部（ミニライブ・特典会）
@@ -263,17 +263,17 @@ DESCRIPTION:対象商品購入1000円につき特典券1枚。ライブ後
  。時刻の意味や未発表事項は注記に記載。\nhttps://straigh
  t-angeli.com/news/item-1167/\nhttps://straight-angeli.com/news/item-1357/
 LOCATION:イオンモール熱田 1F熱田広場
-URL:https://straight-angeli.com/news/item-1167/
+URL:https://straight-angeli.com/news/item-1357/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-6b961317d706717f161a85032420bc49011c75dd04221010fac5ba2316c66
  959@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:1
 DTSTART:20261122T060000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 熱田 第2部（ミニライブ・特典会）
@@ -286,17 +286,17 @@ DESCRIPTION:対象商品購入1000円につき特典券1枚。ライブ後
  。時刻の意味や未発表事項は注記に記載。\nhttps://straigh
  t-angeli.com/news/item-1167/\nhttps://straight-angeli.com/news/item-1357/
 LOCATION:イオンモール熱田 1F熱田広場
-URL:https://straight-angeli.com/news/item-1167/
+URL:https://straight-angeli.com/news/item-1357/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-a1aec99a9b2832bb6db18ff71cd44f3bbf1ea7d465f4c80d63063a5250d7f
  234@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:1
 DTSTART:20261122T010000Z
 SUMMARY:メジャーデビュー記念！全国ごあいさつフリーラ
  イブツアー 熱田 対象商品販売・配券開始
@@ -308,17 +308,17 @@ DESCRIPTION:対象PHOTO SET vol.5/7/8、特典券・優先入場券は当
  //straight-angeli.com/news/item-1167/\nhttps://straight-angeli.com/news/it
  em-1357/
 LOCATION:イオンモール熱田 1F熱田広場
-URL:https://straight-angeli.com/news/item-1167/
+URL:https://straight-angeli.com/news/item-1357/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-7af1a3277b27aee2dabbc636b06eca0177d269eaacbce87189129e5e4b0ae
  f59@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261113T094934Z
+DTSTAMP:20261116T033812Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261113T094934Z
-SEQUENCE:1
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:2
 DTSTART:20261116T030000Z
 DTEND:20261116T054500Z
 SUMMARY:Kiss & Ride（松元寧音・大山蒼生）【番組枠】
@@ -331,7 +331,7 @@ DESCRIPTION:12:00〜14:45は本人公式が案内した番組枠。局番
  記載を確認していません。\nhttps://radiko.jp/index/YFM/\nhttps:
  //straight-angeli.com/schedule/1359/
 LOCATION:FMヨコハマ
-URL:https://radiko.jp/index/YFM/
+URL:https://straight-angeli.com/schedule/1359/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
