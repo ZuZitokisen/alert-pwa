@@ -18,6 +18,26 @@ const copy=v=>structuredClone(v);
 // Strictly test-only fixtures, never written to the authoritative schedule files.
 const third=(id='straightangeli-fixture-1',overrides={})=>({...copy(oldData.events[0]),id,artistId:'straightangeli',title:'ローカル検証専用・実在予定ではない',start:'2026-11-20',end:null,category:'EVENT',allDay:false,sourceUrl:'https://example.com/test-only',sources:[{url:'https://example.com/test-only',type:'artist_official',checkedAt:'2026-11-12T13:00:00Z'}],timings:[],...overrides});
 function expanded(events=[third()]){return {...copy(oldData),version:'compat-fixture-v2',generatedAt:'2026-11-12T13:00:00Z',events:[...copy(oldData.events),...events]};}
+// The historical fixtures intentionally retain the former sorted-first URL bug.
+// Permit only the reviewed primary-URL correction and its required ICS revision,
+// not arbitrary changes to old event content or subscription destinations.
+function expectedLegacyRecord(record,at){
+ const primary=oldData.events.find(e=>e.id===record.event.id).sourceUrl;
+ if(primary===(record.event.sourceUrl??record.event.sourceUrls[0]))return record;
+ assert.ok(record.event.start||record.lastTiming);
+ return {...record,event:{...record.event,sourceUrl:primary},sequence:record.sequence+1,modified:at};
+}
+function expectedLegacyFeed(preset,at){
+ const original=fs.readFileSync(new URL('./fixtures/legacy/calendar-feeds/'+preset.id+'.ics',import.meta.url),'utf8');
+ const stamp=new Date(at).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z');
+ const corrected=original.replace(/\r\n /g,'').replace(/BEGIN:VEVENT\r\n[\s\S]*?END:VEVENT\r\n/g,block=>{
+  const uid=block.match(/\r\nUID:([^\r]+)\r\n/)[1],before=oldState.records.find(r=>r.uid===uid),after=expectedLegacyRecord(before,at);
+  if(after===before)return block;
+  return block.replace(/^URL:[^\r]+/m,'URL:'+after.event.sourceUrl).replace(/^SEQUENCE:[^\r]+/m,'SEQUENCE:'+after.sequence)
+   .replace(/^DTSTAMP:[^\r]+/m,'DTSTAMP:'+stamp).replace(/^LAST-MODIFIED:[^\r]+/m,'LAST-MODIFIED:'+stamp);
+ });
+ return corrected.split('\r\n').map(F.foldICSLine).join('\r\n');
+}
 function store(script=currentScript,saved=new Map()){
  const reads=[],writes=[],queue=[];
  const c=vm.createContext({Date,URL,navigator:{onLine:true},localStorage:{getItem(k){reads.push(k);return saved.get(k)??null;},setItem(k,v){writes.push(k);saved.set(k,v);}},fetch:async()=>{const next=queue.shift();if(next instanceof Error)throw next;assert.ok(next);return {ok:true,redirected:false,headers:{get:()=>null},json:async()=>copy(next)};}});
@@ -26,14 +46,14 @@ function store(script=currentScript,saved=new Map()){
 }
 function tempRun(action){const dir=fs.mkdtempSync(path.join(os.tmpdir(),'third-artist-compat-'));try{for(const n of ['production-feed-core.cjs','feature-core.js','generate-subscription-feeds.mjs','schedule-data-v2.json','schedule-data.json'])fs.copyFileSync(new URL('./'+n,import.meta.url),path.join(dir,n));fs.cpSync(new URL('./fixtures/legacy/calendar-feeds',import.meta.url),path.join(dir,'calendar-feeds'),{recursive:true});const run=(...args)=>spawnSync(process.execPath,['generate-subscription-feeds.mjs',...args],{cwd:dir,encoding:'utf8'});action(dir,run);}finally{fs.rmSync(dir,{recursive:true,force:true});}}
 
-test('ten old URLs and legacy client remain unchanged; v2 has exactly fifteen allowlisted feeds',()=>{
+test('ten old subscription URLs and legacy client remain unchanged; only primary event URLs are repaired',()=>{
  const result=C.build(expanded(),oldState,options);
  assert.equal(result.manifest.schemaVersion,2);assert.equal(result.manifest.feeds.length,15);
  assert.equal(result.legacyManifest.schemaVersion,1);assert.equal(result.legacyManifest.feeds.length,10);
  assert.equal(L.validateManifest(result.legacyManifest).feeds.length,10);
  assert.equal(S.validateManifest(result.manifest).feeds.length,15);
  assert.throws(()=>L.validateManifest(result.manifest));assert.throws(()=>S.validateManifest(result.legacyManifest));
- for(const p of L.PRESETS){assert.deepEqual(S.links(p.id),L.links(p.id));assert.equal(result.files[p.id+'.ics'],fs.readFileSync(new URL('./fixtures/legacy/calendar-feeds/'+p.id+'.ics',import.meta.url),'utf8'));}
+ for(const p of L.PRESETS){assert.deepEqual(S.links(p.id),L.links(p.id));assert.equal(result.files[p.id+'.ics'],expectedLegacyFeed(p,expanded().generatedAt));}
 });
 test('old schema rejects third-artist data, but the exact generated two-artist projection is accepted',async()=>{
  const data=expanded(),result=C.build(data,oldState,options);
@@ -42,12 +62,15 @@ test('old schema rejects third-artist data, but the exact generated two-artist p
  assert.deepEqual(result.legacyData.events,oldData.events);assert.equal(result.legacyData.version,data.version);assert.equal(result.legacyData.generatedAt,data.generatedAt);
  const current=await store().get(data);assert.equal(current.ok,true);assert.equal(current.state.events.length,248);
 });
-test('existing 247 records retain byte-equivalent records, UID, SEQUENCE, created and modified times',()=>{
+test('existing 247 records retain all fields except verified primary URL and its corresponding revision',()=>{
  const result=C.build(expanded(),oldState,options),records=new Map(result.state.records.map(r=>[r.key,r]));
- for(const r of oldState.records)assert.deepEqual(records.get(r.key),r);
+ for(const r of oldState.records)assert.deepEqual(records.get(r.key),expectedLegacyRecord(r,expanded().generatedAt));
  assert.equal(result.state.records.length,248);assert.deepEqual(C.build(expanded(),result.state,options).files,result.files);
- const initial=C.build(copy(oldData),oldState,options);assert.deepEqual(initial.state,oldState);
- assert.equal(initial.files['manifest.json'],fs.readFileSync(new URL('./fixtures/legacy/manifest.json',import.meta.url),'utf8'));
+ const initial=C.build(copy(oldData),oldState,options),{integritySha256,...body}=oldState;
+ const expected={...body,records:oldState.records.map(r=>expectedLegacyRecord(r,oldData.generatedAt))};
+ assert.deepEqual(initial.state,{...expected,integritySha256:C.hash(C.canonical(expected))});
+ const manifest=json('./fixtures/legacy/manifest.json');
+ assert.deepEqual(initial.legacyManifest,{...manifest,feeds:manifest.feeds.map(p=>({...p,sha256:C.hash(expectedLegacyFeed(p,oldData.generatedAt))}))});
 });
 test('favorites and selected-event keys retain source/id and cannot collide across artists',()=>{
  const e=oldData.events[0],favorites=new Set([F.stableEventKey(e)]),result=C.build(expanded(),oldState,options);
@@ -92,11 +115,11 @@ test('corrupt v2 cache never silently rolls back to v1',async()=>{
 test('client rejects cross-artist identity reassignment without partial cache/history changes',async()=>{
  const app=store();await app.get(oldData);const before=app.saved.get(newKey),data=expanded([]);data.events[0].artistId='re-ge';const r=await app.get(data);assert.equal(r.ok,false);assert.equal(app.saved.get(newKey),before);assert.equal(r.state.changes.length,0);
 });
-test('CLI creates both manifests and legacy schedule as one checked generation, preserving old ICS bytes',()=>tempRun((dir,run)=>{
+test('CLI creates one checked generation, preserving old ICS except primary URL and its corresponding revision',()=>tempRun((dir,run)=>{
  fs.writeFileSync(path.join(dir,'schedule-data-v2.json'),JSON.stringify(expanded(),null,2)+'\n');
  assert.notEqual(run('--check').status,0);assert.equal(run().status,0);assert.equal(run('--check').status,0);
  const legacy=JSON.parse(fs.readFileSync(path.join(dir,'schedule-data.json'),'utf8'));assert.deepEqual(legacy.events,oldData.events);
- for(const p of L.PRESETS)assert.equal(fs.readFileSync(path.join(dir,'calendar-feeds',p.id+'.ics'),'utf8'),fs.readFileSync(new URL('./fixtures/legacy/calendar-feeds/'+p.id+'.ics',import.meta.url),'utf8'));
+ for(const p of L.PRESETS)assert.equal(fs.readFileSync(path.join(dir,'calendar-feeds',p.id+'.ics'),'utf8'),expectedLegacyFeed(p,expanded().generatedAt));
  fs.writeFileSync(path.join(dir,'schedule-data.json'),'{}');assert.notEqual(run('--check').status,0);assert.equal(run().status,0);assert.equal(run('--check').status,0);
  assert.notEqual(run('--initialize').status,0);
 }));

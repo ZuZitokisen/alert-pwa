@@ -158,6 +158,17 @@ not authoritative for feed SEQUENCE. CREATED remains stable; DTSTAMP and
 LAST-MODIFIED are the generation time of the last semantic change, not build time.
 Identical inputs and revision state reproduce identical bytes.
 
+The VEVENT `URL` is the validated event `sourceUrl`, not the alphabetically first
+related source. All related links remain in DESCRIPTION. Existing schema-1 state
+without an explicit primary link still reads with its historical sorted-first
+fallback. Reconciliation stores an explicit link only when it differs from that
+fallback, preserving unaffected records. A URL repair preserves UID, dates and
+CREATED, and increments SEQUENCE/LAST-MODIFIED only where the rendered URL changes.
+Never-dated records learn the primary link without creating a calendar revision;
+retained dated tombstones still count as rendered. Use a new data version and
+generation timestamp when publishing a renderer correction, even when schedule
+facts are unchanged. Regeneration with the repaired state is idempotent.
+
 Omission is a patch, never a deletion or cancellation. Previously published events
 remain in state and feeds even when outside a newer coverage window. To flag a
 source listing that disappeared, explicitly set present false in a new snapshot generation/version; it becomes tentative and clearly labeled, not cancelled. Only an explicit

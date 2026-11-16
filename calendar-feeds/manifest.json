@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-16-v11-straightangeli-buzzrhythm",
-  "dataGeneratedAt": "2026-11-16T00:45:11.429Z",
+  "dataVersion": "2026-11-16-v12-primary-source-url-fix",
+  "dataGeneratedAt": "2026-11-16T03:38:12.497Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f9b2d0ebeaf0f9a5a67f3826feeae946a57314bb2e140b9037737717059235df",
+  "inputSha256": "ef5bbb233c6629ce0f8034f8bc0aef48e58491282fd2ece78342c68323de486e",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 186,
       "omittedUnknownDate": 11,
-      "sha256": "75b74bbdfb2df3d2aab3bd67e578649378961f4805749ea262cfd8cf35048a9e"
+      "sha256": "0ed6b0f224736c0c1a61a033f4a3ff1f5899e1db9465b72b3906277f6febbeef"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media.ics",
       "count": 117,
       "omittedUnknownDate": 2,
-      "sha256": "198d9e84d04e91ec0a6495ae3019ef1cec4f79dc9e28aaeb6093b64587d6eac4"
+      "sha256": "20b016bf8e0300a26d58657928c32a0010495aa0e36a98c12645d5cd083bfc68"
     },
     {
       "id": "tokisen-other",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 54,
       "omittedUnknownDate": 0,
-      "sha256": "cad3d7db6e7c329ebf2eddd6f173786f4c653b5e0ab04b1c19d4b8c7f23e8277"
+      "sha256": "5d460de990df4bc987f2f0e4061cb0de47f16dbc9013c7b75b4b0ede20bdb6ea"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 7,
       "omittedUnknownDate": 0,
-      "sha256": "c15ac56f2b229fb4b968dbfee288cdab86567e5689638881b255e1333f0a7d7d"
+      "sha256": "7e95c2d1f4583477a7f63a11a85ebe8e299a3150f887c0d6b861a6d553f093db"
     },
     {
       "id": "re-ge-benefit",
@@ -88,7 +88,7 @@
       "path": "calendar-feeds/re-ge-benefit.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "6f97a3e9237e1743229e1bd31293105e1905d0d85753f1d69ff02c541bf9980d"
+      "sha256": "386b1fbbd3cb352173a879704913c8494c495f8bc4972fac23a217a052a37569"
     },
     {
       "id": "re-ge-media",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media.ics",
       "count": 18,
       "omittedUnknownDate": 0,
-      "sha256": "8ef51e5217e6af355945357248144ae3adf006a01eec487e5f66ece60b83655e"
+      "sha256": "8bc2da32cb560685b384dd0ec70daded5021fe1d01420ef8766a0aceed70acc0"
     },
     {
       "id": "re-ge-other",

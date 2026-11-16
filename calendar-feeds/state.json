@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-16-v11-straightangeli-buzzrhythm",
-  "dataGeneratedAt": "2026-11-16T00:45:11.429Z",
-  "inputSha256": "fbd18c76e51daf72eee65814c382dea6b408ba900ed35a5ba9d3f3e23660fcb2",
+  "dataVersion": "2026-11-16-v12-primary-source-url-fix",
+  "dataGeneratedAt": "2026-11-16T03:38:12.497Z",
+  "inputSha256": "8995c9ee916e760f924439daf3bf907c5cdf166fc508da4156fcdda3e6f5dbda",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -27,11 +27,12 @@
         "sourceUrls": [
           "https://re-ge.com/discography/item-773/",
           "https://re-ge.com/news/item-734/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/news/item-734/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-12-06T23:59:00+09:00",
         "end": null,
@@ -292,11 +293,12 @@
           "https://battengirls.com/contents/1107970",
           "https://re-ge.com/news/item-790/",
           "https://re-ge.com/schedule/item-791/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/news/item-790/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-12-27T18:00:00+09:00",
         "end": null,
@@ -549,11 +551,12 @@
         "sourceUrls": [
           "https://radiko.jp/mobile/events/14159506",
           "https://re-ge.com/schedule/item-788/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/item-788/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-11T23:30:00+09:00",
         "end": null,
@@ -1293,11 +1296,12 @@
         "sourceUrls": [
           "https://pylonport.bandainamcomusiclive.co.jp/news/964",
           "https://re-ge.com/news/item-806/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/news/item-806/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-15T23:46:35.509Z",
-      "modified": "2026-11-15T23:46:35.509Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-20T00:00:00+09:00",
         "end": null,
@@ -1519,11 +1523,12 @@
           "https://re-ge.com/news/item-671/",
           "https://re-ge.com/news/item-803/",
           "https://re-ge.com/schedule/item-673/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/news/item-803/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-13T14:43:34Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-14T16:40:00+09:00",
         "end": "2026-11-14T17:05:00+09:00",
@@ -1616,11 +1621,12 @@
         "sourceUrls": [
           "https://re-ge.com/news/item-766/",
           "https://re-ge.com/schedule/item-769/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/item-769/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-13T15:37:15.444Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-17T18:00:00+09:00",
         "end": null,
@@ -1649,11 +1655,12 @@
         "sourceUrls": [
           "https://re-ge.com/news/item-766/",
           "https://re-ge.com/schedule/item-769/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/item-769/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-13T15:37:15.444Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-17T17:00:00+09:00",
         "end": null,
@@ -2038,11 +2045,12 @@
           "https://straight-angeli.com/news/item-1355/",
           "https://towershibuya.jp/2026/11/14/236995",
           "https://towershibuya.jp/roof?ym=2026-11"
-        ]
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1355/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-13T23:42:16.125Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-14T13:00:00+09:00",
         "end": null,
@@ -2073,11 +2081,12 @@
           "https://straight-angeli.com/news/item-1355/",
           "https://towershibuya.jp/2026/11/14/236995",
           "https://towershibuya.jp/roof?ym=2026-11"
-        ]
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1355/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-13T23:42:16.125Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-14T17:00:00+09:00",
         "end": null,
@@ -2108,11 +2117,12 @@
           "https://straight-angeli.com/news/item-1355/",
           "https://towershibuya.jp/2026/11/14/236995",
           "https://towershibuya.jp/roof?ym=2026-11"
-        ]
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1355/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-13T23:42:16.125Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-14T11:00:00+09:00",
         "end": null,
@@ -2141,11 +2151,12 @@
         "sourceUrls": [
           "https://straight-angeli.com/news/item-1167/",
           "https://straight-angeli.com/news/item-1357/"
-        ]
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1357/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-22T12:00:00+09:00",
         "end": null,
@@ -2174,11 +2185,12 @@
         "sourceUrls": [
           "https://straight-angeli.com/news/item-1167/",
           "https://straight-angeli.com/news/item-1357/"
-        ]
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1357/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-22T15:00:00+09:00",
         "end": null,
@@ -2207,11 +2219,12 @@
         "sourceUrls": [
           "https://straight-angeli.com/news/item-1167/",
           "https://straight-angeli.com/news/item-1357/"
-        ]
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1357/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-22T10:00:00+09:00",
         "end": null,
@@ -2240,11 +2253,12 @@
         "sourceUrls": [
           "https://radiko.jp/index/YFM/",
           "https://straight-angeli.com/schedule/1359/"
-        ]
+        ],
+        "sourceUrl": "https://straight-angeli.com/schedule/1359/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-13T09:49:34.690Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-16T12:00:00+09:00",
         "end": "2026-11-16T14:45:00+09:00",
@@ -3364,11 +3378,12 @@
         "sourceUrls": [
           "https://abema.tv/channels/special-plus-2/slots/BDbG4MMo4n7LPy",
           "https://toki-sen.com/contents/1122612"
-        ]
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1122612"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-28",
         "end": null,
@@ -3397,11 +3412,12 @@
         "sourceUrls": [
           "https://abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF",
           "https://toki-sen.com/contents/1122612"
-        ]
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1122612"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-16T03:38:12.497Z",
       "lastTiming": {
         "start": "2026-11-29",
         "end": null,
@@ -9308,5 +9324,5 @@
       ]
     }
   ],
-  "integritySha256": "263a50d71ea587dada37774db0bc5e25618b688917fc136ced744f1d766dfca2"
+  "integritySha256": "c0247d2af7f797f874fe9e5901c033f1e6b8616656a282c7b6d7506f3fc48b28"
 }
