@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-15-v10-rege-aonoyukue-release",
-  "generatedAt": "2026-11-15T23:46:35.509Z",
+  "version": "2026-11-16-v11-straightangeli-buzzrhythm",
+  "generatedAt": "2026-11-16T00:45:11.429Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -10934,6 +10934,57 @@
       "revision": 1,
       "present": true,
       "groupId": "rege-release-806-aonoyukue-20261120"
+    },
+    {
+      "id": "straightangeli-1365-tv",
+      "source": "curated-calendar",
+      "artistId": "straightangeli",
+      "title": "日本テレビ「バズリズム02」【番組枠】",
+      "start": "2026-11-21T01:09:00+09:00",
+      "end": "2026-11-21T02:09:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "日本テレビ",
+      "note": "本人公式の11/20(金)25:09は、暦では11/21(土)01:09。番組枠は01:09〜02:09で、個別出演の開始・終了時刻ではありません。「僕ら羽ばたいた日」の披露とミニトークを予定。地域別放送・再放送は含みません。",
+      "evidence": "本人公式で出演と放送開始を確認。日本テレビの番組表（program_id: 20262B9C）で11/20 25:09〜26:09、実日時11/21 01:09〜02:09を確認。",
+      "sourceUrl": "https://straight-angeli.com/news/item-1365/",
+      "sources": [
+        {
+          "url": "https://straight-angeli.com/news/item-1365/",
+          "type": "artist_official_site",
+          "checkedAt": "2026-11-16T00:45:11.429Z"
+        },
+        {
+          "url": "https://www.ntv.co.jp/program/detail/?programid=20262B9C",
+          "type": "broadcaster_schedule",
+          "checkedAt": "2026-11-16T00:45:11.429Z"
+        },
+        {
+          "url": "https://www.ntv.co.jp/program/json/program_list.json",
+          "type": "broadcaster_schedule",
+          "checkedAt": "2026-11-16T00:45:11.429Z"
+        }
+      ],
+      "checkedAt": "2026-11-16T00:45:11.429Z",
+      "timings": [
+        {
+          "kind": "broadcast_window_start",
+          "label": "番組枠開始",
+          "at": "2026-11-21T01:09:00+09:00",
+          "status": "confirmed"
+        },
+        {
+          "kind": "broadcast_window_end",
+          "label": "番組枠終了",
+          "at": "2026-11-21T02:09:00+09:00",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "straightangeli-1365"
     }
   ],
   "notes": [
