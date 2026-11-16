@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-15-v10-rege-aonoyukue-release",
-  "dataGeneratedAt": "2026-11-15T23:46:35.509Z",
-  "inputSha256": "e5165b5fc1122b33c5f7d594a8489011e81041afbcb740c1db1d195999eb5dcf",
+  "dataVersion": "2026-11-16-v11-straightangeli-buzzrhythm",
+  "dataGeneratedAt": "2026-11-16T00:45:11.429Z",
+  "inputSha256": "fbd18c76e51daf72eee65814c382dea6b408ba900ed35a5ba9d3f3e23660fcb2",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2280,6 +2280,40 @@
       "lastTiming": {
         "start": "2026-11-18",
         "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-media"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-1365-tv\"]",
+      "uid": "public-v1-d89a7a04ceb48cf7f8a4b7b9ef82b4de15f1cc44ba0f13cee35b360441b29694@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-1365-tv",
+        "category": "media",
+        "title": "日本テレビ「バズリズム02」【番組枠】",
+        "start": "2026-11-21T01:09:00+09:00",
+        "end": "2026-11-21T02:09:00+09:00",
+        "allDay": false,
+        "location": "日本テレビ",
+        "publicNote": "本人公式の11/20(金)25:09は、暦では11/21(土)01:09。番組枠は01:09〜02:09で、個別出演の開始・終了時刻ではありません。「僕ら羽ばたいた日」の披露とミニトークを予定。地域別放送・再放送は含みません。\n本人公式で出演と放送開始を確認。日本テレビの番組表（program_id: 20262B9C）で11/20 25:09〜26:09、実日時11/21 01:09〜02:09を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/news/item-1365/",
+          "https://www.ntv.co.jp/program/detail/?programid=20262B9C",
+          "https://www.ntv.co.jp/program/json/program_list.json"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-16T00:45:11.429Z",
+      "modified": "2026-11-16T00:45:11.429Z",
+      "lastTiming": {
+        "start": "2026-11-21T01:09:00+09:00",
+        "end": "2026-11-21T02:09:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -9274,5 +9308,5 @@
       ]
     }
   ],
-  "integritySha256": "24f341796deefafe2b167f700cff8c05d1559312a86dd69ca64dd71fa30808f7"
+  "integritySha256": "263a50d71ea587dada37774db0bc5e25618b688917fc136ced744f1d766dfca2"
 }

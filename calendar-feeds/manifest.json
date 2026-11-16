@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-15-v10-rege-aonoyukue-release",
-  "dataGeneratedAt": "2026-11-15T23:46:35.509Z",
+  "dataVersion": "2026-11-16-v11-straightangeli-buzzrhythm",
+  "dataGeneratedAt": "2026-11-16T00:45:11.429Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "765e386a3b1dd9af85bfedbf4e5a38749a99f6a472d5fd993de688ea58f76d8f",
+  "inputSha256": "f9b2d0ebeaf0f9a5a67f3826feeae946a57314bb2e140b9037737717059235df",
   "feeds": [
     {
       "id": "tokisen-all",

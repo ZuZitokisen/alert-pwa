@@ -47,6 +47,30 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-d89a7a04ceb48cf7f8a4b7b9ef82b4de15f1cc44ba0f13cee35b360441b29
+ 694@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261116T004511Z
+CREATED:20261116T004511Z
+LAST-MODIFIED:20261116T004511Z
+SEQUENCE:0
+DTSTART:20261120T160900Z
+DTEND:20261120T170900Z
+SUMMARY:日本テレビ「バズリズム02」【番組枠】
+DESCRIPTION:本人公式の11/20(金)25:09は、暦では11/21(土)01:09。
+ 番組枠は01:09〜02:09で、個別出演の開始・終了時刻では
+ ありません。「僕ら羽ばたいた日」の披露とミニトー
+ クを予定。地域別放送・再放送は含みません。\n本人公
+ 式で出演と放送開始を確認。日本テレビの番組表（progr
+ am_id: 20262B9C）で11/20 25:09〜26:09、実日時11/21 01:09〜02:09を
+ 確認。\nhttps://straight-angeli.com/news/item-1365/\nhttps://www.ntv.co
+ .jp/program/detail/?programid=20262B9C\nhttps://www.ntv.co.jp/program/json
+ /program_list.json
+LOCATION:日本テレビ
+URL:https://straight-angeli.com/news/item-1365/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-f2c57de9b66d40879337b36203fba2971c9b8b3d492a1ff3e13ffca43e95c
  42a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261112T045559Z
