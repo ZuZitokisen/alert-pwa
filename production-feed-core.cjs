@@ -25,14 +25,25 @@ const clientIdentity = e => JSON.stringify([e.source,e.id]);
 const identity = e => JSON.stringify([e.artistId,e.source,e.id]);
 const uid = e => `public-v1-${hash(identity(e))}@${NAMESPACE}`;
 const groups = e => [`${e.artistId}-all`,`${e.artistId}-${e.category}`];
+// Old persisted records contain only sorted sourceUrls. Preserve their actual
+// published URL until reconciled against the validated primary source.
+const primarySourceUrl = e => e.sourceUrl ?? e.sourceUrls[0];
+function samePublishedEvent(a,b,lastTiming) {
+  // A never-dated record has no VEVENT/URL yet. Learning its primary link is
+  // metadata only, but a retained dated tombstone still has a rendered URL.
+  const content = e => ({...e,sourceUrl:e.start||lastTiming?primarySourceUrl(e):null});
+  return same(content(a),content(b));
+}
 function projected(e) {
-  object(e,['artistId','source','id','category','title','start','end','allDay','location','publicNote','status','sourceUrls']);
+  object(e,['artistId','source','id','category','title','start','end','allDay','location','publicNote','status','sourceUrls'],['sourceUrl']);
   assert(ARTISTS.includes(e.artistId) && e.source==='curated-calendar' && typeof e.id==='string' && e.id.length>0 && e.id.length<=256 && !/[\s\x00-\x1f\x7f]/.test(e.id),'Invalid identity');
   assert(e.artistId!=='straightangeli'||e.id.startsWith('straightangeli-'),'Invalid artist identity prefix');
   assert(CATEGORIES.slice(1).includes(e.category),'Invalid category');
   assert(['confirmed','possible','unknown','cancelled','missing'].includes(e.status),'Invalid status');
   for(const k of ['title','location','publicNote']) text(e[k],k==='title');
-  assert(Array.isArray(e.sourceUrls)&&e.sourceUrls.length>0&&same(e.sourceUrls,[...new Set(e.sourceUrls)].sort()),'Invalid source links'); e.sourceUrls.forEach(https); timing(e); return e;
+  assert(Array.isArray(e.sourceUrls)&&e.sourceUrls.length>0&&same(e.sourceUrls,[...new Set(e.sourceUrls)].sort()),'Invalid source links'); e.sourceUrls.forEach(https);
+  if(Object.hasOwn(e,'sourceUrl')){https(e.sourceUrl);assert(e.sourceUrls.includes(e.sourceUrl),'Primary source missing');}
+  timing(e); return e;
 }
 function validateInput(data, options) {
   assert(options?.production===true && options?.publicSource==='schedule-data-v2.json','Explicit production public source approval required');
@@ -54,8 +65,11 @@ function validateInput(data, options) {
     for(const k of ['note','evidence','dateLabel','groupId']) if(e[k]!==undefined)text(e[k]);
     if(e.deadline!=null)assert(instant(e.deadline),'Invalid deadline');
     const category={LIVE:'live',EVENT:'live',BENEFIT:'benefit',REMIND:'benefit',TV:'media',RADIO:'media',STREAM:'media',MEMO:'other'}[e.category];
+    const sourceUrls=[...new Set(e.sources.map(s=>s.url))].sort();
     const event=projected({artistId:e.artistId,source:e.source,id:e.id,category,title:e.title,start:e.start,end:e.end,allDay:e.allDay,location:e.location,
-      publicNote:[e.note,e.evidence,e.dateLabel||''].filter(Boolean).join('\n'),status:e.present?e.status:'missing',sourceUrls:[...new Set(e.sources.map(s=>s.url))].sort()});
+      publicNote:[e.note,e.evidence,e.dateLabel||''].filter(Boolean).join('\n'),status:e.present?e.status:'missing',sourceUrls,
+      // Omit the default to preserve unchanged legacy records byte-for-byte.
+      ...(e.sourceUrl===sourceUrls[0]?{}:{sourceUrl:e.sourceUrl})});
     const key=clientIdentity(event);assert(!seen.has(key),'Duplicate client identity');seen.add(key);return {event};
   }).sort((a,b)=>identity(a.event).localeCompare(identity(b.event),'en'));
 }
@@ -83,8 +97,8 @@ function reconcile(data,previous,options) {
   const priorArtists=new Map((previous?.records||[]).map(r=>[clientIdentity(r.event),r.event.artistId]));
   for(const {event} of inputs)assert(!priorArtists.has(clientIdentity(event))||priorArtists.get(clientIdentity(event))===event.artistId,'Existing identity cannot change artist');
   const map=new Map((previous?.records||[]).map(r=>[r.key,structuredClone(r)]));
-  for(const {event} of inputs){const key=identity(event),old=map.get(key),identical=old&&same(old.event,event);
-    if(identical)continue;
+  for(const {event} of inputs){const key=identity(event),old=map.get(key),identical=old&&samePublishedEvent(old.event,event,old.lastTiming);
+    if(identical){if(!same(old.event,event))map.set(key,{...old,event});continue;}
     const sequence=old?old.sequence+1:0;assert(sequence<=2147483647,'Sequence exhausted');
     map.set(key,{key,uid:uid(event),event,sequence,created:old?.created||data.generatedAt,modified:data.generatedAt,lastTiming:event.start?{start:event.start,end:event.end,allDay:event.allDay}:old?.lastTiming||null,memberships:[...new Set([...(old?.memberships||[]),...groups(event)])].sort()});
   }
@@ -99,7 +113,7 @@ function buildFeed(state,presetId){validateState(state);const preset=PRESETS.fin
   const suffix=moved||removedDate?'（旧掲載取り下げ）':e.status==='cancelled'?'（中止）':e.status==='possible'?'（かも？）':e.status==='missing'?'（掲載消失・未確認）':e.status==='unknown'?'（未確認）':'';
   lines.push('BEGIN:VEVENT',`UID:${r.uid}`,`DTSTAMP:${stamp(r.modified)}`,`CREATED:${stamp(r.created)}`,`LAST-MODIFIED:${stamp(r.modified)}`,`SEQUENCE:${r.sequence}`,day(t.start)?`DTSTART;VALUE=DATE:${t.start.replace(/-/g,'')}`:`DTSTART:${stamp(t.start)}`);
   if(t.end)lines.push(day(t.end)?`DTEND;VALUE=DATE:${t.end.replace(/-/g,'')}`:`DTEND:${stamp(t.end)}`);
-  lines.push(`SUMMARY:${F.escapeICSText(e.title+suffix+(day(t.start)&&!t.allDay?'（時刻未定）':''))}`,`DESCRIPTION:${F.escapeICSText(notes.join('\n'))}`,`LOCATION:${F.escapeICSText(e.location)}`,`URL:${e.sourceUrls[0]}`,`STATUS:${cancelled?'CANCELLED':e.status==='confirmed'?'CONFIRMED':'TENTATIVE'}`,'TRANSP:TRANSPARENT','END:VEVENT');count++;
+  lines.push(`SUMMARY:${F.escapeICSText(e.title+suffix+(day(t.start)&&!t.allDay?'（時刻未定）':''))}`,`DESCRIPTION:${F.escapeICSText(notes.join('\n'))}`,`LOCATION:${F.escapeICSText(e.location)}`,`URL:${primarySourceUrl(e)}`,`STATUS:${cancelled?'CANCELLED':e.status==='confirmed'?'CONFIRMED':'TENTATIVE'}`,'TRANSP:TRANSPARENT','END:VEVENT');count++;
  }
  lines.push('END:VCALENDAR');return {ics:lines.map(F.foldICSLine).join('\r\n')+'\r\n',count,omittedUnknownDate};
 }
