@@ -10,6 +10,9 @@ export async function runtimeToken(){
  if(!r.ok)throw Error('GitHub OIDC credential unavailable');
  const d=await r.json();
  if(typeof d.value!=='string'||d.value.length>12000||!d.value.includes('.'))throw Error('Invalid OIDC response');
+ // Public Actions metadata only: never emit credentials, signatures, IDs for actors, or tokens.
+ const c=JSON.parse(Buffer.from(d.value.split('.')[1],'base64url').toString('utf8'));
+ console.log(JSON.stringify({issuer:c.iss,audience:c.aud,repoId:c.repository_id,repo:c.repository,ref:c.ref,workflow:c.workflow_ref,jobWorkflow:c.job_workflow_ref,runner:c.runner_environment,event:c.event_name,lifetime:c.exp-c.iat}));
  return d.value;
 }
 export function backendOrigin(){
