@@ -231,7 +231,7 @@ test('artist generated fallback matches static labels and paths without adding a
 });
 test('artist motion affects only noninteractive surfaces, with reduced-motion and visible keyboard focus',()=>{
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
- assert.match(css,/#artist-filters\.artist-pills\{[\s\S]*?grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
+ assert.match(css,/#artist-filters\.artist-pills\{[\s\S]*?grid-template-columns:repeat\(5,minmax\(0,1fr\)\)/);
  assert.match(css,/#artist-filters::before\{[^}]*pointer-events:none/);assert.match(css,/#artist-filters \.artist-face\{[^}]*pointer-events:none/);
  assert.match(css,/#artist-filters>button\.artist-option\{[^}]*transform:none/);
  assert.match(css,/#artist-filters>button:focus-visible\{outline:3px/);

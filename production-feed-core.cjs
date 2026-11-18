@@ -4,8 +4,9 @@ const crypto = require('node:crypto');
 const F = require('./feature-core.js');
 const NAMESPACE = 'alert-pwa.zuzitokisen.github.io';
 const LEGACY_ARTISTS = ['tokisen', 're-ge'];
-const ARTISTS = [...LEGACY_ARTISTS, 'straightangeli'];
-const NAMES = {tokisen:'超ときめき♡宣伝部','re-ge':'RE-GE',straightangeli:'Straight Angeli'};
+const V2_ARTISTS = [...LEGACY_ARTISTS, 'straightangeli'];
+const ARTISTS = [...V2_ARTISTS, 'oneloveoneheart'];
+const NAMES = {tokisen:'超ときめき♡宣伝部','re-ge':'RE-GE',straightangeli:'Straight Angeli',oneloveoneheart:'ONE LOVE ONE HEART'};
 const CATEGORIES = ['all', 'live', 'benefit', 'media', 'other'];
 const PRESETS = ARTISTS.flatMap(artist => CATEGORIES.map(category => ({ id: `${artist}-${category}`, artist, category,
   label: `${NAMES[artist]} / ${{ all:'全予定',live:'ライブ・イベント',benefit:'特典会・応募',media:'メディア',other:'その他' }[category]}` })));
@@ -37,7 +38,7 @@ function samePublishedEvent(a,b,lastTiming) {
 function projected(e) {
   object(e,['artistId','source','id','category','title','start','end','allDay','location','publicNote','status','sourceUrls'],['sourceUrl']);
   assert(ARTISTS.includes(e.artistId) && e.source==='curated-calendar' && typeof e.id==='string' && e.id.length>0 && e.id.length<=256 && !/[\s\x00-\x1f\x7f]/.test(e.id),'Invalid identity');
-  assert(e.artistId!=='straightangeli'||e.id.startsWith('straightangeli-'),'Invalid artist identity prefix');
+  assert(LEGACY_ARTISTS.includes(e.artistId)||e.id.startsWith(e.artistId+'-'),'Invalid artist identity prefix');
   assert(CATEGORIES.slice(1).includes(e.category),'Invalid category');
   assert(['confirmed','possible','unknown','cancelled','missing'].includes(e.status),'Invalid status');
   for(const k of ['title','location','publicNote']) text(e[k],k==='title');
@@ -46,7 +47,7 @@ function projected(e) {
   timing(e); return e;
 }
 function validateInput(data, options) {
-  assert(options?.production===true && options?.publicSource==='schedule-data-v2.json','Explicit production public source approval required');
+  assert(options?.production===true && ['schedule-data-v2.json','schedule-data-v3.json'].includes(options?.publicSource),'Explicit production public source approval required');
   object(data,['schemaVersion','version','generatedAt','coverage','events'],['notes']);
   assert(data.schemaVersion===1 && instant(data.generatedAt),'Invalid production generation'); text(data.version,true);
   object(data.coverage,['from','through']); assert(day(data.coverage.from)&&day(data.coverage.through)&&data.coverage.from<=data.coverage.through,'Invalid coverage');
@@ -66,6 +67,7 @@ function validateInput(data, options) {
     if(e.deadline!=null)assert(instant(e.deadline),'Invalid deadline');
     const category={LIVE:'live',EVENT:'live',BENEFIT:'benefit',REMIND:'benefit',TV:'media',RADIO:'media',STREAM:'media',MEMO:'other'}[e.category];
     const sourceUrls=[...new Set(e.sources.map(s=>s.url))].sort();
+    assert((options.publicSource==='schedule-data-v3.json'?ARTISTS:V2_ARTISTS).includes(e.artistId),'Artist not supported by public source');
     const event=projected({artistId:e.artistId,source:e.source,id:e.id,category,title:e.title,start:e.start,end:e.end,allDay:e.allDay,location:e.location,
       publicNote:[e.note,e.evidence,e.dateLabel||''].filter(Boolean).join('\n'),status:e.present?e.status:'missing',sourceUrls,
       // Omit the default to preserve unchanged legacy records byte-for-byte.
@@ -118,11 +120,17 @@ function buildFeed(state,presetId){validateState(state);const preset=PRESETS.fin
  lines.push('END:VCALENDAR');return {ics:lines.map(F.foldICSLine).join('\r\n')+'\r\n',count,omittedUnknownDate};
 }
 // Keep the old two-artist schedule and ten-entry manifest consumable by cached clients.
-// Only the new manifest is schemaVersion 2; state and public event identities do not reset.
+// Manifest versions select artist cohorts; state and public event identities do not reset.
 function legacyProjection(data){return {...data,events:data.events.filter(e=>LEGACY_ARTISTS.includes(e.artistId))};}
-function build(data,previous,options){const state=reconcile(data,previous,options),files={},feeds=PRESETS.map(p=>{const f=buildFeed(state,p.id),path=`calendar-feeds/${p.id}.ics`;files[`${p.id}.ics`]=f.ics;return {...p,path,count:f.count,omittedUnknownDate:f.omittedUnknownDate,sha256:hash(f.ics)};});
- const manifest={schemaVersion:2,production:true,namespace:NAMESPACE,dataVersion:data.version,dataGeneratedAt:data.generatedAt,coverage:data.coverage,inputSha256:state.inputSha256,feeds};
+function v2Projection(data){return {...data,events:data.events.filter(e=>V2_ARTISTS.includes(e.artistId))};}
+function build(data,previous,options){
+ const v3=options?.publicSource==='schedule-data-v3.json';
+ assert(v3||!(previous?.records||[]).some(r=>!V2_ARTISTS.includes(r.event.artistId)),'Cannot downgrade fourth-artist state without canonical v3 source');
+ const state=reconcile(data,previous,options),files={},feeds=PRESETS.filter(p=>v3||V2_ARTISTS.includes(p.artist)).map(p=>{const f=buildFeed(state,p.id),path=`calendar-feeds/${p.id}.ics`;files[`${p.id}.ics`]=f.ics;return {...p,path,count:f.count,omittedUnknownDate:f.omittedUnknownDate,sha256:hash(f.ics)};});
+ const manifest={schemaVersion:v3?3:2,production:true,namespace:NAMESPACE,dataVersion:data.version,dataGeneratedAt:data.generatedAt,coverage:data.coverage,inputSha256:state.inputSha256,feeds};
+ const v2Data=v2Projection(data),v2Manifest=v3?{...manifest,schemaVersion:2,inputSha256:hash(canonical(v2Data)),feeds:feeds.filter(f=>V2_ARTISTS.includes(f.artist))}:manifest;
  const legacyData=legacyProjection(data),legacyManifest={...manifest,schemaVersion:1,inputSha256:hash(canonical(legacyData)),feeds:feeds.filter(f=>LEGACY_ARTISTS.includes(f.artist))};
- files['state.json']=JSON.stringify(state,null,2)+'\n';files['manifest.json']=JSON.stringify(legacyManifest,null,2)+'\n';files['manifest-v2.json']=JSON.stringify(manifest,null,2)+'\n';
- return {state,manifest,legacyManifest,legacyData,legacyDataJson:JSON.stringify(legacyData,null,2)+'\n',files};}
-module.exports={NAMESPACE,ARTISTS,LEGACY_ARTISTS,PRESETS,canonical,hash,clientIdentity,identity,uid,validateInput,validateState,reconcile,buildFeed,legacyProjection,build};
+ files['state.json']=JSON.stringify(state,null,2)+'\n';files['manifest.json']=JSON.stringify(legacyManifest,null,2)+'\n';files['manifest-v2.json']=JSON.stringify(v2Manifest,null,2)+'\n';
+ if(v3)files['manifest-v3.json']=JSON.stringify(manifest,null,2)+'\n';
+ return {state,manifest,v2Manifest,v2Data,v2DataJson:JSON.stringify(v2Data,null,2)+'\n',legacyManifest,legacyData,legacyDataJson:JSON.stringify(legacyData,null,2)+'\n',files};}
+module.exports={NAMESPACE,ARTISTS,V2_ARTISTS,LEGACY_ARTISTS,PRESETS,canonical,hash,clientIdentity,identity,uid,validateInput,validateState,reconcile,buildFeed,legacyProjection,v2Projection,build};

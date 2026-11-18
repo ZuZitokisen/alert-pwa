@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-16-v12-primary-source-url-fix",
-  "dataGeneratedAt": "2026-11-16T03:38:12.497Z",
+  "dataVersion": "2026-11-18-v13-oneloveoneheart",
+  "dataGeneratedAt": "2026-11-18T06:20:10Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "8995c9ee916e760f924439daf3bf907c5cdf166fc508da4156fcdda3e6f5dbda",
+  "inputSha256": "9de2b5085d3abfc61bcbfdc3ca126d353b58df6a8a4ca76877b7787967204170",
   "feeds": [
     {
       "id": "tokisen-all",
