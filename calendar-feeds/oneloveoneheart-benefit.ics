@@ -1,0 +1,216 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ONE LOVE ONE HEART / 特典会・応募
+BEGIN:VEVENT
+UID:public-v1-fe75bd29bd3ca1cb08984ebb0d000ded4cc21f834af7260caf6a4bec800af
+ 39c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261122T081000Z
+SUMMARY:愛の証明 リリースイベント：特典会
+DESCRIPTION:17:10頃。進行で前後する場合あり。特典会参加
+ 券かメンバー別お渡し会参加券が必要。種類と条件は
+ 公式案内を確認。\n本人側の公式発表で確認。時刻未発
+ 表は日付のみ。\nhttps://oneloveoneheart.jp/live/live-7360/
+LOCATION:川崎ブレイブサンダースコート
+URL:https://oneloveoneheart.jp/live/live-7360/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fdcde4d9f57184cebc667ae175a87f0b209d2ea9daab01214594152a295e2
+ 982@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261122T020000Z
+SUMMARY:川崎リリースイベント 商品購入整理番号 受付終
+ 了
+DESCRIPTION:先着。予定数到達で早期終了。ライブ優先入場
+ の順番とは異なる。\n本人側の公式発表で確認。時刻未
+ 発表は日付のみ。\nhttps://oneloveoneheart.jp/live/live-7360/
+LOCATION:AirWAIT
+URL:https://oneloveoneheart.jp/live/live-7360/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-aff6f822ab50f720588602ba3d2835a57287ac90b436814830d82083aa477
+ fb4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261122T020000Z
+SUMMARY:川崎リリースイベント 対象商品販売開始
+DESCRIPTION:購入整理番号の順に案内。優先エリア入場順と
+ は別。\n本人側の公式発表で確認。時刻未発表は日付の
+ み。\nhttps://oneloveoneheart.jp/live/live-7360/
+LOCATION:タワーレコード川崎店前
+URL:https://oneloveoneheart.jp/live/live-7360/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2aea7dfab85947ce22dd776d860242492a9bcd7b15404b8624fdf56d69ad7
+ 3b8@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261121T100000Z
+SUMMARY:川崎リリースイベント 商品購入整理番号 受付開
+ 始
+DESCRIPTION:先着。予定数到達で早期終了。ライブ優先入場
+ の順番とは異なる。\n本人側の公式発表で確認。時刻未
+ 発表は日付のみ。\nhttps://oneloveoneheart.jp/live/live-7360/
+LOCATION:AirWAIT
+URL:https://oneloveoneheart.jp/live/live-7360/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1e8c639f2070aafb1a7f1f4d2d3e59d6108e12a11f5471964d83dc9cacf53
+ e2b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261122T145900Z
+SUMMARY:LIVE SDD 2027 第3回 応募締切
+DESCRIPTION:ラブワン本人公式に応募・当落日程掲載。発券
+ 時に募金2000円。\n本人側の公式発表で確認。時刻未発
+ 表は日付のみ。\nhttps://oneloveoneheart.jp/news/news-7247/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-42393af63c5f6def56ef75e940b445fa9520b02c202572398725ebad37ba9
+ 6b6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261130T145900Z
+SUMMARY:LIVE SDD 2027 第4回 応募締切
+DESCRIPTION:ラブワン本人公式に応募・当落日程掲載。発券
+ 時に募金2000円。\n本人側の公式発表で確認。時刻未発
+ 表は日付のみ。\nhttps://oneloveoneheart.jp/news/news-7247/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c8214d2b3ecedcff47229a9f6925090977fd9bd10a41c459bfdef519c352a
+ 417@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261118T030000Z
+SUMMARY:LIVE SDD 2027 第3回 応募開始
+DESCRIPTION:ラブワン本人公式に応募・当落日程掲載。発券
+ 時に募金2000円。\n本人側の公式発表で確認。時刻未発
+ 表は日付のみ。\nhttps://oneloveoneheart.jp/news/news-7247/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-297ce7b5a59e67118a92669464f1a7feb224bcc9aea248a8e798309fb45bb
+ ac0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261126T030000Z
+SUMMARY:LIVE SDD 2027 第4回 応募開始
+DESCRIPTION:ラブワン本人公式に応募・当落日程掲載。発券
+ 時に募金2000円。\n本人側の公式発表で確認。時刻未発
+ 表は日付のみ。\nhttps://oneloveoneheart.jp/news/news-7247/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-234b703e5a05bcc898cb8ed7c99210756fd92c6b7dcfb301fad205e197003
+ 8c2@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+SUMMARY:LIVE SDD 2027 第2回 当落発表（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nラブワン本人公式に応募・当落日程掲載。発券時に
+ 募金2000円。\n本人側の公式発表で確認。時刻未発表は
+ 日付のみ。\nhttps://oneloveoneheart.jp/news/news-7247/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6ee1e371f9a8515bfb865d9db369b863b1d20ebe0bd7d4dd17a90563c017b
+ 531@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+SUMMARY:LIVE SDD 2027 第3回 当落発表（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nラブワン本人公式に応募・当落日程掲載。発券時に
+ 募金2000円。\n本人側の公式発表で確認。時刻未発表は
+ 日付のみ。\nhttps://oneloveoneheart.jp/news/news-7247/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c448fcd7e985692e40f1e086a62ac902327c1288a4dc65b766c44a84495e8
+ 052@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261203
+SUMMARY:LIVE SDD 2027 第4回 当落発表（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nラブワン本人公式に応募・当落日程掲載。発券時に
+ 募金2000円。\n本人側の公式発表で確認。時刻未発表は
+ 日付のみ。\nhttps://oneloveoneheart.jp/news/news-7247/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4dd6f640618b1c43a406819d56ba29b82e7c63a3e33a0a7f993701178dc6b
+ f6d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261216T130000Z
+SUMMARY:祝祭 プレリク先着先行 受付締切
+DESCRIPTION:東京・兵庫、計4公演対象。先着受付、残席未
+ 確認。\n本人側の公式発表で確認。時刻未発表は日付の
+ み。\nhttps://oneloveoneheart.jp/news/news-6791/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-6791/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

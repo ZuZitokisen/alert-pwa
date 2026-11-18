@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ONE LOVE ONE HEART / その他
+BEGIN:VEVENT
+UID:public-v1-81b883471fcbead81549f0cc88e9701a26ac2621b3a328aaf110e98042bb9
+ 71f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270203
+SUMMARY:5th ALBUM「愛の証明」発売（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nCD発売日。形態・封入特典は公式案内を確認。\n本
+ 人側の公式発表で確認。時刻未発表は日付のみ。\nhttps:
+ //oneloveoneheart.jp/news/news-7262/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7262/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
