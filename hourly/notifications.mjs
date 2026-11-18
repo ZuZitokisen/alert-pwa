@@ -1,4 +1,5 @@
 import F from '../feature-core.js';
+import {createHash} from 'node:crypto';
 
 export const APP_URL='https://zuzitokisen.github.io/alert-pwa/#calendar';
 const compact = (s,n) => Array.from(String(s||'').replace(/[\x00-\x1f\x7f]/g,' ').trim()).slice(0,n).join('').slice(0,n);
@@ -10,6 +11,7 @@ function when(v){
 }
 export function planNotifications(snapshot,feedState,{now=new Date(),activatedAt=null,appURL=APP_URL}={}){
  const records=new Map(feedState.records.map(r=>[r.event.id,r])), notices=[];
+ let changedSinceCutoff=false;
  const nowMs=+now, since=activatedAt===null?Number.POSITIVE_INFINITY:Date.parse(activatedAt), horizon=nowMs+48*3600000;
  if(!Number.isFinite(nowMs)||activatedAt!==null&&!Number.isFinite(since))throw Error('Invalid notification clock');
  for(const event of snapshot.events){
@@ -20,14 +22,18 @@ export function planNotifications(snapshot,feedState,{now=new Date(),activatedAt
   const detail=compact([when(event.start),event.location,event.status==='possible'?'かも？':event.status==='cancelled'?'中止':'確定'].filter(Boolean).join(' · '),400);
   const changed=Date.parse(row.modified);
   if(changed>since&&changed<=nowMs&&changed>nowMs-24*3600000){
-   const kind=row.sequence===0&&event.status!=='cancelled'?'new':'change';
-   notices.push({...item,kind,title:compact((kind==='new'?'新着：':'変更：')+event.title,140),body:detail});
+   changedSinceCutoff=true;
   }
   if(event.status==='cancelled')continue;
   for(const schedule of F.reminderTimes(event,{now,morningTime:'08:00'}).times){
    if(schedule.timestamp>horizon)continue;
    notices.push({...item,kind:'reminder',at:schedule.at,title:compact('リマインド：'+event.title,140),body:compact(schedule.label+' · '+detail,550)});
   }
+ }
+ if(changedSinceCutoff){
+  // One shared News prompt per public generation, never one send per event.
+  const generation=createHash('sha256').update(snapshot.version).digest('hex');
+  notices.unshift({id:'schedule-update-'+generation,revision:1,artistId:'tokisen',status:'confirmed',kind:'change',title:'予定が更新されました',body:'Newsで確認できます',url:new URL('#changes',appURL).href});
  }
  return notices;
 }
