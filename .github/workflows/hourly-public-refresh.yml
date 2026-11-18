@@ -1,0 +1,182 @@
+name: Hourly public schedule refresh
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Dry run is safe; publish requires HOURLY_AUTO_PUBLISH=true.'
+        type: choice
+        options: [dry-run, publish]
+        default: dry-run
+permissions:
+  contents: read
+concurrency:
+  group: public-schedule-pages
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify collection and feed invariants
+        run: |
+          node --test hourly/*.test.mjs
+          node generate-subscription-feeds.mjs --check
+      - name: Read public sources without modifying canonical data
+        run: node hourly/collect.mjs
+  publish:
+    needs: inspect
+    if: >-
+      vars.HOURLY_AUTO_PUBLISH == 'true' &&
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch) &&
+      (github.event_name == 'schedule' || inputs.mode == 'publish')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+    outputs:
+      commit: ${{ steps.commit.outputs.commit }}
+      pages_mode: ${{ steps.pages.outputs.mode }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify existing Pages destination without changing settings
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          pages=$(gh api "repos/$GITHUB_REPOSITORY/pages")
+          test "$(jq -r .html_url <<< "$pages")" = 'https://zuzitokisen.github.io/alert-pwa/'
+          mode=$(jq -r .build_type <<< "$pages")
+          case "$mode" in
+            legacy) test "$(jq -r .source.branch <<< "$pages")" = "$DEFAULT_BRANCH"
+                    test "$(jq -r .source.path <<< "$pages")" = '/' ;;
+            workflow) ;;
+            *) echo 'Unsupported Pages mode; nothing changed.' >&2; exit 1 ;;
+          esac
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+      - name: Apply validated public changes and generate all compatible feeds
+        run: |
+          node hourly/collect.mjs --apply
+          node generate-subscription-feeds.mjs
+          node generate-subscription-feeds.mjs --check
+      - name: Commit only the complete generated data snapshot
+        id: commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          # Never stage code, scraped HTML, credentials, or arbitrary collector output.
+          git add -- schedule-data-v3.json schedule-data-v2.json schedule-data.json calendar-feeds
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh verified public schedule data'
+            # Native ephemeral token; never persist credentials in checkout/config.
+            auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+            echo "::add-mask::$auth"
+            git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" push origin "HEAD:refs/heads/$DEFAULT_BRANCH"
+          fi
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Request existing branch-based Pages build explicitly
+        if: steps.pages.outputs.mode == 'legacy'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if node hourly/verify-live.mjs; then exit 0; fi
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent
+          for i in {1..18}; do
+            if node hourly/verify-live.mjs; then exit 0; fi
+            sleep 10
+          done
+          echo 'Pages has not served the expected generation; notifications not dispatched.' >&2
+          exit 1
+  package:
+    needs: publish
+    if: needs.publish.outputs.pages_mode == 'workflow'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ needs.publish.outputs.commit }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node generate-subscription-feeds.mjs --check
+      - name: Assemble public artifact from explicit allowlist
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import shutil
+          root=Path('.'); out=Path('_site'); out.mkdir()
+          files=['.nojekyll','index.html','app.js','artist-config.js','feature-core.js','calendar-subscriptions.js','schedule-store.js','pwa-update.js','push-config.js','push-client.js','style.css','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','sw.js','schedule-data.json','schedule-data-v2.json','schedule-data-v3.json']
+          files += ['calendar-feeds/'+name for name in ['manifest.json','manifest-v2.json','manifest-v3.json']]
+          files += [f'calendar-feeds/{artist}-{category}.ics' for artist in ['tokisen','re-ge','straightangeli','oneloveoneheart'] for category in ['all','live','benefit','media','other']]
+          # state.json stays in Git as the durable UID/SEQUENCE history, not the public artifact.
+          if Path('CNAME').is_file(): files.append('CNAME')
+          for name in files:
+              source=root/name
+              if source.is_symlink() or not source.is_file(): raise RuntimeError('Missing/unsafe public asset: '+name)
+              dest=out/name; dest.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(source,dest)
+          PY
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: [publish, package]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Explicit deployment, including retry of a previously committed generation
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [publish, deploy]
+    if: >-
+      always() && needs.publish.result == 'success' &&
+      (needs.publish.outputs.pages_mode == 'legacy' || needs.deploy.result == 'success') &&
+      vars.ALERT_PUSH_BACKEND_ORIGIN != '' && vars.ALERT_PUSH_NOTIFY_AFTER != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      ALERT_PUSH_BACKEND_ORIGIN: ${{ vars.ALERT_PUSH_BACKEND_ORIGIN }}
+      ALERT_PUSH_NOTIFY_AFTER: ${{ vars.ALERT_PUSH_NOTIFY_AFTER }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ needs.publish.outputs.commit }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node hourly/verify-live.mjs
+      - run: node hourly/dispatch.mjs --send && node hourly/drain.mjs
