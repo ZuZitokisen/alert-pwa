@@ -75,8 +75,8 @@ const dateButton=(f,date)=>f.get('calendar').querySelectorAll('.day-cell').find(
 
 test('initial monthly calendar shows only today cards, with no next-event fallback',()=>{
  const f=fixture({events:[event('yesterday','2026-11-11'),event('today','2026-11-12'),event('tomorrow','2026-11-13')]});
- assert.equal(f.run('agendaRange'),'day');assert.deepEqual(bounds(f),{start:'2026-11-12',end:'2026-11-13'});assert.deepEqual(f.titles(),['today']);assert.equal(f.get('agenda-title').textContent,'この日の予定');assert.ok(f.get('calendar').classList.contains('month-grid'));
- const empty=fixture({events:[event('tomorrow','2026-11-13')]});assert.deepEqual(empty.titles(),[]);assert.match(empty.get('agenda').textContent,/該当する予定はありません/);assert.equal(empty.get('agenda-title').textContent,'この日の予定');
+ assert.equal(f.run('agendaRange'),'day');assert.deepEqual(bounds(f),{start:'2026-11-12',end:'2026-11-13'});assert.deepEqual(f.titles(),['today']);assert.equal(f.get('agenda-title').textContent,'11月12日(木)');assert.ok(f.get('calendar').classList.contains('month-grid'));
+ const empty=fixture({events:[event('tomorrow','2026-11-13')]});assert.deepEqual(empty.titles(),[]);assert.match(empty.get('agenda').textContent,/該当する予定はありません/);assert.equal(empty.get('agenda-title').textContent,'11月12日(木)');
 });
 test('today is computed in Japan rather than the UTC date',()=>{
  const f=fixture({now:'2026-11-11T15:01:00Z',events:[event('JST today','2026-11-12'),event('UTC yesterday','2026-11-11')]});assert.equal(f.run('selectedDate'),'2026-11-12');assert.deepEqual(f.titles(),['JST today']);
@@ -88,12 +88,12 @@ test('every month row begins with a labeled Sunday-to-Saturday week button',()=>
 });
 test('week click selects the full row across a month boundary without switching the calendar',()=>{
  const f=fixture({events:[event('before','2026-11-28'),event('Sunday','2026-11-29'),event('December','2026-12-02'),event('Saturday','2026-12-05'),event('after','2026-12-06')]});
- weekButton(f,'2026-11-29').click();assert.equal(f.run('agendaRange'),'week');assert.equal(f.run('period'),'2026-11-01');assert.deepEqual(bounds(f),{start:'2026-11-29',end:'2026-12-06'});assert.deepEqual(f.titles(),['Sunday','December','Saturday']);assert.equal(f.get('agenda-title').textContent,'この週の予定');assert.equal(f.get('calendar').querySelectorAll('.range-selected').length,7);assert.equal(weekButton(f,'2026-11-29').getAttribute('aria-pressed'),'true');assert.ok(f.get('calendar').classList.contains('month-grid'));
+ weekButton(f,'2026-11-29').click();assert.equal(f.run('agendaRange'),'week');assert.equal(f.run('period'),'2026-11-01');assert.deepEqual(bounds(f),{start:'2026-11-29',end:'2026-12-06'});assert.deepEqual(f.titles(),['Sunday','December','Saturday']);assert.equal(f.get('agenda-title').textContent,'11月29日(日) 〜 12月5日(土)');assert.equal(f.get('calendar').querySelectorAll('.range-selected').length,7);assert.equal(weekButton(f,'2026-11-29').getAttribute('aria-pressed'),'true');assert.ok(f.get('calendar').classList.contains('month-grid'));
  weekButton(f,'2026-11-29').click();assert.deepEqual(bounds(f),{start:'2026-11-29',end:'2026-12-06'});
 });
 test('month heading selects month while date clicks select only that day',()=>{
  const f=fixture({events:[event('early','2026-11-01'),event('today','2026-11-12'),event('late','2026-11-30'),event('December','2026-12-01')]});
- f.get('month-label').click();assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['early','today','late']);assert.equal(f.get('agenda-title').textContent,'この月の予定');
+ assert.equal(f.get('month-label').tagName.toLowerCase(),'button');assert.equal(f.get('month-label').getAttribute('aria-pressed'),'false');f.get('month-label').click();assert.equal(f.get('month-label').getAttribute('aria-pressed'),'true');assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['early','today','late']);assert.equal(f.get('agenda-title').textContent,'2026年11月の予定');
  weekButton(f,'2026-11-08').click();dateButton(f,'2026-11-12').click();assert.equal(f.run('agendaRange'),'day');assert.deepEqual(f.titles(),['today']);assert.equal(f.run('selectedWeekStart'),null);
  dateButton(f,'2026-12-01').click();assert.equal(f.run('period'),'2026-12-01');assert.deepEqual(f.titles(),['December']);
 });
