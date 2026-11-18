@@ -169,3 +169,5 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 #artist-filters [data-artist=oneloveoneheart]{--artist-muted:#255f65;--artist-selected:#9cddd7}
 #artist-filters [data-artist=oneloveoneheart] .artist-label{display:none}
 @media(prefers-color-scheme:dark){#artist-filters>button[data-artist=oneloveoneheart]{--artist-muted:#a1c9c6}}
+
+.push-actions{display:flex;flex-wrap:wrap;gap:8px}.push-actions button{min-height:44px}

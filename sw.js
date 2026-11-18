@@ -1,7 +1,7 @@
-/* Static schedule shell only, scoped to this GitHub Pages project. No push subscription. */
-const CACHE='alert-pwa-static-shell-v7-8';
+/* Static schedule shell only, scoped to this GitHub Pages project. Push is opt-in through configured backend. */
+const CACHE='alert-pwa-static-shell-v7-9';
 const BASE=new URL('./',self.location.href);
-const FILES=['./','./index.html','./app.js?v=0.7.8','./pwa-update.js?v=0.7.8','./feature-core.js','./calendar-subscriptions.js?v=0.7.8','./artist-config.js?v=0.7.8','./schedule-store.js?v=0.7.8','./style.css?v=0.7.8','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
+const FILES=['./push-config.js','./push-client.js','./','./index.html','./app.js?v=0.7.9','./pwa-update.js?v=0.7.9','./feature-core.js','./calendar-subscriptions.js?v=0.7.9','./artist-config.js?v=0.7.9','./schedule-store.js?v=0.7.9','./style.css?v=0.7.9','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 const URLS=FILES.map(p=>new URL(p,BASE).href);
 // Data is fetched by schedule-store, which validates and keeps its own last-good copy.
 // Do not intercept/cache its requests here: a cache fallback would hide offline status.
@@ -14,4 +14,25 @@ self.addEventListener('message',event=>{
  if(event.data?.type!=='ALERT_PWA_SKIP_WAITING'||event.source?.type!=='window')return;
  let source;try{source=new URL(event.source.url);}catch{return;}
  if(source.origin===BASE.origin&&source.pathname.startsWith(BASE.pathname))event.waitUntil(self.skipWaiting());
+});
+
+// Never execute payload HTML or open an arbitrary notification URL.
+function notificationTarget(value){
+ try{const url=new URL(value,BASE);if(url.origin===BASE.origin&&(url.pathname===BASE.pathname||url.pathname===BASE.pathname+'index.html')&&!url.username&&!url.password&&!url.search&&['','#changes','#calendar','#favorites'].includes(url.hash))return new URL('./'+(url.hash||'#changes'),BASE).href;}catch{}
+ return new URL('./#changes',BASE).href;
+}
+function notificationPayload(value){
+ if(!value||typeof value!=='object'||!['new','change','reminder'].includes(value.kind)||typeof value.eventId!=='string'||value.eventId.length>200||!value.eventId||!['string','number'].includes(typeof value.revision)||String(value.revision).length>100)return null;
+ const clean=(text,max)=>typeof text==='string'?text.replace(/[\u0000-\u001f\u007f\u202a-\u202e\u2066-\u2069]/g,' ').slice(0,max):'';
+ // Server supplies a stable SHA256 identity, including reminder instant where needed.
+ if(typeof value.tag!=='string'||!/^[a-f0-9]{64}$/.test(value.tag))return null;
+ return {title:clean(value.title,120)||'予定のお知らせ',options:{body:clean(value.body,500),tag:'alert-'+value.kind+'-'+value.tag,icon:new URL('icon-192.png',BASE).href,badge:new URL('icon-192.png',BASE).href,data:{url:notificationTarget(value.url)},renotify:false}};
+}
+self.addEventListener('push',event=>{
+ let payload;try{const raw=event.data?.text();if(!raw||raw.length>8192)return;payload=notificationPayload(JSON.parse(raw));}catch{return;}
+ if(payload)event.waitUntil(self.registration.showNotification(payload.title,payload.options));
+});
+self.addEventListener('notificationclick',event=>{
+ event.notification.close();const target=notificationTarget(event.notification.data?.url);
+ event.waitUntil((async()=>{const windows=await self.clients.matchAll({type:'window',includeUncontrolled:false});for(const client of windows){let u;try{u=new URL(client.url);}catch{continue;}if(u.origin===BASE.origin&&(u.pathname===BASE.pathname||u.pathname===BASE.pathname+'index.html')){await client.navigate(target);return client.focus();}}return self.clients.openWindow(target);})());
 });

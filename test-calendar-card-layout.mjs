@@ -153,8 +153,8 @@ test('layout keeps month and cards together with exactly Schedule, Favorite and 
 });
 test('News retains change history, update guidance, specifications and access to all schedules',()=>{
  const document=parseDocument(html),news=document.getElementById('changes-view');assert.ok(news.querySelector('#changes'));assert.ok(news.querySelector('#read-all'));assert.ok(news.querySelector('a[href="#cards"]'));
- for(const copy of ['アプリの更新','通知とリマインド','本体カレンダーへ','お気に入りと保存','情報源とアーティスト','実通知・自動監視は未接続','別端末との同期はありません','iPhone実機での購読・更新反映は未検証'])assert.ok(news.textContent.includes(copy),copy);
- for(const id of ['morning-time','storage-status','source-list'])assert.ok(news.querySelector('#'+id),id);
+ for(const copy of ['アプリの更新','通知とリマインド','本体カレンダーへ','お気に入りと保存','情報源とアーティスト','通知は試走中です','別端末との同期はありません','iPhone実機での購読・更新反映は未検証'])assert.ok(news.textContent.includes(copy),copy);
+ for(const id of ['push-settings','storage-status','source-list'])assert.ok(news.querySelector('#'+id),id);
 });
 test('legacy information routes show News without losing the selected calendar range',()=>{
  const f=fixture({events:[event('today','2026-11-12')]});weekButton(f,'2026-11-08').click();

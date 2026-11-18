@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const source=fs.readFileSync(new URL('./app.js',import.meta.url),'utf8');
-const routeSource=source.slice(source.indexOf('function route(){'),source.indexOf("\n$('#morning-time').value"));
+const routeSource=source.slice(source.indexOf('function route(){'),source.indexOf("\n$('#detail').addEventListener"));
 const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');
 function fixture(initialHash=''){
  const views=['calendar','cards','favorites','changes'].map(name=>({id:name+'-view',hidden:false}));
