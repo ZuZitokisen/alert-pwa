@@ -187,12 +187,13 @@ test('week controls keep their full hit target but no tile in either state',()=>
 test('artist first paint contains native named controls and final decorative SVGs before JavaScript',()=>{
  const doc=parseDocument(html),group=doc.getElementById('artist-filters'),buttons=group.querySelectorAll('button');
  assert.equal(group.getAttribute('role'),'group');assert.equal(group.getAttribute('data-all-selected'),'true');
- assert.deepEqual(buttons.map(b=>b.getAttribute('data-artist')),['all','tokisen','re-ge','straightangeli']);
- assert.deepEqual(buttons.map(b=>b.getAttribute('aria-label')),['すべてのアーティスト','超ときめき♡宣伝部','RE-GE','Straight Angeli']);
- assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),['true','false','false','false']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('data-artist')),['all','tokisen','re-ge','straightangeli','oneloveoneheart']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-label')),['すべてのアーティスト','超ときめき♡宣伝部','RE-GE','Straight Angeli','ONE LOVE ONE HEART']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),['true','false','false','false','false']);
  assert.equal(buttons[0].querySelector('.artist-label').textContent,'ALL');
  assert.equal(buttons[1].querySelector('svg').getAttribute('data-artist-symbol'),'megaphone');
  assert.equal(buttons[3].querySelector('svg').getAttribute('data-artist-symbol'),'wings');
+ assert.equal(buttons[4].querySelector('svg').getAttribute('data-artist-symbol'),'heart');
  assert.equal(buttons[2].querySelector('svg'),null);
  for(const button of buttons){assert.equal(button.getAttribute('type'),'button');assert.ok(button.querySelector('.artist-face'));assert.equal(button.querySelectorAll('.nav-count').length,0);}
  for(const svg of group.querySelectorAll('svg')){assert.equal(svg.getAttribute('aria-hidden'),'true');assert.equal(svg.getAttribute('focusable'),'false');}
@@ -200,7 +201,7 @@ test('artist first paint contains native named controls and final decorative SVG
 test('artist renders reuse controls, toggle multiple choices and reset with ALL',()=>{
  const f=fixture(),group=f.get('artist-filters'),buttons=group.querySelectorAll('button'),faces=buttons.map(b=>b.querySelector('.artist-face'));
  const selected=new Set();
- for(const index of [1,2,3,2,1,3,1,3,0,0]){
+ for(const index of [1,2,3,4,2,1,3,1,3,4,0,0]){
   if(index===0)selected.clear();else if(selected.has(index))selected.delete(index);else selected.add(index);
   buttons[index].click();f.run('renderArtists();renderArtists()');
   assert.deepEqual(group.querySelectorAll('button'),buttons);assert.deepEqual(buttons.map(b=>b.querySelector('.artist-face')),faces);
@@ -239,9 +240,9 @@ test('artist motion affects only noninteractive surfaces, with reduced-motion an
 });
 function contrastRatio(a,b){const luminance=hex=>{const rgb=hex.match(/[a-f\d]{2}/gi).map(x=>parseInt(x,16)/255).map(c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};const x=luminance(a),y=luminance(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);}
 test('selected orange gold and blue plus unselected foregrounds meet normal-text AA contrast',()=>{
- for(const color of ['f3aa59','e9cc73','78b9ee','f3f2f6'])assert.ok(contrastRatio(color,'202025')>=4.5,color);
- for(const color of ['925b2e','796228','356b95','62606a'])assert.ok(contrastRatio(color,'e9e9ed')>=4.5,color);
- for(const color of ['d29c6f','c2ad72','92b7d2','d4d1dc'])assert.ok(contrastRatio(color,'39383f')>=4.5,color);
+ for(const color of ['f3aa59','e9cc73','78b9ee','f3f2f6','9cddd7'])assert.ok(contrastRatio(color,'202025')>=4.5,color);
+ for(const color of ['925b2e','796228','356b95','62606a','255f65'])assert.ok(contrastRatio(color,'e9e9ed')>=4.5,color);
+ for(const color of ['d29c6f','c2ad72','92b7d2','d4d1dc','a1c9c6'])assert.ok(contrastRatio(color,'39383f')>=4.5,color);
 });
 test('startup binds static artist controls before a pending or rejected first data request',async()=>{
  for(const fails of [false,true]){

@@ -1,7 +1,7 @@
 /* Static schedule shell only, scoped to this GitHub Pages project. No push subscription. */
-const CACHE='alert-pwa-static-shell-v7-7';
+const CACHE='alert-pwa-static-shell-v7-8';
 const BASE=new URL('./',self.location.href);
-const FILES=['./','./index.html','./app.js?v=0.7.7','./pwa-update.js?v=0.7.7','./feature-core.js','./calendar-subscriptions.js?v=0.7.7','./artist-config.js?v=0.7.7','./schedule-store.js?v=0.7.7','./style.css?v=0.7.7','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
+const FILES=['./','./index.html','./app.js?v=0.7.8','./pwa-update.js?v=0.7.8','./feature-core.js','./calendar-subscriptions.js?v=0.7.8','./artist-config.js?v=0.7.8','./schedule-store.js?v=0.7.8','./style.css?v=0.7.8','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 const URLS=FILES.map(p=>new URL(p,BASE).href);
 // Data is fetched by schedule-store, which validates and keeps its own last-good copy.
 // Do not intercept/cache its requests here: a cache fallback would hide offline status.

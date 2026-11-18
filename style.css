@@ -165,7 +165,7 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  .agenda-panel .search input{font-size:16px}
 }
 
-/* The fourth artist uses its familiar name, without another label or icon. */
-#artist-filters [data-artist=oneloveoneheart]{--artist-ink:#255f65;--artist-selected:#9cddd7}
-#artist-filters [data-artist=oneloveoneheart] .artist-label{font-size:11px;white-space:nowrap;letter-spacing:0;font-weight:750}
-@media(prefers-color-scheme:dark){#artist-filters>button[data-artist=oneloveoneheart]{--artist-ink:#a1c9c6}}
+/* Heart mark for ONE LOVE ONE HEART; the button retains its accessible name. */
+#artist-filters [data-artist=oneloveoneheart]{--artist-muted:#255f65;--artist-selected:#9cddd7}
+#artist-filters [data-artist=oneloveoneheart] .artist-label{display:none}
+@media(prefers-color-scheme:dark){#artist-filters>button[data-artist=oneloveoneheart]{--artist-muted:#a1c9c6}}
