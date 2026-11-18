@@ -32,9 +32,24 @@
  testPush.onclick=()=>run(async()=>{if(!device||!vapid)return;await request('/v1/devices/'+device.deviceId+'/test','POST',{},device.deviceToken);say('テスト通知の送信をリクエストしました。端末に表示されるか確認してください。');});
  disable.onclick=()=>run(async()=>{await request('/v1/devices/'+device.deviceId,'DELETE',undefined,device.deviceToken);const sub=await registration?.pushManager.getSubscription();let removed=true;try{if(sub)removed=await sub.unsubscribe();}catch{removed=false;}store(null);device=null;say(removed?'この端末への通知を停止しました。':'配信は停止しました。ブラウザ側の通知許可は設定から解除できます。');});
  controls();
- (async()=>{
+ (function prepare(){
   if(!base){say('通知は準備中です。');return;}
   if(!root.isSecureContext||!('Notification'in root)||!('PushManager'in root)||!navigator.serviceWorker){say('この環境では通知を利用できません。iPhoneはホーム画面に追加してから開いてください。');return;}
-  try{registration=await navigator.serviceWorker.getRegistration(new URL('./',location.href));if(!registration?.active)throw Error('No active worker');const config=await request('/v1/config');vapid=keyBytes(config.vapidPublicKey);if(device){const sub=await registration.pushManager.getSubscription();say(Notification.permission==='granted'&&sub?'この端末の通知はオンです。':'端末の通知は無効です。いったん停止してから再登録してください。');}else say(Notification.permission==='denied'?'通知はブロックされています。ブラウザの設定で変更できます。':'通知はオフです。');}catch{say('通知サーバーに接続できません。通知は新しく登録されていません。');}controls();
+  const sw=navigator.serviceWorker;let preparing=false,disposed=false;
+  say('通知機能を準備しています。');
+  const timer=setTimeout(()=>{if(!registration&&!disposed)say('通知機能の準備に時間がかかっています。準備でき次第、操作できるようになります。');},12000);
+  async function activate(candidate){
+   if(disposed||preparing||vapid||!candidate?.active)return;
+   const expected=new URL('./',location.href).href;
+   if(candidate.scope&&candidate.scope!==expected)return;
+   registration=candidate;preparing=true;clearTimeout(timer);
+   try{const config=await request('/v1/config');if(disposed)return;vapid=keyBytes(config.vapidPublicKey);if(device){const sub=await registration.pushManager.getSubscription();say(Notification.permission==='granted'&&sub?'この端末の通知はオンです。':'端末の通知は無効です。いったん停止してから再登録してください。');}else say(Notification.permission==='denied'?'通知はブロックされています。ブラウザの設定で変更できます。':'通知はオフです。');}catch{if(!disposed)say('通知サーバーに接続できません。通知は新しく登録されていません。');}finally{preparing=false;controls();}
+  }
+  const check=()=>sw.getRegistration(new URL('./',location.href)).then(activate).catch(()=>{if(!disposed&&!registration)say('通知機能の準備を確認できません。再読み込みしてください。');});
+  sw.addEventListener?.('controllerchange',check);
+  // ready resolves on the first install even when getRegistration initially returns nothing.
+  sw.ready?.then(activate).catch(()=>{});
+  check();
+  root.addEventListener?.('pagehide',()=>{disposed=true;clearTimeout(timer);sw.removeEventListener?.('controllerchange',check);},{once:true});
  })();
 })(globalThis);

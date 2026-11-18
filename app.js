@@ -205,6 +205,9 @@ async function refreshApp(){
 
 
 function route(){
+// Only notification entry clears the artist filter; a normal News tab keeps it.
+if(location.hash==='#notification-changes'){selectedArtists.clear();artist='all';history.replaceState(null,'','#changes');renderArtists();renderChanges();}
+
 const hash=location.hash.slice(1),previousView=view;
 view=['calendar','cards','favorites','changes'].includes(hash)?hash:['about','settings'].includes(hash)?'changes':hash==='watch'?'cards':'calendar';
 const names={calendar:'Schedule',cards:'すべての予定',favorites:'Favorite',changes:'News'};
