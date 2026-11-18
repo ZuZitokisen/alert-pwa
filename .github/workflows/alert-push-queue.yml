@@ -1,0 +1,32 @@
+name: Drain opted-in alert notifications
+on:
+  schedule:
+    - cron: '3-58/5 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: alert-push-delivery
+  cancel-in-progress: false
+jobs:
+  drain:
+    if: github.ref == 'refs/heads/main' && vars.ALERT_PUSH_BACKEND_ORIGIN != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      ALERT_PUSH_BACKEND_ORIGIN: ${{ vars.ALERT_PUSH_BACKEND_ORIGIN }}
+      ALERT_PUSH_NOTIFY_AFTER: ${{ vars.ALERT_PUSH_NOTIFY_AFTER }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Refill due reminders for the current published data
+        if: vars.ALERT_PUSH_NOTIFY_AFTER != ''
+        run: node hourly/verify-live.mjs
+      - run: node hourly/drain.mjs
