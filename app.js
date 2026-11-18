@@ -181,7 +181,15 @@ function renderCalendar(){
  $('#calendar-count').textContent=`${events.filter(e=>e.start&&F.dateKey(e.start).startsWith(period.slice(0,7))).length}件の予定`;
  renderAgenda();
 }
-function renderChanges(){const list=state.changes.filter(c=>matchesArtist((c.after||c.before)?.artistId)).map(c=>{const b=el('button','','change'),copy=el('div');b.append(el('span',c.kind==='new'?'+':'↻','change-mark'));copy.append(el('h3',`${kindNames[c.kind]} · ${(c.after||c.before).title}`),el('p',c.kind==='unavailable'?'掲載消失。中止とは判断していません。':c.fields.map(f=>fields[f]||f).join('・')),el('time',prettyDate(c.detected)));b.append(copy);b.onclick=()=>openChange(c);return b;});$('#changes').replaceChildren(...(list.length?list:[el('p','新着・変更はまだありません。','empty')]));}
+function changeCard(change){
+ // Use the same event card and favorite identity as Schedule. Missing is not cancelled.
+ const original=change.after||change.before,e=uiEvent(change.kind==='unavailable'?{...original,present:false}:original),node=card(e);
+ const open=node.querySelector('.card-open');open.onclick=()=>openChange(change);open.setAttribute('aria-label',`${e.title}の変更内容`);
+ const detail=change.kind==='updated'?[...new Set((change.fields||[]).map(key=>['start','end','allDay'].includes(key)?'日時変更':(fields[key]||key)+'変更'))].join('・'):'';
+ node.querySelector('.card-bottom-note').textContent=change.kind==='unavailable'?'中止とは判断していません':[kindNames[change.kind]||'更新',detail].filter(Boolean).join(' · ');
+ return node;
+}
+function renderChanges(){const list=state.changes.filter(c=>matchesArtist((c.after||c.before)?.artistId)).map(changeCard);$('#changes').replaceChildren(...(list.length?list:[el('p','新着・変更はまだありません。','empty')]));}
 function renderStorage(){$('#storage-status').replaceChildren(el('span','このブラウザへの保存'),el('strong',storageFailed?'利用できません':'端末内のみ'));}
 function render(){reconcileReadMarker();renderArtists();renderCalendar();renderCards();renderChanges();renderStorage();$('#favorite-count').textContent=state.events.filter(e=>favorites.has(F.stableEventKey(e))).length;$('#unread').textContent=state.changes.filter(c=>c.id>readThrough).length;const source=state.sources[0];$('#connection').classList.toggle('offline',!!source?.error);$('#connection').textContent=source?.error?source.error:`${state.events.length}件 · データ更新 ${prettyDate(state.generatedAt)}`;if(state.storageAvailable===false){storageFailed=true;renderStorage();}}
 async function refresh({notice=false}={}){const g=++requestGeneration;try{const r=await scheduleRequest('state'),next=await r.json();if(g!==requestGeneration)return false;if(!Array.isArray(next.events))throw Error('read');state=next;render();if(!r.ok){toast(next.baselineReady?'予定の更新を取得できませんでした。保存済みの情報を表示しています。':'予定の初回取得ができませんでした。接続を確認してください。');return false;}if(notice)toast('アプリと予定を再読み込みしました。お気に入りは保持しています。');return true;}catch{if(g!==requestGeneration)return false;toast('予定を読み込めませんでした。接続を確認して再読み込みしてください。');return false;}}

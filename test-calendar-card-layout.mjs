@@ -267,8 +267,24 @@ test('multiple artist filtering is a union across calendar, agenda, favorites an
  for(const id of ['tokisen','straightangeli'])group.querySelector(`[data-artist="${id}"]`).click();
  assert.deepEqual(f.titles().sort(),['straightangeli','tokisen']);assert.deepEqual(f.titles('favorites').sort(),['straightangeli','tokisen']);
  assert.deepEqual(f.get('calendar').querySelectorAll('.calendar-event').map(b=>b.textContent).sort(),['straightangeli','tokisen']);
- assert.equal(f.get('changes').querySelectorAll('.change').length,2);
+ assert.equal(f.get('changes').querySelectorAll('.event-card').length,2);
  group.querySelector('[data-artist="tokisen"]').click();assert.deepEqual(f.titles(),['straightangeli']);
  group.querySelector('[data-artist="straightangeli"]').click();assert.equal(f.titles().length,3);assert.equal(group.getAttribute('data-all-selected'),'true');
  assert.equal(JSON.stringify(events),original);
 });
+
+test('News reuses Schedule card structure, certainty border and source category projection',()=>{
+ const e=event('news-card','2026-11-12',{status:'possible',category:'BENEFIT'}),f=fixture({events:[e]});f.context.news={kind:'updated',after:e,before:{...e,location:'旧会場'},fields:['location'],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');
+ const n=f.get('changes').querySelector('.event-card'),s=f.get('agenda').querySelector('.event-card');assert.equal(n.tagName,'ARTICLE');assert.equal(n.className,s.className);assert.ok(n.classList.contains('possible'));for(const cls of ['category','artist-name','card-time','card-location'])assert.equal(n.querySelector('.'+cls).textContent,s.querySelector('.'+cls).textContent);assert.equal(n.querySelectorAll('button button').length,0);assert.equal(n.querySelectorAll('.favorite-button').length,1);assert.equal(n.querySelector('.card-bottom-note').textContent,'更新 · 場所変更');assert.ok(f.get('changes').classList.contains('cards'));
+});
+test('News favorite toggles shared identity without opening change details',()=>{
+ const e=event('favorite-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:[],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const key=f.run('F.stableEventKey(fixtureEvents[0])');f.get('changes').querySelector('.favorite-button').click();assert.equal(f.get('detail').open,false);assert.ok(JSON.parse(f.saved.get('alert-pwa-favorites-v1')).includes(key));assert.equal(f.get('agenda').querySelector('.favorite-button').getAttribute('aria-pressed'),'true');assert.equal(f.get('changes').querySelector('.favorite-button').getAttribute('aria-pressed'),'true');f.get('changes').querySelector('.card-open').click();assert.equal(f.get('detail').open,true);assert.match(f.get('detail-content').textContent,/検知/);
+});
+test('News missing record retains previous facts and does not claim cancellation',()=>{
+ const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
+});
+test('v0.7.11 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-11/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.11'));assert.ok(sw.includes(file+'?v=0.7.11'));}assert.ok(html.includes('v0.7.11'));assert.ok(html.includes('v0.7.9'));
+});
+
+test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'新着');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
