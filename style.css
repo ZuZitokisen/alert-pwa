@@ -86,12 +86,12 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 /* Artist-menu preview: fixed touch targets, independently animated surfaces. */
 #artist-filters.artist-pills{
  --artist-all-bg:#e8e8ec;--artist-all-border:#d3d3da;--artist-all-ink:#56545f;
- position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
- gap:0;width:100%;max-width:320px;min-width:0;margin:16px 0 18px;padding:0;
+ position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+ gap:0;width:100%;max-width:360px;min-width:0;margin:16px 0 18px;padding:0;
 }
 #artist-filters::before{
  content:"";position:absolute;z-index:-1;pointer-events:none;left:4px;top:5px;bottom:5px;
- width:calc(25% - 8px);border:1px solid var(--artist-all-border);border-radius:999px;
+ width:calc(20% - 8px);border:1px solid var(--artist-all-border);border-radius:999px;
  background:var(--artist-all-bg);box-sizing:border-box;
  transition:width 360ms cubic-bezier(.22,.8,.25,1),background-color 280ms ease,border-color 280ms ease;
 }
@@ -164,3 +164,8 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  .agenda-card-controls .card-legend{font-size:10px;white-space:nowrap}
  .agenda-panel .search input{font-size:16px}
 }
+
+/* The fourth artist uses its familiar name, without another label or icon. */
+#artist-filters [data-artist=oneloveoneheart]{--artist-ink:#255f65;--artist-selected:#9cddd7}
+#artist-filters [data-artist=oneloveoneheart] .artist-label{font-size:11px;white-space:nowrap;letter-spacing:0;font-weight:750}
+@media(prefers-color-scheme:dark){#artist-filters>button[data-artist=oneloveoneheart]{--artist-ink:#a1c9c6}}

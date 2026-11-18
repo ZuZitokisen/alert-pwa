@@ -8,6 +8,7 @@ const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
 const getArtist=id=>artists.find(a=>a.id===id);
+const readKey=artists.some(a=>a.id==='oneloveoneheart')?'alert-pwa-curated-read-v3':'alert-pwa-curated-read-v2';
 let state={events:[],changes:[],sources:[],outboxCount:0},artist='all',selectedArtists=new Set(),filter='all',agendaFilter='all',agendaRange='day',selectedWeekStart=null,view='calendar',returnView='calendar';
 let selectedDate=F.dateKey(new Date().toISOString()),period=selectedDate.slice(0,7)+'-01',requestGeneration=0,mutating=false,toastTimer,storageFailed=false;
 function stored(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{storageFailed=true;return fallback;}}
@@ -15,9 +16,9 @@ function save(key,value){try{localStorage.setItem(key,JSON.stringify(value));ret
 const storedFavorites=stored('alert-pwa-favorites-v1',[]),storedSelected=stored('alert-pwa-selected-v1',[]),storedReminders=stored('alert-pwa-reminders-v2',{});
 let favorites=new Set(Array.isArray(storedFavorites)?storedFavorites:[]),selected=new Set(Array.isArray(storedSelected)?storedSelected:[]),reminders=storedReminders&&typeof storedReminders==='object'&&!Array.isArray(storedReminders)?storedReminders:{},readThrough=readMarker();
 let morningTime=stored('alert-pwa-morning-v1','08:00');if(typeof morningTime!=='string'||!/^([01]\d|2[0-3]):[0-5]\d$/.test(morningTime))morningTime='08:00';
-// The v2 history has its own marker; never overwrite markers used by old tabs.
-function readMarker(){const current=stored('alert-pwa-curated-read-v2',null),legacy=current===null?stored('alert-pwa-curated-read-v1',0):current;const value=Number.isSafeInteger(legacy)&&legacy>=0?legacy:0;if(current===null)save('alert-pwa-curated-read-v2',value);return value;}
-function reconcileReadMarker(){const limit=Math.max(0,(state.nextChangeId||1)-1);if(readThrough>limit){readThrough=limit;save('alert-pwa-curated-read-v2',readThrough);}}
+// Each cache generation has its own history marker; v3 can read older markers.
+function readMarker(){const current=stored(readKey,null),legacy=current===null?stored('alert-pwa-curated-read-v2',null)??stored('alert-pwa-curated-read-v1',0):current;const value=Number.isSafeInteger(legacy)&&legacy>=0?legacy:0;if(current===null)save(readKey,value);return value;}
+function reconcileReadMarker(){const limit=Math.max(0,(state.nextChangeId||1)-1);if(readThrough>limit){readThrough=limit;save(readKey,readThrough);}}
 function presentEvent(e){return {...e,artist:getArtist(e.artistId)?.name||e.artistId};}
 function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5500);}
 function prettyDate(value){if(!value)return '日時未定';if(value.length===10)return value.replaceAll('-','/');return new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(value));}
@@ -49,10 +50,10 @@ function renderArtists(){
    button=el('button','','artist-option');button.type='button';button.setAttribute('data-artist',a.id);
    const face=el('span','','artist-face');
    const symbol=artistSymbol(a.id);if(symbol)face.append(symbol);
-   face.append(el('span',a.id==='all'?'ALL':a.name,'artist-label'));button.append(face);
+   face.append(el('span',a.id==='all'?'ALL':a.buttonName||a.name,'artist-label'));button.append(face);
   }
   button.setAttribute('aria-pressed',String(a.id==='all'?selectedArtists.size===0:selectedArtists.has(a.id)));button.setAttribute('aria-label',a.name);
-  const label=button.querySelector('.artist-label'),name=a.id==='all'?'ALL':a.name;if(label.textContent!==name)label.textContent=name;
+  const label=button.querySelector('.artist-label'),name=a.id==='all'?'ALL':a.buttonName||a.name;if(label.textContent!==name)label.textContent=name;
   button.onclick=()=>{
    if(a.id==='all')selectedArtists.clear();else if(selectedArtists.has(a.id))selectedArtists.delete(a.id);else selectedArtists.add(a.id);
    artist=selectedArtists.size===1?[...selectedArtists][0]:'all';
@@ -220,5 +221,5 @@ $('#detail').addEventListener('close',onDialogClosed);$('#close-detail').onclick
 $('#open-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#about-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#agenda-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);
 $('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-search').oninput=renderAgenda;$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('#month-label').onclick=selectMonth;$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)selectDay(day.dataset.date);};
 function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+direction);period=F.dateKey(d.toISOString()).slice(0,7)+'-01';selectedDate=period;agendaRange='month';selectedWeekStart=null;renderCalendar();}
-$('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save('alert-pwa-curated-read-v2',readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
+$('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
 $('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});

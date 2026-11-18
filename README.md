@@ -1,4 +1,4 @@
-# アラート PWA 予定版 v0.7.1
+# アラート PWA 予定版 v0.7.7
 
 **発表に気づく。予定を忘れない。** 確定の予定も「かも？」の予定も追いかける、即時通知＆リマインドを目指した静的PWAです。
 
@@ -10,11 +10,11 @@
 
 - 月カレンダーを上、選択範囲のカードを下に表示。初期は当日、日付で日、左端の週ボタンで週、月見出しで月のカードに切り替えます。可能性の予定は点線枠と「かも？」表示。
 - メニューは Schedule / Favorite / News。Newsに予定の変更履歴・アプリ更新情報・仕様をまとめています。
-- 超ときめき♡宣伝部 / RE-GE / Straight Angeli の切替。共通機能とアーティスト固有設定を分離。
+- 超ときめき♡宣伝部 / RE-GE / Straight Angeli / ONE LOVE ONE HEART の切替。共通機能とアーティスト固有設定を分離。
 - カードの検索、日時・名前・種類・お気に入り優先の並べ替え、確度の絞り込み。
 - 特典会・お話し会は画面表示と種類順で EVENT に統合。購読互換のため元データの BENEFIT 分類は保持します。
 - お気に入りを端末内に保存。
-- アーティスト別・種類別の共通カレンダー購読。全予定と内訳の重複選択を抑止。15個の固定公開URLから、日付のある272項目を配信。日付未定11項目は配信しません。
+- アーティスト別・種類別の共通カレンダー購読。全予定と内訳の重複選択を抑止。20個の固定公開URLから、日付を確認できた項目を配信。日付未定の項目は配信しません。
 - 新着・変更の通知文面プレビュー、変更前後と根拠の確認。
 - 朝時刻（既定8時）＋開始1時間前、または明示された締切前のリマインド候補。
 - 公開データと前回の端末保存を比較する、新着・変更・重複抑止・掲載消失・取得失敗時の情報保持。
@@ -29,7 +29,7 @@
 
 本体カレンダーには、共通予定を継続して読む固定URLを提供します。「本体カレンダーに追加」からプリセットを選び、各購読リンクで端末の確認画面を開きます。リンクが開けない場合はURLをコピーして照会カレンダーに追加できます。読み取り専用で、反映間隔は端末側に依存します。iPhone実機での登録・更新反映は未検証です。
 
-運用時は schedule-data-v2.json の確認済み情報を更新し、`node generate-subscription-feeds.mjs` と `node generate-subscription-feeds.mjs --check` を実行して、新旧の公開データと calendar-feeds/ 全体を同じコミットで公開します。UIDと改訂状態は保持され、同じ購読URLが更新されます。これは自動収集・即時更新の稼働を意味しません。手順と復旧は [SUBSCRIPTION.md](./SUBSCRIPTION.md) に記載しています。
+運用時は schedule-data-v3.json の確認済み情報を更新し、`node generate-subscription-feeds.mjs` と `node generate-subscription-feeds.mjs --check` を実行して、v1・v2互換投影を含む公開データと calendar-feeds/ 全体を同じコミットで公開します。UIDと改訂状態は保持され、同じ購読URLが更新されます。これは自動収集・即時更新の稼働を意味しません。手順と復旧は [SUBSCRIPTION.md](./SUBSCRIPTION.md) に記載しています。
 
 お気に入り・リマインド設定例・既読等はこのブラウザーのlocalStorageに保存します。端末間同期はなく、ブラウザデータの消去・容量整理で失われる場合があります。一般ユーザーが予定を追加する画面はありません。
 
@@ -43,7 +43,7 @@
 
 - `index.html` / `style.css` / `app.js`: UIと操作。
 - `artist-config.js`: アーティスト名・公式情報源の設定。公式サイトは案内のみで監視未接続。
-- `schedule-data-v2.json` / `schedule-store.js`: 公表済み予定の整理データと検証・端末内差分比較。
+- `schedule-data-v3.json` / `schedule-store.js`: 公表済み予定の整理データと検証・端末内差分比較。
 - `demo-data.js` / `demo-store.js`: 旧版の架空入力。現行画面では読み込みません。
 - `feature-core.js`: 日時・絞り込み・ICS・通知文面・リマインド候補の共通処理。仕様は [FEATURE-CORE.md](./FEATURE-CORE.md)。
 - `calendar-subscriptions.js` / `production-feed-core.cjs` / `generate-subscription-feeds.mjs` / `calendar-feeds/`: 公開購読UI、生成処理、永続改訂状態、配信データ。旧 `subscription-core.js` は架空データの回帰検証専用です。[SUBSCRIPTION.md](./SUBSCRIPTION.md)を参照。
