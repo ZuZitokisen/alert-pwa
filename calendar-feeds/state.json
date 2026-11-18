@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-18T07:26:47.419Z",
-  "dataGeneratedAt": "2026-11-18T07:26:47.419Z",
-  "inputSha256": "1671e80e1eb3fc6a1e89519715a3e5f6117bba87ec151133f96d663033ad7d03",
+  "dataVersion": "hourly-2026-11-18T16:35:21.311Z",
+  "dataGeneratedAt": "2026-11-18T16:35:21.311Z",
+  "inputSha256": "d50d9a8735245bd5dca2047c71892678106acb5059151c013a38e5120a2fd684",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1105,6 +1105,38 @@
       "memberships": [
         "re-ge-all",
         "re-ge-media"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"re-ge-hourly-official-item-819\"]",
+      "uid": "public-v1-102eef82531fb3237a614fd8574e73f5a2612a8aa2578e26f61e5377f6a3e8af@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "re-ge-hourly-official-item-819",
+        "category": "live",
+        "title": "FM FUJI「秋本帆華のウルトラGT」初の音楽イベント～ULTRA GT FES 2026～",
+        "start": "2026-12-11",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/schedule/item-819/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-18T16:35:21.311Z",
+      "modified": "2026-11-18T16:35:21.311Z",
+      "lastTiming": {
+        "start": "2026-12-11",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-live"
       ]
     },
     {
@@ -10454,5 +10486,5 @@
       ]
     }
   ],
-  "integritySha256": "be7f50487383b7afad5dfaf58eada6c947cebfd2ccc7754cce6a39663b5fadd2"
+  "integritySha256": "2a50dc59828af972948c40ab90b538ba4990cbe5233d4f54e7566fc228c7455f"
 }
