@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-18-v13-oneloveoneheart",
-  "dataGeneratedAt": "2026-11-18T06:20:10Z",
+  "dataVersion": "hourly-2026-11-18T07:26:47.419Z",
+  "dataGeneratedAt": "2026-11-18T07:26:47.419Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "57ce9cbe2404de7fad6534d333982c9d7788bad0e2a8af0f9f82ba4163747408",
+  "inputSha256": "965645c1bdb5310db04ba084086e0e56effde92ecab3cf7b1714fff0dc60dbe5",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 54,
+      "count": 55,
       "omittedUnknownDate": 0,
-      "sha256": "5d460de990df4bc987f2f0e4061cb0de47f16dbc9013c7b75b4b0ede20bdb6ea"
+      "sha256": "ce319367e62a025117e83e62b9b86d05521e033718bf9597acad86ec96ebaee6"
     },
     {
       "id": "re-ge-live",
@@ -96,9 +96,9 @@
       "category": "media",
       "label": "RE-GE / メディア",
       "path": "calendar-feeds/re-ge-media.ics",
-      "count": 18,
+      "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "8bc2da32cb560685b384dd0ec70daded5021fe1d01420ef8766a0aceed70acc0"
+      "sha256": "bec815330fb2d3c654d4fee3b2e0722ddb7838a38c61feee2babbdfc32112aab"
     },
     {
       "id": "re-ge-other",

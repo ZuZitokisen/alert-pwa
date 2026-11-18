@@ -380,6 +380,27 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-b6f07de538ca39cfc8635007275c8d3f13e8adc2ee9a76c94f2de421d7594
+ 54f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T072647Z
+CREATED:20261118T072647Z
+LAST-MODIFIED:20261118T072647Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270211
+SUMMARY:Pococha presents HBCアイドル祭り2027「なまら推ささる
+ アイドルWinter in Zepp Sapporo」出演（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n本人公式スケジュールの日付を確認。開始・終了時
+ 刻と会場は自動抽出対象外。\n本人公式スケジュール詳
+ 細のイベント日付属性・見出し・カテゴリ。公開日を
+ 開催日として使用していません。\nhttps://straight-angeli.com
+ /schedule/item-1345/
+LOCATION:
+URL:https://straight-angeli.com/schedule/item-1345/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-f2c57de9b66d40879337b36203fba2971c9b8b3d492a1ff3e13ffca43e95c
  42a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261112T045559Z

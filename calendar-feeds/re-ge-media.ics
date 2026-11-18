@@ -4,6 +4,26 @@ PRODID:-//Alert PWA//Public Calendar Subscription//JA
 CALSCALE:GREGORIAN
 X-WR-CALNAME:RE-GE / メディア
 BEGIN:VEVENT
+UID:public-v1-5c228dab670b026926857ea9b667451c923d814b35d12cdf7be2e2831adea
+ abd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T072647Z
+CREATED:20261118T072647Z
+LAST-MODIFIED:20261118T072647Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261201
+SUMMARY:「里菜と池田のイケティるTV」出演（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n本人公式スケジュールの日付を確認。開始・終了時
+ 刻と会場は自動抽出対象外。\n本人公式スケジュール詳
+ 細のイベント日付属性・見出し・カテゴリ。公開日を
+ 開催日として使用していません。\nhttps://re-ge.com/schedule/
+ item-817/
+LOCATION:
+URL:https://re-ge.com/schedule/item-817/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-b0e3ec3d515fa3fb28941e77e7b68e348acaaca1d2192301c4031fd5cb80b
  672@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261116T033812Z

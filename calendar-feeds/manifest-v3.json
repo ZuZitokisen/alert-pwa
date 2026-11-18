@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-18-v13-oneloveoneheart",
-  "dataGeneratedAt": "2026-11-18T06:20:10Z",
+  "dataVersion": "hourly-2026-11-18T07:26:47.419Z",
+  "dataGeneratedAt": "2026-11-18T07:26:47.419Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "dc44b69f4415d97dfc109f3c8d9c19b2ac503cc881dd929dba0572dfa3d62e50",
+  "inputSha256": "1671e80e1eb3fc6a1e89519715a3e5f6117bba87ec151133f96d663033ad7d03",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 54,
+      "count": 55,
       "omittedUnknownDate": 0,
-      "sha256": "5d460de990df4bc987f2f0e4061cb0de47f16dbc9013c7b75b4b0ede20bdb6ea"
+      "sha256": "ce319367e62a025117e83e62b9b86d05521e033718bf9597acad86ec96ebaee6"
     },
     {
       "id": "re-ge-live",
@@ -96,9 +96,9 @@
       "category": "media",
       "label": "RE-GE / メディア",
       "path": "calendar-feeds/re-ge-media.ics",
-      "count": 18,
+      "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "8bc2da32cb560685b384dd0ec70daded5021fe1d01420ef8766a0aceed70acc0"
+      "sha256": "bec815330fb2d3c654d4fee3b2e0722ddb7838a38c61feee2babbdfc32112aab"
     },
     {
       "id": "re-ge-other",
@@ -116,9 +116,9 @@
       "category": "all",
       "label": "Straight Angeli / 全予定",
       "path": "calendar-feeds/straightangeli-all.ics",
-      "count": 37,
+      "count": 38,
       "omittedUnknownDate": 0,
-      "sha256": "b2428b541be268c6f4670c6157a3d6449bc407de9c753e031334c127a41016a0"
+      "sha256": "d881b52cba68c74b35db6148946d83f8fdd2319892ce9a44fe407cada492b106"
     },
     {
       "id": "straightangeli-live",
@@ -126,9 +126,9 @@
       "category": "live",
       "label": "Straight Angeli / ライブ・イベント",
       "path": "calendar-feeds/straightangeli-live.ics",
-      "count": 4,
+      "count": 5,
       "omittedUnknownDate": 0,
-      "sha256": "fff5cbb4db74a3611eb1f51691fc103b647620032c5794e0a577d772b880c8cd"
+      "sha256": "5e9c2cf6e9d200c5a594d9cc46dca640b16b4af108c92e272a322e2a0e0698f7"
     },
     {
       "id": "straightangeli-benefit",

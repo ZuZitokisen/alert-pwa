@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-18-v13-oneloveoneheart",
-  "dataGeneratedAt": "2026-11-18T06:20:10Z",
-  "inputSha256": "dc44b69f4415d97dfc109f3c8d9c19b2ac503cc881dd929dba0572dfa3d62e50",
+  "dataVersion": "hourly-2026-11-18T07:26:47.419Z",
+  "dataGeneratedAt": "2026-11-18T07:26:47.419Z",
+  "inputSha256": "1671e80e1eb3fc6a1e89519715a3e5f6117bba87ec151133f96d663033ad7d03",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1073,6 +1073,38 @@
       "memberships": [
         "oneloveoneheart-all",
         "oneloveoneheart-media"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"re-ge-hourly-official-item-817\"]",
+      "uid": "public-v1-5c228dab670b026926857ea9b667451c923d814b35d12cdf7be2e2831adeaabd@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "re-ge-hourly-official-item-817",
+        "category": "media",
+        "title": "「里菜と池田のイケティるTV」出演",
+        "start": "2026-12-01",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/schedule/item-817/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-18T07:26:47.419Z",
+      "modified": "2026-11-18T07:26:47.419Z",
+      "lastTiming": {
+        "start": "2026-12-01",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-media"
       ]
     },
     {
@@ -3399,6 +3431,38 @@
       "memberships": [
         "straightangeli-all",
         "straightangeli-media"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-hourly-official-item-1345\"]",
+      "uid": "public-v1-b6f07de538ca39cfc8635007275c8d3f13e8adc2ee9a76c94f2de421d759454f@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-hourly-official-item-1345",
+        "category": "live",
+        "title": "Pococha presents HBCアイドル祭り2027「なまら推ささるアイドルWinter in Zepp Sapporo」出演",
+        "start": "2027-02-11",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/schedule/item-1345/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-18T07:26:47.419Z",
+      "modified": "2026-11-18T07:26:47.419Z",
+      "lastTiming": {
+        "start": "2027-02-11",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-live"
       ]
     },
     {
@@ -10390,5 +10454,5 @@
       ]
     }
   ],
-  "integritySha256": "bebcdbcaf19839a5475c7acc972d37cd945607d9791ca797f3ccbf8ad4a5150a"
+  "integritySha256": "be7f50487383b7afad5dfaf58eada6c947cebfd2ccc7754cce6a39663b5fadd2"
 }
