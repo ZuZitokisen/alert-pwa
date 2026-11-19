@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-rij-day4",
-  "dataGeneratedAt": "2026-11-19T13:01:28.048Z",
+  "dataVersion": "2026-11-20-watch22-details",
+  "dataGeneratedAt": "2026-11-19T13:15:00.527Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f266acab3aac5ae04ec9151adb8e31eea2cfba3ac53c5700a47da9c6c3e43b68",
+  "inputSha256": "3e140b85124c50e92eac7675612bc60f1d3e770cea25d9b5ae9fc5b215a4f073",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 56,
       "omittedUnknownDate": 0,
-      "sha256": "a0fadd795a40ea6aa6abbbf07597844d911878bf46621dca95cd23f2702a7f53"
+      "sha256": "242190fbd274338efe96697aabfa24657a355ee85451ed1c8d97588eea43ed53"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 8,
       "omittedUnknownDate": 0,
-      "sha256": "2206345e42211da961f7774c45e63f3cd22b0e9f7f8db686359976132017ab29"
+      "sha256": "98e50ebaaefcb5b108b0efed5b53833bdd9a7a50f0d50512e42f127f99685ecf"
     },
     {
       "id": "re-ge-benefit",

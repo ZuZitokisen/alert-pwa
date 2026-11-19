@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-rij-day4",
-  "dataGeneratedAt": "2026-11-19T13:01:28.048Z",
-  "inputSha256": "9cf0fe9077b255882e8537d7946b9caa07ad032c868ea513efee3bc067704fee",
+  "dataVersion": "2026-11-20-watch22-details",
+  "dataGeneratedAt": "2026-11-19T13:15:00.527Z",
+  "inputSha256": "ea6b9ea472ada25d13c46f21490417a87fd094356ffe5144302ab64518249dff",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1151,16 +1151,18 @@
         "start": "2026-12-11",
         "end": null,
         "allDay": false,
-        "location": "",
-        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+        "location": "渋谷ストリームホール",
+        "publicNote": "本人公式で12/11開催と渋谷ストリームホールを確認。桧山ゆうみは別件のため欠席と告知。開始・終了時刻は未確認。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。 本人公式ニュース本文で会場・欠席告知を補足。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://re-ge.com/news/item-818/",
           "https://re-ge.com/schedule/item-819/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/item-819/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-18T16:35:21.311Z",
-      "modified": "2026-11-18T16:35:21.311Z",
+      "modified": "2026-11-19T13:15:00.527Z",
       "lastTiming": {
         "start": "2026-12-11",
         "end": null,
@@ -4593,6 +4595,38 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-letter-eligibility-20261123\"]",
+      "uid": "public-v1-95a68cdc0d669736028edafb94b3fd1cfedbe4b7f337eb503e56bf83e09f7aba@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-letter-eligibility-20261123",
+        "category": "benefit",
+        "title": "11月生まれ会員限定「いぎなりレター」抽選対象基準日",
+        "start": "2026-11-23T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "いぎなり東北ファン倶楽部",
+        "publicNote": "11月生まれで11/23 23:59までに入会した会員が抽選対象。入会時登録の誕生日と同時点の登録住所を使用。抽選で10名にカード等を送付し、当選発表は発送をもって行う。全会員向けの申込締切や参加確約ではありません。\nログイン不要の本人公式告知にある対象条件と基準日時を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1129140"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T13:15:00.527Z",
+      "modified": "2026-11-19T13:15:00.527Z",
+      "lastTiming": {
+        "start": "2026-11-23T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-benefit"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-omiya-20261119\"]",
       "uid": "public-v1-92d0fe35aa4cdc44d45fd249660225a0d6288e673f73110269b217d5f3609d6c@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -4669,16 +4703,17 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。\n本人公式の開催日・本文記載を確認。",
+        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。\n本人公式の開催日・本文記載を確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://madeintohoku.com/contents/1117445",
+          "https://madeintohoku.com/contents/1128759",
           "https://madeintohoku.com/contents/1129171"
         ]
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-19T08:45:31.941Z",
-      "modified": "2026-11-19T10:44:22.242Z",
+      "modified": "2026-11-19T13:15:00.527Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -11302,5 +11337,5 @@
       ]
     }
   ],
-  "integritySha256": "1f271bc75892127cd960c676b00e0c3d49b0f7c84fc35b916eb09398faefccfa"
+  "integritySha256": "90e33574c47ce69de6e1d907cd37800db217bc2ec826e073aa6972c5771da55a"
 }

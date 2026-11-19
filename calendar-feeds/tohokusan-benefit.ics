@@ -22,4 +22,25 @@ URL:https://madeintohoku.com/contents/1127632
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-95a68cdc0d669736028edafb94b3fd1cfedbe4b7f337eb503e56bf83e09f7
+ aba@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T131500Z
+CREATED:20261119T131500Z
+LAST-MODIFIED:20261119T131500Z
+SEQUENCE:0
+DTSTART:20261123T145900Z
+SUMMARY:11月生まれ会員限定「いぎなりレター」抽選対象
+ 基準日
+DESCRIPTION:11月生まれで11/23 23:59までに入会した会員が抽
+ 選対象。入会時登録の誕生日と同時点の登録住所を使
+ 用。抽選で10名にカード等を送付し、当選発表は発送を
+ もって行う。全会員向けの申込締切や参加確約ではあ
+ りません。\nログイン不要の本人公式告知にある対象条
+ 件と基準日時を確認。\nhttps://madeintohoku.com/contents/1129140
+LOCATION:いぎなり東北ファン倶楽部
+URL:https://madeintohoku.com/contents/1129140
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
