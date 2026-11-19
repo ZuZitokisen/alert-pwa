@@ -171,3 +171,23 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 @media(prefers-color-scheme:dark){#artist-filters>button[data-artist=oneloveoneheart]{--artist-muted:#a1c9c6}}
 
 .push-actions{display:flex;flex-wrap:wrap;gap:8px}.push-actions button{min-height:44px}
+
+/* BEGIN restrained-calendar-20261119 — presentation only; no control or data changes. */
+/* Refero Apple / Linear: hierarchy and spacing, not copied branding. */
+.calendar-title{gap:16px}
+.calendar-title h2{font-weight:700;line-height:1.2}
+.year-label{letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.calendar.month-grid{margin-top:18px}
+.calendar.month-grid .date-button{font-weight:650;font-variant-numeric:tabular-nums}
+.day-cell.selected .date-button{box-shadow:none;background:var(--ink);color:var(--surface);font-weight:750}
+.day-cell.selected{background:color-mix(in srgb,var(--pink) 65%,var(--surface))}
+.agenda-heading h2{font-weight:700;letter-spacing:-.015em}
+/* News retains the Schedule card and its separate favorite control. */
+#changes .event-card .card-actions{border-top:1px solid var(--line);padding-top:10px;margin-top:14px;gap:12px}
+#changes .event-card .card-bottom-note{font-size:12px;font-weight:500;line-height:1.55;color:var(--ink);letter-spacing:0}
+@media(max-width:700px){
+ .calendar-title{gap:12px}
+ .calendar-title h2{font-size:32px}
+ .calendar.month-grid{margin-top:16px}
+}
+/* END restrained-calendar-20261119 */
