@@ -194,3 +194,5 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 
 /* Keep card columns steady across tabs with and without page scroll. */
 @media(min-width:701px){html:not(.dialog-scroll-locked){scrollbar-gutter:stable}}
+/* Let the same event keep its natural height even beside a longer title. */
+.cards > .event-card{align-self:start}
