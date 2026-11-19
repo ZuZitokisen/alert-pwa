@@ -45,3 +45,14 @@ test('v0.7.13 offline shell uses its matching versioned cache request without to
  f.handlers.fetch({request:new Request(url),respondWith:p=>pending=p});assert.equal(await (await pending).text(),'current offline style');assert.equal(matched,url);
  for(const path of ['schedule-data-v2.json','calendar-feeds/manifest-v2.json','calendar-feeds/straightangeli-all.ics']){let intercepted=false;f.handlers.fetch({request:new Request('https://example.com/alert-pwa/'+path),respondWith:()=>intercepted=true});assert.equal(intercepted,false);}
 });
+
+test('Fūrin branding updates installed metadata without changing app identity or its origin',()=>{
+ const read=name=>fs.readFileSync(new URL('./'+name,import.meta.url),'utf8');
+ const m=JSON.parse(read('manifest.webmanifest')),html=read('index.html'),release=JSON.parse(read('app-release.json'));
+ assert.deepEqual([m.id,m.start_url,m.scope],['./','./','./']);
+ assert.equal(m.name,'風鈴');assert.equal(m.short_name,'風鈴');
+ assert.match(html,/<meta name="apple-mobile-web-app-title" content="風鈴">/);
+ for(const ext of ['manifest.webmanifest','icon.svg','icon-192.png'])assert.ok(html.includes('href="./'+ext+'?v='+release.version+'"'));
+ for(const ico of m.icons)assert.ok(source.includes(ico.src));
+ assert.equal(JSON.parse(read('app-release.json')).notes.length,6);
+});
