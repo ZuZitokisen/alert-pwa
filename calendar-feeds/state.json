@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-watch22-details",
-  "dataGeneratedAt": "2026-11-19T13:15:00.527Z",
-  "inputSha256": "ea6b9ea472ada25d13c46f21490417a87fd094356ffe5144302ab64518249dff",
+  "dataVersion": "hourly-2026-11-19T14:43:07.722Z",
+  "dataGeneratedAt": "2026-11-19T14:43:07.722Z",
+  "inputSha256": "d39765023b3b8fec1473fa37b2e584fdcef3625c27c9dd7988104f0266ce599b",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3527,6 +3527,38 @@
       "modified": "2026-11-18T07:26:47.419Z",
       "lastTiming": {
         "start": "2027-02-11",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-live"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-hourly-official-item-1370\"]",
+      "uid": "public-v1-42381de63e0ecfdacbec7c686e6411fbce8a5b155b8cfd37c19c773cedf53613@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-hourly-official-item-1370",
+        "category": "live",
+        "title": "「メジャーデビュー記念！全国ごあいさつフリーライブツアー」＠animate hall BLACK（アニメイト池袋本店 北館9F）",
+        "start": "2026-12-20",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/schedule/item-1370/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T14:43:07.722Z",
+      "modified": "2026-11-19T14:43:07.722Z",
+      "lastTiming": {
+        "start": "2026-12-20",
         "end": null,
         "allDay": false
       },
@@ -11337,5 +11369,5 @@
       ]
     }
   ],
-  "integritySha256": "90e33574c47ce69de6e1d907cd37800db217bc2ec826e073aa6972c5771da55a"
+  "integritySha256": "04434b6ce1aa662796330fd07c93d40240b3311bc2e4d6f5aafbbab1f418a865"
 }
