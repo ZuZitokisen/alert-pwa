@@ -284,8 +284,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.13 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-13/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.13'));assert.ok(sw.includes(file+'?v=0.7.13'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.14 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-14/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.14'));assert.ok(sw.includes(file+'?v=0.7.14'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -322,4 +322,31 @@ test('selected month is distinguished by weight, not an underline',()=>{
  assert.match(css,/#month-label\s*\{[^}]*align-items:baseline/);
  assert.match(css,/#month-label \.month-en\{[^}]*font-size:12px/);
  assert.match(css,/#month-label:focus-visible\{outline:/);
+});
+
+test('month selection outlines only the month perimeter without pressing individual dates',()=>{
+ for(const month of ['2026-11-01','2026-05-01','2026-08-01','2027-02-01','2028-02-01','2026-01-01']){
+  const f=fixture();f.run(`selectDay('${month}')`);f.get('month-label').click();
+  assert.equal(f.get('month-label').getAttribute('aria-pressed'),'true');
+  assert.equal(f.get('calendar').querySelectorAll('.range-selected').length,0);
+  for(const b of f.get('calendar').querySelectorAll('.date-button'))assert.equal(b.getAttribute('aria-pressed'),'false');
+  for(const day of f.get('calendar').querySelectorAll('.outside'))assert.equal(day.classList.contains('month-perimeter'),false);
+  for(const b of f.get('calendar').querySelectorAll('.week-select'))assert.equal(b.classList.contains('month-perimeter'),false);
+  const offset=new Date(month+'T12:00:00Z').getUTCDay(),last=new Date(Number(month.slice(0,4)),Number(month.slice(5,7)),0).getDate();
+  const edges=[];for(let i=0;i<42;i++){const actual=Array.from(f.run(`monthPerimeterEdges(${i},${offset},${last})`));for(const side of actual)edges.push([i,side]);if(i<offset||i>=offset+last)assert.deepEqual(actual,[]);}
+  // Every boundary vertex has degree two: exactly one closed outline, no loose ends.
+  const vertices=new Map(),adj=new Map();const put=(a,b)=>{for(const [u,v]of [[a,b],[b,a]]){vertices.set(u,(vertices.get(u)||0)+1);adj.set(u,[...(adj.get(u)||[]),v]);}};
+  for(const [i,side]of edges){const x=i%7,y=Math.floor(i/7),pts={top:[[x,y],[x+1,y]],bottom:[[x,y+1],[x+1,y+1]],left:[[x,y],[x,y+1]],right:[[x+1,y],[x+1,y+1]]}[side];put(...pts.map(p=>p.join(',')));}
+  for(const degree of vertices.values())assert.equal(degree,2);
+  const seen=new Set(),queue=[vertices.keys().next().value];while(queue.length){const v=queue.pop();if(seen.has(v))continue;seen.add(v);queue.push(...adj.get(v));}assert.equal(seen.size,vertices.size);
+  // Native button activation (including keyboard-generated click) restores day behavior.
+  dateButton(f,month).click();assert.equal(f.run('agendaRange'),'day');assert.equal(f.get('calendar').querySelectorAll('.month-perimeter').length,0);assert.equal(dateButton(f,month).getAttribute('aria-pressed'),'true');
+ }
+});
+
+test('scheduled card footer shows a quieter timestamp without its label',()=>{
+ const f=fixture({events:[event('checked','2026-11-12',{checkedAt:'2026-11-12T04:10:00Z'})]});
+ const t=f.get('agenda').querySelector('time.card-checked-time');assert.ok(t);
+ assert.equal(t.dateTime,'2026-11-12T04:10:00Z');assert.equal(t.textContent,'11/12 13:10');
+ assert.match(fs.readFileSync(new URL('./style.css',import.meta.url),'utf8'),/card-checked-time\{color:color-mix/);
 });
