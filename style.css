@@ -186,6 +186,7 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 /* Shared footer geometry across Schedule, Favorite and News; only the note text differs. */
 .event-card .card-actions{border-top:1px solid var(--line);padding-top:6px;margin-top:8px;gap:12px}
 .event-card .card-bottom-note{font-size:12px;font-weight:500;line-height:1.55;color:var(--ink);letter-spacing:0}
+.event-card .card-checked-time{color:color-mix(in srgb,var(--ink) 72%,var(--surface));font-weight:400;font-variant-numeric:tabular-nums}
 @media(max-width:700px){
  .calendar-title{gap:12px}
  .calendar-title h2{font-size:32px}
@@ -235,3 +236,14 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 #artist-filters [data-artist=tohokusan] .artist-label{display:none}
 #artist-filters [data-artist=tohokusan] .artist-symbol{width:25px;height:25px}
 @media(prefers-color-scheme:dark){#artist-filters>button[data-artist=tohokusan]{--artist-muted:#cbb6df}}
+
+/* A single joined perimeter follows only this month's cells. No date is pressed. */
+.day-cell.month-perimeter::after{content:"";position:absolute;inset:-1px;z-index:2;pointer-events:none;border:0 solid var(--accent)}
+.day-cell.month-edge-top::after{border-top-width:1.5px}
+.day-cell.month-edge-bottom::after{border-bottom-width:1.5px}
+.day-cell.month-edge-left::after{border-left-width:1.5px}
+.day-cell.month-edge-right::after{border-right-width:1.5px}
+.day-cell.month-edge-top.month-edge-left::after{border-top-left-radius:4px}
+.day-cell.month-edge-top.month-edge-right::after{border-top-right-radius:4px}
+.day-cell.month-edge-bottom.month-edge-left::after{border-bottom-left-radius:4px}
+.day-cell.month-edge-bottom.month-edge-right::after{border-bottom-right-radius:4px}
