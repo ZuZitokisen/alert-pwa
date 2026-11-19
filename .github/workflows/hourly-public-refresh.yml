@@ -2,6 +2,7 @@ name: Hourly public schedule refresh
 on:
   schedule:
     - cron: '17 * * * *'
+    - cron: '47 * * * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -15,7 +16,33 @@ concurrency:
   group: public-schedule-pages
   cancel-in-progress: false
 jobs:
+  backup-gate:
+    if: github.event_name == 'schedule' && github.event.schedule == '47 * * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      proceed: ${{ steps.gate.outputs.proceed }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Skip backup only after verified recent scheduled production success
+        id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+        run: node hourly/backup-gate.mjs
   inspect:
+    needs: backup-gate
+    # Even a gate infrastructure failure must not bypass the normal guards.
+    if: ${{ !cancelled() && needs.backup-gate.outputs.proceed != 'false' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -34,6 +61,7 @@ jobs:
   publish:
     needs: inspect
     if: >-
+      !cancelled() && needs.inspect.result == 'success' &&
       vars.HOURLY_AUTO_PUBLISH == 'true' &&
       github.ref == format('refs/heads/{0}', github.event.repository.default_branch) &&
       (github.event_name == 'schedule' || inputs.mode == 'publish')
