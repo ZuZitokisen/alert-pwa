@@ -191,16 +191,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-2cd708119a2bbc696549f6df62d49d76e87c91c3041bbc448c98526eaf865
  5eb@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T084531Z
+DTSTAMP:20261119T104422Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261119T084531Z
-SEQUENCE:0
+LAST-MODIFIED:20261119T104422Z
+SEQUENCE:1
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 ライブ ～まじで頑張ろ！女のスタダ！
  ～
 DESCRIPTION:開場16:00。公演開始時刻であり個別出演時刻で
- はない。終了未発表。\n本人公式の開催日・本文記載を
- 確認。\nhttps://madeintohoku.com/contents/1117445
+ はない。終了未発表。 いぎなり東北産の会場CD販売：
+ 先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ
+ 次第終了。対象CD購入で限定2Lブロマイド特典（数量限
+ 定）。他出演者の物販時間とは別の案内。\n本人公式の
+ 開催日・本文記載を確認。\nhttps://madeintohoku.com/contents/11
+ 17445\nhttps://madeintohoku.com/contents/1129171
 LOCATION:ザ・ガーデンホール
 URL:https://madeintohoku.com/contents/1117445
 STATUS:CONFIRMED

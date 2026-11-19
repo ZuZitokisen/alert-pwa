@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-tohokusan-details",
-  "dataGeneratedAt": "2026-11-19T09:46:35.640Z",
+  "dataVersion": "2026-11-20-merch-and-magazine",
+  "dataGeneratedAt": "2026-11-19T10:44:22.242Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "eaad6c63e4a51b34f2077bd9379bf74eb8fedae6c5ac63b10a596559af38b665",
+  "inputSha256": "d22f23c015d71f62de914300c10ab8e5ae632e8540c203249c7953b9e7c248d5",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 56,
       "omittedUnknownDate": 0,
-      "sha256": "6e77d1373c2fd312ba7242f147151f1de682c301f992c5bca9cfb980cf2a2bcc"
+      "sha256": "a0fadd795a40ea6aa6abbbf07597844d911878bf46621dca95cd23f2702a7f53"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 8,
       "omittedUnknownDate": 0,
-      "sha256": "4b24b6d4e38ef1e63c25898740076e1932d1caffa3e1cec390e758740e38f113"
+      "sha256": "2206345e42211da961f7774c45e63f3cd22b0e9f7f8db686359976132017ab29"
     },
     {
       "id": "re-ge-benefit",
@@ -166,9 +166,9 @@
       "category": "all",
       "label": "ONE LOVE ONE HEART / 全予定",
       "path": "calendar-feeds/oneloveoneheart-all.ics",
-      "count": 33,
+      "count": 34,
       "omittedUnknownDate": 0,
-      "sha256": "ed57c11e2ba32ed9842c9dfb742705b3835d2adbff994d33f771c948c7091711"
+      "sha256": "348fede716c10a2c28f67910f12cf10189813ef964aa41cfdc1a476615c6cc88"
     },
     {
       "id": "oneloveoneheart-live",
@@ -206,9 +206,9 @@
       "category": "other",
       "label": "ONE LOVE ONE HEART / その他",
       "path": "calendar-feeds/oneloveoneheart-other.ics",
-      "count": 1,
+      "count": 2,
       "omittedUnknownDate": 0,
-      "sha256": "ea99d0457720ad45a99720dd2f1f12eb1d7b7f7826f84d83a9fed7fb97a7c739"
+      "sha256": "9c3eab319def51767586808b387f0bef60043f61f231d9da52d5a707a8523f33"
     }
   ]
 }

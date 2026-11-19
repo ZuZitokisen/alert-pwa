@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-tohokusan-details",
-  "dataGeneratedAt": "2026-11-19T09:46:35.640Z",
+  "dataVersion": "2026-11-20-merch-and-magazine",
+  "dataGeneratedAt": "2026-11-19T10:44:22.242Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "ba2326e3d2c972967e8642794d724b7847ab4a8571240c7142385a6a6c316eb0",
+  "inputSha256": "3913e542fa5a01aecfd49fa12dba8ab7ee8c42ea1c04cb686bc741526d8f6e28",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 56,
       "omittedUnknownDate": 0,
-      "sha256": "6e77d1373c2fd312ba7242f147151f1de682c301f992c5bca9cfb980cf2a2bcc"
+      "sha256": "a0fadd795a40ea6aa6abbbf07597844d911878bf46621dca95cd23f2702a7f53"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 8,
       "omittedUnknownDate": 0,
-      "sha256": "4b24b6d4e38ef1e63c25898740076e1932d1caffa3e1cec390e758740e38f113"
+      "sha256": "2206345e42211da961f7774c45e63f3cd22b0e9f7f8db686359976132017ab29"
     },
     {
       "id": "re-ge-benefit",
