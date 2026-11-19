@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-19T14:43:07.722Z",
-  "dataGeneratedAt": "2026-11-19T14:43:07.722Z",
+  "dataVersion": "2026-11-20-fukushima-tv-supplement",
+  "dataGeneratedAt": "2026-11-19T21:22:23.394Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "527297b12d7d6f5cd1e94aae564307f6d0bef853f949a62edf74ec1efe8fa1c1",
+  "inputSha256": "ba8289b5a38d312f1d4aff45e614d9885a46283443f3cede82c5ababbc24ba94",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all.ics",
       "count": 39,
       "omittedUnknownDate": 0,
-      "sha256": "2438b581a8e4b668fec8bf20c014c8bccc0c34fe151e0b6047bfce3ea9c731a7"
+      "sha256": "08612d06cff76539cbaa7f8a6fb8a08afaf4a55438f553bc261a6be7c027c1af"
     },
     {
       "id": "straightangeli-live",
@@ -148,7 +148,7 @@
       "path": "calendar-feeds/straightangeli-media.ics",
       "count": 23,
       "omittedUnknownDate": 0,
-      "sha256": "26aa0f52abf029a936a29c28610aa0ef5ffa9727e7aa10b3b0d6120c0aa70e61"
+      "sha256": "afdc3429ecc542f747bff21aa89b49827d49de732a7673deec5cd3e746a58b3d"
     },
     {
       "id": "straightangeli-other",
