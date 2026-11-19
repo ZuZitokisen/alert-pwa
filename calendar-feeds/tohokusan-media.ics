@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:いぎなり東北産 / メディア
+BEGIN:VEVENT
+UID:public-v1-7ae5da076d8408096ec5370729469d867460190d50a83f97f92bb6fa43f7d
+ 90d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261122T140000Z
+DTEND:20261122T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽開放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&ta
+ g=radio
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-53595d9dcb89aef065343fdc3d8af4d0d1b7791444e3dc7c1cae881f1839b
+ 312@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261129T140000Z
+DTEND:20261129T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽開放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&ta
+ g=radio
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8c10293d07a023a46815b8033e8f8a377f8f3b77f6bd62b91cc6edf29340d
+ 95e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261122T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式11月カレンダー掲載日。毎週日曜10:30、終
+ 了未確認。放送後topo配信。\n本人公式の開催日・本文
+ 記載を確認。\nhttps://madeintohoku.com/contents/1065646\nhttps://mad
+ eintohoku.com/vertical_calendar
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f251a141da7e521c52616d5b2ecaf3c33def8e67a3a345d672bfabb3c13f7
+ 127@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261129T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式11月カレンダー掲載日。毎週日曜10:30、終
+ 了未確認。放送後topo配信。\n本人公式の開催日・本文
+ 記載を確認。\nhttps://madeintohoku.com/contents/1065646\nhttps://mad
+ eintohoku.com/vertical_calendar
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
