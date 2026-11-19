@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-18T16:35:21.311Z",
-  "dataGeneratedAt": "2026-11-18T16:35:21.311Z",
+  "dataVersion": "2026-11-19-tokisen-christmas-pickup",
+  "dataGeneratedAt": "2026-11-19T05:21:58.596Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "ef3e806985618db6b517d37249c2b631b6883ae42865b19cf207cad3875e61c8",
+  "inputSha256": "7daaae76b2946c897ce64bc3f934d2c51786957b70fc9696157d70eed58e821d",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 186,
+      "count": 188,
       "omittedUnknownDate": 11,
-      "sha256": "0ed6b0f224736c0c1a61a033f4a3ff1f5899e1db9465b72b3906277f6febbeef"
+      "sha256": "37220b0636ea8c975f8d305210a36fb950fdc80b6da1b53570d28c65c3cef0a5"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit.ics",
-      "count": 58,
+      "count": 60,
       "omittedUnknownDate": 6,
-      "sha256": "47ba82db701af1b2dd0a6e4ff8ce55adf101dabf95ecef21037d90b84b55187c"
+      "sha256": "c6597d5da2d9c753ba5adc14a4c1b5ea0b47a00ea329949424792ce1dce14a18"
     },
     {
       "id": "tokisen-media",

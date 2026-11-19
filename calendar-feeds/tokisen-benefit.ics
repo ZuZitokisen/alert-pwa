@@ -37,6 +37,50 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-971c7eca06c607bb8aa2bf5ac4d5a2faaa763fecfcdfdc6d90f778e631f2d
+ c0a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T052158Z
+CREATED:20261119T052158Z
+LAST-MODIFIED:20261119T052158Z
+SEQUENCE:0
+DTSTART:20261126T145900Z
+SUMMARY:ときクリ2026 グッズ会場受取 予約締切
+DESCRIPTION:商品在庫・受取時間枠には上限があり、期間内
+ でも受付終了の場合があります。受取は京王アリーナTO
+ KYOで12/12 12:00から、12/13 10:30から。公演券なしの受取は1
+ 2/12 17:00以降・12/13 15:00以降の指定枠のみ。当日販売の
+ 詳細は別途発表。\n11/19の本人公式告知で会場受取予約
+ の開始・締切を確認。過去の事前通販とは別受付。\nhtt
+ ps://mailivis.jp/shop/t/t1607/\nhttps://toki-sen.com/contents/1129157?tag=
+ all
+LOCATION:MAILIVIS（オンライン予約）
+URL:https://toki-sen.com/contents/1129157?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-24551653c6c0483181dd2a4cd8483bfaecae426758eb4eaee38b0a27025ff
+ 1f4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T052158Z
+CREATED:20261119T052158Z
+LAST-MODIFIED:20261119T052158Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:ときクリ2026 グッズ会場受取 予約開始
+DESCRIPTION:商品在庫・受取時間枠には上限があり、期間内
+ でも受付終了の場合があります。受取は京王アリーナTO
+ KYOで12/12 12:00から、12/13 10:30から。公演券なしの受取は1
+ 2/12 17:00以降・12/13 15:00以降の指定枠のみ。当日販売の
+ 詳細は別途発表。\n11/19の本人公式告知で会場受取予約
+ の開始・締切を確認。過去の事前通販とは別受付。\nhtt
+ ps://mailivis.jp/shop/t/t1607/\nhttps://toki-sen.com/contents/1129157?tag=
+ all
+LOCATION:MAILIVIS（オンライン予約）
+URL:https://toki-sen.com/contents/1129157?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-a2ea049b7739012dfbebb9d128f3c6a7855ab76cf855c6d0d0ac12183ea78
  b90@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z
