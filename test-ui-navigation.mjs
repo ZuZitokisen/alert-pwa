@@ -36,7 +36,7 @@ test('regular screens omit introductory copy and keep important guidance in info
  const regular=html.slice(html.indexOf('<main>'),html.indexOf('<section id="changes-view"'));
  for(const text of ['気になる、を集めよう','お気に入りはこの端末','予定を、カードで','新しい発表と、予定の変化','非公式の情報集約'])assert.ok(!regular.includes(text));
  const info=html.slice(html.indexOf('<section id="changes-view"'));
- for(const text of ['非公式の情報集約','アプリの更新','黒いハートは未登録','別端末との同期はありません','自動監視は未稼働'])assert.ok(info.includes(text));
+ for(const text of ['非公式の情報集約','アプリの更新','黒いハートは未登録','別端末との同期はありません','一部の公式情報源で自動取得を検証中'])assert.ok(info.includes(text));
  assert.ok(source.includes('通知は予約・配信されません。'));assert.ok(html.includes('更新間隔は端末側に依存'));
 });
 
