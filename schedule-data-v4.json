@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-20-tohokusan-details",
-  "generatedAt": "2026-11-19T09:46:35.640Z",
+  "version": "2026-11-20-merch-and-magazine",
+  "generatedAt": "2026-11-19T10:44:22.242Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2598,7 +2598,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "ザ・ガーデンホール",
-      "note": "",
+      "note": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/news/item-716/",
       "sources": [
@@ -2606,9 +2606,14 @@
           "url": "https://re-ge.com/news/item-716/",
           "type": "artist_official",
           "checkedAt": "2026-11-11T09:29:45Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-809/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T10:44:22.242Z"
         }
       ],
-      "checkedAt": "2026-11-11T09:29:45Z",
+      "checkedAt": "2026-11-19T10:44:22.242Z",
       "timings": [
         {
           "label": "全体開場",
@@ -2628,6 +2633,27 @@
           "label": "一般発売開始",
           "kind": "ticket_sales_start",
           "at": "2026-10-31T10:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE先行物販開始",
+          "kind": "goods_sales_start",
+          "at": "2026-11-24T14:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE先行物販終了",
+          "kind": "goods_sales_end",
+          "at": "2026-11-24T15:30:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE開場後物販開始",
+          "kind": "goods_sales_start",
+          "at": "2026-11-24T16:00:00+09:00",
           "note": "",
           "status": "confirmed"
         }
@@ -12449,15 +12475,44 @@
       "end": null,
       "location": "ザ・ガーデンホール",
       "sourceUrl": "https://madeintohoku.com/contents/1117445",
-      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。",
+      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。",
       "evidence": "本人公式の開催日・本文記載を確認。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-19T08:45:31.941Z",
-      "timings": [],
+      "checkedAt": "2026-11-19T10:44:22.242Z",
+      "timings": [
+        {
+          "label": "東北産CD先行販売開始",
+          "kind": "cd_sales_start",
+          "at": "2026-11-24T14:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "東北産CD先行販売終了",
+          "kind": "cd_sales_end",
+          "at": "2026-11-24T15:30:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "東北産CD開場後販売開始",
+          "kind": "cd_sales_start",
+          "at": "2026-11-24T16:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "東北産CD開演前販売終了",
+          "kind": "cd_sales_end",
+          "at": "2026-11-24T17:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        }
+      ],
       "deadline": null,
       "revision": 1,
       "present": true,
@@ -12467,6 +12522,11 @@
           "url": "https://madeintohoku.com/contents/1117445",
           "type": "artist_official",
           "checkedAt": "2026-11-19T08:45:31.941Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1129171",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T10:44:22.242Z"
         }
       ]
     },
@@ -12843,6 +12903,34 @@
       "revision": 1,
       "present": true,
       "groupId": "tohokusan-jre-train-20270130"
+    },
+    {
+      "id": "oneloveoneheart-scawaii-20261217",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "女子メンバー掲載「S Cawaii! 2027年2月号」発売",
+      "start": "2026-12-17",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "",
+      "note": "飯塚瑠乃・イーチ・佐々木杏莉・藤咲碧羽・矢嶋由菜が掲載。発売日のみを登録。購入先ごとの販売時刻は設定していません。",
+      "evidence": "本人公式の発売日・掲載メンバー告知を確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/news/news-7368/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/news/news-7368/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T10:44:22.242Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T10:44:22.242Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-scawaii-20261217"
     }
   ],
   "notes": [
