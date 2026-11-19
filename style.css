@@ -191,3 +191,6 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  .calendar.month-grid{margin-top:16px}
 }
 /* END restrained-calendar-20261119 */
+
+/* Keep card columns steady across tabs with and without page scroll. */
+@media(min-width:701px){html:not(.dialog-scroll-locked){scrollbar-gutter:stable}}
