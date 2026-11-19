@@ -1,6 +1,6 @@
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-const paths=['schedule-data-v3.json','schedule-data-v2.json','schedule-data.json','calendar-feeds/manifest-v3.json','calendar-feeds/manifest-v2.json','calendar-feeds/manifest.json'];
+const paths=['schedule-data-v4.json','schedule-data-v3.json','schedule-data-v2.json','schedule-data.json','calendar-feeds/manifest-v4.json','calendar-feeds/manifest-v3.json','calendar-feeds/manifest-v2.json','calendar-feeds/manifest.json'];
 const base='https://zuzitokisen.github.io/alert-pwa/';
 const hash=x=>createHash('sha256').update(x).digest('hex');
 const outcomes=await Promise.all(paths.map(async p=>{

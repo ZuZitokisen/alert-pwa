@@ -4,6 +4,7 @@ import core from '../production-feed-core.cjs';
 const aliases=JSON.parse(readFileSync(new URL('./source-aliases.json',import.meta.url),'utf8'));
 const firstParty = Object.freeze({
   tokisen: ['toki-sen.com'],
+  tohokusan: ['madeintohoku.com'],
   're-ge': ['re-ge.com'],
   straightangeli: ['straight-angeli.com'],
   oneloveoneheart: ['oneloveoneheart.jp', '5th.oneloveoneheart.jp', 'oneloveoneheart.officialfc.jp'],
@@ -54,7 +55,7 @@ export function mergeOfficialSchedules(base,candidates,now=new Date()){
  for(const e of candidates) {
   const k=e&&typeof e.id==='string'?e.id:null;
   if(!k) {skipped.push({reason:'invalid identity'});continue;}
-  try{validate(e);core.validateInput({...base,events:[e]},{production:true,publicSource:'schedule-data-v3.json'});}
+  try{validate(e);core.validateInput({...base,events:[e]},{production:true,publicSource:'schedule-data-v4.json'});}
   catch{skipped.push({eventId:k,reason:'invalid candidate or source'});continue;}
   const prev=staged.get(k);
   if(prev===false)continue;
@@ -85,6 +86,6 @@ export function mergeOfficialSchedules(base,candidates,now=new Date()){
  if(notices.length>75)throw Error('Candidate exceeds per-run safety limit (75); no write performed');
  if(+now<=Date.parse(base.generatedAt))throw Error('Collection time is not newer than last publication');
  const next={...base,version:'hourly-'+stamp,generatedAt:stamp,events:kept};
- core.validateInput(next,{production:true,publicSource:'schedule-data-v3.json'});
+ core.validateInput(next,{production:true,publicSource:'schedule-data-v4.json'});
  return {next,notices,skipped};
 }
