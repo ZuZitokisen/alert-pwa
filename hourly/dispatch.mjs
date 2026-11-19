@@ -1,15 +1,17 @@
 import fs from 'node:fs/promises';
 import {runtimeToken,backendOrigin} from './gh-oidc-client.mjs';
 import {planNotifications} from './notifications.mjs';
-const snapshot=JSON.parse(await fs.readFile(new URL('../schedule-data-v3.json',import.meta.url),'utf8'));
+import {compatibleDispatch} from './dispatch-compat.mjs';
+const snapshot=JSON.parse(await fs.readFile(new URL('../schedule-data-v4.json',import.meta.url),'utf8'));
 const state=JSON.parse(await fs.readFile(new URL('../calendar-feeds/state.json',import.meta.url),'utf8'));
 const send=process.argv[2]==='--send';
 if(process.argv.length!==2+(send?1:0))throw Error('Usage: node hourly/dispatch.mjs [--send]');
-const records=planNotifications(snapshot,state,{activatedAt:process.env.ALERT_PUSH_NOTIFY_AFTER||null});
-if(!send){console.log(JSON.stringify({dryRun:true,planned:records.length}));process.exit(0);}
+const planned=planNotifications(snapshot,state,{activatedAt:process.env.ALERT_PUSH_NOTIFY_AFTER||null});
+const {records,deferredUnsupportedReminders}=compatibleDispatch(planned);
+if(!send){console.log(JSON.stringify({dryRun:true,planned:planned.length,dispatchable:records.length,deferredUnsupportedReminders}));process.exit(0);}
 if(!process.env.ALERT_PUSH_NOTIFY_AFTER)throw Error('Notification activation time not configured');
 const base=backendOrigin(), token=await runtimeToken();
-const publicOrigin=new URL('https://zuzitokisen.github.io/alert-pwa/schedule-data-v3.json');
+const publicOrigin=new URL('https://zuzitokisen.github.io/alert-pwa/schedule-data-v4.json');
 const live=await fetch(publicOrigin,{cache:'no-store',redirect:'error',signal:AbortSignal.timeout(15000)});
 if(!live.ok||(await live.json()).version!==snapshot.version)throw Error('Wait for the exact schedule version to be public before dispatch');
 let queued=0, batch=[];
@@ -25,4 +27,4 @@ for(const value of records){
  batch.push(value);
 }
 await flush();
-console.log(JSON.stringify({planned:records.length,queued}));
+console.log(JSON.stringify({planned:planned.length,dispatchable:records.length,deferredUnsupportedReminders,queued}));

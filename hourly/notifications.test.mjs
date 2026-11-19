@@ -20,3 +20,26 @@ test('deadline exception, missing time, cancellation and revisions remain distin
  assert.equal(o.filter(x=>x.kind==='change').length,1);
  assert.ok(!o.some(x=>x.id==='two'&&x.kind==='reminder'));
 });
+
+test('fifth artist retains shared News and identity-specific reminder revisions',()=>{
+ const a=make('tohokusan-fixture',{artistId:'tohokusan'});
+ const opts={now,activatedAt:'2026-11-18T07:00:00Z'};
+ const state={records:[record(a,3)]};
+ const snapshot={version:'v4-fifth-only',events:[a]};
+ const planned=planNotifications(snapshot,state,opts);
+ const news=planned.filter(x=>x.kind==='change');
+ assert.equal(news.length,1);
+ assert.equal(news[0].title,'予定が更新されました');
+ assert.equal(news[0].body,'Newsで確認できます');
+ assert.match(news[0].url,/#changes$/);
+ assert.deepEqual(planned.filter(x=>x.kind==='reminder').map(x=>[x.id,x.artistId,x.revision,x.at]),[
+  ['tohokusan-fixture','tohokusan',4,'2026-11-18T23:00:00.000Z'],
+  ['tohokusan-fixture','tohokusan',4,'2026-11-19T05:00:00.000Z']
+ ]);
+ assert.deepEqual(planNotifications(snapshot,state,opts),planned);
+ for(const patch of [{status:'cancelled'},{start:'2026-11-19'}]){
+  assert.equal(planNotifications({...snapshot,events:[{...a,...patch}]},state,opts).filter(x=>x.kind==='reminder').length,0);
+ }
+ const b=make('existing-fixture');
+ assert.equal(planNotifications({...snapshot,events:[a,b]},{records:[record(a,3),record(b)]},opts).filter(x=>x.kind==='change').length,1);
+});

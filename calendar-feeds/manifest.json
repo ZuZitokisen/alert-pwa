@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-19-tokisen-ariake-tv-complete",
-  "dataGeneratedAt": "2026-11-19T07:46:12.911Z",
+  "dataVersion": "2026-11-19-tohokusan",
+  "dataGeneratedAt": "2026-11-19T08:45:31.941Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "0c1496e68b0ec27ac6933d27c10f527855697fa78d67c162999f21cdeee0fccc",
+  "inputSha256": "81c492236e1b6246d8fab70b03a2ef383724dd7c024a4934476043b3d73fb6cb",
   "feeds": [
     {
       "id": "tokisen-all",

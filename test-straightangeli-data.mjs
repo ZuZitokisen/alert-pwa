@@ -70,6 +70,6 @@ test('makeup-ticket condition is attached only to six verified photo-sale entrie
  for(const e of actual){assert.match(e.note,/8\/22中止分の特典券・トライアルチケット保有者/);assert.match(e.note,/12月末までの生写真販売イベントで振替対応/);assert.match(e.note,/対象条件は公式案内を確認/);}
  assert.ok(!events.some(e=>e.start?.startsWith('2026-12-31')||e.id.includes('1167')));
 });
-test('public release notes distinguish available subscription feeds from unverified device reflection and disconnected Push',()=>{
- const notes=data.notes.join('\n');assert.match(notes,/購読の公開URLは配信済み/);assert.match(notes,/端末での登録・更新反映は未検証/);assert.match(notes,/継続監視・Pushは未接続/);assert.ok(!notes.includes('Push・本体カレンダー購読は未接続'));
+test('public release notes distinguish scoped monitoring from device notification activation',()=>{
+ const notes=data.notes.join('\n');assert.match(notes,/対応済みの公式情報を定期取得/);assert.match(notes,/通知は端末で有効化が必要/);assert.match(notes,/個別リマインドは通知配信側の対応確認まで対象外/);assert.ok(!notes.includes('継続監視・Pushは未接続'));
 });

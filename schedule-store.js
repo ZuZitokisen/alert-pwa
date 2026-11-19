@@ -5,12 +5,13 @@
  * the last good data. Cache and history are intentionally separate from demos.
  */
 (() => {
+  const FIFTH = globalThis.ALERT_ARTISTS?.some(a => a.id === 'tohokusan') === true;
   const EXTENDED = globalThis.ALERT_ARTISTS?.some(a => a.id === 'oneloveoneheart') === true;
   const V2_KEY = 'alert-pwa-curated-calendar-v2';
-  const KEY = EXTENDED ? 'alert-pwa-curated-calendar-v3' : V2_KEY;
+  const KEY = FIFTH ? 'alert-pwa-curated-calendar-v4' : EXTENDED ? 'alert-pwa-curated-calendar-v3' : V2_KEY;
   const LEGACY_KEY = 'alert-pwa-curated-calendar-v1';
   const SOURCE = 'curated-calendar';
-  const DATA_URL = EXTENDED ? './schedule-data-v3.json' : './schedule-data-v2.json';
+  const DATA_URL = FIFTH ? './schedule-data-v4.json' : EXTENDED ? './schedule-data-v3.json' : './schedule-data-v2.json';
   const MAX_EVENTS = 10000, MAX_HISTORY = 500, MAX_CACHE_LENGTH = 8000000;
   const CONTENT_FIELDS = ['title', 'start', 'end', 'allDay', 'status', 'category', 'location', 'note', 'evidence', 'artistId', 'deadline', 'sourceUrl', 'sources', 'timings', 'dateLabel', 'groupId'];
   const EVENT_REQUIRED = ['id', 'source', 'artistId', 'title', 'start', 'end', 'allDay', 'status', 'category', 'location', 'note', 'evidence', 'sourceUrl', 'sources', 'checkedAt', 'timings', 'revision', 'present'];
@@ -76,7 +77,7 @@
   function event(value, local = false) {
     object(value, EVENT_REQUIRED, EVENT_OPTIONAL);
     identity(value.id); require(value.source === SOURCE);
-    require(['tokisen', 're-ge', 'straightangeli'].includes(value.artistId) || EXTENDED && value.artistId === 'oneloveoneheart');
+    require(['tokisen', 're-ge', 'straightangeli'].includes(value.artistId) || EXTENDED && value.artistId === 'oneloveoneheart' || FIFTH && value.artistId === 'tohokusan');
     require(!['straightangeli', 'oneloveoneheart'].includes(value.artistId) || value.id.startsWith(value.artistId + '-'));
     string(value.title, 1000, true);
     require(value.start === null || date(value.start) || instant(value.start));
@@ -140,6 +141,7 @@
     try {
       raw = globalThis.localStorage.getItem(KEY);
       // Read only an older cache when the current generation is absent.
+      if (raw === null && FIFTH) raw = globalThis.localStorage.getItem('alert-pwa-curated-calendar-v3');
       if (raw === null && EXTENDED) raw = globalThis.localStorage.getItem(V2_KEY);
       if (raw === null) raw = globalThis.localStorage.getItem(LEGACY_KEY);
     }

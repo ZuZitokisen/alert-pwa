@@ -7,9 +7,11 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.12';
+const APP_RELEASE='0.7.13';
+const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
-const readKey=artists.some(a=>a.id==='oneloveoneheart')?'alert-pwa-curated-read-v3':'alert-pwa-curated-read-v2';
+const readKey=artists.some(a=>a.id==='tohokusan')?'alert-pwa-curated-read-v4':artists.some(a=>a.id==='oneloveoneheart')?'alert-pwa-curated-read-v3':'alert-pwa-curated-read-v2';
 let state={events:[],changes:[],sources:[],outboxCount:0},artist='all',selectedArtists=new Set(),filter='all',agendaFilter='all',agendaRange='day',selectedWeekStart=null,view='calendar',returnView='calendar';
 let selectedDate=F.dateKey(new Date().toISOString()),period=selectedDate.slice(0,7)+'-01',requestGeneration=0,mutating=false,toastTimer,storageFailed=false;
 function stored(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{storageFailed=true;return fallback;}}
@@ -30,8 +32,8 @@ restoreArtistSelection();
 const storedFavorites=stored('alert-pwa-favorites-v1',[]),storedSelected=stored('alert-pwa-selected-v1',[]),storedReminders=stored('alert-pwa-reminders-v2',{});
 let favorites=new Set(Array.isArray(storedFavorites)?storedFavorites:[]),selected=new Set(Array.isArray(storedSelected)?storedSelected:[]),reminders=storedReminders&&typeof storedReminders==='object'&&!Array.isArray(storedReminders)?storedReminders:{},readThrough=readMarker();
 let morningTime=stored('alert-pwa-morning-v1','08:00');if(typeof morningTime!=='string'||!/^([01]\d|2[0-3]):[0-5]\d$/.test(morningTime))morningTime='08:00';
-// Each cache generation has its own history marker; v3 can read older markers.
-function readMarker(){const current=stored(readKey,null),legacy=current===null?stored('alert-pwa-curated-read-v2',null)??stored('alert-pwa-curated-read-v1',0):current;const value=Number.isSafeInteger(legacy)&&legacy>=0?legacy:0;if(current===null)save(readKey,value);return value;}
+// Each cache generation has its own history marker; v4 can read older markers.
+function readMarker(){const current=stored(readKey,null),legacy=current===null?stored('alert-pwa-curated-read-v3',null)??stored('alert-pwa-curated-read-v2',null)??stored('alert-pwa-curated-read-v1',0):current;const value=Number.isSafeInteger(legacy)&&legacy>=0?legacy:0;if(current===null)save(readKey,value);return value;}
 function reconcileReadMarker(){const limit=Math.max(0,(state.nextChangeId||1)-1);if(readThrough>limit){readThrough=limit;save(readKey,readThrough);}}
 function presentEvent(e){return {...e,artist:getArtist(e.artistId)?.name||e.artistId};}
 function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5500);}
@@ -48,7 +50,7 @@ function matchesArtist(id){return selectedArtists.size===0||selectedArtists.has(
 function matching(extra={}){return F.filterEvents(state.events.filter(e=>matchesArtist(e.artistId)).map(uiEvent),{artist:'all',category:'all',status:'all',sort:'date',favorites,...extra});}
 function activeEvents(){return matching().filter(e=>e.present!==false&&e.status!=='cancelled');}
 function artistSymbol(id){
- const specs={oneloveoneheart:{viewBox:'0 0 32 32',kind:'heart',paths:[{d:'M16 27S3 19.4 3 10.9C3 4.8 10.9 2.3 16 8c5.1-5.7 13-3.2 13 2.9C29 19.4 16 27 16 27Z',fill:'currentColor'}]},tokisen:{viewBox:'0 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'m10 20 3 9h5l-4-8M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 32 30',kind:'wings',paths:[{d:'M5 27C3 23 4 18 8 15c4-3 10-3 16-11l4-3c1 6-3 12-9 16 5-2 8-5 11-8 0 6-5 11-12 13 4 0 7-2 10-4-2 6-8 9-14 8l7 1c-6 4-12 3-16 0Z',fill:'currentColor'},{d:'M7 25c2-5 6-8 11-11',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.3','stroke-linecap':'round'}]}};
+ const specs={tohokusan:{viewBox:'0 0 34 34',kind:'san-brush',paths:[{d:'M16 2Q19 2 20 3L19 6 16 6Z M6 6Q16 7 25 6L27 4 30 8 7 8Z M9 9Q14 10 13 13L11 14Q11 11 9 9Z M23 9L27 10Q24 13 21 14L20 13Z M5 14Q17 15 27 14L29 12 32 16 8 16Q8 26 2 31L1 30Q5 23 5 14Z M13 17L16 18Q14 22 10 24L9 23Z M19 17L22 18 21 29 18 29Z M13 21Q20 22 26 21L28 19 30 23 12 23Z M12 25L26 25 28 23 30 27 12 27Z M8 29Q19 30 28 29L30 27 33 31 8 31Z',fill:'currentColor'}]},oneloveoneheart:{viewBox:'0 0 32 32',kind:'heart',paths:[{d:'M16 27S3 19.4 3 10.9C3 4.8 10.9 2.3 16 8c5.1-5.7 13-3.2 13 2.9C29 19.4 16 27 16 27Z',fill:'currentColor'}]},tokisen:{viewBox:'0 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'m10 20 3 9h5l-4-8M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 32 30',kind:'wings',paths:[{d:'M5 27C3 23 4 18 8 15c4-3 10-3 16-11l4-3c1 6-3 12-9 16 5-2 8-5 11-8 0 6-5 11-12 13 4 0 7-2 10-4-2 6-8 9-14 8l7 1c-6 4-12 3-16 0Z',fill:'currentColor'},{d:'M7 25c2-5 6-8 11-11',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.3','stroke-linecap':'round'}]}};
  const spec=specs[id];if(!spec)return null;
  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');
  for(const [key,value]of Object.entries({class:'artist-symbol','data-artist-symbol':spec.kind,viewBox:spec.viewBox,'aria-hidden':'true',focusable:'false'}))svg.setAttribute(key,value);
@@ -56,7 +58,8 @@ function artistSymbol(id){
  return svg;
 }
 function renderArtists(){
- const list=[{id:'all',name:'すべてのアーティスト'},...artists],container=$('#artist-filters');
+ const artistOrder=['tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
+ const list=[{id:'all',name:'すべてのアーティスト'},...artists.slice().sort((a,b)=>artistOrder.indexOf(a.id)-artistOrder.indexOf(b.id))],container=$('#artist-filters');
  const existing=[...container.querySelectorAll('button[data-artist]')];
  const buttons=list.map(a=>{
   let button=existing.find(b=>b.getAttribute('data-artist')===a.id);
@@ -180,9 +183,9 @@ function renderAgenda(){
  const undated=agendaCandidates().filter(e=>!e.start);$('#undated-section').hidden=!undated.length;$('#undated-count').textContent=`${undated.length}件`;$('#undated').replaceChildren(...undated.map(e=>card(e)));
 }
 function renderCalendar(){
- const y=Number(period.slice(0,4)),m=Number(period.slice(5,7));$('#year-label').textContent=String(y);const monthLabel=$('#month-label');monthLabel.textContent=`${m}月`;monthLabel.setAttribute('aria-label',`${y}年${m}月の予定を選択`);monthLabel.setAttribute('aria-pressed',String(agendaRange==='month'));
+ const y=Number(period.slice(0,4)),m=Number(period.slice(5,7));$('#year-label').textContent=String(y);const monthLabel=$('#month-label');const monthEn=el('span',MONTH_NAMES[m-1],'month-en');monthEn.lang='en';monthEn.setAttribute('aria-hidden','true');monthLabel.replaceChildren(document.createTextNode(String(m)),monthEn);monthLabel.setAttribute('aria-label',`${y}年${m}月の予定を選択`);monthLabel.setAttribute('aria-pressed',String(agendaRange==='month'));
  const grid=$('#calendar'),events=activeEvents();grid.className='calendar month-grid';grid.replaceChildren();const getEvents=key=>events.filter(e=>F.overlapsDay(e,key)),today=F.dateKey(new Date().toISOString()),bounds=agendaBounds();
- const weekHeading=el('span','','week-selector-heading');weekHeading.setAttribute('aria-hidden','true');grid.append(weekHeading,...'日月火水木金土'.split('').map((d,i)=>el('div',d,`weekday ${i===0?'sun':i===6?'sat':''}`)));
+ const weekHeading=el('span','','week-selector-heading');weekHeading.setAttribute('aria-hidden','true');grid.append(weekHeading,...WEEKDAY_NAMES.map((d,i)=>el('div',d,`weekday ${i===0?'sun':i===6?'sat':''}`)));
  const offset=dayDate(period).getUTCDay(),last=new Date(Date.UTC(y,m,0)).getUTCDate(),cells=Math.ceil((offset+last)/7)*7;
  for(let i=0;i<cells;i++){
   const key=addDays(period,i-offset);
@@ -278,10 +281,12 @@ if($('#detail').open)closeDialog();
 if(view!==previousView&&(view==='changes'||previousView==='changes')){window.scrollTo({top:0,left:0,behavior:'instant'});$('#view-title').focus({preventScroll:true});}
 }
 
-// Re-activating the visible tab must not trigger a native fragment scroll.
+// Re-activating the visible tab jumps to the beginning without following its fragment.
 function preventActiveTabNavigation(event){
  if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
- if(event.currentTarget.dataset.view===view)event.preventDefault();
+ if(event.currentTarget.dataset.view!==view)return;
+ event.preventDefault();
+ window.scrollTo({top:0,left:0,behavior:"instant"});
 }
 
 $('#detail').addEventListener('close',onDialogClosed);$('#close-detail').onclick=closeDialog;$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});

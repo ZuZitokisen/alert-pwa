@@ -1,0 +1,45 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import C from './production-feed-core.cjs';
+const base=JSON.parse(fs.readFileSync('schedule-data-v3.json'));
+const before=C.build(base,null,{production:true,publicSource:'schedule-data-v3.json'});
+const data={...structuredClone(base),version:'fifth-artist-test',generatedAt:'2026-11-20T00:00:00Z'};
+data.events.push({...structuredClone(base.events[0]),id:'tohokusan-fixture',artistId:'tohokusan'});
+test('v4 preserves old state and twenty ICS and makes 25/20/15/10 manifests',()=>{
+ const r=C.build(data,before.state,{production:true,publicSource:'schedule-data-v4.json'});
+ assert.equal(r.manifest.schemaVersion,4);assert.equal(r.manifest.feeds.length,25);
+ assert.equal(r.v3Manifest.feeds.length,20);assert.equal(r.v2Manifest.feeds.length,15);assert.equal(r.legacyManifest.feeds.length,10);
+ assert.deepEqual(r.v3Data.events,base.events);
+ for(const old of before.state.records)assert.deepEqual(r.state.records.find(x=>x.key===old.key),old);
+ for(const [n,b] of Object.entries(before.files))if(n.endsWith('.ics'))assert.equal(r.files[n],b);
+ assert.deepEqual(C.build(data,r.state,{production:true,publicSource:'schedule-data-v4.json'}).files,r.files);
+ assert.equal(r.v3Manifest.inputSha256,C.hash(C.canonical(r.v3Data)));
+ assert.throws(()=>C.build(data,before.state,{production:true,publicSource:'schedule-data-v3.json'}),/not supported/);
+ assert.throws(()=>C.build(base,r.state,{production:true,publicSource:'schedule-data-v3.json'}),/Cannot downgrade/);
+});
+test('five-artist subscription client selects only v4 manifest with twenty-five safe fixed feeds',()=>{
+ const context=vm.createContext({URL,AbortController,setTimeout,clearTimeout});
+ vm.runInContext(fs.readFileSync('artist-config.js','utf8'),context);
+ vm.runInContext(fs.readFileSync('calendar-subscriptions.js','utf8'),context);
+ const api=context.AlertCalendarSubscriptions,r=C.build(data,before.state,{production:true,publicSource:'schedule-data-v4.json'});
+ assert.equal(api.ARTISTS.length,5);assert.equal(api.PRESETS.length,25);
+ assert.equal(api.validateManifest(r.manifest).feeds.length,25);
+ assert.throws(()=>api.validateManifest(r.v3Manifest),/Invalid/);
+ assert.equal(api.links('tohokusan-all').https,'https://zuzitokisen.github.io/alert-pwa/calendar-feeds/tohokusan-all.ics');
+});
+test('store migrates v3 cache without loss and requests v4 before accepting fifth artist',async()=>{
+ const saved=new Map(),calls=[];
+ let payload=base;
+ const context=vm.createContext({Date,URL,navigator:{onLine:true},localStorage:{getItem:k=>saved.get(k)??null,setItem:(k,v)=>saved.set(k,v)},fetch:async url=>{calls.push(url);return {ok:true,redirected:false,headers:{get:()=> 'application/json'},json:async()=>structuredClone(payload)};},ALERT_ARTISTS:[{id:'oneloveoneheart'}]});
+ const script=fs.readFileSync('schedule-store.js','utf8');
+ vm.runInContext(script,context);await context.scheduleRequest('state');
+ assert.ok(saved.has('alert-pwa-curated-calendar-v3'));
+ context.ALERT_ARTISTS.push({id:'tohokusan'});payload=data;
+ vm.runInContext(script,context);const response=await context.scheduleRequest('state');const state=await response.json();
+ assert.equal(response.ok,true);assert.equal(state.events.length,base.events.length+1);
+ assert.ok(saved.has('alert-pwa-curated-calendar-v4'));assert.ok(saved.has('alert-pwa-curated-calendar-v3'));
+ assert.match(String(calls.at(-1)),/schedule-data-v4\.json$/);
+ assert.equal(state.events.find(e=>e.id==='tohokusan-fixture').artistId,'tohokusan');
+});
