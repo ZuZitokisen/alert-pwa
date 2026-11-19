@@ -201,3 +201,6 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .event-card .card-body{padding-bottom:8px}
 .event-card .card-actions{padding-top:8px}
 .event-card .favorite-button{position:relative;right:auto;bottom:auto;flex-shrink:0;margin:-7px -14px -7px 0}
+
+/* Give each artist mark equal breathing room inside the ALL outline. */
+#artist-filters[data-all-selected=true]::before{top:2px;bottom:2px}
