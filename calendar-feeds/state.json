@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-18T16:35:21.311Z",
-  "dataGeneratedAt": "2026-11-18T16:35:21.311Z",
-  "inputSha256": "d50d9a8735245bd5dca2047c71892678106acb5059151c013a38e5120a2fd684",
+  "dataVersion": "2026-11-19-tokisen-christmas-pickup",
+  "dataGeneratedAt": "2026-11-19T05:21:58.596Z",
+  "inputSha256": "a2a157fece1cfd3a34492ed9700650a62198ea667cc88d0b99112c3699dba04a",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4290,6 +4290,74 @@
       "modified": "2026-11-11T09:32:46.032709Z",
       "lastTiming": {
         "start": "2026-12-05T15:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-benefit"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-christmas-goods-pickup-2026-close\"]",
+      "uid": "public-v1-971c7eca06c607bb8aa2bf5ac4d5a2faaa763fecfcdfdc6d90f778e631f2dc0a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-christmas-goods-pickup-2026-close",
+        "category": "benefit",
+        "title": "ときクリ2026 グッズ会場受取 予約締切",
+        "start": "2026-11-26T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MAILIVIS（オンライン予約）",
+        "publicNote": "商品在庫・受取時間枠には上限があり、期間内でも受付終了の場合があります。受取は京王アリーナTOKYOで12/12 12:00から、12/13 10:30から。公演券なしの受取は12/12 17:00以降・12/13 15:00以降の指定枠のみ。当日販売の詳細は別途発表。\n11/19の本人公式告知で会場受取予約の開始・締切を確認。過去の事前通販とは別受付。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://mailivis.jp/shop/t/t1607/",
+          "https://toki-sen.com/contents/1129157?tag=all"
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1129157?tag=all"
+      },
+      "sequence": 0,
+      "created": "2026-11-19T05:21:58.596Z",
+      "modified": "2026-11-19T05:21:58.596Z",
+      "lastTiming": {
+        "start": "2026-11-26T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-benefit"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-christmas-goods-pickup-2026-open\"]",
+      "uid": "public-v1-24551653c6c0483181dd2a4cd8483bfaecae426758eb4eaee38b0a27025ff1f4@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-christmas-goods-pickup-2026-open",
+        "category": "benefit",
+        "title": "ときクリ2026 グッズ会場受取 予約開始",
+        "start": "2026-11-20T19:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MAILIVIS（オンライン予約）",
+        "publicNote": "商品在庫・受取時間枠には上限があり、期間内でも受付終了の場合があります。受取は京王アリーナTOKYOで12/12 12:00から、12/13 10:30から。公演券なしの受取は12/12 17:00以降・12/13 15:00以降の指定枠のみ。当日販売の詳細は別途発表。\n11/19の本人公式告知で会場受取予約の開始・締切を確認。過去の事前通販とは別受付。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://mailivis.jp/shop/t/t1607/",
+          "https://toki-sen.com/contents/1129157?tag=all"
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1129157?tag=all"
+      },
+      "sequence": 0,
+      "created": "2026-11-19T05:21:58.596Z",
+      "modified": "2026-11-19T05:21:58.596Z",
+      "lastTiming": {
+        "start": "2026-11-20T19:00:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -10401,20 +10469,22 @@
         "source": "curated-calendar",
         "id": "tokisen-undated-3",
         "category": "live",
-        "title": "ときクリ2026 会場受取・当日物販",
+        "title": "ときクリ2026 当日物販（詳細待ち）",
         "start": null,
         "end": null,
         "allDay": false,
         "location": "",
-        "publicNote": "実施予定の記述のみ。受付・販売時刻は未公表。\n本人側の公式発表で確認。\n日時未定（日付未発表）",
+        "publicNote": "会場受取の予約期間は別項目に掲載。当日販売の詳細は後日発表。会場受取で売り切れた商品は当日販売がない場合があります。整理券の配布予定はありません。\n11/19の本人公式発表で会場受取と当日販売を区別。\n日時未定（日付未発表）",
         "status": "confirmed",
         "sourceUrls": [
-          "https://toki-sen.com/contents/1125331"
-        ]
+          "https://mailivis.jp/shop/t/t1607/",
+          "https://toki-sen.com/contents/1129157?tag=all"
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1129157?tag=all"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-19T05:21:58.596Z",
       "lastTiming": null,
       "memberships": [
         "tokisen-all",
@@ -10486,5 +10556,5 @@
       ]
     }
   ],
-  "integritySha256": "2a50dc59828af972948c40ab90b538ba4990cbe5233d4f54e7566fc228c7455f"
+  "integritySha256": "865c235691c5a8e40a97f58ba7d41158a7139c28d5e9303de144183a979fb294"
 }
