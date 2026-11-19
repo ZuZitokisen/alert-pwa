@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-merch-and-magazine",
-  "dataGeneratedAt": "2026-11-19T10:44:22.242Z",
+  "dataVersion": "2026-11-20-dolltto-benefit-details",
+  "dataGeneratedAt": "2026-11-19T11:38:43.678Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "6851f5ba031a8a37d01e1d0a9e7c144a5ace0fcebd74a2f0c9d122d2df29df97",
+  "inputSha256": "6c26fc61190e5c3db509a2e13f76c2e89acb4f81230effa0dbfd9e95a1ecf8fd",
   "feeds": [
     {
       "id": "tokisen-all",
