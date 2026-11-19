@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-19-tohokusan",
-  "dataGeneratedAt": "2026-11-19T08:45:31.941Z",
+  "dataVersion": "2026-11-20-tohokusan-details",
+  "dataGeneratedAt": "2026-11-19T09:46:35.640Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "81c492236e1b6246d8fab70b03a2ef383724dd7c024a4934476043b3d73fb6cb",
+  "inputSha256": "a8b03317fde0fb3a55773aa1a9d516e1321e6590920ee59359a499dd336b4b9c",
   "feeds": [
     {
       "id": "tokisen-all",

@@ -3,4 +3,23 @@ VERSION:2.0
 PRODID:-//Alert PWA//Public Calendar Subscription//JA
 CALSCALE:GREGORIAN
 X-WR-CALNAME:いぎなり東北産 / 特典会・応募
+BEGIN:VEVENT
+UID:public-v1-3a7ac5c62cd6089912e58893618dce7ea9549ce0dad2351b4c40e3fce2f5c
+ 53a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T094635Z
+CREATED:20261119T094635Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:0
+DTSTART:20261124T145900Z
+SUMMARY:初！いぎなりアリーナライブ グッズ事前通販締切
+DESCRIPTION:受付期間は11/18 12:00〜11/24 23:59。在庫限りで、
+ 期間中でも予定数に達すると終了。12/11発送完了予定。
+ \n本人公式の告知で開催日・受付情報を確認。未発表の
+ 時刻は補完していません。\nhttps://madeintohoku.com/contents/11
+ 27632
+LOCATION:MAILIVIS
+URL:https://madeintohoku.com/contents/1127632
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

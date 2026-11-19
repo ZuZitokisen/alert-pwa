@@ -42,16 +42,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-0c479d54a0c8c4d0191bdc6832bd8837193a219013fc2fe541d130ed8d94e
  092@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T084531Z
+DTSTAMP:20261119T094635Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261119T084531Z
-SEQUENCE:0
-DTSTART:20261129T040000Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:1
+DTSTART:20261129T051000Z
+DTEND:20261129T060000Z
 SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-3
-DESCRIPTION:開場11:30、開演13:00予定。個別出演時刻と出演
- 会場は本文で未確定。\n本人公式の開催日・本文記載を
- 確認。\nhttps://madeintohoku.com/contents/1101783
-LOCATION:SGCホール有明／TOYOTA ARENA TOKYO
+DESCRIPTION:いぎなり東北産の出演枠は14:10〜15:00。イベン
+ ト全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMA
+ のSPECIAL3無料配信を案内：https://abema.go.link/kWQg5\n本人公
+ 式の個別出演時刻・会場と配信案内を確認。公演全体
+ の開始時刻と区別。\nhttps://madeintohoku.com/contents/1101783
+LOCATION:SGCホール有明
 URL:https://madeintohoku.com/contents/1101783
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -70,6 +73,28 @@ DESCRIPTION:トーク・フライヤーお渡し・2ショット。終了
  ttps://madeintohoku.com/contents/1127556
 LOCATION:イオン東根店 2F特設会場
 URL:https://madeintohoku.com/contents/1127556
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d6630b058627bb1c5b5ce9982ea27985c870011c066fa78eb3b3ed3b953a6
+ 8c4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T094635Z
+CREATED:20261119T094635Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270130
+SUMMARY:いぎなりちゃん・とうほくちゃんと行く！まるご
+ と列車イベント（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n限定有料イベント。16:00頃に岩手県内の駅で受付、1
+ 9:30頃に古川駅で解散予定。概算時刻のため時刻欄には
+ 採用せず。スタンプラリー応募の当選者向け旅行商品
+ で、通常の自由参加イベントではありません。\n本人公
+ 式の告知で開催日・受付情報を確認。未発表の時刻は
+ 補完していません。\nhttps://madeintohoku.com/contents/1108805
+LOCATION:岩手県内の駅（調整中）〜東北新幹線〜古川駅
+URL:https://madeintohoku.com/contents/1108805
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -232,6 +257,25 @@ DESCRIPTION:時刻未定。終日開催という意味ではありません
  ntents/1129023
 LOCATION:渋谷ストリームホール
 URL:https://madeintohoku.com/contents/1129023
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cbe9d236f74577e33a79cc03f2466aec94a863945d8db67a3050bb45a9a1c
+ c1d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T094635Z
+CREATED:20261119T094635Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261212
+SUMMARY:いぎなり年末大特典会2026（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n生誕祭衣装でのABランダムツーショット会。ライブ
+ ・トークなし。開始時刻など追加詳細は未発表。\n本人
+ 公式の告知で開催日・受付情報を確認。未発表の時刻
+ は補完していません。\nhttps://madeintohoku.com/contents/1127435
+LOCATION:錦糸町マルイ8F すみだ産業会館
+URL:https://madeintohoku.com/contents/1127435
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-19-tohokusan",
-  "dataGeneratedAt": "2026-11-19T08:45:31.941Z",
-  "inputSha256": "6eb677501a82decd0acaab97e46716eaa1fb2ba1508a9ee3c5dfdbb2dc183122",
+  "dataVersion": "2026-11-20-tohokusan-details",
+  "dataGeneratedAt": "2026-11-19T09:46:35.640Z",
+  "inputSha256": "b3b05b8d22c332a0b4d0f75be2544803a8c34b3cfa9d93d4276ee2bf487d3f62",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4203,6 +4203,38 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-arena-goods-deadline-20261124\"]",
+      "uid": "public-v1-3a7ac5c62cd6089912e58893618dce7ea9549ce0dad2351b4c40e3fce2f5c53a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-arena-goods-deadline-20261124",
+        "category": "benefit",
+        "title": "初！いぎなりアリーナライブ グッズ事前通販締切",
+        "start": "2026-11-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MAILIVIS",
+        "publicNote": "受付期間は11/18 12:00〜11/24 23:59。在庫限りで、期間中でも予定数に達すると終了。12/11発送完了予定。\n本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1127632"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T09:46:35.640Z",
+      "modified": "2026-11-19T09:46:35.640Z",
+      "lastTiming": {
+        "start": "2026-11-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-benefit"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-fmfuji-20261122\"]",
       "uid": "public-v1-7ae5da076d8408096ec5370729469d867460190d50a83f97f92bb6fa43f7d90d@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -4275,22 +4307,22 @@
         "id": "tohokusan-gift-20261129",
         "category": "live",
         "title": "GIFT ～Girls Idol Festival Tokyo～ DAY-3",
-        "start": "2026-11-29T13:00:00+09:00",
-        "end": null,
+        "start": "2026-11-29T14:10:00+09:00",
+        "end": "2026-11-29T15:00:00+09:00",
         "allDay": false,
-        "location": "SGCホール有明／TOYOTA ARENA TOKYO",
-        "publicNote": "開場11:30、開演13:00予定。個別出演時刻と出演会場は本文で未確定。\n本人公式の開催日・本文記載を確認。",
+        "location": "SGCホール有明",
+        "publicNote": "いぎなり東北産の出演枠は14:10〜15:00。イベント全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMAのSPECIAL3無料配信を案内：https://abema.go.link/kWQg5\n本人公式の個別出演時刻・会場と配信案内を確認。公演全体の開始時刻と区別。",
         "status": "confirmed",
         "sourceUrls": [
           "https://madeintohoku.com/contents/1101783"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-19T08:45:31.941Z",
-      "modified": "2026-11-19T08:45:31.941Z",
+      "modified": "2026-11-19T09:46:35.640Z",
       "lastTiming": {
-        "start": "2026-11-29T13:00:00+09:00",
-        "end": null,
+        "start": "2026-11-29T14:10:00+09:00",
+        "end": "2026-11-29T15:00:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -4322,6 +4354,38 @@
       "modified": "2026-11-19T08:45:31.941Z",
       "lastTiming": {
         "start": "2026-11-22T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-live"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-jre-train-20270130\"]",
+      "uid": "public-v1-d6630b058627bb1c5b5ce9982ea27985c870011c066fa78eb3b3ed3b953a68c4@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-jre-train-20270130",
+        "category": "live",
+        "title": "いぎなりちゃん・とうほくちゃんと行く！まるごと列車イベント",
+        "start": "2027-01-30",
+        "end": null,
+        "allDay": false,
+        "location": "岩手県内の駅（調整中）〜東北新幹線〜古川駅",
+        "publicNote": "限定有料イベント。16:00頃に岩手県内の駅で受付、19:30頃に古川駅で解散予定。概算時刻のため時刻欄には採用せず。スタンプラリー応募の当選者向け旅行商品で、通常の自由参加イベントではありません。\n本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1108805"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T09:46:35.640Z",
+      "modified": "2026-11-19T09:46:35.640Z",
+      "lastTiming": {
+        "start": "2027-01-30",
         "end": null,
         "allDay": false
       },
@@ -4676,6 +4740,38 @@
       "modified": "2026-11-19T08:45:31.941Z",
       "lastTiming": {
         "start": "2026-12-11",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-live"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-yearend-benefit-20261212\"]",
+      "uid": "public-v1-cbe9d236f74577e33a79cc03f2466aec94a863945d8db67a3050bb45a9a1cc1d@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-yearend-benefit-20261212",
+        "category": "live",
+        "title": "いぎなり年末大特典会2026",
+        "start": "2026-12-12",
+        "end": null,
+        "allDay": false,
+        "location": "錦糸町マルイ8F すみだ産業会館",
+        "publicNote": "生誕祭衣装でのABランダムツーショット会。ライブ・トークなし。開始時刻など追加詳細は未発表。\n本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1127435"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T09:46:35.640Z",
+      "modified": "2026-11-19T09:46:35.640Z",
+      "lastTiming": {
+        "start": "2026-12-12",
         "end": null,
         "allDay": false
       },
@@ -11135,5 +11231,5 @@
       ]
     }
   ],
-  "integritySha256": "40cbe4f982c6e5df691142554920f25d569df4e511694debe29f57468d045f7f"
+  "integritySha256": "72e22803f63eeb8b71f73797d3187b1fda50c3b7d6d85883527bec51915e8285"
 }
