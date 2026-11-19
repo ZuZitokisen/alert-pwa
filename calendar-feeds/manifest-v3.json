@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-19-tokisen-christmas-pickup",
-  "dataGeneratedAt": "2026-11-19T05:21:58.596Z",
+  "dataVersion": "2026-11-19-tokisen-ariake-tv-complete",
+  "dataGeneratedAt": "2026-11-19T07:46:12.911Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a2a157fece1cfd3a34492ed9700650a62198ea667cc88d0b99112c3699dba04a",
+  "inputSha256": "a34ee4eb8e0146d3e17ab191643493f3d632e94809e78d14b35321df76bab7ea",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 188,
+      "count": 189,
       "omittedUnknownDate": 11,
-      "sha256": "37220b0636ea8c975f8d305210a36fb950fdc80b6da1b53570d28c65c3cef0a5"
+      "sha256": "0fb1219275b37dadb3bfa541b51061a2daafae9009e0fc0e993d3584788b694e"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media.ics",
-      "count": 117,
+      "count": 118,
       "omittedUnknownDate": 2,
-      "sha256": "20b016bf8e0300a26d58657928c32a0010495aa0e36a98c12645d5cd083bfc68"
+      "sha256": "fdda0a1a5ae2d46c15bf8fb23f7902894bfd2de784851b791f1fc4ced30ecf5f"
     },
     {
       "id": "tokisen-other",

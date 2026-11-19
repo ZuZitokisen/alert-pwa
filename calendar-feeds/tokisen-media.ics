@@ -2165,4 +2165,26 @@ URL:https://toki-sen.com/contents/928205
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-bf735c37bddc742851df2be1d3a9a43a932d81f50893dcc77177552bb36b8
+ 287@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T074612Z
+CREATED:20261119T074612Z
+LAST-MODIFIED:20261119T074612Z
+SEQUENCE:0
+DTSTART:20261226T030000Z
+SUMMARY:＜完全版＞きみのハートにロックオンTOUR 2026 有明
+ アリーナ公演（かも？）
+DESCRIPTION:有明アリーナ公演最終日の映像に舞台裏を加え
+ た完全版。10/25の生中継とは別の放送枠。終了時刻は採
+ 用していません。放送日時・内容は変更の場合があり
+ ます。\n放送局公式の番組ページと音楽特集で開始日時
+ ・チャンネルを確認。同じ放送枠の本人公式告知は未
+ 確認のため「かも？」に区分。\nhttps://www.tv-asahi.co.jp/ch/
+ contents/variety/0898/\nhttps://www.tv-asahi.co.jp/ch/recommend/music/
+LOCATION:テレ朝チャンネル1
+URL:https://www.tv-asahi.co.jp/ch/contents/variety/0898/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
