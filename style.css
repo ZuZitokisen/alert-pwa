@@ -182,9 +182,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .day-cell.selected .date-button{box-shadow:none;background:var(--ink);color:var(--surface);font-weight:750}
 .day-cell.selected{background:color-mix(in srgb,var(--pink) 65%,var(--surface))}
 .agenda-heading h2{font-weight:700;letter-spacing:-.015em}
-/* News retains the Schedule card and its separate favorite control. */
-#changes .event-card .card-actions{border-top:1px solid var(--line);padding-top:10px;margin-top:14px;gap:12px}
-#changes .event-card .card-bottom-note{font-size:12px;font-weight:500;line-height:1.55;color:var(--ink);letter-spacing:0}
+/* Shared footer geometry across Schedule, Favorite and News; only the note text differs. */
+.event-card .card-actions{border-top:1px solid var(--line);padding-top:6px;margin-top:8px;gap:12px}
+.event-card .card-bottom-note{font-size:12px;font-weight:500;line-height:1.55;color:var(--ink);letter-spacing:0}
 @media(max-width:700px){
  .calendar-title{gap:12px}
  .calendar-title h2{font-size:32px}
