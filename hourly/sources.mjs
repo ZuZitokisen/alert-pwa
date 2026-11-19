@@ -1,3 +1,4 @@
+import {collectTokisen} from './tokisen-source.mjs';
 import {collectRegeStraight} from './wp-sources.mjs';
 /** Conservative public-source collector. No credentials, private APIs or SNS.
  * Calendar time is NOT treated as an event start: known FC listing conflicts with
@@ -7,7 +8,7 @@ import {collectRegeStraight} from './wp-sources.mjs';
  */
 export const SOURCE_CONFIG = Object.freeze({
   loveone: Object.freeze({artistId:'oneloveoneheart', origin:'https://oneloveoneheart.officialfc.jp', path:'/calendars', enabled:true}),
-  tokisen: Object.freeze({artistId:'tokisen',origin:'https://toki-sen.com',enabled:false,reason:'No validated structured public parser yet'}),
+  tokisen: Object.freeze({artistId:'tokisen',origin:'https://toki-sen.com',enabled:true,scope:'single-occurrence LIVE/EVENT only; no tickets/news/media/SNS'}),
   rege: Object.freeze({artistId:'re-ge',origin:'https://re-ge.com',enabled:true}),
   straightangeli: Object.freeze({artistId:'straightangeli',origin:'https://straight-angeli.com',enabled:true})
 });
@@ -58,6 +59,7 @@ export async function collectOfficialSchedules({from,through,now=new Date().toIS
  bounds(from,through);if(!Number.isFinite(Date.parse(now)))throw Error('Invalid now');
  const events=[],diagnostics=[];let complete=true;
  for(const id of sourceIds){const config=SOURCE_CONFIG[id];if(!config?.enabled){diagnostics.push({source:id,code:'unsupported_source',detail:config?.reason||'Unknown source'});complete=false;continue;}
+  if(id==='tokisen'){const result=await collectTokisen({from,through,now,fetchImpl});events.push(...result.events);diagnostics.push(...result.diagnostics);complete=complete&&result.complete;continue;}
   if(id==='rege'||id==='straightangeli'){const result=await collectRegeStraight({from,through,now,fetchImpl,sourceIds:[id],maxPages:3,maxDetails:24});events.push(...result.events);diagnostics.push(...result.diagnostics);complete=complete&&result.complete;continue;}
   let month=from.slice(0,7);while(month<=through.slice(0,7)){
    const [y,m]=month.split('-').map(Number),url=config.origin+'/calendars/'+y+'/'+m;
