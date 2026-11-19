@@ -1,0 +1,30 @@
+// Deliberately narrow: single LIVE/EVENT occurrence with a dated opening/start/venue block.
+// News, ticket periods, MEDIA, multi-date and multi-session pages require separate parsers.
+const ORIGIN='https://toki-sen.com',MAX=2_000_000;
+const text=s=>s.replace(/<[^>]*>/g,'').replace(/&amp;/g,'&').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
+const dayOK=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&Number.isFinite(Date.parse(s))&&new Date(s).toISOString().slice(0,10)===s;
+function urlOK(raw,kind){const u=new URL(raw);if(u.origin!==ORIGIN||u.username||u.password||u.hash||!(kind==='archive'?/^\/contents\/schedule\/page\/[1-9]\d?$/.test(u.pathname)&&!u.search:/^\/contents\/\d+$/.test(u.pathname)&&u.search==='?tag=all'))throw Error('Unapproved Tokisen URL');return u;}
+export function parseTokisenArchive(html,sourceUrl){urlOK(sourceUrl,'archive');if(!html.includes('<title>SCHEDULE |')||!html.includes('class="contents-list list-unstyled"'))throw Error('Schedule archive structure changed');const rows=[],diagnostics=[];
+ for(const [,raw] of html.matchAll(/<li class="contents-list-block">([\s\S]*?)<\/li>/g)){
+ const href=raw.match(/<a href="([^"]+)"/)?.[1],title=raw.match(/<h2 class="contents-list-title title">([\s\S]*?)<\/h2>/)?.[1],dates=[...raw.matchAll(/<time datetime="([^"]+)"/g)].map(x=>x[1]),category=raw.match(/<span class="tag tag-(?:live|event)">\s*(LIVE|EVENT)\s*<\/span>/)?.[1];
+ if(!href||!title)throw Error('Malformed schedule row');const detail=new URL(href,ORIGIN).href;urlOK(detail,'detail');
+ if(!category||dates.length!==1||!dayOK(dates[0])){diagnostics.push({source:'tokisen',sourceUrl:detail,code:'unsupported_event_shape'});continue;}
+ rows.push({sourceUrl:detail,title:text(title),day:dates[0],category});
+ }
+ const next=html.match(/<a href="([^\"]+)" rel="next">/)?.[1];if(next)urlOK(new URL(next,ORIGIN).href,'archive');return {rows,diagnostics,next:next?new URL(next,ORIGIN).href:null};
+}
+export function parseTokisenDetail(html,row,checkedAt){urlOK(row.sourceUrl,'detail');const fail=detail=>({events:[],diagnostics:[{source:'tokisen',sourceUrl:row.sourceUrl,code:'unsupported_detail',detail}]});
+ const scripts=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];if(scripts.length!==1)return fail('Expected unique article metadata');let a;try{a=JSON.parse(scripts[0][1]);}catch{return fail('Invalid article metadata');}
+ if(a['@type']!=='NewsArticle'||a.mainEntityOfPage?.['@id']!==row.sourceUrl||text(a.headline||'')!==row.title||typeof a.description!=='string')return fail('Article identity mismatch');
+ const b=a.description.replaceAll('\u00a0',' '),dates=[...b.matchAll(/(\d{4})年(\d{1,2})月(\d{1,2})日/g)];
+ if(dates.length!==1||/(受付|抽選|販売|チケット|\d+部|昼公演|夜公演|中止|延期)/.test(b+' '+row.title))return fail('Ambiguous/multi-session/ticket detail');
+ const d=dates[0],day=d[1]+'-'+d[2].padStart(2,'0')+'-'+d[3].padStart(2,'0');if(!dayOK(day)||day!==row.day)return fail('Occurrence date differs from listing');
+ const block=b.match(/\d{4}年\d{1,2}月\d{1,2}日[^\r\n]*[\r\n]+\s*開場\s*([0-2]?\d:[0-5]\d)\s*\/\s*開演\s*([0-2]?\d:[0-5]\d)\s*[\r\n]+\s*会場[：:]\s*([^\r\n]+)/);
+ if(!block||[...b.matchAll(/開演/g)].length!==1||Number(block[2].split(':')[0])>23)return fail('No unique adjacent occurrence/time/venue block');
+ const id='tokisen-hourly-official-'+new URL(row.sourceUrl).pathname.split('/')[2];
+ return {events:[{id,source:'curated-calendar',artistId:'tokisen',title:row.title,start:day+'T'+block[2].padStart(5,'0')+':00+09:00',end:null,allDay:false,status:'confirmed',category:row.category,location:block[3].trim(),note:'公式スケジュール一覧日付と詳細の単一開催日・開演時刻・会場が一致。受付情報は抽出対象外。',evidence:'本人公式の一覧・詳細を照合。記事公開日は開催日に使用していません。',sourceUrl:row.sourceUrl,sources:[{url:row.sourceUrl,type:'artist_official',checkedAt}],checkedAt,timings:[],deadline:null,revision:1,present:true,groupId:id}],diagnostics:[]};
+}
+async function get(url,kind,fetchImpl){urlOK(url,kind);const r=await fetchImpl(url,{redirect:'manual',signal:AbortSignal.timeout(12000),headers:{Accept:'text/html','User-Agent':'AlertPWA-PublicScheduleCollector/1.0 (https://github.com/ZuZitokisen/alert-pwa)'}});if(r.redirected||r.status>=300&&r.status<400)throw Error('Redirect rejected');if(!r.ok)throw Error('HTTP '+r.status);if(r.url&&r.url!==url)throw Error('Unexpected URL');if(!/^text\/html\b/i.test(r.headers.get('content-type')||''))throw Error('Unexpected content type');let size=0;const chunks=[],reader=r.body.getReader();try{for(;;){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>MAX){await reader.cancel();throw Error('Oversized HTML');}chunks.push(Buffer.from(value));}}finally{reader.releaseLock();}return Buffer.concat(chunks).toString('utf8');}
+export async function collectTokisen({from,through,now,fetchImpl=globalThis.fetch,maxPages=3}){if(!dayOK(from)||!dayOK(through)||from>through||Date.parse(through)-Date.parse(from)>366*864e5||!Number.isFinite(Date.parse(now))||!Number.isInteger(maxPages)||maxPages<1||maxPages>10)throw Error('Invalid bounds');const events=[],diagnostics=[];let url=ORIGIN+'/contents/schedule/page/1',complete=true;const seen=new Set();
+ for(let page=0;url&&page<maxPages;page++){try{const a=parseTokisenArchive(await get(url,'archive',fetchImpl),url);diagnostics.push(...a.diagnostics);for(const row of a.rows){if(row.day<from||row.day>through||seen.has(row.sourceUrl))continue;seen.add(row.sourceUrl);try{const r=parseTokisenDetail(await get(row.sourceUrl,'detail',fetchImpl),row,now);events.push(...r.events);diagnostics.push(...r.diagnostics);}catch(e){complete=false;diagnostics.push({source:'tokisen',sourceUrl:row.sourceUrl,code:'detail_failed',detail:e.message});}}diagnostics.push({source:'tokisen',sourceUrl:url,code:'source_ok',scope:'single-occurrence-live-event-only',count:a.rows.length});url=a.next;}catch(e){complete=false;diagnostics.push({source:'tokisen',sourceUrl:url,code:'archive_failed',detail:e.message});url=null;}}
+ if(url){complete=false;diagnostics.push({source:'tokisen',sourceUrl:url,code:'page_limit'});}return {events,diagnostics,complete:complete&&!diagnostics.some(d=>d.code==='unsupported_detail'||d.code==='unsupported_event_shape')};}
