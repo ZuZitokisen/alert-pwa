@@ -128,7 +128,7 @@ jobs:
           from pathlib import Path
           import shutil
           root=Path('.'); out=Path('_site'); out.mkdir()
-          files=['.nojekyll','index.html','app.js','artist-config.js','feature-core.js','calendar-subscriptions.js','schedule-store.js','pwa-update.js','push-config.js','push-client.js','style.css','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','sw.js','schedule-data.json','schedule-data-v2.json','schedule-data-v3.json']
+          files=['.nojekyll','index.html','app.js','release-check.js','app-release.json','artist-config.js','feature-core.js','calendar-subscriptions.js','schedule-store.js','pwa-update.js','push-config.js','push-client.js','style.css','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','sw.js','schedule-data.json','schedule-data-v2.json','schedule-data-v3.json']
           files += ['calendar-feeds/'+name for name in ['manifest.json','manifest-v2.json','manifest-v3.json']]
           files += [f'calendar-feeds/{artist}-{category}.ics' for artist in ['tokisen','re-ge','straightangeli','oneloveoneheart'] for category in ['all','live','benefit','media','other']]
           # state.json stays in Git as the durable UID/SEQUENCE history, not the public artifact.
