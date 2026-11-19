@@ -2,7 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {mergeOfficialSchedules as merge} from './merge.mjs';
-const base=JSON.parse(readFileSync(new URL('../schedule-data-v3.json',import.meta.url)));
+// Keep the test generation before its fixed clock; scheduled publications advance
+// the checked-in snapshot timestamp independently of these deterministic fixtures.
+const base={...JSON.parse(readFileSync(new URL('../schedule-data-v3.json',import.meta.url))),generatedAt:'2026-11-18T08:00:00Z'};
 const now=new Date('2026-11-18T09:00:00Z');
 const candidate=(suffix='mock-a',extra={})=>{
  const url='https://oneloveoneheart.jp/live/live-12345/';
@@ -30,4 +32,16 @@ test('outside scope, invalid hosts, conflicts and downgraded precision never pub
  assert.equal(merge(base,[{...a,start:'2027-04-01'},{...a,id:'oneloveoneheart-hourly-b',sourceUrl:badHost,sources:[{url:badHost,type:'artist_official',checkedAt:a.checkedAt}]}],now).next,base);
  const saved=merge(base,[a],now).next;
  assert.equal(merge(saved,[{...a,start:'2026-12-07'}],new Date('2026-11-18T10:00:00Z')).next,saved);
+});
+
+test('material writes still require a collection time strictly newer than publication',()=>{
+ const a=candidate();
+ for(const generatedAt of [now.toISOString(),'2026-11-18T16:35:21.311Z','2030-01-01T00:00:00Z']){
+  const published={...base,generatedAt};
+  assert.throws(()=>merge(published,[a],now),/Collection time is not newer than last publication/);
+  assert.equal(merge(published,[],now).next,published,'no-op never rewrites generation');
+ }
+ const newer=merge(base,[a],now);
+ assert.equal(newer.next.generatedAt,now.toISOString());
+ assert.equal(base.generatedAt,'2026-11-18T08:00:00Z');
 });
