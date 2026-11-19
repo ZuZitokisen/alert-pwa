@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-19-tokisen-christmas-pickup",
-  "dataGeneratedAt": "2026-11-19T05:21:58.596Z",
-  "inputSha256": "a2a157fece1cfd3a34492ed9700650a62198ea667cc88d0b99112c3699dba04a",
+  "dataVersion": "2026-11-19-tokisen-ariake-tv-complete",
+  "dataGeneratedAt": "2026-11-19T07:46:12.911Z",
+  "inputSha256": "a34ee4eb8e0146d3e17ab191643493f3d632e94809e78d14b35321df76bab7ea",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -10406,6 +10406,39 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-tv-asahi-ariake-complete-20261226\"]",
+      "uid": "public-v1-bf735c37bddc742851df2be1d3a9a43a932d81f50893dcc77177552bb36b8287@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-tv-asahi-ariake-complete-20261226",
+        "category": "media",
+        "title": "＜完全版＞きみのハートにロックオンTOUR 2026 有明アリーナ公演",
+        "start": "2026-12-26T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "テレ朝チャンネル1",
+        "publicNote": "有明アリーナ公演最終日の映像に舞台裏を加えた完全版。10/25の生中継とは別の放送枠。終了時刻は採用していません。放送日時・内容は変更の場合があります。\n放送局公式の番組ページと音楽特集で開始日時・チャンネルを確認。同じ放送枠の本人公式告知は未確認のため「かも？」に区分。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.tv-asahi.co.jp/ch/contents/variety/0898/",
+          "https://www.tv-asahi.co.jp/ch/recommend/music/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T07:46:12.911Z",
+      "modified": "2026-11-19T07:46:12.911Z",
+      "lastTiming": {
+        "start": "2026-12-26T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-undated-1\"]",
       "uid": "public-v1-042aeb8d9677e7e6aa2720577b83c8fe874fd3128ffaf95463e7823bec5af0dd@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -10556,5 +10589,5 @@
       ]
     }
   ],
-  "integritySha256": "865c235691c5a8e40a97f58ba7d41158a7139c28d5e9303de144183a979fb294"
+  "integritySha256": "836e049e6f9e86882c1ee296c0aaabe90ed6fd17962ba1702d554ce22524afc6"
 }

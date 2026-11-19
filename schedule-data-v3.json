@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-19-tokisen-christmas-pickup",
-  "generatedAt": "2026-11-19T05:21:58.596Z",
+  "version": "2026-11-19-tokisen-ariake-tv-complete",
+  "generatedAt": "2026-11-19T07:46:12.911Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12240,6 +12240,39 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-christmas-goods-pickup-2026"
+    },
+    {
+      "id": "tokisen-tv-asahi-ariake-complete-20261226",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "＜完全版＞きみのハートにロックオンTOUR 2026 有明アリーナ公演",
+      "start": "2026-12-26T12:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "TV",
+      "location": "テレ朝チャンネル1",
+      "note": "有明アリーナ公演最終日の映像に舞台裏を加えた完全版。10/25の生中継とは別の放送枠。終了時刻は採用していません。放送日時・内容は変更の場合があります。",
+      "evidence": "放送局公式の番組ページと音楽特集で開始日時・チャンネルを確認。同じ放送枠の本人公式告知は未確認のため「かも？」に区分。",
+      "sourceUrl": "https://www.tv-asahi.co.jp/ch/contents/variety/0898/",
+      "sources": [
+        {
+          "url": "https://www.tv-asahi.co.jp/ch/contents/variety/0898/",
+          "type": "broadcaster",
+          "checkedAt": "2026-11-19T07:46:12.911Z"
+        },
+        {
+          "url": "https://www.tv-asahi.co.jp/ch/recommend/music/",
+          "type": "broadcaster",
+          "checkedAt": "2026-11-19T07:46:12.911Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T07:46:12.911Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-tv-asahi-ariake-complete-20261226"
     }
   ],
   "notes": [
