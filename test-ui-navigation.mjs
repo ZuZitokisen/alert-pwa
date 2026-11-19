@@ -7,7 +7,7 @@ const routeSource=source.slice(source.indexOf('function route(){'),source.indexO
 const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');
 function fixture(initialHash=''){
  const views=['calendar','cards','favorites','changes'].map(name=>({id:name+'-view',hidden:false}));
- const links=views.map(v=>({dataset:{view:v.id.replace('-view','')},attributes:{},classList:{toggle(){}},setAttribute(k,v){this.attributes[k]=v},removeAttribute(k){delete this.attributes[k]}}));
+ const links=views.map(v=>({dataset:{view:v.id==='cards-view'?'search':v.id.replace('-view','')},attributes:{},classList:{toggle(){}},setAttribute(k,v){this.attributes[k]=v},removeAttribute(k){delete this.attributes[k]}}));
  const title={textContent:'',focus(){this.focused=(this.focused||0)+1}},back={hidden:true,href:'',attributes:{},setAttribute(k,v){this.attributes[k]=v}},detail={open:false};
  const context={location:{hash:initialHash},document:{querySelectorAll(s){return s==='.view'?views:links}},window:{scrollTo(settings){context.scrollCount++;context.lastScroll=settings;}},scrollCount:0,closeDialog(){detail.open=false;context.closed=(context.closed||0)+1},$:(s)=>({'#view-title':title,'#back-to-view':back,'#detail':detail}[s])};
  context.selectedArtists=new Set(['tokisen']);context.artist='tokisen';context.renderArtists=()=>{context.artistRenders=(context.artistRenders||0)+1;};context.renderChanges=()=>{context.changeRenders=(context.changeRenders||0)+1;};context.history={replaceState:(_state,_title,hash)=>context.location.hash=hash};
@@ -18,7 +18,7 @@ function fixture(initialHash=''){
 test('Schedule does not show a back control',()=>{const f=fixture();assert.deepEqual(f.go('#calendar'),['calendar-view']);assert.equal(f.back.hidden,true);assert.equal(f.title.textContent,'Schedule');});
 test('News owns change history and specifications',()=>{const f=fixture();assert.deepEqual(f.go('#changes'),['changes-view']);assert.equal(f.title.textContent,'News');assert.equal(f.back.hidden,true);assert.ok(!html.includes('id="about-view"'));assert.ok(html.includes('アプリ更新・仕様'));});
 test('Favorite and Schedule remain independent routes',()=>{const f=fixture();assert.deepEqual(f.go('#favorites'),['favorites-view']);assert.equal(f.title.textContent,'Favorite');assert.deepEqual(f.go('#calendar'),['calendar-view']);});
-test('all-events route returns to News without losing legacy access',()=>{const f=fixture();f.go('#cards');assert.equal(f.title.textContent,'すべての予定');assert.equal(f.back.href,'#changes');assert.equal(f.back.attributes['aria-label'],'Newsに戻る');assert.equal(f.back.hidden,false);assert.deepEqual(f.go(f.back.href),['changes-view']);});
+test('all-events route returns to News without losing legacy access',()=>{const f=fixture();f.go('#cards');assert.equal(f.title.textContent,'Search');assert.equal(f.back.href,'#changes');assert.equal(f.back.attributes['aria-label'],'Newsに戻る');assert.equal(f.back.hidden,false);assert.deepEqual(f.go(f.back.href),['changes-view']);});
 test('direct legacy about and settings URLs resolve to News',()=>{for(const route of ['about','settings']){const f=fixture();assert.deepEqual(f.go('#'+route),['changes-view']);assert.equal(f.title.textContent,'News');assert.equal(f.back.hidden,true);}});
 test('unknown routes stay within app and old watch route remains valid',()=>{const f=fixture();assert.deepEqual(f.go('#unknown'),['calendar-view']);assert.deepEqual(f.go('#watch'),['cards-view']);});
 test('entering and leaving News reveals heading and closes dialogs',()=>{const f=fixture();f.detail.open=true;f.go('#changes');assert.equal(f.detail.open,false);assert.equal(f.context.closed,1);assert.equal(f.context.scrollCount,1);assert.equal(f.title.focused,1);f.go('#changes');assert.equal(f.context.scrollCount,1);f.go('#calendar');assert.equal(f.context.scrollCount,2);});
@@ -42,17 +42,33 @@ test('regular screens omit introductory copy and keep important guidance in info
 
 test('notification News entry resets artist filter but ordinary News preserves it',()=>{const f=fixture();f.go('#changes');assert.deepEqual([...f.context.selectedArtists],['tokisen']);f.go('#notification-changes');assert.equal(f.context.selectedArtists.size,0);assert.equal(f.context.artist,'all');assert.equal(f.context.location.hash,'#changes');assert.equal(f.title.textContent,'News');assert.equal(f.context.artistRenders,1);assert.equal(f.context.changeRenders,1);});
 
-test('re-activating the visible tab jumps straight to top without changing route or focus',()=>{
- for(const name of ['calendar','favorites','changes']){
-  const f=fixture();f.go('#'+name);const before=f.context.scrollCount,focused=f.title.focused;
+test('re-activating the visible tab scrolls smoothly to top without changing route or focus',()=>{
+ for(const name of ['calendar','favorites','search','changes']){
+  const f=fixture();f.go(name==='search'?'#find':'#'+name);const before=f.context.scrollCount,focused=f.title.focused;
   let prevented=0;const event={currentTarget:f.links.find(l=>l.dataset.view===name),button:0,preventDefault(){prevented++;}};
   f.context.event=event;vm.runInContext('preventActiveTabNavigation(event)',f.context);
   assert.equal(prevented,1);assert.equal(f.context.scrollCount,before+1);
-  assert.equal(f.context.lastScroll.top,0);assert.equal(f.context.lastScroll.left,0);assert.equal(f.context.lastScroll.behavior,'instant');
-  assert.equal(f.context.location.hash,'#'+name);assert.equal(f.title.focused,focused);
+  assert.equal(f.context.lastScroll.top,0);assert.equal(f.context.lastScroll.left,0);assert.equal(f.context.lastScroll.behavior,'smooth');
+  assert.equal(f.context.location.hash,name==='search'?'#find':'#'+name);assert.equal(f.title.focused,focused);
   for(const patch of [{currentTarget:f.links.find(l=>l.dataset.view!==name)},{ctrlKey:true},{button:1},{defaultPrevented:true}]){
    f.context.event={...event,...patch};vm.runInContext('preventActiveTabNavigation(event)',f.context);
   }
   assert.equal(prevented,1);assert.equal(f.context.scrollCount,before+1);
  }
+});
+
+test('active-tab scrolling respects reduced motion',()=>{const f=fixture();f.context.window.matchMedia=()=>({matches:true});f.context.event={currentTarget:f.links.find(l=>l.dataset.view==='calendar'),button:0,preventDefault(){}};vm.runInContext('preventActiveTabNavigation(event)',f.context);assert.equal(f.context.lastScroll.behavior,'instant');});
+
+test('Search menu has its own non-anchor route without a News back button',()=>{const f=fixture();assert.deepEqual(f.go('#find'),['cards-view']);assert.equal(f.title.textContent,'Search');assert.equal(f.back.hidden,true);assert.ok(html.includes('href="#find" data-view="search"'));assert.ok(!html.includes('id="find"'));});
+test('four mobile tabs retain flexible accessible targets and exact order',()=>{const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');const nav=html.slice(html.indexOf('<nav '),html.indexOf('</nav>'));assert.deepEqual([...nav.matchAll(/data-view="([^"]+)"/g)].map(m=>m[1]),['calendar','favorites','search','changes']);assert.match(css,/nav a\{flex:1;[^}]*min-width:0;min-height:51px/);assert.ok((320-28-16-2-6)/4>=44);});
+
+test('opening Search exposes the input at the top, and legacy links can switch to the normal Search tab',()=>{
+ const f=fixture();f.go('#calendar');f.go('#find');assert.equal(f.context.lastScroll.top,0);
+ f.go('#watch');assert.equal(f.back.hidden,false);
+ const count=f.context.scrollCount;
+ let prevented=false;
+ f.context.event={currentTarget:f.links.find(l=>l.dataset.view==='search'),button:0,preventDefault(){prevented=true;}};
+ vm.runInContext('preventActiveTabNavigation(event)',f.context);
+ assert.equal(prevented,false);
+ f.go('#find');assert.equal(f.back.hidden,true);assert.equal(f.context.scrollCount,count+1);
 });

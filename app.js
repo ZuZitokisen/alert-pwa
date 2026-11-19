@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.14';
+const APP_RELEASE='0.7.15';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -165,6 +165,25 @@ function renderCards(){const list=visibleCards();$('#cards').replaceChildren(...
 function renderSelection(){const eligible=visibleCards().filter(e=>F.exportEligibility(e).eligible),all=eligible.length>0&&eligible.every(e=>selected.has(F.stableEventKey(e)));$('#select-visible').checked=all;$('#select-visible').indeterminate=!all&&eligible.some(e=>selected.has(F.stableEventKey(e)));$('#select-visible').disabled=!eligible.length;const count=state.events.filter(e=>selected.has(F.stableEventKey(e))&&F.exportEligibility(e).eligible).length;$('#selected-count').textContent=count;$('#export-selected').disabled=!count;}
 // Calendar stays in month view. Range selection only changes the cards below it.
 function calendarEvent(e,key=period){const b=el('button',e.title,`calendar-event ${e.status}`);b.type='button';b.style.setProperty('--event-color',colorFor(e));b.title=`${e.title} · ${statusNames[e.status]} · ${timing(e)}`;b.onclick=()=>selectDay(key);return b;}
+// Keep the gesture state outside date nodes because selection replaces the calendar DOM.
+let lastCalendarDateTap=null;
+function resetCalendarDateTap(event){
+ const day=event.target?.closest?.('.day-cell'),control=event.target?.closest?.('button,a,input,select');
+ if(!day||(control&&!control.classList.contains('date-button')))lastCalendarDateTap=null;
+}
+function activateCalendarDate(key,event){
+ const pointer=event&&event.detail>0&&event.button===0&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey;
+ const at=event?.timeStamp,kind=event?.pointerType||'mouse';
+ const jump=pointer&&Number.isFinite(at)&&lastCalendarDateTap?.key===key&&lastCalendarDateTap.kind===kind&&at-lastCalendarDateTap.at>0&&at-lastCalendarDateTap.at<=350;
+ lastCalendarDateTap=pointer&&Number.isFinite(at)&&!jump?{key,at,kind}:null;
+ selectDay(key);
+ $('#calendar').querySelector('[data-date="'+key+'"] .date-button')?.focus({preventScroll:true});
+ if(jump){
+  const heading=$('#agenda-title');
+  heading.scrollIntoView({block:'start',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  heading.focus({preventScroll:true});
+ }
+}
 function selectDay(key){selectedDate=key;period=key.slice(0,7)+'-01';agendaRange='day';selectedWeekStart=null;renderCalendar();}
 function selectMonth(){agendaRange='month';selectedWeekStart=null;renderCalendar();}
 function selectWeek(start){selectedWeekStart=start;agendaRange='week';renderCalendar();}
@@ -174,7 +193,7 @@ function agendaBounds(){
  if(agendaRange==='month'){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+1);return {start:period,end:F.dateKey(d.toISOString())};}
  return {start:selectedDate,end:addDays(selectedDate,1)};
 }
-function agendaCandidates(){return matching({status:agendaFilter,query:$('#agenda-search').value,sort:$('#agenda-sort').value}).filter(e=>e.present!==false&&e.status!=='cancelled');}
+function agendaCandidates(){return matching({status:agendaFilter,sort:$('#agenda-sort').value}).filter(e=>e.present!==false&&e.status!=='cancelled');}
 function agendaEntries(){const bounds=agendaBounds(),days=[];for(let key=bounds.start;key<bounds.end;key=addDays(key,1))days.push(key);return agendaCandidates().filter(e=>e.start&&days.some(key=>F.overlapsDay(e,key)));}
 function renderAgenda(){
  const bounds=agendaBounds(),label=key=>new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',month:'long',day:'numeric',weekday:'short'}).format(dayDate(key));
@@ -202,7 +221,7 @@ function renderCalendar(){
   if(i%7===0){const button=el('button','›','week-select');button.type='button';button.dataset.weekStart=key;button.setAttribute('aria-label',`${prettyDate(key)}〜${prettyDate(addDays(key,6))}の週を選択`);button.setAttribute('aria-pressed',String(agendaRange==='week'&&selectedWeekStart===key));button.onclick=()=>{selectWeek(key);$('#calendar').querySelector('[data-week-start="'+key+'"]')?.focus({preventScroll:true});};grid.append(button);}
   const inRange=agendaRange!=='month'&&key>=bounds.start&&key<bounds.end,day=el('div','',`day-cell ${key.slice(0,7)!==period.slice(0,7)?'outside':''} ${inRange?'range-selected':''} ${agendaRange==='day'&&key===selectedDate?'selected':''} ${key===today?'today':''}`);day.dataset.date=key;
   if(agendaRange==='month'){const edges=monthPerimeterEdges(i,offset,last);if(edges.length)day.classList.add('month-perimeter',...edges.map(edge=>'month-edge-'+edge));}
-  const b=el('button',String(Number(key.slice(-2))),'date-button');b.type='button';b.setAttribute('aria-label',`${key}の予定`);b.setAttribute('aria-pressed',String(inRange));if(key===today)b.setAttribute('aria-current','date');b.onclick=()=>{selectDay(key);$('#calendar').querySelector('[data-date="'+key+'"] .date-button')?.focus({preventScroll:true});};day.append(b);
+  const b=el('button',String(Number(key.slice(-2))),'date-button');b.type='button';b.setAttribute('aria-label',`${key}の予定`);b.setAttribute('aria-pressed',String(inRange));if(key===today)b.setAttribute('aria-current','date');b.onclick=event=>activateCalendarDate(key,event);day.append(b);
   const entries=getEvents(key),dots=el('div','','event-dots');dots.setAttribute('aria-hidden','true');for(const e of entries.slice(0,4)){const dot=el('i','',e.status);dot.style.setProperty('--event-color',colorFor(e));dots.append(dot);}day.append(dots,...entries.slice(0,3).map(e=>calendarEvent(e,key)));if(entries.length>3)day.append(el('span',`＋${entries.length-3}件`,'hint'));grid.append(day);
  }
  $('#calendar-count').textContent=`${events.filter(e=>e.start&&F.dateKey(e.start).startsWith(period.slice(0,7))).length}件の予定`;
@@ -280,31 +299,31 @@ function route(){
 if(location.hash==='#notification-changes'){selectedArtists.clear();artist='all';history.replaceState(null,'','#changes');renderArtists();renderChanges();}
 
 const hash=location.hash.slice(1),previousView=view;
-view=['calendar','cards','favorites','changes'].includes(hash)?hash:['about','settings'].includes(hash)?'changes':hash==='watch'?'cards':'calendar';
-const names={calendar:'Schedule',cards:'すべての予定',favorites:'Favorite',changes:'News'};
+view=['calendar','favorites','changes'].includes(hash)?hash:['find','cards','watch'].includes(hash)?'search':['about','settings'].includes(hash)?'changes':'calendar';
+const names={calendar:'Schedule',search:'Search',favorites:'Favorite',changes:'News'};
 $('#view-title').textContent=names[view];
 const menuIcon=$(`nav [data-view="${view}"] > span:first-child`);
 if(menuIcon){const icon=menuIcon.cloneNode(true);icon.className='view-title-icon';icon.setAttribute('aria-hidden','true');$('#view-title').prepend(icon);}
-const back=$('#back-to-view');back.hidden=view!=='cards';back.href='#changes';back.setAttribute('aria-label','Newsに戻る');
-document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!==`${view}-view`);
+const back=$('#back-to-view'),leavingLegacySearch=view==='search'&&hash==='find'&&!back.hidden;back.hidden=!['cards','watch'].includes(hash);back.href='#changes';back.setAttribute('aria-label','Newsに戻る');
+document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!==`${view==='search'?'cards':view}-view`);
 document.querySelectorAll('[data-view]').forEach(a=>{a.classList.toggle('active',a.dataset.view===view);if(a.dataset.view===view)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
 if($('#detail').open)closeDialog();
-if(view!==previousView&&(view==='changes'||previousView==='changes')){window.scrollTo({top:0,left:0,behavior:'instant'});$('#view-title').focus({preventScroll:true});}
+if(leavingLegacySearch||(view!==previousView&&(view==='changes'||previousView==='changes'||view==='search'))){window.scrollTo({top:0,left:0,behavior:'instant'});$('#view-title').focus({preventScroll:true});}
 }
 
 // Re-activating the visible tab jumps to the beginning without following its fragment.
 function preventActiveTabNavigation(event){
  if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
- if(event.currentTarget.dataset.view!==view)return;
+ if(event.currentTarget.dataset.view!==view||(view==='search'&&location.hash!=='#find'))return;
  event.preventDefault();
- window.scrollTo({top:0,left:0,behavior:"instant"});
+ window.scrollTo({top:0,left:0,behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
 }
 
 $('#detail').addEventListener('close',onDialogClosed);$('#close-detail').onclick=closeDialog;$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
 $('#open-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#about-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#agenda-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);
-$('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-search').oninput=renderAgenda;$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('#month-label').onclick=selectMonth;$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)selectDay(day.dataset.date);};
+$('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('#month-label').onclick=selectMonth;$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)activateCalendarDate(day.dataset.date,e);};
 function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+direction);period=F.dateKey(d.toISOString()).slice(0,7)+'-01';selectedDate=period;agendaRange='month';selectedWeekStart=null;renderCalendar();}
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
 $('#open-app-history').onclick=openAppHistory;$('#available-app-update').onclick=showAvailableAppRelease;
 document.querySelectorAll('[data-view]').forEach(link=>link.addEventListener('click',preventActiveTabNavigation));
-$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);
+$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('click',resetCalendarDateTap,true);window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);

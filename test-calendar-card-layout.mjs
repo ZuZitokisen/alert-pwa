@@ -124,11 +124,10 @@ test('undated items remain a separate initially closed section and never fill an
  const f=fixture({events:[event('undated',null),event('future','2026-11-13')]});assert.deepEqual(f.titles(),[]);assert.deepEqual(f.titles('undated'),['undated']);assert.equal(f.get('undated-section').hidden,false);assert.equal(f.get('undated-section').getAttribute('open'),null);assert.equal(f.get('undated-count').textContent,'1件');
  const empty=fixture();assert.equal(empty.get('undated-section').hidden,true);
 });
-test('agenda search, certainty and sort survive range changes independently of all-cards controls',()=>{
- const f=fixture({events:[event('Zeta match','2026-11-12',{status:'possible'}),event('Alpha match','2026-11-13',{status:'possible'}),event('Confirmed match','2026-11-12'),event('Other','2026-11-12',{status:'possible'})]});
- f.get('agenda-search').value='match';f.get('agenda-search').oninput();f.get('agenda-sort').value='title';f.get('agenda-sort').onchange();f.document.querySelector('[data-agenda-filter="possible"]').click();assert.deepEqual(f.titles(),['Zeta match']);
- weekButton(f,'2026-11-08').click();assert.deepEqual(f.titles(),['Alpha match','Zeta match']);f.get('month-label').click();assert.deepEqual(f.titles(),['Alpha match','Zeta match']);assert.equal(f.get('agenda-search').value,'match');assert.equal(f.get('agenda-sort').value,'title');assert.equal(f.run('agendaFilter'),'possible');assert.equal(f.run('filter'),'all');assert.equal(f.get('search').value,'');assert.equal(f.get('sort').value,'date');
- f.get('today').click();assert.deepEqual(f.titles(),['Zeta match']);
+test('Schedule certainty and sort survive ranges independently of Search query',()=>{
+ const f=fixture({events:[event('Zeta','2026-11-12',{status:'possible'}),event('Alpha','2026-11-13',{status:'possible'}),event('Confirmed','2026-11-12')]});
+ f.get('search').value='Zeta';f.get('search').oninput();f.get('agenda-sort').value='title';f.document.querySelector('[data-agenda-filter="possible"]').click();
+ weekButton(f,'2026-11-08').click();assert.deepEqual(f.titles(),['Alpha','Zeta']);assert.deepEqual(f.titles('cards'),['Zeta']);f.get('month-label').click();assert.equal(f.get('search').value,'Zeta');assert.equal(f.document.getElementById('agenda-search'),null);
 });
 test('artist filtering preserves the selected range and applies to calendar and agenda',()=>{
  const f=fixture({events:[event('tokisen','2026-11-12'),event('re-ge','2026-11-13',{artistId:'re-ge'})]});weekButton(f,'2026-11-08').click();f.get('artist-filters').querySelectorAll('button').find(b=>b.textContent==='RE-GE').click();assert.equal(f.run('agendaRange'),'week');assert.deepEqual(bounds(f),{start:'2026-11-08',end:'2026-11-15'});assert.deepEqual(f.titles(),['re-ge']);assert.deepEqual(f.get('calendar').querySelectorAll('.calendar-event').map(b=>b.textContent),['re-ge']);
@@ -146,8 +145,8 @@ test('agenda cards still open details and the subscription action retains artist
 });
 test('layout keeps month and cards together with exactly Schedule, Favorite and News navigation',()=>{
  const document=parseDocument(html),calendar=document.querySelector('.calendar-panel'),agenda=document.querySelector('.agenda-panel');assert.equal(document.querySelectorAll('[data-mode]').length,0);assert.equal(calendar.querySelectorAll('.card-legend').length,0);assert.equal(agenda.querySelectorAll('.card-legend').length,1);
- for(const id of ['agenda-search','agenda-sort','agenda-subscriptions','search','sort','cards-view','changes-view','favorites-view'])assert.ok(document.getElementById(id),id);
- const links=document.querySelectorAll('nav a');assert.deepEqual(links.map(a=>a.dataset.view),['calendar','favorites','changes']);for(const [index,label] of ['Schedule','Favorite','News'].entries())assert.ok(links[index].textContent.includes(label),label);
+ for(const id of ['agenda-sort','agenda-subscriptions','search','sort','cards-view','changes-view','favorites-view'])assert.ok(document.getElementById(id),id);
+ const links=document.querySelectorAll('nav a');assert.deepEqual(links.map(a=>a.dataset.view),['calendar','favorites','search','changes']);for(const [index,label] of ['Schedule','Favorite','Search','News'].entries())assert.ok(links[index].textContent.includes(label),label);
  assert.equal(document.getElementById('about-view'),null);assert.equal(document.querySelector('.header-actions a[href="#about"]'),null);assert.equal(document.querySelectorAll('.mobile-info').length,0);
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');assert.match(css,/\.calendar-layout\{grid-template-columns:minmax\(0,1fr\)\}/);assert.ok(!/nav a\[data-view=changes\]\s*\{display:none/.test(css),'News must not remain hidden by the earlier two-tab mobile rule');
 });
@@ -284,8 +283,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.14 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-14/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.14'));assert.ok(sw.includes(file+'?v=0.7.14'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.15 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-15/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.15'));assert.ok(sw.includes(file+'?v=0.7.15'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
