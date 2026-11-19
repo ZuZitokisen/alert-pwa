@@ -82,7 +82,7 @@ test('today is computed in Japan rather than the UTC date',()=>{
  const f=fixture({now:'2026-11-11T15:01:00Z',events:[event('JST today','2026-11-12'),event('UTC yesterday','2026-11-11')]});assert.equal(f.run('selectedDate'),'2026-11-12');assert.deepEqual(f.titles(),['JST today']);
 });
 test('every month row begins with a labeled Sunday-to-Saturday week button',()=>{
- const f=fixture();assert.deepEqual(f.get('calendar').querySelectorAll('.weekday').map(e=>e.textContent),['日','月','火','水','木','金','土']);
+ const f=fixture();assert.deepEqual(f.get('calendar').querySelectorAll('.weekday').map(e=>e.textContent),['Sun','Mon','Tue','Wed','Thu','Fri','Sat']);
  const starts=f.get('calendar').querySelectorAll('.week-select').map(b=>b.dataset.weekStart);assert.deepEqual(starts,['2026-11-01','2026-11-08','2026-11-15','2026-11-22','2026-11-29']);
  for(const b of f.get('calendar').querySelectorAll('.week-select')){assert.equal(b.type,'button');assert.match(b.getAttribute('aria-label'),/の週を選択$/);assert.equal(b.getAttribute('aria-pressed'),'false');const siblings=b.parentElement.children,index=siblings.indexOf(b);assert.deepEqual(siblings.slice(index+1,index+8).map(d=>d.dataset.date),Array.from({length:7},(_,i)=>f.run(`addDays('${b.dataset.weekStart}',${i})`)));}
 });
@@ -93,7 +93,7 @@ test('week click selects the full row across a month boundary without switching 
 });
 test('month heading selects month while date clicks select only that day',()=>{
  const f=fixture({events:[event('early','2026-11-01'),event('today','2026-11-12'),event('late','2026-11-30'),event('December','2026-12-01')]});
- assert.equal(f.get('month-label').tagName.toLowerCase(),'button');assert.equal(f.get('month-label').getAttribute('aria-pressed'),'false');f.get('month-label').click();assert.equal(f.get('month-label').getAttribute('aria-pressed'),'true');assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['early','today','late']);assert.equal(f.get('agenda-title').textContent,'2026年11月の予定');
+ assert.equal(f.get('month-label').tagName.toLowerCase(),'button');assert.equal(f.get('month-label').children[0].textContent,'11');assert.equal(f.get('month-label').querySelector('.month-en').textContent,'November');assert.equal(f.get('month-label').querySelector('.month-en').lang,'en');assert.equal(f.get('month-label').getAttribute('aria-label'),'2026年11月の予定を選択');assert.equal(f.get('month-label').getAttribute('aria-pressed'),'false');f.get('month-label').click();assert.equal(f.get('month-label').getAttribute('aria-pressed'),'true');assert.equal(f.run('agendaRange'),'month');assert.deepEqual(f.titles(),['early','today','late']);assert.equal(f.get('agenda-title').textContent,'2026年11月の予定');
  weekButton(f,'2026-11-08').click();dateButton(f,'2026-11-12').click();assert.equal(f.run('agendaRange'),'day');assert.deepEqual(f.titles(),['today']);assert.equal(f.run('selectedWeekStart'),null);
  dateButton(f,'2026-12-01').click();assert.equal(f.run('period'),'2026-12-01');assert.deepEqual(f.titles(),['December']);
 });
@@ -176,32 +176,33 @@ test('consecutive date, cell whitespace and dots clicks preserve day selection, 
  f.get('calendar').querySelectorAll('.day-cell').find(d=>d.dataset.date==='2026-11-14').click();assert.deepEqual(f.titles(),[]);assert.equal(f.run('agendaRange'),'day');
  f.get('month-label').click();assert.deepEqual(f.titles(),['today','tomorrow']);assert.equal(f.run('agendaRange'),'month');
 });
-test('week controls keep their full hit target but no tile in either state',()=>{
+test('week controls and selected date cells have rounded corners without shrinking targets',()=>{
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
  assert.match(css,/\.week-select\{[^}]*min-width:44px;min-height:44px/);
- assert.match(css,/\.week-select\{[^}]*border:0;border-radius:0;box-shadow:none;background:transparent/);
- assert.match(css,/\.week-select\[aria-pressed=true\]\{background:transparent;color:var\(--accent\)\}/);
+ assert.match(css,/\.week-select\{[^}]*border:0;border-radius:10px;box-shadow:none;background:transparent/);
+ assert.match(css,/\.week-select\[aria-pressed=true\]\{background:color-mix\([^}]+color:var\(--accent\)\}/);
+ assert.match(css,/\.day-cell\.range-selected\{border-radius:10px/);
 });
 
 // Artist selector preview: visual surfaces change, existing selection semantics do not.
 test('artist first paint contains native named controls and final decorative SVGs before JavaScript',()=>{
  const doc=parseDocument(html),group=doc.getElementById('artist-filters'),buttons=group.querySelectorAll('button');
  assert.equal(group.getAttribute('role'),'group');assert.equal(group.getAttribute('data-all-selected'),'true');
- assert.deepEqual(buttons.map(b=>b.getAttribute('data-artist')),['all','tokisen','re-ge','straightangeli','oneloveoneheart']);
- assert.deepEqual(buttons.map(b=>b.getAttribute('aria-label')),['すべてのアーティスト','超ときめき♡宣伝部','RE-GE','Straight Angeli','ONE LOVE ONE HEART']);
- assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),['true','false','false','false','false']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('data-artist')),['all','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-label')),['すべてのアーティスト','超ときめき♡宣伝部','いぎなり東北産','ONE LOVE ONE HEART','Straight Angeli','RE-GE']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),['true','false','false','false','false','false']);
  assert.equal(buttons[0].querySelector('.artist-label').textContent,'ALL');
  assert.equal(buttons[1].querySelector('svg').getAttribute('data-artist-symbol'),'megaphone');
- assert.equal(buttons[3].querySelector('svg').getAttribute('data-artist-symbol'),'wings');
- assert.equal(buttons[4].querySelector('svg').getAttribute('data-artist-symbol'),'heart');
- assert.equal(buttons[2].querySelector('svg'),null);
+ assert.equal(buttons[4].querySelector('svg').getAttribute('data-artist-symbol'),'wings');
+ assert.equal(buttons[3].querySelector('svg').getAttribute('data-artist-symbol'),'heart');
+ assert.equal(buttons[5].querySelector('svg'),null);
  for(const button of buttons){assert.equal(button.getAttribute('type'),'button');assert.ok(button.querySelector('.artist-face'));assert.equal(button.querySelectorAll('.nav-count').length,0);}
  for(const svg of group.querySelectorAll('svg')){assert.equal(svg.getAttribute('aria-hidden'),'true');assert.equal(svg.getAttribute('focusable'),'false');}
 });
 test('artist renders reuse controls, toggle multiple choices and reset with ALL',()=>{
  const f=fixture(),group=f.get('artist-filters'),buttons=group.querySelectorAll('button'),faces=buttons.map(b=>b.querySelector('.artist-face'));
  const selected=new Set();
- for(const index of [1,2,3,4,2,1,3,1,3,4,0,0]){
+ for(const index of [1,2,3,4,5,2,1,3,5,1,3,4,0,0]){
   if(index===0)selected.clear();else if(selected.has(index))selected.delete(index);else selected.add(index);
   buttons[index].click();f.run('renderArtists();renderArtists()');
   assert.deepEqual(group.querySelectorAll('button'),buttons);assert.deepEqual(buttons.map(b=>b.querySelector('.artist-face')),faces);
@@ -228,11 +229,11 @@ test('artist choice does not erase favorites or alter the subscription preset pa
 test('artist generated fallback matches static labels and paths without adding an RE-GE icon',()=>{
  const f=fixture(),group=f.get('artist-filters'),original=group.querySelectorAll('button'),svgPaths=original.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d')));
  group.replaceChildren();f.run('renderArtists()');const next=group.querySelectorAll('button');
- assert.deepEqual(next.map(b=>b.textContent),original.map(b=>b.textContent));assert.deepEqual(next.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d'))),svgPaths);assert.equal(next[2].querySelector('svg'),null);
+ assert.deepEqual(next.map(b=>b.textContent),original.map(b=>b.textContent));assert.deepEqual(next.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d'))),svgPaths);assert.equal(next[5].querySelector('svg'),null);
 });
 test('artist motion affects only noninteractive surfaces, with reduced-motion and visible keyboard focus',()=>{
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
- assert.match(css,/#artist-filters\.artist-pills\{[\s\S]*?grid-template-columns:repeat\(5,minmax\(0,1fr\)\)/);
+ assert.match(css,/#artist-filters\.artist-pills\{[\s\S]*?grid-template-columns:repeat\(6,minmax\(0,1fr\)\)/);
  assert.match(css,/#artist-filters::before\{[^}]*pointer-events:none/);assert.match(css,/#artist-filters \.artist-face\{[^}]*pointer-events:none/);
  assert.match(css,/#artist-filters>button\.artist-option\{[^}]*transform:none/);
  assert.match(css,/#artist-filters>button:focus-visible\{outline:3px/);
@@ -250,7 +251,7 @@ test('startup binds static artist controls before a pending or rejected first da
   f.context.scheduleRequest=()=>fails?Promise.reject(Error('offline')):new Promise(()=>{});
   const startup=source.slice(source.indexOf("window.addEventListener('hashchange',route);"));
   assert.ok(startup.indexOf('renderArtists();')<startup.indexOf('refresh({notice:'),'bind before awaiting data');f.run(startup);await Promise.resolve();await Promise.resolve();
-  assert.equal(typeof buttons[2].onclick,'function');buttons[2].click();assert.equal(f.run('artist'),'re-ge');assert.equal(buttons[2].getAttribute('aria-pressed'),'true');
+  assert.equal(typeof buttons[5].onclick,'function');buttons[5].click();assert.equal(f.run('artist'),'re-ge');assert.equal(buttons[5].getAttribute('aria-pressed'),'true');
  }
 });
 test('icon-only artist controls hide only two captions while keeping accessible names and typographic marks',()=>{
@@ -283,8 +284,42 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.12 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-12/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.12'));assert.ok(sw.includes(file+'?v=0.7.12'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.13 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-13/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.13'));assert.ok(sw.includes(file+'?v=0.7.13'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
+
+test('fifth artist has a plain short mark and preserves exact filtering and detail name',()=>{const f=fixture({events:[event('東北の予定','2026-11-12',{artistId:'tohokusan'}),event('他の予定','2026-11-12')]});const b=f.get('artist-filters').querySelector('[data-artist="tohokusan"]');assert.equal(b.getAttribute('aria-label'),'いぎなり東北産');assert.equal(b.querySelector('.artist-label').textContent,'産');assert.equal(b.querySelector('svg').getAttribute('data-artist-symbol'),'san-brush');b.click();assert.deepEqual(f.titles(),['東北の予定']);assert.equal(f.run("presentEvent(state.events[0]).artist"),'いぎなり東北産');});
+
+test('six artist targets keep 48px height and compact type at 320px',()=>{const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');assert.match(css,/grid-template-columns:repeat\(6,minmax\(0,1fr\)\)/);assert.ok(css.includes('width:calc(100% / 6 - 8px)'));assert.match(css,/width:100%;min-height:48px;height:48px/);assert.ok((320-18*2)/6>=44);assert.ok(css.includes('@media(max-width:360px){#artist-filters .artist-face{padding-inline:1px}#artist-filters [data-artist=re-ge] .artist-label{font-size:11px;letter-spacing:0}}'));for(const [fg,bg] of [['664a88','e9e9ed'],['cbb6df','39383f'],['d5b5f2','202025']])assert.ok(contrastRatio(fg,bg)>=4.5);});
+
+test('ALL frame has exact five pixel inner clearance around fixed circular surfaces',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.ok(css.includes('grid-template-columns:repeat(6,46px);width:276px'));
+ assert.ok(css.includes('width:46px;height:48px;min-height:48px;padding:0;align-items:center'));
+ assert.ok(css.includes('flex:none;width:36px;height:36px;padding:0;border-radius:50%;transform:none'));
+ assert.ok(css.includes('#artist-filters[data-all-selected=true]::before{left:-1px;top:0;bottom:0;width:calc(100% + 2px)}'));
+ const targetW=46,targetH=48,diameter=36,border=1,frameLeft=-1;
+ assert.equal((targetW-diameter)/2-frameLeft-border,5);
+ assert.equal((targetH-diameter)/2-border,5);
+ assert.ok(targetW>=44&&targetH>=44);assert.ok(6*targetW+2<=320-36);
+});
+test('genre tint is common to all event cards without adding strips or overriding dashed status',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.ok(css.includes('.event-card,.event-card.possible{background:color-mix(in srgb,var(--event-color,transparent) 7%,var(--surface))}'));
+ assert.ok(css.includes('var(--event-color,transparent) 11%,var(--surface)'));
+ assert.match(css,/\.event-card\.possible\{border:1.5px dashed/);
+ const f=fixture(),a=f.run("card({id:'same',title:'a',artistId:'tokisen',category:'LIVE',status:'confirmed'})"),b=f.run("card({id:'other',title:'b',artistId:'tohokusan',category:'LIVE',status:'possible'})"),c=f.run("card({id:'tv',title:'c',artistId:'tokisen',category:'TV',status:'confirmed'})");
+ assert.equal(a.style.getPropertyValue('--event-color'),b.style.getPropertyValue('--event-color'));
+ assert.notEqual(a.style.getPropertyValue('--event-color'),c.style.getPropertyValue('--event-color'));
+});
+
+test('selected month is distinguished by weight, not an underline',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/#month-label\s*\{[^}]*font-weight:600/);
+ assert.match(css,/#month-label\[aria-pressed=true\]\{font-weight:800\}/);
+ assert.match(css,/#month-label\s*\{[^}]*align-items:baseline/);
+ assert.match(css,/#month-label \.month-en\{[^}]*font-size:12px/);
+ assert.match(css,/#month-label:focus-visible\{outline:/);
+});

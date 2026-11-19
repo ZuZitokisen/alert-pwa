@@ -61,9 +61,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .calendar-layout{grid-template-columns:minmax(0,1fr)}
 .calendar.month-grid{grid-template-columns:44px repeat(7,minmax(0,1fr));margin-top:20px}
 .week-selector-heading{min-width:0}
-.week-select{align-self:stretch;width:44px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;color:var(--muted);font-size:22px}
-.week-select[aria-pressed=true]{background:transparent;color:var(--accent)}
-.day-cell.range-selected{background:color-mix(in srgb,var(--pink) 45%,transparent)}
+.week-select{align-self:stretch;width:44px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:10px;box-shadow:none;background:transparent;color:var(--muted);font-size:22px}
+.week-select[aria-pressed=true]{background:color-mix(in srgb,var(--pink) 65%,var(--surface));color:var(--accent)}
+.day-cell.range-selected{border-radius:10px;background:color-mix(in srgb,var(--pink) 45%,transparent)}
 .day-cell.selected{background:var(--pink)}
 #agenda,#undated{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .agenda-card-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
@@ -86,12 +86,12 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 /* Artist-menu preview: fixed touch targets, independently animated surfaces. */
 #artist-filters.artist-pills{
  --artist-all-bg:#e8e8ec;--artist-all-border:#d3d3da;--artist-all-ink:#56545f;
- position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+ position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));
  gap:0;width:100%;max-width:360px;min-width:0;margin:16px 0 18px;padding:0;
 }
 #artist-filters::before{
  content:"";position:absolute;z-index:-1;pointer-events:none;left:4px;top:5px;bottom:5px;
- width:calc(20% - 8px);border:1px solid var(--artist-all-border);border-radius:999px;
+ width:calc(100% / 6 - 8px);border:1px solid var(--artist-all-border);border-radius:999px;
  background:var(--artist-all-bg);box-sizing:border-box;
  transition:width 360ms cubic-bezier(.22,.8,.25,1),background-color 280ms ease,border-color 280ms ease;
 }
@@ -141,12 +141,13 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .calendar-panel{box-shadow:none}
 .calendar-title h2{margin:0;letter-spacing:0}
 #month-label{
- display:inline-flex;align-items:center;min-height:44px;padding:0 4px;margin-left:-4px;
+ display:inline-flex;align-items:baseline;column-gap:6px;min-height:44px;padding:0 4px;margin-left:-4px;
  border:0;border-radius:8px;background:transparent;box-shadow:none;color:var(--ink);
- font:inherit;font-weight:750;font-variant-numeric:tabular-nums;line-height:1.1;
+ font:inherit;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1;
  touch-action:manipulation;
 }
-#month-label[aria-pressed=true]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+#month-label[aria-pressed=true]{font-weight:800}
+#month-label .month-en{margin:0;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:0;line-height:1}
 #month-label:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .calendar.month-grid{margin-top:14px}
 .date-button,.calendar-foot{font-variant-numeric:tabular-nums}
@@ -210,3 +211,27 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .view-title-icon{font-size:.8em;line-height:1;letter-spacing:0;flex:none}
 .app-history-link{margin:0 0 18px;background:transparent;text-align:left}
 #app-release-history{scroll-margin-top:20px}
+
+/* Fifth artist: typographic mark, not an official logo. */
+#artist-filters [data-artist=tohokusan]{--artist-ink:#664a88;--artist-selected:#d5b5f2}
+#artist-filters [data-artist=tohokusan] .artist-label{font-size:13px;font-weight:800;white-space:nowrap}
+@media(prefers-color-scheme:dark){#artist-filters>button[data-artist=tohokusan]{--artist-ink:#cbb6df}}
+@media(max-width:360px){#artist-filters .artist-face{padding-inline:1px}#artist-filters [data-artist=re-ge] .artist-label{font-size:11px;letter-spacing:0}}
+
+/* Six fixed touch targets; five circular artist marks. Frame inner clearance = 5px. */
+#artist-filters.artist-pills{grid-template-columns:repeat(6,46px);width:276px;max-width:100%;gap:0}
+#artist-filters>button.artist-option{width:46px;height:48px;min-height:48px;padding:0;align-items:center}
+#artist-filters .artist-face{flex:none;width:36px;height:36px;padding:0;border-radius:50%;transform:none}
+#artist-filters>button:not([data-artist=all])[aria-pressed=true] .artist-face{transform:none}
+#artist-filters::before{left:-1px;top:0;bottom:0;width:48px}
+#artist-filters[data-all-selected=true]::before{left:-1px;top:0;bottom:0;width:calc(100% + 2px)}
+#artist-filters [data-artist=re-ge] .artist-label{font-size:10.5px;letter-spacing:0;font-weight:800}
+/* The existing genre palette is shared by Schedule, Favorite and News cards. */
+.event-card,.event-card.possible{background:color-mix(in srgb,var(--event-color,transparent) 7%,var(--surface))}
+@media(prefers-color-scheme:dark){.event-card,.event-card.possible{background:color-mix(in srgb,var(--event-color,transparent) 11%,var(--surface))}}
+
+/* Original tapered brush-stroke 産 glyph; full artist name remains on the button. */
+#artist-filters [data-artist=tohokusan]{--artist-muted:#664a88}
+#artist-filters [data-artist=tohokusan] .artist-label{display:none}
+#artist-filters [data-artist=tohokusan] .artist-symbol{width:25px;height:25px}
+@media(prefers-color-scheme:dark){#artist-filters>button[data-artist=tohokusan]{--artist-muted:#cbb6df}}

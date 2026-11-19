@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {execFileSync,spawnSync} from 'node:child_process';
 import C from './production-feed-core.cjs';
-const data=JSON.parse(fs.readFileSync(new URL('./schedule-data.json',import.meta.url),'utf8'));
+const data=JSON.parse(fs.readFileSync(new URL('./fixtures/legacy/schedule-data.json',import.meta.url),'utf8'));
 const options={production:true,publicSource:'schedule-data-v2.json'}, initial=C.build(data,null,options);
 const copy=v=>structuredClone(v);
 function changed(fn){let d=copy(data);d.generatedAt='2026-11-12T09:32:46Z';d.version='2026-11-12-v1';fn(d);return d;}

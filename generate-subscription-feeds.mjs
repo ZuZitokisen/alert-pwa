@@ -13,11 +13,11 @@ try {
  const exists=fs.existsSync(statePath);
  if(!exists&&!args.includes('--initialize'))throw new Error('Missing revision state: restore from Git. --initialize is only for first publication.');
  if(exists&&args.includes('--initialize'))throw new Error('State already exists; never reset published UIDs/revisions.');
- const publicSource=fs.existsSync(path.join(root,'schedule-data-v3.json'))?'schedule-data-v3.json':'schedule-data-v2.json';
+ const publicSource=fs.existsSync(path.join(root,'schedule-data-v4.json'))?'schedule-data-v4.json':fs.existsSync(path.join(root,'schedule-data-v3.json'))?'schedule-data-v3.json':'schedule-data-v2.json';
  const data=JSON.parse(fs.readFileSync(path.join(root,publicSource),'utf8'));
  const previous=exists?JSON.parse(fs.readFileSync(statePath,'utf8')):null;
  const result=core.build(data,previous,{production:true,publicSource});
- const projections={'schedule-data.json':result.legacyDataJson,...(publicSource==='schedule-data-v3.json'?{'schedule-data-v2.json':result.v2DataJson}:{})};
+ const projections={'schedule-data.json':result.legacyDataJson,...(publicSource!=='schedule-data-v2.json'?{'schedule-data-v2.json':result.v2DataJson}:{}),...(publicSource==='schedule-data-v4.json'?{'schedule-data-v3.json':result.v3DataJson}:{})};
  if(args.includes('--check')){
   for(const [name,bytes] of Object.entries(result.files))if(!fs.existsSync(path.join(target,name))||fs.readFileSync(path.join(target,name),'utf8')!==bytes)throw new Error(`Stale/missing generated file: ${name}`);
   const extra=fs.readdirSync(target).filter(n=>!Object.hasOwn(result.files,n));if(extra.length)throw new Error(`Unexpected feed files: ${extra.join(', ')}`);

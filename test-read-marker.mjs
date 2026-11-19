@@ -11,3 +11,5 @@ test('marker is capped when history was not restored, allowing later new items t
 test('migrated marker retains prior read state while fifteen new artist items remain unread',()=>{const f=fixture({'alert-pwa-curated-read-v1':9});f.c.state={nextChangeId:25};f.run('reconcileReadMarker()');assert.equal(f.c.readThrough,9);assert.equal(f.writes.length,1);assert.match(app,/save\(readKey,readThrough\)/);assert.ok(!app.includes("save('alert-pwa-curated-read-v1'"));});
 
 test('v3 read tracking migrates v2 without modifying prior client keys',()=>{const key='alert-pwa-curated-read-v3';const f=fixture({'alert-pwa-curated-read-v2':8,'alert-pwa-curated-read-v1':3},key);assert.equal(f.c.readThrough,8);assert.deepEqual(f.writes,[[key,8]]);f.values.set('alert-pwa-curated-read-v2',15);assert.equal(f.run('readMarker()'),8);});
+
+test('v4 read tracking migrates v3 without changing prior client marker',()=>{const key='alert-pwa-curated-read-v4';const f=fixture({'alert-pwa-curated-read-v3':18,'alert-pwa-curated-read-v2':8},key);assert.equal(f.c.readThrough,18);assert.deepEqual(f.writes,[[key,18]]);assert.equal(f.values.get('alert-pwa-curated-read-v3'),18);});

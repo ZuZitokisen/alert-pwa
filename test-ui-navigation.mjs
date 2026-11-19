@@ -9,7 +9,7 @@ function fixture(initialHash=''){
  const views=['calendar','cards','favorites','changes'].map(name=>({id:name+'-view',hidden:false}));
  const links=views.map(v=>({dataset:{view:v.id.replace('-view','')},attributes:{},classList:{toggle(){}},setAttribute(k,v){this.attributes[k]=v},removeAttribute(k){delete this.attributes[k]}}));
  const title={textContent:'',focus(){this.focused=(this.focused||0)+1}},back={hidden:true,href:'',attributes:{},setAttribute(k,v){this.attributes[k]=v}},detail={open:false};
- const context={location:{hash:initialHash},document:{querySelectorAll(s){return s==='.view'?views:links}},window:{scrollTo(){context.scrollCount++}},scrollCount:0,closeDialog(){detail.open=false;context.closed=(context.closed||0)+1},$:(s)=>({'#view-title':title,'#back-to-view':back,'#detail':detail}[s])};
+ const context={location:{hash:initialHash},document:{querySelectorAll(s){return s==='.view'?views:links}},window:{scrollTo(settings){context.scrollCount++;context.lastScroll=settings;}},scrollCount:0,closeDialog(){detail.open=false;context.closed=(context.closed||0)+1},$:(s)=>({'#view-title':title,'#back-to-view':back,'#detail':detail}[s])};
  context.selectedArtists=new Set(['tokisen']);context.artist='tokisen';context.renderArtists=()=>{context.artistRenders=(context.artistRenders||0)+1;};context.renderChanges=()=>{context.changeRenders=(context.changeRenders||0)+1;};context.history={replaceState:(_state,_title,hash)=>context.location.hash=hash};
  vm.createContext(context);vm.runInContext("let view='calendar',returnView='calendar';"+routeSource,context);
  function go(hash){context.location.hash=hash;vm.runInContext('route()',context);return views.filter(v=>!v.hidden).map(v=>v.id);}
@@ -41,3 +41,18 @@ test('regular screens omit introductory copy and keep important guidance in info
 });
 
 test('notification News entry resets artist filter but ordinary News preserves it',()=>{const f=fixture();f.go('#changes');assert.deepEqual([...f.context.selectedArtists],['tokisen']);f.go('#notification-changes');assert.equal(f.context.selectedArtists.size,0);assert.equal(f.context.artist,'all');assert.equal(f.context.location.hash,'#changes');assert.equal(f.title.textContent,'News');assert.equal(f.context.artistRenders,1);assert.equal(f.context.changeRenders,1);});
+
+test('re-activating the visible tab jumps straight to top without changing route or focus',()=>{
+ for(const name of ['calendar','favorites','changes']){
+  const f=fixture();f.go('#'+name);const before=f.context.scrollCount,focused=f.title.focused;
+  let prevented=0;const event={currentTarget:f.links.find(l=>l.dataset.view===name),button:0,preventDefault(){prevented++;}};
+  f.context.event=event;vm.runInContext('preventActiveTabNavigation(event)',f.context);
+  assert.equal(prevented,1);assert.equal(f.context.scrollCount,before+1);
+  assert.equal(f.context.lastScroll.top,0);assert.equal(f.context.lastScroll.left,0);assert.equal(f.context.lastScroll.behavior,'instant');
+  assert.equal(f.context.location.hash,'#'+name);assert.equal(f.title.focused,focused);
+  for(const patch of [{currentTarget:f.links.find(l=>l.dataset.view!==name)},{ctrlKey:true},{button:1},{defaultPrevented:true}]){
+   f.context.event={...event,...patch};vm.runInContext('preventActiveTabNavigation(event)',f.context);
+  }
+  assert.equal(prevented,1);assert.equal(f.context.scrollCount,before+1);
+ }
+});

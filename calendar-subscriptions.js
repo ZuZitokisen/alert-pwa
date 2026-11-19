@@ -2,10 +2,11 @@
 /* Fixed public calendars only. Never reads browser storage or personal selections. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;root.AlertCalendarSubscriptions=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
  const BASE='https://zuzitokisen.github.io/alert-pwa/';
+ const fifth=globalThis.ALERT_ARTISTS?.some(a=>a.id==='tohokusan')===true;
  const extended=globalThis.ALERT_ARTISTS?.some(a=>a.id==='oneloveoneheart')===true;
- const version=extended?3:2;
- const ARTISTS=Object.freeze(['tokisen','re-ge','straightangeli',...(extended?['oneloveoneheart']:[])]);
- const NAMES=Object.freeze({tokisen:'超ときめき♡宣伝部','re-ge':'RE-GE',straightangeli:'Straight Angeli',oneloveoneheart:'ONE LOVE ONE HEART'});
+ const version=fifth?4:extended?3:2;
+ const ARTISTS=Object.freeze(['tokisen','re-ge','straightangeli',...(extended?['oneloveoneheart']:[]),...(fifth?['tohokusan']:[])]);
+ const NAMES=Object.freeze({tokisen:'超ときめき♡宣伝部','re-ge':'RE-GE',straightangeli:'Straight Angeli',oneloveoneheart:'ONE LOVE ONE HEART',tohokusan:'いぎなり東北産'});
  const categories={all:'全予定',live:'ライブ・イベント',benefit:'特典会・応募',media:'メディア',other:'その他'};
  const PRESETS=Object.freeze(ARTISTS.flatMap(artist=>Object.entries(categories).map(([category,label])=>Object.freeze({id:artist+'-'+category,artist,category,label:NAMES[artist]+' / '+label}))));
  function planSelection(ids){if(!Array.isArray(ids))throw new TypeError('Preset list required.');const all=[...new Set(ids)];if(all.some(id=>!PRESETS.some(p=>p.id===id)))throw new TypeError('Unknown preset.');const removed=all.filter(id=>{const p=PRESETS.find(p=>p.id===id);return p.category!=='all'&&all.includes(p.artist+'-all');});return {selected:all.filter(id=>!removed.includes(id)),removed};}
