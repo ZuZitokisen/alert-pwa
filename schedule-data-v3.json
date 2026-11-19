@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "hourly-2026-11-18T16:35:21.311Z",
-  "generatedAt": "2026-11-18T16:35:21.311Z",
+  "version": "2026-11-19-tokisen-christmas-pickup",
+  "generatedAt": "2026-11-19T05:21:58.596Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9332,24 +9332,29 @@
       "id": "tokisen-undated-3",
       "source": "curated-calendar",
       "artistId": "tokisen",
-      "title": "ときクリ2026 会場受取・当日物販",
+      "title": "ときクリ2026 当日物販（詳細待ち）",
       "start": null,
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "EVENT",
       "location": "",
-      "note": "実施予定の記述のみ。受付・販売時刻は未公表。",
-      "evidence": "本人側の公式発表で確認。",
-      "sourceUrl": "https://toki-sen.com/contents/1125331",
+      "note": "会場受取の予約期間は別項目に掲載。当日販売の詳細は後日発表。会場受取で売り切れた商品は当日販売がない場合があります。整理券の配布予定はありません。",
+      "evidence": "11/19の本人公式発表で会場受取と当日販売を区別。",
+      "sourceUrl": "https://toki-sen.com/contents/1129157?tag=all",
       "sources": [
         {
-          "url": "https://toki-sen.com/contents/1125331",
+          "url": "https://toki-sen.com/contents/1129157?tag=all",
           "type": "artist_official",
-          "checkedAt": "2026-11-11T09:28:32Z"
+          "checkedAt": "2026-11-19T05:21:58.596Z"
+        },
+        {
+          "url": "https://mailivis.jp/shop/t/t1607/",
+          "type": "seller",
+          "checkedAt": "2026-11-19T05:21:58.596Z"
         }
       ],
-      "checkedAt": "2026-11-11T09:28:32Z",
+      "checkedAt": "2026-11-19T05:21:58.596Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -12157,6 +12162,84 @@
       "revision": 1,
       "present": true,
       "groupId": "re-ge-hourly-official-item-819"
+    },
+    {
+      "id": "tokisen-christmas-goods-pickup-2026-open",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "ときクリ2026 グッズ会場受取 予約開始",
+      "start": "2026-11-20T19:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "MAILIVIS（オンライン予約）",
+      "note": "商品在庫・受取時間枠には上限があり、期間内でも受付終了の場合があります。受取は京王アリーナTOKYOで12/12 12:00から、12/13 10:30から。公演券なしの受取は12/12 17:00以降・12/13 15:00以降の指定枠のみ。当日販売の詳細は別途発表。",
+      "evidence": "11/19の本人公式告知で会場受取予約の開始・締切を確認。過去の事前通販とは別受付。",
+      "sourceUrl": "https://toki-sen.com/contents/1129157?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1129157?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T05:21:58.596Z"
+        },
+        {
+          "url": "https://mailivis.jp/shop/t/t1607/",
+          "type": "seller",
+          "checkedAt": "2026-11-19T05:21:58.596Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T05:21:58.596Z",
+      "timings": [
+        {
+          "label": "ときクリ2026 グッズ会場受取 予約開始",
+          "kind": "application_start",
+          "at": "2026-11-20T19:00:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-christmas-goods-pickup-2026"
+    },
+    {
+      "id": "tokisen-christmas-goods-pickup-2026-close",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "ときクリ2026 グッズ会場受取 予約締切",
+      "start": "2026-11-26T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "MAILIVIS（オンライン予約）",
+      "note": "商品在庫・受取時間枠には上限があり、期間内でも受付終了の場合があります。受取は京王アリーナTOKYOで12/12 12:00から、12/13 10:30から。公演券なしの受取は12/12 17:00以降・12/13 15:00以降の指定枠のみ。当日販売の詳細は別途発表。",
+      "evidence": "11/19の本人公式告知で会場受取予約の開始・締切を確認。過去の事前通販とは別受付。",
+      "sourceUrl": "https://toki-sen.com/contents/1129157?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1129157?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T05:21:58.596Z"
+        },
+        {
+          "url": "https://mailivis.jp/shop/t/t1607/",
+          "type": "seller",
+          "checkedAt": "2026-11-19T05:21:58.596Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T05:21:58.596Z",
+      "timings": [
+        {
+          "label": "ときクリ2026 グッズ会場受取 予約締切",
+          "kind": "application_deadline",
+          "at": "2026-11-26T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-11-26T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-christmas-goods-pickup-2026"
     }
   ],
   "notes": [
