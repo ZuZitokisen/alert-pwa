@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-19-tohokusan",
-  "generatedAt": "2026-11-19T08:45:31.941Z",
+  "version": "2026-11-20-tohokusan-details",
+  "generatedAt": "2026-11-19T09:46:35.640Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12473,18 +12473,18 @@
     {
       "id": "tohokusan-gift-20261129",
       "title": "GIFT ～Girls Idol Festival Tokyo～ DAY-3",
-      "start": "2026-11-29T13:00:00+09:00",
-      "end": null,
-      "location": "SGCホール有明／TOYOTA ARENA TOKYO",
+      "start": "2026-11-29T14:10:00+09:00",
+      "end": "2026-11-29T15:00:00+09:00",
+      "location": "SGCホール有明",
       "sourceUrl": "https://madeintohoku.com/contents/1101783",
-      "note": "開場11:30、開演13:00予定。個別出演時刻と出演会場は本文で未確定。",
-      "evidence": "本人公式の開催日・本文記載を確認。",
+      "note": "いぎなり東北産の出演枠は14:10〜15:00。イベント全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMAのSPECIAL3無料配信を案内：https://abema.go.link/kWQg5",
+      "evidence": "本人公式の個別出演時刻・会場と配信案内を確認。公演全体の開始時刻と区別。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-19T08:45:31.941Z",
+      "checkedAt": "2026-11-19T09:46:35.640Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -12494,7 +12494,7 @@
         {
           "url": "https://madeintohoku.com/contents/1101783",
           "type": "artist_official",
-          "checkedAt": "2026-11-19T08:45:31.941Z"
+          "checkedAt": "2026-11-19T09:46:35.640Z"
         }
       ]
     },
@@ -12759,6 +12759,90 @@
           "checkedAt": "2026-11-19T08:45:31.941Z"
         }
       ]
+    },
+    {
+      "id": "tohokusan-arena-goods-deadline-20261124",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "初！いぎなりアリーナライブ グッズ事前通販締切",
+      "start": "2026-11-24T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "MAILIVIS",
+      "note": "受付期間は11/18 12:00〜11/24 23:59。在庫限りで、期間中でも予定数に達すると終了。12/11発送完了予定。",
+      "evidence": "本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。",
+      "sourceUrl": "https://madeintohoku.com/contents/1127632",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1127632",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T09:46:35.640Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T09:46:35.640Z",
+      "timings": [],
+      "deadline": "2026-11-24T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-arena-goods-deadline-20261124"
+    },
+    {
+      "id": "tohokusan-yearend-benefit-20261212",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "いぎなり年末大特典会2026",
+      "start": "2026-12-12",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "錦糸町マルイ8F すみだ産業会館",
+      "note": "生誕祭衣装でのABランダムツーショット会。ライブ・トークなし。開始時刻など追加詳細は未発表。",
+      "evidence": "本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。",
+      "sourceUrl": "https://madeintohoku.com/contents/1127435",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1127435",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T09:46:35.640Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T09:46:35.640Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-yearend-benefit-20261212"
+    },
+    {
+      "id": "tohokusan-jre-train-20270130",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "いぎなりちゃん・とうほくちゃんと行く！まるごと列車イベント",
+      "start": "2027-01-30",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "岩手県内の駅（調整中）〜東北新幹線〜古川駅",
+      "note": "限定有料イベント。16:00頃に岩手県内の駅で受付、19:30頃に古川駅で解散予定。概算時刻のため時刻欄には採用せず。スタンプラリー応募の当選者向け旅行商品で、通常の自由参加イベントではありません。",
+      "evidence": "本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。",
+      "sourceUrl": "https://madeintohoku.com/contents/1108805",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1108805",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T09:46:35.640Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T09:46:35.640Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-jre-train-20270130"
     }
   ],
   "notes": [
