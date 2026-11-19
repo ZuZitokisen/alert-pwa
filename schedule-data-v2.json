@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-20-dolltto-benefit-details",
-  "generatedAt": "2026-11-19T11:38:43.678Z",
+  "version": "2026-11-20-rij-day4",
+  "generatedAt": "2026-11-19T13:01:28.048Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -11221,6 +11221,53 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-tv-asahi-ariake-complete-20261226"
+    },
+    {
+      "id": "tokisen-rij-day4-stream-20261122",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "ROCK IN JAPAN特番 DAY4（超とき宣19:25頃）",
+      "start": "2026-11-22T19:25:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "STREAM",
+      "location": "YouTube・JフェスOFFICIAL",
+      "note": "9/20公演のライブ映像を配信する特番。番組全体は17:00開始、超ときめき♡宣伝部は19:25頃の目安。公式表は見逃し防止のため少し早めの時刻を掲載しており、実際の配信時刻は前後します。終了時刻は未確認。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc",
+      "evidence": "主催者公式タイムテーブルで出演目安を確認。本人公式の同枠告知は未確認のため「かも？」。時刻は確定値ではありません。",
+      "sourceUrl": "https://rijfes.jp/2026/news/4099/",
+      "sources": [
+        {
+          "url": "https://rijfes.jp/2026/news/4099/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-19T13:01:28.048Z"
+        },
+        {
+          "url": "https://rijfes.s3.amazonaws.com/2026/img/news/rijf2026_tt_day4.jpg",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-19T13:01:28.048Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hUqVHmDGdKc",
+          "type": "organizer_official_channel",
+          "checkedAt": "2026-11-19T13:01:28.048Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T13:01:28.048Z",
+      "timings": [
+        {
+          "kind": "broadcast_start",
+          "label": "番組全体の配信開始",
+          "at": "2026-11-22T17:00:00+09:00",
+          "status": "possible",
+          "note": "本人の出演時刻とは別。"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-rij-day4-stream-20261122",
+      "dateLabel": "出演目安19:25頃（番組全体17:00開始）"
     }
   ],
   "notes": [
