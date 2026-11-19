@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-merch-and-magazine",
-  "dataGeneratedAt": "2026-11-19T10:44:22.242Z",
-  "inputSha256": "ffc40e3cc60279ee0049cbc82cb0303ec57ca55a6a4fdde26af7cc9bee004b52",
+  "dataVersion": "2026-11-20-dolltto-benefit-details",
+  "dataGeneratedAt": "2026-11-19T11:38:43.678Z",
+  "inputSha256": "934ef7811addf648cf745a1f1323f1c1e84e3873a29de74c4b0edde4e48705a5",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2974,16 +2974,19 @@
         "start": "2026-11-21T20:00:00+09:00",
         "end": "2026-11-21T21:00:00+09:00",
         "allDay": false,
-        "location": "大須Dt.BLD 特典会A",
-        "publicNote": "特典会会場は大須Dt.BLD 1F〜3F。詳細な参加条件は未公表。\n本人公式サイトの掲載を確認。時刻の意味や未発表事項は注記に記載。",
+        "location": "大須Dt.BLD 1F A",
+        "publicNote": "特典会は大須Dt.BLDの1F・A区画。20:00から対象商品を購入すると、税込3,000円ごとに2ショット撮影1回分。参加券・生写真はなくなり次第終了。複数回分はまとめて撮影し、参加券は当日限り。予定枠は20:00〜21:00だが、列が途切れ次第終了。受付・リストバンド交換はElectricLadyLandの受付1か所で、特典会会場とは別。\n本人公式の最新スケジュールで区画・購入開始時刻・参加条件を確認。受付とリストバンド交換場所は主催者公式も照合。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://straight-angeli.com/news/item-1278/"
-        ]
+          "https://dollttofes.info/ticket/",
+          "https://straight-angeli.com/news/item-1278/",
+          "https://straight-angeli.com/schedule/item-1280/"
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1278/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-12T04:28:17Z",
-      "modified": "2026-11-12T04:28:17Z",
+      "modified": "2026-11-19T11:38:43.678Z",
       "lastTiming": {
         "start": "2026-11-21T20:00:00+09:00",
         "end": "2026-11-21T21:00:00+09:00",
@@ -11265,5 +11268,5 @@
       ]
     }
   ],
-  "integritySha256": "c4c6d03cf8944393eb80a51c4811353c283d592f239cb8d09bb0dbfc0abb4971"
+  "integritySha256": "74e299e0da8c85232cbd7287be534f53b35580881829c4e13be45ce535ef08ae"
 }

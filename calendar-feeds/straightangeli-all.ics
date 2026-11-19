@@ -25,18 +25,24 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-e16f69cd5a99a1a21fb8a46ba30be61bd6b24345fb277c0c5c4fdb70abab6
  48a@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261112T042817Z
+DTSTAMP:20261119T113843Z
 CREATED:20261112T042817Z
-LAST-MODIFIED:20261112T042817Z
-SEQUENCE:0
+LAST-MODIFIED:20261119T113843Z
+SEQUENCE:1
 DTSTART:20261121T110000Z
 DTEND:20261121T120000Z
 SUMMARY:DOLLttoFes2026 Straight Angeli 特典会
-DESCRIPTION:特典会会場は大須Dt.BLD 1F〜3F。詳細な参加条件
- は未公表。\n本人公式サイトの掲載を確認。時刻の意味
- や未発表事項は注記に記載。\nhttps://straight-angeli.com/news/
- item-1278/
-LOCATION:大須Dt.BLD 特典会A
+DESCRIPTION:特典会は大須Dt.BLDの1F・A区画。20:00から対象商
+ 品を購入すると、税込3\,000円ごとに2ショット撮影1回分
+ 。参加券・生写真はなくなり次第終了。複数回分はま
+ とめて撮影し、参加券は当日限り。予定枠は20:00〜21:00
+ だが、列が途切れ次第終了。受付・リストバンド交換
+ はElectricLadyLandの受付1か所で、特典会会場とは別。\n本
+ 人公式の最新スケジュールで区画・購入開始時刻・参
+ 加条件を確認。受付とリストバンド交換場所は主催者
+ 公式も照合。\nhttps://dollttofes.info/ticket/\nhttps://straight-ange
+ li.com/news/item-1278/\nhttps://straight-angeli.com/schedule/item-1280/
+LOCATION:大須Dt.BLD 1F A
 URL:https://straight-angeli.com/news/item-1278/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT

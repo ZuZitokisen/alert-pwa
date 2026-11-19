@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-merch-and-magazine",
-  "dataGeneratedAt": "2026-11-19T10:44:22.242Z",
+  "dataVersion": "2026-11-20-dolltto-benefit-details",
+  "dataGeneratedAt": "2026-11-19T11:38:43.678Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "ffc40e3cc60279ee0049cbc82cb0303ec57ca55a6a4fdde26af7cc9bee004b52",
+  "inputSha256": "934ef7811addf648cf745a1f1323f1c1e84e3873a29de74c4b0edde4e48705a5",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all.ics",
       "count": 38,
       "omittedUnknownDate": 0,
-      "sha256": "d881b52cba68c74b35db6148946d83f8fdd2319892ce9a44fe407cada492b106"
+      "sha256": "919615e66cb9716fd923d09cea2647a91a0af291375dd4f3c8272e18ee5759eb"
     },
     {
       "id": "straightangeli-live",
@@ -138,7 +138,7 @@
       "path": "calendar-feeds/straightangeli-benefit.ics",
       "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "c9c4cc7d9235616bf08df2d94fe5e408e3fafcab13c812bebd5f104aebff89b8"
+      "sha256": "445f022267a6cb6039f4024ebd7c3d96261da6d5631dd5b56aff2bdb14bc1290"
     },
     {
       "id": "straightangeli-media",
