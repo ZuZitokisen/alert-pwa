@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-dolltto-benefit-details",
-  "dataGeneratedAt": "2026-11-19T11:38:43.678Z",
-  "inputSha256": "934ef7811addf648cf745a1f1323f1c1e84e3873a29de74c4b0edde4e48705a5",
+  "dataVersion": "2026-11-20-rij-day4",
+  "dataGeneratedAt": "2026-11-19T13:01:28.048Z",
+  "inputSha256": "9cf0fe9077b255882e8537d7946b9caa07ad032c868ea513efee3bc067704fee",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -10389,6 +10389,40 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-rij-day4-stream-20261122\"]",
+      "uid": "public-v1-a1d0850d90f8318ecb6129848776a8afeecaa0fc8655439d00c174b92eab6688@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-rij-day4-stream-20261122",
+        "category": "media",
+        "title": "ROCK IN JAPAN特番 DAY4（超とき宣19:25頃）",
+        "start": "2026-11-22T19:25:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "YouTube・JフェスOFFICIAL",
+        "publicNote": "9/20公演のライブ映像を配信する特番。番組全体は17:00開始、超ときめき♡宣伝部は19:25頃の目安。公式表は見逃し防止のため少し早めの時刻を掲載しており、実際の配信時刻は前後します。終了時刻は未確認。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc\n主催者公式タイムテーブルで出演目安を確認。本人公式の同枠告知は未確認のため「かも？」。時刻は確定値ではありません。\n出演目安19:25頃（番組全体17:00開始）",
+        "status": "possible",
+        "sourceUrls": [
+          "https://rijfes.jp/2026/news/4099/",
+          "https://rijfes.s3.amazonaws.com/2026/img/news/rijf2026_tt_day4.jpg",
+          "https://www.youtube.com/watch?v=hUqVHmDGdKc"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T13:01:28.048Z",
+      "modified": "2026-11-19T13:01:28.048Z",
+      "lastTiming": {
+        "start": "2026-11-22T19:25:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-sdd-20270110-2027-01-10\"]",
       "uid": "public-v1-67d492c9fb038133595c1f28a28ebf09451d731124ba018df0e8a1d4e971b9ac@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -11268,5 +11302,5 @@
       ]
     }
   ],
-  "integritySha256": "74e299e0da8c85232cbd7287be534f53b35580881829c4e13be45ce535ef08ae"
+  "integritySha256": "1f271bc75892127cd960c676b00e0c3d49b0f7c84fc35b916eb09398faefccfa"
 }

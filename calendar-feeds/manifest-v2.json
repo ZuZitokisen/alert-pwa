@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-dolltto-benefit-details",
-  "dataGeneratedAt": "2026-11-19T11:38:43.678Z",
+  "dataVersion": "2026-11-20-rij-day4",
+  "dataGeneratedAt": "2026-11-19T13:01:28.048Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "89dc3b4920696885d255e91769cbf0c7b70400e5ee12d0ace6232b3397280813",
+  "inputSha256": "79845facc49fc8ad73573d903ecf687e65932f1ee60357aea379f7b0ee4e301d",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 189,
+      "count": 190,
       "omittedUnknownDate": 11,
-      "sha256": "0fb1219275b37dadb3bfa541b51061a2daafae9009e0fc0e993d3584788b694e"
+      "sha256": "da397cd577b06d42a8550e4054916db478b95006b8f3a22a8f0c04782c9ce358"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media.ics",
-      "count": 118,
+      "count": 119,
       "omittedUnknownDate": 2,
-      "sha256": "fdda0a1a5ae2d46c15bf8fb23f7902894bfd2de784851b791f1fc4ced30ecf5f"
+      "sha256": "70f297db18663eb925b358a8f88cd799db099e50fd4512a3996c1b8574884619"
     },
     {
       "id": "tokisen-other",
