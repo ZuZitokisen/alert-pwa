@@ -26,20 +26,22 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-102eef82531fb3237a614fd8574e73f5a2612a8aa2578e26f61e5377f6a3e
  8af@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261118T163521Z
+DTSTAMP:20261119T131500Z
 CREATED:20261118T163521Z
-LAST-MODIFIED:20261118T163521Z
-SEQUENCE:0
+LAST-MODIFIED:20261119T131500Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261211
 SUMMARY:FM FUJI「秋本帆華のウルトラGT」初の音楽イベント
  ～ULTRA GT FES 2026～（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n本人公式スケジュールの日付を確認。開始・終了時
- 刻と会場は自動抽出対象外。\n本人公式スケジュール詳
- 細のイベント日付属性・見出し・カテゴリ。公開日を
- 開催日として使用していません。\nhttps://re-ge.com/schedule/
- item-819/
-LOCATION:
+ 。\n本人公式で12/11開催と渋谷ストリームホールを確認
+ 。桧山ゆうみは別件のため欠席と告知。開始・終了時
+ 刻は未確認。\n本人公式スケジュール詳細のイベント日
+ 付属性・見出し・カテゴリ。公開日を開催日として使
+ 用していません。 本人公式ニュース本文で会場・欠席
+ 告知を補足。\nhttps://re-ge.com/news/item-818/\nhttps://re-ge.com/sc
+ hedule/item-819/
+LOCATION:渋谷ストリームホール
 URL:https://re-ge.com/schedule/item-819/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
