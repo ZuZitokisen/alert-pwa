@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-tohokusan-details",
-  "dataGeneratedAt": "2026-11-19T09:46:35.640Z",
-  "inputSha256": "b3b05b8d22c332a0b4d0f75be2544803a8c34b3cfa9d93d4276ee2bf487d3f62",
+  "dataVersion": "2026-11-20-merch-and-magazine",
+  "dataGeneratedAt": "2026-11-19T10:44:22.242Z",
+  "inputSha256": "ffc40e3cc60279ee0049cbc82cb0303ec57ca55a6a4fdde26af7cc9bee004b52",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -624,6 +624,38 @@
       "memberships": [
         "oneloveoneheart-all",
         "oneloveoneheart-benefit"
+      ]
+    },
+    {
+      "key": "[\"oneloveoneheart\",\"curated-calendar\",\"oneloveoneheart-scawaii-20261217\"]",
+      "uid": "public-v1-9eddecca18028fe39d914967e8120ced6b65c9c142bc749a56cf35dd2346abe1@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "oneloveoneheart",
+        "source": "curated-calendar",
+        "id": "oneloveoneheart-scawaii-20261217",
+        "category": "other",
+        "title": "女子メンバー掲載「S Cawaii! 2027年2月号」発売",
+        "start": "2026-12-17",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "飯塚瑠乃・イーチ・佐々木杏莉・藤咲碧羽・矢嶋由菜が掲載。発売日のみを登録。購入先ごとの販売時刻は設定していません。\n本人公式の発売日・掲載メンバー告知を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://oneloveoneheart.jp/news/news-7368/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-19T10:44:22.242Z",
+      "modified": "2026-11-19T10:44:22.242Z",
+      "lastTiming": {
+        "start": "2026-12-17",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "oneloveoneheart-all",
+        "oneloveoneheart-other"
       ]
     },
     {
@@ -2714,15 +2746,16 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "本人側の公式発表で確認。",
+        "publicNote": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://re-ge.com/news/item-716/"
+          "https://re-ge.com/news/item-716/",
+          "https://re-ge.com/news/item-809/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-19T10:44:22.242Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -4633,15 +4666,16 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。\n本人公式の開催日・本文記載を確認。",
+        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。\n本人公式の開催日・本文記載を確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://madeintohoku.com/contents/1117445"
+          "https://madeintohoku.com/contents/1117445",
+          "https://madeintohoku.com/contents/1129171"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-19T08:45:31.941Z",
-      "modified": "2026-11-19T08:45:31.941Z",
+      "modified": "2026-11-19T10:44:22.242Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -11231,5 +11265,5 @@
       ]
     }
   ],
-  "integritySha256": "72e22803f63eeb8b71f73797d3187b1fda50c3b7d6d85883527bec51915e8285"
+  "integritySha256": "c4c6d03cf8944393eb80a51c4811353c283d592f239cb8d09bb0dbfc0abb4971"
 }

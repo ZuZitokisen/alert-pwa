@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-20-tohokusan-details",
-  "generatedAt": "2026-11-19T09:46:35.640Z",
+  "version": "2026-11-20-merch-and-magazine",
+  "generatedAt": "2026-11-19T10:44:22.242Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2598,7 +2598,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "ザ・ガーデンホール",
-      "note": "",
+      "note": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/news/item-716/",
       "sources": [
@@ -2606,9 +2606,14 @@
           "url": "https://re-ge.com/news/item-716/",
           "type": "artist_official",
           "checkedAt": "2026-11-11T09:29:45Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-809/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T10:44:22.242Z"
         }
       ],
-      "checkedAt": "2026-11-11T09:29:45Z",
+      "checkedAt": "2026-11-19T10:44:22.242Z",
       "timings": [
         {
           "label": "全体開場",
@@ -2628,6 +2633,27 @@
           "label": "一般発売開始",
           "kind": "ticket_sales_start",
           "at": "2026-10-31T10:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE先行物販開始",
+          "kind": "goods_sales_start",
+          "at": "2026-11-24T14:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE先行物販終了",
+          "kind": "goods_sales_end",
+          "at": "2026-11-24T15:30:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "RE-GE開場後物販開始",
+          "kind": "goods_sales_start",
+          "at": "2026-11-24T16:00:00+09:00",
           "note": "",
           "status": "confirmed"
         }
@@ -12273,6 +12299,34 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-tv-asahi-ariake-complete-20261226"
+    },
+    {
+      "id": "oneloveoneheart-scawaii-20261217",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "女子メンバー掲載「S Cawaii! 2027年2月号」発売",
+      "start": "2026-12-17",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "",
+      "note": "飯塚瑠乃・イーチ・佐々木杏莉・藤咲碧羽・矢嶋由菜が掲載。発売日のみを登録。購入先ごとの販売時刻は設定していません。",
+      "evidence": "本人公式の発売日・掲載メンバー告知を確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/news/news-7368/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/news/news-7368/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T10:44:22.242Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T10:44:22.242Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-scawaii-20261217"
     }
   ],
   "notes": [
