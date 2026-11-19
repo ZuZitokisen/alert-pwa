@@ -186,7 +186,7 @@ function changeCard(change){
  const original=change.after||change.before,e=uiEvent(change.kind==='unavailable'?{...original,present:false}:original),node=card(e);
  const open=node.querySelector('.card-open');open.onclick=()=>openChange(change);open.setAttribute('aria-label',`${e.title}の変更内容`);
  const detail=change.kind==='updated'?[...new Set((change.fields||[]).map(key=>['start','end','allDay'].includes(key)?'日時変更':(fields[key]||key)+'変更'))].join('・'):'';
- node.querySelector('.card-bottom-note').textContent=change.kind==='unavailable'?'中止とは判断していません':[kindNames[change.kind]||'更新',detail].filter(Boolean).join(' · ');
+ node.querySelector('.card-bottom-note').textContent=change.kind==='unavailable'?'中止とは判断していません':[change.kind==='new'?'New!':(kindNames[change.kind]||'更新'),detail].filter(Boolean).join(' · ');
  return node;
 }
 function renderChanges(){const list=state.changes.filter(c=>matchesArtist((c.after||c.before)?.artistId)).map(changeCard);$('#changes').replaceChildren(...(list.length?list:[el('p','新着・変更はまだありません。','empty')]));}
@@ -227,9 +227,16 @@ if($('#detail').open)closeDialog();
 if(view!==previousView&&(view==='changes'||previousView==='changes')){window.scrollTo({top:0,left:0,behavior:'instant'});$('#view-title').focus({preventScroll:true});}
 }
 
+// Re-activating the visible tab must not trigger a native fragment scroll.
+function preventActiveTabNavigation(event){
+ if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+ if(event.currentTarget.dataset.view===view)event.preventDefault();
+}
+
 $('#detail').addEventListener('close',onDialogClosed);$('#close-detail').onclick=closeDialog;$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
 $('#open-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#about-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#agenda-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);
 $('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-search').oninput=renderAgenda;$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('#month-label').onclick=selectMonth;$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)selectDay(day.dataset.date);};
 function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+direction);period=F.dateKey(d.toISOString()).slice(0,7)+'-01';selectedDate=period;agendaRange='month';selectedWeekStart=null;renderCalendar();}
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
+document.querySelectorAll('[data-view]').forEach(link=>link.addEventListener('click',preventActiveTabNavigation));
 $('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});
