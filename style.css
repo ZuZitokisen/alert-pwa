@@ -196,3 +196,8 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 @media(min-width:701px){html:not(.dialog-scroll-locked){scrollbar-gutter:stable}}
 /* Let the same event keep its natural height even beside a longer title. */
 .cards > .event-card{align-self:start}
+
+/* Center the 30px heart disc between the footer rule and card bottom; retain its 44px hit target. */
+.event-card .card-body{padding-bottom:8px}
+.event-card .card-actions{padding-top:8px}
+.event-card .favorite-button{position:relative;right:auto;bottom:auto;flex-shrink:0;margin:-7px -14px -7px 0}
