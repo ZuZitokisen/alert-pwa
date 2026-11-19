@@ -247,3 +247,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .day-cell.month-edge-top.month-edge-right::after{border-top-right-radius:4px}
 .day-cell.month-edge-bottom.month-edge-left::after{border-bottom-left-radius:4px}
 .day-cell.month-edge-bottom.month-edge-right::after{border-bottom-right-radius:4px}
+
+/* Suppress date double-tap zoom only; manipulation retains pinch zoom. */
+.day-cell,.day-cell .date-button{touch-action:manipulation}
+#agenda-title{scroll-margin-top:24px}
+/* Align the Schedule certainty filters as one wrapping group. */
+#calendar-view .agenda-panel>.filter-pills{justify-content:flex-end;flex-wrap:wrap}
