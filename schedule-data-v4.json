@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-20-rij-day4",
-  "generatedAt": "2026-11-19T13:01:28.048Z",
+  "version": "2026-11-20-watch22-details",
+  "generatedAt": "2026-11-19T13:15:00.527Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12181,18 +12181,23 @@
       "allDay": false,
       "status": "confirmed",
       "category": "EVENT",
-      "location": "",
-      "note": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。",
-      "evidence": "本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+      "location": "渋谷ストリームホール",
+      "note": "本人公式で12/11開催と渋谷ストリームホールを確認。桧山ゆうみは別件のため欠席と告知。開始・終了時刻は未確認。",
+      "evidence": "本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。 本人公式ニュース本文で会場・欠席告知を補足。",
       "sourceUrl": "https://re-ge.com/schedule/item-819/",
       "sources": [
         {
           "url": "https://re-ge.com/schedule/item-819/",
           "type": "artist_official",
           "checkedAt": "2026-11-18T16:35:21.311Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-818/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T13:15:00.527Z"
         }
       ],
-      "checkedAt": "2026-11-18T16:35:21.311Z",
+      "checkedAt": "2026-11-19T13:15:00.527Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -12485,14 +12490,14 @@
       "end": null,
       "location": "ザ・ガーデンホール",
       "sourceUrl": "https://madeintohoku.com/contents/1117445",
-      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。",
+      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。",
       "evidence": "本人公式の開催日・本文記載を確認。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-19T10:44:22.242Z",
+      "checkedAt": "2026-11-19T13:15:00.527Z",
       "timings": [
         {
           "label": "東北産CD先行販売開始",
@@ -12521,6 +12526,27 @@
           "at": "2026-11-24T17:00:00+09:00",
           "note": "",
           "status": "confirmed"
+        },
+        {
+          "label": "東北産グッズ先行販売開始",
+          "kind": "goods_sales_start",
+          "at": "2026-11-24T14:00:00+09:00",
+          "status": "confirmed",
+          "note": "CD販売の時間枠とは別。"
+        },
+        {
+          "label": "東北産グッズ先行販売終了",
+          "kind": "goods_sales_end",
+          "at": "2026-11-24T15:30:00+09:00",
+          "status": "confirmed",
+          "note": "CD販売の時間枠とは別。"
+        },
+        {
+          "label": "東北産グッズ開場後販売開始",
+          "kind": "goods_sales_start",
+          "at": "2026-11-24T16:00:00+09:00",
+          "status": "confirmed",
+          "note": "CD販売の時間枠とは別。"
         }
       ],
       "deadline": null,
@@ -12537,6 +12563,11 @@
           "url": "https://madeintohoku.com/contents/1129171",
           "type": "artist_official",
           "checkedAt": "2026-11-19T10:44:22.242Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1128759",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T13:15:00.527Z"
         }
       ]
     },
@@ -12988,6 +13019,34 @@
       "present": true,
       "groupId": "tokisen-rij-day4-stream-20261122",
       "dateLabel": "出演目安19:25頃（番組全体17:00開始）"
+    },
+    {
+      "id": "tohokusan-letter-eligibility-20261123",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "11月生まれ会員限定「いぎなりレター」抽選対象基準日",
+      "start": "2026-11-23T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "いぎなり東北ファン倶楽部",
+      "note": "11月生まれで11/23 23:59までに入会した会員が抽選対象。入会時登録の誕生日と同時点の登録住所を使用。抽選で10名にカード等を送付し、当選発表は発送をもって行う。全会員向けの申込締切や参加確約ではありません。",
+      "evidence": "ログイン不要の本人公式告知にある対象条件と基準日時を確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1129140",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1129140",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T13:15:00.527Z"
+        }
+      ],
+      "checkedAt": "2026-11-19T13:15:00.527Z",
+      "timings": [],
+      "deadline": "2026-11-23T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-letter-eligibility-20261123"
     }
   ],
   "notes": [
