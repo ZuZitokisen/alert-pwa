@@ -204,3 +204,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 
 /* Give each artist mark equal breathing room inside the ALL outline. */
 #artist-filters[data-all-selected=true]::before{top:2px;bottom:2px}
+
+/* Release navigation: reuse existing menu symbols without changing the shell layout. */
+#view-title{display:flex;align-items:center;gap:10px}
+.view-title-icon{font-size:.8em;line-height:1;letter-spacing:0;flex:none}
+.app-history-link{margin:0 0 18px;background:transparent;text-align:left}
+#app-release-history{scroll-margin-top:20px}

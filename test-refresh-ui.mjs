@@ -29,7 +29,7 @@ test('startup refresh completion reports only successful data fetches',async()=>
  const f=fixture();await f.run('refresh({notice:true})');assert.match(f.messages[0],/再読み込みしました/);
  f.messages.length=0;f.context.scheduleRequest=async()=>({ok:false,json:async()=>({...f.context.state,baselineReady:true})});await f.run('refresh({notice:true})');assert.match(f.messages[0],/取得できません/);assert.ok(!f.messages.join().includes('再読み込みしました'));
 });
-test('manual app refresh differs from automatic data-only refresh',()=>{
- assert.match(source,/\$\('#refresh'\)\.onclick=refreshApp/);assert.match(source,/visibilitychange',\(\)=>\{if\(!document.hidden\)refresh\(\)/);assert.match(source,/register\('\.\/sw.js',\{updateViaCache:'none'\}\)/);
+test('manual app refresh differs from automatic data and release-metadata checks',()=>{
+ assert.match(source,/\$\('#refresh'\)\.onclick=refreshApp/);assert.match(source,/visibilitychange',\(\)=>\{if\(!document.hidden\)\{refresh\(\);checkAppRelease\(\);\}\}/);assert.match(source,/register\('\.\/sw.js',\{updateViaCache:'none'\}\)/);
  const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');assert.ok(html.indexOf('pwa-update.js')<html.indexOf('app.js'));assert.match(html,/aria-label="アプリと予定を更新"/);
 });

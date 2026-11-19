@@ -11,7 +11,7 @@ function style(initial={}){
 }
 function fixture({x=0,y=460,gap=0,bodyStyle={},rootStyle={},hadClass=false,throwOnOpen=false}={}){
  const body={style:style(bodyStyle)},classes=new Set(hadClass?['dialog-scroll-locked']:[]),root={style:style(rootStyle),clientWidth:390-gap,classList:{contains:k=>classes.has(k),add:k=>classes.add(k),remove:k=>classes.delete(k)}};
- const detail={open:false,scrollTop:175,opens:0,closes:0,showModal(){this.opens++;if(throwOnOpen)throw Error('open failed');this.open=true;context.window.scrollX=0;context.window.scrollY=0;},close(){this.open=false;this.closes++;}};
+ const detail={setAttribute(){},open:false,scrollTop:175,opens:0,closes:0,showModal(){this.opens++;if(throwOnOpen)throw Error('open failed');this.open=true;context.window.scrollX=0;context.window.scrollY=0;},close(){this.open=false;this.closes++;}};
  const calls=[],context={document:{body,documentElement:root},window:{scrollX:x,scrollY:y,innerWidth:390,scrollTo(a,b){calls.push([a,b]);this.scrollX=a;this.scrollY=b;}},getComputedStyle:()=>({paddingRight:body.style.getPropertyValue('padding-right')||'0px'}),$:(selector)=>{assert.equal(selector,'#detail');return detail;}};
  vm.createContext(context);vm.runInContext(dialogSource,context);
  return {context,body,root,classes,detail,calls,run:code=>vm.runInContext(code,context)};

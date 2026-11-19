@@ -7,12 +7,26 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
+const APP_RELEASE='0.7.12';
 const getArtist=id=>artists.find(a=>a.id===id);
 const readKey=artists.some(a=>a.id==='oneloveoneheart')?'alert-pwa-curated-read-v3':'alert-pwa-curated-read-v2';
 let state={events:[],changes:[],sources:[],outboxCount:0},artist='all',selectedArtists=new Set(),filter='all',agendaFilter='all',agendaRange='day',selectedWeekStart=null,view='calendar',returnView='calendar';
 let selectedDate=F.dateKey(new Date().toISOString()),period=selectedDate.slice(0,7)+'-01',requestGeneration=0,mutating=false,toastTimer,storageFailed=false;
 function stored(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{storageFailed=true;return fallback;}}
 function save(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true;}catch{storageFailed=true;renderStorage();toast('保存領域を利用できません。この画面でのみ設定を保持します。');return false;}}
+const ARTIST_SELECTION_KEY='alert-pwa-artist-selection-v1';
+function restoreArtistSelection(){
+ const saved=stored(ARTIST_SELECTION_KEY,[]);
+ selectedArtists=new Set(Array.isArray(saved)&&saved.every(id=>typeof id==='string'&&artists.some(a=>a.id===id))?saved:[]);
+ artist=selectedArtists.size===1?[...selectedArtists][0]:'all';
+}
+function chooseArtist(id){
+ if(id!=='all'&&!artists.some(a=>a.id===id))return;
+ if(id==='all')selectedArtists.clear();else if(selectedArtists.has(id))selectedArtists.delete(id);else selectedArtists.add(id);
+ artist=selectedArtists.size===1?[...selectedArtists][0]:'all';
+ save(ARTIST_SELECTION_KEY,[...selectedArtists]);
+}
+restoreArtistSelection();
 const storedFavorites=stored('alert-pwa-favorites-v1',[]),storedSelected=stored('alert-pwa-selected-v1',[]),storedReminders=stored('alert-pwa-reminders-v2',{});
 let favorites=new Set(Array.isArray(storedFavorites)?storedFavorites:[]),selected=new Set(Array.isArray(storedSelected)?storedSelected:[]),reminders=storedReminders&&typeof storedReminders==='object'&&!Array.isArray(storedReminders)?storedReminders:{},readThrough=readMarker();
 let morningTime=stored('alert-pwa-morning-v1','08:00');if(typeof morningTime!=='string'||!/^([01]\d|2[0-3]):[0-5]\d$/.test(morningTime))morningTime='08:00';
@@ -55,8 +69,7 @@ function renderArtists(){
   button.setAttribute('aria-pressed',String(a.id==='all'?selectedArtists.size===0:selectedArtists.has(a.id)));button.setAttribute('aria-label',a.name);
   const label=button.querySelector('.artist-label'),name=a.id==='all'?'ALL':a.buttonName||a.name;if(label.textContent!==name)label.textContent=name;
   button.onclick=()=>{
-   if(a.id==='all')selectedArtists.clear();else if(selectedArtists.has(a.id))selectedArtists.delete(a.id);else selectedArtists.add(a.id);
-   artist=selectedArtists.size===1?[...selectedArtists][0]:'all';
+   chooseArtist(a.id);
    render();button.focus({preventScroll:true});
   };
   return button;
@@ -114,7 +127,7 @@ function openDialog(){
  try{detail.showModal();detail.scrollTop=0;}catch(error){unlockDialogScroll();throw error;}
 }
 function closeDialog(){$('#detail').close();unlockDialogScroll();}
-function onDialogClosed(){if(!$('#detail').open)unlockDialogScroll();}
+function onDialogClosed(){if(!$('#detail').open){unlockDialogScroll();$('#detail').setAttribute('aria-label','予定と通知の詳細');}}
 
 function openEvent(e){const area=$('#detail-content');area.dataset.panel='event';area.replaceChildren(statusBadge(e),el('h2',e.title),el('p',getArtist(e.artistId)?.name||'サンプル','detail-meta'),el('p',timing(e)),el('p',e.location||'場所未定'),el('p',e.note));if(e.deadline)area.append(el('p','正式締切 '+prettyDate(e.deadline)));const actions=el('div','','detail-actions');const fav=favoriteButton(e);fav.onclick=()=>{toggleFavorite(e);openEvent(e);$('#detail-content .favorite-button')?.focus({preventScroll:true});};actions.append(fav);const exportButton=el('button','本体カレンダーに追加','primary');exportButton.onclick=()=>openSubscriptions(e.artistId);actions.append(exportButton);area.append(actions);if(exportButton.disabled)area.append(el('p',F.exportEligibility(e).label||'日時未定・中止・掲載消失の情報は出力できません。','hint'));area.append(el('h3','判断の根拠'),el('p',e.evidence||'根拠未登録','evidence'));if(e.present===false)area.append(el('p','元ページから掲載がなくなりました。中止とは確定していません。'));appendSourcesAndTimes(area,e);
 const box=el('div','','reminder-box');box.append(el('h3','通知時刻の確認'));const label=el('label','リマインド例 '),select=document.createElement('select');select.setAttribute('aria-label','リマインド設定例');for(const [value,title] of [['off','設定しない'],['morning1h',`朝${morningTime}＋開始1時間前`],...(e.deadline?[['deadline2',`朝${morningTime}＋締切前`]]:[])]){const o=el('option',title);o.value=value;select.append(o);}const key=F.stableEventKey(e);select.value=reminders[key]||'off';select.disabled=!e.start||(!e.allDay&&e.start.length===10)||e.present===false||e.status==='cancelled';select.onchange=()=>{reminders[key]=select.value;save('alert-pwa-reminders-v2',reminders);openEvent(e);toast('通知時刻の設定例を保存しました。実通知は未接続です。');};label.append(select);box.append(label);if(select.value!=='off'&&!select.disabled){const plan=F.reminderTimes(e,{mode:select.value,morningTime,now:new Date().toISOString()});for(const t of plan.times)box.append(el('p',`${prettyDate(t.at)} · ${t.label}`));for(const u of plan.unresolved)box.append(el('p',u.label||'時刻の確認が必要です。','hint'));if(!plan.times.length)box.append(el('p','これからの通知候補はありません。過去の通知や開始後の朝通知は出しません。','hint'));}box.append(el('p','時刻のプレビューです。通知は予約・配信されません。','hint'));area.append(box);
@@ -197,6 +210,42 @@ let appUpdating=false;
 const APP_RELOAD_NOTICE='alert-pwa-reload-notice-v1';
 function rememberAppReload(){try{sessionStorage.setItem(APP_RELOAD_NOTICE,String(Date.now()));}catch{}}
 function takeAppReloadNotice(){try{const at=Number(sessionStorage.getItem(APP_RELOAD_NOTICE));sessionStorage.removeItem(APP_RELOAD_NOTICE);return at>0&&Date.now()-at>=0&&Date.now()-at<60000;}catch{return false;}}
+function openAppHistory(){
+ if($('#detail').open)closeDialog();
+ if(location.hash!=='#changes')history.pushState(null,'','#changes');
+ route();
+ const heading=$('#app-release-history');
+ heading.scrollIntoView({block:'start',behavior:'instant'});heading.focus({preventScroll:true});
+}
+let availableAppRelease=null,releaseChecking=false;
+const shownAppReleases=new Set();
+function showAvailableAppRelease(){
+ if(!availableAppRelease||$('#detail').open||appUpdating)return false;
+ const area=$('#detail-content');area.dataset.panel='app-release';
+ area.replaceChildren(el('h2','v'+availableAppRelease.version+' が配信されました'));
+ for(const note of availableAppRelease.notes)area.append(el('p',note));
+ area.append(el('p','更新するまで、現在の画面をそのまま使えます。','hint'));
+ const actions=el('div','','detail-actions'),close=el('button','キャンセル'),update=el('button','更新する','primary');
+ close.onclick=closeDialog;update.onclick=()=>{closeDialog();refreshApp();};
+ actions.append(close,update);area.append(actions);openDialog();$('#detail').setAttribute('aria-label','アプリの更新案内');
+ shownAppReleases.add(availableAppRelease.version);
+ try{localStorage.setItem('alert-pwa-release-announced-v1',availableAppRelease.version);}catch{}
+ return true;
+}
+async function checkAppRelease(){
+ if(document.hidden||releaseChecking||!globalThis.AlertAppReleases)return;
+ releaseChecking=true;
+ try{
+  const release=await globalThis.AlertAppReleases.check(APP_RELEASE);
+  if(!release)return;
+  availableAppRelease=release;
+  const entry=$('#available-app-update');entry.hidden=false;entry.textContent='v'+release.version+' の更新内容を見る';
+  let alreadyShown=shownAppReleases.has(release.version);
+  try{alreadyShown=alreadyShown||localStorage.getItem('alert-pwa-release-announced-v1')===release.version;}catch{alreadyShown=true;}
+  if(!alreadyShown&&!document.hidden)showAvailableAppRelease();
+ }catch{}finally{releaseChecking=false;}
+}
+
 async function refreshApp(){
  if(appUpdating)return;
  appUpdating=true;
@@ -220,6 +269,8 @@ const hash=location.hash.slice(1),previousView=view;
 view=['calendar','cards','favorites','changes'].includes(hash)?hash:['about','settings'].includes(hash)?'changes':hash==='watch'?'cards':'calendar';
 const names={calendar:'Schedule',cards:'すべての予定',favorites:'Favorite',changes:'News'};
 $('#view-title').textContent=names[view];
+const menuIcon=$(`nav [data-view="${view}"] > span:first-child`);
+if(menuIcon){const icon=menuIcon.cloneNode(true);icon.className='view-title-icon';icon.setAttribute('aria-hidden','true');$('#view-title').prepend(icon);}
 const back=$('#back-to-view');back.hidden=view!=='cards';back.href='#changes';back.setAttribute('aria-label','Newsに戻る');
 document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!==`${view}-view`);
 document.querySelectorAll('[data-view]').forEach(a=>{a.classList.toggle('active',a.dataset.view===view);if(a.dataset.view===view)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
@@ -238,5 +289,6 @@ $('#open-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:
 $('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-search').oninput=renderAgenda;$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('#month-label').onclick=selectMonth;$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)selectDay(day.dataset.date);};
 function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+direction);period=F.dateKey(d.toISOString()).slice(0,7)+'-01';selectedDate=period;agendaRange='month';selectedWeekStart=null;renderCalendar();}
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
+$('#open-app-history').onclick=openAppHistory;$('#available-app-update').onclick=showAvailableAppRelease;
 document.querySelectorAll('[data-view]').forEach(link=>link.addEventListener('click',preventActiveTabNavigation));
-$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});
+$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);
