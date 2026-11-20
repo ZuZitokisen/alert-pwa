@@ -48,9 +48,27 @@ test('card-wide hit area leaves the favorite independent and keeps scroll gestur
  assert.match(css,/\.event-card \.card-open::after\{content:"";position:absolute;inset:0/);
  assert.match(css,/\.event-card \.favorite-button,\.event-card \.select-label\{z-index:1;touch-action:manipulation\}/);
  assert.match(css,/\.event-card \.card-open:active:not\(:disabled\)\{transform:none\}/);
- assert.ok(!/addEventListener\(['"](?:touchstart|pointerdown)['"]/.test(source));
+ assert.ok(!/addEventListener\(['"](?:touchstart|pointerdown)['"]/.test(source.slice(source.indexOf('function card('),source.indexOf('function appendSourcesAndTimes'))));
+ assert.match(source,/addEventListener\('touchstart',[^\n]+\{passive:true\}\)/);
 });
 test('favorite focus restoration explicitly avoids scrolling the page',()=>{
  assert.match(source,/target\?\.focus\(\{preventScroll:true\}\)/);
  assert.match(source,/\$\('#detail-content \.favorite-button'\)\?\.focus\(\{preventScroll:true\}\)/);
+});
+
+test('card opening starts by its origin and dismisses immediately, while reduced motion and noncard dialogs stay still',()=>{
+ const f=fixture(),calls=[];
+ f.detail.getBoundingClientRect=()=>({left:50,top:120,width:400,height:500});
+ f.detail.animate=(frames,options)=>{calls.push([frames,options]);return {cancel(){calls.push('cancel');}};};
+ f.context.origin={left:70,top:220,width:320,height:140};
+ f.run('openDialog(origin)');
+ assert.match(calls[0][0][0].transform,/translate\(-20px,-80px\) scale\(0\.8,0\.84\)/);
+ assert.equal(calls[0][0][1].transform,'none');
+ assert.equal(f.detail.open,true);
+ f.run('openDialog(origin)');assert.equal(calls.length,1);
+ f.run('closeDialog()');assert.equal(calls.at(-1),'cancel');assert.equal(f.detail.open,false);
+ f.context.window.matchMedia=()=>({matches:true});
+ f.run('openDialog(origin);closeDialog()');assert.equal(calls.length,2);
+ f.context.window.matchMedia=()=>({matches:false});
+ f.run('openDialog()');assert.equal(calls.length,2);
 });

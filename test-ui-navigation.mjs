@@ -72,3 +72,41 @@ test('opening Search exposes the input at the top, and legacy links can switch t
  assert.equal(prevented,false);
  f.go('#find');assert.equal(f.back.hidden,true);assert.equal(f.context.scrollCount,count+1);
 });
+
+test('mobile navigation stretches the decorative background in both directions only on route change',()=>{
+ const f=fixture(),nav={dataset:{}},lookup=f.context.$;
+ f.context.$=s=>s==='.sidebar nav'?nav:lookup(s);
+ f.go('#find');assert.equal(nav.dataset.slide,'right');
+ f.go('#favorites');assert.equal(nav.dataset.slide,'left');
+ f.go('#favorites');assert.equal(nav.dataset.slide,'left');
+ f.go('#changes');assert.equal(nav.dataset.slide,'right');
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/\.sidebar nav\[data-slide=left\]\{--nav-left-ease:var\(--nav-lead\);--nav-right-ease:var\(--nav-tail\)/);
+ assert.match(css,/\.sidebar nav:has\(a\.active\)::before\{[^}]*pointer-events:none[^}]*transition:left 330ms[^}]*right 330ms/);
+ assert.match(css,/@media\(prefers-reduced-motion:reduce\)\{\.sidebar nav:has\(a\.active\)::before\{transition:none/);
+});
+
+test('screen headings cannot be accidentally selected without blocking search or event content',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/#view-title\{-webkit-user-select:none;user-select:none\}/);
+ assert.doesNotMatch(css,/(?:#search|#detail-content)[^{}]*\{[^}]*user-select:none/);
+});
+
+test('Schedule gently aligns only near each heading and leaves deep card scrolling alone',()=>{
+ const from=source.indexOf('function scheduleSnapTarget('),to=source.indexOf('function initScheduleScroll(',from);
+ const c=vm.createContext({});vm.runInContext(source.slice(from,to),c);
+ const snap=y=>vm.runInContext('scheduleSnapTarget('+y+',[[0,60],[156,140]])',c);
+ assert.equal(snap(0),null);assert.equal(snap(2),null);
+ assert.equal(snap(135),156);assert.equal(snap(275),156);assert.equal(snap(781),null);
+ const agenda=(y,dir,top,bottom)=>vm.runInContext(`scheduleAgendaTarget(${y},860,${dir},{top:${top},bottom:${bottom}},740)`,c);
+ assert.equal(agenda(280,1,696,740),860);assert.equal(agenda(279,1,697,741),null);
+ assert.equal(agenda(280,-1,696,740),null);assert.equal(agenda(890,1,50,94),null);
+ assert.equal(snap(420),null);assert.equal(snap(860),null);assert.equal(snap(1050),null);
+ const init=source.slice(to,source.indexOf('function route(){',to));
+ assert.match(init,/section.hidden\|\|!narrow.matches/);
+ assert.match(init,/prefers-reduced-motion: reduce/);
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/#calendar-view \.agenda-panel\{margin-block-start:clamp\(0px,calc\(100svh - var\(--schedule-calendar-end,100svh\)\)/);
+ const schedule=html.slice(html.indexOf('class="agenda-panel"'),html.indexOf('id="cards-view"'));
+ assert.ok(schedule.indexOf('agenda-title')<schedule.indexOf('card-filter-row'));
+});
