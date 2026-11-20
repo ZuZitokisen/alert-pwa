@@ -72,3 +72,16 @@ test('opening Search exposes the input at the top, and legacy links can switch t
  assert.equal(prevented,false);
  f.go('#find');assert.equal(f.back.hidden,true);assert.equal(f.context.scrollCount,count+1);
 });
+
+test('mobile navigation stretches the decorative background in both directions only on route change',()=>{
+ const f=fixture(),nav={dataset:{}},lookup=f.context.$;
+ f.context.$=s=>s==='.sidebar nav'?nav:lookup(s);
+ f.go('#find');assert.equal(nav.dataset.slide,'right');
+ f.go('#favorites');assert.equal(nav.dataset.slide,'left');
+ f.go('#favorites');assert.equal(nav.dataset.slide,'left');
+ f.go('#changes');assert.equal(nav.dataset.slide,'right');
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/\.sidebar nav\[data-slide=left\]\{--nav-left-ease:var\(--nav-lead\);--nav-right-ease:var\(--nav-tail\)/);
+ assert.match(css,/\.sidebar nav:has\(a\.active\)::before\{[^}]*pointer-events:none[^}]*transition:left 330ms[^}]*right 330ms/);
+ assert.match(css,/@media\(prefers-reduced-motion:reduce\)\{\.sidebar nav:has\(a\.active\)::before\{transition:none/);
+});
