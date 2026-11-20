@@ -360,3 +360,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 
 /* View identity is chrome, not selectable document content. */
 #view-title{-webkit-user-select:none;user-select:none}
+
+@media(max-width:700px){
+ #calendar-view .calendar-panel{scroll-margin-top:max(24px,env(safe-area-inset-top))}
+ #calendar-view .agenda-panel{margin-block-start:clamp(0px,calc(100svh - var(--schedule-calendar-end,100svh)),65svh)}
+ #calendar-view #agenda-title{scroll-margin-top:max(24px,env(safe-area-inset-top))}
+}

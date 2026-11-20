@@ -48,7 +48,8 @@ test('card-wide hit area leaves the favorite independent and keeps scroll gestur
  assert.match(css,/\.event-card \.card-open::after\{content:"";position:absolute;inset:0/);
  assert.match(css,/\.event-card \.favorite-button,\.event-card \.select-label\{z-index:1;touch-action:manipulation\}/);
  assert.match(css,/\.event-card \.card-open:active:not\(:disabled\)\{transform:none\}/);
- assert.ok(!/addEventListener\(['"](?:touchstart|pointerdown)['"]/.test(source));
+ assert.ok(!/addEventListener\(['"](?:touchstart|pointerdown)['"]/.test(source.slice(source.indexOf('function card('),source.indexOf('function appendSourcesAndTimes'))));
+ assert.match(source,/addEventListener\('touchstart',[^\n]+\{passive:true\}\)/);
 });
 test('favorite focus restoration explicitly avoids scrolling the page',()=>{
  assert.match(source,/target\?\.focus\(\{preventScroll:true\}\)/);

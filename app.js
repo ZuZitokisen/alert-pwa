@@ -344,6 +344,46 @@ async function refreshApp(){
 }
 
 
+// After native scrolling settles, only nearby Schedule headings qualify.
+function scheduleSnapTarget(y,anchors){
+ if(y<=12)return null;
+ let best=null,distance=Infinity;
+ for(const [anchor,limit] of anchors){
+  const d=Math.abs(anchor-y);
+  if(d<=limit&&d<distance){best=anchor;distance=d;}
+ }
+ return distance>=4?best:null;
+}
+function initScheduleScroll(){
+ const calendar=$('.calendar-panel'),agenda=$('#agenda-title'),layout=$('.calendar-layout'),section=$('#calendar-view');
+ const narrow=window.matchMedia?.('(max-width: 700px)');
+ if(!calendar||!agenda||!layout||!section||!narrow)return;
+ let lastEnd=null,timer,held=false;
+ const measure=()=>{
+  if(section.hidden||!narrow.matches||$('#detail').open)return;
+  const end=Math.ceil(calendar.getBoundingClientRect().bottom+window.scrollY);
+  if(end>0&&end!==lastEnd){lastEnd=end;layout.style.setProperty('--schedule-calendar-end',end+'px');}
+ };
+ const calculate=()=>{
+  if(held||section.hidden||!narrow.matches||$('#detail').open||window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches)return;
+  const y=window.scrollY;
+  const max=Math.max(0,document.documentElement.scrollHeight-window.innerHeight);
+  const contentStart=node=>Math.max(0,Math.min(max,Math.round(node.getBoundingClientRect().top+y-(parseFloat(getComputedStyle(node).scrollMarginTop)||0))));
+  const anchor=scheduleSnapTarget(y,[[0,60],[contentStart(calendar),140],[contentStart(agenda),86]]);
+  if(anchor!==null)window.scrollTo({top:anchor,left:0,behavior:'smooth'});
+ };
+ const settle=()=>{clearTimeout(timer);if(!held)timer=setTimeout(calculate,140);};
+ if(typeof ResizeObserver!=='undefined'){
+  const observer=new ResizeObserver(measure);observer.observe(calendar);
+  for(const node of [$('.app-header'),$('#artist-filters')])if(node)observer.observe(node);
+ }
+ window.addEventListener('resize',measure,{passive:true});
+ window.addEventListener('hashchange',()=>{clearTimeout(timer);measure();});
+ window.addEventListener('touchstart',()=>{held=true;clearTimeout(timer);},{passive:true});
+ window.addEventListener('touchend',event=>{held=event.touches.length>0;settle();},{passive:true});
+ window.addEventListener('touchcancel',()=>{held=false;clearTimeout(timer);},{passive:true});
+ window.addEventListener('scroll',settle,{passive:true});measure();
+}
 function route(){
 // Only notification entry clears the artist filter; a normal News tab keeps it.
 if(location.hash==='#notification-changes'){selectedArtists.clear();artist='all';history.replaceState(null,'','#changes');renderArtists();renderChanges();}
@@ -363,7 +403,7 @@ if(nav&&view!==previousView){
 }
 document.querySelectorAll('[data-view]').forEach(a=>{a.classList.toggle('active',a.dataset.view===view);if(a.dataset.view===view)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
 if($('#detail').open)closeDialog();
-if(leavingLegacySearch||(view!==previousView&&(view==='changes'||previousView==='changes'||view==='search'))){window.scrollTo({top:0,left:0,behavior:'instant'});$('#view-title').focus({preventScroll:true});}
+if(leavingLegacySearch||(view!==previousView&&(view==='calendar'||view==='changes'||previousView==='changes'||view==='search'))){window.scrollTo({top:0,left:0,behavior:'instant'});$('#view-title').focus({preventScroll:true});}
 }
 
 // Re-activating the visible tab jumps to the beginning without following its fragment.
@@ -401,4 +441,4 @@ function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMon
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
 $('#open-app-history').onclick=openAppHistory;$('#available-app-update').onclick=showAvailableAppRelease;
 document.querySelectorAll('[data-view]').forEach(link=>link.addEventListener('click',preventActiveTabNavigation));
-$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('click',resetCalendarDateTap,true);window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();refresh({notice:takeAppReloadNotice()});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);
+$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('click',resetCalendarDateTap,true);window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();initScheduleScroll();refresh({notice:takeAppReloadNotice()});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);

@@ -91,3 +91,19 @@ test('screen headings cannot be accidentally selected without blocking search or
  assert.match(css,/#view-title\{-webkit-user-select:none;user-select:none\}/);
  assert.doesNotMatch(css,/(?:#search|#detail-content)[^{}]*\{[^}]*user-select:none/);
 });
+
+test('Schedule gently aligns only near each heading and leaves deep card scrolling alone',()=>{
+ const from=source.indexOf('function scheduleSnapTarget('),to=source.indexOf('function initScheduleScroll(',from);
+ const c=vm.createContext({});vm.runInContext(source.slice(from,to),c);
+ const snap=y=>vm.runInContext('scheduleSnapTarget('+y+',[[0,60],[156,140],[860,86]])',c);
+ assert.equal(snap(0),null);assert.equal(snap(2),null);
+ assert.equal(snap(135),156);assert.equal(snap(275),156);assert.equal(snap(781),860);
+ assert.equal(snap(420),null);assert.equal(snap(860),null);assert.equal(snap(1050),null);
+ const init=source.slice(to,source.indexOf('function route(){',to));
+ assert.match(init,/section.hidden\|\|!narrow.matches/);
+ assert.match(init,/prefers-reduced-motion: reduce/);
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/#calendar-view \.agenda-panel\{margin-block-start:clamp\(0px,calc\(100svh - var\(--schedule-calendar-end,100svh\)\)/);
+ const schedule=html.slice(html.indexOf('class="agenda-panel"'),html.indexOf('id="cards-view"'));
+ assert.ok(schedule.indexOf('agenda-title')<schedule.indexOf('card-filter-row'));
+});
