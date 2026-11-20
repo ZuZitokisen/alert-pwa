@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.17';
+const APP_RELEASE='0.7.18';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -213,7 +213,7 @@ function agendaCandidates(){return matching({status:agendaFilter,sort:$('#agenda
 function agendaEntries(){const bounds=agendaBounds(),days=[];for(let key=bounds.start;key<bounds.end;key=addDays(key,1))days.push(key);return agendaCandidates().filter(e=>e.start&&days.some(key=>F.overlapsDay(e,key)));}
 function renderAgenda(){
  const bounds=agendaBounds(),label=key=>new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',month:'long',day:'numeric',weekday:'short'}).format(dayDate(key));
- $('#agenda-title').textContent=agendaRange==='month'?`${Number(period.slice(0,4))}年${Number(period.slice(5,7))}月の予定`:agendaRange==='week'?`${label(bounds.start)} 〜 ${label(addDays(bounds.end,-1))}`:label(selectedDate);
+ $('#agenda-title').textContent=agendaRange==='month'?bounds.start.slice(0,7).replaceAll('-','.'):agendaRange==='week'?`${label(bounds.start)} 〜 ${label(addDays(bounds.end,-1))}`:selectedDate.replaceAll('-','.');
  const entries=agendaEntries();$('#agenda').replaceChildren(...(entries.length?entries.map(e=>card(e)):[el('p','該当する予定はありません。','empty')]));
  const undated=agendaCandidates().filter(e=>!e.start);$('#undated-section').hidden=!undated.length;$('#undated-count').textContent=`${undated.length}件`;$('#undated').replaceChildren(...undated.map(e=>card(e)));
 }

@@ -1,7 +1,7 @@
 /* Static schedule shell only, scoped to this GitHub Pages project. Push is opt-in through configured backend. */
-const CACHE='alert-pwa-static-shell-v7-17';
+const CACHE='alert-pwa-static-shell-v7-18';
 const BASE=new URL('./',self.location.href);
-const FILES=['./release-check.js?v=0.7.17','./push-config.js','./push-client.js','./','./index.html','./app.js?v=0.7.17','./pwa-update.js?v=0.7.17','./feature-core.js','./calendar-subscriptions.js?v=0.7.17','./artist-config.js?v=0.7.17','./schedule-store.js?v=0.7.17','./style.css?v=0.7.17','./manifest.webmanifest?v=0.7.17','./icon.svg?v=0.7.17','./icon-192.png?v=0.7.17','./icon-512.png?v=0.7.17'];
+const FILES=['./release-check.js?v=0.7.18','./push-config.js','./push-client.js','./','./index.html','./app.js?v=0.7.18','./pwa-update.js?v=0.7.18','./feature-core.js','./calendar-subscriptions.js?v=0.7.18','./artist-config.js?v=0.7.18','./schedule-store.js?v=0.7.18','./style.css?v=0.7.18','./manifest.webmanifest?v=0.7.18','./icon.svg?v=0.7.18','./icon-192.png?v=0.7.18','./icon-512.png?v=0.7.18'];
 const URLS=FILES.map(p=>new URL(p,BASE).href);
 // Data is fetched by schedule-store, which validates and keeps its own last-good copy.
 // Do not intercept/cache its requests here: a cache fallback would hide offline status.
@@ -26,7 +26,7 @@ function notificationPayload(value){
  const clean=(text,max)=>typeof text==='string'?text.replace(/[\u0000-\u001f\u007f\u202a-\u202e\u2066-\u2069]/g,' ').slice(0,max):'';
  // Server supplies a stable SHA256 identity, including reminder instant where needed.
  if(typeof value.tag!=='string'||!/^[a-f0-9]{64}$/.test(value.tag))return null;
- return {title:clean(value.title,120)||'予定のお知らせ',options:{body:clean(value.body,500),tag:'alert-'+value.kind+'-'+value.tag,icon:new URL('icon-192.png?v=0.7.17',BASE).href,badge:new URL('icon-192.png?v=0.7.17',BASE).href,data:{url:notificationTarget(value.url)},renotify:false}};
+ return {title:clean(value.title,120)||'予定のお知らせ',options:{body:clean(value.body,500),tag:'alert-'+value.kind+'-'+value.tag,icon:new URL('icon-192.png?v=0.7.18',BASE).href,badge:new URL('icon-192.png?v=0.7.18',BASE).href,data:{url:notificationTarget(value.url)},renotify:false}};
 }
 self.addEventListener('push',event=>{
  let payload;try{const raw=event.data?.text();if(!raw||raw.length>8192)return;payload=notificationPayload(JSON.parse(raw));}catch{return;}
