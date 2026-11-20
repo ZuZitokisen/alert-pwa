@@ -411,3 +411,12 @@ test('the Tokisen icon has no handle and enlarges only the artwork',()=>{
  assert.equal(svg.querySelectorAll('path')[1].getAttribute('d'),'M27 10l3-2m-3 8h4m-4 6 3 2');
  assert.match(fs.readFileSync(new URL('./style.css',import.meta.url),'utf8'),/\[data-artist=tokisen\] \.artist-symbol\{width:28px;height:28px\}/);
 });
+
+test('Search navigation and heading use the same large decorative icon',()=>{
+ const f=fixture();
+ const marker=f.document.querySelector('nav [data-view="search"] .search-symbol');
+ assert.equal(marker.tagName,'SVG');assert.equal(marker.getAttribute('viewBox'),'0 0 24 24');
+ assert.match(source,/menuIcon\.cloneNode\(true\)/);
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/\.search-symbol\{[^}]*width:22px;height:22px/);
+});
