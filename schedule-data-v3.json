@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-tokisen-music-station",
-  "generatedAt": "2026-11-20T19:44:30Z",
+  "version": "2026-11-21-tokisen-threads-episode",
+  "generatedAt": "2026-11-20T20:58:31Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12795,6 +12795,43 @@
         }
       ],
       "checkedAt": "2026-11-20T19:44:30Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "tokisen-stream-threads-koizumi-20261201",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "＜小泉遥香＞ビデオポッドキャスト「Threadsのあの人」後編",
+      "start": "2026-12-01",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "「Threadsのあの人」公式YouTube",
+      "note": "Metaのビデオポッドキャストに小泉遥香が出演。後編はお昼ごろ配信予定。正確な時刻と後編の個別動画URLは未発表。",
+      "evidence": "グループ公式Xの配信予告2件と番組公式チャンネルを確認。",
+      "sourceUrl": "https://x.com/sendenbu_staff/status/2122281895631454639",
+      "sources": [
+        {
+          "url": "https://x.com/sendenbu_staff/status/2122281895631454639",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T20:58:31Z"
+        },
+        {
+          "url": "https://x.com/sendenbu_staff/status/2122607693617586647",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T20:58:31Z"
+        },
+        {
+          "url": "https://www.youtube.com/@thatpersonfrom_threads",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-20T20:58:31Z"
+        }
+      ],
+      "checkedAt": "2026-11-20T20:58:31Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
