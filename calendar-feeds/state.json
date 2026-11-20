@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-music-station",
-  "dataGeneratedAt": "2026-11-20T19:44:30Z",
-  "inputSha256": "2504791ba2d9e54c5f62ac3ae472727bd5b5ee1c64faf666f6334bd23fe41573",
+  "dataVersion": "2026-11-21-tokisen-threads-episode",
+  "dataGeneratedAt": "2026-11-20T20:58:31Z",
+  "inputSha256": "3a51601495adabf44663103a83c18ea9241865526d7334d64a670ceb380ef9ce",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -11322,6 +11322,41 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-stream-threads-koizumi-20261201\"]",
+      "uid": "public-v1-8d7bacff3afa720511d72dcc44a7d5ae0c921029e342c43faaae07910e3ee27b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-stream-threads-koizumi-20261201",
+        "category": "media",
+        "title": "＜小泉遥香＞ビデオポッドキャスト「Threadsのあの人」後編",
+        "start": "2026-12-01",
+        "end": null,
+        "allDay": false,
+        "location": "「Threadsのあの人」公式YouTube",
+        "publicNote": "Metaのビデオポッドキャストに小泉遥香が出演。後編はお昼ごろ配信予定。正確な時刻と後編の個別動画URLは未発表。\nグループ公式Xの配信予告2件と番組公式チャンネルを確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.youtube.com/@thatpersonfrom_threads",
+          "https://x.com/sendenbu_staff/status/2122281895631454639",
+          "https://x.com/sendenbu_staff/status/2122607693617586647"
+        ],
+        "sourceUrl": "https://x.com/sendenbu_staff/status/2122281895631454639"
+      },
+      "sequence": 0,
+      "created": "2026-11-20T20:58:31Z",
+      "modified": "2026-11-20T20:58:31Z",
+      "lastTiming": {
+        "start": "2026-12-01",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-tiktok-close-1123559\"]",
       "uid": "public-v1-2993bc24a2e79fb2ba7c9224f52e95d15b2c2929de47f70f44215902dbe8588e@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -11757,5 +11792,5 @@
       ]
     }
   ],
-  "integritySha256": "99db44557d7c6c31f192f03bbc7b19daf8a4c0d4fffeb5e9fda59f016714f415"
+  "integritySha256": "a9ae4c9da6943d2f9acca3272cf7f35efb5ef3d84d3312fb53f5eb878d542d43"
 }
