@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-gift-performance-times",
-  "dataGeneratedAt": "2026-11-20T13:02:00Z",
+  "dataVersion": "2026-11-20-rege-roppongi-newyear",
+  "dataGeneratedAt": "2026-11-20T13:22:56.712Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "c62825b83e089fb545b1f1e8ddfb34f8b96ffbcabed7c4ec3cd669cd3db3975f",
+  "inputSha256": "504ddad4e3e51ba8d3c3bf45466fce9a8251e3dbefca599e904267234e2218c2",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 56,
+      "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "d2f04f024d4c27e0a06bb45a3fb3fd96bc20b8e539c7f36da668ab46c917543b"
+      "sha256": "5aefab0fd704993a5d1518177ada919fbd737063824b68a6b308de113d415366"
     },
     {
       "id": "re-ge-live",
@@ -76,9 +76,9 @@
       "category": "live",
       "label": "RE-GE / ライブ・イベント",
       "path": "calendar-feeds/re-ge-live.ics",
-      "count": 8,
+      "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "58a479d4ca2303a38edd5a24bd8032671e52eabca92d94b4a08689380e7137c6"
+      "sha256": "5be3356768f1544f3fcc7f95ec00fd6c2b32fde6f11f5d13fea3a6c041d438e9"
     },
     {
       "id": "re-ge-benefit",
@@ -86,9 +86,9 @@
       "category": "benefit",
       "label": "RE-GE / 特典会・応募",
       "path": "calendar-feeds/re-ge-benefit.ics",
-      "count": 29,
+      "count": 33,
       "omittedUnknownDate": 0,
-      "sha256": "386b1fbbd3cb352173a879704913c8494c495f8bc4972fac23a217a052a37569"
+      "sha256": "bb155b1bca4103f67e122bfd5ad2eaa18ae9661948746c0727a8f24e4eba7b06"
     },
     {
       "id": "re-ge-media",

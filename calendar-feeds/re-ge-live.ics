@@ -81,6 +81,29 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-ef0e86cbcd2c82520ff49e0273564f83b1219b5ec8df2d85f93f751c224ed
+ 303@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T132256Z
+CREATED:20261120T132256Z
+LAST-MODIFIED:20261120T132256Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270109
+SUMMARY:ニューイヤーだよ！六本木アイドルフェスティバ
+ ル（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nRE-GE出演決定。公演全体の終演予定は21:30頃。RE-GEの
+ 個別出演時刻は未発表。スタンディングS 8\,800円、A 5\,5
+ 00円、スタンド指定席6\,000円。ドリンク代600円別。テレ
+ 朝iDが必要。受付：https://ticket.tv-asahi.co.jp/ex/project/idolfes
+ 2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。\nhttp
+ s://re-ge.com/news/item-822/\nhttps://ticket.tv-asahi.co.jp/ex/project/ido
+ lfes2027\nhttps://www.tv-asahi.co.jp/idolfes/
+LOCATION:EXシアター六本木
+URL:https://re-ge.com/news/item-822/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-5e5f8bda4a55f287bcaacdb53a39335ea3f828ee5440dba182982e7169d39
  c65@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261116T033812Z

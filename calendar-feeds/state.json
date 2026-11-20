@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-gift-performance-times",
-  "dataGeneratedAt": "2026-11-20T13:02:00Z",
-  "inputSha256": "104ffb5c616ed644dc468c7585fb2bdf1a6f4500bf08d2ce090616d03a5b9afd",
+  "dataVersion": "2026-11-20-rege-roppongi-newyear",
+  "dataGeneratedAt": "2026-11-20T13:22:56.712Z",
+  "inputSha256": "e3c7548d5484e862c893289fa153bcef7323cbb6bb2a5f0b1e0cea18ea23ea0e",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2476,6 +2476,176 @@
       "memberships": [
         "re-ge-all",
         "re-ge-media"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-roppongi-newyear-idolfes-20270109\"]",
+      "uid": "public-v1-ef0e86cbcd2c82520ff49e0273564f83b1219b5ec8df2d85f93f751c224ed303@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-roppongi-newyear-idolfes-20270109",
+        "category": "live",
+        "title": "ニューイヤーだよ！六本木アイドルフェスティバル",
+        "start": "2027-01-09",
+        "end": null,
+        "allDay": false,
+        "location": "EXシアター六本木",
+        "publicNote": "RE-GE出演決定。公演全体の終演予定は21:30頃。RE-GEの個別出演時刻は未発表。スタンディングS 8,800円、A 5,500円、スタンド指定席6,000円。ドリンク代600円別。テレ朝iDが必要。受付：https://ticket.tv-asahi.co.jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-822/",
+          "https://ticket.tv-asahi.co.jp/ex/project/idolfes2027",
+          "https://www.tv-asahi.co.jp/idolfes/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T13:22:56.712Z",
+      "modified": "2026-11-20T13:22:56.712Z",
+      "lastTiming": {
+        "start": "2027-01-09",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-live"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-roppongi-newyear-idolfes-20270109-general-open\"]",
+      "uid": "public-v1-15612c2278f4e922656d72e27cef5b213468f5fedca499189ad9c94583df0393@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-roppongi-newyear-idolfes-20270109-general-open",
+        "category": "benefit",
+        "title": "ニューイヤーだよ！六本木アイドルフェスティバル 一般発売（先着）開始",
+        "start": "2026-12-12T10:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "テレ朝チケット",
+        "publicNote": "一般発売の終了時刻は未発表。テレ朝iDで申込。公演日は2027/1/9、会場はEXシアター六本木。 https://ticket.tv-asahi.co.jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-822/",
+          "https://ticket.tv-asahi.co.jp/ex/project/idolfes2027",
+          "https://www.tv-asahi.co.jp/idolfes/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T13:22:56.712Z",
+      "modified": "2026-11-20T13:22:56.712Z",
+      "lastTiming": {
+        "start": "2026-12-12T10:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-roppongi-newyear-idolfes-20270109-second-close\"]",
+      "uid": "public-v1-36aa257a8e47a6e4efeae3963ef7f6f226cca7b642285ae2fba2b2d61d13bd30@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-roppongi-newyear-idolfes-20270109-second-close",
+        "category": "benefit",
+        "title": "ニューイヤーだよ！六本木アイドルフェスティバル 2次先行（抽選）締切",
+        "start": "2026-11-29T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "テレ朝チケット",
+        "publicNote": "受付開始は11/13 12:00。テレ朝iDで申込。公演日は2027/1/9、会場はEXシアター六本木。 https://ticket.tv-asahi.co.jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-822/",
+          "https://ticket.tv-asahi.co.jp/ex/project/idolfes2027",
+          "https://www.tv-asahi.co.jp/idolfes/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T13:22:56.712Z",
+      "modified": "2026-11-20T13:22:56.712Z",
+      "lastTiming": {
+        "start": "2026-11-29T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-roppongi-newyear-idolfes-20270109-third-close\"]",
+      "uid": "public-v1-1466479fb09772ad3fb5c45eba66a061412b3aa7603543ea5417e79e8e3b49a7@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-roppongi-newyear-idolfes-20270109-third-close",
+        "category": "benefit",
+        "title": "ニューイヤーだよ！六本木アイドルフェスティバル 3次先行（先着）締切",
+        "start": "2026-12-11T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "テレ朝チケット",
+        "publicNote": "公式掲載の受付終了時刻。先着のため販売状況は公式サイトで確認。テレ朝iDで申込。公演日は2027/1/9、会場はEXシアター六本木。 https://ticket.tv-asahi.co.jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-822/",
+          "https://ticket.tv-asahi.co.jp/ex/project/idolfes2027",
+          "https://www.tv-asahi.co.jp/idolfes/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T13:22:56.712Z",
+      "modified": "2026-11-20T13:22:56.712Z",
+      "lastTiming": {
+        "start": "2026-12-11T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-roppongi-newyear-idolfes-20270109-third-open\"]",
+      "uid": "public-v1-9f191094a7dc757be3ba710e57f7e669fd980fb4c7e63117ecf06681395c2e40@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-roppongi-newyear-idolfes-20270109-third-open",
+        "category": "benefit",
+        "title": "ニューイヤーだよ！六本木アイドルフェスティバル 3次先行（先着）開始",
+        "start": "2026-12-02T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "テレ朝チケット",
+        "publicNote": "公式掲載の受付終了は12/11 23:59。先着のため販売状況は公式サイトで確認。テレ朝iDで申込。公演日は2027/1/9、会場はEXシアター六本木。 https://ticket.tv-asahi.co.jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-822/",
+          "https://ticket.tv-asahi.co.jp/ex/project/idolfes2027",
+          "https://www.tv-asahi.co.jp/idolfes/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T13:22:56.712Z",
+      "modified": "2026-11-20T13:22:56.712Z",
+      "lastTiming": {
+        "start": "2026-12-02T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
       ]
     },
     {
@@ -11483,5 +11653,5 @@
       ]
     }
   ],
-  "integritySha256": "217280927b14ed1bf31c35bca82b57a43d07c0d6b72095dd0becd9f6d71cf17c"
+  "integritySha256": "4f8ebf6977135f1a1b27448093f544330ef36c9224cf0e46086d8ef954dd6be4"
 }
