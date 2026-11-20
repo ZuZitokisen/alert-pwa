@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-tokisen-fc-sign-and-stage-second",
-  "generatedAt": "2026-11-20T16:42:14.065Z",
+  "version": "2026-11-21-tokisen-music-station",
+  "generatedAt": "2026-11-20T19:44:30Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -10066,6 +10066,48 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-newyear-20270124"
+    },
+    {
+      "id": "tokisen-media-1129838",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "テレビ朝日系「ミュージックステーション」",
+      "start": "2026-11-27T21:00:00+09:00",
+      "end": "2026-11-27T21:54:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "テレビ朝日系",
+      "note": "「超最強」と、＝LOVE・FRUITS ZIPPER・モーニング娘。’26とのコラボでAKB48「ヘビーローテーション」を披露予定。コラボはGIFT DAY-1から生中継。記載時刻は番組全体の放送枠で、個別の出演時刻は未発表。現地ライブ本編と別の予定です。",
+      "evidence": "本人公式の出演・曲目、テレビ朝日公式の放送枠と出演者、GIFT公式の生中継案内を確認。",
+      "sourceUrl": "https://toki-sen.com/contents/1129838",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1129838",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T19:44:30Z"
+        },
+        {
+          "url": "https://www.tv-asahi.co.jp/pr/contents/20261127_15122.html",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-20T19:44:30Z"
+        },
+        {
+          "url": "https://www.tv-asahi.co.jp/music/contents/m_lineup_top/0432/",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-20T19:44:30Z"
+        },
+        {
+          "url": "https://gift-idol.jp/special.html",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-20T19:44:30Z"
+        }
+      ],
+      "checkedAt": "2026-11-20T19:44:30Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
     }
   ],
   "notes": [

@@ -1020,6 +1020,30 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-b7b64142f36d05b6aeb11d83f3aa481c5ae7dd42151f8a319cab9999f5bd1
+ be0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T194430Z
+CREATED:20261120T194430Z
+LAST-MODIFIED:20261120T194430Z
+SEQUENCE:0
+DTSTART:20261127T120000Z
+DTEND:20261127T125400Z
+SUMMARY:テレビ朝日系「ミュージックステーション」
+DESCRIPTION:「超最強」と、＝LOVE・FRUITS ZIPPER・モーニング
+ 娘。’26とのコラボでAKB48「ヘビーローテーション」を
+ 披露予定。コラボはGIFT DAY-1から生中継。記載時刻は番
+ 組全体の放送枠で、個別の出演時刻は未発表。現地ラ
+ イブ本編と別の予定です。\n本人公式の出演・曲目、テ
+ レビ朝日公式の放送枠と出演者、GIFT公式の生中継案内
+ を確認。\nhttps://gift-idol.jp/special.html\nhttps://toki-sen.com/cont
+ ents/1129838\nhttps://www.tv-asahi.co.jp/music/contents/m_lineup_top/0432/
+ \nhttps://www.tv-asahi.co.jp/pr/contents/20261127_15122.html
+LOCATION:テレビ朝日系
+URL:https://toki-sen.com/contents/1129838
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-91b9a3437ec48e9a1b11632690ccb266b17ceb22a4b026d128aea71ce3ba7
  678@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z
