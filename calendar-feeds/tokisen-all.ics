@@ -187,15 +187,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-50963e7f2d766ed12b272a60b26ae07d3a14a420866bd1d8945858c7e696b
  ddb@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261120T164214Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261120T164214Z
+SEQUENCE:1
 DTSTART:20261206T145900Z
 SUMMARY:ときめけみらい FC限定リアルサイン会 応募締切
 DESCRIPTION:FC限定。メモリアル盤1枚につき1口。各メンバ
- ー最大50人。 開催日は未定。アルバム発売日4/1をサイ
- ン会開催日に流用しない。\n本人側の公式発表で確認。
+ ー最大50人。開催は2027年1月6日（水）夕方ごろ、東京。
+ 詳細は当選者のみに案内。\n本人側の公式発表で確認。
  \nhttps://toki-sen.com/contents/1116142
 LOCATION:東京某所、当選者のみ案内
 URL:https://toki-sen.com/contents/1116142
@@ -2496,6 +2496,46 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-18eb7b547d52cbc47287973a48e64684c7003a7f41af9743ab25d90a50868
+ a14@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T164214Z
+CREATED:20261120T164214Z
+LAST-MODIFIED:20261120T164214Z
+SEQUENCE:0
+DTSTART:20261130T145900Z
+SUMMARY:超ときめき♡STAGE 2027 あけおめ新年会フォーエバ
+ ー 番組二次先行（抽選）締切（かも？）
+DESCRIPTION:ニッポン放送の番組二次先行。受付期間は11月2
+ 2日18:00〜11月30日23:59（日本時間）。ファンクラブ先行
+ とは別。\n主催ニッポン放送の公式チケット案内。とき
+ 宣側による同受付枠の告知は未確認。\nhttps://event.1242.co
+ m/events/tokimeki_stage/
+LOCATION:
+URL:https://event.1242.com/events/tokimeki_stage/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-414ab4465c296ae466ccbfce9adb003ad7f2a4ab61b753e4dc572be1daf5c
+ 44b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T164214Z
+CREATED:20261120T164214Z
+LAST-MODIFIED:20261120T164214Z
+SEQUENCE:0
+DTSTART:20261122T090000Z
+SUMMARY:超ときめき♡STAGE 2027 あけおめ新年会フォーエバ
+ ー 番組二次先行（抽選）開始（かも？）
+DESCRIPTION:ニッポン放送の番組二次先行。受付期間は11月2
+ 2日18:00〜11月30日23:59（日本時間）。ファンクラブ先行
+ とは別。\n主催ニッポン放送の公式チケット案内。とき
+ 宣側による同受付枠の告知は未確認。\nhttps://event.1242.co
+ m/events/tokimeki_stage/
+LOCATION:
+URL:https://event.1242.com/events/tokimeki_stage/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-2909ee9e99a684ff220f18cfdd0aa7dacc30888ac71f5473796978cc9ea2f
  b4c@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z
@@ -3459,6 +3499,26 @@ DESCRIPTION:有明アリーナ公演最終日の映像に舞台裏を加え
 LOCATION:テレ朝チャンネル1
 URL:https://www.tv-asahi.co.jp/ch/contents/variety/0898/
 STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-042aeb8d9677e7e6aa2720577b83c8fe874fd3128ffaf95463e7823bec5af
+ 0dd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T164214Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261120T164214Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20270106
+SUMMARY:ときめけみらい FC限定リアルサイン会（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nメモリアル盤購入者の抽選によるFC限定サイン会。
+ 詳しい開始時刻と会場は当選者のみに案内。\n本人側の
+ 公式発表で確認。\n夕方ごろ（詳細は当選者のみに案内
+ ）\nhttps://toki-sen.com/contents/1116142
+LOCATION:東京某所
+URL:https://toki-sen.com/contents/1116142
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
