@@ -121,15 +121,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-748f629e6b0763360d4754636f0ce8c232917a0a5003257df974f2faacc8a
  133@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T084531Z
+DTSTAMP:20261120T030751Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261119T084531Z
-SEQUENCE:0
+LAST-MODIFIED:20261120T030751Z
+SEQUENCE:1
 DTSTART:20261121T043000Z
 SUMMARY:いぎなり東北産「福島県民優先ミニライブ」
 DESCRIPTION:9名出演、観覧無料。県民優先券は現住所記載
- の身分証が必要、購入不要。\n本人公式の開催日・本文
- 記載を確認。\nhttps://madeintohoku.com/contents/1127286
+ の身分証が必要、購入不要。入場順は優先券所持者→
+ 券を持たない福島県民→県外の方。券なし県民は案内
+ 放送後、現住所記載の身分証提示で入場。\n本人公式の
+ 開催日・本文記載を確認。\nhttps://madeintohoku.com/contents/11
+ 27286\nhttps://madeintohoku.com/contents/1128577
 LOCATION:アティ郡山 屋上
 URL:https://madeintohoku.com/contents/1127286
 STATUS:CONFIRMED
