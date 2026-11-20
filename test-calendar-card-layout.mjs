@@ -283,8 +283,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.19 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-19/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.19'));assert.ok(sw.includes(file+'?v=0.7.19'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.20 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-20/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.20'));assert.ok(sw.includes(file+'?v=0.7.20'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -438,4 +438,38 @@ test('both card filter bars are vertically centered and fit a 320px viewport wit
   assert.equal(items,4);
   assert.ok(items*width+(items-1)*gap+sort+column<=320-2*18-2*2);
  }
+});
+
+test('Search separates its input and filter row by 16px without changing Schedule',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ const f=fixture(),toolbar=f.get('cards-view').children[0];
+ assert.ok(toolbar.querySelector('#search'));
+ assert.ok(f.get('cards-view').children[1].classList.contains('card-filter-row'));
+ assert.match(css,/#cards-view > \.toolbar\{margin-block-end:16px\}/);
+ assert.ok(!f.get('calendar-view').querySelector('.toolbar'));
+});
+
+test('Search accepts date, short date, fullwidth and month formats with JST overlap and existing filters',()=>{
+ const f=fixture({events:[
+  event('公演A','2026-11-21',{status:'possible'}),
+  event('終日公演','2026-11-20',{end:'2026-11-22'}),
+  event('深夜放送','2026-11-20T15:30:00Z'),
+  event('別の月','2026-12-21'),event('未定',null)
+ ]});
+ const query=value=>{f.get('search').value=value;f.get('search').oninput();return f.titles('cards');};
+ const day=['終日公演','公演A','深夜放送'];
+ for(const value of ['11/21','2026.11.21','2026-11-21','2026/11/21','11月21日','２０２６年１１月２１日','2026.11']) assert.deepEqual(query(value),day,value);
+ assert.deepEqual(query('2026-02-30'),[]);
+ assert.deepEqual(query('2027/11/21'),[]);
+ assert.deepEqual(query('公演A'),['公演A']);
+ query('11/21');f.document.querySelector('[data-filter="possible"]').click();assert.deepEqual(f.titles('cards'),['公演A']);
+ assert.equal(f.get('search').getAttribute('placeholder'),'予定・日付・場所・メモを検索');
+});
+
+test('mobile navigation fade is below controls and cannot intercept taps',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ const rule=css.match(/@media\(max-width:700px\)\{\s*\.sidebar::before\{([^}]+)\}/)?.[1];
+ assert.ok(rule);assert.match(rule,/z-index:19/);assert.match(rule,/pointer-events:none/);
+ assert.match(rule,/safe-area-inset-bottom/);assert.match(rule,/backdrop-filter:blur\(16px\)/);
+ assert.match(rule,/mask-image:linear-gradient\(to bottom,transparent,#000\)/);
 });
