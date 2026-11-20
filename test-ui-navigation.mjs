@@ -95,9 +95,12 @@ test('screen headings cannot be accidentally selected without blocking search or
 test('Schedule gently aligns only near each heading and leaves deep card scrolling alone',()=>{
  const from=source.indexOf('function scheduleSnapTarget('),to=source.indexOf('function initScheduleScroll(',from);
  const c=vm.createContext({});vm.runInContext(source.slice(from,to),c);
- const snap=y=>vm.runInContext('scheduleSnapTarget('+y+',[[0,60],[156,140],[860,86]])',c);
+ const snap=y=>vm.runInContext('scheduleSnapTarget('+y+',[[0,60],[156,140]])',c);
  assert.equal(snap(0),null);assert.equal(snap(2),null);
- assert.equal(snap(135),156);assert.equal(snap(275),156);assert.equal(snap(781),860);
+ assert.equal(snap(135),156);assert.equal(snap(275),156);assert.equal(snap(781),null);
+ const agenda=(y,dir,top,bottom)=>vm.runInContext(`scheduleAgendaTarget(${y},860,${dir},{top:${top},bottom:${bottom}},740)`,c);
+ assert.equal(agenda(280,1,696,740),860);assert.equal(agenda(279,1,697,741),null);
+ assert.equal(agenda(280,-1,696,740),null);assert.equal(agenda(890,1,50,94),null);
  assert.equal(snap(420),null);assert.equal(snap(860),null);assert.equal(snap(1050),null);
  const init=source.slice(to,source.indexOf('function route(){',to));
  assert.match(init,/section.hidden\|\|!narrow.matches/);

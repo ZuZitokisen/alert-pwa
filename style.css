@@ -363,6 +363,6 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 
 @media(max-width:700px){
  #calendar-view .calendar-panel{scroll-margin-top:max(24px,env(safe-area-inset-top))}
- #calendar-view .agenda-panel{margin-block-start:clamp(0px,calc(100svh - var(--schedule-calendar-end,100svh)),65svh)}
+ #calendar-view .agenda-panel{margin-block-start:clamp(0px,calc(100svh - var(--schedule-calendar-end,100svh)),65svh);min-block-size:calc(100svh - 96px)}
  #calendar-view #agenda-title{scroll-margin-top:max(24px,env(safe-area-inset-top))}
 }

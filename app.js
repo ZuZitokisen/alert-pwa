@@ -354,11 +354,14 @@ function scheduleSnapTarget(y,anchors){
  }
  return distance>=4?best:null;
 }
+function scheduleAgendaTarget(y,target,direction,row,visibleBottom){
+ return direction>0&&target-y>=4&&row.top>=0&&row.bottom>row.top&&row.bottom<=visibleBottom?target:null;
+}
 function initScheduleScroll(){
- const calendar=$('.calendar-panel'),agenda=$('#agenda-title'),layout=$('.calendar-layout'),section=$('#calendar-view');
+ const calendar=$('.calendar-panel'),agenda=$('#agenda-title'),layout=$('.calendar-layout'),section=$('#calendar-view'),filters=$('#calendar-view .card-filter-row'),nav=$('.sidebar nav');
  const narrow=window.matchMedia?.('(max-width: 700px)');
- if(!calendar||!agenda||!layout||!section||!narrow)return;
- let lastEnd=null,timer,held=false;
+ if(!calendar||!agenda||!layout||!section||!filters||!nav||!narrow)return;
+ let lastEnd=null,timer,held=false,previousY=window.scrollY,direction=0;
  const measure=()=>{
   if(section.hidden||!narrow.matches||$('#detail').open)return;
   const end=Math.ceil(calendar.getBoundingClientRect().bottom+window.scrollY);
@@ -369,7 +372,10 @@ function initScheduleScroll(){
   const y=window.scrollY;
   const max=Math.max(0,document.documentElement.scrollHeight-window.innerHeight);
   const contentStart=node=>Math.max(0,Math.min(max,Math.round(node.getBoundingClientRect().top+y-(parseFloat(getComputedStyle(node).scrollMarginTop)||0))));
-  const anchor=scheduleSnapTarget(y,[[0,60],[contentStart(calendar),140],[contentStart(agenda),86]]);
+  const visibleBottom=Math.min(window.visualViewport?.height??window.innerHeight,nav.getBoundingClientRect().top);
+  const cardTarget=scheduleAgendaTarget(y,contentStart(agenda),direction,filters.getBoundingClientRect(),visibleBottom);
+  const calendarTarget=scheduleSnapTarget(y,[[0,60],[contentStart(calendar),140]]);
+  const anchor=cardTarget??(calendarTarget!==null&&calendarTarget<=y?calendarTarget:null);
   if(anchor!==null)window.scrollTo({top:anchor,left:0,behavior:'smooth'});
  };
  const settle=()=>{clearTimeout(timer);if(!held)timer=setTimeout(calculate,140);};
@@ -378,11 +384,11 @@ function initScheduleScroll(){
   for(const node of [$('.app-header'),$('#artist-filters')])if(node)observer.observe(node);
  }
  window.addEventListener('resize',measure,{passive:true});
- window.addEventListener('hashchange',()=>{clearTimeout(timer);measure();});
+ window.addEventListener('hashchange',()=>{clearTimeout(timer);previousY=window.scrollY;direction=0;measure();});
  window.addEventListener('touchstart',()=>{held=true;clearTimeout(timer);},{passive:true});
  window.addEventListener('touchend',event=>{held=event.touches.length>0;settle();},{passive:true});
  window.addEventListener('touchcancel',()=>{held=false;clearTimeout(timer);},{passive:true});
- window.addEventListener('scroll',settle,{passive:true});measure();
+ window.addEventListener('scroll',()=>{const y=window.scrollY;if(y!==previousY)direction=Math.sign(y-previousY);previousY=y;settle();},{passive:true});measure();
 }
 function route(){
 // Only notification entry clears the artist filter; a normal News tab keeps it.
