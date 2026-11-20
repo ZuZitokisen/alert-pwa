@@ -23,6 +23,70 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-2ed2e0d3b84804f76648cdd85a618d528c15fb37a9aeec19bd2ccb9bdb5b7
+ cb3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART:20261214T145900Z
+SUMMARY:まるごと列車イベント 抽選応募締切（かも？）
+DESCRIPTION:対象スタンプを集めた人向けの抽選受付。応募
+ だけで参加は確定せず、当選者が旅行商品を購入。\nJR
+ 東日本の公式案内を確認。本人公式での締切時刻明示
+ は未確認。\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps:
+ //www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:エキタグアプリの応募フォーム
+URL:https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c9e6fc1660c3f0a505a70a3ecd2ba6fd94e3b0cecf334200a78e33d339dd3
+ 465@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+SUMMARY:まるごと列車イベント 抽選応募フォーム配信・受
+ 付開始（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象者にエキタグアプリのお知らせで応募フォーム
+ を配信予定。応募は1人1回。開始時刻は未公表。\nJR東
+ 日本の公式案内による配信日。本人公式での日付明示
+ は未確認。\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps:
+ //www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:エキタグアプリ「お知らせ」
+URL:https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-28fe835a732b6985f75472de02215585f022071aa4cfff66689ee44b440a6
+ dc0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261130
+SUMMARY:いぎなり！東北まるごと推しめぐり スタンプ取得
+ 最終日（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n新青森・盛岡・秋田・仙台・山形・福島のうち異な
+ る2駅以上で歴代ジャケットスタンプを集めると、列車
+ イベントの抽選に応募可。LIVE記念スタンプは対象外。
+ この日はスタンプ取得の最終日で、応募締切ではあり
+ ません。\n本人公式の実施期間とJR東日本の抽選参加条
+ 件を確認。終了時刻は未公表。\nhttps://madeintohoku.com/conte
+ nts/1108805\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps://ww
+ w.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:東北6県の対象駅
+URL:https://madeintohoku.com/contents/1108805
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-95a68cdc0d669736028edafb94b3fd1cfedbe4b7f337eb503e56bf83e09f7
  aba@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T131500Z

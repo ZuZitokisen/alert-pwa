@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-koriyama-entry-order",
-  "dataGeneratedAt": "2026-11-20T03:07:51.000Z",
+  "dataVersion": "2026-11-20-jre-train-ultragt",
+  "dataGeneratedAt": "2026-11-20T09:11:15.696Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "63ae5c84e9aba02ae4f60f838b152fcad34ef64c54afda0f75621e903a2c9f9d",
+  "inputSha256": "03b3e3a345992dc5bfb85f93cecb9772866d2b00c3f572ba1d69c53102199fca",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 56,
       "omittedUnknownDate": 0,
-      "sha256": "242190fbd274338efe96697aabfa24657a355ee85451ed1c8d97588eea43ed53"
+      "sha256": "d2f04f024d4c27e0a06bb45a3fb3fd96bc20b8e539c7f36da668ab46c917543b"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 8,
       "omittedUnknownDate": 0,
-      "sha256": "98e50ebaaefcb5b108b0efed5b53833bdd9a7a50f0d50512e42f127f99685ecf"
+      "sha256": "58a479d4ca2303a38edd5a24bd8032671e52eabca92d94b4a08689380e7137c6"
     },
     {
       "id": "re-ge-benefit",

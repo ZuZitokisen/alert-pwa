@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-koriyama-entry-order",
-  "dataGeneratedAt": "2026-11-20T03:07:51.000Z",
+  "dataVersion": "2026-11-20-jre-train-ultragt",
+  "dataGeneratedAt": "2026-11-20T09:11:15.696Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "2e8319f2c6b84d6127b1dced9201d0b8edec6002f949a0857b46f0ba6675e261",
+  "inputSha256": "d2d7c980ff78347bd2604b33096118d21ca131202735a774871da7ea9d09eb0a",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 56,
       "omittedUnknownDate": 0,
-      "sha256": "242190fbd274338efe96697aabfa24657a355ee85451ed1c8d97588eea43ed53"
+      "sha256": "d2f04f024d4c27e0a06bb45a3fb3fd96bc20b8e539c7f36da668ab46c917543b"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 8,
       "omittedUnknownDate": 0,
-      "sha256": "98e50ebaaefcb5b108b0efed5b53833bdd9a7a50f0d50512e42f127f99685ecf"
+      "sha256": "58a479d4ca2303a38edd5a24bd8032671e52eabca92d94b4a08689380e7137c6"
     },
     {
       "id": "re-ge-benefit",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all.ics",
-      "count": 21,
+      "count": 24,
       "omittedUnknownDate": 0,
-      "sha256": "0e4560d4f3cc063373bc92b7f52c4722a7d95515ee7605df1a71b9e889df3dcf"
+      "sha256": "920825b66aef24ca62d9c7b95501d68bccc6ec3c9131b3ec7692a8ea4ec0dfa5"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live.ics",
       "count": 15,
       "omittedUnknownDate": 0,
-      "sha256": "06c6f79e750862ef7835ed70239fcd3af807d27708a9d7f55baccbb731266e48"
+      "sha256": "2b0fe84f046dd8bb4fa905358e74862311820d2f98aebed60331d9b3106c7f13"
     },
     {
       "id": "tohokusan-benefit",
@@ -236,9 +236,9 @@
       "category": "benefit",
       "label": "いぎなり東北産 / 特典会・応募",
       "path": "calendar-feeds/tohokusan-benefit.ics",
-      "count": 2,
+      "count": 5,
       "omittedUnknownDate": 0,
-      "sha256": "19f3dc18ec54856cdeb42e98c5ecf0427fd6efbd1b4303afe72add688c6bc93b"
+      "sha256": "08d191295e91a76aa4d0bc72a7ebe114b5c84a4011b2f1ba49aa8618d8ac7fc6"
     },
     {
       "id": "tohokusan-media",

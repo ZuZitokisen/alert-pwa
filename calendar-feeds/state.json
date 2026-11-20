@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-koriyama-entry-order",
-  "dataGeneratedAt": "2026-11-20T03:07:51.000Z",
-  "inputSha256": "2e8319f2c6b84d6127b1dced9201d0b8edec6002f949a0857b46f0ba6675e261",
+  "dataVersion": "2026-11-20-jre-train-ultragt",
+  "dataGeneratedAt": "2026-11-20T09:11:15.696Z",
+  "inputSha256": "d2d7c980ff78347bd2604b33096118d21ca131202735a774871da7ea9d09eb0a",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1152,17 +1152,19 @@
         "end": null,
         "allDay": false,
         "location": "渋谷ストリームホール",
-        "publicNote": "本人公式で12/11開催と渋谷ストリームホールを確認。桧山ゆうみは別件のため欠席と告知。開始・終了時刻は未確認。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。 本人公式ニュース本文で会場・欠席告知を補足。",
+        "publicNote": "本人公式で12/11開催と渋谷ストリームホールを確認。桧山ゆうみは別件のため欠席と告知。開始・終了時刻は未確認。 同じ公演に律月ひかる（いぎなり東北産）がソロ出演。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。 本人公式ニュース本文で会場・欠席告知を補足。 共演者の本人公式と主催公演ページを照合。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://madeintohoku.com/contents/1129021",
           "https://re-ge.com/news/item-818/",
-          "https://re-ge.com/schedule/item-819/"
+          "https://re-ge.com/schedule/item-819/",
+          "https://ultragt.radiomax.jp/fes"
         ],
         "sourceUrl": "https://re-ge.com/schedule/item-819/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-18T16:35:21.311Z",
-      "modified": "2026-11-19T13:15:00.527Z",
+      "modified": "2026-11-20T09:11:15.696Z",
       "lastTiming": {
         "start": "2026-12-11",
         "end": null,
@@ -4446,15 +4448,17 @@
         "end": null,
         "allDay": false,
         "location": "岩手県内の駅（調整中）〜東北新幹線〜古川駅",
-        "publicNote": "限定有料イベント。16:00頃に岩手県内の駅で受付、19:30頃に古川駅で解散予定。概算時刻のため時刻欄には採用せず。スタンプラリー応募の当選者向け旅行商品で、通常の自由参加イベントではありません。\n本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。",
+        "publicNote": "限定有料イベント。16:00頃に岩手県内の駅で受付、19:30頃に古川駅で解散予定。概算時刻のため時刻欄には採用せず。スタンプラリー応募の当選者向け旅行商品で、通常の自由参加イベントではありません。 11/30までに対象の2駅以上で歴代ジャケットスタンプを取得した人が抽選に応募可。エキタグの応募フォームは12/4配信、12/14 23:59締切とJR東日本が案内。旅行代金は1人9,000円（税込）、定員約50名。\n本人公式の告知で開催日・受付情報を確認。未発表の時刻は補完していません。 本人公式およびJR東日本の案内で応募条件と申込期間を確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://madeintohoku.com/contents/1108805"
+          "https://madeintohoku.com/contents/1108805",
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/",
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1="
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-19T09:46:35.640Z",
-      "modified": "2026-11-19T09:46:35.640Z",
+      "modified": "2026-11-20T09:11:15.696Z",
       "lastTiming": {
         "start": "2027-01-30",
         "end": null,
@@ -4463,6 +4467,108 @@
       "memberships": [
         "tohokusan-all",
         "tohokusan-live"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-jre-train-application-deadline-20261214\"]",
+      "uid": "public-v1-2ed2e0d3b84804f76648cdd85a618d528c15fb37a9aeec19bd2ccb9bdb5b7cb3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-jre-train-application-deadline-20261214",
+        "category": "benefit",
+        "title": "まるごと列車イベント 抽選応募締切",
+        "start": "2026-12-14T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "エキタグアプリの応募フォーム",
+        "publicNote": "対象スタンプを集めた人向けの抽選受付。応募だけで参加は確定せず、当選者が旅行商品を購入。\nJR東日本の公式案内を確認。本人公式での締切時刻明示は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/",
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1="
+        ],
+        "sourceUrl": "https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1="
+      },
+      "sequence": 0,
+      "created": "2026-11-20T09:11:15.696Z",
+      "modified": "2026-11-20T09:11:15.696Z",
+      "lastTiming": {
+        "start": "2026-12-14T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-benefit"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-jre-train-application-form-20261204\"]",
+      "uid": "public-v1-c9e6fc1660c3f0a505a70a3ecd2ba6fd94e3b0cecf334200a78e33d339dd3465@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-jre-train-application-form-20261204",
+        "category": "benefit",
+        "title": "まるごと列車イベント 抽選応募フォーム配信・受付開始",
+        "start": "2026-12-04",
+        "end": null,
+        "allDay": false,
+        "location": "エキタグアプリ「お知らせ」",
+        "publicNote": "対象者にエキタグアプリのお知らせで応募フォームを配信予定。応募は1人1回。開始時刻は未公表。\nJR東日本の公式案内による配信日。本人公式での日付明示は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/",
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1="
+        ],
+        "sourceUrl": "https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1="
+      },
+      "sequence": 0,
+      "created": "2026-11-20T09:11:15.696Z",
+      "modified": "2026-11-20T09:11:15.696Z",
+      "lastTiming": {
+        "start": "2026-12-04",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-benefit"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-jre-train-stamp-cutoff-20261130\"]",
+      "uid": "public-v1-28fe835a732b6985f75472de02215585f022071aa4cfff66689ee44b440a6dc0@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-jre-train-stamp-cutoff-20261130",
+        "category": "benefit",
+        "title": "いぎなり！東北まるごと推しめぐり スタンプ取得最終日",
+        "start": "2026-11-30",
+        "end": null,
+        "allDay": false,
+        "location": "東北6県の対象駅",
+        "publicNote": "新青森・盛岡・秋田・仙台・山形・福島のうち異なる2駅以上で歴代ジャケットスタンプを集めると、列車イベントの抽選に応募可。LIVE記念スタンプは対象外。この日はスタンプ取得の最終日で、応募締切ではありません。\n本人公式の実施期間とJR東日本の抽選参加条件を確認。終了時刻は未公表。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1108805",
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/",
+          "https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1="
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T09:11:15.696Z",
+      "modified": "2026-11-20T09:11:15.696Z",
+      "lastTiming": {
+        "start": "2026-11-30",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-benefit"
       ]
     },
     {
@@ -4835,15 +4941,19 @@
         "end": null,
         "allDay": false,
         "location": "渋谷ストリームホール",
-        "publicNote": "開催日のみ公表。開場・開演時刻は未発表。\n本人公式の開催日・本文記載を確認。",
+        "publicNote": "開催日のみ公表。開場・開演時刻は未発表。 律月ひかるはソロ出演。同じ公演にRE-GEも出演。\n本人公式の開催日・本文記載を確認。 双方の本人公式と主催公演ページを照合。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://madeintohoku.com/contents/1129023"
-        ]
+          "https://madeintohoku.com/contents/1129021",
+          "https://madeintohoku.com/contents/1129023",
+          "https://re-ge.com/news/item-818/",
+          "https://ultragt.radiomax.jp/fes"
+        ],
+        "sourceUrl": "https://madeintohoku.com/contents/1129023"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-19T08:45:31.941Z",
-      "modified": "2026-11-19T08:45:31.941Z",
+      "modified": "2026-11-20T09:11:15.696Z",
       "lastTiming": {
         "start": "2026-12-11",
         "end": null,
@@ -11371,5 +11481,5 @@
       ]
     }
   ],
-  "integritySha256": "4fc840bc12ec12449a2b9aa0e82a0a42c97ce46e5e51413df27a8b3648429f9d"
+  "integritySha256": "a5bd467e7b7e72bbe4d30e1d432ded4b63a31353ccce036562b582932ab5e83a"
 }
