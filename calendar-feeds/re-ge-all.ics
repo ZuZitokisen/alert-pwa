@@ -790,6 +790,112 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-ef0e86cbcd2c82520ff49e0273564f83b1219b5ec8df2d85f93f751c224ed
+ 303@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T132256Z
+CREATED:20261120T132256Z
+LAST-MODIFIED:20261120T132256Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270109
+SUMMARY:ニューイヤーだよ！六本木アイドルフェスティバ
+ ル（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nRE-GE出演決定。公演全体の終演予定は21:30頃。RE-GEの
+ 個別出演時刻は未発表。スタンディングS 8\,800円、A 5\,5
+ 00円、スタンド指定席6\,000円。ドリンク代600円別。テレ
+ 朝iDが必要。受付：https://ticket.tv-asahi.co.jp/ex/project/idolfes
+ 2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。\nhttp
+ s://re-ge.com/news/item-822/\nhttps://ticket.tv-asahi.co.jp/ex/project/ido
+ lfes2027\nhttps://www.tv-asahi.co.jp/idolfes/
+LOCATION:EXシアター六本木
+URL:https://re-ge.com/news/item-822/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-15612c2278f4e922656d72e27cef5b213468f5fedca499189ad9c94583df0
+ 393@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T132256Z
+CREATED:20261120T132256Z
+LAST-MODIFIED:20261120T132256Z
+SEQUENCE:0
+DTSTART:20261212T010000Z
+SUMMARY:ニューイヤーだよ！六本木アイドルフェスティバ
+ ル 一般発売（先着）開始
+DESCRIPTION:一般発売の終了時刻は未発表。テレ朝iDで申込
+ 。公演日は2027/1/9、会場はEXシアター六本木。 https://tick
+ et.tv-asahi.co.jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝
+ 日の公式情報で確認。\nhttps://re-ge.com/news/item-822/\nhttps://
+ ticket.tv-asahi.co.jp/ex/project/idolfes2027\nhttps://www.tv-asahi.co.jp/i
+ dolfes/
+LOCATION:テレ朝チケット
+URL:https://re-ge.com/news/item-822/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-36aa257a8e47a6e4efeae3963ef7f6f226cca7b642285ae2fba2b2d61d13b
+ d30@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T132256Z
+CREATED:20261120T132256Z
+LAST-MODIFIED:20261120T132256Z
+SEQUENCE:0
+DTSTART:20261129T145900Z
+SUMMARY:ニューイヤーだよ！六本木アイドルフェスティバ
+ ル 2次先行（抽選）締切
+DESCRIPTION:受付開始は11/13 12:00。テレ朝iDで申込。公演日
+ は2027/1/9、会場はEXシアター六本木。 https://ticket.tv-asahi.
+ co.jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝日の公式
+ 情報で確認。\nhttps://re-ge.com/news/item-822/\nhttps://ticket.tv-as
+ ahi.co.jp/ex/project/idolfes2027\nhttps://www.tv-asahi.co.jp/idolfes/
+LOCATION:テレ朝チケット
+URL:https://re-ge.com/news/item-822/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1466479fb09772ad3fb5c45eba66a061412b3aa7603543ea5417e79e8e3b4
+ 9a7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T132256Z
+CREATED:20261120T132256Z
+LAST-MODIFIED:20261120T132256Z
+SEQUENCE:0
+DTSTART:20261211T145900Z
+SUMMARY:ニューイヤーだよ！六本木アイドルフェスティバ
+ ル 3次先行（先着）締切
+DESCRIPTION:公式掲載の受付終了時刻。先着のため販売状況
+ は公式サイトで確認。テレ朝iDで申込。公演日は2027/1/9
+ 、会場はEXシアター六本木。 https://ticket.tv-asahi.co.jp/ex/pr
+ oject/idolfes2027\nRE-GE公式告知とテレビ朝日の公式情報で
+ 確認。\nhttps://re-ge.com/news/item-822/\nhttps://ticket.tv-asahi.co.jp
+ /ex/project/idolfes2027\nhttps://www.tv-asahi.co.jp/idolfes/
+LOCATION:テレ朝チケット
+URL:https://re-ge.com/news/item-822/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9f191094a7dc757be3ba710e57f7e669fd980fb4c7e63117ecf06681395c2
+ e40@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T132256Z
+CREATED:20261120T132256Z
+LAST-MODIFIED:20261120T132256Z
+SEQUENCE:0
+DTSTART:20261202T030000Z
+SUMMARY:ニューイヤーだよ！六本木アイドルフェスティバ
+ ル 3次先行（先着）開始
+DESCRIPTION:公式掲載の受付終了は12/11 23:59。先着のため販
+ 売状況は公式サイトで確認。テレ朝iDで申込。公演日は
+ 2027/1/9、会場はEXシアター六本木。 https://ticket.tv-asahi.co.
+ jp/ex/project/idolfes2027\nRE-GE公式告知とテレビ朝日の公式情
+ 報で確認。\nhttps://re-ge.com/news/item-822/\nhttps://ticket.tv-asahi
+ .co.jp/ex/project/idolfes2027\nhttps://www.tv-asahi.co.jp/idolfes/
+LOCATION:テレ朝チケット
+URL:https://re-ge.com/news/item-822/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-31897d1ee5b74a7d42d8c2c8b22be1489588a26c6029d6679c270ef7c59e0
  734@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z
