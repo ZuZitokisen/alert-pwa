@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-jre-train-ultragt",
-  "dataGeneratedAt": "2026-11-20T09:11:15.696Z",
+  "dataVersion": "2026-11-20-gift-performance-times",
+  "dataGeneratedAt": "2026-11-20T13:02:00Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "85dfbd332efb96ec05842bdb82325b24d26a451ee3f44d9720b51158427e4fe4",
+  "inputSha256": "c62825b83e089fb545b1f1e8ddfb34f8b96ffbcabed7c4ec3cd669cd3db3975f",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 190,
       "omittedUnknownDate": 11,
-      "sha256": "da397cd577b06d42a8550e4054916db478b95006b8f3a22a8f0c04782c9ce358"
+      "sha256": "de26751a17cab622c2bb1f275ff221961ab5dadbbee59c5044947d95b6abe53a"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live.ics",
       "count": 11,
       "omittedUnknownDate": 3,
-      "sha256": "0a88e9d61f6e87b6fd2540af6690d077b829ce34148a3c21118ab007bced656a"
+      "sha256": "b26557703cffe566bc13cbf91fc0e7d6f8ed87b455a89ebc2fad528a1d2106b6"
     },
     {
       "id": "tokisen-benefit",
