@@ -277,12 +277,10 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 /* Suppress date double-tap zoom only; manipulation retains pinch zoom. */
 .day-cell,.day-cell .date-button{touch-action:manipulation}
 #agenda-title{scroll-margin-top:24px}
-/* Align the Schedule certainty filters as one wrapping group. */
-#calendar-view .agenda-panel>.filter-pills{justify-content:flex-end;flex-wrap:wrap}
 
 /* Appearance and brief feedback, without moving the tap or keyboard targets. */
 #theme-toggle{flex:none}
-#theme-toggle svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#theme-toggle svg,#calendar-share svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 #theme-toggle .theme-sun,:root[data-theme=dark] #theme-toggle .theme-moon{display:none}
 :root[data-theme=dark] #theme-toggle .theme-sun{display:block}
 .agenda-card-controls{justify-content:flex-end}
@@ -302,3 +300,14 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 :where(:root[data-theme=dark]) .status.cancelled,:where(:root[data-theme=dark]) .status.missing{background:#472933;color:#ffc0c9}
 :where(:root[data-theme=dark]) #search,:where(:root[data-theme=dark]) select,:where(:root[data-theme=dark]) .subscription-url{background:var(--surface);color:var(--ink);border-color:var(--line)}
 :where(:root[data-theme=dark]) #search::placeholder{color:var(--muted)}
+
+/* Keep certainty first and the native sort selector at the right in each card list. */
+.card-filter-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:8px 12px;margin:0 0 14px}
+.card-filter-row .filter-pills{margin:0;justify-content:flex-start;flex-wrap:wrap;min-width:0}
+.card-filter-row select{justify-self:end;min-height:44px;width:122px;max-width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:12px;padding:0 8px}
+#cards-view .toolbar .search{flex:1}
+@media(max-width:385px){.card-filter-row{column-gap:6px}.card-filter-row select{width:110px}.card-filter-row .filter-pills button{padding-inline:8px}}
+
+#calendar-share{flex:none}
+@media(max-width:350px){.app-header h1{font-size:24px}.header-actions{gap:6px}}
+#artist-filters [data-artist=tokisen] .artist-symbol{width:28px;height:28px}

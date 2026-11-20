@@ -141,11 +141,11 @@ test('agenda favorite-first sorting rerenders immediately without changing selec
 });
 test('agenda cards still open details and the subscription action retains artist selection',()=>{
  const f=fixture({events:[event('today','2026-11-12')]});f.get('agenda').querySelector('.card-open').click();assert.equal(f.get('detail').open,true);assert.match(f.get('detail-content').textContent,/today/);assert.equal(f.run('agendaRange'),'day');
- f.run('closeDialog();globalThis.subscriptionCalls=[];openSubscriptions=id=>subscriptionCalls.push(id)');f.get('agenda-subscriptions').click();assert.equal(f.context.subscriptionCalls.length,1);assert.equal(f.context.subscriptionCalls[0],undefined);f.run("artist='re-ge'");f.get('agenda-subscriptions').click();assert.equal(f.context.subscriptionCalls[1],'re-ge');
+ f.run('closeDialog();globalThis.subscriptionCalls=[];openSubscriptions=id=>subscriptionCalls.push(id)');f.get('calendar-share').click();assert.equal(f.context.subscriptionCalls.length,1);assert.equal(f.context.subscriptionCalls[0],undefined);f.run("artist='re-ge'");f.get('calendar-share').click();assert.equal(f.context.subscriptionCalls[1],'re-ge');
 });
 test('layout keeps month and cards together with exactly Schedule, Favorite and News navigation',()=>{
  const document=parseDocument(html),calendar=document.querySelector('.calendar-panel'),agenda=document.querySelector('.agenda-panel');assert.equal(document.querySelectorAll('[data-mode]').length,0);assert.equal(calendar.querySelectorAll('.card-legend').length,0);assert.equal(agenda.querySelectorAll('.card-legend').length,0);assert.equal(document.querySelectorAll('.card-legend').length,0);
- for(const id of ['agenda-sort','agenda-subscriptions','search','sort','cards-view','changes-view','favorites-view'])assert.ok(document.getElementById(id),id);
+ for(const id of ['agenda-sort','calendar-share','search','sort','cards-view','changes-view','favorites-view'])assert.ok(document.getElementById(id),id);
  const links=document.querySelectorAll('nav a');assert.deepEqual(links.map(a=>a.dataset.view),['calendar','favorites','search','changes']);for(const [index,label] of ['Schedule','Favorite','Search','News'].entries())assert.ok(links[index].textContent.includes(label),label);
  assert.equal(document.getElementById('about-view'),null);assert.equal(document.querySelector('.header-actions a[href="#about"]'),null);assert.equal(document.querySelectorAll('.mobile-info').length,0);
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');assert.match(css,/\.calendar-layout\{grid-template-columns:minmax\(0,1fr\)\}/);assert.ok(!/nav a\[data-view=changes\]\s*\{display:none/.test(css),'News must not remain hidden by the earlier two-tab mobile rule');
@@ -222,7 +222,7 @@ test('artist choice does not erase favorites or alter the subscription preset pa
  const f=fixture({events:[event('keep favorite','2026-11-12')]}),group=f.get('artist-filters');
  f.get('agenda').querySelector('.favorite-button').click();const saved=f.saved.get('alert-pwa-favorites-v1');
  f.run('globalThis.subscriptionCalls=[];openSubscriptions=id=>subscriptionCalls.push(id)');
- for(const id of ['tokisen','re-ge','straightangeli','all']){group.querySelector('[data-artist="all"]').click();group.querySelector(`[data-artist="${id}"]`).click();f.get('agenda-subscriptions').click();assert.equal(f.saved.get('alert-pwa-favorites-v1'),saved);}
+ for(const id of ['tokisen','re-ge','straightangeli','all']){group.querySelector('[data-artist="all"]').click();group.querySelector(`[data-artist="${id}"]`).click();f.get('calendar-share').click();assert.equal(f.saved.get('alert-pwa-favorites-v1'),saved);}
  assert.deepEqual(Array.from(f.context.subscriptionCalls),['tokisen','re-ge','straightangeli',undefined]);assert.deepEqual(f.titles('favorites'),['keep favorite']);
 });
 test('artist generated fallback matches static labels and paths without adding an RE-GE icon',()=>{
@@ -378,4 +378,36 @@ test('card list heading uses dotted month and day while retaining the existing w
  weekButton(f,'2026-11-29').click();assert.equal(heading.textContent,'11月29日(日) 〜 12月5日(土)');
  f.run("selectDay('2027-01-02')");assert.equal(heading.textContent,'2027.01.02');
  f.get('month-label').click();assert.equal(heading.textContent,'2027.01');
+});
+
+test('card toolbar presents filters first, followed by an accessible unlabeled-on-screen sort select',()=>{
+ const f=fixture(),rows=f.document.querySelectorAll('.card-filter-row');
+ assert.equal(rows.length,2);
+ for(const row of rows){
+  const controls=row.children;
+  assert.equal(controls.length,2);
+  assert.ok(controls[0].classList.contains('filter-pills'));
+  assert.equal(controls[1].tagName,'SELECT');
+  assert.equal(controls[1].getAttribute('aria-label'),'並び順');
+  assert.ok(!row.textContent.includes('並び順'));
+ }
+});
+
+test('header share leads to calendar subscriptions and sits just left of theme',()=>{
+ const f=fixture(),actions=f.document.querySelector('.header-actions');
+ assert.deepEqual(actions.children.map(b=>b.id),['calendar-share','theme-toggle','refresh']);
+ assert.equal(f.get('calendar-share').getAttribute('aria-label'),'本体カレンダーに追加');
+ assert.equal(f.get('agenda-subscriptions'),null);
+ assert.equal(f.get('open-subscriptions'),null);
+ f.run('globalThis.subscriptionCalls=[];openSubscriptions=id=>subscriptionCalls.push(id)');
+ f.get('calendar-share').click();f.run("artist='oneloveoneheart'");f.get('calendar-share').click();
+ assert.deepEqual(Array.from(f.context.subscriptionCalls),[undefined,'oneloveoneheart']);
+});
+
+test('the Tokisen icon has no handle and enlarges only the artwork',()=>{
+ const f=fixture(),b=f.document.querySelector('[data-artist="tokisen"]');
+ assert.equal(b.getAttribute('aria-label'),'超ときめき♡宣伝部');
+ const svg=b.querySelector('svg');
+ assert.equal(svg.querySelectorAll('path')[1].getAttribute('d'),'M27 10l3-2m-3 8h4m-4 6 3 2');
+ assert.match(fs.readFileSync(new URL('./style.css',import.meta.url),'utf8'),/\[data-artist=tokisen\] \.artist-symbol\{width:28px;height:28px\}/);
 });
