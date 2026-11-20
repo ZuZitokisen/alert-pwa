@@ -306,6 +306,7 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .card-filter-row .filter-pills{margin:0;justify-content:flex-start;align-items:center;flex-wrap:nowrap;gap:4px;min-width:0}
 .card-filter-row .filter-pills button{flex:0 0 auto;min-width:44px;min-height:44px;padding:6px 8px;white-space:nowrap}
 .card-filter-row select{justify-self:end;min-height:44px;width:122px;max-width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:12px;padding:0 8px}
+#cards-view > .toolbar{margin-block-end:16px}
 #cards-view .toolbar .search{flex:1}
 @media(max-width:385px){
  .card-filter-row{column-gap:6px}
@@ -319,3 +320,14 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 #artist-filters [data-artist=tokisen] .artist-symbol{width:28px;height:28px}
 
 .search-symbol{display:block;margin:auto;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+
+/* Fade the backdrop blur in toward the bottom edge without covering the controls. */
+@media(max-width:700px){
+ .sidebar::before{
+  content:"";position:fixed;inset:auto 0 0;z-index:19;
+  height:calc(max(12px,env(safe-area-inset-bottom)) + 45px);pointer-events:none;
+  background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--bg) 72%,transparent));
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000);mask-image:linear-gradient(to bottom,transparent,#000);
+ }
+}

@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.19';
+const APP_RELEASE='0.7.20';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -176,7 +176,35 @@ function renderSubscriptions(){
 function openExport(events){const result=F.buildICS(events.map(presentEvent),{now:new Date().toISOString()}),area=$('#detail-content');area.replaceChildren(el('h2','カレンダーに渡す予定'),el('p',`${result.included.length}件の架空サンプルをICSファイルにします。`));const list=el('ul','','export-list');for(const e of result.included)list.append(el('li',`${e.status==='possible'?'［かも？］':''}${e.title} · ${timing(e)}`));area.append(list);for(const s of result.skipped)area.append(el('p',`${s.event?.title||'予定'}：${s.label||s.reason}（出力しません）`,'hint'));area.append(el('p','ファイルを保存しただけでは、本体カレンダーへの登録は完了しません。対応するカレンダーで内容を確認して追加してください。iPhoneでの受け渡しは実機未検証です。','evidence'),el('p','自動同期ではありません。内容が変わっても自動更新しません。通知設定はファイルに含めません。','hint'));const b=el('button',`${result.included.length}件のICSを作成`,'primary');b.disabled=!result.included.length;b.onclick=()=>{const url=URL.createObjectURL(new Blob([result.ics],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='alert-sample-events.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);toast('ICSファイルを作成しました。本体への追加はカレンダー側で確認してください。');};area.append(b);openDialog();}
 function showValue(key,value){if(value===null||value===undefined||value==='')return '未設定';if(key==='status')return statusNames[value]||value;if(key==='category'&&value==='BENEFIT')return 'EVENT';if(key==='artistId')return getArtist(value)?.name||value;if(key==='allDay')return value?'終日':'時刻指定／時刻未定';if(['start','end','deadline'].includes(key))return prettyDate(value);return String(value);}
 function openChange(c){const area=$('#detail-content'),e=c.after||c.before;area.replaceChildren(el('span',kindNames[c.kind],'status'),el('h2',e.title),el('p',`検知 ${prettyDate(c.detected)} · r${c.revision}`,'hint'));if(c.kind==='unavailable')area.append(el('p','掲載がなくなったため前回の内容を保持しています。中止とは判断しません。','evidence'));else for(const key of c.fields){const row=el('div','','diff-item');row.append(el('div',fields[key]||key,'diff-label'));if(c.before)row.append(el('div',showValue(key,c.before[key]),'diff-before'));if(c.after)row.append(el('div',showValue(key,c.after[key]),'diff-after'));area.append(row);}const p=F.notificationPreview({...c,before:c.before?presentEvent(c.before):null,after:c.after?presentEvent(c.after):null},{real:true}),preview=el('div','','notification-preview');preview.append(el('small','通知のプレビュー · 送信していません'),el('strong',p.title),el('p',p.body));area.append(preview);openDialog();}
-function visibleCards(){return matching({status:filter,query:$('#search').value,sort:$('#sort').value});}
+function searchDate(value){
+ const q=value.normalize('NFKC').trim();
+ const match=/^(\d{4})\s*([./-])\s*(\d{1,2})(?:\s*\2\s*(\d{1,2}))?$/.exec(q);
+ const japanese=/^(?:(\d{4})\s*年\s*)?(\d{1,2})\s*月(?:\s*(\d{1,2})\s*日)?$/.exec(q);
+ const short=/^(\d{1,2})\s*[./-]\s*(\d{1,2})$/.exec(q);
+ if(!match&&!japanese&&!short)return null;
+ const year=match?.[1]||japanese?.[1]||null;
+ const month=+(match?.[3]||japanese?.[2]||short?.[1]);
+ const day=+(match?.[4]||japanese?.[3]||short?.[2]||0);
+ const hasDay=!!(match?.[4]||japanese?.[3]||short);
+ return {year,month,day,hasDay};
+}
+function matchesSearchDate(event,{year,month,day,hasDay}){
+ const start=F.dateKey(event.start);
+ if(!start||month<1||month>12||(hasDay&&(day<1||day>31)))return false;
+ const finish=F.dateKey(event.end)||start;
+ const first=year?+year:+start.slice(0,4),last=year?+year:Math.max(first,+finish.slice(0,4));
+ for(let y=first;y<=last;y++){
+  const prefix=String(y).padStart(4,'0')+'-'+String(month).padStart(2,'0');
+  const key=prefix+'-'+String(hasDay?day:1).padStart(2,'0');
+  if(F.dateKey(key)&&(F.overlapsDay(event,key)||(!hasDay&&event.present!==false&&start.startsWith(prefix+'-'))))return true;
+ }
+ return false;
+}
+function visibleCards(){
+ const query=$('#search').value,date=searchDate(query);
+ const events=matching({status:filter,query:date?'':query,sort:$('#sort').value});
+ return date?events.filter(e=>matchesSearchDate(e,date)):events;
+}
 function renderCards(){const list=visibleCards();$('#cards').replaceChildren(...(list.length?list.map(e=>card(e)):[el('p','該当する予定はありません。','empty')]));const f=matching({favoritesOnly:true});$('#favorites').replaceChildren(...(f.length?f.map(e=>card(e)):[el('p','お気に入りはまだありません。','empty')]));renderSelection();}
 function renderSelection(){const eligible=visibleCards().filter(e=>F.exportEligibility(e).eligible),all=eligible.length>0&&eligible.every(e=>selected.has(F.stableEventKey(e)));$('#select-visible').checked=all;$('#select-visible').indeterminate=!all&&eligible.some(e=>selected.has(F.stableEventKey(e)));$('#select-visible').disabled=!eligible.length;const count=state.events.filter(e=>selected.has(F.stableEventKey(e))&&F.exportEligibility(e).eligible).length;$('#selected-count').textContent=count;$('#export-selected').disabled=!count;}
 // Calendar stays in month view. Range selection only changes the cards below it.
