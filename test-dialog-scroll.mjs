@@ -51,6 +51,6 @@ test('card-wide hit area leaves the favorite independent and keeps scroll gestur
  assert.ok(!/addEventListener\(['"](?:touchstart|pointerdown)['"]/.test(source));
 });
 test('favorite focus restoration explicitly avoids scrolling the page',()=>{
- assert.match(source,/`\$\{e.title\}のお気に入り`\)\?\.focus\(\{preventScroll:true\}\)/);
+ assert.match(source,/target\?\.focus\(\{preventScroll:true\}\)/);
  assert.match(source,/\$\('#detail-content \.favorite-button'\)\?\.focus\(\{preventScroll:true\}\)/);
 });

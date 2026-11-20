@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.15';
+const APP_RELEASE='0.7.16';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -85,7 +85,23 @@ function renderArtists(){
 
 function toggleFavorite(e){const key=F.stableEventKey(e);favorites.has(key)?favorites.delete(key):favorites.add(key);save('alert-pwa-favorites-v1',[...favorites]);render();}
 function favoriteMark(active){const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('class','favorite-icon');svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');const heart=document.createElementNS(ns,'path');heart.setAttribute('d','M12 20.5 3.8 12.4C.2 8.8 2.2 3.5 6.5 3.5c2.3 0 4 1.4 5.5 3.2 1.5-1.8 3.2-3.2 5.5-3.2 4.3 0 6.3 5.3 2.7 8.9Z');heart.setAttribute('fill',active?'#fff':'#222332');heart.setAttribute('stroke','#222332');heart.setAttribute('stroke-width','1.4');heart.setAttribute('stroke-linejoin','round');svg.append(heart);return svg;}
-function favoriteButton(e){const b=el('button','','favorite-button');b.append(favoriteMark(favorites.has(F.stableEventKey(e))));b.type='button';b.setAttribute('aria-label',`${e.title}のお気に入り`);b.setAttribute('aria-pressed',String(favorites.has(F.stableEventKey(e))));b.onclick=()=>{const container=b.closest('[id]')?.id;toggleFavorite(e);if(container)[...document.getElementById(container).querySelectorAll('button[aria-label]')].find(x=>x.getAttribute('aria-label')===`${e.title}のお気に入り`)?.focus({preventScroll:true});};return b;}
+function favoriteButton(e){
+ const b=el('button','','favorite-button'),key=F.stableEventKey(e),active=favorites.has(key);
+ b.append(favoriteMark(active));b.type='button';
+ b.setAttribute('aria-label',`${e.title}のお気に入り`);b.setAttribute('aria-pressed',String(active));
+ b.dataset.favoriteKey=key;
+ b.onclick=()=>{
+  const list=b.closest('[id]'),id=list?.id,selector='button.favorite-button';
+  const position=id?[...list.querySelectorAll(selector)].indexOf(b):-1;
+  toggleFavorite(e);
+  if(position<0)return;
+  const buttons=[...(document.getElementById(id)?.querySelectorAll(selector)||[])];
+  const same=buttons[position]?.dataset.favoriteKey===key?buttons[position]:buttons.find(x=>x.dataset.favoriteKey===key);
+  const target=same||buttons[Math.min(position,buttons.length-1)]||$('#view-title');
+  target?.focus({preventScroll:true});
+ };
+ return b;
+}
 function card(e,selectable=false){const key=F.stableEventKey(e),c=el('article','',`event-card ${e.present===false?'missing':e.status}`);c.style.setProperty('--event-color',colorFor(e));const body=el('div','','card-body'),top=el('div','','card-top');top.append(el('span',`${icons[e.category]||'◇'} ${e.category}`,'category'),statusBadge(e));body.append(top);const open=el('button','','card-open');open.type='button';open.setAttribute('aria-label',`${e.title}の詳細`);open.append(el('h3',e.title));open.onclick=()=>openEvent(e);body.append(open,el('p',getArtist(e.artistId)?.name||'サンプル','artist-name'),el('p',timing(e),'card-time'),el('p',e.location||'場所未定','card-location'));const actions=el('div','','card-actions');if(selectable){const label=el('label','','select-label'),input=document.createElement('input');input.type='checkbox';input.checked=selected.has(key);input.disabled=!F.exportEligibility(e).eligible;input.setAttribute('aria-label',`${e.title}を選択`);input.onchange=()=>{input.checked?selected.add(key):selected.delete(key);save('alert-pwa-selected-v1',[...selected]);renderSelection();};label.append(input,document.createTextNode(input.disabled?'日時を確認待ち':'まとめて登録'));actions.append(label);}else if(e.checkedAt){const checked=el('time',prettyDate(e.checkedAt),'card-bottom-note card-checked-time');checked.dateTime=e.checkedAt;actions.append(checked);}else actions.append(el('span','出典を確認','card-bottom-note'));actions.append(favoriteButton(e));body.append(actions);c.append(body);return c;}
 function appendSourcesAndTimes(area,e){
 if(e.timings?.length){area.append(el('h3','開催・受付の日時'));const list=el('ul','','event-timings');for(const t of e.timings){const line=el('li');line.append(el('strong',t.label+'：'),document.createTextNode((t.at?prettyDate(t.at):t.date?prettyDate(t.date)+'・時刻未定':'時刻未定')+(t.status==='possible'?'（かも？）':'')+(t.note?' / '+t.note:'')));list.append(line);}area.append(list);}
@@ -321,6 +337,26 @@ function preventActiveTabNavigation(event){
 
 $('#detail').addEventListener('close',onDialogClosed);$('#close-detail').onclick=closeDialog;$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
 $('#open-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#about-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#agenda-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);
+function initAppearance(){
+ const button=$('#theme-toggle');if(!button)return;
+ const preference=window.matchMedia?.('(prefers-color-scheme: dark)');
+ const key='furin-appearance-v1',root=document.documentElement;
+ let choice=null;
+ try{const stored=localStorage.getItem(key);if(stored==='light'||stored==='dark')choice=stored;}catch{}
+ const paint=()=>{
+  const theme=choice||(preference?.matches?'dark':'light');
+  root.dataset.theme=theme;
+  $('meta[name="theme-color"]')?.setAttribute('content',theme==='dark'?'#17171d':'#f7f6fb');
+  button.setAttribute('aria-label',theme==='dark'?'明るい表示に切り替える':'暗い表示に切り替える');
+ };
+ button.onclick=()=>{
+  choice=root.dataset.theme==='dark'?'light':'dark';
+  try{localStorage.setItem(key,choice);}catch{}
+  paint();
+ };
+ preference?.addEventListener?.('change',paint);paint();button.hidden=false;
+}
+initAppearance();
 $('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('#month-label').onclick=selectMonth;$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)activateCalendarDate(day.dataset.date,e);};
 function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+direction);period=F.dateKey(d.toISOString()).slice(0,7)+'-01';selectedDate=period;agendaRange='month';selectedWeekStart=null;renderCalendar();}
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
