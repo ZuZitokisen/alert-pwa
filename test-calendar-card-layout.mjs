@@ -283,8 +283,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.18 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-18/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.18'));assert.ok(sw.includes(file+'?v=0.7.18'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.19 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-19/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.19'));assert.ok(sw.includes(file+'?v=0.7.19'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -419,4 +419,23 @@ test('Search navigation and heading use the same large decorative icon',()=>{
  assert.match(source,/menuIcon\.cloneNode\(true\)/);
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
  assert.match(css,/\.search-symbol\{[^}]*width:22px;height:22px/);
+});
+
+test('both card filter bars are vertically centered and fit a 320px viewport without wrapping',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/\.card-filter-row\{[^}]*align-items:center/);
+ assert.match(css,/\.card-filter-row \.filter-pills\{[^}]*flex-wrap:nowrap/);
+ assert.match(css,/\.card-filter-row \.filter-pills button\{[^}]*min-height:44px/);
+ assert.match(css,/\.card-filter-row select\{[^}]*min-height:44px/);
+ const narrow=css.slice(css.lastIndexOf('@media(max-width:385px)'));
+ const width=Number(narrow.match(/\.filter-pills button\{width:(\d+)px/)[1]);
+ const gap=Number(narrow.match(/\.filter-pills\{gap:(\d+)px/)[1]);
+ const sort=Number(narrow.match(/\.card-filter-row select\{width:(\d+)px/)[1]);
+ const column=Number(narrow.match(/column-gap:(\d+)px/)[1]);
+ const f=fixture();
+ for(const bar of f.document.querySelectorAll('.card-filter-row')){
+  const items=bar.querySelectorAll('.filter-pills button').length;
+  assert.equal(items,4);
+  assert.ok(items*width+(items-1)*gap+sort+column<=320-2*18-2*2);
+ }
 });
