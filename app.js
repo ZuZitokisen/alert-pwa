@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.23';
+const APP_RELEASE='0.7.24';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -219,7 +219,12 @@ function matchesSearchDate(event,{year,month,day,hasDay}){
 }
 function visibleCards(){
  const query=$('#search').value,date=searchDate(query);
- const events=matching({status:filter,query:date?'':query,sort:$('#sort').value});
+ const mode=$('#sort').value;
+ let events=matching({status:filter,query:date?'':query,sort:mode==='upcoming'?'date':mode});
+ if(mode==='upcoming'){
+  const today=F.dateKey(new Date().toISOString());
+  events=events.filter(e=>{const day=F.dateKey(e.start);return !!day&&(day>=today||F.overlapsDay(e,today));});
+ }
  return date?events.filter(e=>matchesSearchDate(e,date)):events;
 }
 function renderCards(){const list=visibleCards();$('#cards').replaceChildren(...(list.length?list.map(e=>card(e)):[el('p','該当する予定はありません。','empty')]));const f=matching({favoritesOnly:true});$('#favorites').replaceChildren(...(f.length?f.map(e=>card(e)):[el('p','お気に入りはまだありません。','empty')]));renderSelection();}
