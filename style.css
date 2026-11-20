@@ -302,11 +302,17 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 :where(:root[data-theme=dark]) #search::placeholder{color:var(--muted)}
 
 /* Keep certainty first and the native sort selector at the right in each card list. */
-.card-filter-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:8px 12px;margin:0 0 14px}
-.card-filter-row .filter-pills{margin:0;justify-content:flex-start;flex-wrap:wrap;min-width:0}
+.card-filter-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:8px;margin:0 0 14px}
+.card-filter-row .filter-pills{margin:0;justify-content:flex-start;align-items:center;flex-wrap:nowrap;gap:4px;min-width:0}
+.card-filter-row .filter-pills button{flex:0 0 auto;min-width:44px;min-height:44px;padding:6px 8px;white-space:nowrap}
 .card-filter-row select{justify-self:end;min-height:44px;width:122px;max-width:100%;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:12px;padding:0 8px}
 #cards-view .toolbar .search{flex:1}
-@media(max-width:385px){.card-filter-row{column-gap:6px}.card-filter-row select{width:110px}.card-filter-row .filter-pills button{padding-inline:8px}}
+@media(max-width:385px){
+ .card-filter-row{column-gap:6px}
+ .card-filter-row .filter-pills{gap:3px}
+ .card-filter-row .filter-pills button{width:40px;min-width:40px;padding-inline:3px;font-size:10px}
+ .card-filter-row select{width:104px;padding-inline:4px;font-size:11px}
+}
 
 #calendar-share{flex:none}
 @media(max-width:350px){.app-header h1{font-size:24px}.header-actions{gap:6px}}
