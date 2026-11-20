@@ -85,3 +85,9 @@ test('mobile navigation stretches the decorative background in both directions o
  assert.match(css,/\.sidebar nav:has\(a\.active\)::before\{[^}]*pointer-events:none[^}]*transition:left 330ms[^}]*right 330ms/);
  assert.match(css,/@media\(prefers-reduced-motion:reduce\)\{\.sidebar nav:has\(a\.active\)::before\{transition:none/);
 });
+
+test('screen headings cannot be accidentally selected without blocking search or event content',()=>{
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/#view-title\{-webkit-user-select:none;user-select:none\}/);
+ assert.doesNotMatch(css,/(?:#search|#detail-content)[^{}]*\{[^}]*user-select:none/);
+});

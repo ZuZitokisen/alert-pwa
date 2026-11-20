@@ -357,3 +357,6 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  }
 }
 @media(prefers-reduced-motion:reduce){.sidebar nav:has(a.active)::before{transition:none}}
+
+/* View identity is chrome, not selectable document content. */
+#view-title{-webkit-user-select:none;user-select:none}
