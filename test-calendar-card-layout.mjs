@@ -283,8 +283,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.24 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-24/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.24'));assert.ok(sw.includes(file+'?v=0.7.24'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.25 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-25/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.25'));assert.ok(sw.includes(file+'?v=0.7.25'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -427,7 +427,7 @@ test('both card filter bars are vertically centered and fit a 320px viewport wit
  assert.match(css,/\.card-filter-row \.filter-pills\{[^}]*flex-wrap:nowrap/);
  assert.match(css,/\.card-filter-row \.filter-pills button\{[^}]*min-height:44px/);
  assert.match(css,/\.card-filter-row select\{[^}]*min-height:44px/);
- const narrow=css.slice(css.lastIndexOf('@media(max-width:385px)'));
+ const narrow=css.slice(css.indexOf('@media(max-width:385px)'));
  const width=Number(narrow.match(/\.filter-pills button\{width:(\d+)px/)[1]);
  const gap=Number(narrow.match(/\.filter-pills\{gap:(\d+)px/)[1]);
  const sort=Number(narrow.match(/\.card-filter-row select\{width:(\d+)px/)[1]);
@@ -533,4 +533,28 @@ test('Search defaults to today onwards in Japan time and other sort options reta
  f.get('search').value='昨日';f.get('search').oninput();assert.deepEqual(f.titles('cards'),[]);
  select.value='title';select.onchange();assert.equal(f.titles('cards').length,2);
  assert.equal(f.get('agenda-sort').children[0].value,'date');
+});
+
+test('expanded event puts the favorite to the right of the title and no calendar-add button in the card',()=>{
+ const e=event('detail-favorite','2026-11-12'),f=fixture({events:[e]});
+ f.get('agenda').querySelector('.card-open').click();
+ const panel=f.get('detail-content'),heading=panel.querySelector('.event-detail-heading');
+ assert.equal(heading.children[0].textContent,e.title);
+ assert.ok(heading.children[1].classList.contains('favorite-button'));
+ assert.doesNotMatch(panel.textContent,/本体カレンダーに追加/);
+ assert.equal(f.get('calendar-share').getAttribute('aria-label'),'本体カレンダーに追加');
+ heading.children[1].click();
+ assert.equal(panel.querySelector('.favorite-button').getAttribute('aria-pressed'),'true');
+});
+
+test('News does not repeat its heading and keeps the mark-all action',()=>{
+ const f=fixture(),news=f.get('changes-view');
+ assert.doesNotMatch(news.textContent,/予定の新着・変更/);
+ const actions=news.querySelector('.news-actions');
+ assert.ok(actions.querySelector('#read-all'));
+ assert.equal(actions.querySelector('#news-events-tab').getAttribute('aria-selected'),'true');
+ assert.equal(news.querySelector('#news-history-panel').hidden,true);
+ const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
+ assert.match(css,/\.news-actions\{[^}]*grid-template-columns:minmax\(0,1fr\) auto;[^}]*align-items:center/);
+ assert.match(css,/\.news-tabs button,\.news-actions #read-all\{min-height:44px;white-space:nowrap/);
 });

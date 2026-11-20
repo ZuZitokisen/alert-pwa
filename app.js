@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.24';
+const APP_RELEASE='0.7.25';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -165,7 +165,44 @@ function stopCardOpenMotion(){cardOpenMotion?.cancel();cardOpenMotion=null;}
 function closeDialog(){stopCardOpenMotion();$('#detail').close();unlockDialogScroll();}
 function onDialogClosed(){if(!$('#detail').open){stopCardOpenMotion();unlockDialogScroll();$('#detail').setAttribute('aria-label','予定と通知の詳細');}}
 
-function openEvent(e,origin){const area=$('#detail-content');area.dataset.panel='event';area.replaceChildren(statusBadge(e),el('h2',e.title,'event-detail-title'),el('p',getArtist(e.artistId)?.name||'サンプル','detail-meta'),el('p',timing(e)),el('p',e.location||'場所未定'),el('p',e.note));if(e.deadline)area.append(el('p','正式締切 '+prettyDate(e.deadline)));const actions=el('div','','detail-actions');const fav=favoriteButton(e);fav.onclick=()=>{toggleFavorite(e);openEvent(e);$('#detail-content .favorite-button')?.focus({preventScroll:true});};actions.append(fav);const exportButton=el('button','本体カレンダーに追加','primary');exportButton.onclick=()=>openSubscriptions(e.artistId);actions.append(exportButton);area.append(actions);if(exportButton.disabled)area.append(el('p',F.exportEligibility(e).label||'日時未定・中止・掲載消失の情報は出力できません。','hint'));if(e.present===false)area.append(el('p','元ページから掲載がなくなりました。中止とは確定していません。'));appendSourcesAndTimes(area,e);
+// Track only a single deliberate horizontal touch on an expanded card.
+function installCardSwipe(dialog,getPanel,dismiss){
+ let drag=null;
+ const cardPanel=()=>{const panel=getPanel();return panel==='event'||panel==='change'?panel:null;};
+ const point=(list,id)=>Array.from(list||[]).find(t=>t.identifier===id);
+ const delta=t=>({x:t.clientX-drag.x,y:t.clientY-drag.y});
+ dialog.addEventListener('touchstart',event=>{
+  drag=null;const panel=cardPanel();
+  if(!dialog.open||!panel||event.touches.length!==1||event.target===dialog||event.target.closest?.('button,a,input,select,textarea,label,summary,[contenteditable]'))return;
+  const t=event.touches[0];
+  drag={id:t.identifier,x:t.clientX,y:t.clientY,panel};
+ },{passive:true});
+ dialog.addEventListener('touchmove',event=>{
+  if(!drag)return;
+  const t=point(event.touches,drag.id);
+  if(!t||event.touches.length!==1){drag=null;return;}
+  const {x,y}=delta(t);
+  if((Math.abs(y)>18&&Math.abs(y)>Math.abs(x)*.75)||(x>24&&x>Math.abs(y)))drag=null;
+ },{passive:true});
+ dialog.addEventListener('touchend',event=>{
+  if(!drag)return;
+  const t=point(event.changedTouches,drag.id),panel=drag.panel;
+  const movement=t?delta(t):null;drag=null;
+  if(!movement||event.touches.length||!dialog.open||cardPanel()!==panel)return;
+  if(movement.x<=-65&&Math.abs(movement.y)<=Math.abs(movement.x)*.55)dismiss();
+ },{passive:true});
+ for(const name of ['touchcancel','close'])dialog.addEventListener(name,()=>{drag=null;},{passive:true});
+}
+
+function openEvent(e,origin){
+ const area=$('#detail-content');area.dataset.panel='event';
+ const heading=el('div','','event-detail-heading'),fav=favoriteButton(e);
+ fav.onclick=()=>{toggleFavorite(e);openEvent(e);$('#detail-content .favorite-button')?.focus({preventScroll:true});};
+ heading.append(el('h2',e.title,'event-detail-title'),fav);
+ area.replaceChildren(statusBadge(e),heading,el('p',getArtist(e.artistId)?.name||'サンプル','detail-meta'),el('p',timing(e)),el('p',e.location||'場所未定'),el('p',e.note));
+ if(e.deadline)area.append(el('p','正式締切 '+prettyDate(e.deadline)));
+ if(e.present===false)area.append(el('p','元ページから掲載がなくなりました。中止とは確定していません。'));
+ appendSourcesAndTimes(area,e);
 const box=el('div','','reminder-box');box.append(el('h3','通知時刻の確認'));const label=el('label','リマインド例 '),select=document.createElement('select');select.setAttribute('aria-label','リマインド設定例');for(const [value,title] of [['off','設定しない'],['morning1h',`朝${morningTime}＋開始1時間前`],...(e.deadline?[['deadline2',`朝${morningTime}＋締切前`]]:[])]){const o=el('option',title);o.value=value;select.append(o);}const key=F.stableEventKey(e);select.value=reminders[key]||'off';select.disabled=!e.start||(!e.allDay&&e.start.length===10)||e.present===false||e.status==='cancelled';select.onchange=()=>{reminders[key]=select.value;save('alert-pwa-reminders-v2',reminders);openEvent(e);toast('通知時刻の設定例を保存しました。実通知は未接続です。');};label.append(select);box.append(label);if(select.value!=='off'&&!select.disabled){const plan=F.reminderTimes(e,{mode:select.value,morningTime,now:new Date().toISOString()});for(const t of plan.times)box.append(el('p',`${prettyDate(t.at)} · ${t.label}`));for(const u of plan.unresolved)box.append(el('p',u.label||'時刻の確認が必要です。','hint'));if(!plan.times.length)box.append(el('p','これからの通知候補はありません。過去の通知や開始後の朝通知は出しません。','hint'));}box.append(el('p','時刻のプレビューです。通知は予約・配信されません。','hint'));area.append(box);
 const latest=state.changes.find(c=>c.eventId===e.id&&c.source===e.source);if(latest){const b=el('button','最後の変更を見る');b.onclick=()=>openChange(latest);area.append(b);}area.append(el('h3','判断の根拠'),el('p',e.evidence||'根拠未登録','evidence'));openDialog(origin);}
 let subscriptionChoices=new Set(),subscriptionManifest=null,subscriptionLoading=false,subscriptionError=false,subscriptionLoadGeneration=0;
@@ -190,9 +227,9 @@ function renderSubscriptions(){
  for(const id of selected){const feed=subscriptionManifest.feeds.find(f=>f.id===id),urls=S.links(id),row=el('section','','subscription-link');row.append(el('h3',feed.label),el('p',feed.count+'件'+(feed.omittedUnknownDate?' · 日付未定'+feed.omittedUnknownDate+'件は未配信':''),'hint'));const actions=el('div','','detail-actions'),subscribe=el('a','本体カレンダーで購読','primary subscription-action');subscribe.href=urls.webcal;subscribe.setAttribute('aria-label',feed.label+'を購読');actions.append(subscribe);const copy=el('button','URLをコピー');copy.type='button';copy.setAttribute('aria-label',feed.label+'の購読URLをコピー');copy.onclick=async()=>{try{if(!navigator.clipboard?.writeText)throw new Error('unavailable');await navigator.clipboard.writeText(urls.https);toast('購読URLをコピーしました。');}catch{field.hidden=false;field.focus({preventScroll:true});field.select();toast('表示されたURLを選択してコピーしてください。');}};actions.append(copy);row.append(actions);const field=document.createElement('input');field.type='url';field.value=urls.https;field.readOnly=true;field.hidden=true;field.className='subscription-url';field.setAttribute('aria-label',feed.label+'の購読URL');row.append(field);area.append(row);}
  area.append(el('p','読み取り専用 · 反映に時間差あり','hint'));const help=el('a','購読の説明を見る','subscription-help');help.href='#changes';help.onclick=()=>closeDialog();area.append(help);
 }
-function openExport(events){const result=F.buildICS(events.map(presentEvent),{now:new Date().toISOString()}),area=$('#detail-content');area.replaceChildren(el('h2','カレンダーに渡す予定'),el('p',`${result.included.length}件の架空サンプルをICSファイルにします。`));const list=el('ul','','export-list');for(const e of result.included)list.append(el('li',`${e.status==='possible'?'［かも？］':''}${e.title} · ${timing(e)}`));area.append(list);for(const s of result.skipped)area.append(el('p',`${s.event?.title||'予定'}：${s.label||s.reason}（出力しません）`,'hint'));area.append(el('p','ファイルを保存しただけでは、本体カレンダーへの登録は完了しません。対応するカレンダーで内容を確認して追加してください。iPhoneでの受け渡しは実機未検証です。','evidence'),el('p','自動同期ではありません。内容が変わっても自動更新しません。通知設定はファイルに含めません。','hint'));const b=el('button',`${result.included.length}件のICSを作成`,'primary');b.disabled=!result.included.length;b.onclick=()=>{const url=URL.createObjectURL(new Blob([result.ics],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='alert-sample-events.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);toast('ICSファイルを作成しました。本体への追加はカレンダー側で確認してください。');};area.append(b);openDialog();}
+function openExport(events){const result=F.buildICS(events.map(presentEvent),{now:new Date().toISOString()}),area=$('#detail-content');area.dataset.panel='export';area.replaceChildren(el('h2','カレンダーに渡す予定'),el('p',`${result.included.length}件の架空サンプルをICSファイルにします。`));const list=el('ul','','export-list');for(const e of result.included)list.append(el('li',`${e.status==='possible'?'［かも？］':''}${e.title} · ${timing(e)}`));area.append(list);for(const s of result.skipped)area.append(el('p',`${s.event?.title||'予定'}：${s.label||s.reason}（出力しません）`,'hint'));area.append(el('p','ファイルを保存しただけでは、本体カレンダーへの登録は完了しません。対応するカレンダーで内容を確認して追加してください。iPhoneでの受け渡しは実機未検証です。','evidence'),el('p','自動同期ではありません。内容が変わっても自動更新しません。通知設定はファイルに含めません。','hint'));const b=el('button',`${result.included.length}件のICSを作成`,'primary');b.disabled=!result.included.length;b.onclick=()=>{const url=URL.createObjectURL(new Blob([result.ics],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='alert-sample-events.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);toast('ICSファイルを作成しました。本体への追加はカレンダー側で確認してください。');};area.append(b);openDialog();}
 function showValue(key,value){if(value===null||value===undefined||value==='')return '未設定';if(key==='status')return statusNames[value]||value;if(key==='category'&&value==='BENEFIT')return 'EVENT';if(key==='artistId')return getArtist(value)?.name||value;if(key==='allDay')return value?'終日':'時刻指定／時刻未定';if(['start','end','deadline'].includes(key))return prettyDate(value);return String(value);}
-function openChange(c,origin){const area=$('#detail-content'),e=c.after||c.before;area.replaceChildren(el('span',kindNames[c.kind],'status'),el('h2',e.title,'event-detail-title'),el('p',`検知 ${prettyDate(c.detected)} · r${c.revision}`,'hint'));if(c.kind==='unavailable')area.append(el('p','掲載がなくなったため前回の内容を保持しています。中止とは判断しません。','evidence'));else for(const key of c.fields){const row=el('div','','diff-item');row.append(el('div',fields[key]||key,'diff-label'));if(c.before)row.append(el('div',showValue(key,c.before[key]),'diff-before'));if(c.after)row.append(el('div',showValue(key,c.after[key]),'diff-after'));area.append(row);}openDialog(origin);}
+function openChange(c,origin){const area=$('#detail-content'),e=c.after||c.before;area.dataset.panel='change';area.replaceChildren(el('span',kindNames[c.kind],'status'),el('h2',e.title,'event-detail-title'),el('p',`検知 ${prettyDate(c.detected)} · r${c.revision}`,'hint'));if(c.kind==='unavailable')area.append(el('p','掲載がなくなったため前回の内容を保持しています。中止とは判断しません。','evidence'));else for(const key of c.fields){const row=el('div','','diff-item');row.append(el('div',fields[key]||key,'diff-label'));if(c.before)row.append(el('div',showValue(key,c.before[key]),'diff-before'));if(c.after)row.append(el('div',showValue(key,c.after[key]),'diff-after'));area.append(row);}openDialog(origin);}
 function searchDate(value){
  const q=value.normalize('NFKC').trim();
  const match=/^(\d{4})\s*([./-])\s*(\d{1,2})(?:\s*\2\s*(\d{1,2}))?$/.exec(q);
@@ -298,12 +335,20 @@ let appUpdating=false;
 const APP_RELOAD_NOTICE='alert-pwa-reload-notice-v1';
 function rememberAppReload(){try{sessionStorage.setItem(APP_RELOAD_NOTICE,String(Date.now()));}catch{}}
 function takeAppReloadNotice(){try{const at=Number(sessionStorage.getItem(APP_RELOAD_NOTICE));sessionStorage.removeItem(APP_RELOAD_NOTICE);return at>0&&Date.now()-at>=0&&Date.now()-at<60000;}catch{return false;}}
-function openAppHistory(){
- if($('#detail').open)closeDialog();
- if(location.hash!=='#changes')history.pushState(null,'','#changes');
- route();
- const heading=$('#app-release-history');
- heading.scrollIntoView({block:'start',behavior:'instant'});heading.focus({preventScroll:true});
+function setupNewsTabs(){
+ const keys=['events','history'],tabs=keys.map(k=>$('#news-'+k+'-tab')),panels=keys.map(k=>$('#news-'+k+'-panel'));
+ if(tabs.some(x=>!x)||panels.some(x=>!x))return;
+ function activate(next,focus=false){
+  tabs.forEach((tab,i)=>{tab.setAttribute('aria-selected',String(i===next));tab.tabIndex=i===next?0:-1;panels[i].hidden=i!==next;});
+  if(focus)tabs[next].focus();
+ }
+ tabs.forEach((tab,i)=>{
+  tab.onclick=()=>activate(i);
+  tab.onkeydown=e=>{
+   const next=e.key==='Home'?0:e.key==='End'?1:e.key==='ArrowLeft'||e.key==='ArrowRight'?1-i:null;
+   if(next===null)return;e.preventDefault();activate(next,true);
+  };
+ });
 }
 let availableAppRelease=null,releaseChecking=false;
 const shownAppReleases=new Set();
@@ -397,7 +442,7 @@ function initScheduleScroll(){
 }
 function route(){
 // Only notification entry clears the artist filter; a normal News tab keeps it.
-if(location.hash==='#notification-changes'){selectedArtists.clear();artist='all';history.replaceState(null,'','#changes');renderArtists();renderChanges();}
+if(location.hash==='#notification-changes'){selectedArtists.clear();artist='all';history.replaceState(null,'','#changes');$('#news-events-tab')?.click();renderArtists();renderChanges();}
 
 const hash=location.hash.slice(1),previousView=view;
 view=['calendar','favorites','changes'].includes(hash)?hash:['find','cards','watch'].includes(hash)?'search':['about','settings'].includes(hash)?'changes':'calendar';
@@ -425,7 +470,7 @@ function preventActiveTabNavigation(event){
  window.scrollTo({top:0,left:0,behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
 }
 
-$('#detail').addEventListener('close',onDialogClosed);$('#close-detail').onclick=closeDialog;$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
+$('#detail').addEventListener('close',onDialogClosed);installCardSwipe($('#detail'),()=>$('#detail-content').dataset.panel,closeDialog);$('#close-detail').onclick=closeDialog;$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
 $('#calendar-share').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);$('#about-subscriptions').onclick=()=>openSubscriptions(artist==='all'?undefined:artist);
 function initAppearance(){
  const button=$('#theme-toggle');if(!button)return;
@@ -450,6 +495,6 @@ initAppearance();
 $('#refresh').onclick=refreshApp;$('#search').oninput=renderCards;$('#sort').onchange=renderCards;document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();});$('#agenda-sort').onchange=renderAgenda;document.querySelectorAll('[data-agenda-filter]').forEach(b=>b.onclick=()=>{agendaFilter=b.dataset.agendaFilter;document.querySelectorAll('[data-agenda-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderAgenda();});$('#month-label').onclick=selectMonth;$('.calendar-panel').onclick=e=>{if(e.target.closest('button,a,input,select'))return;const day=e.target.closest('.day-cell');if(day)activateCalendarDate(day.dataset.date,e);};
 function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMonth()+direction);period=F.dateKey(d.toISOString()).slice(0,7)+'-01';selectedDate=period;agendaRange='month';selectedWeekStart=null;renderCalendar();}
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
-$('#open-app-history').onclick=openAppHistory;$('#available-app-update').onclick=showAvailableAppRelease;
+setupNewsTabs();$('#available-app-update').onclick=showAvailableAppRelease;
 document.querySelectorAll('[data-view]').forEach(link=>link.addEventListener('click',preventActiveTabNavigation));
 $('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('click',resetCalendarDateTap,true);window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();initScheduleScroll();refresh({notice:takeAppReloadNotice()});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);

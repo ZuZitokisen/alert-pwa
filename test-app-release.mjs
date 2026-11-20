@@ -13,7 +13,7 @@ function fixture(saved=null){
 test('available update offers exact two actions; cancel preserves version and can reopen',async()=>{const f=fixture();await f.run('checkAppRelease()');assert.equal(f.c.opens,1);const actions=f.nodes['#detail-content'].children.at(-1);assert.deepEqual(actions.children.map(x=>x.textContent),['キャンセル','更新する']);actions.children[0].onclick();assert.equal(f.c.updates,0);await f.run('checkAppRelease()');assert.equal(f.c.opens,1);f.run('showAvailableAppRelease()');assert.equal(f.c.opens,2);f.nodes['#detail-content'].children.at(-1).children[1].onclick();assert.equal(f.c.updates,1);});
 test('dismissed version stays quiet across reloads and remains available manually',async()=>{const f=fixture('0.7.13');await f.run('checkAppRelease()');assert.equal(f.c.opens,0);assert.equal(f.nodes['#available-app-update'].hidden,false);f.run('showAvailableAppRelease()');assert.equal(f.c.opens,1);});
 test('background and occupied dialog do not interrupt or mark the update shown',async()=>{const f=fixture();f.c.document.hidden=true;await f.run('checkAppRelease()');assert.equal(f.c.opens,0);f.c.document.hidden=false;f.nodes['#detail'].open=true;await f.run('checkAppRelease()');assert.equal(f.c.opens,0);assert.equal(f.map.size,0);});
-test('release requests bypass SW; heading icons and News jump preserve original routes',()=>{assert.ok(!sw.includes('app-release.json'));assert.ok(sw.includes('release-check.js?v=0.7.24'));assert.ok(html.indexOf('id="open-app-history"')<html.indexOf('id="changes"'));assert.ok(html.includes('id="app-release-history" tabindex="-1"'));assert.ok(source.includes('menuIcon.cloneNode(true)'));assert.ok(source.includes("icon.setAttribute('aria-hidden','true')"));assert.ok(source.includes("if(!document.hidden)checkAppRelease();},300000)"));});
+test('release requests bypass SW; heading icons and News tabs preserve original routes',()=>{assert.ok(!sw.includes('app-release.json'));assert.ok(sw.includes('release-check.js?v=0.7.25'));assert.ok(html.indexOf('id="news-history-tab"')<html.indexOf('id="changes"'));assert.ok(html.includes('id="news-history-panel"'));assert.ok(source.includes('menuIcon.cloneNode(true)'));assert.ok(source.includes("icon.setAttribute('aria-hidden','true')"));assert.ok(source.includes("if(!document.hidden)checkAppRelease();},300000)"));});
 test('all three heading icons clone their matching menu symbol as decorative content',()=>{
  const snippet=source.slice(source.indexOf('const menuIcon='),source.indexOf("const back=$('#back-to-view')"));
  for(const view of ['calendar','favorites','changes']){
@@ -23,10 +23,20 @@ test('all three heading icons clone their matching menu symbol as decorative con
   vm.createContext(c);vm.runInContext(snippet,c);assert.equal(inserted.textContent,glyph);assert.equal(inserted.attributes['aria-hidden'],'true');
  }
 });
-test('history shortcut opens News before scrolling/focusing its history, without extra fragment navigation',()=>{
- const calls=[],c={location:{hash:'#calendar'},history:{pushState(a,b,hash){calls.push('push');c.location.hash=hash}},closeDialog(){calls.push('close')},route(){calls.push('route')},$:selector=>selector==='#detail'?{open:false}:{scrollIntoView(){calls.push('scroll')},focus(options){assert.equal(options.preventScroll,true);calls.push('focus')}}};
- vm.createContext(c);vm.runInContext(source.slice(source.indexOf('function openAppHistory()'),source.indexOf('let availableAppRelease=')),c);vm.runInContext('openAppHistory()',c);assert.equal(c.location.hash,'#changes');assert.deepEqual(calls,['push','route','scroll','focus']);calls.length=0;vm.runInContext('openAppHistory()',c);assert.deepEqual(calls,['route','scroll','focus']);
+test('News tabs select exactly one panel, support arrow keys, and keep the current route',()=>{
+ const nodes={},element=()=>({setAttribute(){},focus(){}});
+ for(const key of ['events','history']){nodes['#news-'+key+'-tab']=element('button');nodes['#news-'+key+'-panel']=element('div');}
+ let focused=false,prevented=false;nodes['#news-events-tab'].focus=()=>{focused=true;};
+ const c={location:{hash:'#changes'},$:selector=>nodes[selector]};
+ vm.createContext(c);vm.runInContext(source.slice(source.indexOf('function setupNewsTabs()'),source.indexOf('let availableAppRelease='))+';setupNewsTabs()',c);
+ nodes['#news-history-tab'].onclick();
+ assert.equal(nodes['#news-history-panel'].hidden,false);assert.equal(nodes['#news-events-panel'].hidden,true);
+ assert.equal(nodes['#news-history-tab'].tabIndex,0);assert.equal(nodes['#news-events-tab'].tabIndex,-1);
+ nodes['#news-history-tab'].onkeydown({key:'ArrowLeft',preventDefault(){prevented=true;}});
+ assert.ok(focused&&prevented);assert.equal(nodes['#news-events-panel'].hidden,false);
+ assert.equal(nodes['#news-history-panel'].hidden,true);assert.equal(c.location.hash,'#changes');
 });
+
 
 test('workflow-mode Pages artifact includes both release discovery files',()=>{const workflow=fs.readFileSync(new URL('./.github/workflows/hourly-public-refresh.yml',import.meta.url),'utf8');assert.ok(workflow.includes("'release-check.js','app-release.json'"));});
 
