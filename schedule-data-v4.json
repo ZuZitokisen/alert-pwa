@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-20-fukushima-tv-supplement",
-  "generatedAt": "2026-11-19T21:22:23.394Z",
+  "version": "2026-11-20-koriyama-entry-order",
+  "generatedAt": "2026-11-20T03:07:51.000Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12383,14 +12383,14 @@
       "end": null,
       "location": "アティ郡山 屋上",
       "sourceUrl": "https://madeintohoku.com/contents/1127286",
-      "note": "9名出演、観覧無料。県民優先券は現住所記載の身分証が必要、購入不要。",
+      "note": "9名出演、観覧無料。県民優先券は現住所記載の身分証が必要、購入不要。入場順は優先券所持者→券を持たない福島県民→県外の方。券なし県民は案内放送後、現住所記載の身分証提示で入場。",
       "evidence": "本人公式の開催日・本文記載を確認。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-19T08:45:31.941Z",
+      "checkedAt": "2026-11-20T03:07:51.000Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -12400,7 +12400,12 @@
         {
           "url": "https://madeintohoku.com/contents/1127286",
           "type": "artist_official",
-          "checkedAt": "2026-11-19T08:45:31.941Z"
+          "checkedAt": "2026-11-20T03:07:51.000Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1128577",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T03:07:51.000Z"
         }
       ]
     },
