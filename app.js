@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.16';
+const APP_RELEASE='0.7.17';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -217,16 +217,6 @@ function renderAgenda(){
  const entries=agendaEntries();$('#agenda').replaceChildren(...(entries.length?entries.map(e=>card(e)):[el('p','該当する予定はありません。','empty')]));
  const undated=agendaCandidates().filter(e=>!e.start);$('#undated-section').hidden=!undated.length;$('#undated-count').textContent=`${undated.length}件`;$('#undated').replaceChildren(...undated.map(e=>card(e)));
 }
-// Perimeter of the contiguous current-month cells, excluding the week-selector column.
-function monthPerimeterEdges(index,offset,last){
- if(index<offset||index>=offset+last)return [];
- const col=index%7,edges=[];
- if(index-7<offset)edges.push('top');
- if(index+7>=offset+last)edges.push('bottom');
- if(col===0||index===offset)edges.push('left');
- if(col===6||index===offset+last-1)edges.push('right');
- return edges;
-}
 function renderCalendar(){
  const y=Number(period.slice(0,4)),m=Number(period.slice(5,7));$('#year-label').textContent=String(y);const monthLabel=$('#month-label');const monthEn=el('span',MONTH_NAMES[m-1],'month-en');monthEn.lang='en';monthEn.setAttribute('aria-hidden','true');monthLabel.replaceChildren(document.createTextNode(String(m)),monthEn);monthLabel.setAttribute('aria-label',`${y}年${m}月の予定を選択`);monthLabel.setAttribute('aria-pressed',String(agendaRange==='month'));
  const grid=$('#calendar'),events=activeEvents();grid.className='calendar month-grid';grid.replaceChildren();const getEvents=key=>events.filter(e=>F.overlapsDay(e,key)),today=F.dateKey(new Date().toISOString()),bounds=agendaBounds();
@@ -235,8 +225,7 @@ function renderCalendar(){
  for(let i=0;i<cells;i++){
   const key=addDays(period,i-offset);
   if(i%7===0){const button=el('button','›','week-select');button.type='button';button.dataset.weekStart=key;button.setAttribute('aria-label',`${prettyDate(key)}〜${prettyDate(addDays(key,6))}の週を選択`);button.setAttribute('aria-pressed',String(agendaRange==='week'&&selectedWeekStart===key));button.onclick=()=>{selectWeek(key);$('#calendar').querySelector('[data-week-start="'+key+'"]')?.focus({preventScroll:true});};grid.append(button);}
-  const inRange=agendaRange!=='month'&&key>=bounds.start&&key<bounds.end,day=el('div','',`day-cell ${key.slice(0,7)!==period.slice(0,7)?'outside':''} ${inRange?'range-selected':''} ${agendaRange==='day'&&key===selectedDate?'selected':''} ${key===today?'today':''}`);day.dataset.date=key;
-  if(agendaRange==='month'){const edges=monthPerimeterEdges(i,offset,last);if(edges.length)day.classList.add('month-perimeter',...edges.map(edge=>'month-edge-'+edge));}
+  const inRange=key>=bounds.start&&key<bounds.end,day=el('div','',`day-cell ${key.slice(0,7)!==period.slice(0,7)?'outside':''} ${inRange?'range-selected':''} ${agendaRange==='day'&&key===selectedDate?'selected':''} ${key===today?'today':''}`);day.dataset.date=key;
   const b=el('button',String(Number(key.slice(-2))),'date-button');b.type='button';b.setAttribute('aria-label',`${key}の予定`);b.setAttribute('aria-pressed',String(inRange));if(key===today)b.setAttribute('aria-current','date');b.onclick=event=>activateCalendarDate(key,event);day.append(b);
   const entries=getEvents(key),dots=el('div','','event-dots');dots.setAttribute('aria-hidden','true');for(const e of entries.slice(0,4)){const dot=el('i','',e.status);dot.style.setProperty('--event-color',colorFor(e));dots.append(dot);}day.append(dots,...entries.slice(0,3).map(e=>calendarEvent(e,key)));if(entries.length>3)day.append(el('span',`＋${entries.length-3}件`,'hint'));grid.append(day);
  }
