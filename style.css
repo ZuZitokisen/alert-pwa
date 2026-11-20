@@ -366,3 +366,19 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  #calendar-view .agenda-panel{margin-block-start:clamp(0px,calc(100svh - var(--schedule-calendar-end,100svh)),65svh);min-block-size:calc(100svh - 96px)}
  #calendar-view #agenda-title{scroll-margin-top:max(24px,env(safe-area-inset-top))}
 }
+
+.event-detail-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0 8px}
+#detail .event-detail-heading h2{min-width:0;margin:0}
+.event-detail-heading .favorite-button{flex:none}
+#detail-content:is([data-panel=event],[data-panel=change]){touch-action:pan-y pinch-zoom}
+@media(max-width:700px){#detail:has(#detail-content:is([data-panel=event],[data-panel=change])){overscroll-behavior-x:contain}}
+.news-actions{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:8px;align-items:center;margin:0 0 14px}
+.news-tabs{display:flex;align-items:center;flex-wrap:nowrap;gap:4px;min-width:0}
+.news-tabs button,.news-actions #read-all{min-height:44px;white-space:nowrap;font-size:12px;padding:6px 9px}
+.news-tabs button{border-color:transparent;background:transparent;color:var(--muted)}
+.news-tabs button[aria-selected=true]{background:var(--pink);color:var(--ink);font-weight:700}
+@media(max-width:385px){
+ .news-actions{column-gap:4px}
+ .news-tabs{gap:2px}
+ .news-tabs button,.news-actions #read-all{font-size:11px;padding-inline:6px}
+}

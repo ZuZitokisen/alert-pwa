@@ -72,3 +72,24 @@ test('card opening starts by its origin and dismisses immediately, while reduced
  f.context.window.matchMedia=()=>({matches:false});
  f.run('openDialog()');assert.equal(calls.length,2);
 });
+
+test('expanded cards dismiss on a deliberate left swipe only, leaving vertical and other controls alone',()=>{
+ const f=fixture(),handlers={};
+ f.detail.addEventListener=(event,callback,opts)=>{assert.equal(opts.passive,true);handlers[event]=callback;};
+ f.detail.open=true;f.context.panel='event';f.context.swipes=0;
+ f.run('installCardSwipe($(\'#detail\'),()=>panel,()=>{swipes++;})');
+ const type=(event,x,y,opts={})=>{
+  const t={identifier:1,clientX:x,clientY:y};
+  handlers[event]({touches:event==='touchend'?[]:[t],changedTouches:[t],target:{closest:()=>opts.interactive?{}:null},...opts});
+ };
+ const begin=()=>type('touchstart',200,100);
+ const end=(x,y)=>type('touchend',x,y);
+ begin();end(128,109);assert.equal(f.context.swipes,1);
+ begin();type('touchmove',198,130);end(100,140);assert.equal(f.context.swipes,1);
+ begin();end(280,100);begin();end(170,100);assert.equal(f.context.swipes,1);
+ type('touchstart',200,100,{interactive:true});end(100,100);assert.equal(f.context.swipes,1);
+ begin();type('touchcancel',188,105);end(100,100);assert.equal(f.context.swipes,1);
+ begin();type('touchmove',188,101,{touches:[{identifier:1},{identifier:2}]});end(100,100);assert.equal(f.context.swipes,1);
+ f.context.panel='app-release';begin();end(100,100);assert.equal(f.context.swipes,1);
+ f.context.panel='change';begin();end(100,100);assert.equal(f.context.swipes,2);
+});
