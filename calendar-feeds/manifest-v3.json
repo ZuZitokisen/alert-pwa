@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-fukushima-tv-supplement",
-  "dataGeneratedAt": "2026-11-19T21:22:23.394Z",
+  "dataVersion": "2026-11-20-koriyama-entry-order",
+  "dataGeneratedAt": "2026-11-20T03:07:51.000Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "ba8289b5a38d312f1d4aff45e614d9885a46283443f3cede82c5ababbc24ba94",
+  "inputSha256": "25cbc50ed63a809b3b0cadf7c48546e9b856ca6c2e6ec547e9bb5ae764d9562b",
   "feeds": [
     {
       "id": "tokisen-all",

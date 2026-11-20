@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-fukushima-tv-supplement",
-  "dataGeneratedAt": "2026-11-19T21:22:23.394Z",
+  "dataVersion": "2026-11-20-koriyama-entry-order",
+  "dataGeneratedAt": "2026-11-20T03:07:51.000Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "09c3d8af5600e4f39d44767498f414a4782f2306dead55da3500374e8a882085",
+  "inputSha256": "2e8319f2c6b84d6127b1dced9201d0b8edec6002f949a0857b46f0ba6675e261",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all.ics",
       "count": 21,
       "omittedUnknownDate": 0,
-      "sha256": "37e1caa3abba8c25f3dfd814a975b062523193a99829118e7774fd55215f8ef5"
+      "sha256": "0e4560d4f3cc063373bc92b7f52c4722a7d95515ee7605df1a71b9e889df3dcf"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live.ics",
       "count": 15,
       "omittedUnknownDate": 0,
-      "sha256": "12a4509118a0ca90dc86cbe60620e94a0d5fdc67b83d893c54a4f523b5468f46"
+      "sha256": "06c6f79e750862ef7835ed70239fcd3af807d27708a9d7f55baccbb731266e48"
     },
     {
       "id": "tohokusan-benefit",
