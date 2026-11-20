@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-rege-roppongi-newyear",
-  "dataGeneratedAt": "2026-11-20T13:22:56.712Z",
-  "inputSha256": "e3c7548d5484e862c893289fa153bcef7323cbb6bb2a5f0b1e0cea18ea23ea0e",
+  "dataVersion": "2026-11-21-tokisen-fc-sign-and-stage-second",
+  "dataGeneratedAt": "2026-11-20T16:42:14.065Z",
+  "inputSha256": "a8bc415bdcd89d541c992c09f25f9f7466c69ea93b6fef5a99f57433d36c0c60",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -5503,15 +5503,15 @@
         "end": null,
         "allDay": false,
         "location": "東京某所、当選者のみ案内",
-        "publicNote": "FC限定。メモリアル盤1枚につき1口。各メンバー最大50人。 開催日は未定。アルバム発売日4/1をサイン会開催日に流用しない。\n本人側の公式発表で確認。",
+        "publicNote": "FC限定。メモリアル盤1枚につき1口。各メンバー最大50人。開催は2027年1月6日（水）夕方ごろ、東京。詳細は当選者のみに案内。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://toki-sen.com/contents/1116142"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-20T16:42:14.065Z",
       "lastTiming": {
         "start": "2026-12-06T23:59:00+09:00",
         "end": null,
@@ -9674,6 +9674,70 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-newyear-20270124-program-second-close\"]",
+      "uid": "public-v1-18eb7b547d52cbc47287973a48e64684c7003a7f41af9743ab25d90a50868a14@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-newyear-20270124-program-second-close",
+        "category": "benefit",
+        "title": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー 番組二次先行（抽選）締切",
+        "start": "2026-11-30T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "ニッポン放送の番組二次先行。受付期間は11月22日18:00〜11月30日23:59（日本時間）。ファンクラブ先行とは別。\n主催ニッポン放送の公式チケット案内。とき宣側による同受付枠の告知は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://event.1242.com/events/tokimeki_stage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T16:42:14.065Z",
+      "modified": "2026-11-20T16:42:14.065Z",
+      "lastTiming": {
+        "start": "2026-11-30T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-benefit"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-newyear-20270124-program-second-open\"]",
+      "uid": "public-v1-414ab4465c296ae466ccbfce9adb003ad7f2a4ab61b753e4dc572be1daf5c44b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-newyear-20270124-program-second-open",
+        "category": "benefit",
+        "title": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー 番組二次先行（抽選）開始",
+        "start": "2026-11-22T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "ニッポン放送の番組二次先行。受付期間は11月22日18:00〜11月30日23:59（日本時間）。ファンクラブ先行とは別。\n主催ニッポン放送の公式チケット案内。とき宣側による同受付枠の告知は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://event.1242.com/events/tokimeki_stage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-20T16:42:14.065Z",
+      "modified": "2026-11-20T16:42:14.065Z",
+      "lastTiming": {
+        "start": "2026-11-22T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-benefit"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-newyear-card-address-check\"]",
       "uid": "public-v1-2909ee9e99a684ff220f18cfdd0aa7dacc30888ac71f5473796978cc9ea2fb4c@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -11511,20 +11575,24 @@
         "id": "tokisen-undated-1",
         "category": "benefit",
         "title": "ときめけみらい FC限定リアルサイン会",
-        "start": null,
+        "start": "2027-01-06",
         "end": null,
         "allDay": false,
-        "location": "",
-        "publicNote": "応募締切と結果日だけrecordsに追加。開催未定。\n本人側の公式発表で確認。\n日時未定（日付未発表）",
+        "location": "東京某所",
+        "publicNote": "メモリアル盤購入者の抽選によるFC限定サイン会。詳しい開始時刻と会場は当選者のみに案内。\n本人側の公式発表で確認。\n夕方ごろ（詳細は当選者のみに案内）",
         "status": "confirmed",
         "sourceUrls": [
           "https://toki-sen.com/contents/1116142"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
-      "lastTiming": null,
+      "modified": "2026-11-20T16:42:14.065Z",
+      "lastTiming": {
+        "start": "2027-01-06",
+        "end": null,
+        "allDay": false
+      },
       "memberships": [
         "tokisen-all",
         "tokisen-benefit"
@@ -11653,5 +11721,5 @@
       ]
     }
   ],
-  "integritySha256": "4f8ebf6977135f1a1b27448093f544330ef36c9224cf0e46086d8ef954dd6be4"
+  "integritySha256": "5b428b8678ef09d5ac850eab8038933c1cd673a5d0f7b0a6939e53fb83145f88"
 }

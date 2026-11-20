@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-rege-roppongi-newyear",
-  "dataGeneratedAt": "2026-11-20T13:22:56.712Z",
+  "dataVersion": "2026-11-21-tokisen-fc-sign-and-stage-second",
+  "dataGeneratedAt": "2026-11-20T16:42:14.065Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "e3c7548d5484e862c893289fa153bcef7323cbb6bb2a5f0b1e0cea18ea23ea0e",
+  "inputSha256": "a8bc415bdcd89d541c992c09f25f9f7466c69ea93b6fef5a99f57433d36c0c60",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 190,
-      "omittedUnknownDate": 11,
-      "sha256": "de26751a17cab622c2bb1f275ff221961ab5dadbbee59c5044947d95b6abe53a"
+      "count": 193,
+      "omittedUnknownDate": 10,
+      "sha256": "0318b64e4c715eea9d793c63466261a22981d6ab6c84c513513b6738a2ab9f4d"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit.ics",
-      "count": 60,
-      "omittedUnknownDate": 6,
-      "sha256": "c6597d5da2d9c753ba5adc14a4c1b5ea0b47a00ea329949424792ce1dce14a18"
+      "count": 63,
+      "omittedUnknownDate": 5,
+      "sha256": "c3f11aee572e335409f3b79a57f73cd7ad7a7d3790ea3502b8fe5c2ddf26dcc5"
     },
     {
       "id": "tokisen-media",

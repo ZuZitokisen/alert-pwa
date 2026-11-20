@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-20-rege-roppongi-newyear",
-  "generatedAt": "2026-11-20T13:22:56.712Z",
+  "version": "2026-11-21-tokisen-fc-sign-and-stage-second",
+  "generatedAt": "2026-11-20T16:42:14.065Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4904,17 +4904,17 @@
       "status": "confirmed",
       "category": "REMIND",
       "location": "東京某所、当選者のみ案内",
-      "note": "FC限定。メモリアル盤1枚につき1口。各メンバー最大50人。 開催日は未定。アルバム発売日4/1をサイン会開催日に流用しない。",
+      "note": "FC限定。メモリアル盤1枚につき1口。各メンバー最大50人。開催は2027年1月6日（水）夕方ごろ、東京。詳細は当選者のみに案内。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1116142",
       "sources": [
         {
           "url": "https://toki-sen.com/contents/1116142",
           "type": "artist_official",
-          "checkedAt": "2026-11-11T09:28:32Z"
+          "checkedAt": "2026-11-20T16:42:14.065Z"
         }
       ],
-      "checkedAt": "2026-11-11T09:28:32Z",
+      "checkedAt": "2026-11-20T16:42:14.065Z",
       "timings": [],
       "deadline": "2026-12-06T23:59:00+09:00",
       "revision": 1,
@@ -9572,28 +9572,28 @@
       "source": "curated-calendar",
       "artistId": "tokisen",
       "title": "ときめけみらい FC限定リアルサイン会",
-      "start": null,
+      "start": "2027-01-06",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "BENEFIT",
-      "location": "",
-      "note": "応募締切と結果日だけrecordsに追加。開催未定。",
+      "location": "東京某所",
+      "note": "メモリアル盤購入者の抽選によるFC限定サイン会。詳しい開始時刻と会場は当選者のみに案内。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1116142",
       "sources": [
         {
           "url": "https://toki-sen.com/contents/1116142",
           "type": "artist_official",
-          "checkedAt": "2026-11-11T09:28:32Z"
+          "checkedAt": "2026-11-20T16:42:14.065Z"
         }
       ],
-      "checkedAt": "2026-11-11T09:28:32Z",
+      "checkedAt": "2026-11-20T16:42:14.065Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
       "present": true,
-      "dateLabel": "日時未定（日付未発表）"
+      "dateLabel": "夕方ごろ（詳細は当選者のみに案内）"
     },
     {
       "id": "tokisen-undated-2",
@@ -13493,6 +13493,62 @@
       "revision": 1,
       "present": true,
       "groupId": "tohokusan-jre-train-20270130"
+    },
+    {
+      "id": "tokisen-newyear-20270124-program-second-open",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー 番組二次先行（抽選）開始",
+      "start": "2026-11-22T18:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "REMIND",
+      "location": "",
+      "note": "ニッポン放送の番組二次先行。受付期間は11月22日18:00〜11月30日23:59（日本時間）。ファンクラブ先行とは別。",
+      "evidence": "主催ニッポン放送の公式チケット案内。とき宣側による同受付枠の告知は未確認。",
+      "sourceUrl": "https://event.1242.com/events/tokimeki_stage/",
+      "sources": [
+        {
+          "url": "https://event.1242.com/events/tokimeki_stage/",
+          "type": "organizer",
+          "checkedAt": "2026-11-20T16:42:14.065Z"
+        }
+      ],
+      "checkedAt": "2026-11-20T16:42:14.065Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-newyear-20270124"
+    },
+    {
+      "id": "tokisen-newyear-20270124-program-second-close",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー 番組二次先行（抽選）締切",
+      "start": "2026-11-30T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "REMIND",
+      "location": "",
+      "note": "ニッポン放送の番組二次先行。受付期間は11月22日18:00〜11月30日23:59（日本時間）。ファンクラブ先行とは別。",
+      "evidence": "主催ニッポン放送の公式チケット案内。とき宣側による同受付枠の告知は未確認。",
+      "sourceUrl": "https://event.1242.com/events/tokimeki_stage/",
+      "sources": [
+        {
+          "url": "https://event.1242.com/events/tokimeki_stage/",
+          "type": "organizer",
+          "checkedAt": "2026-11-20T16:42:14.065Z"
+        }
+      ],
+      "checkedAt": "2026-11-20T16:42:14.065Z",
+      "timings": [],
+      "deadline": "2026-11-30T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-newyear-20270124"
     }
   ],
   "notes": [
