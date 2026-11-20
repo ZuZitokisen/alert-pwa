@@ -144,7 +144,7 @@ test('agenda cards still open details and the subscription action retains artist
  f.run('closeDialog();globalThis.subscriptionCalls=[];openSubscriptions=id=>subscriptionCalls.push(id)');f.get('agenda-subscriptions').click();assert.equal(f.context.subscriptionCalls.length,1);assert.equal(f.context.subscriptionCalls[0],undefined);f.run("artist='re-ge'");f.get('agenda-subscriptions').click();assert.equal(f.context.subscriptionCalls[1],'re-ge');
 });
 test('layout keeps month and cards together with exactly Schedule, Favorite and News navigation',()=>{
- const document=parseDocument(html),calendar=document.querySelector('.calendar-panel'),agenda=document.querySelector('.agenda-panel');assert.equal(document.querySelectorAll('[data-mode]').length,0);assert.equal(calendar.querySelectorAll('.card-legend').length,0);assert.equal(agenda.querySelectorAll('.card-legend').length,1);
+ const document=parseDocument(html),calendar=document.querySelector('.calendar-panel'),agenda=document.querySelector('.agenda-panel');assert.equal(document.querySelectorAll('[data-mode]').length,0);assert.equal(calendar.querySelectorAll('.card-legend').length,0);assert.equal(agenda.querySelectorAll('.card-legend').length,0);assert.equal(document.querySelectorAll('.card-legend').length,0);
  for(const id of ['agenda-sort','agenda-subscriptions','search','sort','cards-view','changes-view','favorites-view'])assert.ok(document.getElementById(id),id);
  const links=document.querySelectorAll('nav a');assert.deepEqual(links.map(a=>a.dataset.view),['calendar','favorites','search','changes']);for(const [index,label] of ['Schedule','Favorite','Search','News'].entries())assert.ok(links[index].textContent.includes(label),label);
  assert.equal(document.getElementById('about-view'),null);assert.equal(document.querySelector('.header-actions a[href="#about"]'),null);assert.equal(document.querySelectorAll('.mobile-info').length,0);
@@ -283,8 +283,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.15 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-15/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.15'));assert.ok(sw.includes(file+'?v=0.7.15'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.16 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-16/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.16'));assert.ok(sw.includes(file+'?v=0.7.16'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -348,4 +348,24 @@ test('scheduled card footer shows a quieter timestamp without its label',()=>{
  const t=f.get('agenda').querySelector('time.card-checked-time');assert.ok(t);
  assert.equal(t.dateTime,'2026-11-12T04:10:00Z');assert.equal(t.textContent,'11/12 13:10');
  assert.match(fs.readFileSync(new URL('./style.css',import.meta.url),'utf8'),/card-checked-time\{color:color-mix/);
+});
+
+test('favorite focus follows the correct occurrence when titles match and stays within the view',()=>{
+ const f=fixture({events:['16','23','30'].map((day,i)=>event('radio-'+i,'2026-11-'+day,{title:'吉川ひよりの超♡まっ茶りタイム！'}))});
+ f.get('month-label').click();
+ const buttons=()=>f.get('agenda').querySelectorAll('.favorite-button');
+ assert.equal(buttons().length,3);
+ const key=buttons()[1].dataset.favoriteKey;
+ buttons()[1].click();
+ assert.deepEqual(buttons().map(b=>b.getAttribute('aria-pressed')),['false','true','false']);
+ assert.equal(buttons().find(b=>b.focused)?.dataset.favoriteKey,key);
+ f.context.location.hash='#favorites';f.run('route()');
+ f.get('favorites').querySelector('.favorite-button').click();
+ assert.equal(f.get('favorites').querySelectorAll('.favorite-button').length,0);
+ assert.equal(f.get('view-title').focused,true);
+});
+test('no standalone certainty legend, with card certainty still present',()=>{
+ const f=fixture({events:[event('first','2026-11-12'),event('second','2026-11-12',{status:'possible'})]});
+ assert.equal(f.document.querySelectorAll('.card-legend').length,0);
+ assert.deepEqual(f.get('agenda').querySelectorAll('.status').map(b=>b.textContent),['確定','かも？']);
 });

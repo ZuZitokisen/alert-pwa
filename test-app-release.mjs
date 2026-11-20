@@ -13,7 +13,7 @@ function fixture(saved=null){
 test('available update offers exact two actions; cancel preserves version and can reopen',async()=>{const f=fixture();await f.run('checkAppRelease()');assert.equal(f.c.opens,1);const actions=f.nodes['#detail-content'].children.at(-1);assert.deepEqual(actions.children.map(x=>x.textContent),['キャンセル','更新する']);actions.children[0].onclick();assert.equal(f.c.updates,0);await f.run('checkAppRelease()');assert.equal(f.c.opens,1);f.run('showAvailableAppRelease()');assert.equal(f.c.opens,2);f.nodes['#detail-content'].children.at(-1).children[1].onclick();assert.equal(f.c.updates,1);});
 test('dismissed version stays quiet across reloads and remains available manually',async()=>{const f=fixture('0.7.13');await f.run('checkAppRelease()');assert.equal(f.c.opens,0);assert.equal(f.nodes['#available-app-update'].hidden,false);f.run('showAvailableAppRelease()');assert.equal(f.c.opens,1);});
 test('background and occupied dialog do not interrupt or mark the update shown',async()=>{const f=fixture();f.c.document.hidden=true;await f.run('checkAppRelease()');assert.equal(f.c.opens,0);f.c.document.hidden=false;f.nodes['#detail'].open=true;await f.run('checkAppRelease()');assert.equal(f.c.opens,0);assert.equal(f.map.size,0);});
-test('release requests bypass SW; heading icons and News jump preserve original routes',()=>{assert.ok(!sw.includes('app-release.json'));assert.ok(sw.includes('release-check.js?v=0.7.15'));assert.ok(html.indexOf('id="open-app-history"')<html.indexOf('id="changes"'));assert.ok(html.includes('id="app-release-history" tabindex="-1"'));assert.ok(source.includes('menuIcon.cloneNode(true)'));assert.ok(source.includes("icon.setAttribute('aria-hidden','true')"));assert.ok(source.includes("if(!document.hidden)checkAppRelease();},300000)"));});
+test('release requests bypass SW; heading icons and News jump preserve original routes',()=>{assert.ok(!sw.includes('app-release.json'));assert.ok(sw.includes('release-check.js?v=0.7.16'));assert.ok(html.indexOf('id="open-app-history"')<html.indexOf('id="changes"'));assert.ok(html.includes('id="app-release-history" tabindex="-1"'));assert.ok(source.includes('menuIcon.cloneNode(true)'));assert.ok(source.includes("icon.setAttribute('aria-hidden','true')"));assert.ok(source.includes("if(!document.hidden)checkAppRelease();},300000)"));});
 test('all three heading icons clone their matching menu symbol as decorative content',()=>{
  const snippet=source.slice(source.indexOf('const menuIcon='),source.indexOf("const back=$('#back-to-view')"));
  for(const view of ['calendar','favorites','changes']){
@@ -29,3 +29,25 @@ test('history shortcut opens News before scrolling/focusing its history, without
 });
 
 test('workflow-mode Pages artifact includes both release discovery files',()=>{const workflow=fs.readFileSync(new URL('./.github/workflows/hourly-public-refresh.yml',import.meta.url),'utf8');assert.ok(workflow.includes("'release-check.js','app-release.json'"));});
+
+test('appearance uses OS by default, persists deliberate choice, and works without storage',()=>{
+ const early=html.match(/<script>([\s\S]+?)<\/script>/)[1];
+ const script=source.slice(source.indexOf('function initAppearance(){'),source.indexOf("$('#refresh').onclick=refreshApp;"));
+ const f=(system,stored,denied=false)=>{
+  let value=stored,listener;
+  const media={matches:system,addEventListener(type,cb){assert.equal(type,'change');listener=cb;}};
+  const theme={dataset:{}},button={hidden:true,setAttribute(_,label){this.label=label;}},meta={setAttribute(_,color){this.color=color;}};
+  const get=s=>s==='#theme-toggle'?button:meta;
+  const localStorage={getItem:k=>{assert.equal(k,'furin-appearance-v1');if(denied)throw Error();return value;},setItem:(k,v)=>{assert.equal(k,'furin-appearance-v1');if(denied)throw Error();value=v;}};
+  const ctx=vm.createContext({document:{documentElement:theme,querySelector:get},$:get,window:{matchMedia:()=>media},localStorage});
+  vm.runInContext(early,ctx);const initial=theme.dataset.theme;
+  vm.runInContext(script,ctx);assert.equal(button.hidden,false);assert.equal(theme.dataset.theme,initial);
+  return {theme,button,meta,flipOS:()=>{media.matches=!media.matches;listener();},saved:()=>value};
+ };
+ const auto=f(true,null);assert.equal(auto.theme.dataset.theme,'dark');assert.equal(auto.button.label,'明るい表示に切り替える');
+ assert.equal(auto.meta.color,'#17171d');auto.flipOS();assert.equal(auto.theme.dataset.theme,'light');assert.equal(auto.saved(),null);
+ auto.button.onclick();assert.equal(auto.saved(),'dark');assert.equal(auto.theme.dataset.theme,'dark');auto.flipOS();assert.equal(auto.theme.dataset.theme,'dark');
+ const restored=f(true,'light');assert.equal(restored.theme.dataset.theme,'light');assert.equal(restored.button.label,'暗い表示に切り替える');assert.equal(restored.meta.color,'#f7f6fb');
+ const blocked=f(false,null,true);blocked.button.onclick();assert.equal(blocked.theme.dataset.theme,'dark');
+ const invalid=f(false,'invalid');assert.equal(invalid.theme.dataset.theme,'light');
+});
