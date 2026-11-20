@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-music-station",
-  "dataGeneratedAt": "2026-11-20T19:44:30Z",
+  "dataVersion": "2026-11-21-tokisen-threads-episode",
+  "dataGeneratedAt": "2026-11-20T20:58:31Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "c1b8579a24f9884864e2aaed3f2d42a8780a1665f99f40d1a8b9686c9dfd769e",
+  "inputSha256": "475a1b2269d2d75e6e55ee0caa0ee743e0ef90c263039fc0ef9398d52a6a2edf",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 194,
+      "count": 195,
       "omittedUnknownDate": 10,
-      "sha256": "32e8a3288f1774389f681e9cfed9142f0640d65758632b519df9d1331a4848dd"
+      "sha256": "e9050c2913d3d14fc21a587a915ab98cfc489671ddcee2c28fd2b1b7e26b5156"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media.ics",
-      "count": 120,
+      "count": 121,
       "omittedUnknownDate": 2,
-      "sha256": "850092cdff0f09c8afef7d93caf9c907f98381a86045ad5d3fced43582a300df"
+      "sha256": "e545348aeceb69dcbc8b7c610311db3a8b0654c92f41c5a6331635a5087f5cab"
     },
     {
       "id": "tokisen-other",

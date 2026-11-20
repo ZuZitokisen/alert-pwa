@@ -2214,6 +2214,28 @@ STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-8d7bacff3afa720511d72dcc44a7d5ae0c921029e342c43faaae07910e3ee
+ 27b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T205831Z
+CREATED:20261120T205831Z
+LAST-MODIFIED:20261120T205831Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261201
+SUMMARY:＜小泉遥香＞ビデオポッドキャスト「Threadsのあの
+ 人」後編（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nMetaのビデオポッドキャストに小泉遥香が出演。後
+ 編はお昼ごろ配信予定。正確な時刻と後編の個別動画UR
+ Lは未発表。\nグループ公式Xの配信予告2件と番組公式チ
+ ャンネルを確認。\nhttps://www.youtube.com/@thatpersonfrom_threads\
+ nhttps://x.com/sendenbu_staff/status/2122281895631454639\nhttps://x.com/se
+ ndenbu_staff/status/2122607693617586647
+LOCATION:「Threadsのあの人」公式YouTube
+URL:https://x.com/sendenbu_staff/status/2122281895631454639
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-bf735c37bddc742851df2be1d3a9a43a932d81f50893dcc77177552bb36b8
  287@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T074612Z
