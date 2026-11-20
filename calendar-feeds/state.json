@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-20-jre-train-ultragt",
-  "dataGeneratedAt": "2026-11-20T09:11:15.696Z",
-  "inputSha256": "d2d7c980ff78347bd2604b33096118d21ca131202735a774871da7ea9d09eb0a",
+  "dataVersion": "2026-11-20-gift-performance-times",
+  "dataGeneratedAt": "2026-11-20T13:02:00Z",
+  "inputSha256": "104ffb5c616ed644dc468c7585fb2bdf1a6f4500bf08d2ce090616d03a5b9afd",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -5397,15 +5397,16 @@
         "end": null,
         "allDay": false,
         "location": "SGCホール有明",
-        "publicNote": "出演日は本人公式で確認。個別の出演時刻は未確定。\n本人側の公式発表で確認。",
+        "publicNote": "出演日は本人公式で確認。現地の出演予定は 18:35〜19:05（SGC HALL ARIAKE、主催者タイムテーブル。本人公式で個別時刻は未確認、変更の可能性あり）。ABEMA配信の時刻とは別です。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://toki-sen.com/contents/1102025"
+          "https://toki-sen.com/contents/1102025",
+          "https://www.gift-idol.jp/pdf/timetable_1127.pdf"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-20T13:02:00Z",
       "lastTiming": {
         "start": "2026-11-27",
         "end": null,
@@ -5429,15 +5430,16 @@
         "end": null,
         "allDay": false,
         "location": "SGCホール有明・TOYOTA ARENA TOKYO",
-        "publicNote": "出演日は本人公式で確認。個別の出演時刻は未確定。\n本人側の公式発表で確認。",
+        "publicNote": "出演日は本人公式で確認。現地の出演予定は 18:20〜19:10（TOYOTA ARENA TOKYO、主催者タイムテーブル。本人公式で個別時刻は未確認、変更の可能性あり）。ABEMA配信の時刻とは別です。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://toki-sen.com/contents/1102025"
+          "https://toki-sen.com/contents/1102025",
+          "https://www.gift-idol.jp/pdf/timetable_1128.pdf"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-20T13:02:00Z",
       "lastTiming": {
         "start": "2026-11-28",
         "end": null,
@@ -11481,5 +11483,5 @@
       ]
     }
   ],
-  "integritySha256": "a5bd467e7b7e72bbe4d30e1d432ded4b63a31353ccce036562b582932ab5e83a"
+  "integritySha256": "217280927b14ed1bf31c35bca82b57a43d07c0d6b72095dd0becd9f6d71cf17c"
 }

@@ -222,16 +222,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-fe27ef9c54d51648c5f1b6b03c980ff7cb68c69fd8512a0564e97b4656261
  339@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261120T130200Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261120T130200Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261127
 SUMMARY:GIFT ～Girls Idol Festival Tokyo～（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n出演日は本人公式で確認。個別の出演時刻は未確定
- 。\n本人側の公式発表で確認。\nhttps://toki-sen.com/contents/1
- 102025
+ 。\n出演日は本人公式で確認。現地の出演予定は 18:35〜
+ 19:05（SGC HALL ARIAKE、主催者タイムテーブル。本人公式で
+ 個別時刻は未確認、変更の可能性あり）。ABEMA配信の時
+ 刻とは別です。\n本人側の公式発表で確認。\nhttps://toki-
+ sen.com/contents/1102025\nhttps://www.gift-idol.jp/pdf/timetable_1127.pdf
 LOCATION:SGCホール有明
 URL:https://toki-sen.com/contents/1102025
 STATUS:CONFIRMED
@@ -240,16 +242,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-3393e1cc4df8126ab1216e744366a5c3a04ef570cf005f769f5a3e9b6376e
  e9c@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261120T130200Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261120T130200Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261128
 SUMMARY:GIFT ～Girls Idol Festival Tokyo～（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n出演日は本人公式で確認。個別の出演時刻は未確定
- 。\n本人側の公式発表で確認。\nhttps://toki-sen.com/contents/1
- 102025
+ 。\n出演日は本人公式で確認。現地の出演予定は 18:20〜
+ 19:10（TOYOTA ARENA TOKYO、主催者タイムテーブル。本人公式
+ で個別時刻は未確認、変更の可能性あり）。ABEMA配信の
+ 時刻とは別です。\n本人側の公式発表で確認。\nhttps://to
+ ki-sen.com/contents/1102025\nhttps://www.gift-idol.jp/pdf/timetable_1128.p
+ df
 LOCATION:SGCホール有明・TOYOTA ARENA TOKYO
 URL:https://toki-sen.com/contents/1102025
 STATUS:CONFIRMED
