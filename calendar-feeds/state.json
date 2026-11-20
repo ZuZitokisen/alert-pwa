@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-fc-sign-and-stage-second",
-  "dataGeneratedAt": "2026-11-20T16:42:14.065Z",
-  "inputSha256": "a8bc415bdcd89d541c992c09f25f9f7466c69ea93b6fef5a99f57433d36c0c60",
+  "dataVersion": "2026-11-21-tokisen-music-station",
+  "dataGeneratedAt": "2026-11-20T19:44:30Z",
+  "inputSha256": "2504791ba2d9e54c5f62ac3ae472727bd5b5ee1c64faf666f6334bd23fe41573",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -6998,6 +6998,42 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-media-1129838\"]",
+      "uid": "public-v1-b7b64142f36d05b6aeb11d83f3aa481c5ae7dd42151f8a319cab9999f5bd1be0@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-media-1129838",
+        "category": "media",
+        "title": "テレビ朝日系「ミュージックステーション」",
+        "start": "2026-11-27T21:00:00+09:00",
+        "end": "2026-11-27T21:54:00+09:00",
+        "allDay": false,
+        "location": "テレビ朝日系",
+        "publicNote": "「超最強」と、＝LOVE・FRUITS ZIPPER・モーニング娘。’26とのコラボでAKB48「ヘビーローテーション」を披露予定。コラボはGIFT DAY-1から生中継。記載時刻は番組全体の放送枠で、個別の出演時刻は未発表。現地ライブ本編と別の予定です。\n本人公式の出演・曲目、テレビ朝日公式の放送枠と出演者、GIFT公式の生中継案内を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://gift-idol.jp/special.html",
+          "https://toki-sen.com/contents/1129838",
+          "https://www.tv-asahi.co.jp/music/contents/m_lineup_top/0432/",
+          "https://www.tv-asahi.co.jp/pr/contents/20261127_15122.html"
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1129838"
+      },
+      "sequence": 0,
+      "created": "2026-11-20T19:44:30Z",
+      "modified": "2026-11-20T19:44:30Z",
+      "lastTiming": {
+        "start": "2026-11-27T21:00:00+09:00",
+        "end": "2026-11-27T21:54:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-media-508342-2026-11-15\"]",
       "uid": "public-v1-91b9a3437ec48e9a1b11632690ccb266b17ceb22a4b026d128aea71ce3ba7678@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -11721,5 +11757,5 @@
       ]
     }
   ],
-  "integritySha256": "5b428b8678ef09d5ac850eab8038933c1cd673a5d0f7b0a6939e53fb83145f88"
+  "integritySha256": "99db44557d7c6c31f192f03bbc7b19daf8a4c0d4fffeb5e9fda59f016714f415"
 }
