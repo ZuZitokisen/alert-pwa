@@ -83,6 +83,151 @@ DESCRIPTION:第28回DigiCon6〜決定！アジアNo.1短編アニメ〜
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-b71672a4a8f683820ba044e2cb017e7a0368e076d70bd98311eefe210ca52
+ aac@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T151602Z
+CREATED:20261121T151602Z
+LAST-MODIFIED:20261121T151602Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:えびちゅう真山とラブレターズのいたつき！
+DESCRIPTION:真山りかとラブレターズが出演するラジオコン
+ ト＆トーク番組。20:00配信開始。\n私立恵比寿中学の公
+ 式スケジュールと番組告知、GERA運営元の発表で確認。\
+ nhttps://www.fancs.com/news/180629475/\nhttps://www.shiritsuebichu.jp/medi
+ a/?ym=2026-11\nhttps://www.shiritsuebichu.jp/news/16236/
+LOCATION:GERA・Spotify
+URL:https://www.shiritsuebichu.jp/news/16236/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT12H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-93718a01765453bfe45b5a64d8df7083cb054c05b86dd9f4b638996efb5a8
+ 734@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T151602Z
+CREATED:20261121T151602Z
+LAST-MODIFIED:20261121T151602Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:えびちゅう真山とラブレターズのいたつき！
+DESCRIPTION:真山りかとラブレターズが出演するラジオコン
+ ト＆トーク番組。20:00配信開始。\n私立恵比寿中学の公
+ 式スケジュールと番組告知、GERA運営元の発表で確認。\
+ nhttps://www.fancs.com/news/180629475/\nhttps://www.shiritsuebichu.jp/medi
+ a/?ym=2026-12\nhttps://www.shiritsuebichu.jp/news/16236/
+LOCATION:GERA・Spotify
+URL:https://www.shiritsuebichu.jp/news/16236/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT12H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5e18043a1e26f724570117109b04d264f812403851b53a98ce9ba5d91ac36
+ 16f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T151602Z
+CREATED:20261121T151602Z
+LAST-MODIFIED:20261121T151602Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:えびちゅう真山とラブレターズのいたつき！
+DESCRIPTION:真山りかとラブレターズが出演するラジオコン
+ ト＆トーク番組。20:00配信開始。\n私立恵比寿中学の公
+ 式スケジュールと番組告知、GERA運営元の発表で確認。\
+ nhttps://www.fancs.com/news/180629475/\nhttps://www.shiritsuebichu.jp/medi
+ a/?ym=2026-12\nhttps://www.shiritsuebichu.jp/news/16236/
+LOCATION:GERA・Spotify
+URL:https://www.shiritsuebichu.jp/news/16236/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT12H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c20550cd96ca6e10f6a055eb308d9680b5b2b885d62e95673e69f2a8f3f50
+ 169@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T151602Z
+CREATED:20261121T151602Z
+LAST-MODIFIED:20261121T151602Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:えびちゅう真山とラブレターズのいたつき！
+DESCRIPTION:真山りかとラブレターズが出演するラジオコン
+ ト＆トーク番組。20:00配信開始。\n私立恵比寿中学の公
+ 式スケジュールと番組告知、GERA運営元の発表で確認。\
+ nhttps://www.fancs.com/news/180629475/\nhttps://www.shiritsuebichu.jp/medi
+ a/?ym=2026-12\nhttps://www.shiritsuebichu.jp/news/16236/
+LOCATION:GERA・Spotify
+URL:https://www.shiritsuebichu.jp/news/16236/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT12H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2d17240b80fe7c3f212bbca71fdbec8d2803eeda4ffbb43186860d10edb3d
+ f5c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T151602Z
+CREATED:20261121T151602Z
+LAST-MODIFIED:20261121T151602Z
+SEQUENCE:0
+DTSTART:20261224T110000Z
+SUMMARY:えびちゅう真山とラブレターズのいたつき！
+DESCRIPTION:真山りかとラブレターズが出演するラジオコン
+ ト＆トーク番組。20:00配信開始。\n私立恵比寿中学の公
+ 式スケジュールと番組告知、GERA運営元の発表で確認。\
+ nhttps://www.fancs.com/news/180629475/\nhttps://www.shiritsuebichu.jp/medi
+ a/?ym=2026-12\nhttps://www.shiritsuebichu.jp/news/16236/
+LOCATION:GERA・Spotify
+URL:https://www.shiritsuebichu.jp/news/16236/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT12H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅう真山とラブレターズのいたつき！
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-5e56c6934dbd1f654bf8ea8507431c0f88aad5ffaec0a74b294ab8cb7568b
  d8c@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T131516Z
