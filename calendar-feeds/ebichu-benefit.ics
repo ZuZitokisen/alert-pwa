@@ -4,6 +4,57 @@ PRODID:-//Alert PWA//Public Calendar Subscription//JA
 CALSCALE:GREGORIAN
 X-WR-CALNAME:私立恵比寿中学 / 特典会・応募
 BEGIN:VEVENT
+UID:public-v1-cbd77b17ee544e4f162cd1ac0676cd527c8786f31c688546e7b5b7ae24f7f
+ af7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261126T145900Z
+SUMMARY:公開録音 野菜マシマシvol.3 FC先行（抽選）締切
+DESCRIPTION:終了・完売の状況は公式案内を確認。\n私立恵
+ 比寿中学の公式スケジュールで確認。\nhttps://radichubu.jp/
+ topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ce90665d75762aea1695417cfdfdba9dfb992c265f48618f3b3935fa61308
+ 041@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261227T145900Z
+SUMMARY:公開録音 野菜マシマシvol.3 一般発売（先着）締切
+DESCRIPTION:終了・完売の状況は公式案内を確認。\n私立恵
+ 比寿中学の公式スケジュールで確認。\nhttps://radichubu.jp/
+ topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-415f584ca4782bcc015b42a9994d00a44f2338f0eb823d07f421033666b00
+ a43@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261204T090000Z
+SUMMARY:公開録音 野菜マシマシvol.3 一般発売（先着）開始
+DESCRIPTION:終了・完売の状況は公式案内を確認。\n私立恵
+ 比寿中学の公式スケジュールで確認。\nhttps://radichubu.jp/
+ topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-106e5edab7b5009c796896e1030f233fb2f403faa66564104b6c0cc387f66
  ba4@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z

@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-tohokusan",
-  "dataGeneratedAt": "2026-11-21T01:20:18Z",
+  "dataVersion": "2026-11-21-ebichu-cafe-cbc",
+  "dataGeneratedAt": "2026-11-21T01:42:13Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "d5779a8b53cdb31ac56dfa98e8c8e5640ed3e2219bd6a3c78aeb839a12ca879b",
+  "inputSha256": "b363854296bf11bdb3ab1eb7e24c7548d8fa56ba09628cbf5373920e99328261",
   "feeds": [
     {
       "id": "tokisen-all",

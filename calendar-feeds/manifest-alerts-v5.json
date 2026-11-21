@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-tohokusan",
-  "dataGeneratedAt": "2026-11-21T01:20:18Z",
+  "dataVersion": "2026-11-21-ebichu-cafe-cbc",
+  "dataGeneratedAt": "2026-11-21T01:42:13Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "c3b22e42cb46fafd83abf61fdee132cb4089b7832d3aed5c576c0a060e063799",
+  "inputSha256": "0c4249e31a670c30fda8d1170f9024c789c818f9f01cd0b901b81a3623e390f0",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all-alerts.ics",
       "count": 195,
       "omittedUnknownDate": 10,
-      "sha256": "7e8129642c7819a587cf4220f8d35d251665e76c1874acb3a0965496f6daa2cc"
+      "sha256": "60a7598fdaafaa13ef53e96c02bcb9b1fc37421fbd4a351123e74ebd827e5317"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live-alerts.ics",
       "count": 11,
       "omittedUnknownDate": 3,
-      "sha256": "0ef54ff8ba5ff164c7b6b59becf820b764b4228f99d4d41d3728326b76daf285"
+      "sha256": "117cfa5f7e88e75fdeb7ce3f1f1ec456899578ff1d3481f75fc33c8012d699ef"
     },
     {
       "id": "tokisen-benefit",
@@ -38,7 +38,7 @@
       "path": "calendar-feeds/tokisen-benefit-alerts.ics",
       "count": 63,
       "omittedUnknownDate": 5,
-      "sha256": "29348b8cb374739ea68a42cc4d10ce5fe9b5806f8c3800bd92125ee8c9f063c4"
+      "sha256": "c59c0ade4f083958652ef86c3935e1b7f63ef74f1cc7b5e46d41c3af26abe245"
     },
     {
       "id": "tokisen-media",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media-alerts.ics",
       "count": 121,
       "omittedUnknownDate": 2,
-      "sha256": "da76bd723d2e49964873cbbb67b0370b11ba85f12eb2900077b34617923172b8"
+      "sha256": "0678e2336a0db7f235954053036758ae19c98313d7e2ebe2609ebdd9f2ffe042"
     },
     {
       "id": "tokisen-other",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all-alerts.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "fb2abee769e697cbf1793ce9b7d7b37574ce581d1aecdcbe57ae0a25b27a472b"
+      "sha256": "18afdb6e4f3df9d49364e3979205e80d5009b37214d7f54ae78cb6e88ab72c29"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live-alerts.ics",
       "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "53ed5fafea42826f6ddf30f5b72c74f81cc364bb605564ab8a503f579946cce8"
+      "sha256": "062140f87b77fe8e1d253c51431fb532b9b8ca2df3c771bad2933671361b2529"
     },
     {
       "id": "re-ge-benefit",
@@ -88,7 +88,7 @@
       "path": "calendar-feeds/re-ge-benefit-alerts.ics",
       "count": 33,
       "omittedUnknownDate": 0,
-      "sha256": "baeb8008cd6f417ad5b7fd8b4d395fffecb402e526084c800b1fefce44d1e26e"
+      "sha256": "d8098b49412db8fc9a6aa57f41b479e637eb0970e14e9c9fed63c38870b397e2"
     },
     {
       "id": "re-ge-media",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media-alerts.ics",
       "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "e67eb2d1cab3cbc7d9205bb43f1113dc56b6d9a96bc7065fbeb31f04dc8e83f1"
+      "sha256": "9f299a13c3990b0aad7ebe4b10ac7d3beb60f930ce01df72b196c3bc71d3b83c"
     },
     {
       "id": "re-ge-other",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all-alerts.ics",
       "count": 39,
       "omittedUnknownDate": 0,
-      "sha256": "63d7977d036d080de46524e6e57f7916f2d384f100addabfe8dec9548775544c"
+      "sha256": "e9455c8d793eca72da6cff837202c19ee4a87a5b83682ef61bb5b9a985b2a555"
     },
     {
       "id": "straightangeli-live",
@@ -128,7 +128,7 @@
       "path": "calendar-feeds/straightangeli-live-alerts.ics",
       "count": 6,
       "omittedUnknownDate": 0,
-      "sha256": "ffdf9276390c68120cba200adf8da95dec15d2f0ea6210abea5eb411e80d71be"
+      "sha256": "c2314f41e42fd1d3de00fbc71195500ecc21baa178d5ef4242f9d3b1d61f98be"
     },
     {
       "id": "straightangeli-benefit",
@@ -138,7 +138,7 @@
       "path": "calendar-feeds/straightangeli-benefit-alerts.ics",
       "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "856a0946bd8010945ef48c0b03eca60b0ffc7e2ecdd87c863ed33b9fe86f2a7c"
+      "sha256": "c69737fc5c63f9c55776ab4178e1f140e6d63304707b13ae1b0dfd20f138c2b1"
     },
     {
       "id": "straightangeli-media",
@@ -148,7 +148,7 @@
       "path": "calendar-feeds/straightangeli-media-alerts.ics",
       "count": 23,
       "omittedUnknownDate": 0,
-      "sha256": "39144199e720500ab30b9f314e19ea871c54c0dc0c64eec788dffdb05881ce81"
+      "sha256": "ae531ca47936ebd6e6d48b71bcfb54d51f3be399c7937548010d8cfd6c726f63"
     },
     {
       "id": "straightangeli-other",
@@ -168,7 +168,7 @@
       "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
       "count": 34,
       "omittedUnknownDate": 0,
-      "sha256": "9671f27c618b7fd0da88722b4981aa7c047d0518d9f06d9c5189ab519362bc30"
+      "sha256": "56783c5c9c6a38d52485eeb6c0adc84eacbea84fcb6dca3c811f94fc681fc0ce"
     },
     {
       "id": "oneloveoneheart-live",
@@ -178,7 +178,7 @@
       "path": "calendar-feeds/oneloveoneheart-live-alerts.ics",
       "count": 11,
       "omittedUnknownDate": 0,
-      "sha256": "a7a542058db3f5b986881e94abbffce563d5935290d4ef3575f7144464fa6a64"
+      "sha256": "5b90d46b25147c1e9347bdbe14560ff8b903c5e0d25738f18d8e8ca04afa175b"
     },
     {
       "id": "oneloveoneheart-benefit",
@@ -188,7 +188,7 @@
       "path": "calendar-feeds/oneloveoneheart-benefit-alerts.ics",
       "count": 12,
       "omittedUnknownDate": 0,
-      "sha256": "c9e9c556fe6ce57bea16ac27ed940bf3f923a6eb05e203b0241ca9aa9deb8010"
+      "sha256": "74c5acc72bf09be1d62b4afc8fc7ae3c078ad0fd58f410a3cc96c5e79a8257a6"
     },
     {
       "id": "oneloveoneheart-media",
@@ -198,7 +198,7 @@
       "path": "calendar-feeds/oneloveoneheart-media-alerts.ics",
       "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "c3db91053bb457c65e012480331d839cc94b79219c185bad436e1497f1f5ae88"
+      "sha256": "eab2a78c85a7cc11f5d66f4c68f1a179a0f56845459c6cb54cae75be16295551"
     },
     {
       "id": "oneloveoneheart-other",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
       "count": 27,
       "omittedUnknownDate": 0,
-      "sha256": "6928dcd9e8a8ee5dc5836ec8f20692488120053be5017e49a8bdde4513fb34b3"
+      "sha256": "6c7222f28bd89625a7da6f258383a0d9b5dc8ab17f7e2aa943f5373f4046560a"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live-alerts.ics",
       "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "20c00df0f60540f067cfe93c4c67fc745608895ff8d646834701f7d684931ad4"
+      "sha256": "f2685a01efb29d52eef7a6cab49820cc7ee50a6cf1c5b518d66c6889b090f0c6"
     },
     {
       "id": "tohokusan-benefit",
@@ -238,7 +238,7 @@
       "path": "calendar-feeds/tohokusan-benefit-alerts.ics",
       "count": 5,
       "omittedUnknownDate": 0,
-      "sha256": "a01db090f3600cc7a920662fd2fc70167375e591cb3719c78fa219482c15895f"
+      "sha256": "f6d960eb6b92499585b73a9740e5088a22e2d282bca2f1ec3313b81e3af7b7dd"
     },
     {
       "id": "tohokusan-media",
@@ -248,7 +248,7 @@
       "path": "calendar-feeds/tohokusan-media-alerts.ics",
       "count": 6,
       "omittedUnknownDate": 0,
-      "sha256": "332dd5a3ddfab357201badf78ca7e9767da5ac6aea716945176d27b4490da713"
+      "sha256": "e773681359c714a6ad59bf9f396c712fd3d9c60937e22b236b1eb07deeb63bfa"
     },
     {
       "id": "tohokusan-other",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 11,
+      "count": 20,
       "omittedUnknownDate": 0,
-      "sha256": "4bf94a7295b22e0960a888b24cc6cb135bd8ea478cbfef4fdd36d97fc895b45c"
+      "sha256": "ff6d14850109777ae90488efe607bce193f3213221fba1a864881db3b595acd1"
     },
     {
       "id": "ebichu-live",
@@ -276,9 +276,9 @@
       "category": "live",
       "label": "私立恵比寿中学 / ライブ・イベント",
       "path": "calendar-feeds/ebichu-live-alerts.ics",
-      "count": 7,
+      "count": 13,
       "omittedUnknownDate": 0,
-      "sha256": "d22477ebbed0f271126af6675211574736c36230ff03e19fe9fc882535fd4400"
+      "sha256": "2b7db060a1c5d694c114d455f31dc4232b43f29a402a603548ba493bd63ec610"
     },
     {
       "id": "ebichu-benefit",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit-alerts.ics",
-      "count": 2,
+      "count": 5,
       "omittedUnknownDate": 0,
-      "sha256": "f7fac4dba77dcf8ec6d21d43e9755637a93e175204c6e931f1018ec4f06f44b9"
+      "sha256": "09340fca424a6afc585e7bfed3cf2e03d342d277a6994caf9193e41242af0dad"
     },
     {
       "id": "ebichu-media",
@@ -298,7 +298,7 @@
       "path": "calendar-feeds/ebichu-media-alerts.ics",
       "count": 2,
       "omittedUnknownDate": 0,
-      "sha256": "5cfe315dac0336ab2e0a384d61a3c46d248200e09e3a2fe9cfe254d058b0ef28"
+      "sha256": "b0fd3b8156948a9e78c774a3f0c52316ea3f10e62b2d1a94c7718fc07edec888"
     },
     {
       "id": "ebichu-other",

@@ -20,6 +20,95 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-cbd77b17ee544e4f162cd1ac0676cd527c8786f31c688546e7b5b7ae24f7f
+ af7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261126T145900Z
+SUMMARY:公開録音 野菜マシマシvol.3 FC先行（抽選）締切
+DESCRIPTION:終了・完売の状況は公式案内を確認。\n私立恵
+ 比寿中学の公式スケジュールで確認。\nhttps://radichubu.jp/
+ topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ce90665d75762aea1695417cfdfdba9dfb992c265f48618f3b3935fa61308
+ 041@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261227T145900Z
+SUMMARY:公開録音 野菜マシマシvol.3 一般発売（先着）締切
+DESCRIPTION:終了・完売の状況は公式案内を確認。\n私立恵
+ 比寿中学の公式スケジュールで確認。\nhttps://radichubu.jp/
+ topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-415f584ca4782bcc015b42a9994d00a44f2338f0eb823d07f421033666b00
+ a43@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261204T090000Z
+SUMMARY:公開録音 野菜マシマシvol.3 一般発売（先着）開始
+DESCRIPTION:終了・完売の状況は公式案内を確認。\n私立恵
+ 比寿中学の公式スケジュールで確認。\nhttps://radichubu.jp/
+ topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21eb31595755d22c24521d32b3d20215ecce005b2f1c1fd07380fbe0409d6
+ 4ee@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261228T054500Z
+DTEND:20261228T064500Z
+SUMMARY:CBCラジオ「小ラ保柚乃」公開録音 野菜マシマシvol
+ .3 第1部
+DESCRIPTION:14:00開場。小久保柚乃出演。終演は予定。\n私
+ 立恵比寿中学の公式スケジュールで確認。\nhttps://radichu
+ bu.jp/topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:CBCホール（名古屋）
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-407d864e5ddf3eb4a7458f83ebd94fced19f40437459a63bb400928c3bd11
+ e9b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261228T090000Z
+DTEND:20261228T100000Z
+SUMMARY:CBCラジオ「小ラ保柚乃」公開録音 野菜マシマシvol
+ .3 第2部
+DESCRIPTION:17:15開場。小久保柚乃出演。終演は予定。\n私
+ 立恵比寿中学の公式スケジュールで確認。\nhttps://radichu
+ bu.jp/topics_detail1/id=65834\nhttps://www.shiritsuebichu.jp/media/96895/
+LOCATION:CBCホール（名古屋）
+URL:https://www.shiritsuebichu.jp/media/96895/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-9c1780d13e5bdb8f6933db72cfeba3d943d4a48260dd2f6ca6ef6e2d3c38f
  3f1@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z
@@ -84,6 +173,86 @@ DESCRIPTION:受付開始はプレイガイドごとに異なる。\n私立
  this-is-gr8/
 LOCATION:
 URL:https://www.shiritsuebichu.jp/this-is-gr8/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-014eb6e145db0ed454941fb29da78bd9078103a82bbe6e0d9ac3aa2c6702c
+ d95@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261121
+SUMMARY:えびチリ、はじめました（振替コラボカフェ）（
+ 時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n11月21〜23日の開催。飲食エリアは無料の先着予約制
+ 。予約枠の空きは未確認。\n私立恵比寿中学の公式スケ
+ ジュールで確認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/to
+ pics/20260821.html\nhttps://www.shiritsuebichu.jp/media/97266/
+LOCATION:東急歌舞伎町タワー3F namco TOKYO
+URL:https://www.shiritsuebichu.jp/media/97266/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-99c188a129605d178e8b4ca53dafca39c6ab700e89847b02b319b96e447fa
+ e8b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261122
+SUMMARY:えびチリ、はじめました（振替コラボカフェ）（
+ 時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n11月21〜23日の開催。飲食エリアは無料の先着予約制
+ 。予約枠の空きは未確認。\n私立恵比寿中学の公式スケ
+ ジュールで確認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/to
+ pics/20260821.html\nhttps://www.shiritsuebichu.jp/media/97266/
+LOCATION:東急歌舞伎町タワー3F namco TOKYO
+URL:https://www.shiritsuebichu.jp/media/97266/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-32008695545864606a5f936a20480d8d544bd503d595d002eed06b6455264
+ 11a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261123
+SUMMARY:えびチリ、はじめました（振替コラボカフェ）（
+ 時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n11月21〜23日の開催。飲食エリアは無料の先着予約制
+ 。予約枠の空きは未確認。\n私立恵比寿中学の公式スケ
+ ジュールで確認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/to
+ pics/20260821.html\nhttps://www.shiritsuebichu.jp/media/97266/
+LOCATION:東急歌舞伎町タワー3F namco TOKYO
+URL:https://www.shiritsuebichu.jp/media/97266/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dabd17c77191d6e2838fc4702d44871c31b90ab1a89ae041cf6ac3b750a08
+ db3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T014213Z
+CREATED:20261121T014213Z
+LAST-MODIFIED:20261121T014213Z
+SEQUENCE:0
+DTSTART:20261122T040000Z
+DTEND:20261122T050000Z
+SUMMARY:namco TOKYOコラボカフェ・プレミアムイベント 私立
+ 恵比寿中学 トークショー
+DESCRIPTION:12:15開場。主催の更新では6名出演。チケットの
+ 空きは未確認。\n私立恵比寿中学の公式スケジュールで
+ 確認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.h
+ tml\nhttps://www.shiritsuebichu.jp/media/97266/
+LOCATION:東急歌舞伎町タワー3F namco TOKYO
+URL:https://www.shiritsuebichu.jp/media/97266/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
