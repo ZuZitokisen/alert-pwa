@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-ebichu-media-details",
-  "generatedAt": "2026-11-21T09:15:55Z",
+  "version": "2026-11-21-gift-collab-venue-check",
+  "generatedAt": "2026-11-21T11:16:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -14445,23 +14445,28 @@
       "allDay": false,
       "status": "confirmed",
       "category": "LIVE",
-      "location": "SGCホール有明",
-      "note": "坂井仁香・菅田愛貴が出演。時刻はコラボSTAGE全体の枠で、個人の出番時刻ではありません。グループの本ステージとは別会場です。",
-      "evidence": "出演者は本人側の公式サイト、コラボ枠の時刻・会場は主催者の11月28日タイムテーブルで確認。",
+      "location": "",
+      "note": "坂井仁香・菅田愛貴が出演。15:10〜15:40はコラボ全体の枠です。会場は確認中。主催者タイムテーブルはSGCホール有明、とき宣公式Xはトヨタアリーナ東京と案内しています。",
+      "evidence": "出演者とコラボ枠は公式情報で確認。会場は主催者と本人公式Xで表記が異なります。",
       "sourceUrl": "https://toki-sen.com/contents/1102025?tag=all",
       "sources": [
         {
           "url": "https://toki-sen.com/contents/1102025?tag=all",
           "type": "artist_official",
-          "checkedAt": "2026-11-21T03:08:51Z"
+          "checkedAt": "2026-11-21T11:16:04Z"
         },
         {
-          "url": "https://gift-idol.jp/pdf/timetable_1128.pdf",
+          "url": "https://www.gift-idol.jp/pdf/timetable_1128.pdf",
           "type": "organizer_official",
-          "checkedAt": "2026-11-21T03:08:51Z"
+          "checkedAt": "2026-11-21T11:16:04Z"
+        },
+        {
+          "url": "https://x.com/sendenbu_staff/status/2123612301538505066",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T11:16:04Z"
         }
       ],
-      "checkedAt": "2026-11-21T03:08:51Z",
+      "checkedAt": "2026-11-21T11:16:04Z",
       "deadline": null,
       "revision": 1,
       "present": true,
@@ -15172,6 +15177,44 @@
       "revision": 1,
       "present": true,
       "timings": []
+    },
+    {
+      "id": "ebichu-nakamura-tsurikomachi-20261128",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "映画「つりこまち」公開記念舞台挨拶（仲村悠菜）",
+      "start": "2026-11-28",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "kino cinéma新宿／池袋HUMAXシネマズ",
+      "note": "仲村悠菜が登壇予定。kino cinéma新宿は12:00の回の上映後、池袋HUMAXシネマズは15:10の回の上映前。上映回の時刻で、舞台挨拶の正確な開始時刻は未発表です。",
+      "evidence": "エビ中公式の月間予定で登壇、映画公式と池袋の劇場公式で上映回を確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/?ym=2026-11",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/?ym=2026-11",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T11:16:04Z"
+        },
+        {
+          "url": "https://www.tsuri-komachi.jp/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T11:16:04Z"
+        },
+        {
+          "url": "https://humax-cinema.co.jp/ikebukuro/news/25541/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T11:16:04Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T11:16:04Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-nakamura-tsurikomachi-20261128"
     }
   ],
   "notes": [
