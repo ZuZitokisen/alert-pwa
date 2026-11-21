@@ -7,7 +7,7 @@ const artistIds=['tokisen','re-ge','straightangeli','oneloveoneheart','tohokusan
 const categories=['all','live','benefit','media','other'];
 const alarmPaths=artistIds.flatMap(artist=>categories.map(category=>`calendar-feeds/${artist}-${category}-alerts.ics`));
 if(manifest.alertOffsetMinutes!==60||manifest.feeds.length!==alarmPaths.length||new Set(manifest.feeds.map(f=>f.path)).size!==alarmPaths.length||alarmPaths.some(path=>!manifest.feeds.some(f=>f.path===path)))throw Error('Invalid notification subscription manifest');
-paths.push(manifestPath,...alarmPaths);
+paths.push(manifestPath,'calendar-feeds/combined-v1.json',...alarmPaths);
 const base='https://zuzitokisen.github.io/alert-pwa/';
 const hash=x=>createHash('sha256').update(x).digest('hex');
 const outcomes=await Promise.all(paths.map(async p=>{
