@@ -42,8 +42,13 @@ test('launch uses the exact dedicated white backdrop, centered asset and indepen
  assert.match(html,/#furin-launch\{[^}]*background:#fff[^}]*place-items:center/);
  assert.match(html,/<button id="furin-launch" type="button" aria-label="[^"]+" hidden>/);
  assert.match(html,/prefers-reduced-motion:reduce/);
- assert.match(html,/furin-launch-logo\.png\?v=0\.7\.26/);
- assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.26/);
+ assert.match(html,/#furin-launch-content\{[^}]*position:relative;top:calc\(0px - clamp\(28px,7vh,72px\)\);top:calc\(0px - clamp\(28px,7svh,72px\)\)/);
+ assert.match(html,/@keyframes furin-launch-sway.*skewX/);
+ assert.match(html,/#furin-launch\{opacity:0;pointer-events:none;transition-delay:440ms\}/);
+ assert.match(source,/setTimeout\(\(\)=>finish\(true\),810\)/);
+ assert.match(html,/<span id="furin-launch-cue">TAP TO START<\/span>/);
+ assert.match(html,/furin-launch-logo\.png\?v=0\.7\.27/);
+ assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.27/);
  assert.equal(fs.readFileSync(new URL('./furin-launch-logo.png',import.meta.url)).subarray(1,4).toString(),'PNG');
  assert.match(css,/#view-title:focus\{outline:none\}/);
  assert.match(css,/button:focus-visible/);
