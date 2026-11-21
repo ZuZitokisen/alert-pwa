@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-calendar-updates",
-  "dataGeneratedAt": "2026-11-21T19:16:34.909Z",
-  "inputSha256": "ab4c006034da9e99c6874673296647f59a51eb26814014091fe8281a81212ef4",
+  "dataVersion": "2026-11-22-radio-and-batten-natslive",
+  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
+  "inputSha256": "2e330c548b3e46132146755df31f41534a2a4626e88730104de5b832bab7e23d",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -830,21 +830,23 @@
         "category": "media",
         "title": "希山出演「オレたちゴチャ・まぜっ！〜集まれヤンヤン〜」",
         "start": "2026-11-24T01:30:00+09:00",
-        "end": null,
+        "end": "2026-11-24T04:30:00+09:00",
         "allDay": false,
         "location": "MBSラジオ",
-        "publicNote": "公式の11月23日25:30。\nばってん少女隊公式の案内。",
+        "publicNote": "11月23日25:30〜28:30。MBSラジオ・radikoの放送枠。\nばってん少女隊公式の案内。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://battengirls.com/contents/1095110"
+          "https://battengirls.com/contents/1095110",
+          "https://radiko.jp/index/MBS/",
+          "https://www.mbs1179.com/ore/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T17:32:09Z",
-      "modified": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-11-24T01:30:00+09:00",
-        "end": null,
+        "end": "2026-11-24T04:30:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -882,6 +884,71 @@
       "memberships": [
         "batten-all",
         "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-natslive-umaka-20261130\"]",
+      "uid": "public-v1-6f3d3d3445e03a2e6044156f3480b97e3822c6758d35b9fb9d54fc4ddf97c877@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-natslive-umaka-20261130",
+        "category": "media",
+        "title": "蒼井りるあ・逢里みう出演 · NATSLIVE 九州モリモリ！ばってんうまか隊 #10",
+        "start": "2026-11-30T19:00:00+09:00",
+        "end": "2026-11-30T20:00:00+09:00",
+        "allDay": false,
+        "location": "NATSLIVE",
+        "publicNote": "八女茶海苔カツ丼。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1124678",
+          "https://natslive.jp/programs/10609"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T21:17:40.778Z",
+      "modified": "2026-11-21T21:17:40.778Z",
+      "lastTiming": {
+        "start": "2026-11-30T19:00:00+09:00",
+        "end": "2026-11-30T20:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-natslive-umaka-lottery-deadline-20261122\"]",
+      "uid": "public-v1-450eed552afbcc472eb34efc0f0c42402b5139f7282aab593f9946044ef743c0@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-natslive-umaka-lottery-deadline-20261122",
+        "category": "benefit",
+        "title": "ばってんうまか隊 #10 一般観覧抽選締切",
+        "start": "2026-11-22",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "11/16 15:00受付開始。11/22締切、終了時刻は公式案内に記載なし。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1124678"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T21:17:40.778Z",
+      "modified": "2026-11-21T21:17:40.778Z",
+      "lastTiming": {
+        "start": "2026-11-22",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
       ]
     },
     {
@@ -961,19 +1028,20 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "16:00開場。17:00は公演全体の開演。 ドワンゴの配信タイムテーブルで、出演枠は18:35〜19:05。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\nばってん少女隊公式の案内。",
+        "publicNote": "16:00開場。17:00は公演全体の開演。 ドワンゴの配信タイムテーブルで、出演枠は18:35〜19:05。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。 イープラスの現地公演一般発売は予定枚数終了。他の販売元や配信チケットの状況は別。\nばってん少女隊公式の案内。",
         "status": "confirmed",
         "sourceUrls": [
           "https://battengirls.com/contents/1117493",
           "https://battengirls.com/contents/1117570",
+          "https://eplus.jp/sf/detail/4613510001",
           "https://live.nicovideo.jp/watch/lv351834212",
           "https://prtimes.jp/main/html/rd/p/000001450.000056982.html"
         ],
         "sourceUrl": "https://battengirls.com/contents/1117570"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-21T17:32:09Z",
-      "modified": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -2671,9 +2739,10 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "17:00はイベントの開演。 桜井えまは一部演目のみ歌唱、その他はダンスのみで参加。 ドワンゴの配信タイムテーブルで、出演枠は20:15〜20:45。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "17:00はイベントの開演。 桜井えまは一部演目のみ歌唱、その他はダンスのみで参加。 ドワンゴの配信タイムテーブルで、出演枠は20:15〜20:45。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。 イープラスの現地公演一般発売は予定枚数終了。他の販売元や配信チケットの状況は別。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://eplus.jp/sf/detail/4613510001",
           "https://live.nicovideo.jp/watch/lv351834212",
           "https://prtimes.jp/main/html/rd/p/000001450.000056982.html",
           "https://www.shiritsuebichu.jp/media/96540/",
@@ -2681,9 +2750,9 @@
         ],
         "sourceUrl": "https://www.shiritsuebichu.jp/media/96540/"
       },
-      "sequence": 2,
+      "sequence": 3,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -5761,20 +5830,23 @@
         "source": "curated-calendar",
         "id": "rege-shiraishi-mbs-20261129",
         "category": "media",
-        "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-        "start": "2026-11-29T01:30:00+09:00",
-        "end": "2026-11-29T04:30:00+09:00",
+        "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+        "start": null,
+        "end": null,
         "allDay": false,
-        "location": "MBSラジオ",
-        "publicNote": "本人側の公式発表で確認。",
-        "status": "confirmed",
+        "location": "",
+        "publicNote": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。\n土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。\n日時未確認",
+        "status": "unknown",
         "sourceUrls": [
-          "https://re-ge.com/schedule/"
-        ]
+          "https://battengirls.com/contents/1095110",
+          "https://re-ge.com/schedule/",
+          "https://www.mbs1179.com/ore/"
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-11-29T01:30:00+09:00",
         "end": "2026-11-29T04:30:00+09:00",
@@ -5793,20 +5865,23 @@
         "source": "curated-calendar",
         "id": "rege-shiraishi-mbs-20261206",
         "category": "media",
-        "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-        "start": "2026-12-06T01:30:00+09:00",
-        "end": "2026-12-06T04:30:00+09:00",
+        "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+        "start": null,
+        "end": null,
         "allDay": false,
-        "location": "MBSラジオ",
-        "publicNote": "本人側の公式発表で確認。",
-        "status": "confirmed",
+        "location": "",
+        "publicNote": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。\n土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。\n日時未確認",
+        "status": "unknown",
         "sourceUrls": [
-          "https://re-ge.com/schedule/"
-        ]
+          "https://battengirls.com/contents/1095110",
+          "https://re-ge.com/schedule/",
+          "https://www.mbs1179.com/ore/"
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-12-06T01:30:00+09:00",
         "end": "2026-12-06T04:30:00+09:00",
@@ -5825,20 +5900,23 @@
         "source": "curated-calendar",
         "id": "rege-shiraishi-mbs-20261213",
         "category": "media",
-        "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-        "start": "2026-12-13T01:30:00+09:00",
-        "end": "2026-12-13T04:30:00+09:00",
+        "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+        "start": null,
+        "end": null,
         "allDay": false,
-        "location": "MBSラジオ",
-        "publicNote": "本人側の公式発表で確認。",
-        "status": "confirmed",
+        "location": "",
+        "publicNote": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。\n土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。\n日時未確認",
+        "status": "unknown",
         "sourceUrls": [
-          "https://re-ge.com/schedule/"
-        ]
+          "https://battengirls.com/contents/1095110",
+          "https://re-ge.com/schedule/",
+          "https://www.mbs1179.com/ore/"
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-12-13T01:30:00+09:00",
         "end": "2026-12-13T04:30:00+09:00",
@@ -5857,20 +5935,23 @@
         "source": "curated-calendar",
         "id": "rege-shiraishi-mbs-20261220",
         "category": "media",
-        "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-        "start": "2026-12-20T01:30:00+09:00",
-        "end": "2026-12-20T04:30:00+09:00",
+        "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+        "start": null,
+        "end": null,
         "allDay": false,
-        "location": "MBSラジオ",
-        "publicNote": "本人側の公式発表で確認。",
-        "status": "confirmed",
+        "location": "",
+        "publicNote": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。\n土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。\n日時未確認",
+        "status": "unknown",
         "sourceUrls": [
-          "https://re-ge.com/schedule/"
-        ]
+          "https://battengirls.com/contents/1095110",
+          "https://re-ge.com/schedule/",
+          "https://www.mbs1179.com/ore/"
+        ],
+        "sourceUrl": "https://re-ge.com/schedule/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-12-20T01:30:00+09:00",
         "end": "2026-12-20T04:30:00+09:00",
@@ -5961,9 +6042,10 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。 ドワンゴの配信タイムテーブルで、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\n本人側の公式発表で確認。",
+        "publicNote": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。 ドワンゴの配信タイムテーブルで、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。 イープラスの現地公演一般発売は予定枚数終了。他の販売元や配信チケットの状況は別。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://eplus.jp/sf/detail/4613510001",
           "https://live.nicovideo.jp/watch/lv351834212",
           "https://prtimes.jp/main/html/rd/p/000001450.000056982.html",
           "https://re-ge.com/news/item-716/",
@@ -5971,9 +6053,9 @@
         ],
         "sourceUrl": "https://re-ge.com/news/item-716/"
       },
-      "sequence": 2,
+      "sequence": 3,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -8121,9 +8203,10 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。 ドワンゴの配信タイムテーブルで、出演枠は19:40〜20:10。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\n本人公式の開催日・本文記載を確認。",
+        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。 ドワンゴの配信タイムテーブルで、出演枠は19:40〜20:10。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。 イープラスの現地公演一般発売は予定枚数終了。他の販売元や配信チケットの状況は別。\n本人公式の開催日・本文記載を確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://eplus.jp/sf/detail/4613510001",
           "https://live.nicovideo.jp/watch/lv351834212",
           "https://madeintohoku.com/contents/1117445",
           "https://madeintohoku.com/contents/1128759",
@@ -8132,9 +8215,9 @@
         ],
         "sourceUrl": "https://madeintohoku.com/contents/1117445"
       },
-      "sequence": 3,
+      "sequence": 4,
       "created": "2026-11-19T08:45:31.941Z",
-      "modified": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -15036,5 +15119,5 @@
       ]
     }
   ],
-  "integritySha256": "6a9d479be0859db3224323f69026e042a12803d607349173c6bb2c3884fcc624"
+  "integritySha256": "97c148176a21836021a3771e9814e3d3f08bfbc36f1531fe2a59348c2a07a92f"
 }

@@ -1359,98 +1359,98 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-42cb40bb22aa46fa49f416c949062c9a8d419cab1ce7ba008f63b1e0782b9
  eb7@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261121T211740Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:1
 DTSTART:20261128T163000Z
 DTEND:20261128T193000Z
-SUMMARY:白石るり出演 オレたちゴチャ・まぜっ！集まれヤ
- ンヤン
-DESCRIPTION:本人側の公式発表で確認。\nhttps://re-ge.com/schedul
- e/
-LOCATION:MBSラジオ
+SUMMARY:白石るり「オレたちゴチャ・まぜっ！」出演日未
+ 確認（旧掲載取り下げ）
+DESCRIPTION:日時未定に変更したため旧日時の配信を取り下
+ げ。予定自体の中止ではありません。\n掲載していた日
+ 時はMBS・radikoの放送枠と異なるため取り下げ。白石る
+ りの個別出演日・媒体は未確認。番組の中止を示すも
+ のではありません。\n土曜25:30はRadiotalk生配信、月曜25:3
+ 0はMBS・radiko。番組の定例枠は個別出演を示しません。\
+ n日時未確認\nhttps://battengirls.com/contents/1095110\nhttps://re-ge.
+ com/schedule/\nhttps://www.mbs1179.com/ore/
+LOCATION:
 URL:https://re-ge.com/schedule/
-STATUS:CONFIRMED
+STATUS:CANCELLED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:白石るり出演 オレたちゴチャ・まぜっ！集ま
- れヤンヤン
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-12bfe4bb79f9a2817680557a81b068ab33ee6bbc3d46cb73676d6ceb506f0
  ebd@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261121T211740Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:1
 DTSTART:20261205T163000Z
 DTEND:20261205T193000Z
-SUMMARY:白石るり出演 オレたちゴチャ・まぜっ！集まれヤ
- ンヤン
-DESCRIPTION:本人側の公式発表で確認。\nhttps://re-ge.com/schedul
- e/
-LOCATION:MBSラジオ
+SUMMARY:白石るり「オレたちゴチャ・まぜっ！」出演日未
+ 確認（旧掲載取り下げ）
+DESCRIPTION:日時未定に変更したため旧日時の配信を取り下
+ げ。予定自体の中止ではありません。\n掲載していた日
+ 時はMBS・radikoの放送枠と異なるため取り下げ。白石る
+ りの個別出演日・媒体は未確認。番組の中止を示すも
+ のではありません。\n土曜25:30はRadiotalk生配信、月曜25:3
+ 0はMBS・radiko。番組の定例枠は個別出演を示しません。\
+ n日時未確認\nhttps://battengirls.com/contents/1095110\nhttps://re-ge.
+ com/schedule/\nhttps://www.mbs1179.com/ore/
+LOCATION:
 URL:https://re-ge.com/schedule/
-STATUS:CONFIRMED
+STATUS:CANCELLED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:白石るり出演 オレたちゴチャ・まぜっ！集ま
- れヤンヤン
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-0f2c7dc72ef853fb4c0247654513c41e39d416aa2cbebadd21e454127daef
  84e@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261121T211740Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:1
 DTSTART:20261212T163000Z
 DTEND:20261212T193000Z
-SUMMARY:白石るり出演 オレたちゴチャ・まぜっ！集まれヤ
- ンヤン
-DESCRIPTION:本人側の公式発表で確認。\nhttps://re-ge.com/schedul
- e/
-LOCATION:MBSラジオ
+SUMMARY:白石るり「オレたちゴチャ・まぜっ！」出演日未
+ 確認（旧掲載取り下げ）
+DESCRIPTION:日時未定に変更したため旧日時の配信を取り下
+ げ。予定自体の中止ではありません。\n掲載していた日
+ 時はMBS・radikoの放送枠と異なるため取り下げ。白石る
+ りの個別出演日・媒体は未確認。番組の中止を示すも
+ のではありません。\n土曜25:30はRadiotalk生配信、月曜25:3
+ 0はMBS・radiko。番組の定例枠は個別出演を示しません。\
+ n日時未確認\nhttps://battengirls.com/contents/1095110\nhttps://re-ge.
+ com/schedule/\nhttps://www.mbs1179.com/ore/
+LOCATION:
 URL:https://re-ge.com/schedule/
-STATUS:CONFIRMED
+STATUS:CANCELLED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:白石るり出演 オレたちゴチャ・まぜっ！集ま
- れヤンヤン
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-1a64e3f110093c74d0bb914c92a016ac51f8d0b97972ca467cc109f62f6e9
  24b@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261111T093246Z
+DTSTAMP:20261121T211740Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261111T093246Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:1
 DTSTART:20261219T163000Z
 DTEND:20261219T193000Z
-SUMMARY:白石るり出演 オレたちゴチャ・まぜっ！集まれヤ
- ンヤン
-DESCRIPTION:本人側の公式発表で確認。\nhttps://re-ge.com/schedul
- e/
-LOCATION:MBSラジオ
+SUMMARY:白石るり「オレたちゴチャ・まぜっ！」出演日未
+ 確認（旧掲載取り下げ）
+DESCRIPTION:日時未定に変更したため旧日時の配信を取り下
+ げ。予定自体の中止ではありません。\n掲載していた日
+ 時はMBS・radikoの放送枠と異なるため取り下げ。白石る
+ りの個別出演日・媒体は未確認。番組の中止を示すも
+ のではありません。\n土曜25:30はRadiotalk生配信、月曜25:3
+ 0はMBS・radiko。番組の定例枠は個別出演を示しません。\
+ n日時未確認\nhttps://battengirls.com/contents/1095110\nhttps://re-ge.
+ com/schedule/\nhttps://www.mbs1179.com/ore/
+LOCATION:
 URL:https://re-ge.com/schedule/
-STATUS:CONFIRMED
+STATUS:CANCELLED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-DESCRIPTION:白石るり出演 オレたちゴチャ・まぜっ！集ま
- れヤンヤン
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-5e5f8bda4a55f287bcaacdb53a39335ea3f828ee5440dba182982e7169d39
@@ -1518,10 +1518,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-dd9f7de9b1799d9ea8785786dbf2c6b65305076c403379c3bf68ebff12d38
  f79@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T191634Z
+DTSTAMP:20261121T211740Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261121T191634Z
-SEQUENCE:2
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:3
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ！
  〜
@@ -1532,10 +1532,12 @@ DESCRIPTION:RE-GEの物販：先行14:00〜15:30、開場後16:00から、
  時間変更の場合あり。 ドワンゴの配信タイムテーブル
  で、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信
  は17:00開始、12月1日いっぱいまで視聴可。後半はニコド
- ルの有料会員向け。\n本人側の公式発表で確認。\nhttps:/
- /live.nicovideo.jp/watch/lv351834212\nhttps://prtimes.jp/main/html/rd/p/00
- 0001450.000056982.html\nhttps://re-ge.com/news/item-716/\nhttps://re-ge.co
- m/news/item-809/
+ ルの有料会員向け。 イープラスの現地公演一般発売は
+ 予定枚数終了。他の販売元や配信チケットの状況は別
+ 。\n本人側の公式発表で確認。\nhttps://eplus.jp/sf/detail/4613
+ 510001\nhttps://live.nicovideo.jp/watch/lv351834212\nhttps://prtimes.jp/ma
+ in/html/rd/p/000001450.000056982.html\nhttps://re-ge.com/news/item-716/\nh
+ ttps://re-ge.com/news/item-809/
 LOCATION:ザ・ガーデンホール
 URL:https://re-ge.com/news/item-716/
 STATUS:CONFIRMED

@@ -406,20 +406,23 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-4bad2956467669c4abbe7586ba4c84b43789023cc6ed38a597033a41cd56d
  bf9@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T191634Z
+DTSTAMP:20261121T211740Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T191634Z
-SEQUENCE:2
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:3
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 LIVE
 DESCRIPTION:17:00はイベントの開演。 桜井えまは一部演目の
  み歌唱、その他はダンスのみで参加。 ドワンゴの配信
  タイムテーブルで、出演枠は20:15〜20:45。5組リレーは19:
  10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可
- 。後半はニコドルの有料会員向け。\n私立恵比寿中学公
- 式サイトで確認。\nhttps://live.nicovideo.jp/watch/lv351834212\nhtt
- ps://prtimes.jp/main/html/rd/p/000001450.000056982.html\nhttps://www.shiri
- tsuebichu.jp/media/96540/\nhttps://www.shiritsuebichu.jp/news/16300/
+ 。後半はニコドルの有料会員向け。 イープラスの現地
+ 公演一般発売は予定枚数終了。他の販売元や配信チケ
+ ットの状況は別。\n私立恵比寿中学公式サイトで確認。
+ \nhttps://eplus.jp/sf/detail/4613510001\nhttps://live.nicovideo.jp/watch/l
+ v351834212\nhttps://prtimes.jp/main/html/rd/p/000001450.000056982.html\nht
+ tps://www.shiritsuebichu.jp/media/96540/\nhttps://www.shiritsuebichu.jp/ne
+ ws/16300/
 LOCATION:ザ・ガーデンホール
 URL:https://www.shiritsuebichu.jp/media/96540/
 STATUS:CONFIRMED
