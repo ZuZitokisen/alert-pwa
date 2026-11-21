@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-haretoki-regional",
-  "dataGeneratedAt": "2026-11-21T09:07:20Z",
-  "inputSha256": "c70e5f7b6b53248366db9a84d445b28b4ad677f4b3c988d59b6ac87da30c8721",
+  "dataVersion": "2026-11-21-ebichu-media-details",
+  "dataGeneratedAt": "2026-11-21T09:15:55Z",
+  "inputSha256": "72173ec134cead66bfa9d828a6dbf0debd9b1db5d5a76cf65c50d5020bb309f3",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -577,6 +577,106 @@
       ]
     },
     {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-media-96906-2026-11-25\"]",
+      "uid": "public-v1-1d4c46b0b81b87195a801519374a390c7c87cf3a28f5b78fecf1e4b3ff670229@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-media-96906-2026-11-25",
+        "category": "media",
+        "title": "「ビズらいよん 今日はこれがおすすめでショー！」コメント出演",
+        "start": "2026-11-25T00:56:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MBS毎日放送",
+        "publicNote": "安本彩花・風見和香・仲村悠菜。公式の放送日表記は11月24日（火）24:56。個別の出演時刻は未発表。\n出演と番組開始時刻をアーティスト公式の個別案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96906/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T09:15:55Z",
+      "modified": "2026-11-21T09:15:55Z",
+      "lastTiming": {
+        "start": "2026-11-25T00:56:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-media-97214-2026-11-23\"]",
+      "uid": "public-v1-7274c6a0671b5e07fc58d9b26ee8fab916299e385e59b969b8a1dce0736c783f@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-media-97214-2026-11-23",
+        "category": "media",
+        "title": "「Music House」インタビュー出演",
+        "start": "2026-11-23",
+        "end": null,
+        "allDay": false,
+        "location": "ABCテレビ",
+        "publicNote": "真山りか・桜木心菜・小久保柚乃・桜井えまのインタビュー。放送日表記は11月22日（日）深夜。エビ中公式は25:00、ABCテレビ番組ページは深夜1:45と表記が異なります。視聴・録画前に放送局の最新版を確認してください。\n出演はエビ中公式。放送開始時刻はエビ中公式と放送局の記載が異なるため未確定。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.asahi.co.jp/music_house/",
+          "https://www.shiritsuebichu.jp/media/97214/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/97214/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T09:15:55Z",
+      "modified": "2026-11-21T09:15:55Z",
+      "lastTiming": {
+        "start": "2026-11-23",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-media-97215-2026-12-02\"]",
+      "uid": "public-v1-e115b20e35c5602c89d6e732e2f9d2e01a7b6453f1d998dcb89857fd822868c7@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-media-97215-2026-12-02",
+        "category": "media",
+        "title": "「私立恵比寿中学 スペシャル」インタビュー出演",
+        "start": "2026-12-02T22:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ミュージック・ジャパンTV",
+        "publicNote": "真山りか・桜木心菜・小久保柚乃・桜井えま。視聴には契約が必要な場合があります。\n出演と番組開始時刻をアーティスト公式の個別案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.mjtv.jp/shiritsuebisuchugaku/",
+          "https://www.shiritsuebichu.jp/media/97215/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/97215/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T09:15:55Z",
+      "modified": "2026-11-21T09:15:55Z",
+      "lastTiming": {
+        "start": "2026-12-02T22:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
       "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mjtv-top20-repeat-20261121-1700\"]",
       "uid": "public-v1-c4b3eb62aa183285a1e1405dbf2365b0145ded658a059eb6a52ea6f84e4105f9@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -920,23 +1020,24 @@
         "id": "ebichu-sakuragi-nonaka-radio-20261123-fmnagasaki",
         "category": "media",
         "title": "桜木心菜 コメント出演「野中ここなのノナカの野望」",
-        "start": "2026-11-27T20:00:00+09:00",
+        "start": "2026-11-27",
         "end": null,
         "allDay": false,
         "location": "FM長崎",
-        "publicNote": "エビ中の公式ニュースで出演と放送日を確認。放送時刻は放送局番組表。",
+        "publicNote": "桜木心菜のコメント出演日は公式発表。エビ中公式スケジュールでは19:30、FM長崎の番組表は20:00表記。開始時刻は確定せず、聴取前に最新の番組表をご確認ください。\n出演はエビ中公式。放送開始時刻はエビ中公式スケジュールと放送局の番組表の記載が一致していません。",
         "status": "confirmed",
         "sourceUrls": [
           "https://www.fmnagasaki.co.jp/timetable/?date=20261127",
+          "https://www.shiritsuebichu.jp/media/",
           "https://www.shiritsuebichu.jp/news/"
         ],
         "sourceUrl": "https://www.shiritsuebichu.jp/news/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T07:27:37.505Z",
-      "modified": "2026-11-21T07:27:37.505Z",
+      "modified": "2026-11-21T09:15:55Z",
       "lastTiming": {
-        "start": "2026-11-27T20:00:00+09:00",
+        "start": "2026-11-27",
         "end": null,
         "allDay": false
       },
@@ -13251,5 +13352,5 @@
       ]
     }
   ],
-  "integritySha256": "60b28533e5b5b55dd9c0fc5a6b3b49296c5762a6f2f6f2140fa4410112c3d687"
+  "integritySha256": "a0bd6550d6e57983befeb52cc5098a5aaeabad3d76c590bc7fc1f9ddabf1fd54"
 }

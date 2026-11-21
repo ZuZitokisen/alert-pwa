@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-haretoki-regional",
-  "dataGeneratedAt": "2026-11-21T09:07:20Z",
+  "dataVersion": "2026-11-21-ebichu-media-details",
+  "dataGeneratedAt": "2026-11-21T09:15:55Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a7c3967a9ffba90736f6bb89772897932d533dd7afbe42ba522ec662a1f1b56e",
+  "inputSha256": "3aa5c6eac804358baff7295c42c4f699d5277b054fcde5b835d755e916076eeb",
   "feeds": [
     {
       "id": "tokisen-all",
