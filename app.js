@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.27';
+const APP_RELEASE='0.7.28';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
@@ -336,7 +336,7 @@ const APP_RELOAD_NOTICE='alert-pwa-reload-notice-v1';
 function rememberAppReload(){try{sessionStorage.setItem(APP_RELOAD_NOTICE,String(Date.now()));}catch{}}
 function takeAppReloadNotice(){try{const at=Number(sessionStorage.getItem(APP_RELOAD_NOTICE));sessionStorage.removeItem(APP_RELOAD_NOTICE);return at>0&&Date.now()-at>=0&&Date.now()-at<60000;}catch{return false;}}
 function setupNewsTabs(){
- const keys=['events','history'],tabs=keys.map(k=>$('#news-'+k+'-tab')),panels=keys.map(k=>$('#news-'+k+'-panel'));
+ const keys=['events','history','other'],tabs=keys.map(k=>$('#news-'+k+'-tab')),panels=keys.map(k=>$('#news-'+k+'-panel'));
  if(tabs.some(x=>!x)||panels.some(x=>!x))return;
  function activate(next,focus=false){
   tabs.forEach((tab,i)=>{tab.setAttribute('aria-selected',String(i===next));tab.tabIndex=i===next?0:-1;panels[i].hidden=i!==next;});
@@ -345,7 +345,7 @@ function setupNewsTabs(){
  tabs.forEach((tab,i)=>{
   tab.onclick=()=>activate(i);
   tab.onkeydown=e=>{
-   const next=e.key==='Home'?0:e.key==='End'?1:e.key==='ArrowLeft'||e.key==='ArrowRight'?1-i:null;
+   const next=e.key==='Home'?0:e.key==='End'?tabs.length-1:e.key==='ArrowLeft'?(i+tabs.length-1)%tabs.length:e.key==='ArrowRight'?(i+1)%tabs.length:null;
    if(next===null)return;e.preventDefault();activate(next,true);
   };
  });
@@ -445,6 +445,7 @@ function route(){
 if(location.hash==='#notification-changes'){selectedArtists.clear();artist='all';history.replaceState(null,'','#changes');$('#news-events-tab')?.click();renderArtists();renderChanges();}
 
 const hash=location.hash.slice(1),previousView=view;
+if(hash==='settings'||hash==='about')$('#news-other-tab')?.click();
 view=['calendar','favorites','changes'].includes(hash)?hash:['find','cards','watch'].includes(hash)?'search':['about','settings'].includes(hash)?'changes':'calendar';
 const names={calendar:'Schedule',search:'Search',favorites:'Favorite',changes:'News'};
 $('#view-title').textContent=names[view];

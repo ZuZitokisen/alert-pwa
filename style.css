@@ -377,7 +377,7 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .news-tabs button,.news-actions #read-all{min-height:44px;white-space:nowrap;font-size:12px;padding:6px 9px}
 .news-tabs button{border-color:transparent;background:transparent;color:var(--muted)}
 .news-tabs button[aria-selected=true]{background:var(--pink);color:var(--ink);font-weight:700}
-@media(max-width:385px){
+@media(max-width:420px){
  .news-actions{column-gap:4px}
  .news-tabs{gap:2px}
  .news-tabs button,.news-actions #read-all{font-size:11px;padding-inline:6px}
@@ -387,3 +387,7 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 #view-title:focus{outline:none}
 
 .brand-mark.brand-wordmark{width:108px;height:auto}
+
+/* Keep all four News controls on one aligned row at narrow phone widths. */
+@media(max-width:345px){.news-tabs button,.news-actions #read-all{padding-inline:4px}}
+#news-other-panel #push-settings{grid-column:1/-1}
