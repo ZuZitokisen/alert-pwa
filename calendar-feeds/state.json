@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-radio-and-batten-natslive",
-  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
-  "inputSha256": "2e330c548b3e46132146755df31f41534a2a4626e88730104de5b832bab7e23d",
+  "dataVersion": "2026-11-22-ebichu-dated-audio",
+  "dataGeneratedAt": "2026-11-21T23:16:40.725Z",
+  "inputSha256": "268a8ae660b1d1e2017db1fe517f97be38f8aada1b3333d592e8c830ba092cc4",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -361,6 +361,38 @@
       "memberships": [
         "batten-all",
         "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-toyosu-finale-20261129\"]",
+      "uid": "public-v1-f77e6fb4a609e90282310f18cf73f6c2091ca4a257430717b3ab06c8b742e8ff@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-toyosu-finale-20261129",
+        "category": "live",
+        "title": "「ちゅぴ」リリースイベント ファイナル（豊洲）",
+        "start": "2026-11-29",
+        "end": null,
+        "allDay": false,
+        "location": "ららぽーと豊洲 ウッドデッキ（特設）",
+        "publicNote": "ミニライブ・特典会、PARKGOLF（DJ）、KURUMI（和太鼓）とスペシャルステージ。詳細・時刻は後日発表。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1129038"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-11-29",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
       ]
     },
     {
@@ -855,6 +887,39 @@
       ]
     },
     {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-mbs-yanyan-20261130\"]",
+      "uid": "public-v1-1559423db6f7d829ff106bf71c77958b0c82c4462a3ac45c063c98c3239fbc1d@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-mbs-yanyan-20261130",
+        "category": "media",
+        "title": "希山愛出演「オレたちゴチャ・まぜっ！〜集まれヤンヤン〜」",
+        "start": "2026-12-01T01:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式表記は11月30日25:30。MBSラジオ・radikoの放送回。土曜のRadiotalk生配信とは別。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/928352",
+          "https://www.mbs1179.com/ore/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-01T01:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
       "key": "[\"batten\",\"curated-calendar\",\"batten-nack5-podcast-20261122\"]",
       "uid": "public-v1-1602de8e9fa2624ddcfe60358925c89e268fbf555f532de2367a7bbda0ab14fd@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -878,6 +943,38 @@
       "modified": "2026-11-21T17:32:09Z",
       "lastTiming": {
         "start": "2026-11-22T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-nack5-podcast-20261129\"]",
+      "uid": "public-v1-b6ce6b933089a061f3112e86fb5df4c207d80cbabc115814a7a11e2fd860d592@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-nack5-podcast-20261129",
+        "category": "media",
+        "title": "NACK5 Podcast「ばってん少女隊 ばってんな私もいいよね？」（春乃・柳・逢里）",
+        "start": "2026-11-29T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "NACK5 Podcast",
+        "publicNote": "春乃・柳・逢里。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1074239"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-11-29T20:00:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -1008,6 +1105,38 @@
       "lastTiming": {
         "start": "2026-11-23T23:30:00+09:00",
         "end": "2026-11-23T23:59:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-rkb-20261130\"]",
+      "uid": "public-v1-098689272eb3752aee4cadde6282ed180bdfa762612ffcc1e3220ceb0c440284@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-rkb-20261130",
+        "category": "media",
+        "title": "RKBラジオ「ばってん少女隊のばってんラジオたいっ！」",
+        "start": "2026-11-30T23:30:00+09:00",
+        "end": "2026-11-30T23:59:00+09:00",
+        "allDay": false,
+        "location": "RKBラジオ",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/880215"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-11-30T23:30:00+09:00",
+        "end": "2026-11-30T23:59:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -1181,6 +1310,166 @@
       ]
     },
     {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-artistspoken-mayama-20261129\"]",
+      "uid": "public-v1-31bc08d3d802332909290bc428a2b0b3a0dcb9dbdb9481822e8f69cb7888b265@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-artistspoken-mayama-20261129",
+        "category": "media",
+        "title": "artistspoken「幼馴染なふたり」",
+        "start": "2026-11-29T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "artistspoken",
+        "publicNote": "真山りか出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/94623/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-11-29T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-artistspoken-mayama-20261206\"]",
+      "uid": "public-v1-e23e54bc0ba37a2199163cf8997b98a73c1ecd27a27f7268e63412d22ea61f7c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-artistspoken-mayama-20261206",
+        "category": "media",
+        "title": "artistspoken「幼馴染なふたり」",
+        "start": "2026-12-06T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "artistspoken",
+        "publicNote": "真山りか出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/94624/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-06T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-artistspoken-mayama-20261213\"]",
+      "uid": "public-v1-8e0a5024b91d892217e9e0cefcba5133417eba64d3e1a51f73b0fa129366be6b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-artistspoken-mayama-20261213",
+        "category": "media",
+        "title": "artistspoken「幼馴染なふたり」",
+        "start": "2026-12-13T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "artistspoken",
+        "publicNote": "真山りか出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/94625/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-13T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-artistspoken-mayama-20261220\"]",
+      "uid": "public-v1-3248b95652b8fb369f662b4e0a15609ebd7eb5ffe1fd5ea3f1a90a0f096b272a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-artistspoken-mayama-20261220",
+        "category": "media",
+        "title": "artistspoken「幼馴染なふたり」",
+        "start": "2026-12-20T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "artistspoken",
+        "publicNote": "真山りか出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/94626/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-20T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-artistspoken-mayama-20261227\"]",
+      "uid": "public-v1-d3c955940d1841f3fd50d94e9e79355781b4658b53c0265b4c9112a570cd6b03@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-artistspoken-mayama-20261227",
+        "category": "media",
+        "title": "artistspoken「幼馴染なふたり」",
+        "start": "2026-12-27T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "artistspoken",
+        "publicNote": "真山りか出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/94627/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-27T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
       "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-bstbs-sasuke-idol-backstage-20261206\"]",
       "uid": "public-v1-7dd97459939d55edc2e6cce001402a38ef1500761714d117703d5002667f76a3@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -1205,6 +1494,210 @@
       "lastTiming": {
         "start": "2026-12-06T23:00:00+09:00",
         "end": "2026-12-06T23:54:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-cbc-korahoyuno-20261126\"]",
+      "uid": "public-v1-76b909fcc4aa814f0e6243b440a4d3a748c0c150937181968c2b10c4430da7a9@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-cbc-korahoyuno-20261126",
+        "category": "media",
+        "title": "CBCラジオ「小ラ保柚乃」",
+        "start": "2026-11-26T23:10:00+09:00",
+        "end": "2026-11-26T23:20:00+09:00",
+        "allDay": false,
+        "location": "CBCラジオ",
+        "publicNote": "小久保柚乃出演。『推シマシ』内、23:10ごろ。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://radichubu.jp/cbc/",
+          "https://www.shiritsuebichu.jp/media/96206/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96206/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-11-26T23:10:00+09:00",
+        "end": "2026-11-26T23:20:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-cbc-korahoyuno-20261203\"]",
+      "uid": "public-v1-5785dc0ee297b73e9c547bc7b4ff5d3ae1131a8966706f28ba183951fe8b399c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-cbc-korahoyuno-20261203",
+        "category": "media",
+        "title": "CBCラジオ「小ラ保柚乃」",
+        "start": "2026-12-03T23:10:00+09:00",
+        "end": "2026-12-03T23:20:00+09:00",
+        "allDay": false,
+        "location": "CBCラジオ",
+        "publicNote": "小久保柚乃出演。『推シマシ』内、23:10ごろ。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://radichubu.jp/cbc/",
+          "https://www.shiritsuebichu.jp/media/96207/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96207/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-03T23:10:00+09:00",
+        "end": "2026-12-03T23:20:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-cbc-korahoyuno-20261210\"]",
+      "uid": "public-v1-6346a71b7c524500c4bf25c50e207af84728e2112d751cd5002d66b7e24c3a47@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-cbc-korahoyuno-20261210",
+        "category": "media",
+        "title": "CBCラジオ「小ラ保柚乃」",
+        "start": "2026-12-10T23:10:00+09:00",
+        "end": "2026-12-10T23:20:00+09:00",
+        "allDay": false,
+        "location": "CBCラジオ",
+        "publicNote": "小久保柚乃出演。『推シマシ』内、23:10ごろ。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://radichubu.jp/cbc/",
+          "https://www.shiritsuebichu.jp/media/96208/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96208/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-10T23:10:00+09:00",
+        "end": "2026-12-10T23:20:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-cbc-korahoyuno-20261217\"]",
+      "uid": "public-v1-fc146a7e484954cc8ba79fdbe74d88fb4a44676189a3ebf7bc976d766676b604@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-cbc-korahoyuno-20261217",
+        "category": "media",
+        "title": "CBCラジオ「小ラ保柚乃」",
+        "start": "2026-12-17T23:10:00+09:00",
+        "end": "2026-12-17T23:20:00+09:00",
+        "allDay": false,
+        "location": "CBCラジオ",
+        "publicNote": "小久保柚乃出演。『推シマシ』内、23:10ごろ。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://radichubu.jp/cbc/",
+          "https://www.shiritsuebichu.jp/media/96209/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96209/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-17T23:10:00+09:00",
+        "end": "2026-12-17T23:20:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-cbc-korahoyuno-20261224\"]",
+      "uid": "public-v1-f7dbf5a56e7fb517fa3cc712cab2696b7b3d25fb806a29905f9e238c8534347d@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-cbc-korahoyuno-20261224",
+        "category": "media",
+        "title": "CBCラジオ「小ラ保柚乃」",
+        "start": "2026-12-24T23:10:00+09:00",
+        "end": "2026-12-24T23:20:00+09:00",
+        "allDay": false,
+        "location": "CBCラジオ",
+        "publicNote": "小久保柚乃出演。『推シマシ』内、23:10ごろ。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://radichubu.jp/cbc/",
+          "https://www.shiritsuebichu.jp/media/96210/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96210/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-24T23:10:00+09:00",
+        "end": "2026-12-24T23:20:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-cbc-korahoyuno-20261231\"]",
+      "uid": "public-v1-310dc1febae6800ff3a087f02e42003ebc45839e9428dcfc59d3a76f9bafa4ea@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-cbc-korahoyuno-20261231",
+        "category": "media",
+        "title": "CBCラジオ「小ラ保柚乃」",
+        "start": "2026-12-31T23:10:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "CBCラジオ",
+        "publicNote": "小久保柚乃出演。『推シマシ』内、23:10ごろ。\n私立恵比寿中学公式スケジュールに放送開始を掲載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://radichubu.jp/cbc/",
+          "https://www.shiritsuebichu.jp/media/96211/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96211/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-31T23:10:00+09:00",
+        "end": null,
         "allDay": false
       },
       "memberships": [
@@ -1824,6 +2317,210 @@
       ]
     },
     {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-joqr-housoubu-20261125\"]",
+      "uid": "public-v1-2bc2a8b7cc9c24eec0a0f068b14df43d25f954bdc2d34ad013cb491978c1482b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-joqr-housoubu-20261125",
+        "category": "media",
+        "title": "文化放送「私立恵比寿中学 放送部」",
+        "start": "2026-11-25T21:00:00+09:00",
+        "end": "2026-11-25T21:30:00+09:00",
+        "allDay": false,
+        "location": "文化放送",
+        "publicNote": "私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.joqr.co.jp/qr/dailyprogram/?date=20261125",
+          "https://www.shiritsuebichu.jp/media/94570/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/94570/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-11-25T21:00:00+09:00",
+        "end": "2026-11-25T21:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-joqr-housoubu-20261202\"]",
+      "uid": "public-v1-700de60a2303a853f409927aa7af18305828f672e77894b381d8426f1a6f8df6@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-joqr-housoubu-20261202",
+        "category": "media",
+        "title": "文化放送「私立恵比寿中学 放送部」",
+        "start": "2026-12-02T21:00:00+09:00",
+        "end": "2026-12-02T21:30:00+09:00",
+        "allDay": false,
+        "location": "文化放送",
+        "publicNote": "私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.joqr.co.jp/qr/program/ebichu",
+          "https://www.shiritsuebichu.jp/media/94571/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/94571/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-02T21:00:00+09:00",
+        "end": "2026-12-02T21:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-joqr-housoubu-20261209\"]",
+      "uid": "public-v1-18b915ca56dd2040f4effdcb27a9c70b0466dcfbd6162fdb362014093434f3d6@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-joqr-housoubu-20261209",
+        "category": "media",
+        "title": "文化放送「私立恵比寿中学 放送部」",
+        "start": "2026-12-09T21:00:00+09:00",
+        "end": "2026-12-09T21:30:00+09:00",
+        "allDay": false,
+        "location": "文化放送",
+        "publicNote": "私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.joqr.co.jp/qr/program/ebichu",
+          "https://www.shiritsuebichu.jp/media/94572/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/94572/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-09T21:00:00+09:00",
+        "end": "2026-12-09T21:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-joqr-housoubu-20261216\"]",
+      "uid": "public-v1-dd05aed3e209227c2a50912d4e2ca8c47fbfed1fc9424aad280f9a32d0bdc773@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-joqr-housoubu-20261216",
+        "category": "media",
+        "title": "文化放送「私立恵比寿中学 放送部」",
+        "start": "2026-12-16T21:00:00+09:00",
+        "end": "2026-12-16T21:30:00+09:00",
+        "allDay": false,
+        "location": "文化放送",
+        "publicNote": "私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.joqr.co.jp/qr/program/ebichu",
+          "https://www.shiritsuebichu.jp/media/94573/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/94573/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-16T21:00:00+09:00",
+        "end": "2026-12-16T21:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-joqr-housoubu-20261223\"]",
+      "uid": "public-v1-b0f310057d8c9fa663fef7f1c0cd4fa44e91e10353d4476ba71973ae571a549a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-joqr-housoubu-20261223",
+        "category": "media",
+        "title": "文化放送「私立恵比寿中学 放送部」",
+        "start": "2026-12-23T21:00:00+09:00",
+        "end": "2026-12-23T21:30:00+09:00",
+        "allDay": false,
+        "location": "文化放送",
+        "publicNote": "私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.joqr.co.jp/qr/program/ebichu",
+          "https://www.shiritsuebichu.jp/media/94574/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/94574/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-23T21:00:00+09:00",
+        "end": "2026-12-23T21:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-joqr-housoubu-20261230\"]",
+      "uid": "public-v1-c081d8c53227d8320d454951100d8df272d9ed02dd06c088ec73ed835ec03730@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-joqr-housoubu-20261230",
+        "category": "media",
+        "title": "文化放送「私立恵比寿中学 放送部」",
+        "start": "2026-12-30T21:00:00+09:00",
+        "end": "2026-12-30T21:30:00+09:00",
+        "allDay": false,
+        "location": "文化放送",
+        "publicNote": "私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.joqr.co.jp/qr/program/ebichu",
+          "https://www.shiritsuebichu.jp/media/94575/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/94575/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-30T21:00:00+09:00",
+        "end": "2026-12-30T21:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
       "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kemono-friends-202612-a1\"]",
       "uid": "public-v1-784de01d5d0e8d829e5b2fef142c1e01e52d566a87bcad72d65bbce90699d346@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -2153,6 +2850,210 @@
       "memberships": [
         "ebichu-all",
         "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mbs-nanyanen-20261125\"]",
+      "uid": "public-v1-70578d1bbb1ff100315f121abcdcd93748cbd96fa0a96525d57b882345c974cc@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mbs-nanyanen-20261125",
+        "category": "media",
+        "title": "MBSラジオ「えびちゅう☆なんやねん！」",
+        "start": "2026-11-25T02:00:00+09:00",
+        "end": "2026-11-25T02:30:00+09:00",
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式表記は11月24日26:00。実際の放送日は翌日。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.mbs1179.com/time/sp/",
+          "https://www.shiritsuebichu.jp/media/96665/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96665/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-11-25T02:00:00+09:00",
+        "end": "2026-11-25T02:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mbs-nanyanen-20261202\"]",
+      "uid": "public-v1-e42bb945fe2d97c2580aa824c401c21e3eb8895b82c405ad15901ac204698dfc@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mbs-nanyanen-20261202",
+        "category": "media",
+        "title": "MBSラジオ「えびちゅう☆なんやねん！」",
+        "start": "2026-12-02T02:00:00+09:00",
+        "end": "2026-12-02T02:30:00+09:00",
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式表記は12月1日26:00。実際の放送日は翌日。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.mbs1179.com/time/sp/",
+          "https://www.shiritsuebichu.jp/media/96666/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96666/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-02T02:00:00+09:00",
+        "end": "2026-12-02T02:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mbs-nanyanen-20261209\"]",
+      "uid": "public-v1-0f8839fdf48cc0340d4430609c1baddafcbc512c925c089c1025157413defc6e@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mbs-nanyanen-20261209",
+        "category": "media",
+        "title": "MBSラジオ「えびちゅう☆なんやねん！」",
+        "start": "2026-12-09T02:00:00+09:00",
+        "end": "2026-12-09T02:30:00+09:00",
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式表記は12月8日26:00。実際の放送日は翌日。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.mbs1179.com/time/sp/",
+          "https://www.shiritsuebichu.jp/media/96667/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96667/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-09T02:00:00+09:00",
+        "end": "2026-12-09T02:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mbs-nanyanen-20261216\"]",
+      "uid": "public-v1-cec61e52bb1176240f07a07bba8506466ada9a211cb9ec5d15e8f1c9265d15bc@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mbs-nanyanen-20261216",
+        "category": "media",
+        "title": "MBSラジオ「えびちゅう☆なんやねん！」",
+        "start": "2026-12-16T02:00:00+09:00",
+        "end": "2026-12-16T02:30:00+09:00",
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式表記は12月15日26:00。実際の放送日は翌日。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.mbs1179.com/time/sp/",
+          "https://www.shiritsuebichu.jp/media/96668/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96668/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-16T02:00:00+09:00",
+        "end": "2026-12-16T02:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mbs-nanyanen-20261223\"]",
+      "uid": "public-v1-4a37ae77ad3b8006a96fcfab86868784ae498c5f92af2c4001459d55cd58b631@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mbs-nanyanen-20261223",
+        "category": "media",
+        "title": "MBSラジオ「えびちゅう☆なんやねん！」",
+        "start": "2026-12-23T02:00:00+09:00",
+        "end": "2026-12-23T02:30:00+09:00",
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式表記は12月22日26:00。実際の放送日は翌日。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.mbs1179.com/time/sp/",
+          "https://www.shiritsuebichu.jp/media/96669/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96669/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-23T02:00:00+09:00",
+        "end": "2026-12-23T02:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mbs-nanyanen-20261230\"]",
+      "uid": "public-v1-e52ccb0660c82a589cc1f9ddf990a3152690c75ef46f43dbf7bf2ea1c3d53244@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mbs-nanyanen-20261230",
+        "category": "media",
+        "title": "MBSラジオ「えびちゅう☆なんやねん！」",
+        "start": "2026-12-30T02:00:00+09:00",
+        "end": "2026-12-30T02:30:00+09:00",
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式表記は12月29日26:00。実際の放送日は翌日。\n私立恵比寿中学公式スケジュールと放送局の案内で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.mbs1179.com/time/sp/",
+          "https://www.shiritsuebichu.jp/media/96670/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96670/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-21T23:16:40.725Z",
+      "lastTiming": {
+        "start": "2026-12-30T02:00:00+09:00",
+        "end": "2026-12-30T02:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
       ]
     },
     {
@@ -15119,5 +16020,5 @@
       ]
     }
   ],
-  "integritySha256": "97c148176a21836021a3771e9814e3d3f08bfbc36f1531fe2a59348c2a07a92f"
+  "integritySha256": "fe2e00f04779d327e5435b0148264f8d399a62d32246f9b96201816d9bea298c"
 }

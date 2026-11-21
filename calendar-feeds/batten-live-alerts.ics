@@ -93,6 +93,26 @@ DESCRIPTION:ちかっぱ祭2026
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-f77e6fb4a609e90282310f18cf73f6c2091ca4a257430717b3ab06c8b742e
+ 8ff@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261129
+SUMMARY:「ちゅぴ」リリースイベント ファイナル（豊洲）
+ （時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nミニライブ・特典会、PARKGOLF（DJ）、KURUMI（和太鼓
+ ）とスペシャルステージ。詳細・時刻は後日発表。\nば
+ ってん少女隊公式の案内。\nhttps://battengirls.com/contents/112
+ 9038
+LOCATION:ららぽーと豊洲 ウッドデッキ（特設）
+URL:https://battengirls.com/contents/1129038
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-8628e0c8fa3d38b99e06df5279e23c12339519eb8dbec4882a9b04cb48016
  ac6@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T173209Z

@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-radio-and-batten-natslive",
-  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
+  "dataVersion": "2026-11-22-ebichu-dated-audio",
+  "dataGeneratedAt": "2026-11-21T23:16:40.725Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "4d0401e76a2c2382220abcd8397943a88c27cedca915476b3afbaeac779ad307",
+  "inputSha256": "920631c6ad06a049569a2f08dc36fc0550e83ebb4385581c8705f041d5065b10",
   "feeds": [
     {
       "id": "tokisen-all",
