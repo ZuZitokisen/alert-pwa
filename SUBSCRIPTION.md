@@ -199,8 +199,8 @@ rendering and alerts ultimately depend on the subscribing calendar app.
 
 The new client reads the fifteen-feed manifest-v2.json. manifest.json retains the original ten-feed schema for old clients, and schedule-data.json is the generated two-artist projection. The old event content, IDs, UIDs and ten ICS files stay identical when only third-artist events are added. Both JSONs, both manifests, persistent revision state and all fifteen feeds must be deployed together. Generation stages both local output targets and rolls back ordinary errors; it is not crash-atomic.
 
-### 開始1時間前の通知を選ぶ（v5以降）
+### 通知付きで追加する（v5以降）
 
-「本体カレンダーに追加」で「開始1時間前の通知を付ける」を選んだときだけ、通知付きの読み取り専用購読先（通常URLとは別の `*-alerts.ics`）を使います。通常の購読は既定のままで、従来URLと内容は変更しません。通知あり・なしの両方を購読すると重複を招くため、切り替えるときは本体側で古い購読を解除してください。「全予定」とその内訳も同時に追加しないでください。
+「本体カレンダーに追加」で通知を選んだときだけ、通知付きの読み取り専用購読先（通常URLとは別の `*-alerts.ics`）を使います。通常の購読は既定のままで、従来URLと内容は変更しません。通知あり・なしの両方を購読すると重複を招くため、切り替えるときは本体側で古い購読を解除してください。「全予定」とその内訳も同時に追加しないでください。
 
-通知付きの購読先は、確定かつ公開中で開始時刻がある予定に限り、開始1時間前の端末カレンダー通知を設定します。日付のみ・終日・仮予定・掲載消失・取消・区分変更による取り下げには設定しません。FurinのPush通知とは別で、登録時に本体の確認と通知許可が必要です。端末の取得間隔によって反映が遅れる場合があります。実機での通知受信は未検証です。
+通知付きの購読先は、確定かつ公開中で開始時刻がある予定に限り、当日8:00（日本時間）と開始1時間前の端末カレンダー通知を設定します。明示された締切があれば締切当日8:00と締切1時間前（23:59締切は23:00）です。8:00が開始・締切以降なら省き、候補時刻が重なる場合は1回にまとめます。日付のみ・終日・仮予定・掲載消失・取消・区分変更による取り下げには設定しません。FurinのPush通知とは別で、登録時に本体の確認と通知許可が必要です。端末の取得間隔によって反映が遅れる場合があります。実機での通知受信は未検証です。

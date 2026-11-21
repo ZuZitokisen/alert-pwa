@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-ebichu-tohokusan",
-  "generatedAt": "2026-11-21T01:20:18Z",
+  "version": "2026-11-21-ebichu-cafe-cbc",
+  "generatedAt": "2026-11-21T01:42:13Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -14053,6 +14053,296 @@
       "timings": [],
       "revision": 1,
       "present": true
+    },
+    {
+      "id": "ebichu-namco-tokyo-cafe-20261121",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびチリ、はじめました（振替コラボカフェ）",
+      "start": "2026-11-21",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "東急歌舞伎町タワー3F namco TOKYO",
+      "note": "11月21〜23日の開催。飲食エリアは無料の先着予約制。予約枠の空きは未確認。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97266/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97266/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.html",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-namco-tokyo-cafe-2026"
+    },
+    {
+      "id": "ebichu-namco-tokyo-cafe-20261122",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびチリ、はじめました（振替コラボカフェ）",
+      "start": "2026-11-22",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "東急歌舞伎町タワー3F namco TOKYO",
+      "note": "11月21〜23日の開催。飲食エリアは無料の先着予約制。予約枠の空きは未確認。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97266/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97266/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.html",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-namco-tokyo-cafe-2026"
+    },
+    {
+      "id": "ebichu-namco-tokyo-cafe-20261123",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびチリ、はじめました（振替コラボカフェ）",
+      "start": "2026-11-23",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "東急歌舞伎町タワー3F namco TOKYO",
+      "note": "11月21〜23日の開催。飲食エリアは無料の先着予約制。予約枠の空きは未確認。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97266/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97266/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.html",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-namco-tokyo-cafe-2026"
+    },
+    {
+      "id": "ebichu-namco-tokyo-talk-20261122",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "namco TOKYOコラボカフェ・プレミアムイベント 私立恵比寿中学 トークショー",
+      "start": "2026-11-22T13:00:00+09:00",
+      "end": "2026-11-22T14:00:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "東急歌舞伎町タワー3F namco TOKYO",
+      "note": "12:15開場。主催の更新では6名出演。チケットの空きは未確認。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97266/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97266/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.html",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-namco-tokyo-talk-2026"
+    },
+    {
+      "id": "ebichu-cbc-yasai-mashimashi-20261228-part1",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "CBCラジオ「小ラ保柚乃」公開録音 野菜マシマシvol.3 第1部",
+      "start": "2026-12-28T14:45:00+09:00",
+      "end": "2026-12-28T15:45:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "CBCホール（名古屋）",
+      "note": "14:00開場。小久保柚乃出演。終演は予定。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96895/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96895/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://radichubu.jp/topics_detail1/id=65834",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-cbc-yasai-mashimashi-2026"
+    },
+    {
+      "id": "ebichu-cbc-yasai-mashimashi-20261228-part2",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "CBCラジオ「小ラ保柚乃」公開録音 野菜マシマシvol.3 第2部",
+      "start": "2026-12-28T18:00:00+09:00",
+      "end": "2026-12-28T19:00:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "CBCホール（名古屋）",
+      "note": "17:15開場。小久保柚乃出演。終演は予定。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96895/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96895/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://radichubu.jp/topics_detail1/id=65834",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-cbc-yasai-mashimashi-2026"
+    },
+    {
+      "id": "ebichu-cbc-yasai-mashimashi-20261228-fc-close",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "公開録音 野菜マシマシvol.3 FC先行（抽選）締切",
+      "start": "2026-11-26T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "",
+      "note": "終了・完売の状況は公式案内を確認。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96895/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96895/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://radichubu.jp/topics_detail1/id=65834",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-cbc-yasai-mashimashi-2026",
+      "deadline": "2026-11-26T23:59:00+09:00"
+    },
+    {
+      "id": "ebichu-cbc-yasai-mashimashi-20261228-general-open",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "公開録音 野菜マシマシvol.3 一般発売（先着）開始",
+      "start": "2026-12-04T18:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "",
+      "note": "終了・完売の状況は公式案内を確認。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96895/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96895/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://radichubu.jp/topics_detail1/id=65834",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-cbc-yasai-mashimashi-2026"
+    },
+    {
+      "id": "ebichu-cbc-yasai-mashimashi-20261228-general-close",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "公開録音 野菜マシマシvol.3 一般発売（先着）締切",
+      "start": "2026-12-27T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "",
+      "note": "終了・完売の状況は公式案内を確認。",
+      "evidence": "私立恵比寿中学の公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96895/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96895/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        },
+        {
+          "url": "https://radichubu.jp/topics_detail1/id=65834",
+          "type": "organizer",
+          "checkedAt": "2026-11-21T01:42:13Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:42:13Z",
+      "timings": [],
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-cbc-yasai-mashimashi-2026",
+      "deadline": "2026-12-27T23:59:00+09:00"
     }
   ],
   "notes": [

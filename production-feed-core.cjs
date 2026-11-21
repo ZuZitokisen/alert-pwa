@@ -110,7 +110,19 @@ function reconcile(data,previous,options) {
   const body={schemaVersion:1,namespace:NAMESPACE,dataVersion:data.version,dataGeneratedAt:data.generatedAt,inputSha256,coverage:data.coverage,records:[...map.values()].sort((a,b)=>a.key<b.key?-1:a.key>b.key?1:0)};
   return {...body,integritySha256:hash(canonical(body))};
 }
-function buildFeed(state,presetId,{alerts=false}={}){validateState(state);const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
+// Encode a duration relative to the emitted, whole-second DTSTART. Keep the
+// existing -PT1H spelling for ordinary starts; deadline rules can use other
+// offsets (or another day) without changing the event's start or identity.
+function triggerAt(at,start){
+ const seconds=Math.floor(at/1000)-Math.floor(Date.parse(start)/1000);
+ const magnitude=Math.abs(seconds),h=Math.floor(magnitude/3600),m=Math.floor(magnitude%3600/60),s=magnitude%60;
+ return (seconds<0?'-':'')+'PT'+(h?h+'H':'')+(m?m+'M':'')+(s||!magnitude?s+'S':'');
+}
+// Publication is not dispatch: don't let an arbitrary build/refresh clock
+// remove elapsed alarms from otherwise unchanged calendar events.
+const REMINDER_EPOCH=0;
+const wholeSecond = value => new Date(Math.floor(Date.parse(value)/1000)*1000).toISOString();
+function buildFeed(state,presetId,{alerts=false,alertEvents}={}){validateState(state);assert(!alerts||alertEvents instanceof Map,'Canonical alert events required');const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Alert PWA//Public Calendar Subscription//JA','CALSCALE:GREGORIAN',`X-WR-CALNAME:${F.escapeICSText(preset.label+(alerts?'（通知あり）':''))}`];let count=0,omittedUnknownDate=0;
  for(const r of state.records){if(!r.memberships.includes(presetId))continue;const e=r.event,t=e.start?e:r.lastTiming;if(!t){omittedUnknownDate++;continue;}
   const moved=!groups(e).includes(presetId),removedDate=!e.start,cancelled=moved||removedDate||e.status==='cancelled';
@@ -119,8 +131,12 @@ function buildFeed(state,presetId,{alerts=false}={}){validateState(state);const 
   lines.push('BEGIN:VEVENT',`UID:${r.uid}`,`DTSTAMP:${stamp(r.modified)}`,`CREATED:${stamp(r.created)}`,`LAST-MODIFIED:${stamp(r.modified)}`,`SEQUENCE:${r.sequence}`,day(t.start)?`DTSTART;VALUE=DATE:${t.start.replace(/-/g,'')}`:`DTSTART:${stamp(t.start)}`);
   if(t.end)lines.push(day(t.end)?`DTEND;VALUE=DATE:${t.end.replace(/-/g,'')}`:`DTEND:${stamp(t.end)}`);
   lines.push(`SUMMARY:${F.escapeICSText(e.title+suffix+(day(t.start)&&!t.allDay?'（時刻未定）':''))}`,`DESCRIPTION:${F.escapeICSText(notes.join('\n'))}`,`LOCATION:${F.escapeICSText(e.location)}`,`URL:${primarySourceUrl(e)}`,`STATUS:${cancelled?'CANCELLED':e.status==='confirmed'?'CONFIRMED':'TENTATIVE'}`,'TRANSP:TRANSPARENT');
-  if(alerts&&!cancelled&&e.status==='confirmed'&&instant(e.start)&&!e.allDay){
-   lines.push('BEGIN:VALARM','ACTION:DISPLAY','TRIGGER:-PT1H',`DESCRIPTION:${F.escapeICSText(e.title)}`,'END:VALARM');
+  const alertEvent=alerts&&!cancelled&&e.status==='confirmed'&&instant(e.start)&&!e.allDay
+   ? alertEvents.get(r.key) : null;
+  if(alertEvent){
+   for(const {timestamp} of F.reminderTimes({...alertEvent,start:wholeSecond(alertEvent.start),deadline:alertEvent.deadline?wholeSecond(alertEvent.deadline):undefined},{now:REMINDER_EPOCH}).times){
+    lines.push('BEGIN:VALARM','ACTION:DISPLAY',`TRIGGER:${triggerAt(timestamp,t.start)}`,`DESCRIPTION:${F.escapeICSText(e.title)}`,'END:VALARM');
+   }
   }
   lines.push('END:VEVENT');count++;
  }
@@ -148,8 +164,9 @@ function build(data,previous,options){
  if(version>=4)files['manifest-v4.json']=JSON.stringify(v4Manifest,null,2)+'\n';
  if(version===5){
   files['manifest-v5.json']=JSON.stringify(manifest,null,2)+'\n';
+  const alertEvents=new Map(data.events.map(e=>[identity(e),e]));
   const alertFeeds=feeds.map(({id,artist,category,label})=>{
-   const f=buildFeed(state,id,{alerts:true}),name=id+'-alerts.ics';
+   const f=buildFeed(state,id,{alerts:true,alertEvents}),name=id+'-alerts.ics';
    files[name]=f.ics;
    return {id,artist,category,label,path:'calendar-feeds/'+name,count:f.count,omittedUnknownDate:f.omittedUnknownDate,sha256:hash(f.ics)};
   });
