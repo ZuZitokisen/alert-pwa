@@ -439,3 +439,6 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .personal-bell[aria-pressed="true"] svg .bell-shell { fill:currentColor; }
 .personal-bell[data-paused="true"] { opacity:.6; }
 @media(prefers-reduced-motion:reduce) { .notification-switch input::after { transition:none; } }
+
+.notification-switch small{display:inline-block;margin-inline-start:.65em;font-size:.72rem;color:var(--muted)}
+.notification-switch small[hidden]{display:none}
