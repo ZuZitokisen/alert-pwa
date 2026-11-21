@@ -145,6 +145,43 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-608a63983f171f596d5faefa9df1a56360565f5470998f9031ab704b3caff
+ 8fc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261206T172800Z
+DTEND:20261206T185800Z
+SUMMARY:第28回DigiCon6〜決定！アジアNo.1短編アニメ〜
+DESCRIPTION:公式表記は12月6日（日）26:28〜27:58。真山りか
+ がMCを務めた授賞式の模様を放送。TVer・U-NEXTで見逃し
+ 配信予定。\n私立恵比寿中学公式スケジュールで確認。
+ \nhttps://www.shiritsuebichu.jp/media/97347/
+LOCATION:TBS（関東ローカル）
+URL:https://www.shiritsuebichu.jp/media/97347/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3d9513924e34f2a208463ff756628e36a74d48429333ba376f21925a4a57e
+ 529@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261217T143000Z
+SUMMARY:DJ To-i & Yackle Pre.「FRIEFES Vol.03」
+DESCRIPTION:安本彩花がDJ YASUMOTOとして出演。23:30はイベン
+ ト全体の開始。個別の出演時刻・終演時刻は未発表。\n
+ 私立恵比寿中学公式スケジュールで確認。\nhttps://www.shi
+ ritsuebichu.jp/media/97269/
+LOCATION:Ebisu TimeOut Café & Diner + KATA
+URL:https://www.shiritsuebichu.jp/media/97269/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1cf41d97f787cf32efc8cc38f58667a8f3fcac559be454b0a38e0c3179fd8
  9ae@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z
@@ -300,6 +337,77 @@ DESCRIPTION:出演者は公演公式の案内を確認。開場時刻は客
  /kemono-friends-butai.jp/\nhttps://www.shiritsuebichu.jp/news/16091/
 LOCATION:品川プリンスホテル ステラボール
 URL:https://www.shiritsuebichu.jp/news/16091/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5e56c6934dbd1f654bf8ea8507431c0f88aad5ffaec0a74b294ab8cb7568b
+ d8c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261221T220000Z
+DTEND:20261221T223000Z
+SUMMARY:劇場版「恐竜島大冒険」日本語吹替版 第1回
+DESCRIPTION:桜井えまが声優として出演。\n私立恵比寿中学
+ 公式スケジュールで確認。\nhttps://www.shiritsuebichu.jp/media/
+ 96774/
+LOCATION:TOKYO MX
+URL:https://www.shiritsuebichu.jp/media/96774/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-14a208d34145c0a7923d202655febbdba1c120af54355c9784d9426fd685c
+ 5eb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261222T220000Z
+DTEND:20261222T223000Z
+SUMMARY:劇場版「恐竜島大冒険」日本語吹替版 第2回
+DESCRIPTION:桜井えまが声優として出演。\n私立恵比寿中学
+ 公式スケジュールで確認。\nhttps://www.shiritsuebichu.jp/media/
+ 96775/
+LOCATION:TOKYO MX
+URL:https://www.shiritsuebichu.jp/media/96775/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a31a2d549fa4e4ab8f97c6ae622e9a1f8debca28087bd6d5cd5cdbd3fd6d8
+ 785@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261223T220000Z
+DTEND:20261223T223000Z
+SUMMARY:劇場版「恐竜島大冒険」日本語吹替版 第3回
+DESCRIPTION:桜井えまが声優として出演。\n私立恵比寿中学
+ 公式スケジュールで確認。\nhttps://www.shiritsuebichu.jp/media/
+ 96776/
+LOCATION:TOKYO MX
+URL:https://www.shiritsuebichu.jp/media/96776/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1d01a61a5dd36d8a96d91012d57873101dca8c2b3261d923265fb7d427159
+ 4d0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:真山りか 生誕ソロライブ「まやまにあ-Level.11-」
+DESCRIPTION:一般発売の販売状況はプレイガイドで確認。\n
+ 私立恵比寿中学公式スケジュールで確認。\nhttps://www.shi
+ ritsuebichu.jp/media/15620/
+LOCATION:Zepp DiverCity (TOKYO)
+URL:https://www.shiritsuebichu.jp/media/15620/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -783,6 +891,42 @@ DESCRIPTION:私立恵比寿中学の公式サイトで確認。\nhttps://ww
  w.shiritsuebichu.jp/news/16089/
 LOCATION:EX THEATER ROPPONGI
 URL:https://www.shiritsuebichu.jp/news/16089/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2824db8bf2044666f2809b2b9064b1f74d80e4a9f761c69a613d1a14da6b3
+ b55@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261209T053000Z
+SUMMARY:リーディング・オペラOp.4「トスカ」 昼公演
+DESCRIPTION:真山りか出演。延期に伴う振替公演。振替・払
+ い戻しの取り扱いは公式案内を確認。\n私立恵比寿中学
+ 公式スケジュールで確認。\nhttps://www.shiritsuebichu.jp/media/
+ 96108/
+LOCATION:イタリア文化会館ホール
+URL:https://www.shiritsuebichu.jp/media/96108/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fb5e9baa382eba076725df191d8a66009b0babae0f1219e336249383adadd
+ 0f4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T131516Z
+CREATED:20261121T131516Z
+LAST-MODIFIED:20261121T131516Z
+SEQUENCE:0
+DTSTART:20261209T093000Z
+SUMMARY:リーディング・オペラOp.4「トスカ」 夜公演
+DESCRIPTION:真山りか出演。延期に伴う振替公演。振替・払
+ い戻しの取り扱いは公式案内を確認。\n私立恵比寿中学
+ 公式スケジュールで確認。\nhttps://www.shiritsuebichu.jp/media/
+ 96108/
+LOCATION:イタリア文化会館ホール
+URL:https://www.shiritsuebichu.jp/media/96108/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

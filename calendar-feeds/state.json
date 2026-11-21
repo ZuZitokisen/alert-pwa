@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-gift-collab-venue-check",
-  "dataGeneratedAt": "2026-11-21T11:16:04Z",
-  "inputSha256": "16fe348c708f71198e9e3d08c4a3e251f712f5074ed264870f00bdd60841757e",
+  "dataVersion": "2026-11-21-ebichu-december-solo",
+  "dataGeneratedAt": "2026-11-21T13:15:16.638Z",
+  "inputSha256": "710d1016d4e49931840943615471327efb1677be70bc7ffa1a51ca51dfadc729",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -269,6 +269,70 @@
       "lastTiming": {
         "start": "2026-11-23T18:30:00+09:00",
         "end": "2026-11-23T19:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-digicon6-mayama-20261207\"]",
+      "uid": "public-v1-608a63983f171f596d5faefa9df1a56360565f5470998f9031ab704b3caff8fc@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-digicon6-mayama-20261207",
+        "category": "media",
+        "title": "第28回DigiCon6〜決定！アジアNo.1短編アニメ〜",
+        "start": "2026-12-07T02:28:00+09:00",
+        "end": "2026-12-07T03:58:00+09:00",
+        "allDay": false,
+        "location": "TBS（関東ローカル）",
+        "publicNote": "公式表記は12月6日（日）26:28〜27:58。真山りかがMCを務めた授賞式の模様を放送。TVer・U-NEXTで見逃し配信予定。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/97347/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-07T02:28:00+09:00",
+        "end": "2026-12-07T03:58:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-friefes-dj-yasumoto-20261217\"]",
+      "uid": "public-v1-3d9513924e34f2a208463ff756628e36a74d48429333ba376f21925a4a57e529@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-friefes-dj-yasumoto-20261217",
+        "category": "live",
+        "title": "DJ To-i & Yackle Pre.「FRIEFES Vol.03」",
+        "start": "2026-12-17T23:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Ebisu TimeOut Café & Diner + KATA",
+        "publicNote": "安本彩花がDJ YASUMOTOとして出演。23:30はイベント全体の開始。個別の出演時刻・終演時刻は未発表。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/97269/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-17T23:30:00+09:00",
+        "end": null,
         "allDay": false
       },
       "memberships": [
@@ -568,6 +632,134 @@
       "modified": "2026-11-21T03:12:33Z",
       "lastTiming": {
         "start": "2026-12-06T16:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kyoryujima-sakurai-20261222\"]",
+      "uid": "public-v1-5e56c6934dbd1f654bf8ea8507431c0f88aad5ffaec0a74b294ab8cb7568bd8c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kyoryujima-sakurai-20261222",
+        "category": "media",
+        "title": "劇場版「恐竜島大冒険」日本語吹替版 第1回",
+        "start": "2026-12-22T07:00:00+09:00",
+        "end": "2026-12-22T07:30:00+09:00",
+        "allDay": false,
+        "location": "TOKYO MX",
+        "publicNote": "桜井えまが声優として出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96774/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-22T07:00:00+09:00",
+        "end": "2026-12-22T07:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kyoryujima-sakurai-20261223\"]",
+      "uid": "public-v1-14a208d34145c0a7923d202655febbdba1c120af54355c9784d9426fd685c5eb@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kyoryujima-sakurai-20261223",
+        "category": "media",
+        "title": "劇場版「恐竜島大冒険」日本語吹替版 第2回",
+        "start": "2026-12-23T07:00:00+09:00",
+        "end": "2026-12-23T07:30:00+09:00",
+        "allDay": false,
+        "location": "TOKYO MX",
+        "publicNote": "桜井えまが声優として出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96775/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-23T07:00:00+09:00",
+        "end": "2026-12-23T07:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kyoryujima-sakurai-20261224\"]",
+      "uid": "public-v1-a31a2d549fa4e4ab8f97c6ae622e9a1f8debca28087bd6d5cd5cdbd3fd6d8785@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kyoryujima-sakurai-20261224",
+        "category": "media",
+        "title": "劇場版「恐竜島大冒険」日本語吹替版 第3回",
+        "start": "2026-12-24T07:00:00+09:00",
+        "end": "2026-12-24T07:30:00+09:00",
+        "allDay": false,
+        "location": "TOKYO MX",
+        "publicNote": "桜井えまが声優として出演。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96776/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-24T07:00:00+09:00",
+        "end": "2026-12-24T07:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mayamania-level11-20261216\"]",
+      "uid": "public-v1-1d01a61a5dd36d8a96d91012d57873101dca8c2b3261d923265fb7d4271594d0@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mayamania-level11-20261216",
+        "category": "live",
+        "title": "真山りか 生誕ソロライブ「まやまにあ-Level.11-」",
+        "start": "2026-12-16T19:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Zepp DiverCity (TOKYO)",
+        "publicNote": "一般発売の販売状況はプレイガイドで確認。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/15620/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-16T19:00:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -1399,6 +1591,70 @@
       "modified": "2026-11-21T03:12:33Z",
       "lastTiming": {
         "start": "2026-12-26T18:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-tosca-mayama-20261209-day\"]",
+      "uid": "public-v1-2824db8bf2044666f2809b2b9064b1f74d80e4a9f761c69a613d1a14da6b3b55@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-tosca-mayama-20261209-day",
+        "category": "live",
+        "title": "リーディング・オペラOp.4「トスカ」 昼公演",
+        "start": "2026-12-09T14:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イタリア文化会館ホール",
+        "publicNote": "真山りか出演。延期に伴う振替公演。振替・払い戻しの取り扱いは公式案内を確認。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96108/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-09T14:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-tosca-mayama-20261209-evening\"]",
+      "uid": "public-v1-fb5e9baa382eba076725df191d8a66009b0babae0f1219e336249383adadd0f4@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-tosca-mayama-20261209-evening",
+        "category": "live",
+        "title": "リーディング・オペラOp.4「トスカ」 夜公演",
+        "start": "2026-12-09T18:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イタリア文化会館ホール",
+        "publicNote": "真山りか出演。延期に伴う振替公演。振替・払い戻しの取り扱いは公式案内を確認。\n私立恵比寿中学公式スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96108/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T13:15:16.638Z",
+      "modified": "2026-11-21T13:15:16.638Z",
+      "lastTiming": {
+        "start": "2026-12-09T18:30:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -13387,5 +13643,5 @@
       ]
     }
   ],
-  "integritySha256": "2de30aafa2e6de311175ad25871585bdd2d80c0fa0666fe4fbb45a3f8e8ea771"
+  "integritySha256": "f8dceb9c7295f562026e0fc3acd2e906fc9ea9bbb2d5957fe4a297ac111ee5d6"
 }

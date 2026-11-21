@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-gift-collab-venue-check",
-  "generatedAt": "2026-11-21T11:16:04Z",
+  "version": "2026-11-21-ebichu-december-solo",
+  "generatedAt": "2026-11-21T13:15:16.638Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -15215,6 +15215,248 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-nakamura-tsurikomachi-20261128"
+    },
+    {
+      "id": "ebichu-digicon6-mayama-20261207",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "第28回DigiCon6〜決定！アジアNo.1短編アニメ〜",
+      "start": "2026-12-07T02:28:00+09:00",
+      "end": "2026-12-07T03:58:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "TBS（関東ローカル）",
+      "note": "公式表記は12月6日（日）26:28〜27:58。真山りかがMCを務めた授賞式の模様を放送。TVer・U-NEXTで見逃し配信予定。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97347/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97347/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "ebichu-tosca-mayama-20261209-day",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "リーディング・オペラOp.4「トスカ」 昼公演",
+      "start": "2026-12-09T14:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "イタリア文化会館ホール",
+      "note": "真山りか出演。延期に伴う振替公演。振替・払い戻しの取り扱いは公式案内を確認。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96108/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96108/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [
+        {
+          "kind": "doors_open",
+          "label": "開場",
+          "at": "2026-12-09T14:00:00+09:00",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-tosca-mayama-20261209"
+    },
+    {
+      "id": "ebichu-tosca-mayama-20261209-evening",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "リーディング・オペラOp.4「トスカ」 夜公演",
+      "start": "2026-12-09T18:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "イタリア文化会館ホール",
+      "note": "真山りか出演。延期に伴う振替公演。振替・払い戻しの取り扱いは公式案内を確認。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96108/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96108/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [
+        {
+          "kind": "doors_open",
+          "label": "開場",
+          "at": "2026-12-09T18:00:00+09:00",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-tosca-mayama-20261209"
+    },
+    {
+      "id": "ebichu-mayamania-level11-20261216",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "真山りか 生誕ソロライブ「まやまにあ-Level.11-」",
+      "start": "2026-12-16T19:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "LIVE",
+      "location": "Zepp DiverCity (TOKYO)",
+      "note": "一般発売の販売状況はプレイガイドで確認。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/15620/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/15620/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [
+        {
+          "kind": "doors_open",
+          "label": "開場",
+          "at": "2026-12-16T18:15:00+09:00",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "ebichu-friefes-dj-yasumoto-20261217",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "DJ To-i & Yackle Pre.「FRIEFES Vol.03」",
+      "start": "2026-12-17T23:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "Ebisu TimeOut Café & Diner + KATA",
+      "note": "安本彩花がDJ YASUMOTOとして出演。23:30はイベント全体の開始。個別の出演時刻・終演時刻は未発表。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97269/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97269/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "ebichu-kyoryujima-sakurai-20261222",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "劇場版「恐竜島大冒険」日本語吹替版 第1回",
+      "start": "2026-12-22T07:00:00+09:00",
+      "end": "2026-12-22T07:30:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "TOKYO MX",
+      "note": "桜井えまが声優として出演。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96774/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96774/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-kyoryujima-sakurai-202612"
+    },
+    {
+      "id": "ebichu-kyoryujima-sakurai-20261223",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "劇場版「恐竜島大冒険」日本語吹替版 第2回",
+      "start": "2026-12-23T07:00:00+09:00",
+      "end": "2026-12-23T07:30:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "TOKYO MX",
+      "note": "桜井えまが声優として出演。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96775/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96775/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-kyoryujima-sakurai-202612"
+    },
+    {
+      "id": "ebichu-kyoryujima-sakurai-20261224",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "劇場版「恐竜島大冒険」日本語吹替版 第3回",
+      "start": "2026-12-24T07:00:00+09:00",
+      "end": "2026-12-24T07:30:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "TOKYO MX",
+      "note": "桜井えまが声優として出演。",
+      "evidence": "私立恵比寿中学公式スケジュールで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96776/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96776/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T13:15:16.638Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T13:15:16.638Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-kyoryujima-sakurai-202612"
     }
   ],
   "notes": [
