@@ -1,0 +1,122 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:いぎなり東北産 / 特典会・応募（通知あり）
+BEGIN:VEVENT
+UID:public-v1-3a7ac5c62cd6089912e58893618dce7ea9549ce0dad2351b4c40e3fce2f5c
+ 53a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T094635Z
+CREATED:20261119T094635Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:0
+DTSTART:20261124T145900Z
+SUMMARY:初！いぎなりアリーナライブ グッズ事前通販締切
+DESCRIPTION:受付期間は11/18 12:00〜11/24 23:59。在庫限りで、
+ 期間中でも予定数に達すると終了。12/11発送完了予定。
+ \n本人公式の告知で開催日・受付情報を確認。未発表の
+ 時刻は補完していません。\nhttps://madeintohoku.com/contents/11
+ 27632
+LOCATION:MAILIVIS
+URL:https://madeintohoku.com/contents/1127632
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:初！いぎなりアリーナライブ グッズ事前通販
+ 締切
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2ed2e0d3b84804f76648cdd85a618d528c15fb37a9aeec19bd2ccb9bdb5b7
+ cb3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART:20261214T145900Z
+SUMMARY:まるごと列車イベント 抽選応募締切（かも？）
+DESCRIPTION:対象スタンプを集めた人向けの抽選受付。応募
+ だけで参加は確定せず、当選者が旅行商品を購入。\nJR
+ 東日本の公式案内を確認。本人公式での締切時刻明示
+ は未確認。\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps:
+ //www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:エキタグアプリの応募フォーム
+URL:https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c9e6fc1660c3f0a505a70a3ecd2ba6fd94e3b0cecf334200a78e33d339dd3
+ 465@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+SUMMARY:まるごと列車イベント 抽選応募フォーム配信・受
+ 付開始（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象者にエキタグアプリのお知らせで応募フォーム
+ を配信予定。応募は1人1回。開始時刻は未公表。\nJR東
+ 日本の公式案内による配信日。本人公式での日付明示
+ は未確認。\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps:
+ //www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:エキタグアプリ「お知らせ」
+URL:https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-28fe835a732b6985f75472de02215585f022071aa4cfff66689ee44b440a6
+ dc0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261130
+SUMMARY:いぎなり！東北まるごと推しめぐり スタンプ取得
+ 最終日（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n新青森・盛岡・秋田・仙台・山形・福島のうち異な
+ る2駅以上で歴代ジャケットスタンプを集めると、列車
+ イベントの抽選に応募可。LIVE記念スタンプは対象外。
+ この日はスタンプ取得の最終日で、応募締切ではあり
+ ません。\n本人公式の実施期間とJR東日本の抽選参加条
+ 件を確認。終了時刻は未公表。\nhttps://madeintohoku.com/conte
+ nts/1108805\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps://ww
+ w.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:東北6県の対象駅
+URL:https://madeintohoku.com/contents/1108805
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-95a68cdc0d669736028edafb94b3fd1cfedbe4b7f337eb503e56bf83e09f7
+ aba@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T131500Z
+CREATED:20261119T131500Z
+LAST-MODIFIED:20261119T131500Z
+SEQUENCE:0
+DTSTART:20261123T145900Z
+SUMMARY:11月生まれ会員限定「いぎなりレター」抽選対象
+ 基準日
+DESCRIPTION:11月生まれで11/23 23:59までに入会した会員が抽
+ 選対象。入会時登録の誕生日と同時点の登録住所を使
+ 用。抽選で10名にカード等を送付し、当選発表は発送を
+ もって行う。全会員向けの申込締切や参加確約ではあ
+ りません。\nログイン不要の本人公式告知にある対象条
+ 件と基準日時を確認。\nhttps://madeintohoku.com/contents/1129140
+LOCATION:いぎなり東北ファン倶楽部
+URL:https://madeintohoku.com/contents/1129140
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:11月生まれ会員限定「いぎなりレター」抽選対
+ 象基準日
+END:VALARM
+END:VEVENT
+END:VCALENDAR

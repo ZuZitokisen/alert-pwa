@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ONE LOVE ONE HEART / その他（通知あり）
+BEGIN:VEVENT
+UID:public-v1-81b883471fcbead81549f0cc88e9701a26ac2621b3a328aaf110e98042bb9
+ 71f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270203
+SUMMARY:5th ALBUM「愛の証明」発売（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nCD発売日。形態・封入特典は公式案内を確認。\n本
+ 人側の公式発表で確認。時刻未発表は日付のみ。\nhttps:
+ //oneloveoneheart.jp/news/news-7262/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7262/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9eddecca18028fe39d914967e8120ced6b65c9c142bc749a56cf35dd2346a
+ be1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T104422Z
+CREATED:20261119T104422Z
+LAST-MODIFIED:20261119T104422Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261217
+SUMMARY:女子メンバー掲載「S Cawaii! 2027年2月号」発売（時
+ 刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n飯塚瑠乃・イーチ・佐々木杏莉・藤咲碧羽・矢嶋由
+ 菜が掲載。発売日のみを登録。購入先ごとの販売時刻
+ は設定していません。\n本人公式の発売日・掲載メンバ
+ ー告知を確認。\nhttps://oneloveoneheart.jp/news/news-7368/
+LOCATION:
+URL:https://oneloveoneheart.jp/news/news-7368/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

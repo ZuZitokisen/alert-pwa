@@ -1,14 +1,366 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-threads-episode",
-  "dataGeneratedAt": "2026-11-20T20:58:31Z",
-  "inputSha256": "3a51601495adabf44663103a83c18ea9241865526d7334d64a670ceb380ef9ce",
+  "dataVersion": "2026-11-21-ebichu-tohokusan",
+  "dataGeneratedAt": "2026-11-21T01:20:18Z",
+  "inputSha256": "c3b22e42cb46fafd83abf61fdee132cb4089b7832d3aed5c576c0a060e063799",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
   "records": [
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-artistspoken-mayama-20261122\"]",
+      "uid": "public-v1-c3a65f1a4e83d7cc7de5a96909dba56a636e53a4755964ae42c630627ca1ea4d@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-artistspoken-mayama-20261122",
+        "category": "media",
+        "title": "artistspoken「幼馴染なふたり」",
+        "start": "2026-11-22T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "artistspoken",
+        "publicNote": "真山りか出演。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/94622/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-11-22T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-chikappa-20261123\"]",
+      "uid": "public-v1-9c1780d13e5bdb8f6933db72cfeba3d943d4a48260dd2f6ca6ef6e2d3c38f3f1@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-chikappa-20261123",
+        "category": "live",
+        "title": "ちかっぱ祭2026",
+        "start": "2026-11-23T18:30:00+09:00",
+        "end": "2026-11-23T19:00:00+09:00",
+        "allDay": false,
+        "location": "マリンメッセ福岡B館",
+        "publicNote": "私立恵比寿中学の出演時間。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/95687/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-11-23T18:30:00+09:00",
+        "end": "2026-11-23T19:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-gr8-live-20270206\"]",
+      "uid": "public-v1-1cf41d97f787cf32efc8cc38f58667a8f3fcac559be454b0a38e0c3179fd89ae@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-gr8-live-20270206",
+        "category": "live",
+        "title": "私立恵比寿中学 大学芸会2027「This is GR8」",
+        "start": "2027-02-06T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京ガーデンシアター",
+        "publicNote": "出演者の変更告知は公式特設ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/this-is-gr8/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2027-02-06T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-gr8-live-20270207\"]",
+      "uid": "public-v1-6154396542894fea7952e609d7a571ed1da1803df1d142a567243e524cda9541@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-gr8-live-20270207",
+        "category": "live",
+        "title": "私立恵比寿中学 大学芸会2027「This is GR8」",
+        "start": "2027-02-07T16:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京ガーデンシアター",
+        "publicNote": "出演者の変更告知は公式特設ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/this-is-gr8/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2027-02-07T16:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-gr8-ticket-2nd-deadline-20261123\"]",
+      "uid": "public-v1-106e5edab7b5009c796896e1030f233fb2f403faa66564104b6c0cc387f66ba4@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-gr8-ticket-2nd-deadline-20261123",
+        "category": "benefit",
+        "title": "大学芸会2027「This is GR8」プレイガイド2次先行締切",
+        "start": "2026-11-23T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "受付開始はプレイガイドごとに異なる。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/this-is-gr8/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-11-23T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-nyanpokora-20261121\"]",
+      "uid": "public-v1-32103ce02e6c99212d1fcdc97535d50f34c3d5b586f8c809090cac8125e81424@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-nyanpokora-20261121",
+        "category": "live",
+        "title": "わーすたpresents にゃんぽこらフェス！vol.3",
+        "start": "2026-11-21T20:00:00+09:00",
+        "end": "2026-11-21T20:35:00+09:00",
+        "allDay": false,
+        "location": "ステラボール",
+        "publicNote": "グループの出演枠は20:00〜20:25と20:25〜20:35。出演者の変更告知は公式ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96425/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-11-21T20:00:00+09:00",
+        "end": "2026-11-21T20:35:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-spicy-sessions-20261128\"]",
+      "uid": "public-v1-1c525e40772c67c69fa1e3e0cf014897cdfa3ca55120ade794f1710de6becb60@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-spicy-sessions-20261128",
+        "category": "media",
+        "title": "Spicy Sessions -THE LIVE- 2026",
+        "start": "2026-11-28T23:30:00+09:00",
+        "end": "2026-11-29T01:00:00+09:00",
+        "allDay": false,
+        "location": "TBSチャンネル1",
+        "publicNote": "真山りか・安本彩花がゲスト出演した昼公演の放送。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96779/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-11-28T23:30:00+09:00",
+        "end": "2026-11-29T01:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-stardust-face-live-20261124\"]",
+      "uid": "public-v1-4bad2956467669c4abbe7586ba4c84b43789023cc6ed38a597033a41cd56dbf9@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-stardust-face-live-20261124",
+        "category": "live",
+        "title": "#スタダ顔 LIVE",
+        "start": "2026-11-24T17:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ザ・ガーデンホール",
+        "publicNote": "17:00はイベントの開演。個別出演時間は未確認。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96540/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-11-24T17:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-superblue-jacket-20261122\"]",
+      "uid": "public-v1-362a70725d2a1f9d7560f533124e4d96051bb57fbb382e6f9660571eb821ffbd@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-superblue-jacket-20261122",
+        "category": "benefit",
+        "title": "「スーパーブルー」アナザージャケットお渡し会",
+        "start": "2026-11-22T16:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "タワーレコード渋谷店 9F",
+        "publicNote": "私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96887/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-11-22T16:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-superblue-release-20261219\"]",
+      "uid": "public-v1-80c2e89ab65c9981b2411a99bace1a957572492aa6ac78a1f8d10a210b518775@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-superblue-release-20261219",
+        "category": "live",
+        "title": "「スーパーブルー」リリースイベント",
+        "start": "2026-12-19T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ららぽーと立川立飛",
+        "publicNote": "ミニライブと握手会。出演者の変更告知は公式ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16244/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2026-12-19T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-superblue-release-20270111\"]",
+      "uid": "public-v1-0e143a183618265722176b66d7f2f9f1303e796f54759f8df743e1800d501792@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-superblue-release-20270111",
+        "category": "live",
+        "title": "「スーパーブルー」リリースイベント",
+        "start": "2027-01-11T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イオンレイクタウンkaze",
+        "publicNote": "ミニライブと握手会。出演者の変更告知は公式ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16244/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T01:14:50Z",
+      "lastTiming": {
+        "start": "2027-01-11T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
     {
       "key": "[\"oneloveoneheart\",\"curated-calendar\",\"oneloveoneheart-album-20270203\"]",
       "uid": "public-v1-81b883471fcbead81549f0cc88e9701a26ac2621b3a328aaf110e98042bb971f@alert-pwa.zuzitokisen.github.io",
@@ -4937,6 +5289,70 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-nhk-shaberitei-20261219\"]",
+      "uid": "public-v1-fb3e006a7c0b9ec28cb237b40ed242e8188e34ce8e04c6ea92a99dbcea82cb17@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-nhk-shaberitei-20261219",
+        "category": "media",
+        "title": "NHK総合・東北「東北しゃべり亭」",
+        "start": "2026-12-19T08:15:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "NHK総合・東北",
+        "publicNote": "橘花怜、桜ひなの、伊達花彩、葉月結菜が出演。\n本人公式スケジュールで日時・出演を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1129812"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:20:18Z",
+      "modified": "2026-11-21T01:20:18Z",
+      "lastTiming": {
+        "start": "2026-12-19T08:15:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-media"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-nhk-shaberitei-open-recording-20261212\"]",
+      "uid": "public-v1-7bae664c3806389bdb5b640853e7c02eac71b7b64b588bd5549a4c90deab8c77@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-nhk-shaberitei-open-recording-20261212",
+        "category": "live",
+        "title": "NHK総合・東北「東北しゃべり亭」公開収録",
+        "start": "2026-12-12T11:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "NHK仙台放送局",
+        "publicNote": "橘花怜、桜ひなの、伊達花彩、葉月結菜が出演。着席抽選券配布は10:00〜10:30、入場は11:00から。\n本人公式スケジュールで日時・出演を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1129812"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:20:18Z",
+      "modified": "2026-11-21T01:20:18Z",
+      "lastTiming": {
+        "start": "2026-12-12T11:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-live"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-omiya-20261119\"]",
       "uid": "public-v1-92d0fe35aa4cdc44d45fd249660225a0d6288e673f73110269b217d5f3609d6c@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -5096,6 +5512,38 @@
       "memberships": [
         "tohokusan-all",
         "tohokusan-live"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-tbs-sasuke-idol-complete-20261220\"]",
+      "uid": "public-v1-21b45e429a5107cf7a6df733b300e532bee044659fb2a098cb07f0d3256eab8e@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-tbs-sasuke-idol-complete-20261220",
+        "category": "media",
+        "title": "SASUKEアイドル予選会2026完全版",
+        "start": "2026-12-20T21:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TBSチャンネル1",
+        "publicNote": "安杜羽加が出場、橘花怜が応援。\n本人公式スケジュールで日時・出演を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1129814"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T01:20:18Z",
+      "modified": "2026-11-21T01:20:18Z",
+      "lastTiming": {
+        "start": "2026-12-20T21:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-media"
       ]
     },
     {
@@ -11792,5 +12240,5 @@
       ]
     }
   ],
-  "integritySha256": "a9ae4c9da6943d2f9acca3272cf7f35efb5ef3d84d3312fb53f5eb878d542d43"
+  "integritySha256": "93a24dddb7b8dcbad3da24d0aad2c0c489ad5dac762f5d6d1f1d644482e121fb"
 }

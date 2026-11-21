@@ -1,0 +1,553 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Straight Angeli / メディア（通知あり）
+BEGIN:VEVENT
+UID:public-v1-7af1a3277b27aee2dabbc636b06eca0177d269eaacbce87189129e5e4b0ae
+ f59@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261116T033812Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:2
+DTSTART:20261116T030000Z
+DTEND:20261116T054500Z
+SUMMARY:Kiss & Ride（松元寧音・大山蒼生）【番組枠】
+DESCRIPTION:12:00〜14:45は本人公式が案内した番組枠。局番
+ 組表のゲスト出演目安は13:05頃（松元寧音・大山蒼生）
+ 。ゲスト出演の正確な時刻は未公表。目安は変更され
+ る場合があります。radiko地域条件あり。\n11/16の出演者
+ と番組枠は本人公式で確認。13:05頃はFMヨコハマのradiko
+ 番組表に基づく出演目安で、本人公式では個別時刻の
+ 記載を確認していません。\nhttps://radiko.jp/index/YFM/\nhttps:
+ //straight-angeli.com/schedule/1359/
+LOCATION:FMヨコハマ
+URL:https://straight-angeli.com/schedule/1359/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Kiss & Ride（松元寧音・大山蒼生）【番組枠】
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8dd3a8d3bca1504e70bad544ca9b33477d8a0d923fd2fa658de8df7fa5e03
+ 743@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T042817Z
+CREATED:20261112T042817Z
+LAST-MODIFIED:20261112T042817Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+SUMMARY:キャッチ！（大山蒼生・織田ひまり）（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n16時台にリモート出演。16:00ちょうどの出演とは断
+ 定しない。radiko地域条件あり。\n本人公式サイトの掲載
+ を確認。時刻の意味や未発表事項は注記に記載。\nhttps:
+ //straight-angeli.com/schedule/item-1363/
+LOCATION:FM滋賀
+URL:https://straight-angeli.com/schedule/item-1363/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d89a7a04ceb48cf7f8a4b7b9ef82b4de15f1cc44ba0f13cee35b360441b29
+ 694@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T212223Z
+CREATED:20261116T004511Z
+LAST-MODIFIED:20261119T212223Z
+SEQUENCE:1
+DTSTART:20261120T160900Z
+DTEND:20261120T170900Z
+SUMMARY:日本テレビ「バズリズム02」【番組枠】
+DESCRIPTION:本人公式の11/20(金)25:09は、暦では11/21(土)01:09。
+ 番組枠は01:09〜02:09で、個別出演の開始・終了時刻では
+ ありません。「僕ら羽ばたいた日」の披露とミニトー
+ クを予定。主日時は日本テレビの番組枠です。地域の
+ 補足：DiMORAの福島中央テレビ1（041ch）番組表には11/21 01
+ :09〜02:06とStraight Angeliの表記あり。福島枠で楽曲・ミニ
+ トークの両方が放送されることや、個別出演開始時刻
+ までは確認できていません。\n本人公式で出演と放送開
+ 始を確認。日本テレビの番組表（program_id: 20262B9C）で11/
+ 20 25:09〜26:09、実日時11/21 01:09〜02:09を確認。\nhttps://strai
+ ght-angeli.com/news/item-1365/\nhttps://www.dimora.jp/digital-program/4065
+ 25-AA18/1B5E/?areaId=024&transitId=DP22020\nhttps://www.ntv.co.jp/program/
+ detail/?programid=20262B9C\nhttps://www.ntv.co.jp/program/json/program_lis
+ t.json
+LOCATION:日本テレビ
+URL:https://straight-angeli.com/news/item-1365/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:日本テレビ「バズリズム02」【番組枠】
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f2c57de9b66d40879337b36203fba2971c9b8b3d492a1ff3e13ffca43e95c
+ 42a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20261113T074000Z
+DTEND:20261113T075000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪
+DESCRIPTION:11/13回はradiko個別番組表で16:40〜16:50を確認。所
+ 属事務所の毎週金曜16:40の案内とも一致。radikoの地域外
+ 聴取にはプラン条件があります。\n本人所属事務所の定
+ 例番組案内とradikoの11/13個別回が一致したため確定扱い
+ 。\nhttps://radiko.jp/mobile/events/14166483\nhttps://www.stardust.co.jp/
+ talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://radiko.jp/mobile/events/14166483
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:ワークスタッフpresents 松元寧音のね～ね～聞い
+ てよ♪
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2c1ab5a0e6bfdbe4657861d560133a9e2998de5d0aa6c156670fc6699bb38
+ ee5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20261120T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4deb92093b7d15cdfcf84e342b9c7d6d2737c1c1ae11d95ec1297537ee3cc
+ d6e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20261127T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2effe1577189b66b8fd3b5bdd87ed4bda7da2aa8341b0ea8686d9cd8b2e83
+ 49f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20261204T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5369a9504cd6e78da628feffee114c036627863301062e1b9e53cf62142f4
+ 475@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20261211T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-adbea30324cbfc30373ae081a703937a5403a0621d69f89075fea3db73ee8
+ 6b6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20261218T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-efa77b8894661b4d073b2ebbeae4bc84778363888a3c609dae321ea4d13e7
+ f3f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20261225T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-03205a57e13a55b1f7561b01a0536fb84940a828cc5e689431d561ad5b297
+ 8c5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270101T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a0ecd8241d78a02b0106816b78eaed9df84a0c492a6d0f3d2da3719d814f4
+ a33@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270108T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7a965464b9b62ecda52a8ab005964ca5e6deac9bf967eeb63498f6a5b1e81
+ b30@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270115T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a7ec0333c670b85e4604cbd615612adf98fefb0f61a587b69b16f0ec652c8
+ 247@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270122T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b3c36022be2f09bce82c742e04065e0a33e336b83e48d3ef901b1f2fae058
+ 64a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270129T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f1516d308407d4cdbaccf0711a54eb8f0fbf3c5344a158a7a2d7d7a764975
+ 6b8@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270205T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-be72f5ba74f2335858bbfcefecbdc328f3e1fa78fd64b15b977a624aeb731
+ eab@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270212T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-86f99b581a5031fe6b0135f6171473944433a656da6c47bdf250241e5156e
+ 0f5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270219T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cda106481808978094442fcc7da0f8939631bdc7a75c261b61a7cd9d58bfd
+ c3c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270226T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1cb50d67142b64c929860e98299b8def51c1893b2beb7a98db53020ba4ba6
+ bec@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270305T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a30f6e4e9866ac19d3c00a2e3d64614661051b8e6029b463706f91a252fd6
+ 9bc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270312T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ef5e241eafe298787b0ae509590d998b0d9c9a4fa1e8db705513fa7bb5ea0
+ 443@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270319T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f064eead0539aa94e216dd8417e80b5d030631d4734ede55f33e3fe98e76c
+ cd4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261112T045559Z
+CREATED:20261112T045559Z
+LAST-MODIFIED:20261112T045559Z
+SEQUENCE:0
+DTSTART:20270326T074000Z
+SUMMARY:ワークスタッフpresents 松元寧音のね～ね～聞いて
+ よ♪（かも？）
+DESCRIPTION:毎週金曜16:40の公式定例表記から作成した候補
+ 。個別回の番組表は未確認で、放送休止・時間変更の
+ 可能性があります。終了時刻は未確認。2027年3月までの
+ 継続放送を確定するものではありません。radikoの地域
+ 外聴取にはプラン条件があります。\n本人所属事務所の
+ 「毎週金曜16:40」だけを根拠に日付を展開。個別放送回
+ は未確認のため、かも？として掲載。\nhttps://www.stardust.
+ co.jp/talent/section3/matsumotonene/
+LOCATION:JRT四国放送（徳島）
+URL:https://www.stardust.co.jp/talent/section3/matsumotonene/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
