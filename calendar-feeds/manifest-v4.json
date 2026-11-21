@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-calendar-updates",
-  "dataGeneratedAt": "2026-11-21T19:16:34.909Z",
+  "dataVersion": "2026-11-22-radio-and-batten-natslive",
+  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "35806263f06e88bad8da1d608a88fe99b4905045c89d01474186b5bde9160eca",
+  "inputSha256": "4d0401e76a2c2382220abcd8397943a88c27cedca915476b3afbaeac779ad307",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "d5456656dbf66024786a2433008fc0275d18528fd4b07c858d2e0b8a0269b372"
+      "sha256": "74bdddd45726b95bbbc9c82556afcc7f76452ed8e032100374267060fa779a23"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "07f7a2b9b497814e73e026729146950f6a594bad7798d327b16a56ad5e139aa4"
+      "sha256": "e88ce70135a688dd6bee93b3c66eb8bba1d27f7a11ba00a92b5a8940fbf8b712"
     },
     {
       "id": "re-ge-benefit",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media.ics",
       "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "bec815330fb2d3c654d4fee3b2e0722ddb7838a38c61feee2babbdfc32112aab"
+      "sha256": "f23b8d595d0c6f3fd9d9a4d2553396f2722cb90326c5c3a741d728213da5c84a"
     },
     {
       "id": "re-ge-other",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all.ics",
       "count": 27,
       "omittedUnknownDate": 0,
-      "sha256": "595a53a2fc6a50a29cfd561ecf2b7e1e8a0b2808362388ee488576f06b0290a8"
+      "sha256": "c63bcd8228cd705fdf916095dfe0ca06c37f4875e16be9964577fbaf78463264"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live.ics",
       "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "d554b60bc9f8b403df6e6a9b0038af739540177c212ea538891865f49fee38f9"
+      "sha256": "67f52c15f55083905da31fd974bf5b0d93d8b84d8e0320e1c79adf408b93def2"
     },
     {
       "id": "tohokusan-benefit",

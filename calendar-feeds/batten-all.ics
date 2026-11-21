@@ -453,15 +453,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-7a7e58a73facbb2d24a72fbfa0ba11d140fea53483a7cc7b97f8445eb0612
  c91@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T173209Z
+DTSTAMP:20261121T211740Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261121T173209Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:1
 DTSTART:20261123T163000Z
+DTEND:20261123T193000Z
 SUMMARY:希山出演「オレたちゴチャ・まぜっ！〜集まれヤ
  ンヤン〜」
-DESCRIPTION:公式の11月23日25:30。\nばってん少女隊公式の案
- 内。\nhttps://battengirls.com/contents/1095110
+DESCRIPTION:11月23日25:30〜28:30。MBSラジオ・radikoの放送枠。\
+ nばってん少女隊公式の案内。\nhttps://battengirls.com/contents
+ /1095110\nhttps://radiko.jp/index/MBS/\nhttps://www.mbs1179.com/ore/
 LOCATION:MBSラジオ
 URL:https://battengirls.com/contents/1095110
 STATUS:CONFIRMED
@@ -480,6 +482,44 @@ DESCRIPTION:春乃・柳・逢里。\nばってん少女隊公式の案内
  。\nhttps://battengirls.com/contents/1074238
 LOCATION:
 URL:https://battengirls.com/contents/1074238
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6f3d3d3445e03a2e6044156f3480b97e3822c6758d35b9fb9d54fc4ddf97c
+ 877@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T211740Z
+CREATED:20261121T211740Z
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+DTEND:20261130T110000Z
+SUMMARY:蒼井りるあ・逢里みう出演 · NATSLIVE 九州モリモリ
+ ！ばってんうまか隊 #10
+DESCRIPTION:八女茶海苔カツ丼。\nばってん少女隊公式の案
+ 内。\nhttps://battengirls.com/contents/1124678\nhttps://natslive.jp/prog
+ rams/10609
+LOCATION:NATSLIVE
+URL:https://battengirls.com/contents/1124678
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-450eed552afbcc472eb34efc0f0c42402b5139f7282aab593f9946044ef74
+ 3c0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T211740Z
+CREATED:20261121T211740Z
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261122
+SUMMARY:ばってんうまか隊 #10 一般観覧抽選締切（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n11/16 15:00受付開始。11/22締切、終了時刻は公式案内
+ に記載なし。\nばってん少女隊公式の案内。\nhttps://batte
+ ngirls.com/contents/1124678
+LOCATION:
+URL:https://battengirls.com/contents/1124678
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -520,20 +560,23 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-b6eb115e6d4d7955610fcbd21e323e6b820082931860cc5c9372e81c395a9
  37a@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T191634Z
+DTSTAMP:20261121T211740Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261121T191634Z
-SEQUENCE:1
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:2
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ！
  〜
 DESCRIPTION:16:00開場。17:00は公演全体の開演。 ドワンゴの
  配信タイムテーブルで、出演枠は18:35〜19:05。5組リレー
  は19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視
- 聴可。後半はニコドルの有料会員向け。\nばってん少女
- 隊公式の案内。\nhttps://battengirls.com/contents/1117493\nhttps://b
- attengirls.com/contents/1117570\nhttps://live.nicovideo.jp/watch/lv3518342
- 12\nhttps://prtimes.jp/main/html/rd/p/000001450.000056982.html
+ 聴可。後半はニコドルの有料会員向け。 イープラスの
+ 現地公演一般発売は予定枚数終了。他の販売元や配信
+ チケットの状況は別。\nばってん少女隊公式の案内。\nh
+ ttps://battengirls.com/contents/1117493\nhttps://battengirls.com/contents/
+ 1117570\nhttps://eplus.jp/sf/detail/4613510001\nhttps://live.nicovideo.jp/
+ watch/lv351834212\nhttps://prtimes.jp/main/html/rd/p/000001450.000056982.h
+ tml
 LOCATION:ザ・ガーデンホール
 URL:https://battengirls.com/contents/1117570
 STATUS:CONFIRMED

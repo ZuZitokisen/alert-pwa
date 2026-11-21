@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-calendar-updates",
-  "dataGeneratedAt": "2026-11-21T19:16:34.909Z",
+  "dataVersion": "2026-11-22-radio-and-batten-natslive",
+  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "ab4c006034da9e99c6874673296647f59a51eb26814014091fe8281a81212ef4",
+  "inputSha256": "2e330c548b3e46132146755df31f41534a2a4626e88730104de5b832bab7e23d",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all-alerts.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "186c1245f3bd172e447dfc2a1d1f6d882f2dff1b57134e20c306d5b14b4b493b"
+      "sha256": "cf9bd567458aa7c94f9a899a660b0eeddb4fbba76c7b4fbcf674a8c7b299bc3f"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live-alerts.ics",
       "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "e3e12374601449ccb386c57af8a4edbccb2b469763573fc31238f18d035de38e"
+      "sha256": "54f775b316e7b5694adcf1989e0b204c976327c4205775a12595329e9c4cc80e"
     },
     {
       "id": "re-ge-benefit",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media-alerts.ics",
       "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "9f299a13c3990b0aad7ebe4b10ac7d3beb60f930ce01df72b196c3bc71d3b83c"
+      "sha256": "208c5fc1a852f41d49c3a355dc220c6071da617c0ec15790df0594539ef0eb40"
     },
     {
       "id": "re-ge-other",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
       "count": 27,
       "omittedUnknownDate": 0,
-      "sha256": "2614cf56196c3400318defd7099c5eb96b048b4cc0c0b11259e50d167fb9ab98"
+      "sha256": "5466fd0efa26919819fabf07cc5beb397504c081c672b2ff2dba0f7dae07f590"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live-alerts.ics",
       "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "d9752fe6e2b40435c84e88672568ea2ba6e9f78f896985117a1e9582fc1e77a1"
+      "sha256": "3dad596b939df1aa06789fd180fedc4e685dfa660d960d65c7940ca8ff38a0e9"
     },
     {
       "id": "tohokusan-benefit",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all-alerts.ics",
       "count": 59,
       "omittedUnknownDate": 0,
-      "sha256": "5a4037025640d1fe0294374070e4d06a1da8530e80d27414305aa77df19a9b6e"
+      "sha256": "a67a0bb289d16e70ce1c27a65485bceb71b72b4467f0dc3289bc59d6d86edf86"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 28,
       "omittedUnknownDate": 0,
-      "sha256": "13208b3e59c1068cf4629b6065579c1644a0bffcf4ecdbe3602a5d6a0074293e"
+      "sha256": "5d0f2fbea4a67410f29507c5eddd4a8736ff3a535694105e6ba7dcc404ff4ee8"
     },
     {
       "id": "ebichu-benefit",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all-alerts.ics",
-      "count": 33,
+      "count": 35,
       "omittedUnknownDate": 0,
-      "sha256": "be933a6e1c04365b7d9df2123395dc0de5a397cfffee3f4c69aaff5fa61ed06e"
+      "sha256": "bb47f00ad43e7b9676b541f388083b6a68f93227ca99b6435c21ce2bdaf9b61e"
     },
     {
       "id": "batten-live",
@@ -328,7 +328,7 @@
       "path": "calendar-feeds/batten-live-alerts.ics",
       "count": 18,
       "omittedUnknownDate": 0,
-      "sha256": "1a3e914a9f029c42d1b54919afd7006af9c650d3a3097618a2ef40d34b2df53c"
+      "sha256": "951bb70531599bb110567e895af51ae8755e2e0ee8e7d9448c0a4510d2d517b4"
     },
     {
       "id": "batten-benefit",
@@ -336,9 +336,9 @@
       "category": "benefit",
       "label": "ばってん少女隊 / 特典会・応募",
       "path": "calendar-feeds/batten-benefit-alerts.ics",
-      "count": 11,
+      "count": 12,
       "omittedUnknownDate": 0,
-      "sha256": "591d98413dcffc1c6b2ab3da934083671a55053d2831a7920026bb5dec1e7483"
+      "sha256": "9a57d5e6d54a0cd7fb5bcb2a51c795b314327570e4dca580ed7de03347152c24"
     },
     {
       "id": "batten-media",
@@ -346,9 +346,9 @@
       "category": "media",
       "label": "ばってん少女隊 / メディア",
       "path": "calendar-feeds/batten-media-alerts.ics",
-      "count": 4,
+      "count": 5,
       "omittedUnknownDate": 0,
-      "sha256": "a4ad572c47f12a41491d2ed70c2acba8dd4c3181d7c12f09215fa3035ee2c1dc"
+      "sha256": "283167bcb68b1c5cf5b42cab353a79346142e0e38098a615e34563fe1705b5e9"
     },
     {
       "id": "batten-other",

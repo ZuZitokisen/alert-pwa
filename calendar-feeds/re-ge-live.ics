@@ -149,10 +149,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-dd9f7de9b1799d9ea8785786dbf2c6b65305076c403379c3bf68ebff12d38
  f79@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T191634Z
+DTSTAMP:20261121T211740Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261121T191634Z
-SEQUENCE:2
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:3
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ！
  〜
@@ -163,10 +163,12 @@ DESCRIPTION:RE-GEの物販：先行14:00〜15:30、開場後16:00から、
  時間変更の場合あり。 ドワンゴの配信タイムテーブル
  で、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信
  は17:00開始、12月1日いっぱいまで視聴可。後半はニコド
- ルの有料会員向け。\n本人側の公式発表で確認。\nhttps:/
- /live.nicovideo.jp/watch/lv351834212\nhttps://prtimes.jp/main/html/rd/p/00
- 0001450.000056982.html\nhttps://re-ge.com/news/item-716/\nhttps://re-ge.co
- m/news/item-809/
+ ルの有料会員向け。 イープラスの現地公演一般発売は
+ 予定枚数終了。他の販売元や配信チケットの状況は別
+ 。\n本人側の公式発表で確認。\nhttps://eplus.jp/sf/detail/4613
+ 510001\nhttps://live.nicovideo.jp/watch/lv351834212\nhttps://prtimes.jp/ma
+ in/html/rd/p/000001450.000056982.html\nhttps://re-ge.com/news/item-716/\nh
+ ttps://re-ge.com/news/item-809/
 LOCATION:ザ・ガーデンホール
 URL:https://re-ge.com/news/item-716/
 STATUS:CONFIRMED

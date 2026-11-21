@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-calendar-updates",
-  "dataGeneratedAt": "2026-11-21T19:16:34.909Z",
+  "dataVersion": "2026-11-22-radio-and-batten-natslive",
+  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "69eec29800d5e7c1895c760718eca58cee69b42e5899df55e4d374d442b9338e",
+  "inputSha256": "0c5ced12540e15b9c1f6cab3d79c775feb99da0646e8c1f2ceb49bca8dde6d82",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "d5456656dbf66024786a2433008fc0275d18528fd4b07c858d2e0b8a0269b372"
+      "sha256": "74bdddd45726b95bbbc9c82556afcc7f76452ed8e032100374267060fa779a23"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "07f7a2b9b497814e73e026729146950f6a594bad7798d327b16a56ad5e139aa4"
+      "sha256": "e88ce70135a688dd6bee93b3c66eb8bba1d27f7a11ba00a92b5a8940fbf8b712"
     },
     {
       "id": "re-ge-benefit",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media.ics",
       "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "bec815330fb2d3c654d4fee3b2e0722ddb7838a38c61feee2babbdfc32112aab"
+      "sha256": "f23b8d595d0c6f3fd9d9a4d2553396f2722cb90326c5c3a741d728213da5c84a"
     },
     {
       "id": "re-ge-other",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all.ics",
       "count": 27,
       "omittedUnknownDate": 0,
-      "sha256": "595a53a2fc6a50a29cfd561ecf2b7e1e8a0b2808362388ee488576f06b0290a8"
+      "sha256": "c63bcd8228cd705fdf916095dfe0ca06c37f4875e16be9964577fbaf78463264"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live.ics",
       "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "d554b60bc9f8b403df6e6a9b0038af739540177c212ea538891865f49fee38f9"
+      "sha256": "67f52c15f55083905da31fd974bf5b0d93d8b84d8e0320e1c79adf408b93def2"
     },
     {
       "id": "tohokusan-benefit",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all.ics",
       "count": 59,
       "omittedUnknownDate": 0,
-      "sha256": "d112e9f3fcbfa3db978b5040b60d392d497991049c0a5bcce0ee6300fcdf57b0"
+      "sha256": "ed1c0d44d2129c3876ddbaedfca30072d6fc9a05df259a6a2d0eb7d6fe89116a"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live.ics",
       "count": 28,
       "omittedUnknownDate": 0,
-      "sha256": "5730304f25e56982dd235f2a45dceeb8f0d59d7571bca99f3d96abaab9c8559d"
+      "sha256": "8f6bd6f47259ef95b55f2a9b110e3c733e03fe93be823d5c7bc39e89fe745322"
     },
     {
       "id": "ebichu-benefit",

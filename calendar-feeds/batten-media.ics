@@ -23,15 +23,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-7a7e58a73facbb2d24a72fbfa0ba11d140fea53483a7cc7b97f8445eb0612
  c91@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T173209Z
+DTSTAMP:20261121T211740Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261121T173209Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:1
 DTSTART:20261123T163000Z
+DTEND:20261123T193000Z
 SUMMARY:希山出演「オレたちゴチャ・まぜっ！〜集まれヤ
  ンヤン〜」
-DESCRIPTION:公式の11月23日25:30。\nばってん少女隊公式の案
- 内。\nhttps://battengirls.com/contents/1095110
+DESCRIPTION:11月23日25:30〜28:30。MBSラジオ・radikoの放送枠。\
+ nばってん少女隊公式の案内。\nhttps://battengirls.com/contents
+ /1095110\nhttps://radiko.jp/index/MBS/\nhttps://www.mbs1179.com/ore/
 LOCATION:MBSラジオ
 URL:https://battengirls.com/contents/1095110
 STATUS:CONFIRMED
@@ -50,6 +52,25 @@ DESCRIPTION:春乃・柳・逢里。\nばってん少女隊公式の案内
  。\nhttps://battengirls.com/contents/1074238
 LOCATION:
 URL:https://battengirls.com/contents/1074238
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6f3d3d3445e03a2e6044156f3480b97e3822c6758d35b9fb9d54fc4ddf97c
+ 877@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T211740Z
+CREATED:20261121T211740Z
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+DTEND:20261130T110000Z
+SUMMARY:蒼井りるあ・逢里みう出演 · NATSLIVE 九州モリモリ
+ ！ばってんうまか隊 #10
+DESCRIPTION:八女茶海苔カツ丼。\nばってん少女隊公式の案
+ 内。\nhttps://battengirls.com/contents/1124678\nhttps://natslive.jp/prog
+ rams/10609
+LOCATION:NATSLIVE
+URL:https://battengirls.com/contents/1124678
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

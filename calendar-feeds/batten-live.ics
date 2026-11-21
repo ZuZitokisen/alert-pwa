@@ -279,20 +279,23 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-b6eb115e6d4d7955610fcbd21e323e6b820082931860cc5c9372e81c395a9
  37a@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T191634Z
+DTSTAMP:20261121T211740Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261121T191634Z
-SEQUENCE:1
+LAST-MODIFIED:20261121T211740Z
+SEQUENCE:2
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ！
  〜
 DESCRIPTION:16:00開場。17:00は公演全体の開演。 ドワンゴの
  配信タイムテーブルで、出演枠は18:35〜19:05。5組リレー
  は19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視
- 聴可。後半はニコドルの有料会員向け。\nばってん少女
- 隊公式の案内。\nhttps://battengirls.com/contents/1117493\nhttps://b
- attengirls.com/contents/1117570\nhttps://live.nicovideo.jp/watch/lv3518342
- 12\nhttps://prtimes.jp/main/html/rd/p/000001450.000056982.html
+ 聴可。後半はニコドルの有料会員向け。 イープラスの
+ 現地公演一般発売は予定枚数終了。他の販売元や配信
+ チケットの状況は別。\nばってん少女隊公式の案内。\nh
+ ttps://battengirls.com/contents/1117493\nhttps://battengirls.com/contents/
+ 1117570\nhttps://eplus.jp/sf/detail/4613510001\nhttps://live.nicovideo.jp/
+ watch/lv351834212\nhttps://prtimes.jp/main/html/rd/p/000001450.000056982.h
+ tml
 LOCATION:ザ・ガーデンホール
 URL:https://battengirls.com/contents/1117570
 STATUS:CONFIRMED
