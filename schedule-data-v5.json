@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-ebichu-december-solo",
-  "generatedAt": "2026-11-21T13:15:16.638Z",
+  "version": "2026-11-22-ebichu-gera",
+  "generatedAt": "2026-11-21T15:16:02.892Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -15457,6 +15457,196 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-kyoryujima-sakurai-202612"
+    },
+    {
+      "id": "ebichu-gera-itatsuki-20261126",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびちゅう真山とラブレターズのいたつき！",
+      "start": "2026-11-26T20:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "GERA・Spotify",
+      "note": "真山りかとラブレターズが出演するラジオコント＆トーク番組。20:00配信開始。",
+      "evidence": "私立恵比寿中学の公式スケジュールと番組告知、GERA運営元の発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16236/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16236/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/media/?ym=2026-11",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.fancs.com/news/180629475/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T15:16:02.892Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-gera-itatsuki"
+    },
+    {
+      "id": "ebichu-gera-itatsuki-20261203",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびちゅう真山とラブレターズのいたつき！",
+      "start": "2026-12-03T20:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "GERA・Spotify",
+      "note": "真山りかとラブレターズが出演するラジオコント＆トーク番組。20:00配信開始。",
+      "evidence": "私立恵比寿中学の公式スケジュールと番組告知、GERA運営元の発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16236/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16236/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/media/?ym=2026-12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.fancs.com/news/180629475/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T15:16:02.892Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-gera-itatsuki"
+    },
+    {
+      "id": "ebichu-gera-itatsuki-20261210",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびちゅう真山とラブレターズのいたつき！",
+      "start": "2026-12-10T20:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "GERA・Spotify",
+      "note": "真山りかとラブレターズが出演するラジオコント＆トーク番組。20:00配信開始。",
+      "evidence": "私立恵比寿中学の公式スケジュールと番組告知、GERA運営元の発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16236/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16236/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/media/?ym=2026-12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.fancs.com/news/180629475/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T15:16:02.892Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-gera-itatsuki"
+    },
+    {
+      "id": "ebichu-gera-itatsuki-20261217",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびちゅう真山とラブレターズのいたつき！",
+      "start": "2026-12-17T20:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "GERA・Spotify",
+      "note": "真山りかとラブレターズが出演するラジオコント＆トーク番組。20:00配信開始。",
+      "evidence": "私立恵比寿中学の公式スケジュールと番組告知、GERA運営元の発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16236/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16236/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/media/?ym=2026-12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.fancs.com/news/180629475/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T15:16:02.892Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-gera-itatsuki"
+    },
+    {
+      "id": "ebichu-gera-itatsuki-20261224",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "えびちゅう真山とラブレターズのいたつき！",
+      "start": "2026-12-24T20:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "GERA・Spotify",
+      "note": "真山りかとラブレターズが出演するラジオコント＆トーク番組。20:00配信開始。",
+      "evidence": "私立恵比寿中学の公式スケジュールと番組告知、GERA運営元の発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16236/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16236/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/media/?ym=2026-12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        },
+        {
+          "url": "https://www.fancs.com/news/180629475/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T15:16:02.892Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T15:16:02.892Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-gera-itatsuki"
     }
   ],
   "notes": [
