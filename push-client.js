@@ -10,13 +10,65 @@
  if(typeof document==='undefined')return;
  const panel=document.querySelector('#push-settings');if(!panel)return;
  const status=panel.querySelector('[role=status]'),enable=panel.querySelector('[data-enable]'),disable=panel.querySelector('[data-disable]'),testPush=panel.querySelector('[data-test]');
+ const types=panel.querySelector('[data-notification-types]'), switches=Array.from(types?.querySelectorAll('[data-notification-kind]')||[]);
+ let capabilities=null, flags=null, bell=null, bellSeq=0;
  const base=endpoint(root.ALERT_PUSH_CONFIG,location.origin);let device=null,vapid=null,busy=false,registration=null;
  const say=text=>{status.textContent=text;};
  function store(value){if(value)localStorage.setItem(KEY,JSON.stringify(value));else localStorage.removeItem(KEY);}
  try{const value=JSON.parse(localStorage.getItem(KEY));if(value&&value.backend===base&&/^[A-Za-z0-9_-]{1,200}$/.test(value.deviceId)&&typeof value.deviceToken==='string'&&value.deviceToken.length<=512)device=value;}catch{say('端末の設定を保存できません。ブラウザの保存設定を確認してください。');}
- function controls(){enable.disabled=busy||!vapid||!!device;disable.disabled=busy||!device;testPush.hidden=!device;testPush.disabled=busy||!device||!vapid;}
- async function request(path,method='GET',body,token){const c=new AbortController(),timer=setTimeout(()=>c.abort(),12000);try{const response=await fetch(base+path,{method,mode:'cors',credentials:'omit',redirect:'error',cache:'no-store',signal:c.signal,headers:{...(body?{'Content-Type':'application/json'}:{}),...(token?{Authorization:'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})});if(!response.ok)throw Error('通知サーバーと通信できません。設定は変更されていません。');if(response.status===204)return null;const raw=await response.text();if(raw.length>8192)throw Error('通知サーバーの応答を確認できません。');return JSON.parse(raw);}finally{clearTimeout(timer);}}
+ function controls(){enable.disabled=busy||!vapid||!!device;disable.disabled=busy||!device;testPush.hidden=!device;testPush.disabled=busy||!device||!vapid;
+  if(types)types.hidden=capabilities?.notificationTypes!==true;
+  if(capabilities?.notificationTypes){enable.hidden=!!device;disable.hidden=true;}
+  for(const x of switches){const k=x.dataset.notificationKind;x.checked=flags?.[k]===true;
+   x.disabled=busy||!device||!flags||(k!=='news'&&!capabilities?.[k+'Available']&&!x.checked);
+  }
+ }
+ async function request(path,method='GET',body,token){const c=new AbortController(),timer=setTimeout(()=>c.abort(),12000);try{const response=await fetch(base+path,{method,mode:'cors',credentials:'omit',redirect:'error',cache:'no-store',signal:c.signal,headers:{...(body?{'Content-Type':'application/json'}:{}),...(token?{Authorization:'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})});if(!response.ok)throw Object.assign(Error('通知サーバーと通信できません。設定は変更されていません。'),{status:response.status});if(response.status===204)return null;const raw=await response.text();if(raw.length>8192)throw Error('通知サーバーの応答を確認できません。');return JSON.parse(raw);}finally{clearTimeout(timer);}}
  async function run(action){if(busy)return;busy=true;controls();try{await action();}catch{say('通知設定を完了できませんでした。接続やブラウザの通知設定を確認して再試行してください。');}finally{busy=false;controls();}}
+ const typesPath=d=>'/v1/devices/'+d.deviceId+'/settings';
+ const personalPath=(d,event)=>'/v1/devices/'+d.deviceId+'/reminders?event='+encodeURIComponent(event.id);
+ const flagKeys=['news','daily','personal'];
+ function parseFlags(value){if(!value||flagKeys.some(k=>typeof value[k]!=='boolean'))throw Error('Unexpected notification settings');return value;}
+ async function syncFlags(){const d=device;if(!d||!capabilities?.notificationTypes)return;const next=parseFlags(await request(typesPath(d),'GET',undefined,d.deviceToken));if(device===d)flags=next;controls();}
+ for(const x of switches)x.addEventListener('change',()=>{const k=x.dataset.notificationKind, selection=x.checked;
+  return run(async()=>{const d=device;if(!d)return;try{flags=parseFlags(await request(typesPath(d),'PATCH',{[k]:selection},d.deviceToken));say('通知設定を保存しました。');}
+   catch(error){await syncFlags().catch(()=>{});throw error;}
+   finally{refreshBell();}});
+ });
+ const bellGlyph='<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="bell-shell" d="M5.5 17.5h13c-1.6-1.6-2-2.5-2-5.5V9a4.5 4.5 0 0 0-9 0v3c0 3-.4 3.9-2 5.5Z" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round"/><path d="M10 20a2.25 2.25 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"/></svg>';
+ function showBell(m,value){m.value=value;m.button.disabled=false;const n=value.selected===true;
+  m.button.dataset.paused=String(n&&!value.globalOn);m.button.setAttribute('aria-pressed',String(n&&value.globalOn));m.button.setAttribute('aria-label',n?(value.globalOn?'この予定の通知を解除':'保持中の個別通知を再開'):'この予定の通知を設定');m.slot.hidden=false;
+ }
+ async function refreshBell(){const m=bell,d=device,seq=++bellSeq;
+  if(!m||!m.slot.isConnected)return;
+  m.slot.hidden=true;
+  if(!d||!capabilities?.personalAvailable||Notification.permission!=='granted')return;
+  try{const value=await request(personalPath(d,m.event),'GET',undefined,d.deviceToken);
+   if(m===bell&&seq===bellSeq&&m.slot.isConnected&&d===device&&typeof value?.selected==='boolean'&&typeof value?.globalOn==='boolean')showBell(m,value);
+  }catch{}
+ }
+ root.AlertPush.unmountPersonalBell=()=>{bell=null;bellSeq++;};
+ root.AlertPush.mountPersonalBell=(slot,event)=>{
+  root.AlertPush.unmountPersonalBell();
+  const at=Date.parse(event?.deadline||event?.start);
+  if(!slot||!event?.present||(event.allDay&&!event.deadline)||!['possible','confirmed'].includes(event.status)||!Number.isFinite(at)||at<=Date.now()||String(event.deadline||event.start).length<=10)return;
+  const button=document.createElement('button'),m={slot,event,button,value:null};
+  button.type='button';button.className='personal-bell';button.innerHTML=bellGlyph;button.disabled=true;
+  slot.append(button);bell=m;
+  button.onclick=()=>{if(busy||!m.value||m!==bell||!device)return;
+   const {selected,globalOn}=m.value;const consent=!globalOn;
+   if(consent&&!root.confirm('個別通知がOFFです。個別通知をONにして、この予定を通知しますか？'))return;
+   return run(async()=>{const d=device;button.disabled=true;
+    try{
+     if(selected&&globalOn)await request(personalPath(d,event),'DELETE',undefined,d.deviceToken);
+     else await request(personalPath(d,event),'POST',consent?{enablePersonal:true}:{},d.deviceToken);
+     await syncFlags();
+    }catch(error){if(m===bell)button.setAttribute('aria-label','個別通知を変更できませんでした');throw error;}
+    finally{await refreshBell();if(m===bell&&m.slot.isConnected&&!m.slot.hidden)button.focus({preventScroll:true});}
+   });
+  };
+  refreshBell();
+ };
  enable.onclick=()=>run(async()=>{
   if(!vapid||!registration)return;
   // Verify persistence before asking permission. Never invoke this on page load.
@@ -26,11 +78,11 @@
   try{if(!subscription){subscription=await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:vapid});created=true;}
    const result=await request('/v1/devices','POST',{subscription:subscription.toJSON()});
    if(!result||!/^[A-Za-z0-9_-]{1,200}$/.test(result.deviceId)||typeof result.deviceToken!=='string'||result.deviceToken.length<16||result.deviceToken.length>512)throw Error('Invalid device response');
-   device={backend:base,deviceId:result.deviceId,deviceToken:result.deviceToken};try{store(device);}catch(error){await request('/v1/devices/'+device.deviceId,'DELETE',undefined,device.deviceToken);device=null;throw error;}say('この端末の通知がオンになりました。');
+   device={backend:base,deviceId:result.deviceId,deviceToken:result.deviceToken};try{store(device);}catch(error){await request('/v1/devices/'+device.deviceId,'DELETE',undefined,device.deviceToken);device=null;throw error;}await syncFlags();say(capabilities?.notificationTypes?'受信できるようになりました。必要な通知をオンにしてください。':'この端末の通知がオンになりました。');refreshBell();
   }catch(error){if(created&&subscription)await subscription.unsubscribe().catch(()=>{});throw error;}
  });
  testPush.onclick=()=>run(async()=>{if(!device||!vapid)return;await request('/v1/devices/'+device.deviceId+'/test','POST',{},device.deviceToken);say('テスト通知の送信をリクエストしました。端末に表示されるか確認してください。');});
- disable.onclick=()=>run(async()=>{await request('/v1/devices/'+device.deviceId,'DELETE',undefined,device.deviceToken);const sub=await registration?.pushManager.getSubscription();let removed=true;try{if(sub)removed=await sub.unsubscribe();}catch{removed=false;}store(null);device=null;say(removed?'この端末への通知を停止しました。':'配信は停止しました。ブラウザ側の通知許可は設定から解除できます。');});
+ disable.onclick=()=>run(async()=>{await request('/v1/devices/'+device.deviceId,'DELETE',undefined,device.deviceToken);const sub=await registration?.pushManager.getSubscription();let removed=true;try{if(sub)removed=await sub.unsubscribe();}catch{removed=false;}store(null);device=null;flags=null;refreshBell();say(removed?'この端末への通知を停止しました。':'配信は停止しました。ブラウザ側の通知許可は設定から解除できます。');});
  controls();
  (function prepare(){
   if(!base){say('通知は準備中です。');return;}
@@ -43,13 +95,13 @@
    const expected=new URL('./',location.href).href;
    if(candidate.scope&&candidate.scope!==expected)return;
    registration=candidate;preparing=true;clearTimeout(timer);
-   try{const config=await request('/v1/config');if(disposed)return;vapid=keyBytes(config.vapidPublicKey);if(device){const sub=await registration.pushManager.getSubscription();say(Notification.permission==='granted'&&sub?'この端末の通知はオンです。':'端末の通知は無効です。いったん停止してから再登録してください。');}else say(Notification.permission==='denied'?'通知はブロックされています。ブラウザの設定で変更できます。':'通知はオフです。');}catch{if(!disposed)say('通知サーバーに接続できません。通知は新しく登録されていません。');}finally{preparing=false;controls();}
+   try{const config=await request('/v1/config');if(disposed)return;vapid=keyBytes(config.vapidPublicKey);capabilities=config;if(device)await syncFlags();refreshBell();if(device){const sub=await registration.pushManager.getSubscription();say(Notification.permission==='granted'&&sub?(capabilities?.notificationTypes?'この端末で受信できます。':'この端末の通知はオンです。'):'端末の通知は無効です。いったん停止してから再登録してください。');}else say(Notification.permission==='denied'?'通知はブロックされています。ブラウザの設定で変更できます。':'通知はオフです。');}catch{if(!disposed)say('通知サーバーに接続できません。通知は新しく登録されていません。');}finally{preparing=false;controls();}
   }
   const check=()=>sw.getRegistration(new URL('./',location.href)).then(activate).catch(()=>{if(!disposed&&!registration)say('通知機能の準備を確認できません。再読み込みしてください。');});
   sw.addEventListener?.('controllerchange',check);
   // ready resolves on the first install even when getRegistration initially returns nothing.
   sw.ready?.then(activate).catch(()=>{});
   check();
-  root.addEventListener?.('pagehide',()=>{disposed=true;clearTimeout(timer);sw.removeEventListener?.('controllerchange',check);},{once:true});
+  root.addEventListener?.('pagehide',()=>{disposed=true;root.AlertPush.unmountPersonalBell();clearTimeout(timer);sw.removeEventListener?.('controllerchange',check);},{once:true});
  })();
 })(globalThis);

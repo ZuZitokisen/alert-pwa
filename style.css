@@ -423,3 +423,19 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  overflow-anchor:none;scrollbar-gutter:stable;
 }
 #detail .subscription-submit{display:flex;justify-content:flex-end;gap:8px;align-items:center;margin-top:18px}
+
+.notification-types { display:grid; gap:0; margin-block:8px 14px; }
+.notification-types[hidden], .personal-bell-slot[hidden] { display:none; }
+.notification-switch { display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:46px; font-size:.92rem; }
+.notification-switch + .notification-switch { border-top:1px solid color-mix(in srgb,currentColor 14%, transparent); }
+.notification-switch input { appearance:none; position:relative; inline-size:42px; block-size:25px; flex:none; margin:0; border:1px solid color-mix(in srgb,currentColor 26%, transparent); border-radius:999px; color:inherit; background:transparent; cursor:pointer; }
+.notification-switch input::after { content:''; position:absolute; inset-block-start:3px; inset-inline-start:3px; inline-size:17px; block-size:17px; border-radius:50%; background: currentColor; transition: transform .16s ease; }
+.notification-switch input:checked::after { transform:translateX(17px); }
+.notification-switch input:checked { background:color-mix(in srgb,currentColor 18%,transparent); }
+.notification-switch input:disabled { opacity:.4; cursor:default; }
+.personal-bell-slot { flex:none; line-height:0; }
+.personal-bell { display:grid; place-items:center; width:42px; height:42px; border:0; border-radius:50%; background:transparent; color:inherit; padding:0; }
+.personal-bell svg { width:21px; height:21px; }
+.personal-bell[aria-pressed="true"] svg .bell-shell { fill:currentColor; }
+.personal-bell[data-paused="true"] { opacity:.6; }
+@media(prefers-reduced-motion:reduce) { .notification-switch input::after { transition:none; } }

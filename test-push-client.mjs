@@ -23,7 +23,45 @@ test('registration network failure rolls back newly created subscription',async(
 test('test push is hidden before registration and explicit authenticated request only',async()=>{const f=clientFixture();await tick();assert.equal(f.nodes['[data-test]'].hidden,true);assert.equal(f.calls.some(c=>Array.isArray(c)&&c[0].endsWith('/test')),false);await f.nodes['[data-enable]'].onclick();assert.equal(f.nodes['[data-test]'].hidden,false);const permissions=f.calls.filter(c=>c==='permission').length;await f.nodes['[data-test]'].onclick();const sent=f.calls.find(c=>Array.isArray(c)&&c[0].endsWith('/test'));assert.equal(sent[1].method,'POST');assert.equal(sent[1].headers.Authorization,'Bearer '+'t'.repeat(32));assert.equal(sent[1].credentials,'omit');assert.equal(sent[1].mode,'cors');assert.equal(f.calls.filter(c=>c==='permission').length,permissions);assert.match(f.nodes['[role=status]'].textContent,/リクエストしました/);await f.nodes['[data-disable]'].onclick();assert.equal(f.nodes['[data-test]'].hidden,true);});
 test('test push failure does not report successful delivery or change subscription',async()=>{const f=clientFixture();await tick();await f.nodes['[data-enable]'].onclick();f.c.fetch=async()=>{throw Error('offline');};await f.nodes['[data-test]'].onclick();assert.match(f.nodes['[role=status]'].textContent,/完了できません/);assert.equal(f.nodes['[data-test]'].hidden,false);assert.equal(f.calls.includes('unsubscribe'),false);});
 
-test('common notification UI has no individual artist, certainty, reminder or save settings',()=>{const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');const panel=html.slice(html.indexOf('id="push-settings"'),html.indexOf('</article>',html.indexOf('id="push-settings"')));for(const forbidden of ['data-artists','data-possible','data-reminders','data-save','morning-time','fieldset','checkbox'])assert.equal(panel.includes(forbidden),false);assert.equal(script.includes('preferences'),false);});
+test('three explicit switches are rendered independently while artist and certainty stay out',()=>{const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');const panel=html.slice(html.indexOf('id="push-settings"'),html.indexOf('</article>',html.indexOf('id="push-settings"')));for(const forbidden of ['data-artists','data-possible','data-reminders','data-save','morning-time','fieldset'])assert.equal(panel.includes(forbidden),false);for(const k of ['news','daily','personal'])assert.equal((panel.match(new RegExp('data-notification-kind="'+k+'"','g'))||[]).length,1);});
 
 test('clean-install ready race recovers controls without permission prompt',async()=>{const f=clientFixture({installing:true});await tick();assert.equal(f.nodes['[data-enable]'].disabled,true);assert.equal(f.calls.length,0);assert.match(f.nodes['[role=status]'].textContent,/準備/);f.readyResolve(f.registration);await tick();assert.equal(f.nodes['[data-enable]'].disabled,false);assert.equal(f.calls.filter(c=>c==='permission').length,0);assert.equal(f.calls.filter(c=>Array.isArray(c)).length,1);await f.listeners.controllerchange();assert.equal(f.calls.filter(c=>Array.isArray(c)).length,1);});
 test('controllerchange can recover active worker before ready settles',async()=>{const f=clientFixture({installing:true});await tick();f.c.navigator.serviceWorker.getRegistration=async()=>f.registration;await f.listeners.controllerchange();await tick();assert.equal(f.nodes['[data-enable]'].disabled,false);assert.equal(f.calls.includes('permission'),false);});
+
+test('bell confirm/cancel, OFF priority, explicit restart preserve the selection',async()=>{
+ const key=Buffer.alloc(65);key[0]=4;
+ const nodes={},controls=['news','daily','personal'].map(k=>({dataset:{notificationKind:k},addEventListener(_,fn){this.change=fn;}}));
+ for(const sel of ['[role=status]','[data-enable]','[data-disable]','[data-test]'])nodes[sel]={};
+ nodes['[data-notification-types]']={querySelectorAll:()=>controls};
+ const states={news:false,daily:false,personal:false},calls=[];
+ let selected=false, consent=false;
+ const d={backend:'https://app.test',deviceId:'fixture',deviceToken:'x'.repeat(32)},app='https://app.test/alert/';
+ const ctx={URL,atob,Uint8Array,AbortController,setTimeout,clearTimeout,PushManager:{},isSecureContext:true,location:{origin:'https://app.test',href:app},
+  ALERT_PUSH_CONFIG:{backendUrl:d.backend},Notification:{permission:'granted'},navigator:{serviceWorker:{getRegistration:async()=>({active:{},scope:app,pushManager:{getSubscription:async()=>({})}})}},
+  localStorage:{getItem:()=>JSON.stringify(d)},confirm(){calls.push('confirm');return consent;},
+  document:{querySelector:()=>({querySelector:s=>nodes[s]}),createElement:()=>({dataset:{},attrs:{},setAttribute(k,v){this.attrs[k]=v;},focus(){}})},
+  fetch:async(url,o)=>{
+   const p=new URL(url).pathname;const b=o.body?JSON.parse(o.body):null;
+   if(p.endsWith('/config'))return result({vapidPublicKey:key.toString('base64url'),notificationTypes:true,dailyAvailable:true,personalAvailable:true});
+   if(p.endsWith('/settings')){if(o.method==='PATCH'){calls.push(b);Object.assign(states,b);}return result(states);}
+   if(o.method==='POST'){calls.push(b);if(b.enablePersonal)states.personal=true;selected=true;}
+   if(o.method==='DELETE'){calls.push('delete');selected=false;return result(null,204);}
+   return result({selected,globalOn:states.personal,enabled:selected,at:null});
+  }};
+ function result(data,status=200){return{ok:true,status,text:async()=>JSON.stringify(data)};}
+ vm.createContext(ctx);vm.runInContext(script,ctx);await tick();
+ const slot={isConnected:true,hidden:true,append(x){this.button=x;}};
+ ctx.AlertPush.mountPersonalBell(slot,{id:'e',present:true,status:'confirmed',start:'2099-11-22T10:00:00+09:00'});
+ await tick();
+ assert.equal(slot.hidden,false);
+ await slot.button.onclick();
+ assert.deepEqual(calls,['confirm']);assert.equal(selected,false);
+ consent=true;await slot.button.onclick();
+ assert.deepEqual(calls,['confirm','confirm',{enablePersonal:true}]);assert.equal(selected,true);assert.equal(slot.button.attrs['aria-pressed'],'true');assert.equal(controls[2].checked,true);
+ controls[2].checked=false;await controls[2].change();await tick();
+ assert.equal(selected,true);assert.equal(slot.button.attrs['aria-pressed'],'false');assert.equal(slot.button.dataset.paused,'true');
+ await slot.button.onclick();
+ assert.equal(states.personal,true);assert.equal(selected,true);assert.ok(!calls.includes('delete'));
+ controls[1].checked=true;await controls[1].change();assert.deepEqual(states,{news:false,daily:true,personal:true});
+ await slot.button.onclick();assert.equal(selected,false);assert.equal(states.personal,true);
+});
