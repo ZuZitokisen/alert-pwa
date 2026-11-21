@@ -385,3 +385,5 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 
 /* The routed heading is a screen-reader landmark, not an interactive control. */
 #view-title:focus{outline:none}
+
+.brand-mark.brand-wordmark{width:108px;height:auto}

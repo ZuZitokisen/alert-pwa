@@ -53,3 +53,15 @@ test('launch uses the exact dedicated white backdrop, centered asset and indepen
  assert.match(css,/#view-title:focus\{outline:none\}/);
  assert.match(css,/button:focus-visible/);
 });
+
+test('install icons are opaque square app tiles with the matching PWA references',()=>{
+ for (const size of [192,512]) {
+  const bytes=fs.readFileSync(new URL('./icon-'+size+'.png',import.meta.url));
+  assert.equal(bytes.readUInt32BE(16),size);assert.equal(bytes.readUInt32BE(20),size);
+  assert.equal(bytes[25],2);
+ }
+ const m=JSON.parse(load('manifest.webmanifest'));
+ assert.equal(m.icons[1].purpose,'any maskable');
+ assert.match(load('icon.svg'),/href="data:image\/png;base64,/);
+ assert.match(html,/aria-label="Furin"><img class="brand-mark brand-wordmark"/);
+});
