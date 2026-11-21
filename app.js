@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.40';
+const APP_RELEASE='0.7.41';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const artistOrder=['ebichu','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
@@ -204,7 +204,7 @@ function openEvent(e,origin){
  if(e.deadline)area.append(el('p','正式締切 '+prettyDate(e.deadline)));
  if(e.present===false)area.append(el('p','元ページから掲載がなくなりました。中止とは確定していません。'));
  appendSourcesAndTimes(area,e);
-const latest=state.changes.find(c=>c.eventId===e.id&&c.source===e.source);if(latest){const b=el('button','最後の変更を見る');b.onclick=()=>openChange(latest);area.append(b);}area.append(el('h3','判断の根拠'),el('p',e.evidence||'根拠未登録','evidence'));openDialog(origin);globalThis.AlertPush?.mountPersonalBell?.(bell,e);}
+ openDialog(origin);globalThis.AlertPush?.mountPersonalBell?.(bell,e);}
 let subscriptionChoices=new Set();
 function openSubscriptions(artistId){
  if(artistId&&S.ARTISTS.includes(artistId))subscriptionChoices=new Set([artistId+'-all']);
