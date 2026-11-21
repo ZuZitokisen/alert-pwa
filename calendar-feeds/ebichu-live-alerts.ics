@@ -69,17 +69,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-9c1780d13e5bdb8f6933db72cfeba3d943d4a48260dd2f6ca6ef6e2d3c38f
  3f1@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T051445Z
+DTSTAMP:20261121T191634Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T051445Z
-SEQUENCE:1
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:2
 DTSTART:20261123T093000Z
 DTEND:20261123T100000Z
 SUMMARY:ちかっぱ祭2026
 DESCRIPTION:私立恵比寿中学の出演時間。 桜井えまはダン
- スのみで参加。\n私立恵比寿中学公式サイトで確認。\nh
- ttps://www.shiritsuebichu.jp/media/95687/\nhttps://www.shiritsuebichu.jp/n
- ews/16300/
+ スのみで参加。 ニコ生は11:00配信開始。各ライブの後
+ 半はニコニコプレミアム会員向け。\n私立恵比寿中学公
+ 式サイトで確認。\nhttps://live.nicovideo.jp/watch/lv351793553\nhtt
+ ps://prtimes.jp/main/html/rd/p/000001448.000056982.html\nhttps://www.shiri
+ tsuebichu.jp/media/95687/\nhttps://www.shiritsuebichu.jp/news/16300/
 LOCATION:マリンメッセ福岡B館
 URL:https://www.shiritsuebichu.jp/media/95687/
 STATUS:CONFIRMED
@@ -585,17 +587,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-4bad2956467669c4abbe7586ba4c84b43789023cc6ed38a597033a41cd56d
  bf9@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T051445Z
+DTSTAMP:20261121T191634Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T051445Z
-SEQUENCE:1
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:2
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 LIVE
-DESCRIPTION:17:00はイベントの開演。個別出演時間は未確認
- 。 桜井えまは一部演目のみ歌唱、その他はダンスのみ
- で参加。\n私立恵比寿中学公式サイトで確認。\nhttps://ww
- w.shiritsuebichu.jp/media/96540/\nhttps://www.shiritsuebichu.jp/news/16300
- /
+DESCRIPTION:17:00はイベントの開演。 桜井えまは一部演目の
+ み歌唱、その他はダンスのみで参加。 ドワンゴの配信
+ タイムテーブルで、出演枠は20:15〜20:45。5組リレーは19:
+ 10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可
+ 。後半はニコドルの有料会員向け。\n私立恵比寿中学公
+ 式サイトで確認。\nhttps://live.nicovideo.jp/watch/lv351834212\nhtt
+ ps://prtimes.jp/main/html/rd/p/000001450.000056982.html\nhttps://www.shiri
+ tsuebichu.jp/media/96540/\nhttps://www.shiritsuebichu.jp/news/16300/
 LOCATION:ザ・ガーデンホール
 URL:https://www.shiritsuebichu.jp/media/96540/
 STATUS:CONFIRMED

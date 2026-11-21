@@ -414,10 +414,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-2cd708119a2bbc696549f6df62d49d76e87c91c3041bbc448c98526eaf865
  5eb@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T131500Z
+DTSTAMP:20261121T191634Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261119T131500Z
-SEQUENCE:2
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:3
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 ライブ ～まじで頑張ろ！女のスタダ！
  ～
@@ -430,9 +430,14 @@ DESCRIPTION:開場16:00。公演開始時刻であり個別出演時刻で
  開場後16:00から、終演後は列が途切れ次第終了。購入時
  チケット確認あり、チケットなしは開演後から。準備
  等で一時中断の場合あり。17:00を一般グッズ物販の終了
- 時刻にはしていません。\n本人公式の開催日・本文記載
- を確認。\nhttps://madeintohoku.com/contents/1117445\nhttps://madeintoh
- oku.com/contents/1128759\nhttps://madeintohoku.com/contents/1129171
+ 時刻にはしていません。 ドワンゴの配信タイムテーブ
+ ルで、出演枠は19:40〜20:10。5組リレーは19:10〜19:35。配
+ 信は17:00開始、12月1日いっぱいまで視聴可。後半はニコ
+ ドルの有料会員向け。\n本人公式の開催日・本文記載を
+ 確認。\nhttps://live.nicovideo.jp/watch/lv351834212\nhttps://madeintoho
+ ku.com/contents/1117445\nhttps://madeintohoku.com/contents/1128759\nhttps:
+ //madeintohoku.com/contents/1129171\nhttps://prtimes.jp/main/html/rd/p/000
+ 001450.000056982.html
 LOCATION:ザ・ガーデンホール
 URL:https://madeintohoku.com/contents/1117445
 STATUS:CONFIRMED

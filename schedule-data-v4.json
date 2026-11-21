@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-batten-artist",
-  "generatedAt": "2026-11-21T17:32:09Z",
+  "version": "2026-11-22-batten-calendar-updates",
+  "generatedAt": "2026-11-21T19:16:34.909Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2664,7 +2664,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "ザ・ガーデンホール",
-      "note": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。",
+      "note": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。 ドワンゴの配信タイムテーブルで、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/news/item-716/",
       "sources": [
@@ -2677,9 +2677,19 @@
           "url": "https://re-ge.com/news/item-809/",
           "type": "artist_official",
           "checkedAt": "2026-11-19T10:44:22.242Z"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000001450.000056982.html",
+          "type": "配信元の告知",
+          "checkedAt": "2026-11-21T19:16:34.795Z"
+        },
+        {
+          "url": "https://live.nicovideo.jp/watch/lv351834212",
+          "type": "配信ページ",
+          "checkedAt": "2026-11-21T19:16:34.795Z"
         }
       ],
-      "checkedAt": "2026-11-19T10:44:22.242Z",
+      "checkedAt": "2026-11-21T19:16:34.795Z",
       "timings": [
         {
           "label": "全体開場",
@@ -2722,6 +2732,24 @@
           "at": "2026-11-24T16:00:00+09:00",
           "note": "",
           "status": "confirmed"
+        },
+        {
+          "kind": "broadcast_performance_start",
+          "label": "出演枠開始（配信告知）",
+          "at": "2026-11-24T18:00:00+09:00",
+          "status": "possible"
+        },
+        {
+          "kind": "broadcast_performance_end",
+          "label": "出演枠終了（配信告知）",
+          "at": "2026-11-24T18:30:00+09:00",
+          "status": "possible"
+        },
+        {
+          "kind": "broadcast_start",
+          "label": "ニコ生配信開始",
+          "at": "2026-11-24T17:00:00+09:00",
+          "status": "possible"
         }
       ],
       "deadline": null,
@@ -12845,14 +12873,14 @@
       "end": null,
       "location": "ザ・ガーデンホール",
       "sourceUrl": "https://madeintohoku.com/contents/1117445",
-      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。",
+      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。 ドワンゴの配信タイムテーブルで、出演枠は19:40〜20:10。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。",
       "evidence": "本人公式の開催日・本文記載を確認。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-19T13:15:00.527Z",
+      "checkedAt": "2026-11-21T19:16:34.795Z",
       "timings": [
         {
           "label": "東北産CD先行販売開始",
@@ -12902,6 +12930,24 @@
           "at": "2026-11-24T16:00:00+09:00",
           "status": "confirmed",
           "note": "CD販売の時間枠とは別。"
+        },
+        {
+          "kind": "broadcast_performance_start",
+          "label": "出演枠開始（配信告知）",
+          "at": "2026-11-24T19:40:00+09:00",
+          "status": "possible"
+        },
+        {
+          "kind": "broadcast_performance_end",
+          "label": "出演枠終了（配信告知）",
+          "at": "2026-11-24T20:10:00+09:00",
+          "status": "possible"
+        },
+        {
+          "kind": "broadcast_start",
+          "label": "ニコ生配信開始",
+          "at": "2026-11-24T17:00:00+09:00",
+          "status": "possible"
         }
       ],
       "deadline": null,
@@ -12923,6 +12969,16 @@
           "url": "https://madeintohoku.com/contents/1128759",
           "type": "artist_official",
           "checkedAt": "2026-11-19T13:15:00.527Z"
+        },
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000001450.000056982.html",
+          "type": "配信元の告知",
+          "checkedAt": "2026-11-21T19:16:34.795Z"
+        },
+        {
+          "url": "https://live.nicovideo.jp/watch/lv351834212",
+          "type": "配信ページ",
+          "checkedAt": "2026-11-21T19:16:34.795Z"
         }
       ]
     },
