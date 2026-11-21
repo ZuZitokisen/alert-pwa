@@ -284,8 +284,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.37 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-37/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.37'));assert.ok(sw.includes(file+'?v=0.7.37'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.38 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-38/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.38'));assert.ok(sw.includes(file+'?v=0.7.38'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -498,7 +498,8 @@ test('event details put evidence last after links and actions and omit notificat
  const panel=f.get('detail-content');
  assert.deepEqual(panel.children.slice(-2).map(e=>e.textContent),['判断の根拠','本人公式の掲載']);
  assert.match(panel.textContent,/出典と確認時刻/);
- assert.match(panel.textContent,/通知時刻の確認/);
+ assert.doesNotMatch(panel.textContent,/通知時刻の確認|リマインド例/);
+ assert.equal(panel.querySelector('.personal-bell-slot').hidden,true);
  assert.equal(panel.querySelector('.notification-preview'),null);
  panel.querySelectorAll('button').find(b=>b.textContent==='最後の変更を見る').click();
  assert.match(panel.textContent,/旧会場/);
@@ -541,10 +542,11 @@ test('expanded event puts the favorite to the right of the title and no calendar
  f.get('agenda').querySelector('.card-open').click();
  const panel=f.get('detail-content'),heading=panel.querySelector('.event-detail-heading');
  assert.equal(heading.children[0].textContent,e.title);
- assert.ok(heading.children[1].classList.contains('favorite-button'));
+ assert.ok(heading.children[1].classList.contains('personal-bell-slot'));
+ assert.ok(heading.children[2].classList.contains('favorite-button'));
  assert.doesNotMatch(panel.textContent,/本体カレンダーに追加/);
  assert.equal(f.get('calendar-share').getAttribute('aria-label'),'本体カレンダーに追加');
- heading.children[1].click();
+ heading.children[2].click();
  assert.equal(panel.querySelector('.favorite-button').getAttribute('aria-pressed'),'true');
 });
 

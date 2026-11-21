@@ -32,6 +32,7 @@ test('compatibility filtering precedes send and retains activation/live-version/
  assert.match(src,/compatibleDispatch\(planned\)/);
  assert.ok(src.indexOf('compatibleDispatch(planned)')<src.indexOf('for(const value of records)'));
  assert.match(src,/if\(!send\)/);assert.match(src,/if\(!process.env.ALERT_PUSH_NOTIFY_AFTER\)/);
- assert.match(src,/token=await runtimeToken\(\)/);assert.match(src,/version!==snapshot.version/);
- assert.match(src,/schedule-data-v4.json/);assert.match(src,/deferredUnsupportedReminders,queued/);
+ assert.match(src,/token=await runtimeToken\(\)/);
+ assert.ok(src.indexOf('await verifyPublicDispatchInput')<src.indexOf('await runtimeToken()'));
+ assert.match(src,/readDispatchInput\(\)/);assert.match(src,/deferredUnsupportedReminders,queued/);
 });

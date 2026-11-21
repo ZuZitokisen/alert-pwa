@@ -6,10 +6,14 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Dry run is safe; publish requires HOURLY_AUTO_PUBLISH=true.'
+        description: 'Dry run, publish, or send News for an already published schedule.'
         type: choice
-        options: [dry-run, publish]
+        options: [dry-run, publish, published-news]
         default: dry-run
+      published_sha256:
+        description: 'Exact SHA-256 of the published canonical v5 schedule, used only by published-news.'
+        type: string
+        required: false
 permissions:
   contents: read
 concurrency:
@@ -42,7 +46,7 @@ jobs:
   inspect:
     needs: backup-gate
     # Even a gate infrastructure failure must not bypass the normal guards.
-    if: ${{ !cancelled() && needs.backup-gate.outputs.proceed != 'false' }}
+    if: ${{ !cancelled() && needs.backup-gate.outputs.proceed != 'false' && inputs.mode != 'published-news' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -208,3 +212,29 @@ jobs:
           node-version: '22'
       - run: node hourly/verify-live.mjs
       - run: node hourly/dispatch.mjs --send && node hourly/drain.mjs
+
+  notify-editorial:
+    if: >-
+      github.event_name == 'workflow_dispatch' && inputs.mode == 'published-news' &&
+      github.ref == 'refs/heads/main' &&
+      vars.ALERT_PUSH_BACKEND_ORIGIN != '' && vars.ALERT_PUSH_NOTIFY_AFTER != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      ALERT_PUSH_BACKEND_ORIGIN: ${{ vars.ALERT_PUSH_BACKEND_ORIGIN }}
+      ALERT_PUSH_NOTIFY_AFTER: ${{ vars.ALERT_PUSH_NOTIFY_AFTER }}
+      EXPECTED_SCHEDULE_SHA256: ${{ inputs.published_sha256 }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify and enqueue only shared News for this public generation
+        run: node hourly/dispatch.mjs --published-news "$EXPECTED_SCHEDULE_SHA256"
+      - run: node hourly/drain.mjs

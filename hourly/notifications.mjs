@@ -9,7 +9,7 @@ function when(v){
  if(v.length===10)return v.replaceAll('-','/')+'（時刻未定）';
  return jst.format(new Date(v))+' JST';
 }
-export function planNotifications(snapshot,feedState,{now=new Date(),activatedAt=null,appURL=APP_URL}={}){
+export function planNotifications(snapshot,feedState,{now=new Date(),activatedAt=null,appURL=APP_URL,onlyCurrentGeneration=false}={}){
  const records=new Map(feedState.records.map(r=>[r.event.id,r])), notices=[];
  let changedSinceCutoff=false;
  const nowMs=+now, since=activatedAt===null?Number.POSITIVE_INFINITY:Date.parse(activatedAt), horizon=nowMs+48*3600000;
@@ -21,7 +21,7 @@ export function planNotifications(snapshot,feedState,{now=new Date(),activatedAt
   const item={id:event.id,revision:row.sequence+1,artistId:event.artistId,status:event.status,url:appURL};
   const detail=compact([when(event.start),event.location,event.status==='possible'?'かも？':event.status==='cancelled'?'中止':'確定'].filter(Boolean).join(' · '),400);
   const changed=Date.parse(row.modified);
-  if(changed>since&&changed<=nowMs&&changed>nowMs-24*3600000){
+  if(changed>since&&changed<=nowMs&&changed>nowMs-24*3600000&&(!onlyCurrentGeneration||changed===Date.parse(snapshot.generatedAt))){
    changedSinceCutoff=true;
   }
   if(event.status==='cancelled')continue;

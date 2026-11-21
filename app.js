@@ -163,7 +163,7 @@ function openDialog(origin){
 }
 function stopCardOpenMotion(){cardOpenMotion?.cancel();cardOpenMotion=null;}
 function closeDialog(){stopCardOpenMotion();$('#detail').close();unlockDialogScroll();}
-function onDialogClosed(){if(!$('#detail').open){stopCardOpenMotion();unlockDialogScroll();$('#detail').setAttribute('aria-label','予定と通知の詳細');}}
+function onDialogClosed(){if(!$('#detail').open){globalThis.AlertPush?.unmountPersonalBell?.();stopCardOpenMotion();unlockDialogScroll();$('#detail').setAttribute('aria-label','予定と通知の詳細');}}
 
 // Track only a single deliberate horizontal touch on an expanded card.
 function installCardSwipe(dialog,getPanel,dismiss){
@@ -198,13 +198,13 @@ function openEvent(e,origin){
  const area=$('#detail-content');area.dataset.panel='event';
  const heading=el('div','','event-detail-heading'),fav=favoriteButton(e);
  fav.onclick=()=>{toggleFavorite(e);openEvent(e);$('#detail-content .favorite-button')?.focus({preventScroll:true});};
- heading.append(el('h2',e.title,'event-detail-title'),fav);
+ const bell=el('span','','personal-bell-slot');bell.hidden=true;
+ heading.append(el('h2',e.title,'event-detail-title'),bell,fav);
  area.replaceChildren(statusBadge(e),heading,el('p',getArtist(e.artistId)?.name||'サンプル','detail-meta'),el('p',timing(e)),el('p',e.location||'場所未定'),el('p',e.note));
  if(e.deadline)area.append(el('p','正式締切 '+prettyDate(e.deadline)));
  if(e.present===false)area.append(el('p','元ページから掲載がなくなりました。中止とは確定していません。'));
  appendSourcesAndTimes(area,e);
-const box=el('div','','reminder-box');box.append(el('h3','通知時刻の確認'));const label=el('label','リマインド例 '),select=document.createElement('select');select.setAttribute('aria-label','リマインド設定例');for(const [value,title] of [['off','設定しない'],['morning1h',`朝${morningTime}＋開始1時間前`],...(e.deadline?[['deadline2',`朝${morningTime}＋締切前`]]:[])]){const o=el('option',title);o.value=value;select.append(o);}const key=F.stableEventKey(e);select.value=reminders[key]||'off';select.disabled=!e.start||(!e.allDay&&e.start.length===10)||e.present===false||e.status==='cancelled';select.onchange=()=>{reminders[key]=select.value;save('alert-pwa-reminders-v2',reminders);openEvent(e);toast('通知時刻の設定例を保存しました。実通知は未接続です。');};label.append(select);box.append(label);if(select.value!=='off'&&!select.disabled){const plan=F.reminderTimes(e,{mode:select.value,morningTime,now:new Date().toISOString()});for(const t of plan.times)box.append(el('p',`${prettyDate(t.at)} · ${t.label}`));for(const u of plan.unresolved)box.append(el('p',u.label||'時刻の確認が必要です。','hint'));if(!plan.times.length)box.append(el('p','これからの通知候補はありません。過去の通知や開始後の朝通知は出しません。','hint'));}box.append(el('p','時刻のプレビューです。通知は予約・配信されません。','hint'));area.append(box);
-const latest=state.changes.find(c=>c.eventId===e.id&&c.source===e.source);if(latest){const b=el('button','最後の変更を見る');b.onclick=()=>openChange(latest);area.append(b);}area.append(el('h3','判断の根拠'),el('p',e.evidence||'根拠未登録','evidence'));openDialog(origin);}
+const latest=state.changes.find(c=>c.eventId===e.id&&c.source===e.source);if(latest){const b=el('button','最後の変更を見る');b.onclick=()=>openChange(latest);area.append(b);}area.append(el('h3','判断の根拠'),el('p',e.evidence||'根拠未登録','evidence'));openDialog(origin);globalThis.AlertPush?.mountPersonalBell?.(bell,e);}
 let subscriptionChoices=new Set(),subscriptionAlertChoices=new Set();
 function openSubscriptions(artistId){
  if(artistId&&S.ARTISTS.includes(artistId))subscriptionChoices=new Set([artistId+'-all']);
