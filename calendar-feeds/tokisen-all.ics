@@ -322,6 +322,48 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-71e1b7687af16c173a5309e715ef4f90bba762a3a90323f4adfd37443ad8f
+ 338@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T090720Z
+CREATED:20261121T090720Z
+LAST-MODIFIED:20261121T090720Z
+SEQUENCE:0
+DTSTART:20261121T133000Z
+DTEND:20261121T140000Z
+SUMMARY:晴れ ときどき 超ときめき♡宣伝部（かも？）
+DESCRIPTION:11月21日放送分。ラジオ日本の11月21日深夜25:00
+ 枠とは別の放送局・放送時刻です。radikoのエリア外聴
+ 取は対象プランをご確認ください。\n放送局の日付指定
+ のradiko番組表で確認。アーティスト公式カレンダーで
+ は当該局の時刻は未確認。\nhttps://radiko.jp/mobile/events/1415
+ 4458\nhttps://www.zf-web.com/radio/regular/tokisen/
+LOCATION:ぎふチャンラジオ
+URL:https://radiko.jp/mobile/events/14154458
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-100bdc23abdb9389d29255d324203d9c10a042a9bd87f638ad3d4436f107f
+ 206@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T090720Z
+CREATED:20261121T090720Z
+LAST-MODIFIED:20261121T090720Z
+SEQUENCE:0
+DTSTART:20261121T123000Z
+DTEND:20261121T130000Z
+SUMMARY:晴れ ときどき 超ときめき♡宣伝部（かも？）
+DESCRIPTION:11月21日放送分。ラジオ日本の11月21日深夜25:00
+ 枠とは別の放送局・放送時刻です。radikoのエリア外聴
+ 取は対象プランをご確認ください。\n放送局の日付指定
+ のradiko番組表で確認。アーティスト公式カレンダーで
+ は当該局の時刻は未確認。\nhttps://radiko.jp/index/JP26/\nhttps
+ ://radiko.jp/mobile/events/14214492
+LOCATION:KBS京都ラジオ
+URL:https://radiko.jp/mobile/events/14214492
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-98a50177ccbbcdf393e6ab21715c3b28ec492514692d05275beb2ced810c6
  7ca@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z

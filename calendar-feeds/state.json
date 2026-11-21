@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-nonaka-radio",
-  "dataGeneratedAt": "2026-11-21T07:27:37.505Z",
-  "inputSha256": "4f1c15d5d0c512159b56c2e745f166e8d05a79fa099e811fe9f9eb481ee0477b",
+  "dataVersion": "2026-11-21-tokisen-haretoki-regional",
+  "dataGeneratedAt": "2026-11-21T09:07:20Z",
+  "inputSha256": "c70e5f7b6b53248366db9a84d445b28b4ad677f4b3c988d59b6ac87da30c8721",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -7081,6 +7081,73 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-haretoki-gifu-20261121\"]",
+      "uid": "public-v1-71e1b7687af16c173a5309e715ef4f90bba762a3a90323f4adfd37443ad8f338@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-haretoki-gifu-20261121",
+        "category": "media",
+        "title": "晴れ ときどき 超ときめき♡宣伝部",
+        "start": "2026-11-21T22:30:00+09:00",
+        "end": "2026-11-21T23:00:00+09:00",
+        "allDay": false,
+        "location": "ぎふチャンラジオ",
+        "publicNote": "11月21日放送分。ラジオ日本の11月21日深夜25:00枠とは別の放送局・放送時刻です。radikoのエリア外聴取は対象プランをご確認ください。\n放送局の日付指定のradiko番組表で確認。アーティスト公式カレンダーでは当該局の時刻は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://radiko.jp/mobile/events/14154458",
+          "https://www.zf-web.com/radio/regular/tokisen/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T09:07:20Z",
+      "modified": "2026-11-21T09:07:20Z",
+      "lastTiming": {
+        "start": "2026-11-21T22:30:00+09:00",
+        "end": "2026-11-21T23:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-haretoki-kbs-kyoto-20261121\"]",
+      "uid": "public-v1-100bdc23abdb9389d29255d324203d9c10a042a9bd87f638ad3d4436f107f206@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-haretoki-kbs-kyoto-20261121",
+        "category": "media",
+        "title": "晴れ ときどき 超ときめき♡宣伝部",
+        "start": "2026-11-21T21:30:00+09:00",
+        "end": "2026-11-21T22:00:00+09:00",
+        "allDay": false,
+        "location": "KBS京都ラジオ",
+        "publicNote": "11月21日放送分。ラジオ日本の11月21日深夜25:00枠とは別の放送局・放送時刻です。radikoのエリア外聴取は対象プランをご確認ください。\n放送局の日付指定のradiko番組表で確認。アーティスト公式カレンダーでは当該局の時刻は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://radiko.jp/index/JP26/",
+          "https://radiko.jp/mobile/events/14214492"
+        ],
+        "sourceUrl": "https://radiko.jp/mobile/events/14214492"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T09:07:20Z",
+      "modified": "2026-11-21T09:07:20Z",
+      "lastTiming": {
+        "start": "2026-11-21T21:30:00+09:00",
+        "end": "2026-11-21T22:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-jr-10-from_date\"]",
       "uid": "public-v1-98a50177ccbbcdf393e6ab21715c3b28ec492514692d05275beb2ced810c67ca@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -13184,5 +13251,5 @@
       ]
     }
   ],
-  "integritySha256": "dc4d7beb986d548fe2801eb4d5e36bef700e724cc81b1a63ed0c2e726ea8d6de"
+  "integritySha256": "60b28533e5b5b55dd9c0fc5a6b3b49296c5762a6f2f6f2140fa4410112c3d687"
 }
