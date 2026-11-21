@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-ebichu-performance-and-tv",
-  "generatedAt": "2026-11-21T05:14:45Z",
+  "version": "2026-11-21-ebichu-nonaka-radio",
+  "generatedAt": "2026-11-21T07:27:37.505Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -14942,6 +14942,68 @@
         }
       ],
       "checkedAt": "2026-11-21T05:14:45Z",
+      "timings": [],
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "ebichu-sakuragi-nonaka-radio-20261123-tokyofm",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "桜木心菜 コメント出演「野中ここなのノナカの野望」",
+      "start": "2026-11-24T03:30:00+09:00",
+      "end": "2026-11-24T04:00:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "TOKYO FM",
+      "note": "局の番組表では11/23（月・祝）27:30～28:00。",
+      "evidence": "エビ中の公式ニュースで出演と放送日を確認。放送時刻は放送局番組表。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/",
+          "type": "公式ニュース",
+          "checkedAt": "2026-11-21T07:27:37.505Z"
+        },
+        {
+          "url": "https://prod-cdn-web.t-web-replace-2020.tfm.co.jp/timetable/?date=20261123",
+          "type": "放送局番組表",
+          "checkedAt": "2026-11-21T07:27:37.505Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T07:27:37.505Z",
+      "timings": [],
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "ebichu-sakuragi-nonaka-radio-20261123-fmnagasaki",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "桜木心菜 コメント出演「野中ここなのノナカの野望」",
+      "start": "2026-11-27T20:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "FM長崎",
+      "note": "",
+      "evidence": "エビ中の公式ニュースで出演と放送日を確認。放送時刻は放送局番組表。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/",
+          "type": "公式ニュース",
+          "checkedAt": "2026-11-21T07:27:37.505Z"
+        },
+        {
+          "url": "https://www.fmnagasaki.co.jp/timetable/?date=20261127",
+          "type": "放送局番組表",
+          "checkedAt": "2026-11-21T07:27:37.505Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T07:27:37.505Z",
       "timings": [],
       "revision": 1,
       "present": true
