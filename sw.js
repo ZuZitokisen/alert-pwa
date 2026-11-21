@@ -1,7 +1,7 @@
 /* Static schedule shell only, scoped to this GitHub Pages project. Push is opt-in through configured backend. */
-const CACHE='alert-pwa-static-shell-v7-34';
+const CACHE='alert-pwa-static-shell-v7-35';
 const BASE=new URL('./',self.location.href);
-const FILES=['./furin-glass-chime.wav?v=0.7.34','./furin-launch-logo.png?v=0.7.34','./release-check.js?v=0.7.34','./push-config.js','./push-client.js','./','./index.html','./app.js?v=0.7.34','./pwa-update.js?v=0.7.34','./feature-core.js','./calendar-subscriptions.js?v=0.7.34','./artist-config.js?v=0.7.34','./schedule-store.js?v=0.7.34','./style.css?v=0.7.34','./manifest.webmanifest?v=0.7.34','./icon.svg?v=0.7.34','./icon-192.png?v=0.7.34','./icon-512.png?v=0.7.34'];
+const FILES=['./furin-glass-chime.wav?v=0.7.35','./furin-launch-logo.png?v=0.7.35','./release-check.js?v=0.7.35','./push-config.js','./push-client.js','./','./index.html','./app.js?v=0.7.35','./pwa-update.js?v=0.7.35','./feature-core.js','./calendar-subscriptions.js?v=0.7.35','./artist-config.js?v=0.7.35','./schedule-store.js?v=0.7.35','./style.css?v=0.7.35','./manifest.webmanifest?v=0.7.35','./icon.svg?v=0.7.35','./icon-192.png?v=0.7.35','./icon-512.png?v=0.7.35'];
 const URLS=FILES.map(p=>new URL(p,BASE).href);
 // Data is fetched by schedule-store, which validates and keeps its own last-good copy.
 // Do not intercept/cache its requests here: a cache fallback would hide offline status.
@@ -26,7 +26,7 @@ function notificationPayload(value){
  const clean=(text,max)=>typeof text==='string'?text.replace(/[\u0000-\u001f\u007f\u202a-\u202e\u2066-\u2069]/g,' ').slice(0,max):'';
  // Server supplies a stable SHA256 identity, including reminder instant where needed.
  if(typeof value.tag!=='string'||!/^[a-f0-9]{64}$/.test(value.tag))return null;
- return {title:clean(value.title,120)||'予定のお知らせ',options:{body:clean(value.body,500),tag:'alert-'+value.kind+'-'+value.tag,icon:new URL('icon-192.png?v=0.7.34',BASE).href,badge:new URL('icon-192.png?v=0.7.34',BASE).href,data:{url:notificationTarget(value.url)},renotify:false}};
+ return {title:clean(value.title,120)||'予定のお知らせ',options:{body:clean(value.body,500),tag:'alert-'+value.kind+'-'+value.tag,icon:new URL('icon-192.png?v=0.7.35',BASE).href,badge:new URL('icon-192.png?v=0.7.35',BASE).href,data:{url:notificationTarget(value.url)},renotify:false}};
 }
 self.addEventListener('push',event=>{
  let payload;try{const raw=event.data?.text();if(!raw||raw.length>8192)return;payload=notificationPayload(JSON.parse(raw));}catch{return;}
