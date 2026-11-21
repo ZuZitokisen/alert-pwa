@@ -69,15 +69,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-9c1780d13e5bdb8f6933db72cfeba3d943d4a48260dd2f6ca6ef6e2d3c38f
  3f1@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261123T093000Z
 DTEND:20261123T100000Z
 SUMMARY:ちかっぱ祭2026
-DESCRIPTION:私立恵比寿中学の出演時間。\n私立恵比寿中学
- 公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/95687/
+DESCRIPTION:私立恵比寿中学の出演時間。 桜井えまはダン
+ スのみで参加。\n私立恵比寿中学公式サイトで確認。\nh
+ ttps://www.shiritsuebichu.jp/media/95687/\nhttps://www.shiritsuebichu.jp/n
+ ews/16300/
 LOCATION:マリンメッセ福岡B館
 URL:https://www.shiritsuebichu.jp/media/95687/
 STATUS:CONFIRMED
@@ -390,18 +392,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-dabd17c77191d6e2838fc4702d44871c31b90ab1a89ae041cf6ac3b750a08
  db3@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T014213Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T014213Z
-LAST-MODIFIED:20261121T014213Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261122T040000Z
 DTEND:20261122T050000Z
 SUMMARY:namco TOKYOコラボカフェ・プレミアムイベント 私立
  恵比寿中学 トークショー
 DESCRIPTION:12:15開場。主催の更新では6名出演。チケットの
- 空きは未確認。\n私立恵比寿中学の公式スケジュールで
- 確認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.h
- tml\nhttps://www.shiritsuebichu.jp/media/97266/
+ 空きは未確認。 桜井えまは会話を控え、リアクション
+ のみで対応。\n私立恵比寿中学の公式スケジュールで確
+ 認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.html
+ \nhttps://www.shiritsuebichu.jp/media/97266/\nhttps://www.shiritsuebichu.j
+ p/news/16300/
 LOCATION:東急歌舞伎町タワー3F namco TOKYO
 URL:https://www.shiritsuebichu.jp/media/97266/
 STATUS:CONFIRMED
@@ -422,16 +426,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-32103ce02e6c99212d1fcdc97535d50f34c3d5b586f8c809090cac8125e81
  424@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261121T110000Z
 DTEND:20261121T113500Z
 SUMMARY:わーすたpresents にゃんぽこらフェス！vol.3
 DESCRIPTION:グループの出演枠は20:00〜20:25と20:25〜20:35。出
- 演者の変更告知は公式ページを確認。\n私立恵比寿中学
- 公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/96425/
+ 演者の変更告知は公式ページを確認。 桜井えまは一部
+ 演目のみ歌唱、その他はダンスのみで参加。\n私立恵比
+ 寿中学公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/
+ 96425/\nhttps://www.shiritsuebichu.jp/news/16300/
 LOCATION:ステラボール
 URL:https://www.shiritsuebichu.jp/media/96425/
 STATUS:CONFIRMED
@@ -450,15 +456,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-4bad2956467669c4abbe7586ba4c84b43789023cc6ed38a597033a41cd56d
  bf9@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 LIVE
 DESCRIPTION:17:00はイベントの開演。個別出演時間は未確認
- 。\n私立恵比寿中学公式サイトで確認。\nhttps://www.shirits
- uebichu.jp/media/96540/
+ 。 桜井えまは一部演目のみ歌唱、その他はダンスのみ
+ で参加。\n私立恵比寿中学公式サイトで確認。\nhttps://ww
+ w.shiritsuebichu.jp/media/96540/\nhttps://www.shiritsuebichu.jp/news/16300
+ /
 LOCATION:ザ・ガーデンホール
 URL:https://www.shiritsuebichu.jp/media/96540/
 STATUS:CONFIRMED

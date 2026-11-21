@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-gift-ebichu-calendar",
-  "dataGeneratedAt": "2026-11-21T03:12:33Z",
+  "dataVersion": "2026-11-21-ebichu-performance-and-tv",
+  "dataGeneratedAt": "2026-11-21T05:14:45Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "23df96b273d2ab71f7a92855b49f27fce6c8ee84367f537d82792b393768d26d",
+  "inputSha256": "c3f71bda45d8b1897cdc605d2d4dcfaffbee818484ba548b47cd817cec075dd5",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 31,
+      "count": 36,
       "omittedUnknownDate": 0,
-      "sha256": "865a89873a375c68b3f5a577f04e48927c6001612cdc085e9d45627ad81f7669"
+      "sha256": "5a2b57e1964143794e5f8827a1cf828cf45ce308e485e1cb6eb4449134a540d7"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 21,
       "omittedUnknownDate": 0,
-      "sha256": "f829c26679d18ba05447faed99f291c768e8a381fc4c71327dfd3a7b28a464af"
+      "sha256": "a06a54712d1c0483e0a6b8c196df830d5dd6f012bd4620affd1966db5f906095"
     },
     {
       "id": "ebichu-benefit",
@@ -288,7 +288,7 @@
       "path": "calendar-feeds/ebichu-benefit-alerts.ics",
       "count": 6,
       "omittedUnknownDate": 0,
-      "sha256": "07294ded12982760e94cd10b0711a3e18c2ff560e7f1ff134a514a0f6f8f7e84"
+      "sha256": "c5faa2dedc3621f463ee0f3cf130ba73d8337f634b9f0c0226bb2970d6afe170"
     },
     {
       "id": "ebichu-media",
@@ -296,9 +296,9 @@
       "category": "media",
       "label": "私立恵比寿中学 / メディア",
       "path": "calendar-feeds/ebichu-media-alerts.ics",
-      "count": 4,
+      "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "0790099d3b5e9daf991bbb093f41adffaa7c26216892f40a69d46c7ea738be68"
+      "sha256": "dc9ba71d67bc4d505e16cfa7a93e7d67699b875d3276b50971d21a168b9a8801"
     },
     {
       "id": "ebichu-other",

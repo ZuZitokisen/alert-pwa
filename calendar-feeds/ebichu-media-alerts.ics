@@ -59,6 +59,106 @@ DESCRIPTION:SASUKEアイドル予選会2026 激闘の舞台裏完全密着S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-c4b3eb62aa183285a1e1405dbf2365b0145ded658a059eb6a52ea6f84e410
+ 5f9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261121T080000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a36d45e0297be984c1f3524c3a32e81f30566c0539245f2ceba76f3ee3a8e
+ cca@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261121T210000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e956103294816c8bbff551f73d07f1779890600b5759787b7c65ddf2db639
+ c9d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261123T170000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-34057825a912449779655bd2349dfded7c9bfd1574966135136c139c7a069
+ 4d3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261126T000000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6a5744634bdf683daf0ca427354560004b9e8032462e1d1727605983936f8
+ 8ad@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1c525e40772c67c69fa1e3e0cf014897cdfa3ca55120ade794f1710de6bec
  b60@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z
