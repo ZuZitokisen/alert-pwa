@@ -442,3 +442,12 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 
 .notification-switch small{display:inline-block;margin-inline-start:.65em;font-size:.72rem;color:var(--muted)}
 .notification-switch small[hidden]{display:none}
+
+#artist-filters.artist-pills{grid-template-columns:repeat(8,minmax(0,1fr));width:368px}
+#artist-filters::before{width:calc(100% / 8 + 2px)}
+#artist-filters[data-all-selected=true]::before{width:calc(100% + 2px)}
+#artist-filters [data-artist=batten]{--artist-muted:#a4502f;--artist-selected:#f7b183}
+#artist-filters [data-artist=batten] .artist-label{display:none}
+#artist-filters [data-artist=batten] .artist-symbol{width:26px;height:26px}
+:where(:root[data-theme=dark]) #artist-filters>button[data-artist=batten]{--artist-muted:#ec9f77}
+@media(max-width:357px){#artist-filters [data-artist=batten] .artist-symbol{max-width:22px;max-height:22px}}

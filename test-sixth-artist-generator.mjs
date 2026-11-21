@@ -45,7 +45,7 @@ test('current client reads v5 and restores the v4 cache before first network res
  assert.equal(calls.at(-1),'./schedule-data-v4.json');
  const old=saved.get('alert-pwa-curated-calendar-v4');
  payload=v5;
- runInContext(js('artist-config.js'),c);runInContext(js('schedule-store.js'),c);runInContext(js('calendar-subscriptions.js'),c);
+ runInContext(js('artist-config.js'),c);c.ALERT_ARTISTS=c.ALERT_ARTISTS.filter(a=>a.id!=='batten');runInContext(js('schedule-store.js'),c);runInContext(js('calendar-subscriptions.js'),c);
  const response=await c.scheduleRequest('state'),state=await response.json();
  assert.equal(response.ok,true);
  assert.equal(calls.at(-1),'./schedule-data-v5.json');
