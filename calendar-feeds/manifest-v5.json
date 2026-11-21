@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-nonaka-radio",
-  "dataGeneratedAt": "2026-11-21T07:27:37.505Z",
+  "dataVersion": "2026-11-21-tokisen-haretoki-regional",
+  "dataGeneratedAt": "2026-11-21T09:07:20Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "4f1c15d5d0c512159b56c2e745f166e8d05a79fa099e811fe9f9eb481ee0477b",
+  "inputSha256": "c70e5f7b6b53248366db9a84d445b28b4ad677f4b3c988d59b6ac87da30c8721",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 196,
+      "count": 198,
       "omittedUnknownDate": 10,
-      "sha256": "8e9e48cd81d23f0be3e72a3057b38e906b9c6ec64d89ee0456facef353f342b1"
+      "sha256": "f329ad07ed6e521013d30e36cef56fa43e836249709f14d34c03281063d131d1"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media.ics",
-      "count": 121,
+      "count": 123,
       "omittedUnknownDate": 2,
-      "sha256": "e545348aeceb69dcbc8b7c610311db3a8b0654c92f41c5a6331635a5087f5cab"
+      "sha256": "6bab3db76650c93a7f62c4264828443cef0bdcedc14b624f0f721ca2b37e39a8"
     },
     {
       "id": "tokisen-other",

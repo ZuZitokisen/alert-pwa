@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-ebichu-nonaka-radio",
-  "generatedAt": "2026-11-21T07:27:37.505Z",
+  "version": "2026-11-21-tokisen-haretoki-regional",
+  "generatedAt": "2026-11-21T09:07:20Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2234,6 +2234,72 @@
       "revision": 1,
       "present": true,
       "groupId": "rege-release-20261121"
+    },
+    {
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "晴れ ときどき 超ときめき♡宣伝部",
+      "allDay": false,
+      "status": "possible",
+      "category": "RADIO",
+      "revision": 1,
+      "present": true,
+      "deadline": null,
+      "timings": [],
+      "id": "tokisen-haretoki-kbs-kyoto-20261121",
+      "groupId": "tokisen-haretoki-kbs-kyoto-20261121",
+      "start": "2026-11-21T21:30:00+09:00",
+      "end": "2026-11-21T22:00:00+09:00",
+      "location": "KBS京都ラジオ",
+      "note": "11月21日放送分。ラジオ日本の11月21日深夜25:00枠とは別の放送局・放送時刻です。radikoのエリア外聴取は対象プランをご確認ください。",
+      "evidence": "放送局の日付指定のradiko番組表で確認。アーティスト公式カレンダーでは当該局の時刻は未確認。",
+      "sourceUrl": "https://radiko.jp/mobile/events/14214492",
+      "sources": [
+        {
+          "url": "https://radiko.jp/mobile/events/14214492",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-21T09:07:20Z"
+        },
+        {
+          "url": "https://radiko.jp/index/JP26/",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-21T09:07:20Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T09:07:20Z"
+    },
+    {
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "晴れ ときどき 超ときめき♡宣伝部",
+      "allDay": false,
+      "status": "possible",
+      "category": "RADIO",
+      "revision": 1,
+      "present": true,
+      "deadline": null,
+      "timings": [],
+      "id": "tokisen-haretoki-gifu-20261121",
+      "groupId": "tokisen-haretoki-gifu-20261121",
+      "start": "2026-11-21T22:30:00+09:00",
+      "end": "2026-11-21T23:00:00+09:00",
+      "location": "ぎふチャンラジオ",
+      "note": "11月21日放送分。ラジオ日本の11月21日深夜25:00枠とは別の放送局・放送時刻です。radikoのエリア外聴取は対象プランをご確認ください。",
+      "evidence": "放送局の日付指定のradiko番組表で確認。アーティスト公式カレンダーでは当該局の時刻は未確認。",
+      "sourceUrl": "https://radiko.jp/mobile/events/14154458",
+      "sources": [
+        {
+          "url": "https://radiko.jp/mobile/events/14154458",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-21T09:07:20Z"
+        },
+        {
+          "url": "https://www.zf-web.com/radio/regular/tokisen/",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-21T09:07:20Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T09:07:20Z"
     },
     {
       "id": "tokisen-media-508342-2026-11-22",
