@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-batten-calendar-updates",
-  "generatedAt": "2026-11-21T19:16:34.909Z",
+  "version": "2026-11-22-radio-and-batten-natslive",
+  "generatedAt": "2026-11-21T21:17:40.778Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2664,7 +2664,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "ザ・ガーデンホール",
-      "note": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。 ドワンゴの配信タイムテーブルで、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。",
+      "note": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。 ドワンゴの配信タイムテーブルで、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。 イープラスの現地公演一般発売は予定枚数終了。他の販売元や配信チケットの状況は別。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/news/item-716/",
       "sources": [
@@ -2687,9 +2687,14 @@
           "url": "https://live.nicovideo.jp/watch/lv351834212",
           "type": "配信ページ",
           "checkedAt": "2026-11-21T19:16:34.795Z"
+        },
+        {
+          "url": "https://eplus.jp/sf/detail/4613510001",
+          "type": "販売元の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
         }
       ],
-      "checkedAt": "2026-11-21T19:16:34.795Z",
+      "checkedAt": "2026-11-21T21:17:40.778Z",
       "timings": [
         {
           "label": "全体開場",
@@ -3532,44 +3537,40 @@
       "id": "rege-shiraishi-mbs-20261129",
       "source": "curated-calendar",
       "artistId": "re-ge",
-      "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-      "start": "2026-11-29T01:30:00+09:00",
-      "end": "2026-11-29T04:30:00+09:00",
+      "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+      "start": null,
+      "end": null,
       "allDay": false,
-      "status": "confirmed",
+      "status": "unknown",
       "category": "RADIO",
-      "location": "MBSラジオ",
-      "note": "",
-      "evidence": "本人側の公式発表で確認。",
+      "location": "",
+      "note": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。",
+      "evidence": "土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。",
       "sourceUrl": "https://re-ge.com/schedule/",
       "sources": [
         {
           "url": "https://re-ge.com/schedule/",
           "type": "artist_official_calendar",
           "checkedAt": "2026-11-11T09:29:45Z"
-        }
-      ],
-      "checkedAt": "2026-11-11T09:29:45Z",
-      "timings": [
-        {
-          "label": "放送開始",
-          "kind": "broadcast_start",
-          "at": "2026-11-29T01:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
         },
         {
-          "label": "放送終了",
-          "kind": "broadcast_end",
-          "at": "2026-11-29T04:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
+          "url": "https://battengirls.com/contents/1095110",
+          "type": "時刻・媒体の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
+        },
+        {
+          "url": "https://www.mbs1179.com/ore/",
+          "type": "放送局の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
         }
       ],
+      "checkedAt": "2026-11-21T21:17:40.778Z",
+      "timings": [],
       "deadline": null,
       "revision": 1,
       "present": true,
-      "groupId": "rege-shiraishi-mbs-20261129"
+      "groupId": "rege-shiraishi-mbs-20261129",
+      "dateLabel": "日時未確認"
     },
     {
       "id": "rege-bigbenefits-20261129-86fdf75113",
@@ -4882,44 +4883,40 @@
       "id": "rege-shiraishi-mbs-20261206",
       "source": "curated-calendar",
       "artistId": "re-ge",
-      "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-      "start": "2026-12-06T01:30:00+09:00",
-      "end": "2026-12-06T04:30:00+09:00",
+      "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+      "start": null,
+      "end": null,
       "allDay": false,
-      "status": "confirmed",
+      "status": "unknown",
       "category": "RADIO",
-      "location": "MBSラジオ",
-      "note": "",
-      "evidence": "本人側の公式発表で確認。",
+      "location": "",
+      "note": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。",
+      "evidence": "土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。",
       "sourceUrl": "https://re-ge.com/schedule/",
       "sources": [
         {
           "url": "https://re-ge.com/schedule/",
           "type": "artist_official_calendar",
           "checkedAt": "2026-11-11T09:29:45Z"
-        }
-      ],
-      "checkedAt": "2026-11-11T09:29:45Z",
-      "timings": [
-        {
-          "label": "放送開始",
-          "kind": "broadcast_start",
-          "at": "2026-12-06T01:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
         },
         {
-          "label": "放送終了",
-          "kind": "broadcast_end",
-          "at": "2026-12-06T04:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
+          "url": "https://battengirls.com/contents/1095110",
+          "type": "時刻・媒体の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
+        },
+        {
+          "url": "https://www.mbs1179.com/ore/",
+          "type": "放送局の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
         }
       ],
+      "checkedAt": "2026-11-21T21:17:40.778Z",
+      "timings": [],
       "deadline": null,
       "revision": 1,
       "present": true,
-      "groupId": "rege-shiraishi-mbs-20261206"
+      "groupId": "rege-shiraishi-mbs-20261206",
+      "dateLabel": "日時未確認"
     },
     {
       "id": "tokisen-media-1039348-2026-12-06",
@@ -5313,44 +5310,40 @@
       "id": "rege-shiraishi-mbs-20261213",
       "source": "curated-calendar",
       "artistId": "re-ge",
-      "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-      "start": "2026-12-13T01:30:00+09:00",
-      "end": "2026-12-13T04:30:00+09:00",
+      "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+      "start": null,
+      "end": null,
       "allDay": false,
-      "status": "confirmed",
+      "status": "unknown",
       "category": "RADIO",
-      "location": "MBSラジオ",
-      "note": "",
-      "evidence": "本人側の公式発表で確認。",
+      "location": "",
+      "note": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。",
+      "evidence": "土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。",
       "sourceUrl": "https://re-ge.com/schedule/",
       "sources": [
         {
           "url": "https://re-ge.com/schedule/",
           "type": "artist_official_calendar",
           "checkedAt": "2026-11-11T09:29:45Z"
-        }
-      ],
-      "checkedAt": "2026-11-11T09:29:45Z",
-      "timings": [
-        {
-          "label": "放送開始",
-          "kind": "broadcast_start",
-          "at": "2026-12-13T01:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
         },
         {
-          "label": "放送終了",
-          "kind": "broadcast_end",
-          "at": "2026-12-13T04:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
+          "url": "https://battengirls.com/contents/1095110",
+          "type": "時刻・媒体の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
+        },
+        {
+          "url": "https://www.mbs1179.com/ore/",
+          "type": "放送局の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
         }
       ],
+      "checkedAt": "2026-11-21T21:17:40.778Z",
+      "timings": [],
       "deadline": null,
       "revision": 1,
       "present": true,
-      "groupId": "rege-shiraishi-mbs-20261213"
+      "groupId": "rege-shiraishi-mbs-20261213",
+      "dateLabel": "日時未確認"
     },
     {
       "id": "tokisen-christmas-2026-2026-12-13",
@@ -5969,44 +5962,40 @@
       "id": "rege-shiraishi-mbs-20261220",
       "source": "curated-calendar",
       "artistId": "re-ge",
-      "title": "白石るり出演 オレたちゴチャ・まぜっ！集まれヤンヤン",
-      "start": "2026-12-20T01:30:00+09:00",
-      "end": "2026-12-20T04:30:00+09:00",
+      "title": "白石るり「オレたちゴチャ・まぜっ！」出演日未確認",
+      "start": null,
+      "end": null,
       "allDay": false,
-      "status": "confirmed",
+      "status": "unknown",
       "category": "RADIO",
-      "location": "MBSラジオ",
-      "note": "",
-      "evidence": "本人側の公式発表で確認。",
+      "location": "",
+      "note": "掲載していた日時はMBS・radikoの放送枠と異なるため取り下げ。白石るりの個別出演日・媒体は未確認。番組の中止を示すものではありません。",
+      "evidence": "土曜25:30はRadiotalk生配信、月曜25:30はMBS・radiko。番組の定例枠は個別出演を示しません。",
       "sourceUrl": "https://re-ge.com/schedule/",
       "sources": [
         {
           "url": "https://re-ge.com/schedule/",
           "type": "artist_official_calendar",
           "checkedAt": "2026-11-11T09:29:45Z"
-        }
-      ],
-      "checkedAt": "2026-11-11T09:29:45Z",
-      "timings": [
-        {
-          "label": "放送開始",
-          "kind": "broadcast_start",
-          "at": "2026-12-20T01:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
         },
         {
-          "label": "放送終了",
-          "kind": "broadcast_end",
-          "at": "2026-12-20T04:30:00+09:00",
-          "note": "",
-          "status": "confirmed"
+          "url": "https://battengirls.com/contents/1095110",
+          "type": "時刻・媒体の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
+        },
+        {
+          "url": "https://www.mbs1179.com/ore/",
+          "type": "放送局の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
         }
       ],
+      "checkedAt": "2026-11-21T21:17:40.778Z",
+      "timings": [],
       "deadline": null,
       "revision": 1,
       "present": true,
-      "groupId": "rege-shiraishi-mbs-20261220"
+      "groupId": "rege-shiraishi-mbs-20261220",
+      "dateLabel": "日時未確認"
     },
     {
       "id": "tokisen-media-1039348-2026-12-20",
@@ -12873,14 +12862,14 @@
       "end": null,
       "location": "ザ・ガーデンホール",
       "sourceUrl": "https://madeintohoku.com/contents/1117445",
-      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。 ドワンゴの配信タイムテーブルで、出演枠は19:40〜20:10。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。",
+      "note": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。 ドワンゴの配信タイムテーブルで、出演枠は19:40〜20:10。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。 イープラスの現地公演一般発売は予定枚数終了。他の販売元や配信チケットの状況は別。",
       "evidence": "本人公式の開催日・本文記載を確認。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-21T19:16:34.795Z",
+      "checkedAt": "2026-11-21T21:17:40.778Z",
       "timings": [
         {
           "label": "東北産CD先行販売開始",
@@ -12979,6 +12968,11 @@
           "url": "https://live.nicovideo.jp/watch/lv351834212",
           "type": "配信ページ",
           "checkedAt": "2026-11-21T19:16:34.795Z"
+        },
+        {
+          "url": "https://eplus.jp/sf/detail/4613510001",
+          "type": "販売元の公式案内",
+          "checkedAt": "2026-11-21T21:17:40.778Z"
         }
       ]
     },
