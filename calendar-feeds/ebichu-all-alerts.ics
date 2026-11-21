@@ -30,6 +30,35 @@ DESCRIPTION:artistspoken「幼馴染なふたり」
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-7dd97459939d55edc2e6cce001402a38ef1500761714d117703d5002667f7
+ 6a3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261206T140000Z
+DTEND:20261206T145400Z
+SUMMARY:SASUKEアイドル予選会2026 激闘の舞台裏完全密着SP
+DESCRIPTION:風見和香・桜井えまが出演。\n私立恵比寿中学
+ の公式サイトで確認。\nhttps://www.shiritsuebichu.jp/news/16291/
+LOCATION:BS-TBS
+URL:https://www.shiritsuebichu.jp/news/16291/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:SASUKEアイドル予選会2026 激闘の舞台裏完全密着S
+ P
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SASUKEアイドル予選会2026 激闘の舞台裏完全密着S
+ P
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-cbd77b17ee544e4f162cd1ac0676cd527c8786f31c688546e7b5b7ae24f7f
  af7@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T014213Z
@@ -287,6 +316,186 @@ DESCRIPTION:大学芸会2027「This is GR8」プレイガイド2次先行
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-784de01d5d0e8d829e5b2fef142c1e01e52d566a87bcad72d65bbce90699d
+ 346@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261204T043000Z
+SUMMARY:舞台「けものフレンズ」～きみをむちゅうにそう
+ さくちゅう!?～ A1公演
+DESCRIPTION:出演者は公演公式の案内を確認。開場時刻は客
+ 席開場。\n私立恵比寿中学の公式サイトで確認。\nhttps:/
+ /kemono-friends-butai.jp/\nhttps://www.shiritsuebichu.jp/news/16091/
+LOCATION:品川プリンスホテル ステラボール
+URL:https://www.shiritsuebichu.jp/news/16091/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT5H30M
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ A1公演
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ A1公演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c21126e6ae7a560be3d0a6777b1ca4ca0e440c61f69ae0c98e43cbddadb81
+ 21a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261205T073000Z
+SUMMARY:舞台「けものフレンズ」～きみをむちゅうにそう
+ さくちゅう!?～ A2公演
+DESCRIPTION:出演者は公演公式の案内を確認。開場時刻は客
+ 席開場。\n私立恵比寿中学の公式サイトで確認。\nhttps:/
+ /kemono-friends-butai.jp/\nhttps://www.shiritsuebichu.jp/news/16091/
+LOCATION:品川プリンスホテル ステラボール
+URL:https://www.shiritsuebichu.jp/news/16091/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT8H30M
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ A2公演
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ A2公演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b9805b0e8a2dc6e3bfcb5b92bee4f6c8dd0b594c34d30b6e041ac00b06e61
+ 975@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261204T090000Z
+SUMMARY:舞台「けものフレンズ」～きみをむちゅうにそう
+ さくちゅう!?～ B1公演
+DESCRIPTION:出演者は公演公式の案内を確認。開場時刻は客
+ 席開場。\n私立恵比寿中学の公式サイトで確認。\nhttps:/
+ /kemono-friends-butai.jp/\nhttps://www.shiritsuebichu.jp/news/16091/
+LOCATION:品川プリンスホテル ステラボール
+URL:https://www.shiritsuebichu.jp/news/16091/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ B1公演
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ B1公演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7680b5209c12363bf1a7595ccb770946978c4e8567407e09a05f9261d0bbf
+ bc7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261206T030000Z
+SUMMARY:舞台「けものフレンズ」～きみをむちゅうにそう
+ さくちゅう!?～ B2公演
+DESCRIPTION:出演者は公演公式の案内を確認。開場時刻は客
+ 席開場。\n私立恵比寿中学の公式サイトで確認。\nhttps:/
+ /kemono-friends-butai.jp/\nhttps://www.shiritsuebichu.jp/news/16091/
+LOCATION:品川プリンスホテル ステラボール
+URL:https://www.shiritsuebichu.jp/news/16091/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT4H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ B2公演
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ B2公演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d029ec50a8ccd548d685b81886a01cd4a17f724e3c128ae20ec0eac4e0ba1
+ c18@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261205T030000Z
+SUMMARY:舞台「けものフレンズ」～きみをむちゅうにそう
+ さくちゅう!?～ C1公演
+DESCRIPTION:出演者は公演公式の案内を確認。開場時刻は客
+ 席開場。\n私立恵比寿中学の公式サイトで確認。\nhttps:/
+ /kemono-friends-butai.jp/\nhttps://www.shiritsuebichu.jp/news/16091/
+LOCATION:品川プリンスホテル ステラボール
+URL:https://www.shiritsuebichu.jp/news/16091/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT4H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ C1公演
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ C1公演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d3a65d73ad2ac275718e6fc6ed1e6d788de7e6121cf8b0aa6da375c73539c
+ cc2@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261206T073000Z
+SUMMARY:舞台「けものフレンズ」～きみをむちゅうにそう
+ さくちゅう!?～ C2公演
+DESCRIPTION:出演者は公演公式の案内を確認。開場時刻は客
+ 席開場。\n私立恵比寿中学の公式サイトで確認。\nhttps:/
+ /kemono-friends-butai.jp/\nhttps://www.shiritsuebichu.jp/news/16091/
+LOCATION:品川プリンスホテル ステラボール
+URL:https://www.shiritsuebichu.jp/news/16091/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT8H30M
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ C2公演
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
+ うさくちゅう!?～ C2公演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-014eb6e145db0ed454941fb29da78bd9078103a82bbe6e0d9ac3aa2c6702c
  d95@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T014213Z
@@ -541,6 +750,115 @@ BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
 DESCRIPTION:「スーパーブルー」リリースイベント
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2f09280b32711803976e96f08710d83e23a01a66060b59f3ab9b887cd0978
+ 797@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261220T120000Z
+SUMMARY:SASUKEアイドル予選会2026完全版
+DESCRIPTION:風見和香・桜井えまが出演。放送終了時刻は未
+ 確認。\n私立恵比寿中学の公式サイトで確認。\nhttps://ww
+ w.shiritsuebichu.jp/news/16291/
+LOCATION:CS TBSチャンネル1
+URL:https://www.shiritsuebichu.jp/news/16291/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT13H
+DESCRIPTION:SASUKEアイドル予選会2026完全版
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SASUKEアイドル予選会2026完全版
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-097714a01f3b4de3b035e6cd5acf3c2bf1619e9063721758f0155b6a3ceb3
+ 8be@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261121T010000Z
+SUMMARY:えびちゅうのトンチキ☆クリスマス！ 一般発売開
+ 始（先着）
+DESCRIPTION:対象公演は12月26日。空席状況は公式販売先で
+ 確認。\n私立恵比寿中学の公式サイトで確認。\nhttps://w.
+ pia.jp/t/ebichu/\nhttps://www.shiritsuebichu.jp/news/16089/
+LOCATION:チケットぴあ
+URL:https://www.shiritsuebichu.jp/news/16089/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 一般発
+ 売開始（先着）
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 一般発
+ 売開始（先着）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-15bd5b19a408b2791cd0d1d42633f17bf847ae36b24ddd12856d59b9ca6be
+ cc3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261226T060000Z
+SUMMARY:えびちゅうのトンチキ☆クリスマス！ 第1部
+DESCRIPTION:私立恵比寿中学の公式サイトで確認。\nhttps://ww
+ w.shiritsuebichu.jp/news/16089/
+LOCATION:EX THEATER ROPPONGI
+URL:https://www.shiritsuebichu.jp/news/16089/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT7H
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 第1部
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 第1部
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-54ca5b9705990b5e03b22a1402e5893377944626b0df8034377d99284fd31
+ d4b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261226T093000Z
+SUMMARY:えびちゅうのトンチキ☆クリスマス！ 第2部
+DESCRIPTION:私立恵比寿中学の公式サイトで確認。\nhttps://ww
+ w.shiritsuebichu.jp/news/16089/
+LOCATION:EX THEATER ROPPONGI
+URL:https://www.shiritsuebichu.jp/news/16089/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10H30M
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 第2部
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 第2部
 END:VALARM
 END:VEVENT
 END:VCALENDAR

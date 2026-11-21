@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-cafe-cbc",
-  "dataGeneratedAt": "2026-11-21T01:42:13Z",
+  "dataVersion": "2026-11-21-gift-ebichu-calendar",
+  "dataGeneratedAt": "2026-11-21T03:12:33Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "aaa0455e9b535aebd10a4602c4a01bb0bc552049fc81149babb5f69a9caa5f2c",
+  "inputSha256": "4efbfbcabec54de5dc451ba775a9ae9d8890c5e40a9d2319e466e4b1f6013fe1",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 195,
+      "count": 196,
       "omittedUnknownDate": 10,
-      "sha256": "e9050c2913d3d14fc21a587a915ab98cfc489671ddcee2c28fd2b1b7e26b5156"
+      "sha256": "8e9e48cd81d23f0be3e72a3057b38e906b9c6ec64d89ee0456facef353f342b1"
     },
     {
       "id": "tokisen-live",
@@ -26,9 +26,9 @@
       "category": "live",
       "label": "超ときめき♡宣伝部 / ライブ・イベント",
       "path": "calendar-feeds/tokisen-live.ics",
-      "count": 11,
+      "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "b26557703cffe566bc13cbf91fc0e7d6f8ed87b455a89ebc2fad528a1d2106b6"
+      "sha256": "9a7a415ae97d7d1bb24b796b0de516192d31cc590cd03a7a5a49f530e4fc230d"
     },
     {
       "id": "tokisen-benefit",
