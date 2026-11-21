@@ -44,8 +44,8 @@ test('launch uses the exact dedicated white backdrop, centered asset and indepen
  assert.match(html,/prefers-reduced-motion:reduce/);
  assert.match(html,/#furin-launch-content\{[^}]*position:relative;top:calc\(0px - clamp\(28px,7vh,72px\)\);top:calc\(0px - clamp\(28px,7svh,72px\)\)/);
  assert.match(html,/@keyframes furin-launch-sway.*skewX/);
- assert.match(html,/#furin-launch\{opacity:0;pointer-events:none;transition-delay:560ms\}/);
- assert.match(source,/setTimeout\(\(\)=>finish\(true\),930\)/);
+ assert.match(html,/#furin-launch\{opacity:0;pointer-events:none;transition-delay:1120ms\}/);
+ assert.match(source,/setTimeout\(\(\)=>finish\(true\),1580\)/);
  assert.match(html,/<span id="furin-launch-cue">TAP TO START<\/span>/);
  assert.match(html,/furin-launch-logo\.png\?v=0\.7\.30/);
  assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.30/);

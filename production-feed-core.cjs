@@ -110,15 +110,19 @@ function reconcile(data,previous,options) {
   const body={schemaVersion:1,namespace:NAMESPACE,dataVersion:data.version,dataGeneratedAt:data.generatedAt,inputSha256,coverage:data.coverage,records:[...map.values()].sort((a,b)=>a.key<b.key?-1:a.key>b.key?1:0)};
   return {...body,integritySha256:hash(canonical(body))};
 }
-function buildFeed(state,presetId){validateState(state);const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
- const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Alert PWA//Public Calendar Subscription//JA','CALSCALE:GREGORIAN',`X-WR-CALNAME:${F.escapeICSText(preset.label)}`];let count=0,omittedUnknownDate=0;
+function buildFeed(state,presetId,{alerts=false}={}){validateState(state);const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Alert PWA//Public Calendar Subscription//JA','CALSCALE:GREGORIAN',`X-WR-CALNAME:${F.escapeICSText(preset.label+(alerts?'（通知あり）':''))}`];let count=0,omittedUnknownDate=0;
  for(const r of state.records){if(!r.memberships.includes(presetId))continue;const e=r.event,t=e.start?e:r.lastTiming;if(!t){omittedUnknownDate++;continue;}
   const moved=!groups(e).includes(presetId),removedDate=!e.start,cancelled=moved||removedDate||e.status==='cancelled';
   const notes=[moved?'区分変更のためこの購読から取り下げ。予定自体の中止ではありません。':'',removedDate?'日時未定に変更したため旧日時の配信を取り下げ。予定自体の中止ではありません。':'',e.status==='missing'?'掲載消失。中止とは未確認です。最後に確認した情報を保持しています。':'',day(t.start)&&!t.allDay?'時刻未定。終日開催という意味ではありません。':'',e.publicNote,...e.sourceUrls].filter(Boolean);
   const suffix=moved||removedDate?'（旧掲載取り下げ）':e.status==='cancelled'?'（中止）':e.status==='possible'?'（かも？）':e.status==='missing'?'（掲載消失・未確認）':e.status==='unknown'?'（未確認）':'';
   lines.push('BEGIN:VEVENT',`UID:${r.uid}`,`DTSTAMP:${stamp(r.modified)}`,`CREATED:${stamp(r.created)}`,`LAST-MODIFIED:${stamp(r.modified)}`,`SEQUENCE:${r.sequence}`,day(t.start)?`DTSTART;VALUE=DATE:${t.start.replace(/-/g,'')}`:`DTSTART:${stamp(t.start)}`);
   if(t.end)lines.push(day(t.end)?`DTEND;VALUE=DATE:${t.end.replace(/-/g,'')}`:`DTEND:${stamp(t.end)}`);
-  lines.push(`SUMMARY:${F.escapeICSText(e.title+suffix+(day(t.start)&&!t.allDay?'（時刻未定）':''))}`,`DESCRIPTION:${F.escapeICSText(notes.join('\n'))}`,`LOCATION:${F.escapeICSText(e.location)}`,`URL:${primarySourceUrl(e)}`,`STATUS:${cancelled?'CANCELLED':e.status==='confirmed'?'CONFIRMED':'TENTATIVE'}`,'TRANSP:TRANSPARENT','END:VEVENT');count++;
+  lines.push(`SUMMARY:${F.escapeICSText(e.title+suffix+(day(t.start)&&!t.allDay?'（時刻未定）':''))}`,`DESCRIPTION:${F.escapeICSText(notes.join('\n'))}`,`LOCATION:${F.escapeICSText(e.location)}`,`URL:${primarySourceUrl(e)}`,`STATUS:${cancelled?'CANCELLED':e.status==='confirmed'?'CONFIRMED':'TENTATIVE'}`,'TRANSP:TRANSPARENT');
+  if(alerts&&!cancelled&&e.status==='confirmed'&&instant(e.start)&&!e.allDay){
+   lines.push('BEGIN:VALARM','ACTION:DISPLAY','TRIGGER:-PT1H',`DESCRIPTION:${F.escapeICSText(e.title)}`,'END:VALARM');
+  }
+  lines.push('END:VEVENT');count++;
  }
  lines.push('END:VCALENDAR');return {ics:lines.map(F.foldICSLine).join('\r\n')+'\r\n',count,omittedUnknownDate};
 }
@@ -142,6 +146,15 @@ function build(data,previous,options){
  files['state.json']=JSON.stringify(state,null,2)+'\n';files['manifest.json']=JSON.stringify(legacyManifest,null,2)+'\n';files['manifest-v2.json']=JSON.stringify(v2Manifest,null,2)+'\n';
  if(version>=3)files['manifest-v3.json']=JSON.stringify(v3Manifest,null,2)+'\n';
  if(version>=4)files['manifest-v4.json']=JSON.stringify(v4Manifest,null,2)+'\n';
- if(version===5)files['manifest-v5.json']=JSON.stringify(manifest,null,2)+'\n';
+ if(version===5){
+  files['manifest-v5.json']=JSON.stringify(manifest,null,2)+'\n';
+  const alertFeeds=feeds.map(({id,artist,category,label})=>{
+   const f=buildFeed(state,id,{alerts:true}),name=id+'-alerts.ics';
+   files[name]=f.ics;
+   return {id,artist,category,label,path:'calendar-feeds/'+name,count:f.count,omittedUnknownDate:f.omittedUnknownDate,sha256:hash(f.ics)};
+  });
+  const alertsManifest={...manifest,alertOffsetMinutes:60,feeds:alertFeeds};
+  files['manifest-alerts-v5.json']=JSON.stringify(alertsManifest,null,2)+'\n';
+ }
  return {state,manifest,v4Manifest,v4Data,v4DataJson:JSON.stringify(v4Data,null,2)+'\n',v3Manifest,v3Data,v3DataJson:JSON.stringify(v3Data,null,2)+'\n',v2Manifest,v2Data,v2DataJson:JSON.stringify(v2Data,null,2)+'\n',legacyManifest,legacyData,legacyDataJson:JSON.stringify(legacyData,null,2)+'\n',files};}
 module.exports={NAMESPACE,ARTISTS,V4_ARTISTS,V3_ARTISTS,V2_ARTISTS,LEGACY_ARTISTS,PRESETS,canonical,hash,clientIdentity,identity,uid,validateInput,validateState,reconcile,buildFeed,legacyProjection,v2Projection,v3Projection,v4Projection,build};
