@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-artist",
-  "dataGeneratedAt": "2026-11-21T17:32:09Z",
+  "dataVersion": "2026-11-22-batten-calendar-updates",
+  "dataGeneratedAt": "2026-11-21T19:16:34.909Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "d77fe0eb25160fa47244dbde63774bf487f77813a2a0bafef6fbaee29c4cd9b4",
+  "inputSha256": "69eec29800d5e7c1895c760718eca58cee69b42e5899df55e4d374d442b9338e",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all-alerts.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "18afdb6e4f3df9d49364e3979205e80d5009b37214d7f54ae78cb6e88ab72c29"
+      "sha256": "186c1245f3bd172e447dfc2a1d1f6d882f2dff1b57134e20c306d5b14b4b493b"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live-alerts.ics",
       "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "062140f87b77fe8e1d253c51431fb532b9b8ca2df3c771bad2933671361b2529"
+      "sha256": "e3e12374601449ccb386c57af8a4edbccb2b469763573fc31238f18d035de38e"
     },
     {
       "id": "re-ge-benefit",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
       "count": 27,
       "omittedUnknownDate": 0,
-      "sha256": "6c7222f28bd89625a7da6f258383a0d9b5dc8ab17f7e2aa943f5373f4046560a"
+      "sha256": "2614cf56196c3400318defd7099c5eb96b048b4cc0c0b11259e50d167fb9ab98"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live-alerts.ics",
       "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "f2685a01efb29d52eef7a6cab49820cc7ee50a6cf1c5b518d66c6889b090f0c6"
+      "sha256": "d9752fe6e2b40435c84e88672568ea2ba6e9f78f896985117a1e9582fc1e77a1"
     },
     {
       "id": "tohokusan-benefit",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all-alerts.ics",
       "count": 59,
       "omittedUnknownDate": 0,
-      "sha256": "2118bd8b4796e851b45d4f45617599a362015b169bf137639a312f72dc43d453"
+      "sha256": "5a4037025640d1fe0294374070e4d06a1da8530e80d27414305aa77df19a9b6e"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 28,
       "omittedUnknownDate": 0,
-      "sha256": "e3b334aee13758882a67e8db19469ebd6aff3dd7511424a46c2f898cc43b08de"
+      "sha256": "13208b3e59c1068cf4629b6065579c1644a0bffcf4ecdbe3602a5d6a0074293e"
     },
     {
       "id": "ebichu-benefit",

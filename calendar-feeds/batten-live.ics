@@ -40,15 +40,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-877518658be4b24bb2c183ce0b79525be462744ad105641b27c9cb1de0543
  000@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T173209Z
+DTSTAMP:20261121T191634Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261121T173209Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:1
 DTSTART:20261123T090500Z
 DTEND:20261123T093000Z
 SUMMARY:ちかっぱ祭2026
-DESCRIPTION:ばってん少女隊の出演枠。\nばってん少女隊公
- 式の案内。\nhttps://battengirls.com/contents/1101652
+DESCRIPTION:ばってん少女隊の出演枠。 ニコ生は11:00配信開
+ 始。各ライブの後半はニコニコプレミアム会員向け。\n
+ ばってん少女隊公式の案内。\nhttps://battengirls.com/contents/
+ 1101652\nhttps://live.nicovideo.jp/watch/lv351793553\nhttps://prtimes.jp/m
+ ain/html/rd/p/000001448.000056982.html
 LOCATION:マリンメッセ福岡B館
 URL:https://battengirls.com/contents/1101652
 STATUS:CONFIRMED
@@ -87,6 +90,176 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-13372b91fec899f56b785cc47b67c9d9e141755b4fcf96ba89fa41fd36f2d
+ ec3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。 撮影可のスペシャルカーテンコ
+ ールあり。 VIP席・全通チケット対象のお見送りに春乃
+ きいなが参加。\nばってん少女隊公式の案内。\nhttps://ba
+ ttengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/mahoikusta
+ ge/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-966892a2c28f6f67366c06be765138ae7cc23f8adde9a76033baf5a8f0699
+ 652@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270109T040000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。\nばってん少女隊公式の案内。\nht
+ tps://battengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/ma
+ hoikustage/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-11b7d4fb8f298c6b0d9b386876fa93d5d2e305c6fd92e1f684ba8e924e66c
+ 5c0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270109T090000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。 撮影可のスペシャルカーテンコ
+ ールあり。 VIP席・全通チケット対象のお見送りに春乃
+ きいなが参加。\nばってん少女隊公式の案内。\nhttps://ba
+ ttengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/mahoikusta
+ ge/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a77926a72931ded4ae6807ceaac15b1e66a75d58801c8708b8ca192e7d016
+ 450@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270110T040000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。 VIP席・全通チケット対象のお見
+ 送りに春乃きいなが参加。\nばってん少女隊公式の案内
+ 。\nhttps://battengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/s
+ tage/mahoikustage/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5542990994f9e036e847af4f765392ca738665fd2895c88a2c1c3eff8e346
+ c7d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270110T090000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。 撮影可のスペシャルカーテンコ
+ ールあり。\nばってん少女隊公式の案内。\nhttps://battengi
+ rls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/mahoikustage/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9de1330ee61d5e6860486c0c15b2fc2de367e0739ea95770e05bb54a19261
+ 43b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270111T040000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。\nばってん少女隊公式の案内。\nht
+ tps://battengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/ma
+ hoikustage/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-57b1c237885e4afcb7f1ec7c6b0e6dade46931c2aae1fefe2fd2da19518d3
+ 5d5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270111T090000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。 撮影可のスペシャルカーテンコ
+ ールあり。 VIP席・全通チケット対象のお見送りに春乃
+ きいなが参加。\nばってん少女隊公式の案内。\nhttps://ba
+ ttengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/mahoikusta
+ ge/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6ee8bbf2ce0e3dbbb9a3aa0fc84c35e22b9fb1b60945d87ebe7444d944b04
+ f8e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270112T090000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。\nばってん少女隊公式の案内。\nht
+ tps://battengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/ma
+ hoikustage/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c33bbc96a1094c20e2db6eb0150020acb7394b6c2462184724689d37e6db5
+ 3d9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T191634Z
+CREATED:20261121T191634Z
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:0
+DTSTART:20270113T053000Z
+SUMMARY:春乃きいな出演 · 魔法少女育成計画 The Stage
+DESCRIPTION:春乃きいなはねむりん役。ロビー開場は45分前
+ 、客席開場は30分前。 VIP席・全通チケット対象の全キ
+ ャストお見送りあり。\nばってん少女隊公式の案内。\nh
+ ttps://battengirls.com/contents/1109249\nhttps://www.odd-inc.co.jp/stage/m
+ ahoikustage/
+LOCATION:東京・あうるすぽっと
+URL:https://battengirls.com/contents/1109249
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-280a1ef0f0f206163e42103e61d87f9d220a35ba11acf274aaef63419fcc9
  d99@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T173209Z
@@ -106,15 +279,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-b6eb115e6d4d7955610fcbd21e323e6b820082931860cc5c9372e81c395a9
  37a@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T173209Z
+DTSTAMP:20261121T191634Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261121T173209Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T191634Z
+SEQUENCE:1
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ！
  〜
-DESCRIPTION:16:00開場。17:00は公演全体の開演。\nばってん少
- 女隊公式の案内。\nhttps://battengirls.com/contents/1117570
+DESCRIPTION:16:00開場。17:00は公演全体の開演。 ドワンゴの
+ 配信タイムテーブルで、出演枠は18:35〜19:05。5組リレー
+ は19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視
+ 聴可。後半はニコドルの有料会員向け。\nばってん少女
+ 隊公式の案内。\nhttps://battengirls.com/contents/1117493\nhttps://b
+ attengirls.com/contents/1117570\nhttps://live.nicovideo.jp/watch/lv3518342
+ 12\nhttps://prtimes.jp/main/html/rd/p/000001450.000056982.html
 LOCATION:ザ・ガーデンホール
 URL:https://battengirls.com/contents/1117570
 STATUS:CONFIRMED

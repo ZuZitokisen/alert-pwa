@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-artist",
-  "dataGeneratedAt": "2026-11-21T17:32:09Z",
-  "inputSha256": "e0cb5b81269be1f224faaf58602a1eb293473a91fbd0b16c2ae4d21fe800761d",
+  "dataVersion": "2026-11-22-batten-calendar-updates",
+  "dataGeneratedAt": "2026-11-21T19:16:34.909Z",
+  "inputSha256": "ab4c006034da9e99c6874673296647f59a51eb26814014091fe8281a81212ef4",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -118,15 +118,17 @@
         "end": "2026-11-23T18:30:00+09:00",
         "allDay": false,
         "location": "マリンメッセ福岡B館",
-        "publicNote": "ばってん少女隊の出演枠。\nばってん少女隊公式の案内。",
+        "publicNote": "ばってん少女隊の出演枠。 ニコ生は11:00配信開始。各ライブの後半はニコニコプレミアム会員向け。\nばってん少女隊公式の案内。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://battengirls.com/contents/1101652"
+          "https://battengirls.com/contents/1101652",
+          "https://live.nicovideo.jp/watch/lv351793553",
+          "https://prtimes.jp/main/html/rd/p/000001448.000056982.html"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T17:32:09Z",
-      "modified": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T19:16:34.909Z",
       "lastTiming": {
         "start": "2026-11-23T18:05:00+09:00",
         "end": "2026-11-23T18:30:00+09:00",
@@ -135,6 +137,38 @@
       "memberships": [
         "batten-all",
         "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chikappa-benefit-20261123\"]",
+      "uid": "public-v1-695a437bb3885ebec7322c5411a53600d5c5ebeed125165a8a330357f26f709b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chikappa-benefit-20261123",
+        "category": "benefit",
+        "title": "ちかっぱ祭2026 · 2ショット特典会",
+        "start": "2026-11-23T15:30:00+09:00",
+        "end": "2026-11-23T16:30:00+09:00",
+        "allDay": false,
+        "location": "マリンメッセ福岡B館 特典会ブースD",
+        "publicNote": "開始と物販は15:30頃。第85弾生写真3セットにつき特典券1枚。列が途切れたレーンは早く終了する場合あり。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101651"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2026-11-23T15:30:00+09:00",
+        "end": "2026-11-23T16:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
       ]
     },
     {
@@ -426,6 +460,38 @@
       ]
     },
     {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-greatest-ever-show-fc-upgrade-deadline-20261123\"]",
+      "uid": "public-v1-2f594189c117f2b77712395cfe0a61cbeecc693718adbaefb0017ceeca773e47@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-greatest-ever-show-fc-upgrade-deadline-20261123",
+        "category": "benefit",
+        "title": "GREATEST EVER SHOW · FCアップグレード締切",
+        "start": "2026-11-23T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "秘密基地X会員向けの抽選。公式案内に列挙された先行で購入済みのS席のみ、購入した全枚数が対象。追加料金22,000円＋手数料。11/25のプレリザーブ2次先行とは別。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1089240"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2026-11-23T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
       "key": "[\"batten\",\"curated-calendar\",\"batten-greatest-ever-show-presale-deadline-20261125\"]",
       "uid": "public-v1-bf5b0e7cb416cec89f518cc78f5514b41ef783d3f4bdd6cc2679ad043be2f82e@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -455,6 +521,303 @@
       "memberships": [
         "batten-all",
         "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270108-1800\"]",
+      "uid": "public-v1-13372b91fec899f56b785cc47b67c9d9e141755b4fcf96ba89fa41fd36f2dec3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270108-1800",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-08T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。 撮影可のスペシャルカーテンコールあり。 VIP席・全通チケット対象のお見送りに春乃きいなが参加。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-08T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270109-1300\"]",
+      "uid": "public-v1-966892a2c28f6f67366c06be765138ae7cc23f8adde9a76033baf5a8f0699652@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270109-1300",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-09T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-09T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270109-1800\"]",
+      "uid": "public-v1-11b7d4fb8f298c6b0d9b386876fa93d5d2e305c6fd92e1f684ba8e924e66c5c0@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270109-1800",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-09T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。 撮影可のスペシャルカーテンコールあり。 VIP席・全通チケット対象のお見送りに春乃きいなが参加。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-09T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270110-1300\"]",
+      "uid": "public-v1-a77926a72931ded4ae6807ceaac15b1e66a75d58801c8708b8ca192e7d016450@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270110-1300",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-10T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。 VIP席・全通チケット対象のお見送りに春乃きいなが参加。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-10T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270110-1800\"]",
+      "uid": "public-v1-5542990994f9e036e847af4f765392ca738665fd2895c88a2c1c3eff8e346c7d@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270110-1800",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-10T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。 撮影可のスペシャルカーテンコールあり。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-10T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270111-1300\"]",
+      "uid": "public-v1-9de1330ee61d5e6860486c0c15b2fc2de367e0739ea95770e05bb54a1926143b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270111-1300",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-11T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-11T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270111-1800\"]",
+      "uid": "public-v1-57b1c237885e4afcb7f1ec7c6b0e6dade46931c2aae1fefe2fd2da19518d35d5@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270111-1800",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-11T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。 撮影可のスペシャルカーテンコールあり。 VIP席・全通チケット対象のお見送りに春乃きいなが参加。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-11T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270112-1800\"]",
+      "uid": "public-v1-6ee8bbf2ce0e3dbbb9a3aa0fc84c35e22b9fb1b60945d87ebe7444d944b04f8e@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270112-1800",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-12T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-12T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-20270113-1430\"]",
+      "uid": "public-v1-c33bbc96a1094c20e2db6eb0150020acb7394b6c2462184724689d37e6db53d9@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-20270113-1430",
+        "category": "live",
+        "title": "春乃きいな出演 · 魔法少女育成計画 The Stage",
+        "start": "2027-01-13T14:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "東京・あうるすぽっと",
+        "publicNote": "春乃きいなはねむりん役。ロビー開場は45分前、客席開場は30分前。 VIP席・全通チケット対象の全キャストお見送りあり。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249",
+          "https://www.odd-inc.co.jp/stage/mahoikustage/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T19:16:34.909Z",
+      "modified": "2026-11-21T19:16:34.909Z",
+      "lastTiming": {
+        "start": "2027-01-13T14:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
       ]
     },
     {
@@ -598,15 +961,19 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "16:00開場。17:00は公演全体の開演。\nばってん少女隊公式の案内。",
+        "publicNote": "16:00開場。17:00は公演全体の開演。 ドワンゴの配信タイムテーブルで、出演枠は18:35〜19:05。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\nばってん少女隊公式の案内。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://battengirls.com/contents/1117570"
-        ]
+          "https://battengirls.com/contents/1117493",
+          "https://battengirls.com/contents/1117570",
+          "https://live.nicovideo.jp/watch/lv351834212",
+          "https://prtimes.jp/main/html/rd/p/000001450.000056982.html"
+        ],
+        "sourceUrl": "https://battengirls.com/contents/1117570"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T17:32:09Z",
-      "modified": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T19:16:34.909Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -960,16 +1327,19 @@
         "end": "2026-11-23T19:00:00+09:00",
         "allDay": false,
         "location": "マリンメッセ福岡B館",
-        "publicNote": "私立恵比寿中学の出演時間。 桜井えまはダンスのみで参加。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "私立恵比寿中学の出演時間。 桜井えまはダンスのみで参加。 ニコ生は11:00配信開始。各ライブの後半はニコニコプレミアム会員向け。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://live.nicovideo.jp/watch/lv351793553",
+          "https://prtimes.jp/main/html/rd/p/000001448.000056982.html",
           "https://www.shiritsuebichu.jp/media/95687/",
           "https://www.shiritsuebichu.jp/news/16300/"
-        ]
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/95687/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T05:14:45Z",
+      "modified": "2026-11-21T19:16:34.909Z",
       "lastTiming": {
         "start": "2026-11-23T18:30:00+09:00",
         "end": "2026-11-23T19:00:00+09:00",
@@ -2301,16 +2671,19 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "17:00はイベントの開演。個別出演時間は未確認。 桜井えまは一部演目のみ歌唱、その他はダンスのみで参加。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "17:00はイベントの開演。 桜井えまは一部演目のみ歌唱、その他はダンスのみで参加。 ドワンゴの配信タイムテーブルで、出演枠は20:15〜20:45。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://live.nicovideo.jp/watch/lv351834212",
+          "https://prtimes.jp/main/html/rd/p/000001450.000056982.html",
           "https://www.shiritsuebichu.jp/media/96540/",
           "https://www.shiritsuebichu.jp/news/16300/"
-        ]
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96540/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T05:14:45Z",
+      "modified": "2026-11-21T19:16:34.909Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -5588,16 +5961,19 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。\n本人側の公式発表で確認。",
+        "publicNote": "RE-GEの物販：先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。17:00は公演開演時刻であり物販終了時刻ではない。チケット所持確認あり、チケットなしで購入できるのは開演後。準備等で中断・時間変更の場合あり。 ドワンゴの配信タイムテーブルで、出演枠は18:00〜18:30。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://live.nicovideo.jp/watch/lv351834212",
+          "https://prtimes.jp/main/html/rd/p/000001450.000056982.html",
           "https://re-ge.com/news/item-716/",
           "https://re-ge.com/news/item-809/"
-        ]
+        ],
+        "sourceUrl": "https://re-ge.com/news/item-716/"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-19T10:44:22.242Z",
+      "modified": "2026-11-21T19:16:34.909Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -7745,17 +8121,20 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。\n本人公式の開催日・本文記載を確認。",
+        "publicNote": "開場16:00。公演開始時刻であり個別出演時刻ではない。終了未発表。 いぎなり東北産の会場CD販売：先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ次第終了。対象CD購入で限定2Lブロマイド特典（数量限定）。他出演者の物販時間とは別の案内。 東北産の一般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、開場後16:00から、終演後は列が途切れ次第終了。購入時チケット確認あり、チケットなしは開演後から。準備等で一時中断の場合あり。17:00を一般グッズ物販の終了時刻にはしていません。 ドワンゴの配信タイムテーブルで、出演枠は19:40〜20:10。5組リレーは19:10〜19:35。配信は17:00開始、12月1日いっぱいまで視聴可。後半はニコドルの有料会員向け。\n本人公式の開催日・本文記載を確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://live.nicovideo.jp/watch/lv351834212",
           "https://madeintohoku.com/contents/1117445",
           "https://madeintohoku.com/contents/1128759",
-          "https://madeintohoku.com/contents/1129171"
-        ]
+          "https://madeintohoku.com/contents/1129171",
+          "https://prtimes.jp/main/html/rd/p/000001450.000056982.html"
+        ],
+        "sourceUrl": "https://madeintohoku.com/contents/1117445"
       },
-      "sequence": 2,
+      "sequence": 3,
       "created": "2026-11-19T08:45:31.941Z",
-      "modified": "2026-11-19T13:15:00.527Z",
+      "modified": "2026-11-21T19:16:34.909Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -14657,5 +15036,5 @@
       ]
     }
   ],
-  "integritySha256": "ab5b047e0dda1219dfa3f1b7fb1c23500a61a3da35f1170a591f117f2199d251"
+  "integritySha256": "6a9d479be0859db3224323f69026e042a12803d607349173c6bb2c3884fcc624"
 }
