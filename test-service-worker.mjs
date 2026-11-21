@@ -10,7 +10,7 @@ function fixture(){
 test('precache and shell network requests revalidate and include the updater',async()=>{
  const f=fixture();let pending;f.handlers.install({waitUntil:p=>pending=p});await pending;
  const requests=f.calls[0][2];assert.ok(requests.some(r=>new URL(r.url).pathname.endsWith('/pwa-update.js')));assert.ok(requests.every(r=>r.cache==='no-cache'));
- f.handlers.fetch({request:new Request('https://example.com/alert-pwa/app.js?v=0.7.36'),respondWith:p=>pending=p});await pending;assert.equal(f.calls.at(-1)[2].cache,'no-cache');
+ f.handlers.fetch({request:new Request('https://example.com/alert-pwa/app.js?v=0.7.37'),respondWith:p=>pending=p});await pending;assert.equal(f.calls.at(-1)[2].cache,'no-cache');
 });
 test('schedule data is not hidden behind a shell cache',()=>{const f=fixture();let intercepted=false;f.handlers.fetch({request:new Request('https://example.com/alert-pwa/schedule-data.json'),respondWith:()=>intercepted=true});assert.equal(intercepted,false);});
 test('activation only cleans old app shells, never other stores',async()=>{const f=fixture();let pending;f.handlers.activate({waitUntil:p=>pending=p});await pending;assert.deepEqual(f.calls.filter(c=>c[0]==='delete'),[['delete','alert-pwa-static-shell-v4-1']]);assert.ok(!source.includes('localStorage'));assert.ok(!source.includes('indexedDB'));});
@@ -20,27 +20,27 @@ test('only the deliberate message from this app window activates early',async()=
  send({type:'ALERT_PWA_SKIP_WAITING'},'https://example.com/alert-pwa/');await pending;assert.deepEqual(f.calls,[['activate']]);
 });
 
-test('changed shell assets have identical versioned URLs in document and worker',()=>{const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');for(const asset of ['app.js','pwa-update.js','style.css','calendar-subscriptions.js','artist-config.js','schedule-store.js']){assert.ok(html.includes('./'+asset+'?v=0.7.36'));assert.ok(source.includes("'./"+asset+"?v=0.7.36'"));}});
+test('changed shell assets have identical versioned URLs in document and worker',()=>{const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');for(const asset of ['app.js','pwa-update.js','style.css','calendar-subscriptions.js','artist-config.js','schedule-store.js']){assert.ok(html.includes('./'+asset+'?v=0.7.37'));assert.ok(source.includes("'./"+asset+"?v=0.7.37'"));}});
 
 test('subscription feeds and manifest are never intercepted by the shell cache',()=>{const f=fixture();for(const path of ['calendar-feeds/tokisen-all.ics','calendar-feeds/straightangeli-all.ics','calendar-feeds/manifest.json','calendar-feeds/manifest-v2.json','schedule-data-v2.json','calendar-feeds/manifest-v4.json','schedule-data-v4.json']){let hit=false;f.handlers.fetch({request:new Request('https://example.com/alert-pwa/'+path),respondWith:()=>hit=true});assert.equal(hit,false);}});
 
 test('displayed release and versioned asset URLs agree',()=>{const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');const version=html.match(/SCHEDULE \/ v([0-9.]+)/)[1];for(const asset of ['app.js','pwa-update.js','style.css','calendar-subscriptions.js','artist-config.js','schedule-store.js']){assert.ok(html.includes('./'+asset+'?v='+version));assert.ok(source.includes("'./"+asset+"?v="+version+"'"));}});
 
-test('v0.7.36 installs a distinct complete shell before v7-35 cache retirement',async()=>{
+test('v0.7.37 installs a distinct complete shell before v7-36 cache retirement',async()=>{
  const f=fixture();let pending;f.handlers.install({waitUntil:p=>pending=p});await pending;
- const precache=f.calls.find(c=>c[0]==='precache');assert.equal(precache[1],'alert-pwa-static-shell-v7-36');
+ const precache=f.calls.find(c=>c[0]==='precache');assert.equal(precache[1],'alert-pwa-static-shell-v7-37');
  assert.equal(f.calls.filter(c=>c[0]==='delete').length,0,'installation does not retire old cache');
  for(const request of precache[2]){
   const path=new URL(request.url).pathname.replace(/^\/alert-pwa\//,'')||'index.html';
   assert.ok(fs.existsSync(new URL('./'+path,import.meta.url)),path+' is included in this repository');
  }
- f.context.caches.keys=async()=>['alert-pwa-static-shell-v7-35','alert-pwa-static-shell-v7-36','another-application'];
+ f.context.caches.keys=async()=>['alert-pwa-static-shell-v7-36','alert-pwa-static-shell-v7-37','another-application'];
  f.handlers.activate({waitUntil:p=>pending=p});await pending;
- assert.deepEqual(f.calls.filter(c=>c[0]==='delete'),[['delete','alert-pwa-static-shell-v7-35']]);
+ assert.deepEqual(f.calls.filter(c=>c[0]==='delete'),[['delete','alert-pwa-static-shell-v7-36']]);
  assert.ok(f.calls.some(c=>c[0]==='claim'));assert.ok(!source.includes('localStorage'));assert.ok(!source.includes('indexedDB'));
 });
-test('v0.7.36 offline shell uses its matching versioned cache request without touching data',async()=>{
- const f=fixture(),url='https://example.com/alert-pwa/style.css?v=0.7.36';let pending,matched;
+test('v0.7.37 offline shell uses its matching versioned cache request without touching data',async()=>{
+ const f=fixture(),url='https://example.com/alert-pwa/style.css?v=0.7.37';let pending,matched;
  f.context.fetch=async()=>{throw Error('offline');};f.context.caches.match=async request=>{matched=request.url;return new Response('current offline style');};
  f.handlers.fetch({request:new Request(url),respondWith:p=>pending=p});assert.equal(await (await pending).text(),'current offline style');assert.equal(matched,url);
  for(const path of ['schedule-data-v2.json','calendar-feeds/manifest-v2.json','calendar-feeds/straightangeli-all.ics']){let intercepted=false;f.handlers.fetch({request:new Request('https://example.com/alert-pwa/'+path),respondWith:()=>intercepted=true});assert.equal(intercepted,false);}

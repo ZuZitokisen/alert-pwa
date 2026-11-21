@@ -404,8 +404,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .subscription-columns>span:not(:first-child){text-align:center}
 .subscription-selector .subscription-artist{padding:0;border:0;border-top:1px solid var(--line);border-radius:0;margin:0}
 .subscription-expand{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:44px;min-width:0;padding:0 5px 0 0;border:0;border-radius:6px;background:transparent;color:inherit;font:inherit;text-align:left}
-.subscription-chevron{flex:none;color:var(--muted)}
-.subscription-expand[aria-expanded=true] .subscription-chevron{transform:rotate(180deg)}
+.subscription-chevron{display:inline-grid;place-items:center;inline-size:20px;block-size:20px;flex:none;color:var(--muted);font-size:20px;line-height:1;transform-origin:center;transition:transform 150ms ease-out}
+.subscription-expand[aria-expanded=true] .subscription-chevron{transform:rotate(90deg)}
+@media(prefers-reduced-motion:reduce){.subscription-chevron{transition:none}}
 .subscription-genres>.subscription-grid{font-size:.9em}
 .subscription-genres>.subscription-grid>span{padding-inline-start:12px}
 .subscription-check{display:grid;place-items:center;min-width:44px;min-height:44px}
@@ -413,3 +414,12 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 .subscription-check input:disabled{opacity:.42}
 .subscription-link .subscription-actions{display:flex;justify-content:flex-end;align-items:center;gap:8px;flex-wrap:nowrap}
 .subscription-actions>button{flex:none;min-width:44px;min-height:44px}
+
+/* The registration panel expands down from a fixed top edge. */
+#detail:has(#detail-content[data-panel=subscriptions]){
+ --subscription-top:max(clamp(16px,6dvh,48px),env(safe-area-inset-top,0px));
+ inset-block-start:var(--subscription-top);inset-block-end:auto;margin-block:0;
+ max-block-size:calc(100dvh - var(--subscription-top) - max(12px,env(safe-area-inset-bottom,0px)));
+ overflow-anchor:none;scrollbar-gutter:stable;
+}
+#detail .subscription-submit{display:flex;justify-content:flex-end;gap:8px;align-items:center;margin-top:18px}
