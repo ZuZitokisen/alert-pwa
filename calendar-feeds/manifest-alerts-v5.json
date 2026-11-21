@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-media-details",
-  "dataGeneratedAt": "2026-11-21T09:15:55Z",
+  "dataVersion": "2026-11-21-gift-collab-venue-check",
+  "dataGeneratedAt": "2026-11-21T11:16:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "72173ec134cead66bfa9d828a6dbf0debd9b1db5d5a76cf65c50d5020bb309f3",
+  "inputSha256": "16fe348c708f71198e9e3d08c4a3e251f712f5074ed264870f00bdd60841757e",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all-alerts.ics",
       "count": 198,
       "omittedUnknownDate": 10,
-      "sha256": "0e6601d4523c012fdb3b7e97dfb805311cb8bec228e611c832824484efd26d01"
+      "sha256": "bf1396e317d5f0a9557b5b568752730421de3ea3af7cc847938a45912142aaf5"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live-alerts.ics",
       "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "6a37028477d507cd029e29e75f2c315a502f947ccb83baa7a611a5b46128dc0d"
+      "sha256": "c76c6352f6f80a2fa16a4865c1198f28b1b092aafabba91239447152f09d2e34"
     },
     {
       "id": "tokisen-benefit",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 41,
+      "count": 42,
       "omittedUnknownDate": 0,
-      "sha256": "e83e2882dc8327cde48aa1e167e0331044311c5003cfc23791b7008611c62b69"
+      "sha256": "81b146a582c8980fe1ac460c2882c2caab15f32e6f852d08422be3f6326fd901"
     },
     {
       "id": "ebichu-live",
@@ -276,9 +276,9 @@
       "category": "live",
       "label": "私立恵比寿中学 / ライブ・イベント",
       "path": "calendar-feeds/ebichu-live-alerts.ics",
-      "count": 21,
+      "count": 22,
       "omittedUnknownDate": 0,
-      "sha256": "a06a54712d1c0483e0a6b8c196df830d5dd6f012bd4620affd1966db5f906095"
+      "sha256": "e6e43eef0269a79561ba44a3425b3949213549831c40a79b0426b8169ecbd1bd"
     },
     {
       "id": "ebichu-benefit",

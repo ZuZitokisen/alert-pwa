@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-media-details",
-  "dataGeneratedAt": "2026-11-21T09:15:55Z",
+  "dataVersion": "2026-11-21-gift-collab-venue-check",
+  "dataGeneratedAt": "2026-11-21T11:16:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "44f89ba15b551d86c67042f39dbbc8351085dbaf931981104fc5e95c2f22f5d5",
+  "inputSha256": "0f0861ccf242311d455a4b6cff45e7bc108ac59a65e443b6a2127a2fad5711e8",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 198,
       "omittedUnknownDate": 10,
-      "sha256": "f329ad07ed6e521013d30e36cef56fa43e836249709f14d34c03281063d131d1"
+      "sha256": "1ec3d502c55b14d55a4736e7a0c517887222d6456cf2901e62a73f727c52a80d"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live.ics",
       "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "9a7a415ae97d7d1bb24b796b0de516192d31cc590cd03a7a5a49f530e4fc230d"
+      "sha256": "550f35933e2163087af72160c301215196847f81efe61492600e2f345893b084"
     },
     {
       "id": "tokisen-benefit",

@@ -330,6 +330,29 @@ DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-bf58fc4b18591e808265356f29ef46fd85d4f4256222bc91ef180db393616
+ ace@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T111604Z
+CREATED:20261121T111604Z
+LAST-MODIFIED:20261121T111604Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261128
+SUMMARY:映画「つりこまち」公開記念舞台挨拶（仲村悠菜
+ ）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n仲村悠菜が登壇予定。kino cinéma新宿は12:00の回の上
+ 映後、池袋HUMAXシネマズは15:10の回の上映前。上映回の
+ 時刻で、舞台挨拶の正確な開始時刻は未発表です。\nエ
+ ビ中公式の月間予定で登壇、映画公式と池袋の劇場公
+ 式で上映回を確認。\nhttps://humax-cinema.co.jp/ikebukuro/news/255
+ 41/\nhttps://www.shiritsuebichu.jp/media/?ym=2026-11\nhttps://www.tsuri-ko
+ machi.jp/
+LOCATION:kino cinéma新宿／池袋HUMAXシネマズ
+URL:https://www.shiritsuebichu.jp/media/?ym=2026-11
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-014eb6e145db0ed454941fb29da78bd9078103a82bbe6e0d9ac3aa2c6702c
  d95@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T014213Z
