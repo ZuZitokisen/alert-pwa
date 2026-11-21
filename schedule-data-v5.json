@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-ebichu-gera",
-  "generatedAt": "2026-11-21T15:16:02.892Z",
+  "version": "2026-11-22-ebichu-dec-events",
+  "generatedAt": "2026-11-21T17:18:04.733Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -15647,6 +15647,141 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-gera-itatsuki"
+    },
+    {
+      "id": "ebichu-superblue-hmv-handover-1",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「スーパーブルー」CDお渡し会 第1部",
+      "start": "2026-12-10T18:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "BENEFIT",
+      "location": "HMV&BOOKS SHIBUYA 5F",
+      "note": "18:00集合。A：風見和香・仲村悠菜。B：安本彩花・桜木心菜。",
+      "evidence": "私立恵比寿中学の公表日程。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96888/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96888/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T17:18:04.733Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-superblue-hmv-handover"
+    },
+    {
+      "id": "ebichu-superblue-hmv-handover-2",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「スーパーブルー」CDお渡し会 第2部",
+      "start": "2026-12-10T19:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "BENEFIT",
+      "location": "HMV&BOOKS SHIBUYA 5F",
+      "note": "19:00集合。A：小久保柚乃・桜井えま。中山莉子は出演見合わせ。Bの編成は公式の案内を確認。",
+      "evidence": "私立恵比寿中学の公表日程。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96888/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96888/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16283/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T17:18:04.733Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-superblue-hmv-handover"
+    },
+    {
+      "id": "ebichu-idol-xmas-fes-20261224",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "Idol Xmas Fes 2026",
+      "start": "2026-12-24T15:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "LIVE",
+      "location": "横浜アリーナ",
+      "note": "13:30開場、15:00はフェス全体の開演。エビ中の出演時刻は未発表。中山莉子は出演見合わせ。",
+      "evidence": "私立恵比寿中学の公表日程。主催発表も確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16167/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16167/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16283/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        },
+        {
+          "url": "https://idol-xmas-fes.com/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T17:18:04.733Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "ebichu-huis-ten-bosch-finale-20261227",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "グランドフィナーレナイト スペシャルライブ",
+      "start": "2026-12-27",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "LIVE",
+      "location": "ハウステンボス",
+      "note": "開始・終了は未確定。中山莉子は出演見合わせ。",
+      "evidence": "私立恵比寿中学の公表日程。主催発表も確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96427/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96427/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16283/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        },
+        {
+          "url": "https://www.huistenbosch.co.jp/event/countdown/2026-2027/?mode=pc",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T17:18:04.733Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T17:18:04.733Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
     }
   ],
   "notes": [
