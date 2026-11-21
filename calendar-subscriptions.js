@@ -12,6 +12,16 @@
  const PRESETS=Object.freeze(ARTISTS.flatMap(artist=>Object.entries(categories).map(([category,label])=>Object.freeze({id:artist+'-'+category,artist,category,label:NAMES[artist]+' / '+label}))));
  function planSelection(ids){if(!Array.isArray(ids))throw new TypeError('Preset list required.');const all=[...new Set(ids)];if(all.some(id=>!PRESETS.some(p=>p.id===id)))throw new TypeError('Unknown preset.');const removed=all.filter(id=>{const p=PRESETS.find(p=>p.id===id);return p.category!=='all'&&all.includes(p.artist+'-all');});return {selected:all.filter(id=>!removed.includes(id)),removed};}
  function links(id,{alerts=false}={}){if(alerts&&version!==5)throw new TypeError('Alert feeds are not supported.');if(!PRESETS.some(p=>p.id===id))throw new TypeError('Unknown preset.');const https=BASE+'calendar-feeds/'+id+(alerts?'-alerts':'')+'.ics';return {https,webcal:https.replace(/^https:/,'webcal:')};}
+ function registrationLinks(ids){
+  const selected=planSelection(ids).selected;
+  if(selected.length===0)throw new TypeError('Choose a calendar.');
+  if(selected.length===1)return links(selected[0]);
+  const origin=globalThis.ALERT_PUSH_CONFIG?.backendUrl;
+  if(!origin||!globalThis.ALERT_PUSH_CONFIG.allowedOrigins?.includes(origin))throw new TypeError('Calendar connection unavailable.');
+  const token=PRESETS.filter(p=>selected.includes(p.id)).map(p=>p.id).join(',');
+  const https=new URL('/v1/calendar/'+token+'.ics',origin).href;
+  return {https,webcal:https.replace(/^https:/,'webcal:')};
+ }
  function validateManifest(data,{alerts=false}={}){
   if(!data||(alerts?version!==5||data.alertOffsetMinutes!==60:data.alertOffsetMinutes!==undefined)||data.schemaVersion!==version||data.production!==true||typeof data.dataVersion!=='string'||!data.dataVersion||!Number.isFinite(Date.parse(data.dataGeneratedAt))||!Array.isArray(data.feeds)||data.feeds.length!==PRESETS.length)throw new TypeError('Invalid calendar manifest.');
   const seen=new Set(),feeds=data.feeds.map(f=>{const p=PRESETS.find(p=>p.id===f?.id);if(!p||seen.has(f.id)||f.artist!==p.artist||f.category!==p.category||f.path!=='calendar-feeds/'+p.id+(alerts?'-alerts':'')+'.ics'||!Number.isSafeInteger(f.count)||f.count<0||!Number.isSafeInteger(f.omittedUnknownDate)||f.omittedUnknownDate<0||! /^[a-f0-9]{64}$/.test(f.sha256))throw new TypeError('Invalid calendar feed.');seen.add(f.id);return {...p,path:f.path,count:f.count,omittedUnknownDate:f.omittedUnknownDate,sha256:f.sha256};});
@@ -22,5 +32,5 @@
   const url=new URL('./calendar-feeds/manifest'+(alerts?'-alerts':'')+'-v'+version+'.json',base),controller=new AbortController();let timer;
   try{return await Promise.race([(async()=>{const response=await fetcher(url.href,{cache:'no-store',credentials:'omit',redirect:'error',signal:controller.signal});if(!response.ok)throw new Error('Calendar feed unavailable.');const body=await response.text();if(body.length>100000)throw new Error('Calendar manifest too large.');return validateManifest(JSON.parse(body),{alerts});})(),new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(new Error('Calendar connection timed out.'));},timeoutMs);})]);}finally{clearTimeout(timer);}
  }
- return Object.freeze({ARTISTS,PRESETS,planSelection,links,validateManifest,loadManifest});
+ return Object.freeze({ARTISTS,PRESETS,planSelection,links,registrationLinks,validateManifest,loadManifest});
 });

@@ -73,12 +73,10 @@ test('client keeps original URLs by default and fails closed on incorrect alert 
  assert.match(url,/\/manifest-alerts-v5\.json$/);assert.equal(valid.feeds.length,30);
 });
 
-test('opt-in is reset per registration and warning is explicit',()=>{
- const app=read('app.js');
- assert.match(app,/function openSubscriptions[\s\S]+?subscriptionAlertChoices=new Set\(\)/);
- assert.match(app,/input.disabled=notice&&!subscriptionChoices.has/);
- assert.match(app,/先に本体側の古い登録を解除/);
- assert.match(app,/urls=S.links\(id,\{alerts\}\)/);
+test('new registration is sync-only while older alarm URLs are still published',()=>{
+ const app=read('app.js'),registration=app.slice(app.indexOf('let subscriptionChoices'),app.indexOf('function openExport'));
+ assert.doesNotMatch(registration,/subscriptionAlertChoices|通知あり|alerts:/);
+ assert.match(registration,/S.registrationLinks\(\[...subscriptionChoices\]\)/);
  assert.match(read('hourly/verify-live.mjs'),/manifest-alerts-v5\.json/);
  assert.match(read('.github/workflows/hourly-public-refresh.yml'),/for variant in \['', '-alerts'\]/);
 });

@@ -122,10 +122,30 @@ function triggerAt(at,start){
 // remove elapsed alarms from otherwise unchanged calendar events.
 const REMINDER_EPOCH=0;
 const wholeSecond = value => new Date(Math.floor(Date.parse(value)/1000)*1000).toISOString();
-function buildFeed(state,presetId,{alerts=false,alertEvents}={}){validateState(state);assert(!alerts||alertEvents instanceof Map,'Canonical alert events required');const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
- const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Alert PWA//Public Calendar Subscription//JA','CALSCALE:GREGORIAN',`X-WR-CALNAME:${F.escapeICSText(preset.label+(alerts?'（通知あり）':''))}`];let count=0,omittedUnknownDate=0;
- for(const r of state.records){if(!r.memberships.includes(presetId))continue;const e=r.event,t=e.start?e:r.lastTiming;if(!t){omittedUnknownDate++;continue;}
-  const moved=!groups(e).includes(presetId),removedDate=!e.start,cancelled=moved||removedDate||e.status==='cancelled';
+function normalizedCombinedIds(ids){
+ assert(Array.isArray(ids)&&ids.length>=1&&ids.length<=PRESETS.length,'Invalid selection');
+ const requested=new Set(ids),known=new Set(PRESETS.map(p=>p.id));
+ assert([...requested].every(id=>known.has(id)),'Unknown preset');
+ return PRESETS.filter(p=>requested.has(p.id)&&(p.category==='all'||!requested.has(p.artist+'-all'))).map(p=>p.id);
+}
+function buildFeed(state,presetId,{alerts=false,alertEvents}={}){
+ const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
+ return renderSelection(state,[presetId],preset.label,{alerts,alertEvents});
+}
+function buildCombinedFeed(state,ids){
+ return renderSelection(state,normalizedCombinedIds(ids),'Furin / 選択した予定');
+}
+function renderSelection(state,ids,label,{alerts=false,alertEvents}={}){
+ validateState(state);assert(!alerts||alertEvents instanceof Map,'Canonical alert events required');
+ const unique=new Set(ids);
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Alert PWA//Public Calendar Subscription//JA','CALSCALE:GREGORIAN',`X-WR-CALNAME:${F.escapeICSText(label+(alerts?'（通知あり）':''))}`];let count=0,omittedUnknownDate=0;
+ for(const r of state.records){if(!r.memberships.some(id=>unique.has(id)))continue;const entry=eventLines(r,!groups(r.event).some(id=>unique.has(id)),{alerts,alertEvents});if(!entry){omittedUnknownDate++;continue;}lines.push(...entry);count++;}
+
+ lines.push('END:VCALENDAR');return {ics:lines.map(F.foldICSLine).join('\r\n')+'\r\n',count,omittedUnknownDate};
+}
+function eventLines(r,moved,{alerts=false,alertEvents}={}){
+ const e=r.event,t=e.start?e:r.lastTiming;if(!t)return null;
+ const lines=[],removedDate=!e.start,cancelled=moved||removedDate||e.status==='cancelled';
   const notes=[moved?'区分変更のためこの購読から取り下げ。予定自体の中止ではありません。':'',removedDate?'日時未定に変更したため旧日時の配信を取り下げ。予定自体の中止ではありません。':'',e.status==='missing'?'掲載消失。中止とは未確認です。最後に確認した情報を保持しています。':'',day(t.start)&&!t.allDay?'時刻未定。終日開催という意味ではありません。':'',e.publicNote,...e.sourceUrls].filter(Boolean);
   const suffix=moved||removedDate?'（旧掲載取り下げ）':e.status==='cancelled'?'（中止）':e.status==='possible'?'（かも？）':e.status==='missing'?'（掲載消失・未確認）':e.status==='unknown'?'（未確認）':'';
   lines.push('BEGIN:VEVENT',`UID:${r.uid}`,`DTSTAMP:${stamp(r.modified)}`,`CREATED:${stamp(r.created)}`,`LAST-MODIFIED:${stamp(r.modified)}`,`SEQUENCE:${r.sequence}`,day(t.start)?`DTSTART;VALUE=DATE:${t.start.replace(/-/g,'')}`:`DTSTART:${stamp(t.start)}`);
@@ -138,9 +158,20 @@ function buildFeed(state,presetId,{alerts=false,alertEvents}={}){validateState(s
     lines.push('BEGIN:VALARM','ACTION:DISPLAY',`TRIGGER:${triggerAt(timestamp,t.start)}`,`DESCRIPTION:${F.escapeICSText(e.title)}`,'END:VALARM');
    }
   }
-  lines.push('END:VEVENT');count++;
+  lines.push('END:VEVENT');return lines;
+}
+// Only public, pre-rendered VEVENTs plus their filter membership are exposed.
+function buildCombinedIndex(state){
+ validateState(state);
+ const records=[];
+ for(const r of state.records){
+  const current=groups(r.event),active=eventLines(r,false);
+  if(!active)continue;
+  const block=lines=>lines.map(F.foldICSLine).join('\r\n')+'\r\n';
+  records.push({current,history:r.memberships,event:block(active),
+   ...(r.memberships.some(id=>!current.includes(id))?{withdrawn:block(eventLines(r,true))}:{})});
  }
- lines.push('END:VCALENDAR');return {ics:lines.map(F.foldICSLine).join('\r\n')+'\r\n',count,omittedUnknownDate};
+ return {schema:1,generation:state.inputSha256,records};
 }
 // Keep the old two-artist schedule and ten-entry manifest consumable by cached clients.
 // Manifest versions select artist cohorts; state and public event identities do not reset.
@@ -164,6 +195,7 @@ function build(data,previous,options){
  if(version>=4)files['manifest-v4.json']=JSON.stringify(v4Manifest,null,2)+'\n';
  if(version===5){
   files['manifest-v5.json']=JSON.stringify(manifest,null,2)+'\n';
+  files['combined-v1.json']=JSON.stringify(buildCombinedIndex(state))+'\n';
   const alertEvents=new Map(data.events.map(e=>[identity(e),e]));
   const alertFeeds=feeds.map(({id,artist,category,label})=>{
    const f=buildFeed(state,id,{alerts:true,alertEvents}),name=id+'-alerts.ics';
@@ -174,4 +206,4 @@ function build(data,previous,options){
   files['manifest-alerts-v5.json']=JSON.stringify(alertsManifest,null,2)+'\n';
  }
  return {state,manifest,v4Manifest,v4Data,v4DataJson:JSON.stringify(v4Data,null,2)+'\n',v3Manifest,v3Data,v3DataJson:JSON.stringify(v3Data,null,2)+'\n',v2Manifest,v2Data,v2DataJson:JSON.stringify(v2Data,null,2)+'\n',legacyManifest,legacyData,legacyDataJson:JSON.stringify(legacyData,null,2)+'\n',files};}
-module.exports={NAMESPACE,ARTISTS,V4_ARTISTS,V3_ARTISTS,V2_ARTISTS,LEGACY_ARTISTS,PRESETS,canonical,hash,clientIdentity,identity,uid,validateInput,validateState,reconcile,buildFeed,legacyProjection,v2Projection,v3Projection,v4Projection,build};
+module.exports={NAMESPACE,ARTISTS,V4_ARTISTS,V3_ARTISTS,V2_ARTISTS,LEGACY_ARTISTS,PRESETS,canonical,hash,clientIdentity,identity,uid,validateInput,validateState,reconcile,buildFeed,normalizedCombinedIds,buildCombinedFeed,buildCombinedIndex,legacyProjection,v2Projection,v3Projection,v4Projection,build};
