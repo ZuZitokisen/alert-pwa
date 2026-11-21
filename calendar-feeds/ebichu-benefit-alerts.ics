@@ -145,4 +145,34 @@ DESCRIPTION:「スーパーブルー」アナザージャケットお渡し
  会
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-097714a01f3b4de3b035e6cd5acf3c2bf1619e9063721758f0155b6a3ceb3
+ 8be@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T031233Z
+CREATED:20261121T031233Z
+LAST-MODIFIED:20261121T031233Z
+SEQUENCE:0
+DTSTART:20261121T010000Z
+SUMMARY:えびちゅうのトンチキ☆クリスマス！ 一般発売開
+ 始（先着）
+DESCRIPTION:対象公演は12月26日。空席状況は公式販売先で
+ 確認。\n私立恵比寿中学の公式サイトで確認。\nhttps://w.
+ pia.jp/t/ebichu/\nhttps://www.shiritsuebichu.jp/news/16089/
+LOCATION:チケットぴあ
+URL:https://www.shiritsuebichu.jp/news/16089/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 一般発
+ 売開始（先着）
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:えびちゅうのトンチキ☆クリスマス！ 一般発
+ 売開始（先着）
+END:VALARM
+END:VEVENT
 END:VCALENDAR

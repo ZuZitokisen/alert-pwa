@@ -96,6 +96,27 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-21959c31f58e74e0cf48733e52b2b233509322eef4f753fd5be6ca6aad55e
+ 6ca@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T030851Z
+CREATED:20261121T030851Z
+LAST-MODIFIED:20261121T030851Z
+SEQUENCE:0
+DTSTART:20261128T061000Z
+DTEND:20261128T064000Z
+SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-2 コラボSTAGE
+DESCRIPTION:坂井仁香・菅田愛貴が出演。時刻はコラボSTAGE
+ 全体の枠で、個人の出番時刻ではありません。グルー
+ プの本ステージとは別会場です。\n出演者は本人側の公
+ 式サイト、コラボ枠の時刻・会場は主催者の11月28日タ
+ イムテーブルで確認。\nhttps://gift-idol.jp/pdf/timetable_1128.pd
+ f\nhttps://toki-sen.com/contents/1102025?tag=all
+LOCATION:SGCホール有明
+URL:https://toki-sen.com/contents/1102025?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-a0c1d92a1f467c1dd10a9580541c41b1e0e63b6a72c130e884b242349cb5b
  d26@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z

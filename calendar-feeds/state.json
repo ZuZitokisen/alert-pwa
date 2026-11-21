@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-cafe-cbc",
-  "dataGeneratedAt": "2026-11-21T01:42:13Z",
-  "inputSha256": "0c4249e31a670c30fda8d1170f9024c789c818f9f01cd0b901b81a3623e390f0",
+  "dataVersion": "2026-11-21-gift-ebichu-calendar",
+  "dataGeneratedAt": "2026-11-21T03:12:33Z",
+  "inputSha256": "23df96b273d2ab71f7a92855b49f27fce6c8ee84367f537d82792b393768d26d",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -34,6 +34,38 @@
       "lastTiming": {
         "start": "2026-11-22T20:00:00+09:00",
         "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-bstbs-sasuke-idol-backstage-20261206\"]",
+      "uid": "public-v1-7dd97459939d55edc2e6cce001402a38ef1500761714d117703d5002667f76a3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-bstbs-sasuke-idol-backstage-20261206",
+        "category": "media",
+        "title": "SASUKEアイドル予選会2026 激闘の舞台裏完全密着SP",
+        "start": "2026-12-06T23:00:00+09:00",
+        "end": "2026-12-06T23:54:00+09:00",
+        "allDay": false,
+        "location": "BS-TBS",
+        "publicNote": "風見和香・桜井えまが出演。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16291/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-06T23:00:00+09:00",
+        "end": "2026-12-06T23:54:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -337,6 +369,210 @@
       "memberships": [
         "ebichu-all",
         "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kemono-friends-202612-a1\"]",
+      "uid": "public-v1-784de01d5d0e8d829e5b2fef142c1e01e52d566a87bcad72d65bbce90699d346@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kemono-friends-202612-a1",
+        "category": "live",
+        "title": "舞台「けものフレンズ」～きみをむちゅうにそうさくちゅう!?～ A1公演",
+        "start": "2026-12-04T13:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "品川プリンスホテル ステラボール",
+        "publicNote": "出演者は公演公式の案内を確認。開場時刻は客席開場。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://kemono-friends-butai.jp/",
+          "https://www.shiritsuebichu.jp/news/16091/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16091/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-04T13:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kemono-friends-202612-a2\"]",
+      "uid": "public-v1-c21126e6ae7a560be3d0a6777b1ca4ca0e440c61f69ae0c98e43cbddadb8121a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kemono-friends-202612-a2",
+        "category": "live",
+        "title": "舞台「けものフレンズ」～きみをむちゅうにそうさくちゅう!?～ A2公演",
+        "start": "2026-12-05T16:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "品川プリンスホテル ステラボール",
+        "publicNote": "出演者は公演公式の案内を確認。開場時刻は客席開場。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://kemono-friends-butai.jp/",
+          "https://www.shiritsuebichu.jp/news/16091/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16091/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-05T16:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kemono-friends-202612-b1\"]",
+      "uid": "public-v1-b9805b0e8a2dc6e3bfcb5b92bee4f6c8dd0b594c34d30b6e041ac00b06e61975@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kemono-friends-202612-b1",
+        "category": "live",
+        "title": "舞台「けものフレンズ」～きみをむちゅうにそうさくちゅう!?～ B1公演",
+        "start": "2026-12-04T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "品川プリンスホテル ステラボール",
+        "publicNote": "出演者は公演公式の案内を確認。開場時刻は客席開場。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://kemono-friends-butai.jp/",
+          "https://www.shiritsuebichu.jp/news/16091/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16091/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-04T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kemono-friends-202612-b2\"]",
+      "uid": "public-v1-7680b5209c12363bf1a7595ccb770946978c4e8567407e09a05f9261d0bbfbc7@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kemono-friends-202612-b2",
+        "category": "live",
+        "title": "舞台「けものフレンズ」～きみをむちゅうにそうさくちゅう!?～ B2公演",
+        "start": "2026-12-06T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "品川プリンスホテル ステラボール",
+        "publicNote": "出演者は公演公式の案内を確認。開場時刻は客席開場。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://kemono-friends-butai.jp/",
+          "https://www.shiritsuebichu.jp/news/16091/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16091/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-06T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kemono-friends-202612-c1\"]",
+      "uid": "public-v1-d029ec50a8ccd548d685b81886a01cd4a17f724e3c128ae20ec0eac4e0ba1c18@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kemono-friends-202612-c1",
+        "category": "live",
+        "title": "舞台「けものフレンズ」～きみをむちゅうにそうさくちゅう!?～ C1公演",
+        "start": "2026-12-05T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "品川プリンスホテル ステラボール",
+        "publicNote": "出演者は公演公式の案内を確認。開場時刻は客席開場。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://kemono-friends-butai.jp/",
+          "https://www.shiritsuebichu.jp/news/16091/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16091/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-05T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-kemono-friends-202612-c2\"]",
+      "uid": "public-v1-d3a65d73ad2ac275718e6fc6ed1e6d788de7e6121cf8b0aa6da375c73539ccc2@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-kemono-friends-202612-c2",
+        "category": "live",
+        "title": "舞台「けものフレンズ」～きみをむちゅうにそうさくちゅう!?～ C2公演",
+        "start": "2026-12-06T16:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "品川プリンスホテル ステラボール",
+        "publicNote": "出演者は公演公式の案内を確認。開場時刻は客席開場。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://kemono-friends-butai.jp/",
+          "https://www.shiritsuebichu.jp/news/16091/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16091/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-06T16:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
       ]
     },
     {
@@ -659,6 +895,136 @@
       "modified": "2026-11-21T01:14:50Z",
       "lastTiming": {
         "start": "2027-01-11T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-tbsch-sasuke-idol-complete-20261220\"]",
+      "uid": "public-v1-2f09280b32711803976e96f08710d83e23a01a66060b59f3ab9b887cd0978797@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-tbsch-sasuke-idol-complete-20261220",
+        "category": "media",
+        "title": "SASUKEアイドル予選会2026完全版",
+        "start": "2026-12-20T21:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "CS TBSチャンネル1",
+        "publicNote": "風見和香・桜井えまが出演。放送終了時刻は未確認。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16291/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-20T21:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-tonchiki-christmas-20261226-general-open\"]",
+      "uid": "public-v1-097714a01f3b4de3b035e6cd5acf3c2bf1619e9063721758f0155b6a3ceb38be@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-tonchiki-christmas-20261226-general-open",
+        "category": "benefit",
+        "title": "えびちゅうのトンチキ☆クリスマス！ 一般発売開始（先着）",
+        "start": "2026-11-21T10:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "チケットぴあ",
+        "publicNote": "対象公演は12月26日。空席状況は公式販売先で確認。\n私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://w.pia.jp/t/ebichu/",
+          "https://www.shiritsuebichu.jp/news/16089/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16089/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-11-21T10:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-tonchiki-christmas-20261226-part1\"]",
+      "uid": "public-v1-15bd5b19a408b2791cd0d1d42633f17bf847ae36b24ddd12856d59b9ca6becc3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-tonchiki-christmas-20261226-part1",
+        "category": "live",
+        "title": "えびちゅうのトンチキ☆クリスマス！ 第1部",
+        "start": "2026-12-26T15:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "EX THEATER ROPPONGI",
+        "publicNote": "私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16089/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-26T15:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-tonchiki-christmas-20261226-part2\"]",
+      "uid": "public-v1-54ca5b9705990b5e03b22a1402e5893377944626b0df8034377d99284fd31d4b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-tonchiki-christmas-20261226-part2",
+        "category": "live",
+        "title": "えびちゅうのトンチキ☆クリスマス！ 第2部",
+        "start": "2026-12-26T18:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "EX THEATER ROPPONGI",
+        "publicNote": "私立恵比寿中学の公式サイトで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16089/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-21T03:12:33Z",
+      "lastTiming": {
+        "start": "2026-12-26T18:30:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -6367,6 +6733,40 @@
       "lastTiming": {
         "start": "2026-11-28",
         "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-live"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-gift-2026-20261128-collab\"]",
+      "uid": "public-v1-21959c31f58e74e0cf48733e52b2b233509322eef4f753fd5be6ca6aad55e6ca@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-gift-2026-20261128-collab",
+        "category": "live",
+        "title": "GIFT ～Girls Idol Festival Tokyo～ DAY-2 コラボSTAGE",
+        "start": "2026-11-28T15:10:00+09:00",
+        "end": "2026-11-28T15:40:00+09:00",
+        "allDay": false,
+        "location": "SGCホール有明",
+        "publicNote": "坂井仁香・菅田愛貴が出演。時刻はコラボSTAGE全体の枠で、個人の出番時刻ではありません。グループの本ステージとは別会場です。\n出演者は本人側の公式サイト、コラボ枠の時刻・会場は主催者の11月28日タイムテーブルで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://gift-idol.jp/pdf/timetable_1128.pdf",
+          "https://toki-sen.com/contents/1102025?tag=all"
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1102025?tag=all"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T03:08:51Z",
+      "modified": "2026-11-21T03:08:51Z",
+      "lastTiming": {
+        "start": "2026-11-28T15:10:00+09:00",
+        "end": "2026-11-28T15:40:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -12546,5 +12946,5 @@
       ]
     }
   ],
-  "integritySha256": "37f71f72e7974b2eb66de9122e3e34ac1a3496c281a19b36392f540bde67853c"
+  "integritySha256": "dd7949695ce9a777ee44157b4c7df4ae07fb5356241781596ac0ae28c7709f25"
 }

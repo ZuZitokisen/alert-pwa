@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-ebichu-cafe-cbc",
-  "generatedAt": "2026-11-21T01:42:13Z",
+  "version": "2026-11-21-gift-ebichu-calendar",
+  "generatedAt": "2026-11-21T03:12:33Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13706,6 +13706,39 @@
       "timings": [],
       "revision": 1,
       "present": true
+    },
+    {
+      "id": "tokisen-gift-2026-20261128-collab",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "GIFT ～Girls Idol Festival Tokyo～ DAY-2 コラボSTAGE",
+      "start": "2026-11-28T15:10:00+09:00",
+      "end": "2026-11-28T15:40:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "LIVE",
+      "location": "SGCホール有明",
+      "note": "坂井仁香・菅田愛貴が出演。時刻はコラボSTAGE全体の枠で、個人の出番時刻ではありません。グループの本ステージとは別会場です。",
+      "evidence": "出演者は本人側の公式サイト、コラボ枠の時刻・会場は主催者の11月28日タイムテーブルで確認。",
+      "sourceUrl": "https://toki-sen.com/contents/1102025?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1102025?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T03:08:51Z"
+        },
+        {
+          "url": "https://gift-idol.jp/pdf/timetable_1128.pdf",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-21T03:08:51Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T03:08:51Z",
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-gift-2026",
+      "timings": []
     }
   ],
   "notes": [
