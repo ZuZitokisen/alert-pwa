@@ -304,6 +304,66 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-1d4c46b0b81b87195a801519374a390c7c87cf3a28f5b78fecf1e4b3ff670
+ 229@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T091555Z
+CREATED:20261121T091555Z
+LAST-MODIFIED:20261121T091555Z
+SEQUENCE:0
+DTSTART:20261124T155600Z
+SUMMARY:「ビズらいよん 今日はこれがおすすめでショー！
+ 」コメント出演
+DESCRIPTION:安本彩花・風見和香・仲村悠菜。公式の放送日
+ 表記は11月24日（火）24:56。個別の出演時刻は未発表。\n
+ 出演と番組開始時刻をアーティスト公式の個別案内で
+ 確認。\nhttps://www.shiritsuebichu.jp/media/96906/
+LOCATION:MBS毎日放送
+URL:https://www.shiritsuebichu.jp/media/96906/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7274c6a0671b5e07fc58d9b26ee8fab916299e385e59b969b8a1dce0736c7
+ 83f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T091555Z
+CREATED:20261121T091555Z
+LAST-MODIFIED:20261121T091555Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261123
+SUMMARY:「Music House」インタビュー出演（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n真山りか・桜木心菜・小久保柚乃・桜井えまのイン
+ タビュー。放送日表記は11月22日（日）深夜。エビ中公
+ 式は25:00、ABCテレビ番組ページは深夜1:45と表記が異な
+ ります。視聴・録画前に放送局の最新版を確認してく
+ ださい。\n出演はエビ中公式。放送開始時刻はエビ中公
+ 式と放送局の記載が異なるため未確定。\nhttps://www.asahi.
+ co.jp/music_house/\nhttps://www.shiritsuebichu.jp/media/97214/
+LOCATION:ABCテレビ
+URL:https://www.shiritsuebichu.jp/media/97214/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e115b20e35c5602c89d6e732e2f9d2e01a7b6453f1d998dcb89857fd82286
+ 8c7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T091555Z
+CREATED:20261121T091555Z
+LAST-MODIFIED:20261121T091555Z
+SEQUENCE:0
+DTSTART:20261202T130000Z
+SUMMARY:「私立恵比寿中学 スペシャル」インタビュー出演
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えま。
+ 視聴には契約が必要な場合があります。\n出演と番組開
+ 始時刻をアーティスト公式の個別案内で確認。\nhttps://w
+ ww.mjtv.jp/shiritsuebisuchugaku/\nhttps://www.shiritsuebichu.jp/media/9721
+ 5/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.shiritsuebichu.jp/media/97215/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-c4b3eb62aa183285a1e1405dbf2365b0145ded658a059eb6a52ea6f84e410
  5f9@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T051445Z
@@ -508,16 +568,21 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-cf0bf1c959f8cb760bbca25335eb794199c6ff31c384242b52d1cd1f6ca45
  1a3@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T072737Z
+DTSTAMP:20261121T091555Z
 CREATED:20261121T072737Z
-LAST-MODIFIED:20261121T072737Z
-SEQUENCE:0
-DTSTART:20261127T110000Z
+LAST-MODIFIED:20261121T091555Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20261127
 SUMMARY:桜木心菜 コメント出演「野中ここなのノナカの野
- 望」
-DESCRIPTION:エビ中の公式ニュースで出演と放送日を確認。
- 放送時刻は放送局番組表。\nhttps://www.fmnagasaki.co.jp/timetab
- le/?date=20261127\nhttps://www.shiritsuebichu.jp/news/
+ 望」（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n桜木心菜のコメント出演日は公式発表。エビ中公式
+ スケジュールでは19:30、FM長崎の番組表は20:00表記。開
+ 始時刻は確定せず、聴取前に最新の番組表をご確認く
+ ださい。\n出演はエビ中公式。放送開始時刻はエビ中公
+ 式スケジュールと放送局の番組表の記載が一致してい
+ ません。\nhttps://www.fmnagasaki.co.jp/timetable/?date=20261127\nhttps
+ ://www.shiritsuebichu.jp/media/\nhttps://www.shiritsuebichu.jp/news/
 LOCATION:FM長崎
 URL:https://www.shiritsuebichu.jp/news/
 STATUS:CONFIRMED

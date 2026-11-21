@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-tokisen-haretoki-regional",
-  "generatedAt": "2026-11-21T09:07:20Z",
+  "version": "2026-11-21-ebichu-media-details",
+  "generatedAt": "2026-11-21T09:15:55Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -15048,14 +15048,14 @@
       "source": "curated-calendar",
       "artistId": "ebichu",
       "title": "桜木心菜 コメント出演「野中ここなのノナカの野望」",
-      "start": "2026-11-27T20:00:00+09:00",
+      "start": "2026-11-27",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "RADIO",
       "location": "FM長崎",
-      "note": "",
-      "evidence": "エビ中の公式ニュースで出演と放送日を確認。放送時刻は放送局番組表。",
+      "note": "桜木心菜のコメント出演日は公式発表。エビ中公式スケジュールでは19:30、FM長崎の番組表は20:00表記。開始時刻は確定せず、聴取前に最新の番組表をご確認ください。",
+      "evidence": "出演はエビ中公式。放送開始時刻はエビ中公式スケジュールと放送局の番組表の記載が一致していません。",
       "sourceUrl": "https://www.shiritsuebichu.jp/news/",
       "sources": [
         {
@@ -15067,12 +15067,111 @@
           "url": "https://www.fmnagasaki.co.jp/timetable/?date=20261127",
           "type": "放送局番組表",
           "checkedAt": "2026-11-21T07:27:37.505Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/media/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T09:15:02Z"
         }
       ],
-      "checkedAt": "2026-11-21T07:27:37.505Z",
+      "checkedAt": "2026-11-21T09:15:02Z",
       "timings": [],
       "revision": 1,
       "present": true
+    },
+    {
+      "id": "ebichu-media-97214-2026-11-23",
+      "groupId": "ebichu-media-97214-2026-11-23",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「Music House」インタビュー出演",
+      "start": "2026-11-23",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "ABCテレビ",
+      "note": "真山りか・桜木心菜・小久保柚乃・桜井えまのインタビュー。放送日表記は11月22日（日）深夜。エビ中公式は25:00、ABCテレビ番組ページは深夜1:45と表記が異なります。視聴・録画前に放送局の最新版を確認してください。",
+      "evidence": "出演はエビ中公式。放送開始時刻はエビ中公式と放送局の記載が異なるため未確定。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97214/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97214/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T09:15:02Z"
+        },
+        {
+          "url": "https://www.asahi.co.jp/music_house/",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-21T09:15:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T09:15:55Z",
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "timings": []
+    },
+    {
+      "id": "ebichu-media-96906-2026-11-25",
+      "groupId": "ebichu-media-96906-2026-11-25",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「ビズらいよん 今日はこれがおすすめでショー！」コメント出演",
+      "start": "2026-11-25T00:56:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "MBS毎日放送",
+      "note": "安本彩花・風見和香・仲村悠菜。公式の放送日表記は11月24日（火）24:56。個別の出演時刻は未発表。",
+      "evidence": "出演と番組開始時刻をアーティスト公式の個別案内で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96906/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96906/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T09:15:02Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T09:15:02Z",
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "timings": []
+    },
+    {
+      "id": "ebichu-media-97215-2026-12-02",
+      "groupId": "ebichu-media-97215-2026-12-02",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「私立恵比寿中学 スペシャル」インタビュー出演",
+      "start": "2026-12-02T22:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "ミュージック・ジャパンTV",
+      "note": "真山りか・桜木心菜・小久保柚乃・桜井えま。視聴には契約が必要な場合があります。",
+      "evidence": "出演と番組開始時刻をアーティスト公式の個別案内で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/97215/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/97215/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T09:15:02Z"
+        },
+        {
+          "url": "https://www.mjtv.jp/shiritsuebisuchugaku/",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-21T09:15:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T09:15:02Z",
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "timings": []
     }
   ],
   "notes": [
