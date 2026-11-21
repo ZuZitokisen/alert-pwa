@@ -137,6 +137,44 @@ STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-cf0bf1c959f8cb760bbca25335eb794199c6ff31c384242b52d1cd1f6ca45
+ 1a3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T072737Z
+CREATED:20261121T072737Z
+LAST-MODIFIED:20261121T072737Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:桜木心菜 コメント出演「野中ここなのノナカの野
+ 望」
+DESCRIPTION:エビ中の公式ニュースで出演と放送日を確認。
+ 放送時刻は放送局番組表。\nhttps://www.fmnagasaki.co.jp/timetab
+ le/?date=20261127\nhttps://www.shiritsuebichu.jp/news/
+LOCATION:FM長崎
+URL:https://www.shiritsuebichu.jp/news/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d759f0c883df48dd3b78a385bdcf6ae8bcbc849860d128b78e70080b068f9
+ 3c8@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T072737Z
+CREATED:20261121T072737Z
+LAST-MODIFIED:20261121T072737Z
+SEQUENCE:0
+DTSTART:20261123T183000Z
+DTEND:20261123T190000Z
+SUMMARY:桜木心菜 コメント出演「野中ここなのノナカの野
+ 望」
+DESCRIPTION:局の番組表では11/23（月・祝）27:30～28:00。\nエ
+ ビ中の公式ニュースで出演と放送日を確認。放送時刻
+ は放送局番組表。\nhttps://prod-cdn-web.t-web-replace-2020.tfm.co.j
+ p/timetable/?date=20261123\nhttps://www.shiritsuebichu.jp/news/
+LOCATION:TOKYO FM
+URL:https://www.shiritsuebichu.jp/news/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1c525e40772c67c69fa1e3e0cf014897cdfa3ca55120ade794f1710de6bec
  b60@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z

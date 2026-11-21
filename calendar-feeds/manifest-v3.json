@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-performance-and-tv",
-  "dataGeneratedAt": "2026-11-21T05:14:45Z",
+  "dataVersion": "2026-11-21-ebichu-nonaka-radio",
+  "dataGeneratedAt": "2026-11-21T07:27:37.505Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "7cd752df7e45859993c1907363d7f9fa087614b2dfefbf9154b00837dfd5308c",
+  "inputSha256": "779dcd8ea6117ee54cb465ecf4025a6968b116ffc18ad5308a67519a0be732a1",
   "feeds": [
     {
       "id": "tokisen-all",

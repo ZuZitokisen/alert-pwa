@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-ebichu-performance-and-tv",
-  "dataGeneratedAt": "2026-11-21T05:14:45Z",
-  "inputSha256": "c3f71bda45d8b1897cdc605d2d4dcfaffbee818484ba548b47cd817cec075dd5",
+  "dataVersion": "2026-11-21-ebichu-nonaka-radio",
+  "dataGeneratedAt": "2026-11-21T07:27:37.505Z",
+  "inputSha256": "4f1c15d5d0c512159b56c2e745f166e8d05a79fa099e811fe9f9eb481ee0477b",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -909,6 +909,74 @@
       "memberships": [
         "ebichu-all",
         "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-sakuragi-nonaka-radio-20261123-fmnagasaki\"]",
+      "uid": "public-v1-cf0bf1c959f8cb760bbca25335eb794199c6ff31c384242b52d1cd1f6ca451a3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-sakuragi-nonaka-radio-20261123-fmnagasaki",
+        "category": "media",
+        "title": "桜木心菜 コメント出演「野中ここなのノナカの野望」",
+        "start": "2026-11-27T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "FM長崎",
+        "publicNote": "エビ中の公式ニュースで出演と放送日を確認。放送時刻は放送局番組表。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.fmnagasaki.co.jp/timetable/?date=20261127",
+          "https://www.shiritsuebichu.jp/news/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T07:27:37.505Z",
+      "modified": "2026-11-21T07:27:37.505Z",
+      "lastTiming": {
+        "start": "2026-11-27T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-sakuragi-nonaka-radio-20261123-tokyofm\"]",
+      "uid": "public-v1-d759f0c883df48dd3b78a385bdcf6ae8bcbc849860d128b78e70080b068f93c8@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-sakuragi-nonaka-radio-20261123-tokyofm",
+        "category": "media",
+        "title": "桜木心菜 コメント出演「野中ここなのノナカの野望」",
+        "start": "2026-11-24T03:30:00+09:00",
+        "end": "2026-11-24T04:00:00+09:00",
+        "allDay": false,
+        "location": "TOKYO FM",
+        "publicNote": "局の番組表では11/23（月・祝）27:30～28:00。\nエビ中の公式ニュースで出演と放送日を確認。放送時刻は放送局番組表。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://prod-cdn-web.t-web-replace-2020.tfm.co.jp/timetable/?date=20261123",
+          "https://www.shiritsuebichu.jp/news/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T07:27:37.505Z",
+      "modified": "2026-11-21T07:27:37.505Z",
+      "lastTiming": {
+        "start": "2026-11-24T03:30:00+09:00",
+        "end": "2026-11-24T04:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
       ]
     },
     {
@@ -13116,5 +13184,5 @@
       ]
     }
   ],
-  "integritySha256": "402a9106d7cd4dfb91e1de1f8ff62115594a4f30c715a7b94e7cccbb5deb413b"
+  "integritySha256": "dc4d7beb986d548fe2801eb4d5e36bef700e724cc81b1a63ed0c2e726ea8d6de"
 }
