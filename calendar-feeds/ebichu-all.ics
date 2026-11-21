@@ -20,6 +20,86 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-31bc08d3d802332909290bc428a2b0b3a0dcb9dbdb9481822e8f69cb7888b
+ 265@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261129T110000Z
+SUMMARY:artistspoken「幼馴染なふたり」
+DESCRIPTION:真山りか出演。\n私立恵比寿中学公式スケジュ
+ ールで確認。\nhttps://www.shiritsuebichu.jp/media/94623/
+LOCATION:artistspoken
+URL:https://www.shiritsuebichu.jp/media/94623/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e23e54bc0ba37a2199163cf8997b98a73c1ecd27a27f7268e63412d22ea61
+ f7c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261206T110000Z
+SUMMARY:artistspoken「幼馴染なふたり」
+DESCRIPTION:真山りか出演。\n私立恵比寿中学公式スケジュ
+ ールで確認。\nhttps://www.shiritsuebichu.jp/media/94624/
+LOCATION:artistspoken
+URL:https://www.shiritsuebichu.jp/media/94624/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8e0a5024b91d892217e9e0cefcba5133417eba64d3e1a51f73b0fa129366b
+ e6b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261213T110000Z
+SUMMARY:artistspoken「幼馴染なふたり」
+DESCRIPTION:真山りか出演。\n私立恵比寿中学公式スケジュ
+ ールで確認。\nhttps://www.shiritsuebichu.jp/media/94625/
+LOCATION:artistspoken
+URL:https://www.shiritsuebichu.jp/media/94625/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3248b95652b8fb369f662b4e0a15609ebd7eb5ffe1fd5ea3f1a90a0f096b2
+ 72a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261220T110000Z
+SUMMARY:artistspoken「幼馴染なふたり」
+DESCRIPTION:真山りか出演。\n私立恵比寿中学公式スケジュ
+ ールで確認。\nhttps://www.shiritsuebichu.jp/media/94626/
+LOCATION:artistspoken
+URL:https://www.shiritsuebichu.jp/media/94626/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d3c955940d1841f3fd50d94e9e79355781b4658b53c0265b4c9112a570cd6
+ b03@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261227T110000Z
+SUMMARY:artistspoken「幼馴染なふたり」
+DESCRIPTION:真山りか出演。\n私立恵比寿中学公式スケジュ
+ ールで確認。\nhttps://www.shiritsuebichu.jp/media/94627/
+LOCATION:artistspoken
+URL:https://www.shiritsuebichu.jp/media/94627/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-7dd97459939d55edc2e6cce001402a38ef1500761714d117703d5002667f7
  6a3@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T031233Z
@@ -33,6 +113,118 @@ DESCRIPTION:風見和香・桜井えまが出演。\n私立恵比寿中学
  の公式サイトで確認。\nhttps://www.shiritsuebichu.jp/news/16291/
 LOCATION:BS-TBS
 URL:https://www.shiritsuebichu.jp/news/16291/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-76b909fcc4aa814f0e6243b440a4d3a748c0c150937181968c2b10c4430da
+ 7a9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261126T141000Z
+DTEND:20261126T142000Z
+SUMMARY:CBCラジオ「小ラ保柚乃」
+DESCRIPTION:小久保柚乃出演。『推シマシ』内、23:10ごろ。\
+ n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://radichubu.jp/cbc/\nhttps://www.shiritsuebichu.jp/media/962
+ 06/
+LOCATION:CBCラジオ
+URL:https://www.shiritsuebichu.jp/media/96206/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5785dc0ee297b73e9c547bc7b4ff5d3ae1131a8966706f28ba183951fe8b3
+ 99c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261203T141000Z
+DTEND:20261203T142000Z
+SUMMARY:CBCラジオ「小ラ保柚乃」
+DESCRIPTION:小久保柚乃出演。『推シマシ』内、23:10ごろ。\
+ n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://radichubu.jp/cbc/\nhttps://www.shiritsuebichu.jp/media/962
+ 07/
+LOCATION:CBCラジオ
+URL:https://www.shiritsuebichu.jp/media/96207/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6346a71b7c524500c4bf25c50e207af84728e2112d751cd5002d66b7e24c3
+ a47@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261210T141000Z
+DTEND:20261210T142000Z
+SUMMARY:CBCラジオ「小ラ保柚乃」
+DESCRIPTION:小久保柚乃出演。『推シマシ』内、23:10ごろ。\
+ n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://radichubu.jp/cbc/\nhttps://www.shiritsuebichu.jp/media/962
+ 08/
+LOCATION:CBCラジオ
+URL:https://www.shiritsuebichu.jp/media/96208/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fc146a7e484954cc8ba79fdbe74d88fb4a44676189a3ebf7bc976d766676b
+ 604@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261217T141000Z
+DTEND:20261217T142000Z
+SUMMARY:CBCラジオ「小ラ保柚乃」
+DESCRIPTION:小久保柚乃出演。『推シマシ』内、23:10ごろ。\
+ n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://radichubu.jp/cbc/\nhttps://www.shiritsuebichu.jp/media/962
+ 09/
+LOCATION:CBCラジオ
+URL:https://www.shiritsuebichu.jp/media/96209/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f7dbf5a56e7fb517fa3cc712cab2696b7b3d25fb806a29905f9e238c85343
+ 47d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261224T141000Z
+DTEND:20261224T142000Z
+SUMMARY:CBCラジオ「小ラ保柚乃」
+DESCRIPTION:小久保柚乃出演。『推シマシ』内、23:10ごろ。\
+ n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://radichubu.jp/cbc/\nhttps://www.shiritsuebichu.jp/media/962
+ 10/
+LOCATION:CBCラジオ
+URL:https://www.shiritsuebichu.jp/media/96210/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-310dc1febae6800ff3a087f02e42003ebc45839e9428dcfc59d3a76f9bafa
+ 4ea@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261231T141000Z
+SUMMARY:CBCラジオ「小ラ保柚乃」
+DESCRIPTION:小久保柚乃出演。『推シマシ』内、23:10ごろ。\
+ n私立恵比寿中学公式スケジュールに放送開始を掲載。\
+ nhttps://radichubu.jp/cbc/\nhttps://www.shiritsuebichu.jp/media/96211/
+LOCATION:CBCラジオ
+URL:https://www.shiritsuebichu.jp/media/96211/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -369,6 +561,114 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-2bc2a8b7cc9c24eec0a0f068b14df43d25f954bdc2d34ad013cb491978c14
+ 82b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261125T120000Z
+DTEND:20261125T123000Z
+SUMMARY:文化放送「私立恵比寿中学 放送部」
+DESCRIPTION:私立恵比寿中学公式スケジュールと放送局の案
+ 内で確認。\nhttps://www.joqr.co.jp/qr/dailyprogram/?date=20261125\nht
+ tps://www.shiritsuebichu.jp/media/94570/
+LOCATION:文化放送
+URL:https://www.shiritsuebichu.jp/media/94570/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-700de60a2303a853f409927aa7af18305828f672e77894b381d8426f1a6f8
+ df6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261202T120000Z
+DTEND:20261202T123000Z
+SUMMARY:文化放送「私立恵比寿中学 放送部」
+DESCRIPTION:私立恵比寿中学公式スケジュールと放送局の案
+ 内で確認。\nhttps://www.joqr.co.jp/qr/program/ebichu\nhttps://www.shi
+ ritsuebichu.jp/media/94571/
+LOCATION:文化放送
+URL:https://www.shiritsuebichu.jp/media/94571/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-18b915ca56dd2040f4effdcb27a9c70b0466dcfbd6162fdb362014093434f
+ 3d6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261209T120000Z
+DTEND:20261209T123000Z
+SUMMARY:文化放送「私立恵比寿中学 放送部」
+DESCRIPTION:私立恵比寿中学公式スケジュールと放送局の案
+ 内で確認。\nhttps://www.joqr.co.jp/qr/program/ebichu\nhttps://www.shi
+ ritsuebichu.jp/media/94572/
+LOCATION:文化放送
+URL:https://www.shiritsuebichu.jp/media/94572/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dd05aed3e209227c2a50912d4e2ca8c47fbfed1fc9424aad280f9a32d0bdc
+ 773@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261216T120000Z
+DTEND:20261216T123000Z
+SUMMARY:文化放送「私立恵比寿中学 放送部」
+DESCRIPTION:私立恵比寿中学公式スケジュールと放送局の案
+ 内で確認。\nhttps://www.joqr.co.jp/qr/program/ebichu\nhttps://www.shi
+ ritsuebichu.jp/media/94573/
+LOCATION:文化放送
+URL:https://www.shiritsuebichu.jp/media/94573/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b0f310057d8c9fa663fef7f1c0cd4fa44e91e10353d4476ba71973ae571a5
+ 49a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261223T120000Z
+DTEND:20261223T123000Z
+SUMMARY:文化放送「私立恵比寿中学 放送部」
+DESCRIPTION:私立恵比寿中学公式スケジュールと放送局の案
+ 内で確認。\nhttps://www.joqr.co.jp/qr/program/ebichu\nhttps://www.shi
+ ritsuebichu.jp/media/94574/
+LOCATION:文化放送
+URL:https://www.shiritsuebichu.jp/media/94574/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c081d8c53227d8320d454951100d8df272d9ed02dd06c088ec73ed835ec03
+ 730@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261230T120000Z
+DTEND:20261230T123000Z
+SUMMARY:文化放送「私立恵比寿中学 放送部」
+DESCRIPTION:私立恵比寿中学公式スケジュールと放送局の案
+ 内で確認。\nhttps://www.joqr.co.jp/qr/program/ebichu\nhttps://www.shi
+ ritsuebichu.jp/media/94575/
+LOCATION:文化放送
+URL:https://www.shiritsuebichu.jp/media/94575/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-784de01d5d0e8d829e5b2fef142c1e01e52d566a87bcad72d65bbce90699d
  346@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T031233Z
@@ -544,6 +844,120 @@ DESCRIPTION:一般発売の販売状況はプレイガイドで確認。\n
  ritsuebichu.jp/media/15620/
 LOCATION:Zepp DiverCity (TOKYO)
 URL:https://www.shiritsuebichu.jp/media/15620/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-70578d1bbb1ff100315f121abcdcd93748cbd96fa0a96525d57b882345c97
+ 4cc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261124T170000Z
+DTEND:20261124T173000Z
+SUMMARY:MBSラジオ「えびちゅう☆なんやねん！」
+DESCRIPTION:公式表記は11月24日26:00。実際の放送日は翌日。
+ \n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://www.mbs1179.com/time/sp/\nhttps://www.shiritsuebichu.jp/me
+ dia/96665/
+LOCATION:MBSラジオ
+URL:https://www.shiritsuebichu.jp/media/96665/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e42bb945fe2d97c2580aa824c401c21e3eb8895b82c405ad15901ac204698
+ dfc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261201T170000Z
+DTEND:20261201T173000Z
+SUMMARY:MBSラジオ「えびちゅう☆なんやねん！」
+DESCRIPTION:公式表記は12月1日26:00。実際の放送日は翌日。\
+ n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://www.mbs1179.com/time/sp/\nhttps://www.shiritsuebichu.jp/me
+ dia/96666/
+LOCATION:MBSラジオ
+URL:https://www.shiritsuebichu.jp/media/96666/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0f8839fdf48cc0340d4430609c1baddafcbc512c925c089c1025157413def
+ c6e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261208T170000Z
+DTEND:20261208T173000Z
+SUMMARY:MBSラジオ「えびちゅう☆なんやねん！」
+DESCRIPTION:公式表記は12月8日26:00。実際の放送日は翌日。\
+ n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://www.mbs1179.com/time/sp/\nhttps://www.shiritsuebichu.jp/me
+ dia/96667/
+LOCATION:MBSラジオ
+URL:https://www.shiritsuebichu.jp/media/96667/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cec61e52bb1176240f07a07bba8506466ada9a211cb9ec5d15e8f1c9265d1
+ 5bc@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261215T170000Z
+DTEND:20261215T173000Z
+SUMMARY:MBSラジオ「えびちゅう☆なんやねん！」
+DESCRIPTION:公式表記は12月15日26:00。実際の放送日は翌日。
+ \n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://www.mbs1179.com/time/sp/\nhttps://www.shiritsuebichu.jp/me
+ dia/96668/
+LOCATION:MBSラジオ
+URL:https://www.shiritsuebichu.jp/media/96668/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4a37ae77ad3b8006a96fcfab86868784ae498c5f92af2c4001459d55cd58b
+ 631@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261222T170000Z
+DTEND:20261222T173000Z
+SUMMARY:MBSラジオ「えびちゅう☆なんやねん！」
+DESCRIPTION:公式表記は12月22日26:00。実際の放送日は翌日。
+ \n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://www.mbs1179.com/time/sp/\nhttps://www.shiritsuebichu.jp/me
+ dia/96669/
+LOCATION:MBSラジオ
+URL:https://www.shiritsuebichu.jp/media/96669/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e52ccb0660c82a589cc1f9ddf990a3152690c75ef46f43dbf7bf2ea1c3d53
+ 244@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T231640Z
+CREATED:20261121T231640Z
+LAST-MODIFIED:20261121T231640Z
+SEQUENCE:0
+DTSTART:20261229T170000Z
+DTEND:20261229T173000Z
+SUMMARY:MBSラジオ「えびちゅう☆なんやねん！」
+DESCRIPTION:公式表記は12月29日26:00。実際の放送日は翌日。
+ \n私立恵比寿中学公式スケジュールと放送局の案内で確
+ 認。\nhttps://www.mbs1179.com/time/sp/\nhttps://www.shiritsuebichu.jp/me
+ dia/96670/
+LOCATION:MBSラジオ
+URL:https://www.shiritsuebichu.jp/media/96670/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

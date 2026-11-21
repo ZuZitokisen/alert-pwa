@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-radio-and-batten-natslive",
-  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
+  "dataVersion": "2026-11-22-ebichu-dated-audio",
+  "dataGeneratedAt": "2026-11-21T23:16:40.725Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "0c5ced12540e15b9c1f6cab3d79c775feb99da0646e8c1f2ceb49bca8dde6d82",
+  "inputSha256": "e329fbddf56c6e097ed22d949390fa00f77f13aec5574235cf68d5969a3fbac3",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all.ics",
-      "count": 59,
+      "count": 82,
       "omittedUnknownDate": 0,
-      "sha256": "ed1c0d44d2129c3876ddbaedfca30072d6fc9a05df259a6a2d0eb7d6fe89116a"
+      "sha256": "8be097c2eac023898c10e5ba98d4923e4980cdb7cb9eea91bc3ea9562c885209"
     },
     {
       "id": "ebichu-live",
@@ -296,9 +296,9 @@
       "category": "media",
       "label": "私立恵比寿中学 / メディア",
       "path": "calendar-feeds/ebichu-media.ics",
-      "count": 23,
+      "count": 46,
       "omittedUnknownDate": 0,
-      "sha256": "b3c779c3cc82b300b91432505c752a0dfc84fc764e3e8e1b795f671eca924982"
+      "sha256": "f6ec84790738c7cddc3d242ff20d0af2170eadc861b4a7b98fae58896662ab5a"
     },
     {
       "id": "ebichu-other",

@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-radio-and-batten-natslive",
-  "dataGeneratedAt": "2026-11-21T21:17:40.778Z",
+  "dataVersion": "2026-11-22-ebichu-dated-audio",
+  "dataGeneratedAt": "2026-11-21T23:16:40.725Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "2e330c548b3e46132146755df31f41534a2a4626e88730104de5b832bab7e23d",
+  "inputSha256": "268a8ae660b1d1e2017db1fe517f97be38f8aada1b3333d592e8c830ba092cc4",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 59,
+      "count": 82,
       "omittedUnknownDate": 0,
-      "sha256": "a67a0bb289d16e70ce1c27a65485bceb71b72b4467f0dc3289bc59d6d86edf86"
+      "sha256": "6a202490594eb34deaa3096c2a135153541208e2f66a61cda0743923dd67d26a"
     },
     {
       "id": "ebichu-live",
@@ -296,9 +296,9 @@
       "category": "media",
       "label": "私立恵比寿中学 / メディア",
       "path": "calendar-feeds/ebichu-media-alerts.ics",
-      "count": 23,
+      "count": 46,
       "omittedUnknownDate": 0,
-      "sha256": "b38425de30d2408fba5330b711e09dc43dc6915bbbfa2299753cf329d99f4b7e"
+      "sha256": "68eae629a8cb02dc98a042ffe5eccaeb42a8d3f6fcb83ff245edd3358a6cfa99"
     },
     {
       "id": "ebichu-other",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all-alerts.ics",
-      "count": 35,
+      "count": 39,
       "omittedUnknownDate": 0,
-      "sha256": "bb47f00ad43e7b9676b541f388083b6a68f93227ca99b6435c21ce2bdaf9b61e"
+      "sha256": "ae5840e3852065fbde2eadcd817cc8f045a068c97449e401ec66b20879b988ea"
     },
     {
       "id": "batten-live",
@@ -326,9 +326,9 @@
       "category": "live",
       "label": "ばってん少女隊 / ライブ・イベント",
       "path": "calendar-feeds/batten-live-alerts.ics",
-      "count": 18,
+      "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "951bb70531599bb110567e895af51ae8755e2e0ee8e7d9448c0a4510d2d517b4"
+      "sha256": "514a2e304c3ba26ec9a8d01953f1a6b889d619d0ac27076b138eeae58123203b"
     },
     {
       "id": "batten-benefit",
@@ -346,9 +346,9 @@
       "category": "media",
       "label": "ばってん少女隊 / メディア",
       "path": "calendar-feeds/batten-media-alerts.ics",
-      "count": 5,
+      "count": 8,
       "omittedUnknownDate": 0,
-      "sha256": "283167bcb68b1c5cf5b42cab353a79346142e0e38098a615e34563fe1705b5e9"
+      "sha256": "735b6d52bcd05116254b0599e20888d72fbe63985f3224a6e90264c4e6616db1"
     },
     {
       "id": "batten-other",
