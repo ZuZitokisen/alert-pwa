@@ -48,8 +48,8 @@ test('launch uses the exact dedicated white backdrop, centered asset and indepen
  assert.match(html,/#furin-launch\{opacity:0;pointer-events:none;transition-delay:1120ms\}/);
  assert.match(source,/setTimeout\(\(\)=>finish\(true\),1580\)/);
  assert.match(html,/<span id="furin-launch-cue">TAP TO START<\/span>/);
- assert.match(html,/furin-launch-logo\.png\?v=0\.7\.31/);
- assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.31/);
+ assert.match(html,/furin-launch-logo\.png\?v=0\.7\.34/);
+ assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.34/);
  assert.equal(fs.readFileSync(new URL('./furin-launch-logo.png',import.meta.url)).subarray(1,4).toString(),'PNG');
  assert.match(css,/#view-title:focus\{outline:none\}/);
  assert.match(css,/button:focus-visible/);
@@ -75,7 +75,9 @@ test('short glass chime is a cached WAV, and blocked playback does not block nav
  assert.equal(audio.subarray(8,12).toString(),'WAVE');
  assert.equal(audio.readUInt16LE(22),1);assert.equal(audio.readUInt32LE(24),22050);
  assert.ok(audio.length>10000&&audio.length<50000);
- assert.match(html,/furin-glass-chime\.wav\?v=0\.7\.31/);
- assert.match(sw,/furin-glass-chime\.wav\?v=0\.7\.31/);
+ assert.match(html,/furin-glass-chime\.wav\?v=0\.7\.34/);
+ assert.match(sw,/furin-glass-chime\.wav\?v=0\.7\.34/);
  assert.match(load('.github/workflows/hourly-public-refresh.yml'),/furin-glass-chime\.wav/);
+ assert.match(html,/freesound.org\/people\/nlux\/sounds\/620967/);
+ assert.match(html,/creativecommons.org\/licenses\/by\/4.0/);
 });
