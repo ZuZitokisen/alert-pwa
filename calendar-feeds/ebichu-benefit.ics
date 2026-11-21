@@ -74,14 +74,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-362a70725d2a1f9d7560f533124e4d96051bb57fbb382e6f9660571eb821f
  fbd@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261122T073000Z
 SUMMARY:「スーパーブルー」アナザージャケットお渡し会
-DESCRIPTION:私立恵比寿中学公式サイトで確認。\nhttps://www.s
- hiritsuebichu.jp/media/96887/
+DESCRIPTION:桜井えまは会話を控え、リアクションのみで対
+ 応。\n私立恵比寿中学公式サイトで確認。\nhttps://www.shir
+ itsuebichu.jp/media/96887/\nhttps://www.shiritsuebichu.jp/news/16300/
 LOCATION:タワーレコード渋谷店 9F
 URL:https://www.shiritsuebichu.jp/media/96887/
 STATUS:CONFIRMED

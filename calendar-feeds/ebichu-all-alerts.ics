@@ -208,15 +208,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-9c1780d13e5bdb8f6933db72cfeba3d943d4a48260dd2f6ca6ef6e2d3c38f
  3f1@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261123T093000Z
 DTEND:20261123T100000Z
 SUMMARY:ちかっぱ祭2026
-DESCRIPTION:私立恵比寿中学の出演時間。\n私立恵比寿中学
- 公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/95687/
+DESCRIPTION:私立恵比寿中学の出演時間。 桜井えまはダン
+ スのみで参加。\n私立恵比寿中学公式サイトで確認。\nh
+ ttps://www.shiritsuebichu.jp/media/95687/\nhttps://www.shiritsuebichu.jp/n
+ ews/16300/
 LOCATION:マリンメッセ福岡B館
 URL:https://www.shiritsuebichu.jp/media/95687/
 STATUS:CONFIRMED
@@ -496,6 +498,106 @@ DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-c4b3eb62aa183285a1e1405dbf2365b0145ded658a059eb6a52ea6f84e410
+ 5f9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261121T080000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a36d45e0297be984c1f3524c3a32e81f30566c0539245f2ceba76f3ee3a8e
+ cca@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261121T210000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-e956103294816c8bbff551f73d07f1779890600b5759787b7c65ddf2db639
+ c9d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261123T170000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-34057825a912449779655bd2349dfded7c9bfd1574966135136c139c7a069
+ 4d3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261126T000000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6a5744634bdf683daf0ca427354560004b9e8032462e1d1727605983936f8
+ 8ad@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T051445Z
+CREATED:20261121T051445Z
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:ミュージック・ジャパンTV「最新！カウントダウ
+ ン TOP20」再放送（かも？）
+DESCRIPTION:真山りか・桜木心菜・小久保柚乃・桜井えまの
+ コメント出演回。再放送時刻は放送局の番組ページで
+ 確認。\nグループ公式で初回出演、放送局公式で当該回
+ の再放送を確認。\nhttps://www.mjtv.jp/cowntdown/\nhttps://www.shir
+ itsuebichu.jp/media/97097/
+LOCATION:ミュージック・ジャパンTV
+URL:https://www.mjtv.jp/cowntdown/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-014eb6e145db0ed454941fb29da78bd9078103a82bbe6e0d9ac3aa2c6702c
  d95@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T014213Z
@@ -558,18 +660,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-dabd17c77191d6e2838fc4702d44871c31b90ab1a89ae041cf6ac3b750a08
  db3@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T014213Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T014213Z
-LAST-MODIFIED:20261121T014213Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261122T040000Z
 DTEND:20261122T050000Z
 SUMMARY:namco TOKYOコラボカフェ・プレミアムイベント 私立
  恵比寿中学 トークショー
 DESCRIPTION:12:15開場。主催の更新では6名出演。チケットの
- 空きは未確認。\n私立恵比寿中学の公式スケジュールで
- 確認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.h
- tml\nhttps://www.shiritsuebichu.jp/media/97266/
+ 空きは未確認。 桜井えまは会話を控え、リアクション
+ のみで対応。\n私立恵比寿中学の公式スケジュールで確
+ 認。\nhttps://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.html
+ \nhttps://www.shiritsuebichu.jp/media/97266/\nhttps://www.shiritsuebichu.j
+ p/news/16300/
 LOCATION:東急歌舞伎町タワー3F namco TOKYO
 URL:https://www.shiritsuebichu.jp/media/97266/
 STATUS:CONFIRMED
@@ -590,16 +694,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-32103ce02e6c99212d1fcdc97535d50f34c3d5b586f8c809090cac8125e81
  424@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261121T110000Z
 DTEND:20261121T113500Z
 SUMMARY:わーすたpresents にゃんぽこらフェス！vol.3
 DESCRIPTION:グループの出演枠は20:00〜20:25と20:25〜20:35。出
- 演者の変更告知は公式ページを確認。\n私立恵比寿中学
- 公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/96425/
+ 演者の変更告知は公式ページを確認。 桜井えまは一部
+ 演目のみ歌唱、その他はダンスのみで参加。\n私立恵比
+ 寿中学公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/
+ 96425/\nhttps://www.shiritsuebichu.jp/news/16300/
 LOCATION:ステラボール
 URL:https://www.shiritsuebichu.jp/media/96425/
 STATUS:CONFIRMED
@@ -646,15 +752,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-4bad2956467669c4abbe7586ba4c84b43789023cc6ed38a597033a41cd56d
  bf9@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261124T080000Z
 SUMMARY:#スタダ顔 LIVE
 DESCRIPTION:17:00はイベントの開演。個別出演時間は未確認
- 。\n私立恵比寿中学公式サイトで確認。\nhttps://www.shirits
- uebichu.jp/media/96540/
+ 。 桜井えまは一部演目のみ歌唱、その他はダンスのみ
+ で参加。\n私立恵比寿中学公式サイトで確認。\nhttps://ww
+ w.shiritsuebichu.jp/media/96540/\nhttps://www.shiritsuebichu.jp/news/16300
+ /
 LOCATION:ザ・ガーデンホール
 URL:https://www.shiritsuebichu.jp/media/96540/
 STATUS:CONFIRMED
@@ -673,14 +781,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-362a70725d2a1f9d7560f533124e4d96051bb57fbb382e6f9660571eb821f
  fbd@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261121T051445Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261121T051445Z
+SEQUENCE:1
 DTSTART:20261122T073000Z
 SUMMARY:「スーパーブルー」アナザージャケットお渡し会
-DESCRIPTION:私立恵比寿中学公式サイトで確認。\nhttps://www.s
- hiritsuebichu.jp/media/96887/
+DESCRIPTION:桜井えまは会話を控え、リアクションのみで対
+ 応。\n私立恵比寿中学公式サイトで確認。\nhttps://www.shir
+ itsuebichu.jp/media/96887/\nhttps://www.shiritsuebichu.jp/news/16300/
 LOCATION:タワーレコード渋谷店 9F
 URL:https://www.shiritsuebichu.jp/media/96887/
 STATUS:CONFIRMED

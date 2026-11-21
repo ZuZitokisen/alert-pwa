@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-gift-ebichu-calendar",
-  "dataGeneratedAt": "2026-11-21T03:12:33Z",
+  "dataVersion": "2026-11-21-ebichu-performance-and-tv",
+  "dataGeneratedAt": "2026-11-21T05:14:45Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "136a4955ef7a851f8be1d35dfdc14235632be06a427420ad4f0252de0c45a65e",
+  "inputSha256": "f0eed54a595f3ff07c7cbe423947827fb9edd8d658fec8b55b6e5219fd4e52cc",
   "feeds": [
     {
       "id": "tokisen-all",

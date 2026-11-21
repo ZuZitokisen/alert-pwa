@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-gift-ebichu-calendar",
-  "dataGeneratedAt": "2026-11-21T03:12:33Z",
-  "inputSha256": "23df96b273d2ab71f7a92855b49f27fce6c8ee84367f537d82792b393768d26d",
+  "dataVersion": "2026-11-21-ebichu-performance-and-tv",
+  "dataGeneratedAt": "2026-11-21T05:14:45Z",
+  "inputSha256": "c3f71bda45d8b1897cdc605d2d4dcfaffbee818484ba548b47cd817cec075dd5",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -256,15 +256,16 @@
         "end": "2026-11-23T19:00:00+09:00",
         "allDay": false,
         "location": "マリンメッセ福岡B館",
-        "publicNote": "私立恵比寿中学の出演時間。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "私立恵比寿中学の出演時間。 桜井えまはダンスのみで参加。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://www.shiritsuebichu.jp/media/95687/"
+          "https://www.shiritsuebichu.jp/media/95687/",
+          "https://www.shiritsuebichu.jp/news/16300/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T05:14:45Z",
       "lastTiming": {
         "start": "2026-11-23T18:30:00+09:00",
         "end": "2026-11-23T19:00:00+09:00",
@@ -576,6 +577,171 @@
       ]
     },
     {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mjtv-top20-repeat-20261121-1700\"]",
+      "uid": "public-v1-c4b3eb62aa183285a1e1405dbf2365b0145ded658a059eb6a52ea6f84e4105f9@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mjtv-top20-repeat-20261121-1700",
+        "category": "media",
+        "title": "ミュージック・ジャパンTV「最新！カウントダウン TOP20」再放送",
+        "start": "2026-11-21T17:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ミュージック・ジャパンTV",
+        "publicNote": "真山りか・桜木心菜・小久保柚乃・桜井えまのコメント出演回。再放送時刻は放送局の番組ページで確認。\nグループ公式で初回出演、放送局公式で当該回の再放送を確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.mjtv.jp/cowntdown/",
+          "https://www.shiritsuebichu.jp/media/97097/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T05:14:45Z",
+      "modified": "2026-11-21T05:14:45Z",
+      "lastTiming": {
+        "start": "2026-11-21T17:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mjtv-top20-repeat-20261122-0600\"]",
+      "uid": "public-v1-a36d45e0297be984c1f3524c3a32e81f30566c0539245f2ceba76f3ee3a8ecca@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mjtv-top20-repeat-20261122-0600",
+        "category": "media",
+        "title": "ミュージック・ジャパンTV「最新！カウントダウン TOP20」再放送",
+        "start": "2026-11-22T06:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ミュージック・ジャパンTV",
+        "publicNote": "真山りか・桜木心菜・小久保柚乃・桜井えまのコメント出演回。再放送時刻は放送局の番組ページで確認。\nグループ公式で初回出演、放送局公式で当該回の再放送を確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.mjtv.jp/cowntdown/",
+          "https://www.shiritsuebichu.jp/media/97097/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T05:14:45Z",
+      "modified": "2026-11-21T05:14:45Z",
+      "lastTiming": {
+        "start": "2026-11-22T06:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mjtv-top20-repeat-20261124-0200\"]",
+      "uid": "public-v1-e956103294816c8bbff551f73d07f1779890600b5759787b7c65ddf2db639c9d@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mjtv-top20-repeat-20261124-0200",
+        "category": "media",
+        "title": "ミュージック・ジャパンTV「最新！カウントダウン TOP20」再放送",
+        "start": "2026-11-24T02:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ミュージック・ジャパンTV",
+        "publicNote": "真山りか・桜木心菜・小久保柚乃・桜井えまのコメント出演回。再放送時刻は放送局の番組ページで確認。\nグループ公式で初回出演、放送局公式で当該回の再放送を確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.mjtv.jp/cowntdown/",
+          "https://www.shiritsuebichu.jp/media/97097/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T05:14:45Z",
+      "modified": "2026-11-21T05:14:45Z",
+      "lastTiming": {
+        "start": "2026-11-24T02:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mjtv-top20-repeat-20261126-0900\"]",
+      "uid": "public-v1-34057825a912449779655bd2349dfded7c9bfd1574966135136c139c7a0694d3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mjtv-top20-repeat-20261126-0900",
+        "category": "media",
+        "title": "ミュージック・ジャパンTV「最新！カウントダウン TOP20」再放送",
+        "start": "2026-11-26T09:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ミュージック・ジャパンTV",
+        "publicNote": "真山りか・桜木心菜・小久保柚乃・桜井えまのコメント出演回。再放送時刻は放送局の番組ページで確認。\nグループ公式で初回出演、放送局公式で当該回の再放送を確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.mjtv.jp/cowntdown/",
+          "https://www.shiritsuebichu.jp/media/97097/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T05:14:45Z",
+      "modified": "2026-11-21T05:14:45Z",
+      "lastTiming": {
+        "start": "2026-11-26T09:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mjtv-top20-repeat-20261127-2000\"]",
+      "uid": "public-v1-6a5744634bdf683daf0ca427354560004b9e8032462e1d1727605983936f88ad@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mjtv-top20-repeat-20261127-2000",
+        "category": "media",
+        "title": "ミュージック・ジャパンTV「最新！カウントダウン TOP20」再放送",
+        "start": "2026-11-27T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ミュージック・ジャパンTV",
+        "publicNote": "真山りか・桜木心菜・小久保柚乃・桜井えまのコメント出演回。再放送時刻は放送局の番組ページで確認。\nグループ公式で初回出演、放送局公式で当該回の再放送を確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.mjtv.jp/cowntdown/",
+          "https://www.shiritsuebichu.jp/media/97097/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T05:14:45Z",
+      "modified": "2026-11-21T05:14:45Z",
+      "lastTiming": {
+        "start": "2026-11-27T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
       "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-namco-tokyo-cafe-20261121\"]",
       "uid": "public-v1-014eb6e145db0ed454941fb29da78bd9078103a82bbe6e0d9ac3aa2c6702cd95@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -690,17 +856,18 @@
         "end": "2026-11-22T14:00:00+09:00",
         "allDay": false,
         "location": "東急歌舞伎町タワー3F namco TOKYO",
-        "publicNote": "12:15開場。主催の更新では6名出演。チケットの空きは未確認。\n私立恵比寿中学の公式スケジュールで確認。",
+        "publicNote": "12:15開場。主催の更新では6名出演。チケットの空きは未確認。 桜井えまは会話を控え、リアクションのみで対応。\n私立恵比寿中学の公式スケジュールで確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://bandainamco-am.co.jp/namco_tokyo/news/topics/20260821.html",
-          "https://www.shiritsuebichu.jp/media/97266/"
+          "https://www.shiritsuebichu.jp/media/97266/",
+          "https://www.shiritsuebichu.jp/news/16300/"
         ],
         "sourceUrl": "https://www.shiritsuebichu.jp/media/97266/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T01:42:13Z",
-      "modified": "2026-11-21T01:42:13Z",
+      "modified": "2026-11-21T05:14:45Z",
       "lastTiming": {
         "start": "2026-11-22T13:00:00+09:00",
         "end": "2026-11-22T14:00:00+09:00",
@@ -724,15 +891,16 @@
         "end": "2026-11-21T20:35:00+09:00",
         "allDay": false,
         "location": "ステラボール",
-        "publicNote": "グループの出演枠は20:00〜20:25と20:25〜20:35。出演者の変更告知は公式ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "グループの出演枠は20:00〜20:25と20:25〜20:35。出演者の変更告知は公式ページを確認。 桜井えまは一部演目のみ歌唱、その他はダンスのみで参加。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://www.shiritsuebichu.jp/media/96425/"
+          "https://www.shiritsuebichu.jp/media/96425/",
+          "https://www.shiritsuebichu.jp/news/16300/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T05:14:45Z",
       "lastTiming": {
         "start": "2026-11-21T20:00:00+09:00",
         "end": "2026-11-21T20:35:00+09:00",
@@ -788,15 +956,16 @@
         "end": null,
         "allDay": false,
         "location": "ザ・ガーデンホール",
-        "publicNote": "17:00はイベントの開演。個別出演時間は未確認。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "17:00はイベントの開演。個別出演時間は未確認。 桜井えまは一部演目のみ歌唱、その他はダンスのみで参加。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://www.shiritsuebichu.jp/media/96540/"
+          "https://www.shiritsuebichu.jp/media/96540/",
+          "https://www.shiritsuebichu.jp/news/16300/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T05:14:45Z",
       "lastTiming": {
         "start": "2026-11-24T17:00:00+09:00",
         "end": null,
@@ -820,15 +989,16 @@
         "end": null,
         "allDay": false,
         "location": "タワーレコード渋谷店 9F",
-        "publicNote": "私立恵比寿中学公式サイトで確認。",
+        "publicNote": "桜井えまは会話を控え、リアクションのみで対応。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://www.shiritsuebichu.jp/media/96887/"
+          "https://www.shiritsuebichu.jp/media/96887/",
+          "https://www.shiritsuebichu.jp/news/16300/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-21T05:14:45Z",
       "lastTiming": {
         "start": "2026-11-22T16:30:00+09:00",
         "end": null,
@@ -12946,5 +13116,5 @@
       ]
     }
   ],
-  "integritySha256": "dd7949695ce9a777ee44157b4c7df4ae07fb5356241781596ac0ae28c7709f25"
+  "integritySha256": "402a9106d7cd4dfb91e1de1f8ff62115594a4f30c715a7b94e7cccbb5deb413b"
 }
