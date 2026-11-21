@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-ebichu-dec-events",
-  "dataGeneratedAt": "2026-11-21T17:18:04.733Z",
+  "dataVersion": "2026-11-22-batten-artist",
+  "dataGeneratedAt": "2026-11-21T17:32:09Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "90c4e7ea05c4a780091de5f26213d421f49210e24b3e4e170ac240c434f80938",
+  "inputSha256": "470022ed1dd3265f1dbf97dd20a29aec4ced4bdbec945c82c64dece7f012cf5c",
   "feeds": [
     {
       "id": "tokisen-all",

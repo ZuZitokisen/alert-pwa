@@ -1,14 +1,718 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-ebichu-dec-events",
-  "dataGeneratedAt": "2026-11-21T17:18:04.733Z",
-  "inputSha256": "5f38ea517040f9e57aabdd3de5b19f7145b926210e705e23d18f5604f14c52f1",
+  "dataVersion": "2026-11-22-batten-artist",
+  "dataGeneratedAt": "2026-11-21T17:32:09Z",
+  "inputSha256": "e0cb5b81269be1f224faaf58602a1eb293473a91fbd0b16c2ae4d21fe800761d",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
   "records": [
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-by-standard-20261128-benefit\"]",
+      "uid": "public-v1-507d186a1ab51af476068ded4a837e967cd5495aa0671244eca7efc70394e63e@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-by-standard-20261128-benefit",
+        "category": "benefit",
+        "title": "ばってん少女隊×by standard 合同リリイベ · 新規向けフリー特典会",
+        "start": "2026-11-28T13:45:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ららぽーと立川立飛 2Fイベント広場",
+        "publicNote": "14:05頃から通常の特典会。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109963"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-28T13:45:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-by-standard-20261128-mini1\"]",
+      "uid": "public-v1-cbaf9d13c82eba941d65738c117329358491cc5bd0e38711e4a85a3e639e5d96@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-by-standard-20261128-mini1",
+        "category": "live",
+        "title": "ばってん少女隊×by standard 合同リリイベ · ミニライブ①",
+        "start": "2026-11-28T12:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ららぽーと立川立飛 2Fイベント広場",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109963"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-28T12:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-by-standard-20261128-mini2\"]",
+      "uid": "public-v1-40390ce3d80bcf95a920273738bc9935a3feac93d280405bc0bccedff8c2daaa@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-by-standard-20261128-mini2",
+        "category": "live",
+        "title": "ばってん少女隊×by standard 合同リリイベ · ミニライブ②",
+        "start": "2026-11-28T17:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ららぽーと立川立飛 2Fイベント広場",
+        "publicNote": "開始は17:00頃。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109963"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-28T17:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chikappa-20261123\"]",
+      "uid": "public-v1-877518658be4b24bb2c183ce0b79525be462744ad105641b27c9cb1de0543000@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chikappa-20261123",
+        "category": "live",
+        "title": "ちかっぱ祭2026",
+        "start": "2026-11-23T18:05:00+09:00",
+        "end": "2026-11-23T18:30:00+09:00",
+        "allDay": false,
+        "location": "マリンメッセ福岡B館",
+        "publicNote": "ばってん少女隊の出演枠。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101652"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-23T18:05:00+09:00",
+        "end": "2026-11-23T18:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fukuoka-20261122-1\"]",
+      "uid": "public-v1-9651788337344e7f1d1fb95f1bbe0709f1986bd1738ff89d17ba58c5c8a69236@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fukuoka-20261122-1",
+        "category": "benefit",
+        "title": "「ちゅぴ」福岡 特典会 第1部 · お話し会",
+        "start": "2026-11-22T12:00:00+09:00",
+        "end": "2026-11-22T12:45:00+09:00",
+        "allDay": false,
+        "location": "福岡ファッションビル 8F Aホール",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101734"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-22T12:00:00+09:00",
+        "end": "2026-11-22T12:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fukuoka-20261122-2\"]",
+      "uid": "public-v1-2669a761ee37ab5362da54eb8176921beb14b34a764f6dcbb1c92899d656bc39@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fukuoka-20261122-2",
+        "category": "benefit",
+        "title": "「ちゅぴ」福岡 特典会 第2部 · サイン会",
+        "start": "2026-11-22T13:00:00+09:00",
+        "end": "2026-11-22T13:45:00+09:00",
+        "allDay": false,
+        "location": "福岡ファッションビル 8F Aホール",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101734"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-22T13:00:00+09:00",
+        "end": "2026-11-22T13:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fukuoka-20261122-3\"]",
+      "uid": "public-v1-5b0d71d2aeab5075479dd7eccf06a5b508640f03b8fa715474dbf37d2ec6f649@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fukuoka-20261122-3",
+        "category": "benefit",
+        "title": "「ちゅぴ」福岡 特典会 第3部 · スマホ撮影会",
+        "start": "2026-11-22T14:00:00+09:00",
+        "end": "2026-11-22T14:45:00+09:00",
+        "allDay": false,
+        "location": "福岡ファッションビル 8F Aホール",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101734"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-22T14:00:00+09:00",
+        "end": "2026-11-22T14:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fukuoka-20261122-4\"]",
+      "uid": "public-v1-1c02e7435ccacf6724416328539273b4210eb9200265a76345ca25c3656de3f5@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fukuoka-20261122-4",
+        "category": "benefit",
+        "title": "「ちゅぴ」福岡 特典会 第4部 · スマホ動画撮影会",
+        "start": "2026-11-22T15:15:00+09:00",
+        "end": "2026-11-22T16:00:00+09:00",
+        "allDay": false,
+        "location": "福岡ファッションビル 8F Aホール",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101734"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-22T15:15:00+09:00",
+        "end": "2026-11-22T16:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fukuoka-20261122-5\"]",
+      "uid": "public-v1-adc930eb28a4123ed1d88697b35547f6f5cebcd25f55139e473f00b25bda63c4@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fukuoka-20261122-5",
+        "category": "benefit",
+        "title": "「ちゅぴ」福岡 特典会 第5部 · グループ撮影会",
+        "start": "2026-11-22T16:15:00+09:00",
+        "end": "2026-11-22T16:45:00+09:00",
+        "allDay": false,
+        "location": "福岡ファッションビル 8F Aホール",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101734"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-22T16:15:00+09:00",
+        "end": "2026-11-22T16:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fukuoka-20261122-6\"]",
+      "uid": "public-v1-ce808192f90f2075d9cd5c453cfc10c96deeea447f55caf9517d10bd5cc5fb0b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fukuoka-20261122-6",
+        "category": "benefit",
+        "title": "「ちゅぴ」福岡 特典会 第6部 · グループ動画撮影会",
+        "start": "2026-11-22T17:00:00+09:00",
+        "end": "2026-11-22T17:45:00+09:00",
+        "allDay": false,
+        "location": "福岡ファッションビル 8F Aホール",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1101734"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-22T17:00:00+09:00",
+        "end": "2026-11-22T17:45:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-dig-20261126\"]",
+      "uid": "public-v1-28b3d6054d5ab3d2d1280168704f7167a9af2bf0b18f77270425620f26fe14ab@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-dig-20261126",
+        "category": "media",
+        "title": "上田出演「DIG!!!!!!!!FUKUOKA」",
+        "start": "2026-11-26T12:30:00+09:00",
+        "end": "2026-11-26T16:30:00+09:00",
+        "allDay": false,
+        "location": "FM福岡",
+        "publicNote": "番組全体の放送枠。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/886936"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-26T12:30:00+09:00",
+        "end": "2026-11-26T16:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-gobou-fes-20261213\"]",
+      "uid": "public-v1-8628e0c8fa3d38b99e06df5279e23c12339519eb8dbec4882a9b04cb48016ac6@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-gobou-fes-20261213",
+        "category": "live",
+        "title": "GOBOU FES.2026",
+        "start": "2026-12-13T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "BASE GRANBELL",
+        "publicNote": "11:30開場。12:00は公演全体の開演。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1113330"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-12-13T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-greatest-ever-show-20270213\"]",
+      "uid": "public-v1-4651dc76cad9e2b3114e2d6d5ac3835b55ab8c842ed6736a67dd15439a0e3ea5@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-greatest-ever-show-20270213",
+        "category": "live",
+        "title": "GREATEST EVER SHOW",
+        "start": "2027-02-13T17:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "SGC HALL ARIAKE",
+        "publicNote": "16:00開場。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/654889"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2027-02-13T17:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-greatest-ever-show-presale-deadline-20261125\"]",
+      "uid": "public-v1-bf5b0e7cb416cec89f518cc78f5514b41ef783d3f4bdd6cc2679ad043be2f82e@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-greatest-ever-show-presale-deadline-20261125",
+        "category": "benefit",
+        "title": "GREATEST EVER SHOW プレリザーブ2次先行締切",
+        "start": "2026-11-25T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/654889"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-25T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-mbs-yanyan-20261123\"]",
+      "uid": "public-v1-7a7e58a73facbb2d24a72fbfa0ba11d140fea53483a7cc7b97f8445eb0612c91@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-mbs-yanyan-20261123",
+        "category": "media",
+        "title": "希山出演「オレたちゴチャ・まぜっ！〜集まれヤンヤン〜」",
+        "start": "2026-11-24T01:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MBSラジオ",
+        "publicNote": "公式の11月23日25:30。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1095110"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-24T01:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-nack5-podcast-20261122\"]",
+      "uid": "public-v1-1602de8e9fa2624ddcfe60358925c89e268fbf555f532de2367a7bbda0ab14fd@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-nack5-podcast-20261122",
+        "category": "media",
+        "title": "NACK5 Podcast「ばってんな私もいいよね？」",
+        "start": "2026-11-22T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "春乃・柳・逢里。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1074238"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-22T20:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-rirua-birthday-20261216\"]",
+      "uid": "public-v1-280a1ef0f0f206163e42103e61d87f9d220a35ba11acf274aaef63419fcc9d99@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-rirua-birthday-20261216",
+        "category": "live",
+        "title": "蒼井りるあ生誕ソロライブ「りるわーるど♡♡〜はっぴい20歳〜」",
+        "start": "2026-12-16T18:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Veats Shibuya",
+        "publicNote": "18:00開場。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1108094"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-12-16T18:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-rkb-20261123\"]",
+      "uid": "public-v1-4ef85ddc0f6842e2df1bf2e066481b0d910685ca4a7e883a4782cc9e688d16ce@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-rkb-20261123",
+        "category": "media",
+        "title": "RKB「ばってん少女隊のばってんラジオたいっ！」",
+        "start": "2026-11-23T23:30:00+09:00",
+        "end": "2026-11-23T23:59:00+09:00",
+        "allDay": false,
+        "location": "RKBラジオ",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/882321"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-23T23:30:00+09:00",
+        "end": "2026-11-23T23:59:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-media"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-stadagao-20261124\"]",
+      "uid": "public-v1-b6eb115e6d4d7955610fcbd21e323e6b820082931860cc5c9372e81c395a937a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-stadagao-20261124",
+        "category": "live",
+        "title": "#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ！〜",
+        "start": "2026-11-24T17:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ザ・ガーデンホール",
+        "publicNote": "16:00開場。17:00は公演全体の開演。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1117570"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-24T17:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-year-end-20261227-1\"]",
+      "uid": "public-v1-ad257c98f7d941ec26db84f1607cb38c9abc6246d0fb3a48a7c81fa519f16679@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-year-end-20261227-1",
+        "category": "live",
+        "title": "BATTEN END-OF-YEAR PARTY 2026 第1部",
+        "start": "2026-12-27T14:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "EX THEATER ROPPONGI",
+        "publicNote": "13:15開場。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1108093"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-12-27T14:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-year-end-20261227-2\"]",
+      "uid": "public-v1-87ac1afbb047d6bc7c43d54a6adc93e60f6a18e6e3e37bff86b4c7fc9c60d432@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-year-end-20261227-2",
+        "category": "live",
+        "title": "BATTEN END-OF-YEAR PARTY 2026 第2部",
+        "start": "2026-12-27T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "EX THEATER ROPPONGI",
+        "publicNote": "17:15開場。ゲスト：RE-GE。\nばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1108093"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-12-27T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-year-end-advance-deadline-20261124\"]",
+      "uid": "public-v1-014d90a265b10084b19ab454460a38c19cd298a400bbfc3d41aedac00bed850b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-year-end-advance-deadline-20261124",
+        "category": "benefit",
+        "title": "BATTEN END-OF-YEAR PARTY 2026 公式先行締切",
+        "start": "2026-11-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "ばってん少女隊公式の案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1108093"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:32:09Z",
+      "modified": "2026-11-21T17:32:09Z",
+      "lastTiming": {
+        "start": "2026-11-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
     {
       "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-artistspoken-mayama-20261122\"]",
       "uid": "public-v1-c3a65f1a4e83d7cc7de5a96909dba56a636e53a4755964ae42c630627ca1ea4d@alert-pwa.zuzitokisen.github.io",
@@ -13953,5 +14657,5 @@
       ]
     }
   ],
-  "integritySha256": "66aac4bb97f8c4ae8d4d13e1a9dd3fb4ffd88b6061a15e87d5b2668484a4af33"
+  "integritySha256": "ab5b047e0dda1219dfa3f1b7fb1c23500a61a3da35f1170a591f117f2199d251"
 }
