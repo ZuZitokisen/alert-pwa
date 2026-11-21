@@ -1,19 +1,21 @@
-import fs from 'node:fs/promises';
 import {runtimeToken,backendOrigin} from './gh-oidc-client.mjs';
 import {planNotifications} from './notifications.mjs';
 import {compatibleDispatch} from './dispatch-compat.mjs';
-const snapshot=JSON.parse(await fs.readFile(new URL('../schedule-data-v4.json',import.meta.url),'utf8'));
-const state=JSON.parse(await fs.readFile(new URL('../calendar-feeds/state.json',import.meta.url),'utf8'));
-const send=process.argv[2]==='--send';
-if(process.argv.length!==2+(send?1:0))throw Error('Usage: node hourly/dispatch.mjs [--send]');
-const planned=planNotifications(snapshot,state,{activatedAt:process.env.ALERT_PUSH_NOTIFY_AFTER||null});
-const {records,deferredUnsupportedReminders}=compatibleDispatch(planned);
+import {readDispatchInput,verifyPublicDispatchInput} from './dispatch-snapshot.mjs';
+const input=await readDispatchInput();
+const {snapshot,state}=input;
+const args=process.argv.slice(2),mode=args[0]||'dry-run';
+const send=mode==='--send'||mode==='--published-news',newsOnly=mode==='--published-news';
+if(!['dry-run','--send','--published-news'].includes(mode)||args.length!==(newsOnly?2:send?1:0))throw Error('Unexpected notification dispatch arguments');
+const planned=planNotifications(snapshot,state,{activatedAt:process.env.ALERT_PUSH_NOTIFY_AFTER||null,onlyCurrentGeneration:newsOnly});
+const result=compatibleDispatch(planned);
+const records=newsOnly?result.records.filter(r=>r.kind==='change'):result.records;
+const {deferredUnsupportedReminders}=result;
 if(!send){console.log(JSON.stringify({dryRun:true,planned:planned.length,dispatchable:records.length,deferredUnsupportedReminders}));process.exit(0);}
 if(!process.env.ALERT_PUSH_NOTIFY_AFTER)throw Error('Notification activation time not configured');
+await verifyPublicDispatchInput(input,{expectedHash:newsOnly?args[1]:undefined});
+if(newsOnly&&!records.length){console.log(JSON.stringify({queued:0,reason:'no publishable change'}));process.exit(0);}
 const base=backendOrigin(), token=await runtimeToken();
-const publicOrigin=new URL('https://zuzitokisen.github.io/alert-pwa/schedule-data-v4.json');
-const live=await fetch(publicOrigin,{cache:'no-store',redirect:'error',signal:AbortSignal.timeout(15000)});
-if(!live.ok||(await live.json()).version!==snapshot.version)throw Error('Wait for the exact schedule version to be public before dispatch');
 let queued=0, batch=[];
 const flush=async()=>{
  if(!batch.length)return;

@@ -18,7 +18,7 @@ test('workflow preserves production guard and gates inspect, ephemeral permissio
 test('primary/manual skip gate job but inspect explicitly tolerates skipped prerequisite',()=>{
  const s=readFileSync(new URL('../.github/workflows/hourly-public-refresh.yml',import.meta.url),'utf8');
  assert.match(s,/backup-gate:\n    if: github.event_name == 'schedule' && github.event.schedule == '47 \* \* \* \*'/);
- assert.match(s,/if: \$\{\{ !cancelled\(\) && needs.backup-gate.outputs.proceed != 'false' \}\}/);
+ assert.match(s,/if: \$\{\{ !cancelled\(\) && needs.backup-gate.outputs.proceed != 'false' && inputs.mode != 'published-news' \}\}/);
  for(const [event,schedule,gateOutput,cancelled,expected] of [
  ['schedule','17 * * * *','',false,true],['workflow_dispatch','', '',false,true],
  ['schedule','47 * * * *','false',false,false],['schedule','47 * * * *','true',false,true],
