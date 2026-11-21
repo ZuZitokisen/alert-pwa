@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.36';
+const APP_RELEASE='0.7.37';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const artistOrder=['ebichu','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
@@ -205,42 +205,40 @@ function openEvent(e,origin){
  appendSourcesAndTimes(area,e);
 const box=el('div','','reminder-box');box.append(el('h3','通知時刻の確認'));const label=el('label','リマインド例 '),select=document.createElement('select');select.setAttribute('aria-label','リマインド設定例');for(const [value,title] of [['off','設定しない'],['morning1h',`朝${morningTime}＋開始1時間前`],...(e.deadline?[['deadline2',`朝${morningTime}＋締切前`]]:[])]){const o=el('option',title);o.value=value;select.append(o);}const key=F.stableEventKey(e);select.value=reminders[key]||'off';select.disabled=!e.start||(!e.allDay&&e.start.length===10)||e.present===false||e.status==='cancelled';select.onchange=()=>{reminders[key]=select.value;save('alert-pwa-reminders-v2',reminders);openEvent(e);toast('通知時刻の設定例を保存しました。実通知は未接続です。');};label.append(select);box.append(label);if(select.value!=='off'&&!select.disabled){const plan=F.reminderTimes(e,{mode:select.value,morningTime,now:new Date().toISOString()});for(const t of plan.times)box.append(el('p',`${prettyDate(t.at)} · ${t.label}`));for(const u of plan.unresolved)box.append(el('p',u.label||'時刻の確認が必要です。','hint'));if(!plan.times.length)box.append(el('p','これからの通知候補はありません。過去の通知や開始後の朝通知は出しません。','hint'));}box.append(el('p','時刻のプレビューです。通知は予約・配信されません。','hint'));area.append(box);
 const latest=state.changes.find(c=>c.eventId===e.id&&c.source===e.source);if(latest){const b=el('button','最後の変更を見る');b.onclick=()=>openChange(latest);area.append(b);}area.append(el('h3','判断の根拠'),el('p',e.evidence||'根拠未登録','evidence'));openDialog(origin);}
-let subscriptionChoices=new Set(),subscriptionAlertChoices=new Set(),subscriptionExpanded=new Set(),subscriptionModes=Object.create(null);
-async function loadSubscriptionMode(alerts){
- const modes=subscriptionModes, key=alerts?'alerts':'plain';
- if(modes[key]?.loading||modes[key]?.manifest)return;
- const state=modes[key]={loading:true};
- try{state.manifest=await S.loadManifest(undefined,undefined,undefined,{alerts});}
- catch{state.error=true;}
- finally{state.loading=false;}
- const area=$('#detail-content');
- if(modes===subscriptionModes&&$('#detail').open&&area.dataset.panel==='subscriptions'){
-  renderSubscriptions(document.activeElement?.dataset?.subscriptionFocus);
- }
-}
-function loadSelectedSubscriptionModes(){
- for(const alerts of new Set([...subscriptionChoices].map(id=>subscriptionAlertChoices.has(id))))loadSubscriptionMode(alerts);
-}
+let subscriptionChoices=new Set(),subscriptionAlertChoices=new Set();
 function openSubscriptions(artistId){
  if(artistId&&S.ARTISTS.includes(artistId))subscriptionChoices=new Set([artistId+'-all']);
- subscriptionAlertChoices=new Set();subscriptionExpanded=new Set();subscriptionModes=Object.create(null);
- $('#detail-content').dataset.panel='subscriptions';renderSubscriptions();openDialog();loadSelectedSubscriptionModes();
+ subscriptionAlertChoices=new Set();
+ $('#detail-content').dataset.panel='subscriptions';renderSubscriptions();openDialog();
 }
-function renderSubscriptions(focusKey){
- const area=$('#detail-content');area.replaceChildren(el('h2','本体カレンダーに追加'));
- const groups=el('div','','subscription-presets subscription-selector');
+function renderSubscriptions(){
+ const area=$('#detail-content'),dialog=$('#detail'),selection=el('div','','subscription-selection'),result=el('div','','subscription-results');
+ result.hidden=true;
+ const groups=el('div','','subscription-presets subscription-selector'),checks=[];
  const columns=el('div','','subscription-grid subscription-columns');
  columns.append(el('span','アーティスト'),el('span','同期'),el('span','通知'));
  groups.append(columns);
- function changed(key){renderSubscriptions(key);loadSelectedSubscriptionModes();}
+ const footer=el('div','','detail-actions subscription-actions subscription-submit');
+ const urlButton=el('button','URL'),register=el('button','登録','primary');
+ urlButton.type=register.type='button';
+ urlButton.setAttribute('aria-label','選択した登録URLを表示');
+ register.setAttribute('data-subscription-submit','');
+ urlButton.setAttribute('data-subscription-show-urls','');
+ footer.append(urlButton,register);
+ function refreshChecks(){
+  for(const {input,id,notice} of checks){
+   input.checked=(notice?subscriptionAlertChoices:subscriptionChoices).has(id);
+   input.disabled=notice&&!subscriptionChoices.has(id);
+  }
+  register.disabled=urlButton.disabled=!subscriptionChoices.size;
+ }
  function addChecks(row,preset,artistName){
   const name=preset.label.split(' / ')[1],scope=artistName+' '+name;
   for(const kind of ['sync','notice']){
    const notice=kind==='notice',key=preset.id+'-'+kind;
-   const label=el('label','','subscription-check'), input=document.createElement('input');
+   const label=el('label','','subscription-check'),input=document.createElement('input');
    input.type='checkbox';input.setAttribute('data-subscription-focus',key);input.setAttribute('aria-label',scope+'の'+(notice?'通知':'同期'));
-   input.checked=(notice?subscriptionAlertChoices:subscriptionChoices).has(preset.id);
-   input.disabled=notice&&!subscriptionChoices.has(preset.id);
+   checks.push({input,id:preset.id,notice});
    input.onchange=()=>{
     if(notice){
      if(!subscriptionChoices.has(preset.id))return;
@@ -253,51 +251,55 @@ function renderSubscriptions(focusKey){
      }else subscriptionChoices.delete(preset.id);
      for(const id of subscriptionAlertChoices)if(!subscriptionChoices.has(id))subscriptionAlertChoices.delete(id);
     }
-    changed(key);
+    refreshChecks();
    };
    label.append(input);row.append(label);
   }
  }
  for(const artistId of artistOrder.filter(id=>S.ARTISTS.includes(id))){
   const presets=S.PRESETS.filter(p=>p.artist===artistId),artistName=getArtist(artistId)?.name||artistId;
-  const section=el('section','','subscription-artist'),row=el('div','','subscription-grid');
-  const toggle=el('button',artistName,'subscription-expand'),open=subscriptionExpanded.has(artistId),listId='subscription-genres-'+artistId,focusId=artistId+'-expand';
-  toggle.type='button';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-controls',listId);toggle.setAttribute('data-subscription-focus',focusId);
-  const chevron=el('span','⌄','subscription-chevron');chevron.setAttribute('aria-hidden','true');toggle.append(chevron);
-  toggle.onclick=()=>{if(open)subscriptionExpanded.delete(artistId);else subscriptionExpanded.add(artistId);renderSubscriptions(focusId);};
+  const section=el('section','','subscription-artist'),row=el('div','','subscription-grid'),listId='subscription-genres-'+artistId;
+  const toggle=el('button',artistName,'subscription-expand'),list=el('div','','subscription-genres');
+  list.id=listId;list.hidden=true;
+  toggle.type='button';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls',listId);toggle.setAttribute('data-subscription-focus',artistId+'-expand');
+  const chevron=el('span','›','subscription-chevron');chevron.setAttribute('aria-hidden','true');toggle.append(chevron);
+  toggle.onclick=()=>{list.hidden=!list.hidden;toggle.setAttribute('aria-expanded',String(!list.hidden));};
   row.append(toggle);addChecks(row,presets.find(p=>p.category==='all'),artistName);section.append(row);
-  const list=el('div','','subscription-genres');list.id=listId;list.hidden=!open;
   for(const preset of presets.filter(p=>p.category!=='all')){
-   const item=el('div','','subscription-grid');
-   item.append(el('span',preset.label.split(' / ')[1]));addChecks(item,preset,artistName);list.append(item);
+   const item=el('div','','subscription-grid');item.append(el('span',preset.label.split(' / ')[1]));addChecks(item,preset,artistName);list.append(item);
   }
   section.append(list);groups.append(section);
  }
- area.append(groups);
- const selected=S.planSelection([...subscriptionChoices]).selected;
- if(!selected.length)area.append(el('p','同期する範囲を選んでください。','hint'));
- if(selected.length)area.append(el('p','本体カレンダーで1種類ずつ登録してください。設定を変えるときは、先に本体側の古い登録を解除してください。','hint'));
- if(subscriptionAlertChoices.size)area.append(el('p','通知は当日8:00と開始・締切の1時間前。23:59締切は23:00。確定・時刻指定の予定のみ。iPhoneのカレンダー一覧で、登録したカレンダーのⓘで「予定通知」を確認できます。iPhoneで実際に通知が届くかは確認中です。','hint'));
- const unavailable=new Set();
- for(const id of selected){
-  const alerts=subscriptionAlertChoices.has(id),mode=subscriptionModes[alerts?'alerts':'plain'];
-  const feed=mode?.manifest?.feeds.find(f=>f.id===id);
-  if(!feed){unavailable.add(alerts);continue;}
-  const urls=S.links(id,{alerts}),row=el('section','','subscription-link');row.append(el('h3',feed.label),el('p',feed.count+'件'+(feed.omittedUnknownDate?' · 日付未定'+feed.omittedUnknownDate+'件は未配信':''),'hint'));
-  const actions=el('div','','detail-actions subscription-actions'),subscribe=el('a',alerts?'通知ありで登録':'通知なしで登録','primary subscription-action');
-  subscribe.href=urls.webcal;subscribe.setAttribute('aria-label',feed.label+(alerts?'を通知ありで登録':'を通知なしで登録'));
-  const field=document.createElement('input');field.type='url';field.value=urls.https;field.readOnly=true;field.hidden=true;field.className='subscription-url';field.setAttribute('aria-label',feed.label+'の登録URL');
-  const copy=el('button','URL');copy.type='button';copy.setAttribute('aria-label',feed.label+'の登録URLをコピー');
-  copy.onclick=async()=>{try{if(!navigator.clipboard?.writeText)throw new Error('unavailable');await navigator.clipboard.writeText(urls.https);toast('登録URLをコピーしました。');}catch{field.hidden=false;field.focus({preventScroll:true});field.select();toast('表示されたURLを選択してコピーしてください。');}};
-  actions.append(copy,subscribe);row.append(actions,field);area.append(row);
+ function prepareRegistration(from,showUrls){
+  const selected=S.planSelection([...subscriptionChoices]).selected;
+  if(!selected.length)return;
+  const entries=selected.map(id=>{
+   const alerts=subscriptionAlertChoices.has(id),preset=S.PRESETS.find(p=>p.id===id);
+   const urls=S.links(id,{alerts});
+   return {alerts,preset,urls};
+  });
+  if(entries.length===1&&!showUrls){window.location.assign(entries[0].urls.webcal);return;}
+  const startScroll=dialog.scrollTop;
+  const back=el('button','選択に戻る','subscription-help');back.type='button';
+  back.onclick=()=>{result.hidden=true;selection.hidden=false;dialog.scrollTop=startScroll;from.focus({preventScroll:true});};
+  result.replaceChildren(back,el('p','本体カレンダーで1種類ずつ登録してください。設定を変えるときは、先に本体側の古い登録を解除してください。','hint'));
+  if(entries.some(e=>e.alerts))result.append(el('p','通知は当日8:00と開始・締切の1時間前。確定・時刻指定の予定のみ。iPhoneで実際に通知が届くかは確認中です。','hint'));
+  for(const {alerts,preset,urls} of entries){
+   const row=el('section','','subscription-link');row.append(el('h3',preset.label));
+   const actions=el('div','','detail-actions subscription-actions'),subscribe=el('a',alerts?'通知ありで登録':'通知なしで登録','primary subscription-action');
+   subscribe.href=urls.webcal;subscribe.setAttribute('aria-label',preset.label+(alerts?'を通知ありで登録':'を通知なしで登録'));
+   const field=document.createElement('input');field.type='url';field.value=urls.https;field.readOnly=true;field.hidden=!showUrls;field.className='subscription-url';field.setAttribute('aria-label',preset.label+'の登録URL');
+   const copy=el('button','URL');copy.type='button';copy.setAttribute('aria-label',preset.label+'の登録URLをコピー');
+   copy.onclick=async()=>{try{if(!navigator.clipboard?.writeText)throw new Error('unavailable');await navigator.clipboard.writeText(urls.https);toast('登録URLをコピーしました。');}catch{field.hidden=false;field.focus({preventScroll:true});field.select();toast('表示されたURLを選択してコピーしてください。');}};
+   actions.append(copy,subscribe);row.append(actions,field);result.append(row);
+  }
+  selection.hidden=true;result.hidden=false;dialog.scrollTop=0;back.focus({preventScroll:true});
  }
- for(const alerts of unavailable){
-  const mode=subscriptionModes[alerts?'alerts':'plain'], name=alerts?'通知あり':'通知なし';
-  const status=el('p',mode?.error?name+'の登録先を確認できません。':name+'の登録先を確認しています…','hint');status.setAttribute('role','status');area.append(status);
-  if(mode?.error){const retry=el('button',name+'を再試行');retry.type='button';retry.onclick=()=>{loadSubscriptionMode(alerts);renderSubscriptions();};area.append(retry);}
- }
- area.append(el('p','読み取り専用 · 反映に時間差あり','hint'));const help=el('a','登録の説明を見る','subscription-help');help.href='#changes';help.onclick=()=>closeDialog();area.append(help);
- if(focusKey)area.querySelector('[data-subscription-focus="'+focusKey+'"]')?.focus({preventScroll:true});
+ register.onclick=()=>prepareRegistration(register,false);
+ urlButton.onclick=()=>prepareRegistration(urlButton,true);
+ selection.append(groups,el('p','通知を選んだ場合、iPhoneでの実際の到着は確認中です。','hint'),footer);
+ area.replaceChildren(el('h2','本体カレンダーに登録'),selection,result);
+ refreshChecks();
 }
 function openExport(events){const result=F.buildICS(events.map(presentEvent),{now:new Date().toISOString()}),area=$('#detail-content');area.dataset.panel='export';area.replaceChildren(el('h2','カレンダーに渡す予定'),el('p',`${result.included.length}件の架空サンプルをICSファイルにします。`));const list=el('ul','','export-list');for(const e of result.included)list.append(el('li',`${e.status==='possible'?'［かも？］':''}${e.title} · ${timing(e)}`));area.append(list);for(const s of result.skipped)area.append(el('p',`${s.event?.title||'予定'}：${s.label||s.reason}（出力しません）`,'hint'));area.append(el('p','ファイルを保存しただけでは、本体カレンダーへの登録は完了しません。対応するカレンダーで内容を確認して追加してください。iPhoneでの受け渡しは実機未検証です。','evidence'),el('p','自動同期ではありません。内容が変わっても自動更新しません。通知設定はファイルに含めません。','hint'));const b=el('button',`${result.included.length}件のICSを作成`,'primary');b.disabled=!result.included.length;b.onclick=()=>{const url=URL.createObjectURL(new Blob([result.ics],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='alert-sample-events.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);toast('ICSファイルを作成しました。本体への追加はカレンダー側で確認してください。');};area.append(b);openDialog();}
 function showValue(key,value){if(value===null||value===undefined||value==='')return '未設定';if(key==='status')return statusNames[value]||value;if(key==='category'&&value==='BENEFIT')return 'EVENT';if(key==='artistId')return getArtist(value)?.name||value;if(key==='allDay')return value?'終日':'時刻指定／時刻未定';if(['start','end','deadline'].includes(key))return prettyDate(value);return String(value);}
