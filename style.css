@@ -382,3 +382,6 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
  .news-tabs{gap:2px}
  .news-tabs button,.news-actions #read-all{font-size:11px;padding-inline:6px}
 }
+
+/* The routed heading is a screen-reader landmark, not an interactive control. */
+#view-title:focus{outline:none}
