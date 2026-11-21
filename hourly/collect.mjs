@@ -6,7 +6,7 @@ import {collectOfficialSchedules,SOURCE_CONFIG} from './sources.mjs';
 const args=process.argv.slice(2);
 if(args.length>1||args.length&&args[0]!=='--apply')throw Error('Usage: node hourly/collect.mjs [--apply]');
 const apply=args[0]==='--apply', now=new Date();
-const snapshot=new URL('../schedule-data-v4.json',import.meta.url);
+const snapshot=new URL('../schedule-data-v5.json',import.meta.url);
 const base=JSON.parse(await fs.readFile(snapshot,'utf8'));
 const jstDay=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
 if(jstDay>base.coverage.through)throw Error('Schedule coverage has expired; extend it before monitoring');
