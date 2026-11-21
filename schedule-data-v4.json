@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21-tokisen-threads-episode",
-  "generatedAt": "2026-11-20T20:58:31Z",
+  "version": "2026-11-21-ebichu-tohokusan",
+  "generatedAt": "2026-11-21T01:20:18Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13626,6 +13626,84 @@
       "checkedAt": "2026-11-20T20:58:31Z",
       "timings": [],
       "deadline": null,
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "tohokusan-tbs-sasuke-idol-complete-20261220",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "SASUKEアイドル予選会2026完全版",
+      "start": "2026-12-20T21:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "TBSチャンネル1",
+      "note": "安杜羽加が出場、橘花怜が応援。",
+      "evidence": "本人公式スケジュールで日時・出演を確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1129814",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1129814",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:20:18Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:20:18Z",
+      "timings": [],
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "tohokusan-nhk-shaberitei-20261219",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "NHK総合・東北「東北しゃべり亭」",
+      "start": "2026-12-19T08:15:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "NHK総合・東北",
+      "note": "橘花怜、桜ひなの、伊達花彩、葉月結菜が出演。",
+      "evidence": "本人公式スケジュールで日時・出演を確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1129812",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1129812",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:20:18Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:20:18Z",
+      "timings": [],
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "tohokusan-nhk-shaberitei-open-recording-20261212",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "NHK総合・東北「東北しゃべり亭」公開収録",
+      "start": "2026-12-12T11:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "NHK仙台放送局",
+      "note": "橘花怜、桜ひなの、伊達花彩、葉月結菜が出演。着席抽選券配布は10:00〜10:30、入場は11:00から。",
+      "evidence": "本人公式スケジュールで日時・出演を確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1129812",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1129812",
+          "type": "artist_official",
+          "checkedAt": "2026-11-21T01:20:18Z"
+        }
+      ],
+      "checkedAt": "2026-11-21T01:20:18Z",
+      "timings": [],
       "revision": 1,
       "present": true
     }

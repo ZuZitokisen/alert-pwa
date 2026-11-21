@@ -1,0 +1,645 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:いぎなり東北産 / 全予定（通知あり）
+BEGIN:VEVENT
+UID:public-v1-d8185ae46ff34a646e7cd6b047b438e7aa72d24497611144307c4794167c5
+ ef1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261219T080000Z
+SUMMARY:初！いぎなりアリーナライブ ～帰ってきたいぎな
+ り東北産～
+DESCRIPTION:開場16:00。終了時刻未発表。\n本人公式の開催
+ 日・本文記載を確認。\nhttps://madeintohoku.com/pages/iginari-are
+ na
+LOCATION:ゼビオアリーナ仙台
+URL:https://madeintohoku.com/pages/iginari-arena
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:初！いぎなりアリーナライブ ～帰ってきたい
+ ぎなり東北産～
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1665d04e043fcc5bda03a85a981522c045cc8f87b748f93ef320588b29558
+ 00d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261220T060000Z
+SUMMARY:初！いぎなりアリーナライブ ～かわいいの向こう
+ 側へ～
+DESCRIPTION:開場14:00。終了時刻未発表。\n本人公式の開催
+ 日・本文記載を確認。\nhttps://madeintohoku.com/pages/iginari-are
+ na
+LOCATION:ゼビオアリーナ仙台
+URL:https://madeintohoku.com/pages/iginari-arena
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:初！いぎなりアリーナライブ ～かわいいの向
+ こう側へ～
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3a7ac5c62cd6089912e58893618dce7ea9549ce0dad2351b4c40e3fce2f5c
+ 53a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T094635Z
+CREATED:20261119T094635Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:0
+DTSTART:20261124T145900Z
+SUMMARY:初！いぎなりアリーナライブ グッズ事前通販締切
+DESCRIPTION:受付期間は11/18 12:00〜11/24 23:59。在庫限りで、
+ 期間中でも予定数に達すると終了。12/11発送完了予定。
+ \n本人公式の告知で開催日・受付情報を確認。未発表の
+ 時刻は補完していません。\nhttps://madeintohoku.com/contents/11
+ 27632
+LOCATION:MAILIVIS
+URL:https://madeintohoku.com/contents/1127632
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:初！いぎなりアリーナライブ グッズ事前通販
+ 締切
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7ae5da076d8408096ec5370729469d867460190d50a83f97f92bb6fa43f7d
+ 90d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261122T140000Z
+DTEND:20261122T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽開放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&ta
+ g=radio
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:安杜羽加MC FM FUJI「音楽開放区」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-53595d9dcb89aef065343fdc3d8af4d0d1b7791444e3dc7c1cae881f1839b
+ 312@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261129T140000Z
+DTEND:20261129T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽開放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&ta
+ g=radio
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:安杜羽加MC FM FUJI「音楽開放区」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0c479d54a0c8c4d0191bdc6832bd8837193a219013fc2fe541d130ed8d94e
+ 092@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T094635Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:1
+DTSTART:20261129T051000Z
+DTEND:20261129T060000Z
+SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-3
+DESCRIPTION:いぎなり東北産の出演枠は14:10〜15:00。イベン
+ ト全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMA
+ のSPECIAL3無料配信を案内：https://abema.go.link/kWQg5\n本人公
+ 式の個別出演時刻・会場と配信案内を確認。公演全体
+ の開始時刻と区別。\nhttps://madeintohoku.com/contents/1101783
+LOCATION:SGCホール有明
+URL:https://madeintohoku.com/contents/1101783
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:GIFT ～Girls Idol Festival Tokyo～ DAY-3
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5018ad8b8c1d7dcbbfb813762a5263b75721875a4a7eeee14dd942a15f314
+ db2@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261122T030000Z
+SUMMARY:アリーナへ直行便！fromさくらんぼ東根
+DESCRIPTION:トーク・フライヤーお渡し・2ショット。終了
+ 時刻未発表。\n本人公式の開催日・本文記載を確認。\nh
+ ttps://madeintohoku.com/contents/1127556
+LOCATION:イオン東根店 2F特設会場
+URL:https://madeintohoku.com/contents/1127556
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:アリーナへ直行便！fromさくらんぼ東根
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-d6630b058627bb1c5b5ce9982ea27985c870011c066fa78eb3b3ed3b953a6
+ 8c4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261119T094635Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20270130
+SUMMARY:いぎなりちゃん・とうほくちゃんと行く！まるご
+ と列車イベント（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n限定有料イベント。16:00頃に岩手県内の駅で受付、1
+ 9:30頃に古川駅で解散予定。概算時刻のため時刻欄には
+ 採用せず。スタンプラリー応募の当選者向け旅行商品
+ で、通常の自由参加イベントではありません。 11/30ま
+ でに対象の2駅以上で歴代ジャケットスタンプを取得し
+ た人が抽選に応募可。エキタグの応募フォームは12/4配
+ 信、12/14 23:59締切とJR東日本が案内。旅行代金は1人9\,000
+ 円（税込）、定員約50名。\n本人公式の告知で開催日・
+ 受付情報を確認。未発表の時刻は補完していません。 
+ 本人公式およびJR東日本の案内で応募条件と申込期間を
+ 確認。\nhttps://madeintohoku.com/contents/1108805\nhttps://www.jreast.c
+ o.jp/sendai/madeintohoku2026/\nhttps://www.jreast.co.jp/sendai/madeintohok
+ u2026/img/event.png?1=
+LOCATION:岩手県内の駅（調整中）〜東北新幹線〜古川駅
+URL:https://madeintohoku.com/contents/1108805
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2ed2e0d3b84804f76648cdd85a618d528c15fb37a9aeec19bd2ccb9bdb5b7
+ cb3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART:20261214T145900Z
+SUMMARY:まるごと列車イベント 抽選応募締切（かも？）
+DESCRIPTION:対象スタンプを集めた人向けの抽選受付。応募
+ だけで参加は確定せず、当選者が旅行商品を購入。\nJR
+ 東日本の公式案内を確認。本人公式での締切時刻明示
+ は未確認。\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps:
+ //www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:エキタグアプリの応募フォーム
+URL:https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c9e6fc1660c3f0a505a70a3ecd2ba6fd94e3b0cecf334200a78e33d339dd3
+ 465@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+SUMMARY:まるごと列車イベント 抽選応募フォーム配信・受
+ 付開始（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象者にエキタグアプリのお知らせで応募フォーム
+ を配信予定。応募は1人1回。開始時刻は未公表。\nJR東
+ 日本の公式案内による配信日。本人公式での日付明示
+ は未確認。\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps:
+ //www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:エキタグアプリ「お知らせ」
+URL:https://www.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-28fe835a732b6985f75472de02215585f022071aa4cfff66689ee44b440a6
+ dc0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261120T091115Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261130
+SUMMARY:いぎなり！東北まるごと推しめぐり スタンプ取得
+ 最終日（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n新青森・盛岡・秋田・仙台・山形・福島のうち異な
+ る2駅以上で歴代ジャケットスタンプを集めると、列車
+ イベントの抽選に応募可。LIVE記念スタンプは対象外。
+ この日はスタンプ取得の最終日で、応募締切ではあり
+ ません。\n本人公式の実施期間とJR東日本の抽選参加条
+ 件を確認。終了時刻は未公表。\nhttps://madeintohoku.com/conte
+ nts/1108805\nhttps://www.jreast.co.jp/sendai/madeintohoku2026/\nhttps://ww
+ w.jreast.co.jp/sendai/madeintohoku2026/img/event.png?1=
+LOCATION:東北6県の対象駅
+URL:https://madeintohoku.com/contents/1108805
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8c10293d07a023a46815b8033e8f8a377f8f3b77f6bd62b91cc6edf29340d
+ 95e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261122T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式11月カレンダー掲載日。毎週日曜10:30、終
+ 了未確認。放送後topo配信。\n本人公式の開催日・本文
+ 記載を確認。\nhttps://madeintohoku.com/contents/1065646\nhttps://mad
+ eintohoku.com/vertical_calendar
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:khb東日本放送「いぎなり放送中！」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f251a141da7e521c52616d5b2ecaf3c33def8e67a3a345d672bfabb3c13f7
+ 127@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261129T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式11月カレンダー掲載日。毎週日曜10:30、終
+ 了未確認。放送後topo配信。\n本人公式の開催日・本文
+ 記載を確認。\nhttps://madeintohoku.com/contents/1065646\nhttps://mad
+ eintohoku.com/vertical_calendar
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:khb東日本放送「いぎなり放送中！」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0d6b457e80b53d11a68477fa61295f229e322e47bcb15d3c824fe78e5ca2a
+ 205@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261121T051500Z
+SUMMARY:郡山 動画撮影お見送り会・フライヤーお渡し会・
+ 2ショット撮影会
+DESCRIPTION:14:15は動画撮影お見送り会開始。続いて無料フ
+ ライヤーお渡し、安杜羽加2ショットの順。後続個別時
+ 刻未発表、各列途切れ次第終了。撮影会・お見送り会
+ は生写真3セットにつき1回。\n本人公式の開催日・本文
+ 記載を確認。\nhttps://madeintohoku.com/contents/1127286
+LOCATION:アティ郡山 屋上／タワーレコード郡山店（6階）
+URL:https://madeintohoku.com/contents/1127286
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:郡山 動画撮影お見送り会・フライヤーお渡し
+ 会・2ショット撮影会
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-748f629e6b0763360d4754636f0ce8c232917a0a5003257df974f2faacc8a
+ 133@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T030751Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261120T030751Z
+SEQUENCE:1
+DTSTART:20261121T043000Z
+SUMMARY:いぎなり東北産「福島県民優先ミニライブ」
+DESCRIPTION:9名出演、観覧無料。県民優先券は現住所記載
+ の身分証が必要、購入不要。入場順は優先券所持者→
+ 券を持たない福島県民→県外の方。券なし県民は案内
+ 放送後、現住所記載の身分証提示で入場。\n本人公式の
+ 開催日・本文記載を確認。\nhttps://madeintohoku.com/contents/11
+ 27286\nhttps://madeintohoku.com/contents/1128577
+LOCATION:アティ郡山 屋上
+URL:https://madeintohoku.com/contents/1127286
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:いぎなり東北産「福島県民優先ミニライブ」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-067386fabcd1e8696e5ccdf8d7014daae9f481a8161384e87e24d467e2383
+ dab@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261121T040000Z
+SUMMARY:安杜羽加「アリーナへ直行便！from郡山」
+DESCRIPTION:トーク開始。福島県民優先券10:00配布、優先入
+ 場12:30。\n本人公式の開催日・本文記載を確認。\nhttps://
+ madeintohoku.com/contents/1127286
+LOCATION:アティ郡山 屋上
+URL:https://madeintohoku.com/contents/1127286
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:安杜羽加「アリーナへ直行便！from郡山」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-95a68cdc0d669736028edafb94b3fd1cfedbe4b7f337eb503e56bf83e09f7
+ aba@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T131500Z
+CREATED:20261119T131500Z
+LAST-MODIFIED:20261119T131500Z
+SEQUENCE:0
+DTSTART:20261123T145900Z
+SUMMARY:11月生まれ会員限定「いぎなりレター」抽選対象
+ 基準日
+DESCRIPTION:11月生まれで11/23 23:59までに入会した会員が抽
+ 選対象。入会時登録の誕生日と同時点の登録住所を使
+ 用。抽選で10名にカード等を送付し、当選発表は発送を
+ もって行う。全会員向けの申込締切や参加確約ではあ
+ りません。\nログイン不要の本人公式告知にある対象条
+ 件と基準日時を確認。\nhttps://madeintohoku.com/contents/1129140
+LOCATION:いぎなり東北ファン倶楽部
+URL:https://madeintohoku.com/contents/1129140
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:11月生まれ会員限定「いぎなりレター」抽選対
+ 象基準日
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fb3e006a7c0b9ec28cb237b40ed242e8188e34ce8e04c6ea92a99dbcea82c
+ b17@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T012018Z
+CREATED:20261121T012018Z
+LAST-MODIFIED:20261121T012018Z
+SEQUENCE:0
+DTSTART:20261218T231500Z
+SUMMARY:NHK総合・東北「東北しゃべり亭」
+DESCRIPTION:橘花怜、桜ひなの、伊達花彩、葉月結菜が出演
+ 。\n本人公式スケジュールで日時・出演を確認。\nhttps:/
+ /madeintohoku.com/contents/1129812
+LOCATION:NHK総合・東北
+URL:https://madeintohoku.com/contents/1129812
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:NHK総合・東北「東北しゃべり亭」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7bae664c3806389bdb5b640853e7c02eac71b7b64b588bd5549a4c90deab8
+ c77@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T012018Z
+CREATED:20261121T012018Z
+LAST-MODIFIED:20261121T012018Z
+SEQUENCE:0
+DTSTART:20261212T023000Z
+SUMMARY:NHK総合・東北「東北しゃべり亭」公開収録
+DESCRIPTION:橘花怜、桜ひなの、伊達花彩、葉月結菜が出演
+ 。着席抽選券配布は10:00〜10:30、入場は11:00から。\n本人
+ 公式スケジュールで日時・出演を確認。\nhttps://madeintoho
+ ku.com/contents/1129812
+LOCATION:NHK仙台放送局
+URL:https://madeintohoku.com/contents/1129812
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:NHK総合・東北「東北しゃべり亭」公開収録
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-92d0fe35aa4cdc44d45fd249660225a0d6288e673f73110269b217d5f3609
+ d6c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261119T093000Z
+SUMMARY:葉月結菜「アリーナへ直行便！from大宮」
+DESCRIPTION:トーク・無料フライヤーお渡し・2ショット撮
+ 影会。物販16:30開始。終了時刻未発表。\n本人公式の開
+ 催日・本文記載を確認。\nhttps://madeintohoku.com/contents/11261
+ 69
+LOCATION:HMV大宮アルシェ
+URL:https://madeintohoku.com/contents/1126169
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:葉月結菜「アリーナへ直行便！from大宮」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-354e463002133296849f14ff58c76aef1cf4687a6968eab797f34943f5f32
+ 55a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261123T043000Z
+SUMMARY:橘花怜「アリーナへ直行便！from札幌」
+DESCRIPTION:トーク・無料フライヤーお渡し・2ショット。
+ 本文の曜日表記に誤記あり、タイトルと日付に従い11月
+ 23日（月）。\n本人公式の開催日・本文記載を確認。\nht
+ tps://madeintohoku.com/contents/1127559
+LOCATION:タワーレコード アリオ札幌店
+URL:https://madeintohoku.com/contents/1127559
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:橘花怜「アリーナへ直行便！from札幌」
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2cd708119a2bbc696549f6df62d49d76e87c91c3041bbc448c98526eaf865
+ 5eb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T131500Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T131500Z
+SEQUENCE:2
+DTSTART:20261124T080000Z
+SUMMARY:#スタダ顔 ライブ ～まじで頑張ろ！女のスタダ！
+ ～
+DESCRIPTION:開場16:00。公演開始時刻であり個別出演時刻で
+ はない。終了未発表。 いぎなり東北産の会場CD販売：
+ 先行14:00〜15:30、開場後16:00〜17:00、終演後は列が途切れ
+ 次第終了。対象CD購入で限定2Lブロマイド特典（数量限
+ 定）。他出演者の物販時間とは別の案内。 東北産の一
+ 般グッズ物販はCD販売と別の案内で、先行14:00〜15:30、
+ 開場後16:00から、終演後は列が途切れ次第終了。購入時
+ チケット確認あり、チケットなしは開演後から。準備
+ 等で一時中断の場合あり。17:00を一般グッズ物販の終了
+ 時刻にはしていません。\n本人公式の開催日・本文記載
+ を確認。\nhttps://madeintohoku.com/contents/1117445\nhttps://madeintoh
+ oku.com/contents/1128759\nhttps://madeintohoku.com/contents/1129171
+LOCATION:ザ・ガーデンホール
+URL:https://madeintohoku.com/contents/1117445
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:#スタダ顔 ライブ ～まじで頑張ろ！女のスタダ
+ ！～
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3225fe6f4d8606ad1e79406bf7745d46b4d3d074f15a8582662d999814a42
+ bc1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261219T010000Z
+DTEND:20261219T090000Z
+SUMMARY:TOHOKU STARS★PARK
+DESCRIPTION:アリーナ外周屋外イベント、入場無料。メンバ
+ ー出演を示す予定ではない。\n本人公式の開催日・本文
+ 記載を確認。\nhttps://madeintohoku.com/pages/iginari-arena
+LOCATION:あすと長町 杜の広場公園
+URL:https://madeintohoku.com/pages/iginari-arena
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:TOHOKU STARS★PARK
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5fce3079b137e4c5aeb4ff5a36fb83ab9b8a0f1505e515186dcb3b323b3f1
+ ca2@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T084531Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261119T084531Z
+SEQUENCE:0
+DTSTART:20261220T010000Z
+DTEND:20261220T060000Z
+SUMMARY:TOHOKU STARS★PARK
+DESCRIPTION:アリーナ外周屋外イベント、入場無料。メンバ
+ ー出演を示す予定ではない。\n本人公式の開催日・本文
+ 記載を確認。\nhttps://madeintohoku.com/pages/iginari-arena
+LOCATION:あすと長町 杜の広場公園
+URL:https://madeintohoku.com/pages/iginari-arena
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:TOHOKU STARS★PARK
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21b45e429a5107cf7a6df733b300e532bee044659fb2a098cb07f0d3256ea
+ b8e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T012018Z
+CREATED:20261121T012018Z
+LAST-MODIFIED:20261121T012018Z
+SEQUENCE:0
+DTSTART:20261220T120000Z
+SUMMARY:SASUKEアイドル予選会2026完全版
+DESCRIPTION:安杜羽加が出場、橘花怜が応援。\n本人公式ス
+ ケジュールで日時・出演を確認。\nhttps://madeintohoku.com/co
+ ntents/1129814
+LOCATION:TBSチャンネル1
+URL:https://madeintohoku.com/contents/1129814
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SASUKEアイドル予選会2026完全版
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7f9a964fc156ba086d0defabc163827bd1a0b4e7c72d18408c70413e42bee
+ 51f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261119T084531Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20261211
+SUMMARY:律月ひかる「ULTRA GT FES 2026」（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n開催日のみ公表。開場・開演時刻は未発表。 律月
+ ひかるはソロ出演。同じ公演にRE-GEも出演。\n本人公式
+ の開催日・本文記載を確認。 双方の本人公式と主催公
+ 演ページを照合。\nhttps://madeintohoku.com/contents/1129021\nhttps
+ ://madeintohoku.com/contents/1129023\nhttps://re-ge.com/news/item-818/\nht
+ tps://ultragt.radiomax.jp/fes
+LOCATION:渋谷ストリームホール
+URL:https://madeintohoku.com/contents/1129023
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-cbe9d236f74577e33a79cc03f2466aec94a863945d8db67a3050bb45a9a1c
+ c1d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T094635Z
+CREATED:20261119T094635Z
+LAST-MODIFIED:20261119T094635Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261212
+SUMMARY:いぎなり年末大特典会2026（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n生誕祭衣装でのABランダムツーショット会。ライブ
+ ・トークなし。開始時刻など追加詳細は未発表。\n本人
+ 公式の告知で開催日・受付情報を確認。未発表の時刻
+ は補完していません。\nhttps://madeintohoku.com/contents/1127435
+LOCATION:錦糸町マルイ8F すみだ産業会館
+URL:https://madeintohoku.com/contents/1127435
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -341,6 +341,41 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-fb3e006a7c0b9ec28cb237b40ed242e8188e34ce8e04c6ea92a99dbcea82c
+ b17@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T012018Z
+CREATED:20261121T012018Z
+LAST-MODIFIED:20261121T012018Z
+SEQUENCE:0
+DTSTART:20261218T231500Z
+SUMMARY:NHK総合・東北「東北しゃべり亭」
+DESCRIPTION:橘花怜、桜ひなの、伊達花彩、葉月結菜が出演
+ 。\n本人公式スケジュールで日時・出演を確認。\nhttps:/
+ /madeintohoku.com/contents/1129812
+LOCATION:NHK総合・東北
+URL:https://madeintohoku.com/contents/1129812
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7bae664c3806389bdb5b640853e7c02eac71b7b64b588bd5549a4c90deab8
+ c77@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T012018Z
+CREATED:20261121T012018Z
+LAST-MODIFIED:20261121T012018Z
+SEQUENCE:0
+DTSTART:20261212T023000Z
+SUMMARY:NHK総合・東北「東北しゃべり亭」公開収録
+DESCRIPTION:橘花怜、桜ひなの、伊達花彩、葉月結菜が出演
+ 。着席抽選券配布は10:00〜10:30、入場は11:00から。\n本人
+ 公式スケジュールで日時・出演を確認。\nhttps://madeintoho
+ ku.com/contents/1129812
+LOCATION:NHK仙台放送局
+URL:https://madeintohoku.com/contents/1129812
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-92d0fe35aa4cdc44d45fd249660225a0d6288e673f73110269b217d5f3609
  d6c@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T084531Z
@@ -436,6 +471,23 @@ DESCRIPTION:アリーナ外周屋外イベント、入場無料。メンバ
  記載を確認。\nhttps://madeintohoku.com/pages/iginari-arena
 LOCATION:あすと長町 杜の広場公園
 URL:https://madeintohoku.com/pages/iginari-arena
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21b45e429a5107cf7a6df733b300e532bee044659fb2a098cb07f0d3256ea
+ b8e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T012018Z
+CREATED:20261121T012018Z
+LAST-MODIFIED:20261121T012018Z
+SEQUENCE:0
+DTSTART:20261220T120000Z
+SUMMARY:SASUKEアイドル予選会2026完全版
+DESCRIPTION:安杜羽加が出場、橘花怜が応援。\n本人公式ス
+ ケジュールで日時・出演を確認。\nhttps://madeintohoku.com/co
+ ntents/1129814
+LOCATION:TBSチャンネル1
+URL:https://madeintohoku.com/contents/1129814
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

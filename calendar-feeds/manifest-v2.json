@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-threads-episode",
-  "dataGeneratedAt": "2026-11-20T20:58:31Z",
+  "dataVersion": "2026-11-21-ebichu-tohokusan",
+  "dataGeneratedAt": "2026-11-21T01:20:18Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "475a1b2269d2d75e6e55ee0caa0ee743e0ef90c263039fc0ef9398d52a6a2edf",
+  "inputSha256": "50c5e40396f657b9559d486a90d454572005114ce84ab32de8a8071a44f8cb5e",
   "feeds": [
     {
       "id": "tokisen-all",

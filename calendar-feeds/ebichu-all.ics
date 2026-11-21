@@ -1,0 +1,193 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:私立恵比寿中学 / 全予定
+BEGIN:VEVENT
+UID:public-v1-c3a65f1a4e83d7cc7de5a96909dba56a636e53a4755964ae42c630627ca1e
+ a4d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261122T110000Z
+SUMMARY:artistspoken「幼馴染なふたり」
+DESCRIPTION:真山りか出演。\n私立恵比寿中学公式サイトで
+ 確認。\nhttps://www.shiritsuebichu.jp/media/94622/
+LOCATION:artistspoken
+URL:https://www.shiritsuebichu.jp/media/94622/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9c1780d13e5bdb8f6933db72cfeba3d943d4a48260dd2f6ca6ef6e2d3c38f
+ 3f1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261123T093000Z
+DTEND:20261123T100000Z
+SUMMARY:ちかっぱ祭2026
+DESCRIPTION:私立恵比寿中学の出演時間。\n私立恵比寿中学
+ 公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/95687/
+LOCATION:マリンメッセ福岡B館
+URL:https://www.shiritsuebichu.jp/media/95687/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1cf41d97f787cf32efc8cc38f58667a8f3fcac559be454b0a38e0c3179fd8
+ 9ae@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20270206T090000Z
+SUMMARY:私立恵比寿中学 大学芸会2027「This is GR8」
+DESCRIPTION:出演者の変更告知は公式特設ページを確認。\n
+ 私立恵比寿中学公式サイトで確認。\nhttps://www.shiritsuebic
+ hu.jp/this-is-gr8/
+LOCATION:東京ガーデンシアター
+URL:https://www.shiritsuebichu.jp/this-is-gr8/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6154396542894fea7952e609d7a571ed1da1803df1d142a567243e524cda9
+ 541@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20270207T070000Z
+SUMMARY:私立恵比寿中学 大学芸会2027「This is GR8」
+DESCRIPTION:出演者の変更告知は公式特設ページを確認。\n
+ 私立恵比寿中学公式サイトで確認。\nhttps://www.shiritsuebic
+ hu.jp/this-is-gr8/
+LOCATION:東京ガーデンシアター
+URL:https://www.shiritsuebichu.jp/this-is-gr8/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-106e5edab7b5009c796896e1030f233fb2f403faa66564104b6c0cc387f66
+ ba4@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261123T145900Z
+SUMMARY:大学芸会2027「This is GR8」プレイガイド2次先行締切
+DESCRIPTION:受付開始はプレイガイドごとに異なる。\n私立
+ 恵比寿中学公式サイトで確認。\nhttps://www.shiritsuebichu.jp/
+ this-is-gr8/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/this-is-gr8/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-32103ce02e6c99212d1fcdc97535d50f34c3d5b586f8c809090cac8125e81
+ 424@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261121T110000Z
+DTEND:20261121T113500Z
+SUMMARY:わーすたpresents にゃんぽこらフェス！vol.3
+DESCRIPTION:グループの出演枠は20:00〜20:25と20:25〜20:35。出
+ 演者の変更告知は公式ページを確認。\n私立恵比寿中学
+ 公式サイトで確認。\nhttps://www.shiritsuebichu.jp/media/96425/
+LOCATION:ステラボール
+URL:https://www.shiritsuebichu.jp/media/96425/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-1c525e40772c67c69fa1e3e0cf014897cdfa3ca55120ade794f1710de6bec
+ b60@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261128T143000Z
+DTEND:20261128T160000Z
+SUMMARY:Spicy Sessions -THE LIVE- 2026
+DESCRIPTION:真山りか・安本彩花がゲスト出演した昼公演の
+ 放送。\n私立恵比寿中学公式サイトで確認。\nhttps://www.s
+ hiritsuebichu.jp/media/96779/
+LOCATION:TBSチャンネル1
+URL:https://www.shiritsuebichu.jp/media/96779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-4bad2956467669c4abbe7586ba4c84b43789023cc6ed38a597033a41cd56d
+ bf9@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261124T080000Z
+SUMMARY:#スタダ顔 LIVE
+DESCRIPTION:17:00はイベントの開演。個別出演時間は未確認
+ 。\n私立恵比寿中学公式サイトで確認。\nhttps://www.shirits
+ uebichu.jp/media/96540/
+LOCATION:ザ・ガーデンホール
+URL:https://www.shiritsuebichu.jp/media/96540/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-362a70725d2a1f9d7560f533124e4d96051bb57fbb382e6f9660571eb821f
+ fbd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261122T073000Z
+SUMMARY:「スーパーブルー」アナザージャケットお渡し会
+DESCRIPTION:私立恵比寿中学公式サイトで確認。\nhttps://www.s
+ hiritsuebichu.jp/media/96887/
+LOCATION:タワーレコード渋谷店 9F
+URL:https://www.shiritsuebichu.jp/media/96887/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-80c2e89ab65c9981b2411a99bace1a957572492aa6ac78a1f8d10a210b518
+ 775@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20261219T040000Z
+SUMMARY:「スーパーブルー」リリースイベント
+DESCRIPTION:ミニライブと握手会。出演者の変更告知は公式
+ ページを確認。\n私立恵比寿中学公式サイトで確認。\nh
+ ttps://www.shiritsuebichu.jp/news/16244/
+LOCATION:ららぽーと立川立飛
+URL:https://www.shiritsuebichu.jp/news/16244/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0e143a183618265722176b66d7f2f9f1303e796f54759f8df743e1800d501
+ 792@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261121T011450Z
+CREATED:20261121T011450Z
+LAST-MODIFIED:20261121T011450Z
+SEQUENCE:0
+DTSTART:20270111T040000Z
+SUMMARY:「スーパーブルー」リリースイベント
+DESCRIPTION:ミニライブと握手会。出演者の変更告知は公式
+ ページを確認。\n私立恵比寿中学公式サイトで確認。\nh
+ ttps://www.shiritsuebichu.jp/news/16244/
+LOCATION:イオンレイクタウンkaze
+URL:https://www.shiritsuebichu.jp/news/16244/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

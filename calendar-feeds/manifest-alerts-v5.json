@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 5,
+  "production": true,
+  "namespace": "alert-pwa.zuzitokisen.github.io",
+  "dataVersion": "2026-11-21-ebichu-tohokusan",
+  "dataGeneratedAt": "2026-11-21T01:20:18Z",
+  "coverage": {
+    "from": "2026-11-11",
+    "through": "2027-03-31"
+  },
+  "inputSha256": "c3b22e42cb46fafd83abf61fdee132cb4089b7832d3aed5c576c0a060e063799",
+  "feeds": [
+    {
+      "id": "tokisen-all",
+      "artist": "tokisen",
+      "category": "all",
+      "label": "超ときめき♡宣伝部 / 全予定",
+      "path": "calendar-feeds/tokisen-all-alerts.ics",
+      "count": 195,
+      "omittedUnknownDate": 10,
+      "sha256": "7e8129642c7819a587cf4220f8d35d251665e76c1874acb3a0965496f6daa2cc"
+    },
+    {
+      "id": "tokisen-live",
+      "artist": "tokisen",
+      "category": "live",
+      "label": "超ときめき♡宣伝部 / ライブ・イベント",
+      "path": "calendar-feeds/tokisen-live-alerts.ics",
+      "count": 11,
+      "omittedUnknownDate": 3,
+      "sha256": "0ef54ff8ba5ff164c7b6b59becf820b764b4228f99d4d41d3728326b76daf285"
+    },
+    {
+      "id": "tokisen-benefit",
+      "artist": "tokisen",
+      "category": "benefit",
+      "label": "超ときめき♡宣伝部 / 特典会・応募",
+      "path": "calendar-feeds/tokisen-benefit-alerts.ics",
+      "count": 63,
+      "omittedUnknownDate": 5,
+      "sha256": "29348b8cb374739ea68a42cc4d10ce5fe9b5806f8c3800bd92125ee8c9f063c4"
+    },
+    {
+      "id": "tokisen-media",
+      "artist": "tokisen",
+      "category": "media",
+      "label": "超ときめき♡宣伝部 / メディア",
+      "path": "calendar-feeds/tokisen-media-alerts.ics",
+      "count": 121,
+      "omittedUnknownDate": 2,
+      "sha256": "da76bd723d2e49964873cbbb67b0370b11ba85f12eb2900077b34617923172b8"
+    },
+    {
+      "id": "tokisen-other",
+      "artist": "tokisen",
+      "category": "other",
+      "label": "超ときめき♡宣伝部 / その他",
+      "path": "calendar-feeds/tokisen-other-alerts.ics",
+      "count": 0,
+      "omittedUnknownDate": 0,
+      "sha256": "0ed4bbc7784bf422f00a61b8d37092c108a0c75940aaf1b8bf7fc46aa40ab715"
+    },
+    {
+      "id": "re-ge-all",
+      "artist": "re-ge",
+      "category": "all",
+      "label": "RE-GE / 全予定",
+      "path": "calendar-feeds/re-ge-all-alerts.ics",
+      "count": 61,
+      "omittedUnknownDate": 0,
+      "sha256": "fb2abee769e697cbf1793ce9b7d7b37574ce581d1aecdcbe57ae0a25b27a472b"
+    },
+    {
+      "id": "re-ge-live",
+      "artist": "re-ge",
+      "category": "live",
+      "label": "RE-GE / ライブ・イベント",
+      "path": "calendar-feeds/re-ge-live-alerts.ics",
+      "count": 9,
+      "omittedUnknownDate": 0,
+      "sha256": "53ed5fafea42826f6ddf30f5b72c74f81cc364bb605564ab8a503f579946cce8"
+    },
+    {
+      "id": "re-ge-benefit",
+      "artist": "re-ge",
+      "category": "benefit",
+      "label": "RE-GE / 特典会・応募",
+      "path": "calendar-feeds/re-ge-benefit-alerts.ics",
+      "count": 33,
+      "omittedUnknownDate": 0,
+      "sha256": "baeb8008cd6f417ad5b7fd8b4d395fffecb402e526084c800b1fefce44d1e26e"
+    },
+    {
+      "id": "re-ge-media",
+      "artist": "re-ge",
+      "category": "media",
+      "label": "RE-GE / メディア",
+      "path": "calendar-feeds/re-ge-media-alerts.ics",
+      "count": 19,
+      "omittedUnknownDate": 0,
+      "sha256": "e67eb2d1cab3cbc7d9205bb43f1113dc56b6d9a96bc7065fbeb31f04dc8e83f1"
+    },
+    {
+      "id": "re-ge-other",
+      "artist": "re-ge",
+      "category": "other",
+      "label": "RE-GE / その他",
+      "path": "calendar-feeds/re-ge-other-alerts.ics",
+      "count": 0,
+      "omittedUnknownDate": 0,
+      "sha256": "bcee7e31989900d00d7a9a4f8a0cd006d650f330bd37f3a8b61de1227a5f326e"
+    },
+    {
+      "id": "straightangeli-all",
+      "artist": "straightangeli",
+      "category": "all",
+      "label": "Straight Angeli / 全予定",
+      "path": "calendar-feeds/straightangeli-all-alerts.ics",
+      "count": 39,
+      "omittedUnknownDate": 0,
+      "sha256": "63d7977d036d080de46524e6e57f7916f2d384f100addabfe8dec9548775544c"
+    },
+    {
+      "id": "straightangeli-live",
+      "artist": "straightangeli",
+      "category": "live",
+      "label": "Straight Angeli / ライブ・イベント",
+      "path": "calendar-feeds/straightangeli-live-alerts.ics",
+      "count": 6,
+      "omittedUnknownDate": 0,
+      "sha256": "ffdf9276390c68120cba200adf8da95dec15d2f0ea6210abea5eb411e80d71be"
+    },
+    {
+      "id": "straightangeli-benefit",
+      "artist": "straightangeli",
+      "category": "benefit",
+      "label": "Straight Angeli / 特典会・応募",
+      "path": "calendar-feeds/straightangeli-benefit-alerts.ics",
+      "count": 10,
+      "omittedUnknownDate": 0,
+      "sha256": "856a0946bd8010945ef48c0b03eca60b0ffc7e2ecdd87c863ed33b9fe86f2a7c"
+    },
+    {
+      "id": "straightangeli-media",
+      "artist": "straightangeli",
+      "category": "media",
+      "label": "Straight Angeli / メディア",
+      "path": "calendar-feeds/straightangeli-media-alerts.ics",
+      "count": 23,
+      "omittedUnknownDate": 0,
+      "sha256": "39144199e720500ab30b9f314e19ea871c54c0dc0c64eec788dffdb05881ce81"
+    },
+    {
+      "id": "straightangeli-other",
+      "artist": "straightangeli",
+      "category": "other",
+      "label": "Straight Angeli / その他",
+      "path": "calendar-feeds/straightangeli-other-alerts.ics",
+      "count": 0,
+      "omittedUnknownDate": 0,
+      "sha256": "8903d37cce21278078ae3a1afce784a7811e0afb73751086750e6fd8e6adddf7"
+    },
+    {
+      "id": "oneloveoneheart-all",
+      "artist": "oneloveoneheart",
+      "category": "all",
+      "label": "ONE LOVE ONE HEART / 全予定",
+      "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
+      "count": 34,
+      "omittedUnknownDate": 0,
+      "sha256": "9671f27c618b7fd0da88722b4981aa7c047d0518d9f06d9c5189ab519362bc30"
+    },
+    {
+      "id": "oneloveoneheart-live",
+      "artist": "oneloveoneheart",
+      "category": "live",
+      "label": "ONE LOVE ONE HEART / ライブ・イベント",
+      "path": "calendar-feeds/oneloveoneheart-live-alerts.ics",
+      "count": 11,
+      "omittedUnknownDate": 0,
+      "sha256": "a7a542058db3f5b986881e94abbffce563d5935290d4ef3575f7144464fa6a64"
+    },
+    {
+      "id": "oneloveoneheart-benefit",
+      "artist": "oneloveoneheart",
+      "category": "benefit",
+      "label": "ONE LOVE ONE HEART / 特典会・応募",
+      "path": "calendar-feeds/oneloveoneheart-benefit-alerts.ics",
+      "count": 12,
+      "omittedUnknownDate": 0,
+      "sha256": "c9e9c556fe6ce57bea16ac27ed940bf3f923a6eb05e203b0241ca9aa9deb8010"
+    },
+    {
+      "id": "oneloveoneheart-media",
+      "artist": "oneloveoneheart",
+      "category": "media",
+      "label": "ONE LOVE ONE HEART / メディア",
+      "path": "calendar-feeds/oneloveoneheart-media-alerts.ics",
+      "count": 9,
+      "omittedUnknownDate": 0,
+      "sha256": "c3db91053bb457c65e012480331d839cc94b79219c185bad436e1497f1f5ae88"
+    },
+    {
+      "id": "oneloveoneheart-other",
+      "artist": "oneloveoneheart",
+      "category": "other",
+      "label": "ONE LOVE ONE HEART / その他",
+      "path": "calendar-feeds/oneloveoneheart-other-alerts.ics",
+      "count": 2,
+      "omittedUnknownDate": 0,
+      "sha256": "4b611102c600c5c0fffaf54c968ed01516b00b7ee1eaa76d77d69c9e142aca67"
+    },
+    {
+      "id": "tohokusan-all",
+      "artist": "tohokusan",
+      "category": "all",
+      "label": "いぎなり東北産 / 全予定",
+      "path": "calendar-feeds/tohokusan-all-alerts.ics",
+      "count": 27,
+      "omittedUnknownDate": 0,
+      "sha256": "6928dcd9e8a8ee5dc5836ec8f20692488120053be5017e49a8bdde4513fb34b3"
+    },
+    {
+      "id": "tohokusan-live",
+      "artist": "tohokusan",
+      "category": "live",
+      "label": "いぎなり東北産 / ライブ・イベント",
+      "path": "calendar-feeds/tohokusan-live-alerts.ics",
+      "count": 16,
+      "omittedUnknownDate": 0,
+      "sha256": "20c00df0f60540f067cfe93c4c67fc745608895ff8d646834701f7d684931ad4"
+    },
+    {
+      "id": "tohokusan-benefit",
+      "artist": "tohokusan",
+      "category": "benefit",
+      "label": "いぎなり東北産 / 特典会・応募",
+      "path": "calendar-feeds/tohokusan-benefit-alerts.ics",
+      "count": 5,
+      "omittedUnknownDate": 0,
+      "sha256": "a01db090f3600cc7a920662fd2fc70167375e591cb3719c78fa219482c15895f"
+    },
+    {
+      "id": "tohokusan-media",
+      "artist": "tohokusan",
+      "category": "media",
+      "label": "いぎなり東北産 / メディア",
+      "path": "calendar-feeds/tohokusan-media-alerts.ics",
+      "count": 6,
+      "omittedUnknownDate": 0,
+      "sha256": "332dd5a3ddfab357201badf78ca7e9767da5ac6aea716945176d27b4490da713"
+    },
+    {
+      "id": "tohokusan-other",
+      "artist": "tohokusan",
+      "category": "other",
+      "label": "いぎなり東北産 / その他",
+      "path": "calendar-feeds/tohokusan-other-alerts.ics",
+      "count": 0,
+      "omittedUnknownDate": 0,
+      "sha256": "74885fcc302472065e96be61c3491fd9a833ee0c99b08417d66242970dfc75da"
+    },
+    {
+      "id": "ebichu-all",
+      "artist": "ebichu",
+      "category": "all",
+      "label": "私立恵比寿中学 / 全予定",
+      "path": "calendar-feeds/ebichu-all-alerts.ics",
+      "count": 11,
+      "omittedUnknownDate": 0,
+      "sha256": "4bf94a7295b22e0960a888b24cc6cb135bd8ea478cbfef4fdd36d97fc895b45c"
+    },
+    {
+      "id": "ebichu-live",
+      "artist": "ebichu",
+      "category": "live",
+      "label": "私立恵比寿中学 / ライブ・イベント",
+      "path": "calendar-feeds/ebichu-live-alerts.ics",
+      "count": 7,
+      "omittedUnknownDate": 0,
+      "sha256": "d22477ebbed0f271126af6675211574736c36230ff03e19fe9fc882535fd4400"
+    },
+    {
+      "id": "ebichu-benefit",
+      "artist": "ebichu",
+      "category": "benefit",
+      "label": "私立恵比寿中学 / 特典会・応募",
+      "path": "calendar-feeds/ebichu-benefit-alerts.ics",
+      "count": 2,
+      "omittedUnknownDate": 0,
+      "sha256": "f7fac4dba77dcf8ec6d21d43e9755637a93e175204c6e931f1018ec4f06f44b9"
+    },
+    {
+      "id": "ebichu-media",
+      "artist": "ebichu",
+      "category": "media",
+      "label": "私立恵比寿中学 / メディア",
+      "path": "calendar-feeds/ebichu-media-alerts.ics",
+      "count": 2,
+      "omittedUnknownDate": 0,
+      "sha256": "5cfe315dac0336ab2e0a384d61a3c46d248200e09e3a2fe9cfe254d058b0ef28"
+    },
+    {
+      "id": "ebichu-other",
+      "artist": "ebichu",
+      "category": "other",
+      "label": "私立恵比寿中学 / その他",
+      "path": "calendar-feeds/ebichu-other-alerts.ics",
+      "count": 0,
+      "omittedUnknownDate": 0,
+      "sha256": "06b7b392d99da6f17fe14fedacdc706cfe0d603449bcb96a78b1c5c54ea4f680"
+    }
+  ],
+  "alertOffsetMinutes": 60
+}

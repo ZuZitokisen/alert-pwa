@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:RE-GE / ライブ・イベント（通知あり）
+BEGIN:VEVENT
+UID:public-v1-102eef82531fb3237a614fd8574e73f5a2612a8aa2578e26f61e5377f6a3e
+ 8af@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T091115Z
+CREATED:20261118T163521Z
+LAST-MODIFIED:20261120T091115Z
+SEQUENCE:2
+DTSTART;VALUE=DATE:20261211
+SUMMARY:FM FUJI「秋本帆華のウルトラGT」初の音楽イベント
+ ～ULTRA GT FES 2026～（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n本人公式で12/11開催と渋谷ストリームホールを確認
+ 。桧山ゆうみは別件のため欠席と告知。開始・終了時
+ 刻は未確認。 同じ公演に律月ひかる（いぎなり東北産
+ ）がソロ出演。\n本人公式スケジュール詳細のイベント
+ 日付属性・見出し・カテゴリ。公開日を開催日として
+ 使用していません。 本人公式ニュース本文で会場・欠
+ 席告知を補足。 共演者の本人公式と主催公演ページを
+ 照合。\nhttps://madeintohoku.com/contents/1129021\nhttps://re-ge.com/ne
+ ws/item-818/\nhttps://re-ge.com/schedule/item-819/\nhttps://ultragt.radiom
+ ax.jp/fes
+LOCATION:渋谷ストリームホール
+URL:https://re-ge.com/schedule/item-819/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3692c1da814c2659a3b7bb82b8ed821a974fd260f5227e9e0504c469f0107
+ 7ae@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270221T040000Z
+SUMMARY:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜・1
+ 部開演
+DESCRIPTION:本人側の公式発表で確認。\nhttps://re-ge.com/news/it
+ em-779/\nhttps://re-ge.com/schedule/item-781/
+LOCATION:恵比寿ガーデンルーム
+URL:https://re-ge.com/news/item-779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜
+ ・1部開演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5b67d5cc672b4e275dfd0299ad6a5f085cfdc6b452f14c5a49d6832ef7d77
+ e43@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART:20270221T090000Z
+SUMMARY:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜・2
+ 部開演
+DESCRIPTION:本人側の公式発表で確認。\nhttps://re-ge.com/news/it
+ em-779/\nhttps://re-ge.com/schedule/item-781/
+LOCATION:恵比寿ガーデンルーム
+URL:https://re-ge.com/news/item-779/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:RE-GE 1st Anniversary Live 〜きっと、いまが青春。〜
+ ・2部開演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b6cfe6e38fac64b085f8b4d57dfe6508b25b0aaccd2bd2f0392ef567637d0
+ 2ea@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261116T033812Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:1
+DTSTART:20261227T090000Z
+SUMMARY:BATTEN END-OF-YEAR PARTY 2026 第2部 BATTEN CROSSING VS RE-GE
+DESCRIPTION:本人側の公式発表で確認。\nhttps://battengirls.com/c
+ ontents/1107970\nhttps://re-ge.com/news/item-790/\nhttps://re-ge.com/sched
+ ule/item-791/
+LOCATION:EX THEATER ROPPONGI
+URL:https://re-ge.com/news/item-790/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:BATTEN END-OF-YEAR PARTY 2026 第2部 BATTEN CROSSING VS RE-GE
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-ef0e86cbcd2c82520ff49e0273564f83b1219b5ec8df2d85f93f751c224ed
+ 303@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261120T132256Z
+CREATED:20261120T132256Z
+LAST-MODIFIED:20261120T132256Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270109
+SUMMARY:ニューイヤーだよ！六本木アイドルフェスティバ
+ ル（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nRE-GE出演決定。公演全体の終演予定は21:30頃。RE-GEの
+ 個別出演時刻は未発表。スタンディングS 8\,800円、A 5\,5
+ 00円、スタンド指定席6\,000円。ドリンク代600円別。テレ
+ 朝iDが必要。受付：https://ticket.tv-asahi.co.jp/ex/project/idolfes
+ 2027\nRE-GE公式告知とテレビ朝日の公式情報で確認。\nhttp
+ s://re-ge.com/news/item-822/\nhttps://ticket.tv-asahi.co.jp/ex/project/ido
+ lfes2027\nhttps://www.tv-asahi.co.jp/idolfes/
+LOCATION:EXシアター六本木
+URL:https://re-ge.com/news/item-822/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5e5f8bda4a55f287bcaacdb53a39335ea3f828ee5440dba182982e7169d39
+ c65@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261116T033812Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261116T033812Z
+SEQUENCE:2
+DTSTART:20261114T074000Z
+DTEND:20261114T080500Z
+SUMMARY:SPA! FES2026
+DESCRIPTION:RE-GEの出演枠。イベント全体は11:00開場・11:45開
+ 演。那須ほほみは不参加。特典会は別会場・別予定を
+ 参照。\n本人側の公式発表で確認。\nhttps://re-ge.com/news/it
+ em-671/\nhttps://re-ge.com/news/item-803/\nhttps://re-ge.com/schedule/item
+ -673/
+LOCATION:Spotify O-WEST
+URL:https://re-ge.com/news/item-803/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SPA! FES2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f499bc126ff6031e064f2195e382ff7391d42e425b23eb9a1ea70835a79f1
+ d72@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261113T144334Z
+CREATED:20261113T144334Z
+LAST-MODIFIED:20261113T144334Z
+SEQUENCE:0
+DTSTART:20261114T082500Z
+SUMMARY:SPA! FES2026 RE-GE 2ショット撮影会
+DESCRIPTION:17:25頃から販売・特典会開始予定、列が途切れ
+ 次第終了。那須ほほみは不参加。当日のイベントチケ
+ ットと撮影券が必要。会場で第六弾生写真（1セット税
+ 込1\,000円）を3セット購入につき撮影券1枚。先着配布・
+ 定員で終了。第一弾ミニ生写真と第七弾新作生写真は
+ 対象外。希望メンバー1名との撮影、1ショットも可。支
+ 払いは現金・PayPay。販売状況・残数は未確認。\n本人側
+ の公式発表で確認。\nhttps://re-ge.com/news/item-803/
+LOCATION:HARLEM 2F A（東京都渋谷区円山町2-4 Dr.ジーカンス 2F
+ ）
+URL:https://re-ge.com/news/item-803/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:SPA! FES2026 RE-GE 2ショット撮影会
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dd9f7de9b1799d9ea8785786dbf2c6b65305076c403379c3bf68ebff12d38
+ f79@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261119T104422Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261119T104422Z
+SEQUENCE:1
+DTSTART:20261124T080000Z
+SUMMARY:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ！
+ 〜
+DESCRIPTION:RE-GEの物販：先行14:00〜15:30、開場後16:00から、
+ 終演後は列が途切れ次第終了。17:00は公演開演時刻であ
+ り物販終了時刻ではない。チケット所持確認あり、チ
+ ケットなしで購入できるのは開演後。準備等で中断・
+ 時間変更の場合あり。\n本人側の公式発表で確認。\nhttp
+ s://re-ge.com/news/item-716/\nhttps://re-ge.com/news/item-809/
+LOCATION:ザ・ガーデンホール
+URL:https://re-ge.com/news/item-716/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ
+ ！〜
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-91f35d8e249acc4f63f09ae8853f28099fa473de561d997308749afbc7979
+ 6d0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261111T093246Z
+CREATED:20261111T093246Z
+LAST-MODIFIED:20261111T093246Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261129
+SUMMARY:VS PARK 2nd Singleリリース記念キャンペーン 終了日（
+ 時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n本人側の公式発表で確認。\nhttps://re-ge.com/news/item-782
+ /
+LOCATION:VS PARK全9店舗
+URL:https://re-ge.com/news/item-782/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

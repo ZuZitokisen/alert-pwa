@@ -6,8 +6,10 @@ const NAMESPACE = 'alert-pwa.zuzitokisen.github.io';
 const LEGACY_ARTISTS = ['tokisen', 're-ge'];
 const V2_ARTISTS = [...LEGACY_ARTISTS, 'straightangeli'];
 const V3_ARTISTS = [...V2_ARTISTS, 'oneloveoneheart'];
-const ARTISTS = [...V3_ARTISTS, 'tohokusan'];
-const NAMES = {tokisen:'超ときめき♡宣伝部','re-ge':'RE-GE',straightangeli:'Straight Angeli',oneloveoneheart:'ONE LOVE ONE HEART',tohokusan:'いぎなり東北産'};
+const V4_ARTISTS = [...V3_ARTISTS, 'tohokusan'];
+const ARTISTS = [...V4_ARTISTS, 'ebichu'];
+const SOURCE_ARTISTS=Object.freeze({'schedule-data-v2.json':V2_ARTISTS,'schedule-data-v3.json':V3_ARTISTS,'schedule-data-v4.json':V4_ARTISTS,'schedule-data-v5.json':ARTISTS});
+const NAMES = {tokisen:'超ときめき♡宣伝部','re-ge':'RE-GE',straightangeli:'Straight Angeli',oneloveoneheart:'ONE LOVE ONE HEART',tohokusan:'いぎなり東北産',ebichu:'私立恵比寿中学'};
 const CATEGORIES = ['all', 'live', 'benefit', 'media', 'other'];
 const PRESETS = ARTISTS.flatMap(artist => CATEGORIES.map(category => ({ id: `${artist}-${category}`, artist, category,
   label: `${NAMES[artist]} / ${{ all:'全予定',live:'ライブ・イベント',benefit:'特典会・応募',media:'メディア',other:'その他' }[category]}` })));
@@ -48,7 +50,7 @@ function projected(e) {
   timing(e); return e;
 }
 function validateInput(data, options) {
-  assert(options?.production===true && ['schedule-data-v2.json','schedule-data-v3.json','schedule-data-v4.json'].includes(options?.publicSource),'Explicit production public source approval required');
+  assert(options?.production===true && Object.hasOwn(SOURCE_ARTISTS,options?.publicSource),'Explicit production public source approval required');
   object(data,['schemaVersion','version','generatedAt','coverage','events'],['notes']);
   assert(data.schemaVersion===1 && instant(data.generatedAt),'Invalid production generation'); text(data.version,true);
   object(data.coverage,['from','through']); assert(day(data.coverage.from)&&day(data.coverage.through)&&data.coverage.from<=data.coverage.through,'Invalid coverage');
@@ -68,7 +70,7 @@ function validateInput(data, options) {
     if(e.deadline!=null)assert(instant(e.deadline),'Invalid deadline');
     const category={LIVE:'live',EVENT:'live',BENEFIT:'benefit',REMIND:'benefit',TV:'media',RADIO:'media',STREAM:'media',MEMO:'other'}[e.category];
     const sourceUrls=[...new Set(e.sources.map(s=>s.url))].sort();
-    assert((options.publicSource==='schedule-data-v4.json'?ARTISTS:options.publicSource==='schedule-data-v3.json'?V3_ARTISTS:V2_ARTISTS).includes(e.artistId),'Artist not supported by public source');
+    assert(SOURCE_ARTISTS[options.publicSource].includes(e.artistId),'Artist not supported by public source');
     const event=projected({artistId:e.artistId,source:e.source,id:e.id,category,title:e.title,start:e.start,end:e.end,allDay:e.allDay,location:e.location,
       publicNote:[e.note,e.evidence,e.dateLabel||''].filter(Boolean).join('\n'),status:e.present?e.status:'missing',sourceUrls,
       // Omit the default to preserve unchanged legacy records byte-for-byte.
@@ -108,15 +110,19 @@ function reconcile(data,previous,options) {
   const body={schemaVersion:1,namespace:NAMESPACE,dataVersion:data.version,dataGeneratedAt:data.generatedAt,inputSha256,coverage:data.coverage,records:[...map.values()].sort((a,b)=>a.key<b.key?-1:a.key>b.key?1:0)};
   return {...body,integritySha256:hash(canonical(body))};
 }
-function buildFeed(state,presetId){validateState(state);const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
- const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Alert PWA//Public Calendar Subscription//JA','CALSCALE:GREGORIAN',`X-WR-CALNAME:${F.escapeICSText(preset.label)}`];let count=0,omittedUnknownDate=0;
+function buildFeed(state,presetId,{alerts=false}={}){validateState(state);const preset=PRESETS.find(p=>p.id===presetId);assert(preset,'Unknown preset');
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Alert PWA//Public Calendar Subscription//JA','CALSCALE:GREGORIAN',`X-WR-CALNAME:${F.escapeICSText(preset.label+(alerts?'（通知あり）':''))}`];let count=0,omittedUnknownDate=0;
  for(const r of state.records){if(!r.memberships.includes(presetId))continue;const e=r.event,t=e.start?e:r.lastTiming;if(!t){omittedUnknownDate++;continue;}
   const moved=!groups(e).includes(presetId),removedDate=!e.start,cancelled=moved||removedDate||e.status==='cancelled';
   const notes=[moved?'区分変更のためこの購読から取り下げ。予定自体の中止ではありません。':'',removedDate?'日時未定に変更したため旧日時の配信を取り下げ。予定自体の中止ではありません。':'',e.status==='missing'?'掲載消失。中止とは未確認です。最後に確認した情報を保持しています。':'',day(t.start)&&!t.allDay?'時刻未定。終日開催という意味ではありません。':'',e.publicNote,...e.sourceUrls].filter(Boolean);
   const suffix=moved||removedDate?'（旧掲載取り下げ）':e.status==='cancelled'?'（中止）':e.status==='possible'?'（かも？）':e.status==='missing'?'（掲載消失・未確認）':e.status==='unknown'?'（未確認）':'';
   lines.push('BEGIN:VEVENT',`UID:${r.uid}`,`DTSTAMP:${stamp(r.modified)}`,`CREATED:${stamp(r.created)}`,`LAST-MODIFIED:${stamp(r.modified)}`,`SEQUENCE:${r.sequence}`,day(t.start)?`DTSTART;VALUE=DATE:${t.start.replace(/-/g,'')}`:`DTSTART:${stamp(t.start)}`);
   if(t.end)lines.push(day(t.end)?`DTEND;VALUE=DATE:${t.end.replace(/-/g,'')}`:`DTEND:${stamp(t.end)}`);
-  lines.push(`SUMMARY:${F.escapeICSText(e.title+suffix+(day(t.start)&&!t.allDay?'（時刻未定）':''))}`,`DESCRIPTION:${F.escapeICSText(notes.join('\n'))}`,`LOCATION:${F.escapeICSText(e.location)}`,`URL:${primarySourceUrl(e)}`,`STATUS:${cancelled?'CANCELLED':e.status==='confirmed'?'CONFIRMED':'TENTATIVE'}`,'TRANSP:TRANSPARENT','END:VEVENT');count++;
+  lines.push(`SUMMARY:${F.escapeICSText(e.title+suffix+(day(t.start)&&!t.allDay?'（時刻未定）':''))}`,`DESCRIPTION:${F.escapeICSText(notes.join('\n'))}`,`LOCATION:${F.escapeICSText(e.location)}`,`URL:${primarySourceUrl(e)}`,`STATUS:${cancelled?'CANCELLED':e.status==='confirmed'?'CONFIRMED':'TENTATIVE'}`,'TRANSP:TRANSPARENT');
+  if(alerts&&!cancelled&&e.status==='confirmed'&&instant(e.start)&&!e.allDay){
+   lines.push('BEGIN:VALARM','ACTION:DISPLAY','TRIGGER:-PT1H',`DESCRIPTION:${F.escapeICSText(e.title)}`,'END:VALARM');
+  }
+  lines.push('END:VEVENT');count++;
  }
  lines.push('END:VCALENDAR');return {ics:lines.map(F.foldICSLine).join('\r\n')+'\r\n',count,omittedUnknownDate};
 }
@@ -125,18 +131,30 @@ function buildFeed(state,presetId){validateState(state);const preset=PRESETS.fin
 function legacyProjection(data){return {...data,events:data.events.filter(e=>LEGACY_ARTISTS.includes(e.artistId))};}
 function v2Projection(data){return {...data,events:data.events.filter(e=>V2_ARTISTS.includes(e.artistId))};}
 function v3Projection(data){return {...data,events:data.events.filter(e=>V3_ARTISTS.includes(e.artistId))};}
+function v4Projection(data){return {...data,events:data.events.filter(e=>V4_ARTISTS.includes(e.artistId))};}
 function build(data,previous,options){
- const version=options?.publicSource==='schedule-data-v4.json'?4:options?.publicSource==='schedule-data-v3.json'?3:2;
- const supported=version===4?ARTISTS:version===3?V3_ARTISTS:V2_ARTISTS;
+ const version=options?.publicSource==='schedule-data-v5.json'?5:options?.publicSource==='schedule-data-v4.json'?4:options?.publicSource==='schedule-data-v3.json'?3:2;
+ const supported=SOURCE_ARTISTS[options?.publicSource]??V2_ARTISTS;
  assert(!(previous?.records||[]).some(r=>!supported.includes(r.event.artistId)),'Cannot downgrade artist state without current canonical source');
  const state=reconcile(data,previous,options),files={},feeds=PRESETS.filter(p=>supported.includes(p.artist)).map(p=>{const f=buildFeed(state,p.id),path=`calendar-feeds/${p.id}.ics`;files[`${p.id}.ics`]=f.ics;return {...p,path,count:f.count,omittedUnknownDate:f.omittedUnknownDate,sha256:hash(f.ics)};});
  const manifest={schemaVersion:version,production:true,namespace:NAMESPACE,dataVersion:data.version,dataGeneratedAt:data.generatedAt,coverage:data.coverage,inputSha256:state.inputSha256,feeds};
  const projection=(d,artists,v)=>({...manifest,schemaVersion:v,inputSha256:hash(canonical(d)),feeds:feeds.filter(f=>artists.includes(f.artist))});
+ const v4Data=v4Projection(data),v4Manifest=version===4?manifest:projection(v4Data,V4_ARTISTS,4);
  const v3Data=v3Projection(data),v3Manifest=version===3?manifest:projection(v3Data,V3_ARTISTS,3);
  const v2Data=v2Projection(data),v2Manifest=version===2?manifest:projection(v2Data,V2_ARTISTS,2);
  const legacyData=legacyProjection(data),legacyManifest=projection(legacyData,LEGACY_ARTISTS,1);
  files['state.json']=JSON.stringify(state,null,2)+'\n';files['manifest.json']=JSON.stringify(legacyManifest,null,2)+'\n';files['manifest-v2.json']=JSON.stringify(v2Manifest,null,2)+'\n';
  if(version>=3)files['manifest-v3.json']=JSON.stringify(v3Manifest,null,2)+'\n';
- if(version===4)files['manifest-v4.json']=JSON.stringify(manifest,null,2)+'\n';
- return {state,manifest,v3Manifest,v3Data,v3DataJson:JSON.stringify(v3Data,null,2)+'\n',v2Manifest,v2Data,v2DataJson:JSON.stringify(v2Data,null,2)+'\n',legacyManifest,legacyData,legacyDataJson:JSON.stringify(legacyData,null,2)+'\n',files};}
-module.exports={NAMESPACE,ARTISTS,V3_ARTISTS,V2_ARTISTS,LEGACY_ARTISTS,PRESETS,canonical,hash,clientIdentity,identity,uid,validateInput,validateState,reconcile,buildFeed,legacyProjection,v2Projection,v3Projection,build};
+ if(version>=4)files['manifest-v4.json']=JSON.stringify(v4Manifest,null,2)+'\n';
+ if(version===5){
+  files['manifest-v5.json']=JSON.stringify(manifest,null,2)+'\n';
+  const alertFeeds=feeds.map(({id,artist,category,label})=>{
+   const f=buildFeed(state,id,{alerts:true}),name=id+'-alerts.ics';
+   files[name]=f.ics;
+   return {id,artist,category,label,path:'calendar-feeds/'+name,count:f.count,omittedUnknownDate:f.omittedUnknownDate,sha256:hash(f.ics)};
+  });
+  const alertsManifest={...manifest,alertOffsetMinutes:60,feeds:alertFeeds};
+  files['manifest-alerts-v5.json']=JSON.stringify(alertsManifest,null,2)+'\n';
+ }
+ return {state,manifest,v4Manifest,v4Data,v4DataJson:JSON.stringify(v4Data,null,2)+'\n',v3Manifest,v3Data,v3DataJson:JSON.stringify(v3Data,null,2)+'\n',v2Manifest,v2Data,v2DataJson:JSON.stringify(v2Data,null,2)+'\n',legacyManifest,legacyData,legacyDataJson:JSON.stringify(legacyData,null,2)+'\n',files};}
+module.exports={NAMESPACE,ARTISTS,V4_ARTISTS,V3_ARTISTS,V2_ARTISTS,LEGACY_ARTISTS,PRESETS,canonical,hash,clientIdentity,identity,uid,validateInput,validateState,reconcile,buildFeed,legacyProjection,v2Projection,v3Projection,v4Projection,build};

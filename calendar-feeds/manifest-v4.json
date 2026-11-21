@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-tokisen-threads-episode",
-  "dataGeneratedAt": "2026-11-20T20:58:31Z",
+  "dataVersion": "2026-11-21-ebichu-tohokusan",
+  "dataGeneratedAt": "2026-11-21T01:20:18Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3a51601495adabf44663103a83c18ea9241865526d7334d64a670ceb380ef9ce",
+  "inputSha256": "d5779a8b53cdb31ac56dfa98e8c8e5640ed3e2219bd6a3c78aeb839a12ca879b",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all.ics",
-      "count": 24,
+      "count": 27,
       "omittedUnknownDate": 0,
-      "sha256": "920825b66aef24ca62d9c7b95501d68bccc6ec3c9131b3ec7692a8ea4ec0dfa5"
+      "sha256": "c080c2d3879da0d222c5bd6871c862c41a5599ceca87049ea2292d30585da67c"
     },
     {
       "id": "tohokusan-live",
@@ -226,9 +226,9 @@
       "category": "live",
       "label": "いぎなり東北産 / ライブ・イベント",
       "path": "calendar-feeds/tohokusan-live.ics",
-      "count": 15,
+      "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "2b0fe84f046dd8bb4fa905358e74862311820d2f98aebed60331d9b3106c7f13"
+      "sha256": "c594880fa4811b551e400a54fd0c91054f6956eeea08fc0171d9a90c387cf6ed"
     },
     {
       "id": "tohokusan-benefit",
@@ -246,9 +246,9 @@
       "category": "media",
       "label": "いぎなり東北産 / メディア",
       "path": "calendar-feeds/tohokusan-media.ics",
-      "count": 4,
+      "count": 6,
       "omittedUnknownDate": 0,
-      "sha256": "9b6c7c1c473cf44d4b427aa95398e24db562f7343e9ceb93dd4ad505c7d44841"
+      "sha256": "a46972988350a303f2738862fbd0b8c39d7b0a69fbca4cba4382b5e1fdeca8c8"
     },
     {
       "id": "tohokusan-other",

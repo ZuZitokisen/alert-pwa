@@ -1,0 +1,243 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alert PWA//Public Calendar Subscription//JA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ONE LOVE ONE HEART / ライブ・イベント（通知あり
+ ）
+BEGIN:VEVENT
+UID:public-v1-c935c8dce20b6378bc0ab9e641a5b47da4078433d96233d1197535e1676d2
+ c0c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261215T094500Z
+SUMMARY:エアトリ presents 毎日がクリスマス2026
+DESCRIPTION:プレミアム7800円（お見送り付き）、スタンダ
+ ード6800円、別途ドリンク600円。主催公式で両席種Sold Ou
+ t（販売状況は主催発表）。\n本人側の公式発表で確認
+ 。時刻未発表は日付のみ。\nhttps://christmasdays.jp/artist/626/
+ \nhttps://oneloveoneheart.jp/live/live-7164/
+LOCATION:横浜赤レンガホール
+URL:https://oneloveoneheart.jp/live/live-7164/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:エアトリ presents 毎日がクリスマス2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6f8da60a82552c3831bb67bbf9b29d6557d31c35baa9cefc819c95a0942e8
+ d2e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261129
+SUMMARY:愛の証明 リリースイベント（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n日程・開催地のみ公式発表。開始時刻、特典会内容
+ 、購入受付などの詳細は未発表。\n本人側の公式発表で
+ 確認。時刻未発表は日付のみ。\nhttps://5th.oneloveoneheart.jp
+ /
+LOCATION:ららぽーと立川立飛
+URL:https://5th.oneloveoneheart.jp/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-62413ed2c18df1cfab44a1dea263104c511340032d2706ede5708e4de1fa4
+ e93@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261206
+SUMMARY:愛の証明 リリースイベント（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n日程・開催地のみ公式発表。開始時刻、特典会内容
+ 、購入受付などの詳細は未発表。\n本人側の公式発表で
+ 確認。時刻未発表は日付のみ。\nhttps://5th.oneloveoneheart.jp
+ /
+LOCATION:千葉県・某所
+URL:https://5th.oneloveoneheart.jp/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-86b229465e0bbf179dc931271490005514fb7945587d17281e0cf756c4d4f
+ 396@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261219
+SUMMARY:愛の証明 リリースイベント（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n日程・開催地のみ公式発表。開始時刻、特典会内容
+ 、購入受付などの詳細は未発表。\n本人側の公式発表で
+ 確認。時刻未発表は日付のみ。\nhttps://5th.oneloveoneheart.jp
+ /
+LOCATION:イオンレイクタウンkaze
+URL:https://5th.oneloveoneheart.jp/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-7dcae698119be7fba710b3b75886731d23c1a3cbe00fcef786f1c1140e793
+ 448@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261220
+SUMMARY:愛の証明 リリースイベント（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n日程・開催地のみ公式発表。開始時刻、特典会内容
+ 、購入受付などの詳細は未発表。\n本人側の公式発表で
+ 確認。時刻未発表は日付のみ。\nhttps://5th.oneloveoneheart.jp
+ /
+LOCATION:ららぽーと立川立飛
+URL:https://5th.oneloveoneheart.jp/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-65eea62fd40565963da96f580e5e9fe7ca53d2b26e58d44a7b818d9afaa8d
+ e4b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20261122T073000Z
+SUMMARY:愛の証明 リリースイベント：ミニライブ
+DESCRIPTION:観覧無料。優先エリアは対象商品予約に伴う整
+ 理番号付券が必要。\n本人側の公式発表で確認。時刻未
+ 発表は日付のみ。\nhttps://oneloveoneheart.jp/live/live-7360/
+LOCATION:川崎ブレイブサンダースコート
+URL:https://oneloveoneheart.jp/live/live-7360/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:愛の証明 リリースイベント：ミニライブ
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-653ce9a4a1dc2c94bbb0bac69f64bd14dd6c4b6fa186ea68fc416d813bacb
+ e57@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20270110T070000Z
+SUMMARY:LIVE SDD 2027
+DESCRIPTION:抽選招待。発券時ドネーション2000円。\n本人側
+ の公式発表で確認。時刻未発表は日付のみ。\nhttps://onel
+ oveoneheart.jp/news/news-7247/
+LOCATION:大阪城ホール
+URL:https://oneloveoneheart.jp/news/news-7247/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:LIVE SDD 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-8b6e6183d9b87765bab2dcf2a7499bd655f691586890189662f2d46dad2be
+ 119@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20270111T063000Z
+SUMMARY:Oneman Live 2027 “祝祭” 第1部
+DESCRIPTION:指定席8400円、入場時ドリンク別。プレリク先
+ 着11/15 10:00〜12/16 22:00。残席未確認。\n本人側の公式発
+ 表で確認。時刻未発表は日付のみ。\nhttps://oneloveoneheart.
+ jp/news/news-6791/
+LOCATION:Shibuya LOVEZ
+URL:https://oneloveoneheart.jp/news/news-6791/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Oneman Live 2027 “祝祭” 第1部
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-968233c1857f4c13b37bd624ce0a09654b133ac09b9d7958c64243c9c4fd6
+ 135@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Oneman Live 2027 “祝祭” 第2部
+DESCRIPTION:指定席8400円、入場時ドリンク別。プレリク先
+ 着11/15 10:00〜12/16 22:00。残席未確認。\n本人側の公式発
+ 表で確認。時刻未発表は日付のみ。\nhttps://oneloveoneheart.
+ jp/news/news-6791/
+LOCATION:Shibuya LOVEZ
+URL:https://oneloveoneheart.jp/news/news-6791/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Oneman Live 2027 “祝祭” 第2部
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-3093de290f30ef232279d47631cd4e47d40a0ff38c5cf465607c9abd9f0b5
+ 04d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20270131T053000Z
+SUMMARY:Oneman Live 2027 “祝祭” 第1部
+DESCRIPTION:指定席8400円、入場時ドリンク別。プレリク先
+ 着11/15 10:00〜12/16 22:00。残席未確認。\n本人側の公式発
+ 表で確認。時刻未発表は日付のみ。\nhttps://oneloveoneheart.
+ jp/news/news-6791/
+LOCATION:神戸朝日ホール
+URL:https://oneloveoneheart.jp/news/news-6791/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Oneman Live 2027 “祝祭” 第1部
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-dac0ea78ce89a4de966c9a7ff482a7d5ef8fbbc76a777f064bfb876f5ec4b
+ 87d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261118T062010Z
+CREATED:20261118T062010Z
+LAST-MODIFIED:20261118T062010Z
+SEQUENCE:0
+DTSTART:20270131T083000Z
+SUMMARY:Oneman Live 2027 “祝祭” 第2部
+DESCRIPTION:指定席8400円、入場時ドリンク別。プレリク先
+ 着11/15 10:00〜12/16 22:00。残席未確認。\n本人側の公式発
+ 表で確認。時刻未発表は日付のみ。\nhttps://oneloveoneheart.
+ jp/news/news-6791/
+LOCATION:神戸朝日ホール
+URL:https://oneloveoneheart.jp/news/news-6791/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Oneman Live 2027 “祝祭” 第2部
+END:VALARM
+END:VEVENT
+END:VCALENDAR
