@@ -115,7 +115,7 @@ jobs:
         run: |
           set -euo pipefail
           # Never stage code, scraped HTML, credentials, or arbitrary collector output.
-          git add -- schedule-data-v5.json schedule-data-v4.json schedule-data-v3.json schedule-data-v2.json schedule-data.json calendar-feeds
+          git add -- schedule-data-v6.json schedule-data-v5.json schedule-data-v4.json schedule-data-v3.json schedule-data-v2.json schedule-data.json calendar-feeds
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh verified public schedule data'
             # Native ephemeral token; never persist credentials in checkout/config.
@@ -160,9 +160,9 @@ jobs:
           from pathlib import Path
           import shutil
           root=Path('.'); out=Path('_site'); out.mkdir()
-          files=['.nojekyll','index.html','app.js','release-check.js','app-release.json','artist-config.js','feature-core.js','calendar-subscriptions.js','schedule-store.js','pwa-update.js','push-config.js','push-client.js','style.css','furin-launch-logo.png','furin-glass-chime.wav','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','sw.js','schedule-data.json','schedule-data-v2.json','schedule-data-v3.json','schedule-data-v4.json','schedule-data-v5.json']
-          files += ['calendar-feeds/'+name for name in ['manifest.json','manifest-v2.json','manifest-v3.json','manifest-v4.json','manifest-v5.json','manifest-alerts-v5.json','combined-v1.json']]
-          files += [f'calendar-feeds/{artist}-{category}{variant}.ics' for variant in ['', '-alerts'] for artist in ['tokisen','re-ge','straightangeli','oneloveoneheart','tohokusan','ebichu'] for category in ['all','live','benefit','media','other']]
+          files=['.nojekyll','index.html','app.js','release-check.js','app-release.json','artist-config.js','feature-core.js','calendar-subscriptions.js','schedule-store.js','pwa-update.js','push-config.js','push-client.js','style.css','furin-launch-logo.png','furin-glass-chime.wav','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','sw.js','schedule-data.json','schedule-data-v2.json','schedule-data-v3.json','schedule-data-v4.json','schedule-data-v5.json','schedule-data-v6.json']
+          files += ['calendar-feeds/'+name for name in ['manifest.json','manifest-v2.json','manifest-v3.json','manifest-v4.json','manifest-v5.json','manifest-alerts-v5.json','manifest-v6.json','manifest-alerts-v6.json','combined-v1.json']]
+          files += [f'calendar-feeds/{artist}-{category}{variant}.ics' for variant in ['', '-alerts'] for artist in ['tokisen','re-ge','straightangeli','oneloveoneheart','tohokusan','ebichu','batten'] for category in ['all','live','benefit','media','other']]
           # state.json stays in Git as the durable UID/SEQUENCE history, not the public artifact.
           if Path('CNAME').is_file(): files.append('CNAME')
           for name in files:
