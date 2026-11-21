@@ -397,3 +397,19 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 #artist-filters [data-artist=ebichu] .artist-symbol{width:25px;height:25px}
 :where(:root[data-theme=dark]) #artist-filters>button[data-artist=ebichu]{--artist-muted:#ee8db6}
 @media(max-width:357px){#artist-filters .artist-face{width:30px;height:30px}#artist-filters .artist-symbol{max-width:22px;max-height:22px}}
+
+.subscription-selector{display:block;margin:14px 0}
+.subscription-selector .subscription-grid{display:grid;grid-template-columns:minmax(0,1fr) 48px 48px;align-items:center;min-height:44px;column-gap:4px}
+.subscription-selector .subscription-columns{min-height:30px;font-size:12px;color:var(--muted)}
+.subscription-columns>span:not(:first-child){text-align:center}
+.subscription-selector .subscription-artist{padding:0;border:0;border-top:1px solid var(--line);border-radius:0;margin:0}
+.subscription-expand{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:44px;min-width:0;padding:0 5px 0 0;border:0;border-radius:6px;background:transparent;color:inherit;font:inherit;text-align:left}
+.subscription-chevron{flex:none;color:var(--muted)}
+.subscription-expand[aria-expanded=true] .subscription-chevron{transform:rotate(180deg)}
+.subscription-genres>.subscription-grid{font-size:.9em}
+.subscription-genres>.subscription-grid>span{padding-inline-start:12px}
+.subscription-check{display:grid;place-items:center;min-width:44px;min-height:44px}
+.subscription-check input{margin:0;width:19px;height:19px;accent-color:var(--accent)}
+.subscription-check input:disabled{opacity:.42}
+.subscription-link .subscription-actions{display:flex;justify-content:flex-end;align-items:center;gap:8px;flex-wrap:nowrap}
+.subscription-actions>button{flex:none;min-width:44px;min-height:44px}
