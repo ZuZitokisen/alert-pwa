@@ -17,10 +17,15 @@
  function store(value){if(value)localStorage.setItem(KEY,JSON.stringify(value));else localStorage.removeItem(KEY);}
  try{const value=JSON.parse(localStorage.getItem(KEY));if(value&&value.backend===base&&/^[A-Za-z0-9_-]{1,200}$/.test(value.deviceId)&&typeof value.deviceToken==='string'&&value.deviceToken.length<=512)device=value;}catch{say('端末の設定を保存できません。ブラウザの保存設定を確認してください。');}
  function controls(){enable.disabled=busy||!vapid||!!device;disable.disabled=busy||!device;testPush.hidden=!device;testPush.disabled=busy||!device||!vapid;
-  if(types)types.hidden=capabilities?.notificationTypes!==true;
-  if(capabilities?.notificationTypes){enable.hidden=!!device;disable.hidden=true;}
-  for(const x of switches){const k=x.dataset.notificationKind;x.checked=flags?.[k]===true;
-   x.disabled=busy||!device||!flags||(k!=='news'&&!capabilities?.[k+'Available']&&!x.checked);
+  if(types)types.hidden=false;
+  const modern=capabilities?.notificationTypes===true;
+  if(switches.length){enable.hidden=!modern||!!device;disable.hidden=true;}
+  for(const x of switches){const k=x.dataset.notificationKind;
+   const available=k==='news'?!!vapid:modern&&capabilities?.[k+'Available']===true;
+   x.checked=k==='news'&&!modern?!!device:flags?.[k]===true;
+   x.disabled=busy||(k==='news'&&!modern?!available:!device||!flags||(!available&&!x.checked));
+   const label=panel.querySelector('[data-notification-status="'+k+'"]');
+   if(label)label.hidden=available;
   }
  }
  async function request(path,method='GET',body,token){const c=new AbortController(),timer=setTimeout(()=>c.abort(),12000);try{const response=await fetch(base+path,{method,mode:'cors',credentials:'omit',redirect:'error',cache:'no-store',signal:c.signal,headers:{...(body?{'Content-Type':'application/json'}:{}),...(token?{Authorization:'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})});if(!response.ok)throw Object.assign(Error('通知サーバーと通信できません。設定は変更されていません。'),{status:response.status});if(response.status===204)return null;const raw=await response.text();if(raw.length>8192)throw Error('通知サーバーの応答を確認できません。');return JSON.parse(raw);}finally{clearTimeout(timer);}}
@@ -31,6 +36,8 @@
  function parseFlags(value){if(!value||flagKeys.some(k=>typeof value[k]!=='boolean'))throw Error('Unexpected notification settings');return value;}
  async function syncFlags(){const d=device;if(!d||!capabilities?.notificationTypes)return;const next=parseFlags(await request(typesPath(d),'GET',undefined,d.deviceToken));if(device===d)flags=next;controls();}
  for(const x of switches)x.addEventListener('change',()=>{const k=x.dataset.notificationKind, selection=x.checked;
+  if(k==='news'&&capabilities?.notificationTypes!==true)return selection&&!device?enable.onclick():!selection&&device?disable.onclick():controls();
+  if(!device||!flags||(selection&&k!=='news'&&capabilities?.[k+'Available']!==true))return controls();
   return run(async()=>{const d=device;if(!d)return;try{flags=parseFlags(await request(typesPath(d),'PATCH',{[k]:selection},d.deviceToken));say('通知設定を保存しました。');}
    catch(error){await syncFlags().catch(()=>{});throw error;}
    finally{refreshBell();}});

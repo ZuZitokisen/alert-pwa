@@ -7,13 +7,15 @@ const valid={title:'予定\u202e',body:'a'.repeat(900),eventId:'e',revision:1,ki
 test('push sanitizes/bounds payload and refuses malformed identities',async()=>{const {c,handlers,calls}=worker();let pending;handlers.push({data:{text:()=>JSON.stringify(valid)},waitUntil:p=>pending=p});await pending;assert.equal(calls.length,1);assert.equal(calls[0][1].body.length,500);assert.equal(calls[0][1].data.url,'https://app.test/alert/#changes');assert.equal(calls[0][1].tag,'alert-change-'+'a'.repeat(64));assert.equal(c.notificationPayload({...valid,tag:'bad'}),null);assert.equal(c.notificationPayload({...valid,kind:'updated'}),null);for(const data of ['bad','x'.repeat(8193)])handlers.push({data:{text:()=>data},waitUntil:()=>assert.fail()});});
 test('click target cannot escape scope or reach redirect query',async()=>{const {c,handlers,calls}=worker();for(const u of ['https://evil.test/','//evil.test/','https://app.test/redirect?to=evil','https://app.test/alert/?next=evil','https://app.test/alert/../outside','javascript:alert(1)'])assert.equal(c.notificationTarget(u),'https://app.test/alert/#changes');let closed=false,pending;handlers.notificationclick({notification:{data:{url:'https://evil.test'},close:()=>closed=true},waitUntil:p=>pending=p});await pending;assert.equal(closed,true);assert.equal(calls[0],'https://app.test/alert/#notification-changes');});
 test('UI permission request exists only inside explicit enable handler',()=>{const start=script.indexOf('enable.onclick=');const request=script.indexOf('Notification.requestPermission()');const end=script.indexOf('testPush.onclick=');assert.ok(start<request&&request<end);assert.ok(script.includes('if(!base){say('));const html=fs.readFileSync(new URL('./index.html',import.meta.url),'utf8');assert.ok(html.includes('data-enable disabled'));assert.ok(!html.includes('ログインして'));});
-function clientFixture({configured=true,failPost=false,installing=false}={}){
+function clientFixture({configured=true,failPost=false,installing=false,withSwitches=false}={}){
  const nodes={};for(const k of ['[role=status]','[data-enable]','[data-disable]','[data-test]'])nodes[k]={textContent:'',checked:false,append(){}};
+ const switches=Object.fromEntries(['news','daily','personal'].map(k=>[k,{dataset:{notificationKind:k},addEventListener(_,fn){this.change=fn;}}]));
+ if(withSwitches){nodes['[data-notification-types]']={querySelectorAll:()=>Object.values(switches)};for(const k of Object.keys(switches))nodes['[data-notification-status="'+k+'"]']={};}
  const panel={querySelector:s=>nodes[s],querySelectorAll:()=>[{value:'a'}]},calls=[],storage=new Map();let subscription=null;
  const registration={active:{},pushManager:{getSubscription:async()=>subscription,subscribe:async()=>{calls.push('subscribe');subscription={toJSON:()=>({endpoint:'https://push.test/device',keys:{p256dh:'key',auth:'auth'}}),unsubscribe:async()=>{calls.push('unsubscribe');subscription=null;return true;}};return subscription;}}};
  const key=Buffer.alloc(65);key[0]=4;
  const c={URL,atob,Uint8Array,setTimeout,clearTimeout,AbortController,location:{origin:'https://app.test',href:'https://app.test/alert/'},isSecureContext:true,PushManager:{},ALERT_ARTISTS:[{id:'a',name:'A'}],ALERT_PUSH_CONFIG:{backendUrl:configured?'https://app.test':''},navigator:{serviceWorker:{getRegistration:async()=>installing?null:registration}},Notification:{permission:'default',requestPermission:async()=>{calls.push('permission');return'granted';}},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)},document:{querySelector:()=>panel,createElement:()=>({append(){}}),createTextNode:s=>s},fetch:async(url,options)=>{calls.push([url,options]);if(options.method==='POST'&&failPost)throw Error('offline');const data=url.endsWith('/config')?{vapidPublicKey:key.toString('base64url')}:{deviceId:'opaque',deviceToken:'t'.repeat(32)};return{ok:true,status:options.method==='DELETE'?204:200,text:async()=>JSON.stringify(data)};}};
- let readyResolve;const listeners={};c.navigator.serviceWorker.ready=new Promise(resolve=>readyResolve=resolve);c.navigator.serviceWorker.addEventListener=(name,fn)=>listeners[name]=fn;c.navigator.serviceWorker.removeEventListener=name=>delete listeners[name];vm.createContext(c);vm.runInContext(script,c);return{c,nodes,calls,storage,readyResolve,registration,listeners};
+ let readyResolve;const listeners={};c.navigator.serviceWorker.ready=new Promise(resolve=>readyResolve=resolve);c.navigator.serviceWorker.addEventListener=(name,fn)=>listeners[name]=fn;c.navigator.serviceWorker.removeEventListener=name=>delete listeners[name];vm.createContext(c);vm.runInContext(script,c);return{c,nodes,switches,calls,storage,readyResolve,registration,listeners};
 }
 const tick=()=>new Promise(r=>setTimeout(r,0));
 test('no backend never fetches, requests permission, or subscribes',async()=>{const f=clientFixture({configured:false});await tick();assert.deepEqual(f.calls,[]);assert.equal(f.nodes['[data-enable]'].disabled,true);});
@@ -64,4 +66,19 @@ test('bell confirm/cancel, OFF priority, explicit restart preserve the selection
  assert.equal(states.personal,true);assert.equal(selected,true);assert.ok(!calls.includes('delete'));
  controls[1].checked=true;await controls[1].change();assert.deepEqual(states,{news:false,daily:true,personal:true});
  await slot.button.onclick();assert.equal(selected,false);assert.equal(states.personal,true);
+});
+
+test('public legacy backend exposes three switches, with only News connected and no writes for unavailable kinds',async()=>{
+ const f=clientFixture({withSwitches:true});await tick();
+ const {news,daily,personal}=f.switches;
+ assert.equal(f.nodes['[data-notification-types]'].hidden,false);
+ assert.equal(news.disabled,false);assert.equal(news.checked,false);
+ assert.equal(daily.disabled,true);assert.equal(personal.disabled,true);
+ assert.equal(f.nodes['[data-notification-status="daily"]'].hidden,false);
+ assert.equal(f.nodes['[data-notification-status="personal"]'].hidden,false);
+ assert.equal(f.nodes['[data-enable]'].hidden,true);
+ assert.equal(f.calls.includes('permission'),false);
+ news.checked=true;await news.change();assert.equal(news.checked,true);assert.ok(f.calls.includes('subscribe'));
+ news.checked=false;await news.change();assert.equal(news.checked,false);assert.equal(f.storage.size,0);
+ assert.ok(f.calls.includes('unsubscribe'));assert.ok(!f.calls.some(c=>Array.isArray(c)&&c[0].endsWith('/settings')));
 });
