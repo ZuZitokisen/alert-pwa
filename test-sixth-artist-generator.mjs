@@ -51,7 +51,7 @@ test('current client reads v5 and restores the v4 cache before first network res
  assert.equal(calls.at(-1),'./schedule-data-v5.json');
  assert.equal(saved.get('alert-pwa-curated-calendar-v4'),old);
  assert.ok(saved.get('alert-pwa-curated-calendar-v5'));
- assert.equal(state.events.filter(e=>e.artistId==='ebichu').length,11);
- assert.equal(state.changes.filter(e=>e.after?.artistId==='ebichu').length,11);
+ assert.equal(state.events.filter(e=>e.artistId==='ebichu').length,v5.events.filter(e=>e.artistId==='ebichu').length);
+ assert.equal(state.changes.filter(e=>e.after?.artistId==='ebichu').length,v5.events.filter(e=>e.artistId==='ebichu').length);
  assert.equal(c.AlertCalendarSubscriptions.validateManifest(read('calendar-feeds/manifest-v5.json')).feeds.length,30);
 });

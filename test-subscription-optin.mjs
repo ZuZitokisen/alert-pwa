@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import C from './production-feed-core.cjs';
+import F from './feature-core.js';
 
 const read=name=>fs.readFileSync(new URL('./'+name,import.meta.url),'utf8');
 const v5=JSON.parse(read('schedule-data-v5.json'));
@@ -12,6 +13,15 @@ const alerts=JSON.parse(read('calendar-feeds/manifest-alerts-v5.json'));
 const unfolded=text=>text.replace(/\r\n[ \t]/g,'');
 const eventBlocks=ics=>[...unfolded(ics).matchAll(/BEGIN:VEVENT\r\n([\s\S]*?)END:VEVENT\r\n/g)].map(x=>x[1]);
 const removeAlarms=text=>text.replace(/BEGIN:VALARM\r\n[\s\S]*?END:VALARM\r\n/g,'');
+const triggers=block=>[...block.matchAll(/BEGIN:VALARM\r\nACTION:DISPLAY\r\nTRIGGER:(-?PT(?:\d+H)?(?:\d+M)?(?:\d+S)?)\r\nDESCRIPTION:.+\r\nEND:VALARM/g)].map(m=>m[1]);
+const triggerTimes=block=>{
+ const [,date] = /^DTSTART:(\d{8}T\d{6}Z)\r$/m.exec(block);
+ const base=Date.parse(date.replace(/^(....)(..)(..)T(..)(..)(..)Z$/,'$1-$2-$3T$4:$5:$6Z'));
+ return triggers(block).map(t=>{
+  const [,neg,h=0,m=0,s=0]=/^(-?)PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/.exec(t);
+  return new Date(base+(neg?-1:1)*(h*3600+m*60+Number(s))*1000).toISOString();
+ });
+};
 const removeName=text=>text.replace(/X-WR-CALNAME:[^\r]+(?:\r\n[ \t][^\r]+)*/,'X-WR-CALNAME:fixture');
 
 test('all 30 alarm files are opt-in variants; all non-alarm event fields are identical',()=>{
@@ -20,6 +30,7 @@ test('all 30 alarm files are opt-in variants; all non-alarm event fields are ide
  assert.equal(alerts.alertOffsetMinutes,60);
  assert.equal(alerts.feeds.length,30);
  let total=0,skipped=0;
+ const sourceByKey=new Map(v5.events.map(e=>[C.identity(e),e]));
  const byUid=new Map(state.records.map(r=>[r.uid,r]));
  for(let i=0;i<baseline.feeds.length;i++){
   const normal=baseline.feeds[i], optin=alerts.feeds[i], plainText=read(normal.path), alertText=read(optin.path);
@@ -34,9 +45,12 @@ test('all 30 alarm files are opt-in variants; all non-alarm event fields are ide
   for(const block of eventBlocks(alertText)){
    const record=byUid.get(block.match(/^UID:(.+)\r$/m)[1]);
    const should=record.event.status==='confirmed'&&!record.event.allDay && /^DTSTART:\d{8}T\d{6}Z\r$/m.test(block)&&/^STATUS:CONFIRMED\r$/m.test(block);
-   if(should){
-    total++;assert.equal([...block.matchAll(/BEGIN:VALARM/g)].length,1);
-    assert.match(block,/BEGIN:VALARM\r\nACTION:DISPLAY\r\nTRIGGER:-PT1H\r\nDESCRIPTION:.+\r\nEND:VALARM/);
+   const source=sourceByKey.get(record.key);
+   if(should&&source){
+    total++;
+    const expected=F.reminderTimes(source,{now:0}).times.map(x=>x.at);
+    assert.deepEqual(triggerTimes(block),expected);
+    assert.equal([...block.matchAll(/BEGIN:VALARM/g)].length,expected.length);
    }else{skipped++;assert.doesNotMatch(block,/BEGIN:VALARM/);}
   }
  }
@@ -67,4 +81,27 @@ test('opt-in is reset per registration and warning is explicit',()=>{
  assert.match(app,/urls=S.links\(id,\{alerts:subscriptionAlerts\}\)/);
  assert.match(read('hourly/verify-live.mjs'),/manifest-alerts-v5\.json/);
  assert.match(read('.github/workflows/hourly-public-refresh.yml'),/for variant in \['', '-alerts'\]/);
+});
+
+test('JST event and deadline timing is converted to RFC 5545 relative alarms, without snapshot-clock churn',()=>{
+ const source=v5.events.find(e=>e.artistId==='tokisen'&&e.status==='confirmed'&&e.start?.includes('T'));
+ const day='2026-11-21';
+ const fixture=[
+  ['normal','17:00',['2026-11-20T23:00:00.000Z','2026-11-21T07:00:00.000Z']],
+  ['early','07:00',['2026-11-20T21:00:00.000Z']],
+  ['at-morning','08:00',['2026-11-20T22:00:00.000Z']],
+  ['duplicate','09:00',['2026-11-20T23:00:00.000Z']],
+  ['not-deadline','23:59',['2026-11-20T23:00:00.000Z','2026-11-21T13:59:00.000Z']],
+  ['deadline','23:59',['2026-11-20T23:00:00.000Z','2026-11-21T14:00:00.000Z'], '23:59'],
+  ['different-deadline','18:30',['2026-11-20T23:00:00.000Z','2026-11-21T14:00:00.000Z'],'23:59'],
+ ];
+ const events=fixture.map(([id,time,,deadline])=>({...source,id,title:id,status:'confirmed',present:true,allDay:false,
+  start:`${day}T${time}:00+09:00`,end:null,deadline:deadline?`${day}T${deadline}:00+09:00`:null}));
+ const options={production:true,publicSource:'schedule-data-v5.json'};
+ const a=C.build({...v5,events},null,options);
+ const b=C.build({...v5,events,version:v5.version+'-next',generatedAt:'2026-11-22T00:00:00Z'},a.state,options);
+ assert.equal(a.files['tokisen-all-alerts.ics'],b.files['tokisen-all-alerts.ics']);
+ const byId = new Map(eventBlocks(a.files['tokisen-all-alerts.ics']).map(block=>[block.match(/^SUMMARY:(.+)\r$/m)[1],block]));
+ for(const [id,,expected] of fixture) assert.deepEqual(triggerTimes(byId.get(id)),expected,id);
+ assert.deepEqual(triggers(byId.get('deadline')),['-PT15H59M','-PT59M']);
 });
