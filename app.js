@@ -7,9 +7,10 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.35';
+const APP_RELEASE='0.7.36';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const artistOrder=['ebichu','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
 const getArtist=id=>artists.find(a=>a.id===id);
 const readKey=artists.some(a=>a.id==='ebichu')?'alert-pwa-curated-read-v5':artists.some(a=>a.id==='tohokusan')?'alert-pwa-curated-read-v4':artists.some(a=>a.id==='oneloveoneheart')?'alert-pwa-curated-read-v3':'alert-pwa-curated-read-v2';
 let state={events:[],changes:[],sources:[],outboxCount:0},artist='all',selectedArtists=new Set(),filter='all',agendaFilter='all',agendaRange='day',selectedWeekStart=null,view='calendar',returnView='calendar';
@@ -50,7 +51,7 @@ function matchesArtist(id){return selectedArtists.size===0||selectedArtists.has(
 function matching(extra={}){return F.filterEvents(state.events.filter(e=>matchesArtist(e.artistId)).map(uiEvent),{artist:'all',category:'all',status:'all',sort:'date',favorites,...extra});}
 function activeEvents(){return matching().filter(e=>e.present!==false&&e.status!=='cancelled');}
 function artistSymbol(id){
- const specs={ebichu:{viewBox:'0 0 32 32',kind:'shrimp',paths:[{"d":"M25.4 12.2c1.1-.7 1.2-2.3.2-3.2-1.8-1.7-4.5-2.8-7.5-2.8-7 0-12.9 4.6-12.9 11 0 5.9 4.7 9.3 10.4 9.3 2.9 0 5.1-.9 7.3-2.5l-1.5-2.6c-1.8 1-3.4 1.3-5.1 1.1-3.2-.3-5.3-2.2-5.3-5 0-2.6 1.9-4.8 4.7-5.4 2.7-.6 4.4.9 6.4 1.2 1.3.2 2.4-.2 3.3-1.1Z","fill":"currentColor"},{"d":"M23.1 10.2C25.7 5.7 28.4 4 30.7 4.5M25.2 11c2.1-1.9 4-2 5.6-1.4","fill":"none","stroke":"currentColor","stroke-width":"1.35","stroke-linecap":"round"},{"d":"M12.5 7.6l2.4 4.9M7.4 11.6l4.1 3.4M5.7 17.5l5.6.9M9.1 23.9l4-2.3M22 9.8h.2","fill":"none","stroke":"var(--artist-face-bg)","stroke-width":"1.25","stroke-linecap":"round"},{"d":"M20.6 22.1c1.1-.8 2.2-1.3 3.5-1.5 2.1-.3 4 .1 5.3.9.5.3.5.9 0 1.2l-3 1.6c1.4.3 2.5.9 3.1 1.9.3.5.1 1-.4 1.1l-4 .5.8 1.7c.2.5-.1 1-.7.9-2.5-.3-4.7-2-5.7-4.4-.5-1.4-.1-2.9 1.1-3.9Z","fill":"currentColor"},{"d":"M21 23.7c1.2.2 2.9.1 4.8-.3M21.5 25.1c1.3.9 2.4 1.8 3.2 2.9","fill":"none","stroke":"var(--artist-face-bg)","stroke-width":"1.1","stroke-linecap":"round"}]},tohokusan:{viewBox:'0 0 34 34',kind:'san-brush',paths:[{d:'M16 2Q19 2 20 3L19 6 16 6Z M6 6Q16 7 25 6L27 4 30 8 7 8Z M9 9Q14 10 13 13L11 14Q11 11 9 9Z M23 9L27 10Q24 13 21 14L20 13Z M5 14Q17 15 27 14L29 12 32 16 8 16Q8 26 2 31L1 30Q5 23 5 14Z M13 17L16 18Q14 22 10 24L9 23Z M19 17L22 18 21 29 18 29Z M13 21Q20 22 26 21L28 19 30 23 12 23Z M12 25L26 25 28 23 30 27 12 27Z M8 29Q19 30 28 29L30 27 33 31 8 31Z',fill:'currentColor'}]},oneloveoneheart:{viewBox:'0 0 32 32',kind:'heart',paths:[{d:'M16 27S3 19.4 3 10.9C3 4.8 10.9 2.3 16 8c5.1-5.7 13-3.2 13 2.9C29 19.4 16 27 16 27Z',fill:'currentColor'}]},tokisen:{viewBox:'2.5 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 32 30',kind:'wings',paths:[{d:'M5 27C3 23 4 18 8 15c4-3 10-3 16-11l4-3c1 6-3 12-9 16 5-2 8-5 11-8 0 6-5 11-12 13 4 0 7-2 10-4-2 6-8 9-14 8l7 1c-6 4-12 3-16 0Z',fill:'currentColor'},{d:'M7 25c2-5 6-8 11-11',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.3','stroke-linecap':'round'}]}};
+ const specs={ebichu:{viewBox:'2 1 32 32',kind:'shrimp',paths:[{"d":"M25.4 12.2c1.1-.7 1.2-2.3.2-3.2-1.8-1.7-4.5-2.8-7.5-2.8-7 0-12.9 4.6-12.9 11 0 5.9 4.7 9.3 10.4 9.3 2.9 0 5.1-.9 7.3-2.5l-1.5-2.6c-1.8 1-3.4 1.3-5.1 1.1-3.2-.3-5.3-2.2-5.3-5 0-2.6 1.9-4.8 4.7-5.4 2.7-.6 4.4.9 6.4 1.2 1.3.2 2.4-.2 3.3-1.1Z","fill":"currentColor"},{"d":"M23.1 10.2C25.7 5.7 28.4 4 30.7 4.5M25.2 11c2.1-1.9 4-2 5.6-1.4","fill":"none","stroke":"currentColor","stroke-width":"1.35","stroke-linecap":"round"},{"d":"M12.5 7.6l2.4 4.9M7.4 11.6l4.1 3.4M5.7 17.5l5.6.9M9.1 23.9l4-2.3M22 9.8h.2","fill":"none","stroke":"var(--artist-face-bg)","stroke-width":"1.25","stroke-linecap":"round"},{"d":"M20.6 22.1c1.1-.8 2.2-1.3 3.5-1.5 2.1-.3 4 .1 5.3.9.5.3.5.9 0 1.2l-3 1.6c1.4.3 2.5.9 3.1 1.9.3.5.1 1-.4 1.1l-4 .5.8 1.7c.2.5-.1 1-.7.9-2.5-.3-4.7-2-5.7-4.4-.5-1.4-.1-2.9 1.1-3.9Z","fill":"currentColor"},{"d":"M21 23.7c1.2.2 2.9.1 4.8-.3M21.5 25.1c1.3.9 2.4 1.8 3.2 2.9","fill":"none","stroke":"var(--artist-face-bg)","stroke-width":"1.1","stroke-linecap":"round"}]},tohokusan:{viewBox:'0 0 34 34',kind:'san-brush',paths:[{d:'M16 2Q19 2 20 3L19 6 16 6Z M6 6Q16 7 25 6L27 4 30 8 7 8Z M9 9Q14 10 13 13L11 14Q11 11 9 9Z M23 9L27 10Q24 13 21 14L20 13Z M5 14Q17 15 27 14L29 12 32 16 8 16Q8 26 2 31L1 30Q5 23 5 14Z M13 17L16 18Q14 22 10 24L9 23Z M19 17L22 18 21 29 18 29Z M13 21Q20 22 26 21L28 19 30 23 12 23Z M12 25L26 25 28 23 30 27 12 27Z M8 29Q19 30 28 29L30 27 33 31 8 31Z',fill:'currentColor'}]},oneloveoneheart:{viewBox:'0 0 32 32',kind:'heart',paths:[{d:'M16 27S3 19.4 3 10.9C3 4.8 10.9 2.3 16 8c5.1-5.7 13-3.2 13 2.9C29 19.4 16 27 16 27Z',fill:'currentColor'}]},tokisen:{viewBox:'2.5 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 32 30',kind:'wings',paths:[{d:'M5 27C3 23 4 18 8 15c4-3 10-3 16-11l4-3c1 6-3 12-9 16 5-2 8-5 11-8 0 6-5 11-12 13 4 0 7-2 10-4-2 6-8 9-14 8l7 1c-6 4-12 3-16 0Z',fill:'currentColor'},{d:'M7 25c2-5 6-8 11-11',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.3','stroke-linecap':'round'}]}};
  const spec=specs[id];if(!spec)return null;
  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');
  for(const [key,value]of Object.entries({class:'artist-symbol','data-artist-symbol':spec.kind,viewBox:spec.viewBox,'aria-hidden':'true',focusable:'false'}))svg.setAttribute(key,value);
@@ -58,7 +59,6 @@ function artistSymbol(id){
  return svg;
 }
 function renderArtists(){
- const artistOrder=['ebichu','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
  const list=[{id:'all',name:'すべてのアーティスト'},...artists.slice().sort((a,b)=>artistOrder.indexOf(a.id)-artistOrder.indexOf(b.id))],container=$('#artist-filters');
  const existing=[...container.querySelectorAll('button[data-artist]')];
  const buttons=list.map(a=>{
@@ -205,34 +205,99 @@ function openEvent(e,origin){
  appendSourcesAndTimes(area,e);
 const box=el('div','','reminder-box');box.append(el('h3','通知時刻の確認'));const label=el('label','リマインド例 '),select=document.createElement('select');select.setAttribute('aria-label','リマインド設定例');for(const [value,title] of [['off','設定しない'],['morning1h',`朝${morningTime}＋開始1時間前`],...(e.deadline?[['deadline2',`朝${morningTime}＋締切前`]]:[])]){const o=el('option',title);o.value=value;select.append(o);}const key=F.stableEventKey(e);select.value=reminders[key]||'off';select.disabled=!e.start||(!e.allDay&&e.start.length===10)||e.present===false||e.status==='cancelled';select.onchange=()=>{reminders[key]=select.value;save('alert-pwa-reminders-v2',reminders);openEvent(e);toast('通知時刻の設定例を保存しました。実通知は未接続です。');};label.append(select);box.append(label);if(select.value!=='off'&&!select.disabled){const plan=F.reminderTimes(e,{mode:select.value,morningTime,now:new Date().toISOString()});for(const t of plan.times)box.append(el('p',`${prettyDate(t.at)} · ${t.label}`));for(const u of plan.unresolved)box.append(el('p',u.label||'時刻の確認が必要です。','hint'));if(!plan.times.length)box.append(el('p','これからの通知候補はありません。過去の通知や開始後の朝通知は出しません。','hint'));}box.append(el('p','時刻のプレビューです。通知は予約・配信されません。','hint'));area.append(box);
 const latest=state.changes.find(c=>c.eventId===e.id&&c.source===e.source);if(latest){const b=el('button','最後の変更を見る');b.onclick=()=>openChange(latest);area.append(b);}area.append(el('h3','判断の根拠'),el('p',e.evidence||'根拠未登録','evidence'));openDialog(origin);}
-let subscriptionChoices=new Set(),subscriptionManifest=null,subscriptionLoading=false,subscriptionError=false,subscriptionLoadGeneration=0,subscriptionAlerts=false;
-async function loadSubscriptions(){
- if(subscriptionLoading)return;subscriptionLoading=true;subscriptionError=false;const generation=++subscriptionLoadGeneration,alerts=subscriptionAlerts;
- try{const manifest=await S.loadManifest(undefined,undefined,undefined,{alerts});if(generation!==subscriptionLoadGeneration)return;subscriptionManifest=manifest;}catch{if(generation!==subscriptionLoadGeneration)return;subscriptionManifest=null;subscriptionError=true;}finally{if(generation===subscriptionLoadGeneration)subscriptionLoading=false;}
- if($('#detail').open&&$('#detail-content').dataset.panel==='subscriptions')renderSubscriptions();
+let subscriptionChoices=new Set(),subscriptionAlertChoices=new Set(),subscriptionExpanded=new Set(),subscriptionModes=Object.create(null);
+async function loadSubscriptionMode(alerts){
+ const modes=subscriptionModes, key=alerts?'alerts':'plain';
+ if(modes[key]?.loading||modes[key]?.manifest)return;
+ const state=modes[key]={loading:true};
+ try{state.manifest=await S.loadManifest(undefined,undefined,undefined,{alerts});}
+ catch{state.error=true;}
+ finally{state.loading=false;}
+ const area=$('#detail-content');
+ if(modes===subscriptionModes&&$('#detail').open&&area.dataset.panel==='subscriptions'){
+  renderSubscriptions(document.activeElement?.dataset?.subscriptionFocus);
+ }
+}
+function loadSelectedSubscriptionModes(){
+ for(const alerts of new Set([...subscriptionChoices].map(id=>subscriptionAlertChoices.has(id))))loadSubscriptionMode(alerts);
 }
 function openSubscriptions(artistId){
  if(artistId&&S.ARTISTS.includes(artistId))subscriptionChoices=new Set([artistId+'-all']);
- subscriptionAlerts=false;subscriptionLoadGeneration++;subscriptionManifest=null;subscriptionError=false;subscriptionLoading=false;
- $('#detail-content').dataset.panel='subscriptions';renderSubscriptions();openDialog();loadSubscriptions();
+ subscriptionAlertChoices=new Set();subscriptionExpanded=new Set();subscriptionModes=Object.create(null);
+ $('#detail-content').dataset.panel='subscriptions';renderSubscriptions();openDialog();loadSelectedSubscriptionModes();
 }
-function renderSubscriptions(){
+function renderSubscriptions(focusKey){
  const area=$('#detail-content');area.replaceChildren(el('h2','本体カレンダーに追加'));
- const mode=el('label','','source-item subscription-alert-choice'),check=document.createElement('input');
- check.type='checkbox';check.id='subscription-alerts';check.checked=subscriptionAlerts;
- check.onchange=()=>{
-  subscriptionAlerts=check.checked;subscriptionLoadGeneration++;subscriptionManifest=null;subscriptionError=false;subscriptionLoading=false;
-  renderSubscriptions();area.querySelector('#subscription-alerts')?.focus({preventScroll:true});loadSubscriptions();
- };
- mode.append(el('span','予定・締切の通知を付ける'),check);area.append(mode,el('p','当日8:00と開始・締切の1時間前。23:59締切は23:00。確定・時刻指定の予定のみ。','hint'));
- const groups=el('div','','subscription-presets');
- for(const id of S.ARTISTS){const section=el('section');section.append(el('h3',getArtist(id)?.name||id));for(const preset of S.PRESETS.filter(p=>p.artist===id)){const label=el('label','','source-item'),input=document.createElement('input');input.type='checkbox';input.value=preset.id;input.dataset.preset=preset.id;input.checked=subscriptionChoices.has(preset.id);const name=preset.label.split(' / ')[1];input.setAttribute('aria-label',(getArtist(id)?.name||id)+' '+name);input.onchange=()=>{if(input.checked){if(preset.category==='all')for(const p of S.PRESETS.filter(p=>p.artist===id))subscriptionChoices.delete(p.id);else subscriptionChoices.delete(id+'-all');subscriptionChoices.add(preset.id);}else subscriptionChoices.delete(preset.id);subscriptionChoices=new Set(S.planSelection([...subscriptionChoices]).selected);renderSubscriptions();area.querySelector('input[data-preset="'+preset.id+'"]')?.focus({preventScroll:true});};label.append(el('span',name),input);section.append(label);}groups.append(section);}area.append(groups);
+ const groups=el('div','','subscription-presets subscription-selector');
+ const columns=el('div','','subscription-grid subscription-columns');
+ columns.append(el('span','アーティスト'),el('span','同期'),el('span','通知'));
+ groups.append(columns);
+ function changed(key){renderSubscriptions(key);loadSelectedSubscriptionModes();}
+ function addChecks(row,preset,artistName){
+  const name=preset.label.split(' / ')[1],scope=artistName+' '+name;
+  for(const kind of ['sync','notice']){
+   const notice=kind==='notice',key=preset.id+'-'+kind;
+   const label=el('label','','subscription-check'), input=document.createElement('input');
+   input.type='checkbox';input.setAttribute('data-subscription-focus',key);input.setAttribute('aria-label',scope+'の'+(notice?'通知':'同期'));
+   input.checked=(notice?subscriptionAlertChoices:subscriptionChoices).has(preset.id);
+   input.disabled=notice&&!subscriptionChoices.has(preset.id);
+   input.onchange=()=>{
+    if(notice){
+     if(!subscriptionChoices.has(preset.id))return;
+     if(input.checked)subscriptionAlertChoices.add(preset.id);else subscriptionAlertChoices.delete(preset.id);
+    }else{
+     if(input.checked){
+      if(preset.category==='all')for(const part of S.PRESETS.filter(p=>p.artist===preset.artist))subscriptionChoices.delete(part.id);
+      else subscriptionChoices.delete(preset.artist+'-all');
+      subscriptionChoices.add(preset.id);
+     }else subscriptionChoices.delete(preset.id);
+     for(const id of subscriptionAlertChoices)if(!subscriptionChoices.has(id))subscriptionAlertChoices.delete(id);
+    }
+    changed(key);
+   };
+   label.append(input);row.append(label);
+  }
+ }
+ for(const artistId of artistOrder.filter(id=>S.ARTISTS.includes(id))){
+  const presets=S.PRESETS.filter(p=>p.artist===artistId),artistName=getArtist(artistId)?.name||artistId;
+  const section=el('section','','subscription-artist'),row=el('div','','subscription-grid');
+  const toggle=el('button',artistName,'subscription-expand'),open=subscriptionExpanded.has(artistId),listId='subscription-genres-'+artistId,focusId=artistId+'-expand';
+  toggle.type='button';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-controls',listId);toggle.setAttribute('data-subscription-focus',focusId);
+  const chevron=el('span','⌄','subscription-chevron');chevron.setAttribute('aria-hidden','true');toggle.append(chevron);
+  toggle.onclick=()=>{if(open)subscriptionExpanded.delete(artistId);else subscriptionExpanded.add(artistId);renderSubscriptions(focusId);};
+  row.append(toggle);addChecks(row,presets.find(p=>p.category==='all'),artistName);section.append(row);
+  const list=el('div','','subscription-genres');list.id=listId;list.hidden=!open;
+  for(const preset of presets.filter(p=>p.category!=='all')){
+   const item=el('div','','subscription-grid');
+   item.append(el('span',preset.label.split(' / ')[1]));addChecks(item,preset,artistName);list.append(item);
+  }
+  section.append(list);groups.append(section);
+ }
+ area.append(groups);
  const selected=S.planSelection([...subscriptionChoices]).selected;
- if(!selected.length)area.append(el('p','購読したい範囲を選んでください。','hint'));
- if(!subscriptionManifest){const status=el('p',subscriptionError?'購読先を確認できません。通信状態を確認して再試行してください。':'購読先を確認しています…','hint');status.setAttribute('role','status');area.append(status);if(subscriptionError){const retry=el('button','再試行');retry.onclick=()=>{subscriptionError=false;renderSubscriptions();loadSubscriptions();};area.append(retry);}return;}
- if(selected.length)area.append(el('p','1種類ずつ追加してください。通知あり・なしはどちらか一方だけ追加してください。切り替える場合は、先に本体側で古い購読を解除してください。全予定とその内訳も重複します。','hint'));
- for(const id of selected){const feed=subscriptionManifest.feeds.find(f=>f.id===id),urls=S.links(id,{alerts:subscriptionAlerts}),row=el('section','','subscription-link');row.append(el('h3',feed.label),el('p',feed.count+'件'+(feed.omittedUnknownDate?' · 日付未定'+feed.omittedUnknownDate+'件は未配信':''),'hint'));const actions=el('div','','detail-actions'),subscribe=el('a',subscriptionAlerts?'通知ありで購読':'本体カレンダーで購読','primary subscription-action');subscribe.href=urls.webcal;subscribe.setAttribute('aria-label',feed.label+(subscriptionAlerts?'を通知ありで購読':'を購読'));actions.append(subscribe);const copy=el('button','URLをコピー');copy.type='button';copy.setAttribute('aria-label',feed.label+'の購読URLをコピー');copy.onclick=async()=>{try{if(!navigator.clipboard?.writeText)throw new Error('unavailable');await navigator.clipboard.writeText(urls.https);toast('購読URLをコピーしました。');}catch{field.hidden=false;field.focus({preventScroll:true});field.select();toast('表示されたURLを選択してコピーしてください。');}};actions.append(copy);row.append(actions);const field=document.createElement('input');field.type='url';field.value=urls.https;field.readOnly=true;field.hidden=true;field.className='subscription-url';field.setAttribute('aria-label',feed.label+'の購読URL');row.append(field);area.append(row);}
- area.append(el('p','読み取り専用 · 反映に時間差あり','hint'));const help=el('a','購読の説明を見る','subscription-help');help.href='#changes';help.onclick=()=>closeDialog();area.append(help);
+ if(!selected.length)area.append(el('p','同期する範囲を選んでください。','hint'));
+ if(selected.length)area.append(el('p','本体カレンダーで1種類ずつ登録してください。設定を変えるときは、先に本体側の古い登録を解除してください。','hint'));
+ if(subscriptionAlertChoices.size)area.append(el('p','通知は当日8:00と開始・締切の1時間前。23:59締切は23:00。確定・時刻指定の予定のみ。iPhoneのカレンダー一覧で、登録したカレンダーのⓘで「予定通知」を確認できます。iPhoneで実際に通知が届くかは確認中です。','hint'));
+ const unavailable=new Set();
+ for(const id of selected){
+  const alerts=subscriptionAlertChoices.has(id),mode=subscriptionModes[alerts?'alerts':'plain'];
+  const feed=mode?.manifest?.feeds.find(f=>f.id===id);
+  if(!feed){unavailable.add(alerts);continue;}
+  const urls=S.links(id,{alerts}),row=el('section','','subscription-link');row.append(el('h3',feed.label),el('p',feed.count+'件'+(feed.omittedUnknownDate?' · 日付未定'+feed.omittedUnknownDate+'件は未配信':''),'hint'));
+  const actions=el('div','','detail-actions subscription-actions'),subscribe=el('a',alerts?'通知ありで登録':'通知なしで登録','primary subscription-action');
+  subscribe.href=urls.webcal;subscribe.setAttribute('aria-label',feed.label+(alerts?'を通知ありで登録':'を通知なしで登録'));
+  const field=document.createElement('input');field.type='url';field.value=urls.https;field.readOnly=true;field.hidden=true;field.className='subscription-url';field.setAttribute('aria-label',feed.label+'の登録URL');
+  const copy=el('button','URL');copy.type='button';copy.setAttribute('aria-label',feed.label+'の登録URLをコピー');
+  copy.onclick=async()=>{try{if(!navigator.clipboard?.writeText)throw new Error('unavailable');await navigator.clipboard.writeText(urls.https);toast('登録URLをコピーしました。');}catch{field.hidden=false;field.focus({preventScroll:true});field.select();toast('表示されたURLを選択してコピーしてください。');}};
+  actions.append(copy,subscribe);row.append(actions,field);area.append(row);
+ }
+ for(const alerts of unavailable){
+  const mode=subscriptionModes[alerts?'alerts':'plain'], name=alerts?'通知あり':'通知なし';
+  const status=el('p',mode?.error?name+'の登録先を確認できません。':name+'の登録先を確認しています…','hint');status.setAttribute('role','status');area.append(status);
+  if(mode?.error){const retry=el('button',name+'を再試行');retry.type='button';retry.onclick=()=>{loadSubscriptionMode(alerts);renderSubscriptions();};area.append(retry);}
+ }
+ area.append(el('p','読み取り専用 · 反映に時間差あり','hint'));const help=el('a','登録の説明を見る','subscription-help');help.href='#changes';help.onclick=()=>closeDialog();area.append(help);
+ if(focusKey)area.querySelector('[data-subscription-focus="'+focusKey+'"]')?.focus({preventScroll:true});
 }
 function openExport(events){const result=F.buildICS(events.map(presentEvent),{now:new Date().toISOString()}),area=$('#detail-content');area.dataset.panel='export';area.replaceChildren(el('h2','カレンダーに渡す予定'),el('p',`${result.included.length}件の架空サンプルをICSファイルにします。`));const list=el('ul','','export-list');for(const e of result.included)list.append(el('li',`${e.status==='possible'?'［かも？］':''}${e.title} · ${timing(e)}`));area.append(list);for(const s of result.skipped)area.append(el('p',`${s.event?.title||'予定'}：${s.label||s.reason}（出力しません）`,'hint'));area.append(el('p','ファイルを保存しただけでは、本体カレンダーへの登録は完了しません。対応するカレンダーで内容を確認して追加してください。iPhoneでの受け渡しは実機未検証です。','evidence'),el('p','自動同期ではありません。内容が変わっても自動更新しません。通知設定はファイルに含めません。','hint'));const b=el('button',`${result.included.length}件のICSを作成`,'primary');b.disabled=!result.included.length;b.onclick=()=>{const url=URL.createObjectURL(new Blob([result.ics],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='alert-sample-events.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);toast('ICSファイルを作成しました。本体への追加はカレンダー側で確認してください。');};area.append(b);openDialog();}
 function showValue(key,value){if(value===null||value===undefined||value==='')return '未設定';if(key==='status')return statusNames[value]||value;if(key==='category'&&value==='BENEFIT')return 'EVENT';if(key==='artistId')return getArtist(value)?.name||value;if(key==='allDay')return value?'終日':'時刻指定／時刻未定';if(['start','end','deadline'].includes(key))return prettyDate(value);return String(value);}

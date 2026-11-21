@@ -75,10 +75,10 @@ test('client keeps original URLs by default and fails closed on incorrect alert 
 
 test('opt-in is reset per registration and warning is explicit',()=>{
  const app=read('app.js');
- assert.match(app,/function openSubscriptions[\s\S]+?subscriptionAlerts=false;/);
- assert.match(app,/check.checked=subscriptionAlerts/);
- assert.match(app,/通知あり・なしはどちらか一方だけ追加/);
- assert.match(app,/urls=S.links\(id,\{alerts:subscriptionAlerts\}\)/);
+ assert.match(app,/function openSubscriptions[\s\S]+?subscriptionAlertChoices=new Set\(\)/);
+ assert.match(app,/input.disabled=notice&&!subscriptionChoices.has/);
+ assert.match(app,/先に本体側の古い登録を解除/);
+ assert.match(app,/urls=S.links\(id,\{alerts\}\)/);
  assert.match(read('hourly/verify-live.mjs'),/manifest-alerts-v5\.json/);
  assert.match(read('.github/workflows/hourly-public-refresh.yml'),/for variant in \['', '-alerts'\]/);
 });

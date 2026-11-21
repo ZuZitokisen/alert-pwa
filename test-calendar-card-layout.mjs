@@ -152,7 +152,7 @@ test('layout keeps month and cards together with exactly Schedule, Favorite and 
 });
 test('News retains change history, update guidance, specifications and access to all schedules',()=>{
  const document=parseDocument(html),news=document.getElementById('changes-view');assert.ok(news.querySelector('#changes'));assert.ok(news.querySelector('#read-all'));assert.ok(news.querySelector('a[href="#cards"]'));
- for(const copy of ['アプリの更新','通知設定','本体カレンダーへ','お気に入りと保存','情報源とアーティスト','通知は試走中です','別端末との同期はありません','iPhone実機での購読・更新反映は未検証'])assert.ok(news.textContent.includes(copy),copy);
+ for(const copy of ['アプリの更新','通知設定','本体カレンダーへ','お気に入りと保存','情報源とアーティスト','通知は試走中です','別端末との同期はありません','iPhone実機での登録・更新反映は未検証'])assert.ok(news.textContent.includes(copy),copy);
  for(const id of ['push-settings','storage-status','source-list'])assert.ok(news.querySelector('#'+id),id);
 });
 test('legacy information routes show News without losing the selected calendar range',()=>{
@@ -284,8 +284,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.35 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-35/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.35'));assert.ok(sw.includes(file+'?v=0.7.35'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.36 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-36/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.36'));assert.ok(sw.includes(file+'?v=0.7.36'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -578,3 +578,47 @@ test('pink shrimp is the first artist after ALL and filters only Ebichu schedule
 });
 
 test('shrimp has a separate fan tail and Tokisen drawing includes its centering offset',()=>{const doc=parseDocument(html),buttons=doc.getElementById('artist-filters').querySelectorAll('button');assert.equal(buttons[1].querySelector('svg').getAttribute('viewBox'),'2 1 32 32');assert.equal(buttons[1].querySelectorAll('path').length,5);assert.match(buttons[1].querySelectorAll('path')[3].getAttribute('d'),/^M20.6 22.1/);assert.equal(buttons[2].querySelector('svg').getAttribute('viewBox'),'2.5 0 32 32');});
+
+test('calendar sync groups expand, mix notification modes, and prevent overlapping artist selections',async()=>{
+ const f=fixture(),panel=f.get('detail-content'),calls=[];
+ const data=Object.fromEntries(['plain','alerts'].map(name=>[name,JSON.parse(fs.readFileSync(new URL('./calendar-feeds/manifest'+(name==='alerts'?'-alerts':'')+'-v5.json',import.meta.url),'utf8'))]));
+ const subs=fs.readFileSync(new URL('./calendar-subscriptions.js',import.meta.url),'utf8');
+ vm.runInContext(subs,f.context);
+ f.run('render()');f.context.subscriptionTestLoader=async (_a,_b,_c,{alerts})=>{calls.push(alerts);return data[alerts?'alerts':'plain'];};
+ // The const app alias was captured before the fixture loaded the module; install the real API in its test object.
+ f.run('Object.assign(S,AlertCalendarSubscriptions,{loadManifest:subscriptionTestLoader});openSubscriptions()');
+ const control=key=>panel.querySelector('[data-subscription-focus="'+key+'"]');
+ const change=(key,checked)=>{const c=control(key);c.checked=checked;c.onchange();};
+ const links=()=>panel.querySelectorAll('.subscription-action').map(a=>a.href.split('/').at(-1)).sort();
+ const tick=()=>new Promise(resolve=>setImmediate(resolve));
+ assert.equal(control('tokisen-all-notice').disabled,true);
+ assert.equal(f.get('subscription-genres-tokisen').hidden,true);
+ assert.equal(panel.querySelector('.subscription-expand').getAttribute('data-subscription-focus'),'ebichu-expand');
+ control('tokisen-expand').click();
+ assert.equal(f.get('subscription-genres-tokisen').hidden,false);
+ change('tokisen-live-sync',true);
+ change('tokisen-media-sync',true);
+ change('tokisen-live-notice',true);
+ await tick();
+ assert.deepEqual(calls,[false,true]);
+ assert.deepEqual(links(),['tokisen-live-alerts.ics','tokisen-media.ics']);
+ for(const row of panel.querySelectorAll('.subscription-actions')){
+  assert.equal(row.children[0].textContent,'URL');
+  assert.match(row.children[1].textContent,/登録$/);
+ }
+ change('tokisen-all-sync',true);
+ assert.equal(control('tokisen-live-sync').checked,false);
+ assert.equal(control('tokisen-live-notice').checked,false);
+ assert.equal(control('tokisen-live-notice').disabled,true);
+ assert.equal(control('tokisen-all-notice').checked,false);
+ assert.deepEqual(links(),['tokisen-all.ics']);
+ change('tokisen-all-notice',true);
+ assert.deepEqual(links(),['tokisen-all-alerts.ics']);
+ change('tokisen-media-sync',true);
+ assert.equal(control('tokisen-all-sync').checked,false);
+ assert.deepEqual(links(),['tokisen-media.ics']);
+ f.run("closeDialog();openSubscriptions('tokisen')");
+ await tick();
+ assert.equal(control('tokisen-all-notice').checked,false);
+ assert.deepEqual(links(),['tokisen-all.ics']);
+});
