@@ -187,15 +187,16 @@ test('week controls and selected date cells have rounded corners without shrinki
 test('artist first paint contains native named controls and final decorative SVGs before JavaScript',()=>{
  const doc=parseDocument(html),group=doc.getElementById('artist-filters'),buttons=group.querySelectorAll('button');
  assert.equal(group.getAttribute('role'),'group');assert.equal(group.getAttribute('data-all-selected'),'true');
- assert.deepEqual(buttons.map(b=>b.getAttribute('data-artist')),['all','ebichu','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge']);
- assert.deepEqual(buttons.map(b=>b.getAttribute('aria-label')),['すべてのアーティスト','私立恵比寿中学','超ときめき♡宣伝部','いぎなり東北産','ONE LOVE ONE HEART','Straight Angeli','RE-GE']);
- assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),['true','false','false','false','false','false','false']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('data-artist')),['all','ebichu','batten','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-label')),['すべてのアーティスト','私立恵比寿中学','ばってん少女隊','超ときめき♡宣伝部','いぎなり東北産','ONE LOVE ONE HEART','Straight Angeli','RE-GE']);
+ assert.deepEqual(buttons.map(b=>b.getAttribute('aria-pressed')),['true','false','false','false','false','false','false','false']);
  assert.equal(buttons[0].querySelector('.artist-label').textContent,'ALL');
  assert.equal(buttons[1].querySelector('svg').getAttribute('data-artist-symbol'),'shrimp');
- assert.equal(buttons[2].querySelector('svg').getAttribute('data-artist-symbol'),'megaphone');
- assert.equal(buttons[5].querySelector('svg').getAttribute('data-artist-symbol'),'wings');
- assert.equal(buttons[4].querySelector('svg').getAttribute('data-artist-symbol'),'heart');
- assert.equal(buttons[6].querySelector('svg'),null);
+ assert.equal(buttons[2].querySelector('svg').getAttribute('data-artist-symbol'),'batten-cross');
+ assert.equal(buttons[3].querySelector('svg').getAttribute('data-artist-symbol'),'megaphone');
+ assert.equal(buttons[6].querySelector('svg').getAttribute('data-artist-symbol'),'wings');
+ assert.equal(buttons[5].querySelector('svg').getAttribute('data-artist-symbol'),'heart');
+ assert.equal(buttons[7].querySelector('svg'),null);
  for(const button of buttons){assert.equal(button.getAttribute('type'),'button');assert.ok(button.querySelector('.artist-face'));assert.equal(button.querySelectorAll('.nav-count').length,0);}
  for(const svg of group.querySelectorAll('svg')){assert.equal(svg.getAttribute('aria-hidden'),'true');assert.equal(svg.getAttribute('focusable'),'false');}
 });
@@ -229,7 +230,7 @@ test('artist choice does not erase favorites or alter the subscription preset pa
 test('artist generated fallback matches static labels and paths without adding an RE-GE icon',()=>{
  const f=fixture(),group=f.get('artist-filters'),original=group.querySelectorAll('button'),svgPaths=original.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d')));
  group.replaceChildren();f.run('renderArtists()');const next=group.querySelectorAll('button');
- assert.deepEqual(next.map(b=>b.textContent),original.map(b=>b.textContent));assert.deepEqual(next.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d'))),svgPaths);assert.equal(next[6].querySelector('svg'),null);
+ assert.deepEqual(next.map(b=>b.textContent),original.map(b=>b.textContent));assert.deepEqual(next.map(b=>b.querySelectorAll('path').map(p=>p.getAttribute('d'))),svgPaths);assert.equal(next[7].querySelector('svg'),null);
 });
 test('artist motion affects only noninteractive surfaces, with reduced-motion and visible keyboard focus',()=>{
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
@@ -251,7 +252,7 @@ test('startup binds static artist controls before a pending or rejected first da
   f.context.scheduleRequest=()=>fails?Promise.reject(Error('offline')):new Promise(()=>{});
   const startup=source.slice(source.indexOf("window.addEventListener('hashchange',route);"));
   assert.ok(startup.indexOf('renderArtists();')<startup.indexOf('refresh({notice:'),'bind before awaiting data');f.run(startup);await Promise.resolve();await Promise.resolve();
-  assert.equal(typeof buttons[6].onclick,'function');buttons[6].click();assert.equal(f.run('artist'),'re-ge');assert.equal(buttons[6].getAttribute('aria-pressed'),'true');
+  assert.equal(typeof buttons[7].onclick,'function');buttons[7].click();assert.equal(f.run('artist'),'re-ge');assert.equal(buttons[7].getAttribute('aria-pressed'),'true');
  }
 });
 test('icon-only artist controls hide only two captions while keeping accessible names and typographic marks',()=>{
@@ -284,8 +285,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.42 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-42/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.42'));assert.ok(sw.includes(file+'?v=0.7.42'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.43 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-43/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.43'));assert.ok(sw.includes(file+'?v=0.7.43'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -572,7 +573,7 @@ test('News does not repeat its heading and keeps the mark-all action',()=>{
 test('pink shrimp is the first artist after ALL and filters only Ebichu schedules',()=>{
  const f=fixture({events:[event('エビ中の予定','2026-11-12',{artistId:'ebichu'}),event('とき宣の予定','2026-11-12')]});
  const buttons=f.get('artist-filters').querySelectorAll('button');const b=buttons[1];
- assert.equal(b.getAttribute('data-artist'),'ebichu');assert.equal(buttons[2].getAttribute('data-artist'),'tokisen');
+ assert.equal(b.getAttribute('data-artist'),'ebichu');assert.equal(buttons[3].getAttribute('data-artist'),'tokisen');
  assert.equal(b.getAttribute('aria-label'),'私立恵比寿中学');assert.equal(b.querySelector('svg').getAttribute('data-artist-symbol'),'shrimp');
  b.click();assert.deepEqual(f.titles(),['エビ中の予定']);assert.equal(f.run("presentEvent(state.events[0]).artist"),'私立恵比寿中学');
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
@@ -580,7 +581,7 @@ test('pink shrimp is the first artist after ALL and filters only Ebichu schedule
  for(const [fg,bg] of [['ae376b','e9e9ed'],['ee8db6','39383f'],['f48bbb','202025']])assert.ok(contrastRatio(fg,bg)>=4.0);
 });
 
-test('shrimp has a separate fan tail and Tokisen drawing includes its centering offset',()=>{const doc=parseDocument(html),buttons=doc.getElementById('artist-filters').querySelectorAll('button');assert.equal(buttons[1].querySelector('svg').getAttribute('viewBox'),'2 1 32 32');assert.equal(buttons[1].querySelectorAll('path').length,5);assert.match(buttons[1].querySelectorAll('path')[3].getAttribute('d'),/^M20.6 22.1/);assert.equal(buttons[2].querySelector('svg').getAttribute('viewBox'),'2.5 0 32 32');});
+test('shrimp has a separate fan tail and Tokisen drawing includes its centering offset',()=>{const doc=parseDocument(html),buttons=doc.getElementById('artist-filters').querySelectorAll('button');assert.equal(buttons[1].querySelector('svg').getAttribute('viewBox'),'2 1 32 32');assert.equal(buttons[1].querySelectorAll('path').length,5);assert.match(buttons[1].querySelectorAll('path')[3].getAttribute('d'),/^M20.6 22.1/);assert.equal(buttons[3].querySelector('svg').getAttribute('viewBox'),'2.5 0 32 32');});
 
 test('calendar registration opens the native confirmation once, and URL copies without a second screen',async()=>{
  const f=fixture(),panel=f.get('detail-content'),dialog=f.get('detail'),copied=[],opened=[];

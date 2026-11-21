@@ -25,8 +25,8 @@ const triggerTimes=block=>{
 const removeName=text=>text.replace(/X-WR-CALNAME:[^\r]+(?:\r\n[ \t][^\r]+)*/,'X-WR-CALNAME:fixture');
 
 test('all 30 alarm files are opt-in variants; all non-alarm event fields are identical',()=>{
- const result=C.build(v5,state,{production:true,publicSource:'schedule-data-v5.json'});
- assert.deepEqual(result.manifest,baseline);
+ const result=C.build(JSON.parse(read('schedule-data-v6.json')),state,{production:true,publicSource:'schedule-data-v6.json'});
+ assert.deepEqual(JSON.parse(result.files['manifest-v5.json']),baseline);
  assert.equal(alerts.alertOffsetMinutes,60);
  assert.equal(alerts.feeds.length,30);
  let total=0,skipped=0;
@@ -59,7 +59,7 @@ test('all 30 alarm files are opt-in variants; all non-alarm event fields are ide
 
 test('client keeps original URLs by default and fails closed on incorrect alert manifests',async()=>{
  const ctx=vm.createContext({URL,AbortController,setTimeout,clearTimeout});
- vm.runInContext(read('artist-config.js'),ctx);vm.runInContext(read('calendar-subscriptions.js'),ctx);
+ vm.runInContext(read('artist-config.js'),ctx);ctx.ALERT_ARTISTS=ctx.ALERT_ARTISTS.filter(a=>a.id!=='batten');vm.runInContext(read('calendar-subscriptions.js'),ctx);
  const api=ctx.AlertCalendarSubscriptions;
  assert.match(api.links('ebichu-all').webcal,/^webcal:.+\/ebichu-all\.ics$/);
  assert.match(api.links('ebichu-all',{alerts:true}).webcal,/^webcal:.+\/ebichu-all-alerts\.ics$/);

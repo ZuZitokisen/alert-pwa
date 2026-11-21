@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {test} from 'node:test';
+import {createContext,runInContext} from 'node:vm';
+import core from './production-feed-core.cjs';
+const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
+const json=p=>JSON.parse(read(p));
+const next=json('schedule-data-v6.json'), old=json('schedule-data-v5.json');
+test('v6 adds Batten without changing v5 event values or old combined route',()=>{
+ const rows=next.events.filter(e=>e.artistId==='batten');
+ assert.equal(rows.length,22);
+ assert.equal(new Set(rows.map(e=>e.id)).size,rows.length);
+ assert.deepEqual(next.events.filter(e=>e.artistId!=='batten'),old.events);
+ assert.equal(json('calendar-feeds/manifest-v5.json').feeds.length,30);
+ assert.equal(json('calendar-feeds/manifest-v6.json').feeds.length,35);
+ assert.equal(json('calendar-feeds/manifest-alerts-v6.json').feeds.length,35);
+ assert.doesNotMatch(read('calendar-feeds/combined-v1.json'),/"batten-/);
+ for(const row of rows)assert.ok(read('calendar-feeds/batten-all.ics').replace(/\r\n /g,'').includes('UID:'+core.uid(row)));
+});
+test('latest client recognizes the group, validates the feed manifest and preserves older feed links',async()=>{
+ const c=createContext({Date,URL,AbortController,setTimeout,clearTimeout,navigator:{onLine:true},localStorage:{getItem:()=>null,setItem:()=>{}},fetch:async path=>{assert.equal(path,'./schedule-data-v6.json');return {ok:true,redirected:false,headers:{get:()=> 'application/json'},json:async()=>structuredClone(next)};}});
+ for(const file of ['artist-config.js','schedule-store.js','calendar-subscriptions.js'])runInContext(read(file),c);
+ const state=await (await c.scheduleRequest('state')).json();
+ assert.equal(state.events.length,next.events.length);
+ const api=c.AlertCalendarSubscriptions;
+ assert.equal(api.validateManifest(json('calendar-feeds/manifest-v6.json')).feeds.length,35);
+ assert.match(api.registrationLinks(['batten-all']).webcal,/batten-all\.ics$/);
+ assert.match(api.registrationLinks(['ebichu-all']).webcal,/ebichu-all\.ics$/);
+ assert.deepEqual(Array.from(api.registrationLinks(['batten-all','tokisen-all']).separate, x=>x.https.split('/').pop()),['batten-all.ics','tokisen-all.ics']);
+});
