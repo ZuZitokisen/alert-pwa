@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-ebichu-gera",
-  "dataGeneratedAt": "2026-11-21T15:16:02.892Z",
+  "dataVersion": "2026-11-22-ebichu-dec-events",
+  "dataGeneratedAt": "2026-11-21T17:18:04.733Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3289aae0355cf68e45d987bee4691013677f47b5db6f165f7ceed6b977fdc3df",
+  "inputSha256": "516afdcceb7aa88ad2e8ca63e494c933d0e736dcff4a9fb7bd3dc73a4faab6a5",
   "feeds": [
     {
       "id": "tokisen-all",

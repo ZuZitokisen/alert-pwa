@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-ebichu-gera",
-  "dataGeneratedAt": "2026-11-21T15:16:02.892Z",
-  "inputSha256": "2be68476a4fce83e12e00ab3dd1cf19abed2f3d55d7e604fa195ee53015240db",
+  "dataVersion": "2026-11-22-ebichu-dec-events",
+  "dataGeneratedAt": "2026-11-21T17:18:04.733Z",
+  "inputSha256": "5f38ea517040f9e57aabdd3de5b19f7145b926210e705e23d18f5604f14c52f1",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -609,6 +609,76 @@
       "memberships": [
         "ebichu-all",
         "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-huis-ten-bosch-finale-20261227\"]",
+      "uid": "public-v1-5968ba9a5f21918efbcb81ebe957c6cdb648b3066c57621662c88061a1071cee@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-huis-ten-bosch-finale-20261227",
+        "category": "live",
+        "title": "グランドフィナーレナイト スペシャルライブ",
+        "start": "2026-12-27",
+        "end": null,
+        "allDay": false,
+        "location": "ハウステンボス",
+        "publicNote": "開始・終了は未確定。中山莉子は出演見合わせ。\n私立恵比寿中学の公表日程。主催発表も確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.huistenbosch.co.jp/event/countdown/2026-2027/?mode=pc",
+          "https://www.shiritsuebichu.jp/media/96427/",
+          "https://www.shiritsuebichu.jp/news/16283/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96427/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:18:04.733Z",
+      "modified": "2026-11-21T17:18:04.733Z",
+      "lastTiming": {
+        "start": "2026-12-27",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-idol-xmas-fes-20261224\"]",
+      "uid": "public-v1-993ee9f4b4b2236bb8e1a5331080e01040c8ccf721c0d487c6ed21bf0c351027@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-idol-xmas-fes-20261224",
+        "category": "live",
+        "title": "Idol Xmas Fes 2026",
+        "start": "2026-12-24T15:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "横浜アリーナ",
+        "publicNote": "13:30開場、15:00はフェス全体の開演。エビ中の出演時刻は未発表。中山莉子は出演見合わせ。\n私立恵比寿中学の公表日程。主催発表も確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://idol-xmas-fes.com/",
+          "https://www.shiritsuebichu.jp/news/16167/",
+          "https://www.shiritsuebichu.jp/news/16283/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16167/"
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:18:04.733Z",
+      "modified": "2026-11-21T17:18:04.733Z",
+      "lastTiming": {
+        "start": "2026-12-24T15:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
       ]
     },
     {
@@ -1545,6 +1615,71 @@
       "memberships": [
         "ebichu-all",
         "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-superblue-hmv-handover-1\"]",
+      "uid": "public-v1-751682d451d039faa00fbf4366573ccc98fdec8480721fb0bc287afe8dd254f3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-superblue-hmv-handover-1",
+        "category": "benefit",
+        "title": "「スーパーブルー」CDお渡し会 第1部",
+        "start": "2026-12-10T18:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "HMV&BOOKS SHIBUYA 5F",
+        "publicNote": "18:00集合。A：風見和香・仲村悠菜。B：安本彩花・桜木心菜。\n私立恵比寿中学の公表日程。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96888/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:18:04.733Z",
+      "modified": "2026-11-21T17:18:04.733Z",
+      "lastTiming": {
+        "start": "2026-12-10T18:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-superblue-hmv-handover-2\"]",
+      "uid": "public-v1-756c484a23f1f434ee4f732bed359d0c6282e19b0da748c64e23fda00d81c655@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-superblue-hmv-handover-2",
+        "category": "benefit",
+        "title": "「スーパーブルー」CDお渡し会 第2部",
+        "start": "2026-12-10T19:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "HMV&BOOKS SHIBUYA 5F",
+        "publicNote": "19:00集合。A：小久保柚乃・桜井えま。中山莉子は出演見合わせ。Bの編成は公式の案内を確認。\n私立恵比寿中学の公表日程。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96888/",
+          "https://www.shiritsuebichu.jp/news/16283/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-21T17:18:04.733Z",
+      "modified": "2026-11-21T17:18:04.733Z",
+      "lastTiming": {
+        "start": "2026-12-10T19:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
       ]
     },
     {
@@ -13818,5 +13953,5 @@
       ]
     }
   ],
-  "integritySha256": "caaaa4ad124aa398898ff2a8355f974f16a29e5ef53fc0c3763e2782b5993d93"
+  "integritySha256": "66aac4bb97f8c4ae8d4d13e1a9dd3fb4ffd88b6061a15e87d5b2668484a4af33"
 }
