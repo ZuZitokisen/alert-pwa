@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-21-gift-collab-venue-check",
-  "dataGeneratedAt": "2026-11-21T11:16:04Z",
+  "dataVersion": "2026-11-21-ebichu-december-solo",
+  "dataGeneratedAt": "2026-11-21T13:15:16.638Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "763e166462bfad6098292b052dba727bb26341ba53fdfbfa660322e33ecbffbd",
+  "inputSha256": "878a6b79251aa129f43507f8ac5e739ba3bd72725766be92a355d237522c7b75",
   "feeds": [
     {
       "id": "tokisen-all",
