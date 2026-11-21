@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-ebichu-gera",
-  "dataGeneratedAt": "2026-11-21T15:16:02.892Z",
+  "dataVersion": "2026-11-22-ebichu-dec-events",
+  "dataGeneratedAt": "2026-11-21T17:18:04.733Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "2be68476a4fce83e12e00ab3dd1cf19abed2f3d55d7e604fa195ee53015240db",
+  "inputSha256": "5f38ea517040f9e57aabdd3de5b19f7145b926210e705e23d18f5604f14c52f1",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all.ics",
-      "count": 55,
+      "count": 59,
       "omittedUnknownDate": 0,
-      "sha256": "19ea27f2c88563b059ecfe951686b5c5ed1cc9c73c618de4fc5ed781077e2194"
+      "sha256": "9dbcb20ed53d4c7369658ed0639549e2aa51bb3134b2e762bb2975a44d5bae50"
     },
     {
       "id": "ebichu-live",
@@ -276,9 +276,9 @@
       "category": "live",
       "label": "私立恵比寿中学 / ライブ・イベント",
       "path": "calendar-feeds/ebichu-live.ics",
-      "count": 26,
+      "count": 28,
       "omittedUnknownDate": 0,
-      "sha256": "39f61a59b1b4a8ce7f67aed4ecf6b234c26bbd493a86fe456e6da9a1a1f1eb28"
+      "sha256": "9d8d25e5371f73e9abcbb6b7d02524833eccd10117bd20a304ec3bca3a0b7677"
     },
     {
       "id": "ebichu-benefit",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit.ics",
-      "count": 6,
+      "count": 8,
       "omittedUnknownDate": 0,
-      "sha256": "6eef924a66dff3d8822cf344a5fdd3737a740324a12f53bf0723c00a12c27250"
+      "sha256": "2035f861345f2b9a6ee50ec88e02a7b3504af878a8272a146cdd7d5fbbcbcd66"
     },
     {
       "id": "ebichu-media",
