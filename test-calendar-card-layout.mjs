@@ -152,7 +152,7 @@ test('layout keeps month and cards together with exactly Schedule, Favorite and 
 });
 test('News retains change history, update guidance, specifications and access to all schedules',()=>{
  const document=parseDocument(html),news=document.getElementById('changes-view');assert.ok(news.querySelector('#changes'));assert.ok(news.querySelector('#read-all'));assert.ok(news.querySelector('a[href="#cards"]'));
- for(const copy of ['アプリの更新','通知とリマインド','本体カレンダーへ','お気に入りと保存','情報源とアーティスト','通知は試走中です','別端末との同期はありません','iPhone実機での購読・更新反映は未検証'])assert.ok(news.textContent.includes(copy),copy);
+ for(const copy of ['アプリの更新','通知設定','本体カレンダーへ','お気に入りと保存','情報源とアーティスト','通知は試走中です','別端末との同期はありません','iPhone実機での購読・更新反映は未検証'])assert.ok(news.textContent.includes(copy),copy);
  for(const id of ['push-settings','storage-status','source-list'])assert.ok(news.querySelector('#'+id),id);
 });
 test('legacy information routes show News without losing the selected calendar range',()=>{
@@ -283,8 +283,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.27 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-27/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.27'));assert.ok(sw.includes(file+'?v=0.7.27'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.28 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-28/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.28'));assert.ok(sw.includes(file+'?v=0.7.28'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -554,6 +554,12 @@ test('News does not repeat its heading and keeps the mark-all action',()=>{
  assert.ok(actions.querySelector('#read-all'));
  assert.equal(actions.querySelector('#news-events-tab').getAttribute('aria-selected'),'true');
  assert.equal(news.querySelector('#news-history-panel').hidden,true);
+ assert.equal(actions.querySelector('#news-other-tab').textContent,'その他');
+ const others=news.querySelector('#news-other-panel');
+ assert.equal(others.hidden,true);
+ assert.equal(others.querySelector('.info-grid').children[0].id,'push-settings');
+ assert.equal(others.querySelector('#push-settings h2').textContent,'通知設定');
+ assert.equal(news.querySelector('#news-history-panel').querySelector('#push-settings'),null);
  const css=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
  assert.match(css,/\.news-actions\{[^}]*grid-template-columns:minmax\(0,1fr\) auto;[^}]*align-items:center/);
  assert.match(css,/\.news-tabs button,\.news-actions #read-all\{min-height:44px;white-space:nowrap/);
