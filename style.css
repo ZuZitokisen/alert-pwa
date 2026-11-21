@@ -118,12 +118,12 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 /* Artist-menu preview: fixed touch targets, independently animated surfaces. */
 #artist-filters.artist-pills{
  --artist-all-bg:#e8e8ec;--artist-all-border:#d3d3da;--artist-all-ink:#56545f;
- position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));
+ position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));
  gap:0;width:100%;max-width:360px;min-width:0;margin:16px 0 18px;padding:0;
 }
 #artist-filters::before{
  content:"";position:absolute;z-index:-1;pointer-events:none;left:4px;top:5px;bottom:5px;
- width:calc(100% / 6 - 8px);border:1px solid var(--artist-all-border);border-radius:999px;
+ width:calc(100% / 7 - 8px);border:1px solid var(--artist-all-border);border-radius:999px;
  background:var(--artist-all-bg);box-sizing:border-box;
  transition:width 360ms cubic-bezier(.22,.8,.25,1),background-color 280ms ease,border-color 280ms ease;
 }
@@ -257,12 +257,12 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 :where(:root[data-theme=dark]) #artist-filters>button[data-artist=tohokusan]{--artist-ink:#cbb6df}
 @media(max-width:360px){#artist-filters .artist-face{padding-inline:1px}#artist-filters [data-artist=re-ge] .artist-label{font-size:11px;letter-spacing:0}}
 
-/* Six fixed touch targets; five circular artist marks. Frame inner clearance = 5px. */
-#artist-filters.artist-pills{grid-template-columns:repeat(6,46px);width:276px;max-width:100%;gap:0}
-#artist-filters>button.artist-option{width:46px;height:48px;min-height:48px;padding:0;align-items:center}
+/* Seven touch targets; six circular artist marks. Frame inner clearance = 5px. */
+#artist-filters.artist-pills{grid-template-columns:repeat(7,minmax(0,1fr));width:322px;max-width:100%;gap:0}
+#artist-filters>button.artist-option{width:100%;height:48px;min-height:48px;padding:0;align-items:center}
 #artist-filters .artist-face{flex:none;width:36px;height:36px;padding:0;border-radius:50%;transform:none}
 #artist-filters>button:not([data-artist=all])[aria-pressed=true] .artist-face{transform:none}
-#artist-filters::before{left:-1px;top:0;bottom:0;width:48px}
+#artist-filters::before{left:-1px;top:0;bottom:0;width:calc(100% / 7 + 2px)}
 #artist-filters[data-all-selected=true]::before{left:-1px;top:0;bottom:0;width:calc(100% + 2px)}
 #artist-filters [data-artist=re-ge] .artist-label{font-size:10.5px;letter-spacing:0;font-weight:800}
 /* The existing genre palette is shared by Schedule, Favorite and News cards. */
@@ -391,3 +391,9 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 /* Keep all four News controls on one aligned row at narrow phone widths. */
 @media(max-width:345px){.news-tabs button,.news-actions #read-all{padding-inline:4px}}
 #news-other-panel #push-settings{grid-column:1/-1}
+
+#artist-filters [data-artist=ebichu]{--artist-muted:#ae376b;--artist-selected:#f48bbb}
+#artist-filters [data-artist=ebichu] .artist-label{display:none}
+#artist-filters [data-artist=ebichu] .artist-symbol{width:25px;height:25px}
+:where(:root[data-theme=dark]) #artist-filters>button[data-artist=ebichu]{--artist-muted:#ee8db6}
+@media(max-width:357px){#artist-filters .artist-face{width:30px;height:30px}#artist-filters .artist-symbol{max-width:22px;max-height:22px}}

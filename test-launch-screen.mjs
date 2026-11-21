@@ -47,8 +47,8 @@ test('launch uses the exact dedicated white backdrop, centered asset and indepen
  assert.match(html,/#furin-launch\{opacity:0;pointer-events:none;transition-delay:560ms\}/);
  assert.match(source,/setTimeout\(\(\)=>finish\(true\),930\)/);
  assert.match(html,/<span id="furin-launch-cue">TAP TO START<\/span>/);
- assert.match(html,/furin-launch-logo\.png\?v=0\.7\.29/);
- assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.29/);
+ assert.match(html,/furin-launch-logo\.png\?v=0\.7\.30/);
+ assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.30/);
  assert.equal(fs.readFileSync(new URL('./furin-launch-logo.png',import.meta.url)).subarray(1,4).toString(),'PNG');
  assert.match(css,/#view-title:focus\{outline:none\}/);
  assert.match(css,/button:focus-visible/);

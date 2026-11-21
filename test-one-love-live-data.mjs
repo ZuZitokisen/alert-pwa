@@ -5,10 +5,10 @@ import vm from 'node:vm';
 const read=n=>fs.readFileSync(new URL(n,import.meta.url),'utf8');
 const json=n=>JSON.parse(read(n)), data=json('./schedule-data-v4.json');
 const own=data.events.filter(e=>e.artistId==='oneloveoneheart');
-const app=()=>{const c=vm.createContext({URL,AbortController,setTimeout,clearTimeout,localStorage:{getItem:()=>null,setItem(){}},fetch:async url=>{assert.equal(url,'./schedule-data-v4.json');return {ok:true,json:async()=>data}}});for(const f of ['artist-config.js','schedule-store.js','calendar-subscriptions.js'])vm.runInContext(read('./'+f),c);return c;};
+const app=()=>{const c=vm.createContext({URL,AbortController,setTimeout,clearTimeout,localStorage:{getItem:()=>null,setItem(){}},fetch:async url=>{assert.equal(url,'./schedule-data-v5.json');return {ok:true,json:async()=>json('./schedule-data-v5.json')}}});for(const f of ['artist-config.js','schedule-store.js','calendar-subscriptions.js'])vm.runInContext(read('./'+f),c);return c;};
 test('the shipped fourth-artist data and subscriptions load in the current client',async()=>{
  const c=app();const s=await c.scheduleRequest('state');assert.equal(s.ok,true);const v=await s.json();assert.equal(v.events.filter(e=>e.artistId==='oneloveoneheart').length,own.length);
- const S=c.AlertCalendarSubscriptions;assert.equal(S.PRESETS.length,25);const manifest=json('./calendar-feeds/manifest-v4.json');
+ const S=c.AlertCalendarSubscriptions;assert.equal(S.PRESETS.length,30);const manifest=json('./calendar-feeds/manifest-v5.json');
  assert.equal(S.validateManifest(manifest).feeds.find(f=>f.id==='oneloveoneheart-all').count,own.length);
  assert.deepEqual(Array.from(S.planSelection(['oneloveoneheart-all','oneloveoneheart-media','tokisen-live']).selected),['oneloveoneheart-all','tokisen-live']);
  assert.equal(S.links('oneloveoneheart-all').webcal,'webcal://zuzitokisen.github.io/alert-pwa/calendar-feeds/oneloveoneheart-all.ics');

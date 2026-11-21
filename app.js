@@ -7,11 +7,11 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.29';
+const APP_RELEASE='0.7.30';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const getArtist=id=>artists.find(a=>a.id===id);
-const readKey=artists.some(a=>a.id==='tohokusan')?'alert-pwa-curated-read-v4':artists.some(a=>a.id==='oneloveoneheart')?'alert-pwa-curated-read-v3':'alert-pwa-curated-read-v2';
+const readKey=artists.some(a=>a.id==='ebichu')?'alert-pwa-curated-read-v5':artists.some(a=>a.id==='tohokusan')?'alert-pwa-curated-read-v4':artists.some(a=>a.id==='oneloveoneheart')?'alert-pwa-curated-read-v3':'alert-pwa-curated-read-v2';
 let state={events:[],changes:[],sources:[],outboxCount:0},artist='all',selectedArtists=new Set(),filter='all',agendaFilter='all',agendaRange='day',selectedWeekStart=null,view='calendar',returnView='calendar';
 let selectedDate=F.dateKey(new Date().toISOString()),period=selectedDate.slice(0,7)+'-01',requestGeneration=0,mutating=false,toastTimer,storageFailed=false;
 function stored(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{storageFailed=true;return fallback;}}
@@ -33,7 +33,7 @@ const storedFavorites=stored('alert-pwa-favorites-v1',[]),storedSelected=stored(
 let favorites=new Set(Array.isArray(storedFavorites)?storedFavorites:[]),selected=new Set(Array.isArray(storedSelected)?storedSelected:[]),reminders=storedReminders&&typeof storedReminders==='object'&&!Array.isArray(storedReminders)?storedReminders:{},readThrough=readMarker();
 let morningTime=stored('alert-pwa-morning-v1','08:00');if(typeof morningTime!=='string'||!/^([01]\d|2[0-3]):[0-5]\d$/.test(morningTime))morningTime='08:00';
 // Each cache generation has its own history marker; v4 can read older markers.
-function readMarker(){const current=stored(readKey,null),legacy=current===null?stored('alert-pwa-curated-read-v3',null)??stored('alert-pwa-curated-read-v2',null)??stored('alert-pwa-curated-read-v1',0):current;const value=Number.isSafeInteger(legacy)&&legacy>=0?legacy:0;if(current===null)save(readKey,value);return value;}
+function readMarker(){const current=stored(readKey,null),legacy=current===null?(readKey.endsWith('-v5')?stored('alert-pwa-curated-read-v4',null):null)??stored('alert-pwa-curated-read-v3',null)??stored('alert-pwa-curated-read-v2',null)??stored('alert-pwa-curated-read-v1',0):current;const value=Number.isSafeInteger(legacy)&&legacy>=0?legacy:0;if(current===null)save(readKey,value);return value;}
 function reconcileReadMarker(){const limit=Math.max(0,(state.nextChangeId||1)-1);if(readThrough>limit){readThrough=limit;save(readKey,readThrough);}}
 function presentEvent(e){return {...e,artist:getArtist(e.artistId)?.name||e.artistId};}
 function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5500);}
@@ -50,7 +50,7 @@ function matchesArtist(id){return selectedArtists.size===0||selectedArtists.has(
 function matching(extra={}){return F.filterEvents(state.events.filter(e=>matchesArtist(e.artistId)).map(uiEvent),{artist:'all',category:'all',status:'all',sort:'date',favorites,...extra});}
 function activeEvents(){return matching().filter(e=>e.present!==false&&e.status!=='cancelled');}
 function artistSymbol(id){
- const specs={tohokusan:{viewBox:'0 0 34 34',kind:'san-brush',paths:[{d:'M16 2Q19 2 20 3L19 6 16 6Z M6 6Q16 7 25 6L27 4 30 8 7 8Z M9 9Q14 10 13 13L11 14Q11 11 9 9Z M23 9L27 10Q24 13 21 14L20 13Z M5 14Q17 15 27 14L29 12 32 16 8 16Q8 26 2 31L1 30Q5 23 5 14Z M13 17L16 18Q14 22 10 24L9 23Z M19 17L22 18 21 29 18 29Z M13 21Q20 22 26 21L28 19 30 23 12 23Z M12 25L26 25 28 23 30 27 12 27Z M8 29Q19 30 28 29L30 27 33 31 8 31Z',fill:'currentColor'}]},oneloveoneheart:{viewBox:'0 0 32 32',kind:'heart',paths:[{d:'M16 27S3 19.4 3 10.9C3 4.8 10.9 2.3 16 8c5.1-5.7 13-3.2 13 2.9C29 19.4 16 27 16 27Z',fill:'currentColor'}]},tokisen:{viewBox:'0 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 32 30',kind:'wings',paths:[{d:'M5 27C3 23 4 18 8 15c4-3 10-3 16-11l4-3c1 6-3 12-9 16 5-2 8-5 11-8 0 6-5 11-12 13 4 0 7-2 10-4-2 6-8 9-14 8l7 1c-6 4-12 3-16 0Z',fill:'currentColor'},{d:'M7 25c2-5 6-8 11-11',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.3','stroke-linecap':'round'}]}};
+ const specs={ebichu:{viewBox:'0 0 32 32',kind:'shrimp',paths:[{"d":"M26 12c0-4-3.1-7.2-7.6-7.2C11 4.8 6.2 9.9 6.2 16c0 5.7 4.4 9.8 10.4 9.8 1.8 0 3.9-.5 5.4-1.4l4.1 2.1 2.1-3.3-2.5-3.8-4.4.9c-1.4 1.4-2.8 1.8-4.6 1.8-2.7 0-4.7-1.9-4.7-4.5 0-2.7 2-4.9 5-4.9 2.1 0 3.9 1 5.6 1.2 1.9.2 3.4-.6 3.4-1.9Z","fill":"currentColor"},{"d":"M22.8 7.9c1.8-2.8 4.8-4 7.1-3.1M24.7 9.6c1.5-1.4 3.7-1.5 5.1-.7","fill":"none","stroke":"currentColor","stroke-width":"1.5","stroke-linecap":"round"},{"d":"M10.6 8.7l2.8 4.6M8.1 14.1l4.1 1.6M9 20.3l4.1-1.3M22.0 10.4h.15","fill":"none","stroke":"var(--artist-face-bg)","stroke-width":"1.35","stroke-linecap":"round"}]},tohokusan:{viewBox:'0 0 34 34',kind:'san-brush',paths:[{d:'M16 2Q19 2 20 3L19 6 16 6Z M6 6Q16 7 25 6L27 4 30 8 7 8Z M9 9Q14 10 13 13L11 14Q11 11 9 9Z M23 9L27 10Q24 13 21 14L20 13Z M5 14Q17 15 27 14L29 12 32 16 8 16Q8 26 2 31L1 30Q5 23 5 14Z M13 17L16 18Q14 22 10 24L9 23Z M19 17L22 18 21 29 18 29Z M13 21Q20 22 26 21L28 19 30 23 12 23Z M12 25L26 25 28 23 30 27 12 27Z M8 29Q19 30 28 29L30 27 33 31 8 31Z',fill:'currentColor'}]},oneloveoneheart:{viewBox:'0 0 32 32',kind:'heart',paths:[{d:'M16 27S3 19.4 3 10.9C3 4.8 10.9 2.3 16 8c5.1-5.7 13-3.2 13 2.9C29 19.4 16 27 16 27Z',fill:'currentColor'}]},tokisen:{viewBox:'0 0 32 32',kind:'megaphone',paths:[{d:'M5 12h6l13-6v20l-13-6H5z',fill:'currentColor'},{d:'M27 10l3-2m-3 8h4m-4 6 3 2',fill:'none',stroke:'currentColor','stroke-width':'2.2','stroke-linecap':'round','stroke-linejoin':'round'}]},straightangeli:{viewBox:'0 0 32 30',kind:'wings',paths:[{d:'M5 27C3 23 4 18 8 15c4-3 10-3 16-11l4-3c1 6-3 12-9 16 5-2 8-5 11-8 0 6-5 11-12 13 4 0 7-2 10-4-2 6-8 9-14 8l7 1c-6 4-12 3-16 0Z',fill:'currentColor'},{d:'M7 25c2-5 6-8 11-11',fill:'none',stroke:'var(--artist-face-bg)','stroke-width':'1.3','stroke-linecap':'round'}]}};
  const spec=specs[id];if(!spec)return null;
  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');
  for(const [key,value]of Object.entries({class:'artist-symbol','data-artist-symbol':spec.kind,viewBox:spec.viewBox,'aria-hidden':'true',focusable:'false'}))svg.setAttribute(key,value);
@@ -58,7 +58,7 @@ function artistSymbol(id){
  return svg;
 }
 function renderArtists(){
- const artistOrder=['tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
+ const artistOrder=['ebichu','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
  const list=[{id:'all',name:'すべてのアーティスト'},...artists.slice().sort((a,b)=>artistOrder.indexOf(a.id)-artistOrder.indexOf(b.id))],container=$('#artist-filters');
  const existing=[...container.querySelectorAll('button[data-artist]')];
  const buttons=list.map(a=>{
