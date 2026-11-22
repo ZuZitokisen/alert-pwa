@@ -4887,18 +4887,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-21251eddf77355cf6051ab2dae128703c572d29e6a0ef1f21be7655c0d69c
  c45@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T091627Z
+DTSTAMP:20261122T231258Z
 CREATED:20261122T031625Z
-LAST-MODIFIED:20261122T091627Z
-SEQUENCE:1
+LAST-MODIFIED:20261122T231258Z
+SEQUENCE:2
 DTSTART:20261122T153000Z
 DTEND:20261122T155000Z
 SUMMARY:ガチャガチャの森 Presents 超ときめき♡STYLE
 DESCRIPTION:11月22日（日）24:30〜24:50の放送。MCは辻野かな
  み・菅田愛貴。radikoの聴取は配信エリア・契約条件に
  よります。\n本人公式の個別記事でMC、ニッポン放送の
- 番組表で放送枠を確認。\nhttps://toki-sen.com/contents/1130038?t
- ag=all\nhttps://www.1242.com/timetable/?target_date=20261122
+ 番組表で放送枠を確認。\nhttps://radiko.jp/mobile/events/1420865
+ 4\nhttps://toki-sen.com/contents/1130038?tag=all\nhttps://www.1242.com/tim
+ etable/?target_date=20261122
 LOCATION:ニッポン放送
 URL:https://toki-sen.com/contents/1130038?tag=all
 STATUS:CONFIRMED
