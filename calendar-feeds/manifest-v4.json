@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-tokisen-media-links",
-  "dataGeneratedAt": "2026-11-22T13:19:32Z",
+  "dataVersion": "2026-11-23-rege-winter-free-live",
+  "dataGeneratedAt": "2026-11-22T15:14:35Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "7a852f15d432f5d4b2d09c879ae3d9e63cb17bc5fa5543703e52e3dcd408570e",
+  "inputSha256": "25ddc7e30101b103a915a7202a970b8ed71dc59c0703ea75d4b5d6abdc5c82f3",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 62,
+      "count": 63,
       "omittedUnknownDate": 0,
-      "sha256": "eca54b973dec1b5bb166f113dea78253b05172ace3c2f240f774a6a673cc8a45"
+      "sha256": "e5da8c444a89f78ed4f983d0cc2bda7c868ebd4c9f7352202626f9c96db13fa5"
     },
     {
       "id": "re-ge-live",
@@ -76,9 +76,9 @@
       "category": "live",
       "label": "RE-GE / ライブ・イベント",
       "path": "calendar-feeds/re-ge-live.ics",
-      "count": 9,
+      "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "aea5723e89b45d506e0778924fd3eabc1aba30161bf11006265510d6185aabf7"
+      "sha256": "d147e550c860bf7e66d4a7319936866824fcd2e17ddf8892864b51aec431b7f8"
     },
     {
       "id": "re-ge-benefit",
