@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-ebichu-gift",
-  "dataGeneratedAt": "2026-11-22T05:20:04.291Z",
-  "inputSha256": "91bf85bfba43a09cf9659e57eecb4332f6824210afaafc9f9807d9c6a23b9255",
+  "dataVersion": "2026-11-22-style-ebichu-stationhead",
+  "dataGeneratedAt": "2026-11-22T09:16:27Z",
+  "inputSha256": "3578ff6f2592b1bc52c5aa51eda6737841af90039e34ae5a56ccf1b132646f5e",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3655,6 +3655,38 @@
       "lastTiming": {
         "start": "2026-11-24T03:30:00+09:00",
         "end": "2026-11-24T04:00:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-sound-2026-stationhead-20261127\"]",
+      "uid": "public-v1-1fc662f3c90c9670cdcba4c9a0f3bac86dbfaf731bed0086b9763138b2917eb6@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-sound-2026-stationhead-20261127",
+        "category": "media",
+        "title": "「SOUND OF EBICHU 2026-Band Edition-」リスニングパーティー",
+        "start": "2026-11-27T20:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Stationhead",
+        "publicNote": "ライブ音源の配信企画。メンバーの登場はありません。Stationheadの公式アカウント @officialebichu で開催。Apple Musicの有料会員またはSpotify Premiumが必要（AndroidはSpotify Premiumのみ）。終了時刻は未発表。\n私立恵比寿中学公式ニュースで日時・配信サービス・参加条件を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16298/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-22T09:16:27Z",
+      "modified": "2026-11-22T09:16:27Z",
+      "lastTiming": {
+        "start": "2026-11-27T20:00:00+09:00",
+        "end": null,
         "allDay": false
       },
       "memberships": [
@@ -10203,17 +10235,19 @@
         "end": "2026-11-28T15:40:00+09:00",
         "allDay": false,
         "location": "",
-        "publicNote": "坂井仁香・菅田愛貴が出演。15:10〜15:40はコラボ全体の枠です。会場は確認中。主催者タイムテーブルはSGCホール有明、とき宣公式Xはトヨタアリーナ東京と案内しています。\n出演者とコラボ枠は公式情報で確認。会場は主催者と本人公式Xで表記が異なります。",
+        "publicNote": "坂井仁香・菅田愛貴が出演。15:10〜15:40はコラボ全体の枠です。会場は確認中。主催者のタイムテーブルと共演のRain Tree・きゅるりんってしてみてはSGCホール有明、とき宣公式Xはトヨタアリーナ東京と案内しています。\n出演者・時間は公式情報で確認。会場は公式案内に相違があります。",
         "status": "confirmed",
         "sourceUrls": [
           "https://toki-sen.com/contents/1102025?tag=all",
           "https://www.gift-idol.jp/pdf/timetable_1128.pdf",
+          "https://x.com/KYURUSHITE/status/2123657592727904625",
+          "https://x.com/RainTree_RT/status/2123614832834544027",
           "https://x.com/sendenbu_staff/status/2123612301538505066"
         ]
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-21T03:08:51Z",
-      "modified": "2026-11-21T11:16:04Z",
+      "modified": "2026-11-22T09:16:27Z",
       "lastTiming": {
         "start": "2026-11-28T15:10:00+09:00",
         "end": "2026-11-28T15:40:00+09:00",
@@ -16041,17 +16075,16 @@
         "end": "2026-11-23T00:50:00+09:00",
         "allDay": false,
         "location": "ニッポン放送",
-        "publicNote": "11月22日（日）24:30〜24:50の放送。担当メンバーとゲストは未確認。radikoの聴取はエリア・契約条件に準じます。\n本人公式の11月22日回の掲載とニッポン放送の個別日付番組表を照合。",
+        "publicNote": "11月22日（日）24:30〜24:50の放送。MCは辻野かなみ・菅田愛貴。radikoの聴取は配信エリア・契約条件によります。\n本人公式の個別記事でMC、ニッポン放送の番組表で放送枠を確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://toki-sen.com/contents/schedule",
+          "https://toki-sen.com/contents/1130038?tag=all",
           "https://www.1242.com/timetable/?target_date=20261122"
-        ],
-        "sourceUrl": "https://www.1242.com/timetable/?target_date=20261122"
+        ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-22T03:16:25.146Z",
-      "modified": "2026-11-22T03:16:25.146Z",
+      "modified": "2026-11-22T09:16:27Z",
       "lastTiming": {
         "start": "2026-11-23T00:30:00+09:00",
         "end": "2026-11-23T00:50:00+09:00",
@@ -16498,5 +16531,5 @@
       ]
     }
   ],
-  "integritySha256": "2d567a3e45a34fd9d6794e75001dffbdc0ccf42b635daa1479487d978c2a4f27"
+  "integritySha256": "3c5f6a501c547962b3e3e1ccd9817c2ff1b5a90418347b0e4a4ba08c76c3aaa6"
 }

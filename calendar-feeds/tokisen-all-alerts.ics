@@ -355,21 +355,22 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-21959c31f58e74e0cf48733e52b2b233509322eef4f753fd5be6ca6aad55e
  6ca@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T111604Z
+DTSTAMP:20261122T091627Z
 CREATED:20261121T030851Z
-LAST-MODIFIED:20261121T111604Z
-SEQUENCE:1
+LAST-MODIFIED:20261122T091627Z
+SEQUENCE:2
 DTSTART:20261128T061000Z
 DTEND:20261128T064000Z
 SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-2 コラボSTAGE
 DESCRIPTION:坂井仁香・菅田愛貴が出演。15:10〜15:40はコラ
- ボ全体の枠です。会場は確認中。主催者タイムテーブ
- ルはSGCホール有明、とき宣公式Xはトヨタアリーナ東京
- と案内しています。\n出演者とコラボ枠は公式情報で確
- 認。会場は主催者と本人公式Xで表記が異なります。\nht
- tps://toki-sen.com/contents/1102025?tag=all\nhttps://www.gift-idol.jp/pdf/
- timetable_1128.pdf\nhttps://x.com/sendenbu_staff/status/212361230153850506
- 6
+ ボ全体の枠です。会場は確認中。主催者のタイムテー
+ ブルと共演のRain Tree・きゅるりんってしてみてはSGCホ
+ ール有明、とき宣公式Xはトヨタアリーナ東京と案内し
+ ています。\n出演者・時間は公式情報で確認。会場は公
+ 式案内に相違があります。\nhttps://toki-sen.com/contents/110202
+ 5?tag=all\nhttps://www.gift-idol.jp/pdf/timetable_1128.pdf\nhttps://x.com/
+ KYURUSHITE/status/2123657592727904625\nhttps://x.com/RainTree_RT/status/21
+ 23614832834544027\nhttps://x.com/sendenbu_staff/status/2123612301538505066
 LOCATION:
 URL:https://toki-sen.com/contents/1102025?tag=all
 STATUS:CONFIRMED
@@ -4854,20 +4855,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-21251eddf77355cf6051ab2dae128703c572d29e6a0ef1f21be7655c0d69c
  c45@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T031625Z
+DTSTAMP:20261122T091627Z
 CREATED:20261122T031625Z
-LAST-MODIFIED:20261122T031625Z
-SEQUENCE:0
+LAST-MODIFIED:20261122T091627Z
+SEQUENCE:1
 DTSTART:20261122T153000Z
 DTEND:20261122T155000Z
 SUMMARY:ガチャガチャの森 Presents 超ときめき♡STYLE
-DESCRIPTION:11月22日（日）24:30〜24:50の放送。担当メンバー
- とゲストは未確認。radikoの聴取はエリア・契約条件に
- 準じます。\n本人公式の11月22日回の掲載とニッポン放
- 送の個別日付番組表を照合。\nhttps://toki-sen.com/contents/sch
- edule\nhttps://www.1242.com/timetable/?target_date=20261122
+DESCRIPTION:11月22日（日）24:30〜24:50の放送。MCは辻野かな
+ み・菅田愛貴。radikoの聴取は配信エリア・契約条件に
+ よります。\n本人公式の個別記事でMC、ニッポン放送の
+ 番組表で放送枠を確認。\nhttps://toki-sen.com/contents/1130038?t
+ ag=all\nhttps://www.1242.com/timetable/?target_date=20261122
 LOCATION:ニッポン放送
-URL:https://www.1242.com/timetable/?target_date=20261122
+URL:https://toki-sen.com/contents/1130038?tag=all
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM

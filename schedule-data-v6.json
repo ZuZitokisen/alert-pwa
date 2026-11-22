@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-ebichu-gift",
-  "generatedAt": "2026-11-22T05:20:04.291Z",
+  "version": "2026-11-22-style-ebichu-stationhead",
+  "generatedAt": "2026-11-22T09:16:27Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13519,22 +13519,22 @@
       "status": "confirmed",
       "category": "RADIO",
       "location": "ニッポン放送",
-      "note": "11月22日（日）24:30〜24:50の放送。担当メンバーとゲストは未確認。radikoの聴取はエリア・契約条件に準じます。",
-      "evidence": "本人公式の11月22日回の掲載とニッポン放送の個別日付番組表を照合。",
-      "sourceUrl": "https://www.1242.com/timetable/?target_date=20261122",
+      "note": "11月22日（日）24:30〜24:50の放送。MCは辻野かなみ・菅田愛貴。radikoの聴取は配信エリア・契約条件によります。",
+      "evidence": "本人公式の個別記事でMC、ニッポン放送の番組表で放送枠を確認。",
+      "sourceUrl": "https://toki-sen.com/contents/1130038?tag=all",
       "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1130038?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T09:16:27Z"
+        },
         {
           "url": "https://www.1242.com/timetable/?target_date=20261122",
           "type": "broadcaster_official",
-          "checkedAt": "2026-11-22T03:16:25.146Z"
-        },
-        {
-          "url": "https://toki-sen.com/contents/schedule",
-          "type": "artist_official",
-          "checkedAt": "2026-11-22T03:16:25.146Z"
+          "checkedAt": "2026-11-22T09:16:27Z"
         }
       ],
-      "checkedAt": "2026-11-22T03:16:25.146Z",
+      "checkedAt": "2026-11-22T09:16:27Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -14638,8 +14638,8 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "",
-      "note": "坂井仁香・菅田愛貴が出演。15:10〜15:40はコラボ全体の枠です。会場は確認中。主催者タイムテーブルはSGCホール有明、とき宣公式Xはトヨタアリーナ東京と案内しています。",
-      "evidence": "出演者とコラボ枠は公式情報で確認。会場は主催者と本人公式Xで表記が異なります。",
+      "note": "坂井仁香・菅田愛貴が出演。15:10〜15:40はコラボ全体の枠です。会場は確認中。主催者のタイムテーブルと共演のRain Tree・きゅるりんってしてみてはSGCホール有明、とき宣公式Xはトヨタアリーナ東京と案内しています。",
+      "evidence": "出演者・時間は公式情報で確認。会場は公式案内に相違があります。",
       "sourceUrl": "https://toki-sen.com/contents/1102025?tag=all",
       "sources": [
         {
@@ -14656,9 +14656,19 @@
           "url": "https://x.com/sendenbu_staff/status/2123612301538505066",
           "type": "artist_official",
           "checkedAt": "2026-11-21T11:16:04Z"
+        },
+        {
+          "url": "https://x.com/RainTree_RT/status/2123614832834544027",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T09:16:27Z"
+        },
+        {
+          "url": "https://x.com/KYURUSHITE/status/2123657592727904625",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T09:16:27Z"
         }
       ],
-      "checkedAt": "2026-11-21T11:16:04Z",
+      "checkedAt": "2026-11-22T09:16:27Z",
       "deadline": null,
       "revision": 1,
       "present": true,
@@ -18296,6 +18306,33 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-gift-20261129"
+    },
+    {
+      "id": "ebichu-sound-2026-stationhead-20261127",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「SOUND OF EBICHU 2026-Band Edition-」リスニングパーティー",
+      "start": "2026-11-27T20:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "Stationhead",
+      "note": "ライブ音源の配信企画。メンバーの登場はありません。Stationheadの公式アカウント @officialebichu で開催。Apple Musicの有料会員またはSpotify Premiumが必要（AndroidはSpotify Premiumのみ）。終了時刻は未発表。",
+      "evidence": "私立恵比寿中学公式ニュースで日時・配信サービス・参加条件を確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16298/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16298/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T09:16:27Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T09:16:27Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
     }
   ],
   "notes": [
