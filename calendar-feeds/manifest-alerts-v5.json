@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "confirmed-2026-11-23-golden-loveit-v1",
-  "dataGeneratedAt": "2026-11-22T17:13:55.552Z",
+  "dataVersion": "2026-11-23-chikappa-replay-cutoff",
+  "dataGeneratedAt": "2026-11-22T19:20:21.664Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "d96059f8d11ce45f2f4a779185535495366d3f1534a187c560bee711a00f2ed5",
+  "inputSha256": "3cc9f51d5479c906ceb5abaf8cd387a195f99c192ac31e715ab326ea6345b74f",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all-alerts.ics",
       "count": 84,
       "omittedUnknownDate": 0,
-      "sha256": "3c601be78441775e9106fc533e15d102df4ee3f0ebdfb6af9c68696d5ab572c8"
+      "sha256": "b029e02a4db489e8138cab22c7f81f674def42b2de6c66a7b7bd42b2cf4cc10e"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "6e7c5019b2ce91faed8f52e1ab6bffe52d3140051265d643a1341440c4d5a46c"
+      "sha256": "fefae50c77a9c360b925cbc580e6e55f4582d67f8a4aa1612d86d01c492ad50f"
     },
     {
       "id": "ebichu-benefit",

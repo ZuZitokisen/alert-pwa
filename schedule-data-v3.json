@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "confirmed-2026-11-23-golden-loveit-v1",
-  "generatedAt": "2026-11-22T17:13:55.552Z",
+  "version": "2026-11-23-chikappa-replay-cutoff",
+  "generatedAt": "2026-11-22T19:20:21.664Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"

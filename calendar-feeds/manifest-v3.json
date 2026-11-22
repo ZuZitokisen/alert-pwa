@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "confirmed-2026-11-23-golden-loveit-v1",
-  "dataGeneratedAt": "2026-11-22T17:13:55.552Z",
+  "dataVersion": "2026-11-23-chikappa-replay-cutoff",
+  "dataGeneratedAt": "2026-11-22T19:20:21.664Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "21de215ab753c40f303372c29ce33fa17997defe682f7f9ecc9067f98ca53246",
+  "inputSha256": "4e3230c75899b47a7f390935ca66e518f1cd116241942df71ceaac226ef8e816",
   "feeds": [
     {
       "id": "tokisen-all",

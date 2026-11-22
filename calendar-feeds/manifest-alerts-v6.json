@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "confirmed-2026-11-23-golden-loveit-v1",
-  "dataGeneratedAt": "2026-11-22T17:13:55.552Z",
+  "dataVersion": "2026-11-23-chikappa-replay-cutoff",
+  "dataGeneratedAt": "2026-11-22T19:20:21.664Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a25bdf6614ad1339c64753343481291aeb780d4b5b547bd3fd116cc1dbe6fdd9",
+  "inputSha256": "4fa5f883a05b599c347ead5c1ccdaa9f62e16355879d0fc1321abce440fbb2cc",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all-alerts.ics",
       "count": 84,
       "omittedUnknownDate": 0,
-      "sha256": "3c601be78441775e9106fc533e15d102df4ee3f0ebdfb6af9c68696d5ab572c8"
+      "sha256": "b029e02a4db489e8138cab22c7f81f674def42b2de6c66a7b7bd42b2cf4cc10e"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "6e7c5019b2ce91faed8f52e1ab6bffe52d3140051265d643a1341440c4d5a46c"
+      "sha256": "fefae50c77a9c360b925cbc580e6e55f4582d67f8a4aa1612d86d01c492ad50f"
     },
     {
       "id": "ebichu-benefit",
@@ -318,7 +318,7 @@
       "path": "calendar-feeds/batten-all-alerts.ics",
       "count": 40,
       "omittedUnknownDate": 0,
-      "sha256": "651a558fc9eb587d8de64247ca12882cab72b76ba4d00ca3678f323b971c8d91"
+      "sha256": "227a78df35665937c16014803b9477a252cfd66cd89808e3e2604c792ea24e8c"
     },
     {
       "id": "batten-live",
@@ -328,7 +328,7 @@
       "path": "calendar-feeds/batten-live-alerts.ics",
       "count": 20,
       "omittedUnknownDate": 0,
-      "sha256": "35d3ce7fb222011bc780cf991cdb92e8e92b9fe411ed8e56dc2c61d6a3dfeca6"
+      "sha256": "b2f6b5c14849a1e052d58b2136a2c7a5438f579c62e8fad6009f2e4acf0b14f1"
     },
     {
       "id": "batten-benefit",

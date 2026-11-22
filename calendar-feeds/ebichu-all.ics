@@ -320,19 +320,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-9c1780d13e5bdb8f6933db72cfeba3d943d4a48260dd2f6ca6ef6e2d3c38f
  3f1@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T191634Z
+DTSTAMP:20261122T192021Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T191634Z
-SEQUENCE:2
+LAST-MODIFIED:20261122T192021Z
+SEQUENCE:3
 DTSTART:20261123T093000Z
 DTEND:20261123T100000Z
 SUMMARY:ちかっぱ祭2026
 DESCRIPTION:私立恵比寿中学の出演時間。 桜井えまはダン
  スのみで参加。 ニコ生は11:00配信開始。各ライブの後
- 半はニコニコプレミアム会員向け。\n私立恵比寿中学公
- 式サイトで確認。\nhttps://live.nicovideo.jp/watch/lv351793553\nhtt
- ps://prtimes.jp/main/html/rd/p/000001448.000056982.html\nhttps://www.shiri
- tsuebichu.jp/media/95687/\nhttps://www.shiritsuebichu.jp/news/16300/
+ 半はニコニコプレミアム会員向け。 見逃し配信は11月30
+ 日（月）23:59まで。\n私立恵比寿中学公式サイトで確認
+ 。\nhttps://live.nicovideo.jp/watch/lv351793553\nhttps://prtimes.jp/main/
+ html/rd/p/000001448.000056982.html\nhttps://www.shiritsuebichu.jp/media/95
+ 687/\nhttps://www.shiritsuebichu.jp/news/16300/
 LOCATION:マリンメッセ福岡B館
 URL:https://www.shiritsuebichu.jp/media/95687/
 STATUS:CONFIRMED

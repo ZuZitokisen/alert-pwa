@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "confirmed-2026-11-23-golden-loveit-v1",
-  "generatedAt": "2026-11-22T17:13:55.552Z",
+  "version": "2026-11-23-chikappa-replay-cutoff",
+  "generatedAt": "2026-11-22T19:20:21.664Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -14007,14 +14007,14 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "マリンメッセ福岡B館",
-      "note": "私立恵比寿中学の出演時間。 桜井えまはダンスのみで参加。 ニコ生は11:00配信開始。各ライブの後半はニコニコプレミアム会員向け。",
+      "note": "私立恵比寿中学の出演時間。 桜井えまはダンスのみで参加。 ニコ生は11:00配信開始。各ライブの後半はニコニコプレミアム会員向け。 見逃し配信は11月30日（月）23:59まで。",
       "evidence": "私立恵比寿中学公式サイトで確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/media/95687/",
       "sources": [
         {
           "url": "https://www.shiritsuebichu.jp/media/95687/",
           "type": "artist_official",
-          "checkedAt": "2026-11-21T01:14:50Z"
+          "checkedAt": "2026-11-22T19:20:21.664Z"
         },
         {
           "url": "https://www.shiritsuebichu.jp/news/16300/",
@@ -14032,7 +14032,7 @@
           "checkedAt": "2026-11-21T19:16:34.795Z"
         }
       ],
-      "checkedAt": "2026-11-21T19:16:34.795Z",
+      "checkedAt": "2026-11-22T19:20:21.664Z",
       "timings": [
         {
           "kind": "broadcast_start",

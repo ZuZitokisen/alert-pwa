@@ -65,18 +65,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-877518658be4b24bb2c183ce0b79525be462744ad105641b27c9cb1de0543
  000@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T191634Z
+DTSTAMP:20261122T192021Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261121T191634Z
-SEQUENCE:1
+LAST-MODIFIED:20261122T192021Z
+SEQUENCE:2
 DTSTART:20261123T090500Z
 DTEND:20261123T093000Z
 SUMMARY:ちかっぱ祭2026
 DESCRIPTION:ばってん少女隊の出演枠。 ニコ生は11:00配信開
- 始。各ライブの後半はニコニコプレミアム会員向け。\n
- ばってん少女隊公式の案内。\nhttps://battengirls.com/contents/
- 1101652\nhttps://live.nicovideo.jp/watch/lv351793553\nhttps://prtimes.jp/m
- ain/html/rd/p/000001448.000056982.html
+ 始。各ライブの後半はニコニコプレミアム会員向け。 
+ 見逃し配信は11月30日（月）23:59まで。\nばってん少女隊
+ 公式の案内。\nhttps://battengirls.com/contents/1101652\nhttps://live
+ .nicovideo.jp/watch/lv351793553\nhttps://prtimes.jp/main/html/rd/p/0000014
+ 48.000056982.html\nhttps://www.shiritsuebichu.jp/media/95687/
 LOCATION:マリンメッセ福岡B館
 URL:https://battengirls.com/contents/1101652
 STATUS:CONFIRMED
