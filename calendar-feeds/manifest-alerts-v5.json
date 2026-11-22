@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-rege-snow-straight-ikebukuro",
-  "dataGeneratedAt": "2026-11-22T11:16:44Z",
+  "dataVersion": "2026-11-22-tokisen-media-links",
+  "dataGeneratedAt": "2026-11-22T13:19:32Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "06fa389ab54b9edf16e9e4cbee039aefe7bdfde7579540688015ef5e9bffc25b",
+  "inputSha256": "d3b2213fb5eda3372f039b1479cf5c90382ef91e362caaaf0b03391fc511f148",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 199,
+      "count": 200,
       "omittedUnknownDate": 10,
-      "sha256": "618ce9655c36331ee29ebaa3e87ec662401b09bac18a6d77e1fe22b4ea39e79b"
+      "sha256": "ae71a0a1426073f94d2bf34222d5645230d1383d2ebf150847c8e9ccc4fa1214"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media-alerts.ics",
-      "count": 124,
+      "count": 125,
       "omittedUnknownDate": 2,
-      "sha256": "ee2b0bf08c27aca9616e234958cbac41f8e3d7402c05ea3cfd30c694accc40b4"
+      "sha256": "117a04c2a9ebfd14dc12285cece1713d44ae7d1336842a01f0f5b00d64c6af89"
     },
     {
       "id": "tokisen-other",
