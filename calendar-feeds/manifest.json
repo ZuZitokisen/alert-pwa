@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-style-ebichu-stationhead",
-  "dataGeneratedAt": "2026-11-22T09:16:27Z",
+  "dataVersion": "2026-11-22-rege-snow-straight-ikebukuro",
+  "dataGeneratedAt": "2026-11-22T11:16:44Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "26ddc6a5c55f1b87df26291840b3fb479d6ffdb9be436c01c551d06f769fa8bb",
+  "inputSha256": "a5b1a297b242560ea48df36922506c62bc7fae416f5ca05d8946ccb7a183eceb",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 61,
+      "count": 62,
       "omittedUnknownDate": 0,
-      "sha256": "a73eb9ba549483753ba3082f829ab92dd8414b222657ff722ab49c3d83d8950c"
+      "sha256": "eca54b973dec1b5bb166f113dea78253b05172ace3c2f240f774a6a673cc8a45"
     },
     {
       "id": "re-ge-live",
@@ -96,9 +96,9 @@
       "category": "media",
       "label": "RE-GE / メディア",
       "path": "calendar-feeds/re-ge-media.ics",
-      "count": 19,
+      "count": 20,
       "omittedUnknownDate": 0,
-      "sha256": "a6c551d580698df740988ead547e0a00fa59e9e4bc3db0d64ff2749826e0c55c"
+      "sha256": "634e453e8cf53e7628f0e19b84d5ec6801ffae4ea7c04772d92ae21b32611245"
     },
     {
       "id": "re-ge-other",

@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-style-ebichu-stationhead",
-  "dataGeneratedAt": "2026-11-22T09:16:27Z",
+  "dataVersion": "2026-11-22-rege-snow-straight-ikebukuro",
+  "dataGeneratedAt": "2026-11-22T11:16:44Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3578ff6f2592b1bc52c5aa51eda6737841af90039e34ae5a56ccf1b132646f5e",
+  "inputSha256": "586dd9562fd4338d4e79e28268dd2fee2af41bc3190e204ae2c4dd989f53b9c5",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all-alerts.ics",
-      "count": 61,
+      "count": 62,
       "omittedUnknownDate": 0,
-      "sha256": "1b95e80be8a6fe9e8f7f2bfe6c418586bbe6eb64537a05d3de0b7ed55bb25ae2"
+      "sha256": "ba927e04c8159bbab7e9e3b3e782e19a9da64e7f7697913329b4d43bc4442aed"
     },
     {
       "id": "re-ge-live",
@@ -96,9 +96,9 @@
       "category": "media",
       "label": "RE-GE / メディア",
       "path": "calendar-feeds/re-ge-media-alerts.ics",
-      "count": 19,
+      "count": 20,
       "omittedUnknownDate": 0,
-      "sha256": "410d9a11f3766243eac3e92d6907300e7cd68765006daee4ce724e7bd0436c35"
+      "sha256": "39c50ab833f922e5799c349e9dfccf938677fa3c8e1080cbda5acf192870800d"
     },
     {
       "id": "re-ge-other",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all-alerts.ics",
       "count": 39,
       "omittedUnknownDate": 0,
-      "sha256": "e9455c8d793eca72da6cff837202c19ee4a87a5b83682ef61bb5b9a985b2a555"
+      "sha256": "d845eabb5b509deaf91146b518ac46b3d25727d854e3a7699d16d14dc445efea"
     },
     {
       "id": "straightangeli-live",
@@ -128,7 +128,7 @@
       "path": "calendar-feeds/straightangeli-live-alerts.ics",
       "count": 6,
       "omittedUnknownDate": 0,
-      "sha256": "c2314f41e42fd1d3de00fbc71195500ecc21baa178d5ef4242f9d3b1d61f98be"
+      "sha256": "6a676d77de7d41adc0a84672b681c1c60d19bac1f981e008011c20cc05033e70"
     },
     {
       "id": "straightangeli-benefit",

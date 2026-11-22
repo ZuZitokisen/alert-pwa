@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-style-ebichu-stationhead",
-  "generatedAt": "2026-11-22T09:16:27Z",
+  "version": "2026-11-22-rege-snow-straight-ikebukuro",
+  "generatedAt": "2026-11-22T11:16:44Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -11694,18 +11694,18 @@
       "allDay": false,
       "status": "confirmed",
       "category": "EVENT",
-      "location": "",
-      "note": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。",
-      "evidence": "本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+      "location": "animate hall BLACK（アニメイト池袋本店 北館9F）",
+      "note": "開催日と会場を本人公式で確認。開始・終了時刻や参加方法などの詳細は後日発表。",
+      "evidence": "本人公式スケジュール詳細の日程・会場欄を確認。",
       "sourceUrl": "https://straight-angeli.com/schedule/item-1370/",
       "sources": [
         {
           "url": "https://straight-angeli.com/schedule/item-1370/",
           "type": "artist_official",
-          "checkedAt": "2026-11-19T14:43:07.722Z"
+          "checkedAt": "2026-11-22T11:16:44Z"
         }
       ],
-      "checkedAt": "2026-11-19T14:43:07.722Z",
+      "checkedAt": "2026-11-22T11:16:44Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -11894,6 +11894,41 @@
       "present": true,
       "groupId": "tokisen-gift-2026",
       "timings": []
+    },
+    {
+      "id": "rege-release-830-snow-halation-20261222",
+      "source": "curated-calendar",
+      "artistId": "re-ge",
+      "title": "「Snow halation」cover Ver. デジタルリリース",
+      "start": "2026-12-22T00:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "デジタル配信",
+      "note": "μ’sの楽曲「Snow halation」のRE-GEによるカバー。12月22日(火)0:00配信開始。",
+      "evidence": "本人公式告知でカバー版の配信日時を確認。",
+      "sourceUrl": "https://re-ge.com/news/item-830/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-830/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T11:16:44Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T11:16:44Z",
+      "timings": [
+        {
+          "label": "配信開始",
+          "kind": "stream_start",
+          "at": "2026-12-22T00:00:00+09:00",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-release-830-snow-halation-20261222"
     }
   ],
   "notes": [

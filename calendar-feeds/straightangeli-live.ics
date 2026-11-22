@@ -107,21 +107,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-42381de63e0ecfdacbec7c686e6411fbce8a5b155b8cfd37c19c773cedf53
  613@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T144307Z
+DTSTAMP:20261122T111644Z
 CREATED:20261119T144307Z
-LAST-MODIFIED:20261119T144307Z
-SEQUENCE:0
+LAST-MODIFIED:20261122T111644Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261220
 SUMMARY:「メジャーデビュー記念！全国ごあいさつフリー
  ライブツアー」＠animate hall BLACK（アニメイト池袋本店 
  北館9F）（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n本人公式スケジュールの日付を確認。開始・終了時
- 刻と会場は自動抽出対象外。\n本人公式スケジュール詳
- 細のイベント日付属性・見出し・カテゴリ。公開日を
- 開催日として使用していません。\nhttps://straight-angeli.com
- /schedule/item-1370/
-LOCATION:
+ 。\n開催日と会場を本人公式で確認。開始・終了時刻や
+ 参加方法などの詳細は後日発表。\n本人公式スケジュー
+ ル詳細の日程・会場欄を確認。\nhttps://straight-angeli.com/sc
+ hedule/item-1370/
+LOCATION:animate hall BLACK（アニメイト池袋本店 北館9F）
 URL:https://straight-angeli.com/schedule/item-1370/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
