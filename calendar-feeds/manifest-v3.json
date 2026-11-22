@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-tohokusan-broadcasts",
-  "dataGeneratedAt": "2026-11-22T00:49:15.398Z",
+  "dataVersion": "2026-11-22-batten-after-event",
+  "dataGeneratedAt": "2026-11-22T01:17:55.785Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "e634fcb80c2f40c4c98d04a365468058d1f330fe4c1720b8dfbc239e3b6d98d4",
+  "inputSha256": "91faeca60a942bbbc47c21401926e2d9d1951b1f9a6f2d2cd21f6fff6ac4e3ed",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "74bdddd45726b95bbbc9c82556afcc7f76452ed8e032100374267060fa779a23"
+      "sha256": "dedbe15c5b0a0227751f6a57fd7f59c9a82cf8a3926da1d59207ea83d520294a"
     },
     {
       "id": "re-ge-live",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media.ics",
       "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "f23b8d595d0c6f3fd9d9a4d2553396f2722cb90326c5c3a741d728213da5c84a"
+      "sha256": "a6c551d580698df740988ead547e0a00fa59e9e4bc3db0d64ff2749826e0c55c"
     },
     {
       "id": "re-ge-other",
