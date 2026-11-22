@@ -6,16 +6,17 @@ X-WR-CALNAME:いぎなり東北産 / メディア
 BEGIN:VEVENT
 UID:public-v1-7ae5da076d8408096ec5370729469d867460190d50a83f97f92bb6fa43f7d
  90d@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T084531Z
+DTSTAMP:20261122T004915Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261119T084531Z
-SEQUENCE:0
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:1
 DTSTART:20261122T140000Z
 DTEND:20261122T150000Z
-SUMMARY:安杜羽加MC FM FUJI「音楽開放区」
+SUMMARY:安杜羽加MC FM FUJI「音楽解放区」
 DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
  間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
- ntohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio
+ ntohoku.com/contents/1106398\nhttps://madeintohoku.com/vertical_calendar/2
+ 026/11?category=schedule&tag=radio\nhttps://www1.fmfuji.jp/ttable.php
 LOCATION:FM FUJI
 URL:https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&ta
  g=radio
@@ -25,19 +26,116 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-53595d9dcb89aef065343fdc3d8af4d0d1b7791444e3dc7c1cae881f1839b
  312@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T084531Z
+DTSTAMP:20261122T004915Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261119T084531Z
-SEQUENCE:0
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:1
 DTSTART:20261129T140000Z
 DTEND:20261129T150000Z
-SUMMARY:安杜羽加MC FM FUJI「音楽開放区」
+SUMMARY:安杜羽加MC FM FUJI「音楽解放区」
 DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
  間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
- ntohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio
+ ntohoku.com/contents/1106398\nhttps://madeintohoku.com/vertical_calendar/2
+ 026/11?category=schedule&tag=radio\nhttps://www1.fmfuji.jp/ttable.php
 LOCATION:FM FUJI
 URL:https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&ta
  g=radio
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-2944d61000339142d88802b7a891c80e50958cbaf6700c688fe8e00199f5b
+ b36@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261206T140000Z
+DTEND:20261206T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽解放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/contents/1106398\nhttps://madeintohoku.com/vertical_calendar/2
+ 026/12\nhttps://www1.fmfuji.jp/ttable.php
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/contents/1106398
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-bb71e6d376e9308f21fa2ca04df00e200e3536e1ef4f52d63f5cc15da1da6
+ 1f7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261213T140000Z
+DTEND:20261213T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽解放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/contents/1106398\nhttps://madeintohoku.com/vertical_calendar/2
+ 026/12\nhttps://www1.fmfuji.jp/ttable.php
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/contents/1106398
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21c22e244c33fa3954cfeccc09906f23ef58bd1fd61eea95d9c975ee0ce36
+ c7d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261220T140000Z
+DTEND:20261220T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽解放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/contents/1106398\nhttps://madeintohoku.com/vertical_calendar/2
+ 026/12\nhttps://www1.fmfuji.jp/ttable.php
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/contents/1106398
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-64efd8894a86b4307e3b5e9390fab3cb990660a24ff4f569bffaade1e4917
+ 305@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261227T140000Z
+DTEND:20261227T150000Z
+SUMMARY:安杜羽加MC FM FUJI「音楽解放区」
+DESCRIPTION:公式月カレンダー掲載日。毎週日曜23:00から1時
+ 間。\n本人公式の開催日・本文記載を確認。\nhttps://madei
+ ntohoku.com/contents/1106398\nhttps://madeintohoku.com/vertical_calendar/2
+ 026/12\nhttps://www1.fmfuji.jp/ttable.php
+LOCATION:FM FUJI
+URL:https://madeintohoku.com/contents/1106398
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-6c1f9ad313d93e777c4e6bc43269bf309f4ee91d9b2ad9243afc10a0d8307
+ fee@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261122T161000Z
+DTEND:20261122T163500Z
+SUMMARY:KFB福島放送「いぎなり放送中！」
+DESCRIPTION:福島での放送。番組表は11/23（月）1:10、グルー
+ プ公式の表記は日曜25:10。\n本人公式の放送局・放送枠
+ と、放送局提供の当日番組表を照合。\nhttps://bangumi.org/t
+ v_events/AmWFQgZJoAM?overwrite_area=21\nhttps://madeintohoku.com/contents/
+ 1065646
+LOCATION:KFB福島放送
+URL:https://bangumi.org/tv_events/AmWFQgZJoAM?overwrite_area=21
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -78,6 +176,82 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-542bdc6611bce260bacd6b05f00a5bef2cafe7f408f87c817bf223ceffd3a
+ 9cb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261206T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式12月カレンダー掲載日。宮城ローカル。終
+ 了時刻は未確認。放送後にtopoで配信。\n本人公式の開
+ 催日・本文記載を確認。\nhttps://madeintohoku.com/contents/10656
+ 46\nhttps://madeintohoku.com/vertical_calendar/2026/12\nhttps://www.khb-tv
+ .co.jp/khb/iginari/index.html
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-fb86ea9d21ee78df6c3abf6f90c97283a687a5d9485ac532f5fc2b50aee50
+ 76c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261213T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式12月カレンダー掲載日。宮城ローカル。終
+ 了時刻は未確認。放送後にtopoで配信。\n本人公式の開
+ 催日・本文記載を確認。\nhttps://madeintohoku.com/contents/10656
+ 46\nhttps://madeintohoku.com/vertical_calendar/2026/12\nhttps://www.khb-tv
+ .co.jp/khb/iginari/index.html
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-95ac317de4a6ecc98f41dc06898adc6dd6aef261a8af91faff9ede858cd07
+ 7b3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261220T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式12月カレンダー掲載日。宮城ローカル。終
+ 了時刻は未確認。放送後にtopoで配信。\n本人公式の開
+ 催日・本文記載を確認。\nhttps://madeintohoku.com/contents/10656
+ 46\nhttps://madeintohoku.com/vertical_calendar/2026/12\nhttps://www.khb-tv
+ .co.jp/khb/iginari/index.html
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-5e5de394cc5c26abd0707afb0f739468d1e7438085f1a99c8d4116c887b0a
+ f42@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261227T013000Z
+SUMMARY:khb東日本放送「いぎなり放送中！」
+DESCRIPTION:公式12月カレンダー掲載日。宮城ローカル。終
+ 了時刻は未確認。放送後にtopoで配信。\n本人公式の開
+ 催日・本文記載を確認。\nhttps://madeintohoku.com/contents/10656
+ 46\nhttps://madeintohoku.com/vertical_calendar/2026/12\nhttps://www.khb-tv
+ .co.jp/khb/iginari/index.html
+LOCATION:khb東日本放送（宮城県ローカル）
+URL:https://madeintohoku.com/contents/1065646
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-fb3e006a7c0b9ec28cb237b40ed242e8188e34ce8e04c6ea92a99dbcea82c
  b17@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T012018Z
@@ -92,6 +266,25 @@ DESCRIPTION:橘花怜、桜ひなの、伊達花彩、葉月結菜が出演
 LOCATION:NHK総合・東北
 URL:https://madeintohoku.com/contents/1129812
 STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-0cfa1a0ce472b1b0a8d72b62420a3e3d80de8bda86e7fe01e8ef451700718
+ d4d@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T004915Z
+CREATED:20261122T004915Z
+LAST-MODIFIED:20261122T004915Z
+SEQUENCE:0
+DTSTART:20261123T133000Z
+DTEND:20261123T140000Z
+SUMMARY:いぎなり東北産のもっと夢中になって #1（かも？
+ ）
+DESCRIPTION:スカパー！の当日番組表に掲載。本人公式の個
+ 別告知は未確認。\nhttps://www.skyperfectv.co.jp/program/detail/?ui
+ d=c32091245
+LOCATION:刺激ストロングチャンネル（スカパー！）
+URL:https://www.skyperfectv.co.jp/program/detail/?uid=c32091245
+STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
