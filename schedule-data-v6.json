@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-tohokusan-broadcasts",
-  "generatedAt": "2026-11-22T00:49:15.398Z",
+  "version": "2026-11-22-batten-after-event",
+  "generatedAt": "2026-11-22T01:17:55.785Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12483,17 +12483,22 @@
       "status": "confirmed",
       "category": "STREAM",
       "location": "",
-      "note": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。",
-      "evidence": "本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
-      "sourceUrl": "https://re-ge.com/schedule/item-817/",
+      "note": "高月凛々・瑞川蒼依・桧山ゆうみが出演。観覧チケットの詳細は後日発表。時刻と会場は未発表。",
+      "evidence": "RE-GE公式ニュースで出演日とメンバーを確認。",
+      "sourceUrl": "https://re-ge.com/news/item-815/",
       "sources": [
         {
           "url": "https://re-ge.com/schedule/item-817/",
           "type": "artist_official",
           "checkedAt": "2026-11-18T07:26:47.419Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-815/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T01:17:55.785Z"
         }
       ],
-      "checkedAt": "2026-11-18T07:26:47.419Z",
+      "checkedAt": "2026-11-22T01:17:55.785Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -18159,6 +18164,34 @@
           "checkedAt": "2026-11-22T00:49:15.398Z"
         }
       ]
+    },
+    {
+      "id": "batten-greatest-ever-show-after-20270221",
+      "source": "curated-calendar",
+      "artistId": "batten",
+      "title": "GREATEST EVER SHOW アフターイベント",
+      "start": "2027-02-21",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "",
+      "note": "都内開催。会場名と開始時刻は後日発表。",
+      "evidence": "ばってん少女隊公式の個別告知で開催日を確認。",
+      "sourceUrl": "https://battengirls.com/contents/1128077",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1128077",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T01:17:55.785Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T01:17:55.785Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-greatest-ever-show-after-20270221"
     }
   ],
   "notes": [
