@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-tokisen-style-and-rij",
-  "dataGeneratedAt": "2026-11-22T03:16:25.146Z",
-  "inputSha256": "3a1a89d3d49c64345204e1e962b931b70777d05fb5616355ca2959c22e0359e4",
+  "dataVersion": "2026-11-22-ebichu-gift",
+  "dataGeneratedAt": "2026-11-22T05:20:04.291Z",
+  "inputSha256": "91bf85bfba43a09cf9659e57eecb4332f6824210afaafc9f9807d9c6a23b9255",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2180,6 +2180,41 @@
       "memberships": [
         "ebichu-all",
         "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-gift-20261129\"]",
+      "uid": "public-v1-ea7f9d85b57f8f9568677916e54e3814c5866c8501c3dabc480b51ec2d8f9392@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-gift-20261129",
+        "category": "live",
+        "title": "GIFT ～Girls Idol Festival Tokyo～ DAY-3",
+        "start": "2026-11-29T15:40:00+09:00",
+        "end": "2026-11-29T16:30:00+09:00",
+        "allDay": false,
+        "location": "TOYOTA ARENA TOKYO",
+        "publicNote": "私立恵比寿中学の現地出演枠は15:40〜16:30。イベント全体は開場11:30・開演13:00。ABEMA SPECIAL3でDAY-3配信あり。現地出演枠と配信時刻は別です。\n本人公式ニュース・予定表で現地出演枠と会場を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.gift-idol.jp/outline.html",
+          "https://www.shiritsuebichu.jp/media/95712/",
+          "https://www.shiritsuebichu.jp/news/16117/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16117/"
+      },
+      "sequence": 0,
+      "created": "2026-11-22T05:20:04.291Z",
+      "modified": "2026-11-22T05:20:04.291Z",
+      "lastTiming": {
+        "start": "2026-11-29T15:40:00+09:00",
+        "end": "2026-11-29T16:30:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
       ]
     },
     {
@@ -16463,5 +16498,5 @@
       ]
     }
   ],
-  "integritySha256": "bfcd0b2683406a7e4d6c914de54e1c8b4462d657add2a9c00db2e0df33601673"
+  "integritySha256": "2d567a3e45a34fd9d6794e75001dffbdc0ccf42b635daa1479487d978c2a4f27"
 }

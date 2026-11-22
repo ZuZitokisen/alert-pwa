@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-tokisen-style-and-rij",
-  "dataGeneratedAt": "2026-11-22T03:16:25.146Z",
+  "dataVersion": "2026-11-22-ebichu-gift",
+  "dataGeneratedAt": "2026-11-22T05:20:04.291Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "4f56f1e12231b8e948c2cf4b564618938f053a264c43e53cf362756eee9b85de",
+  "inputSha256": "ce62b930968373ea417140b437797d4f863b25ec4004526cabdbfd4f1b84e5bb",
   "feeds": [
     {
       "id": "tokisen-all",
