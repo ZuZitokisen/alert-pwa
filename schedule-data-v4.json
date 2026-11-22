@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-ebichu-dated-audio",
-  "generatedAt": "2026-11-21T23:16:40.725Z",
+  "version": "2026-11-22-tohokusan-broadcasts",
+  "generatedAt": "2026-11-22T00:49:15.398Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13194,7 +13194,7 @@
     },
     {
       "id": "tohokusan-fmfuji-20261122",
-      "title": "安杜羽加MC FM FUJI「音楽開放区」",
+      "title": "安杜羽加MC FM FUJI「音楽解放区」",
       "start": "2026-11-22T23:00:00+09:00",
       "end": "2026-11-23T00:00:00+09:00",
       "location": "FM FUJI",
@@ -13206,7 +13206,7 @@
       "artistId": "tohokusan",
       "allDay": false,
       "category": "RADIO",
-      "checkedAt": "2026-11-19T08:45:31.941Z",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -13217,6 +13217,16 @@
           "url": "https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio",
           "type": "artist_official",
           "checkedAt": "2026-11-19T08:45:31.941Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1106398",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www1.fmfuji.jp/ttable.php",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
         }
       ]
     },
@@ -13255,7 +13265,7 @@
     },
     {
       "id": "tohokusan-fmfuji-20261129",
-      "title": "安杜羽加MC FM FUJI「音楽開放区」",
+      "title": "安杜羽加MC FM FUJI「音楽解放区」",
       "start": "2026-11-29T23:00:00+09:00",
       "end": "2026-11-30T00:00:00+09:00",
       "location": "FM FUJI",
@@ -13267,7 +13277,7 @@
       "artistId": "tohokusan",
       "allDay": false,
       "category": "RADIO",
-      "checkedAt": "2026-11-19T08:45:31.941Z",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -13278,6 +13288,16 @@
           "url": "https://madeintohoku.com/vertical_calendar/2026/11?category=schedule&tag=radio",
           "type": "artist_official",
           "checkedAt": "2026-11-19T08:45:31.941Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1106398",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www1.fmfuji.jp/ttable.php",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
         }
       ]
     },
@@ -13860,6 +13880,371 @@
       "present": true,
       "groupId": "tokisen-gift-2026",
       "timings": []
+    },
+    {
+      "id": "tohokusan-khb-20261206",
+      "title": "khb東日本放送「いぎなり放送中！」",
+      "start": "2026-12-06T10:30:00+09:00",
+      "end": null,
+      "location": "khb東日本放送（宮城県ローカル）",
+      "sourceUrl": "https://madeintohoku.com/contents/1065646",
+      "note": "公式12月カレンダー掲載日。宮城ローカル。終了時刻は未確認。放送後にtopoで配信。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "TV",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-khb-20261206",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1065646",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www.khb-tv.co.jp/khb/iginari/index.html",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-fmfuji-20261206",
+      "title": "安杜羽加MC FM FUJI「音楽解放区」",
+      "start": "2026-12-06T23:00:00+09:00",
+      "end": "2026-12-07T00:00:00+09:00",
+      "location": "FM FUJI",
+      "sourceUrl": "https://madeintohoku.com/contents/1106398",
+      "note": "公式月カレンダー掲載日。毎週日曜23:00から1時間。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "RADIO",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-fmfuji-20261206",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1106398",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www1.fmfuji.jp/ttable.php",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-khb-20261213",
+      "title": "khb東日本放送「いぎなり放送中！」",
+      "start": "2026-12-13T10:30:00+09:00",
+      "end": null,
+      "location": "khb東日本放送（宮城県ローカル）",
+      "sourceUrl": "https://madeintohoku.com/contents/1065646",
+      "note": "公式12月カレンダー掲載日。宮城ローカル。終了時刻は未確認。放送後にtopoで配信。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "TV",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-khb-20261213",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1065646",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www.khb-tv.co.jp/khb/iginari/index.html",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-fmfuji-20261213",
+      "title": "安杜羽加MC FM FUJI「音楽解放区」",
+      "start": "2026-12-13T23:00:00+09:00",
+      "end": "2026-12-14T00:00:00+09:00",
+      "location": "FM FUJI",
+      "sourceUrl": "https://madeintohoku.com/contents/1106398",
+      "note": "公式月カレンダー掲載日。毎週日曜23:00から1時間。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "RADIO",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-fmfuji-20261213",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1106398",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www1.fmfuji.jp/ttable.php",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-khb-20261220",
+      "title": "khb東日本放送「いぎなり放送中！」",
+      "start": "2026-12-20T10:30:00+09:00",
+      "end": null,
+      "location": "khb東日本放送（宮城県ローカル）",
+      "sourceUrl": "https://madeintohoku.com/contents/1065646",
+      "note": "公式12月カレンダー掲載日。宮城ローカル。終了時刻は未確認。放送後にtopoで配信。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "TV",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-khb-20261220",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1065646",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www.khb-tv.co.jp/khb/iginari/index.html",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-fmfuji-20261220",
+      "title": "安杜羽加MC FM FUJI「音楽解放区」",
+      "start": "2026-12-20T23:00:00+09:00",
+      "end": "2026-12-21T00:00:00+09:00",
+      "location": "FM FUJI",
+      "sourceUrl": "https://madeintohoku.com/contents/1106398",
+      "note": "公式月カレンダー掲載日。毎週日曜23:00から1時間。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "RADIO",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-fmfuji-20261220",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1106398",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www1.fmfuji.jp/ttable.php",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-khb-20261227",
+      "title": "khb東日本放送「いぎなり放送中！」",
+      "start": "2026-12-27T10:30:00+09:00",
+      "end": null,
+      "location": "khb東日本放送（宮城県ローカル）",
+      "sourceUrl": "https://madeintohoku.com/contents/1065646",
+      "note": "公式12月カレンダー掲載日。宮城ローカル。終了時刻は未確認。放送後にtopoで配信。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "TV",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-khb-20261227",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1065646",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www.khb-tv.co.jp/khb/iginari/index.html",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-fmfuji-20261227",
+      "title": "安杜羽加MC FM FUJI「音楽解放区」",
+      "start": "2026-12-27T23:00:00+09:00",
+      "end": "2026-12-28T00:00:00+09:00",
+      "location": "FM FUJI",
+      "sourceUrl": "https://madeintohoku.com/contents/1106398",
+      "note": "公式月カレンダー掲載日。毎週日曜23:00から1時間。",
+      "evidence": "本人公式の開催日・本文記載を確認。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "RADIO",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-fmfuji-20261227",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1106398",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://www1.fmfuji.jp/ttable.php",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-kfb-20261123",
+      "title": "KFB福島放送「いぎなり放送中！」",
+      "start": "2026-11-23T01:10:00+09:00",
+      "end": "2026-11-23T01:35:00+09:00",
+      "location": "KFB福島放送",
+      "sourceUrl": "https://bangumi.org/tv_events/AmWFQgZJoAM?overwrite_area=21",
+      "note": "福島での放送。番組表は11/23（月）1:10、グループ公式の表記は日曜25:10。",
+      "evidence": "本人公式の放送局・放送枠と、放送局提供の当日番組表を照合。",
+      "status": "confirmed",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "TV",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-kfb-20261123",
+      "sources": [
+        {
+          "url": "https://bangumi.org/tv_events/AmWFQgZJoAM?overwrite_area=21",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1065646",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
+    },
+    {
+      "id": "tohokusan-skyperfect-20261123",
+      "title": "いぎなり東北産のもっと夢中になって #1",
+      "start": "2026-11-23T22:30:00+09:00",
+      "end": "2026-11-23T23:00:00+09:00",
+      "location": "刺激ストロングチャンネル（スカパー！）",
+      "sourceUrl": "https://www.skyperfectv.co.jp/program/detail/?uid=c32091245",
+      "note": "",
+      "evidence": "スカパー！の当日番組表に掲載。本人公式の個別告知は未確認。",
+      "status": "possible",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "allDay": false,
+      "category": "TV",
+      "checkedAt": "2026-11-22T00:49:15.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-skyperfect-20261123",
+      "sources": [
+        {
+          "url": "https://www.skyperfectv.co.jp/program/detail/?uid=c32091245",
+          "type": "broadcaster_listing",
+          "checkedAt": "2026-11-22T00:49:15.398Z"
+        }
+      ]
     }
   ],
   "notes": [
