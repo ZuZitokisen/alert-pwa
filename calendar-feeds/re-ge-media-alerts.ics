@@ -6,20 +6,19 @@ X-WR-CALNAME:RE-GE / メディア（通知あり）
 BEGIN:VEVENT
 UID:public-v1-5c228dab670b026926857ea9b667451c923d814b35d12cdf7be2e2831adea
  abd@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261118T072647Z
+DTSTAMP:20261122T011755Z
 CREATED:20261118T072647Z
-LAST-MODIFIED:20261118T072647Z
-SEQUENCE:0
+LAST-MODIFIED:20261122T011755Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261201
 SUMMARY:「里菜と池田のイケティるTV」出演（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n本人公式スケジュールの日付を確認。開始・終了時
- 刻と会場は自動抽出対象外。\n本人公式スケジュール詳
- 細のイベント日付属性・見出し・カテゴリ。公開日を
- 開催日として使用していません。\nhttps://re-ge.com/schedule/
- item-817/
+ 。\n高月凛々・瑞川蒼依・桧山ゆうみが出演。観覧チケ
+ ットの詳細は後日発表。時刻と会場は未発表。\nRE-GE公
+ 式ニュースで出演日とメンバーを確認。\nhttps://re-ge.com/
+ news/item-815/\nhttps://re-ge.com/schedule/item-817/
 LOCATION:
-URL:https://re-ge.com/schedule/item-817/
+URL:https://re-ge.com/news/item-815/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

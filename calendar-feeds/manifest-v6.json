@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-tohokusan-broadcasts",
-  "dataGeneratedAt": "2026-11-22T00:49:15.398Z",
+  "dataVersion": "2026-11-22-batten-after-event",
+  "dataGeneratedAt": "2026-11-22T01:17:55.785Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3104543efa5063f571819d2f6982bc9b1fcb52aafa06a2a2acd2ba58b360047c",
+  "inputSha256": "d21969060c9138635cba82e58bcf6b6c2756110e462948849dc335fdc37f086c",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "74bdddd45726b95bbbc9c82556afcc7f76452ed8e032100374267060fa779a23"
+      "sha256": "dedbe15c5b0a0227751f6a57fd7f59c9a82cf8a3926da1d59207ea83d520294a"
     },
     {
       "id": "re-ge-live",
@@ -98,7 +98,7 @@
       "path": "calendar-feeds/re-ge-media.ics",
       "count": 19,
       "omittedUnknownDate": 0,
-      "sha256": "f23b8d595d0c6f3fd9d9a4d2553396f2722cb90326c5c3a741d728213da5c84a"
+      "sha256": "a6c551d580698df740988ead547e0a00fa59e9e4bc3db0d64ff2749826e0c55c"
     },
     {
       "id": "re-ge-other",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all.ics",
-      "count": 39,
+      "count": 40,
       "omittedUnknownDate": 0,
-      "sha256": "e0abd0c88c2b3faf0950911db2b9c17884942a6043a6dcc909e697cc82ee3156"
+      "sha256": "1b2661c8f29e3c99010b8a847e8746a51fd33abc3d61ca3bca0aeb4db555f1e5"
     },
     {
       "id": "batten-live",
@@ -326,9 +326,9 @@
       "category": "live",
       "label": "ばってん少女隊 / ライブ・イベント",
       "path": "calendar-feeds/batten-live.ics",
-      "count": 19,
+      "count": 20,
       "omittedUnknownDate": 0,
-      "sha256": "782ecf2ddd87d0cc59582fa59b3d308ee53bd2573aa83e3863e8d976f07bd228"
+      "sha256": "6aee70e29e39bf0347bddb9e5429aa333c45f4b5ce48ddb30405ac58c10b76b9"
     },
     {
       "id": "batten-benefit",
