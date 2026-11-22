@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-ebichu-dated-audio",
-  "dataGeneratedAt": "2026-11-21T23:16:40.725Z",
+  "dataVersion": "2026-11-22-tohokusan-broadcasts",
+  "dataGeneratedAt": "2026-11-22T00:49:15.398Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "64b2b47eafae1ed8c1e4a6d8d0e38d83720e030cbeb07acee7f541cafdd638d9",
+  "inputSha256": "bf497a88ea6257258f44244e6e2cac91bd5741a2ad3ac5b89cdd79dbad4bf460",
   "feeds": [
     {
       "id": "tokisen-all",
