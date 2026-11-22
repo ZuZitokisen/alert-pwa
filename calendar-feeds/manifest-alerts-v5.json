@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-chikappa-replay-cutoff",
-  "dataGeneratedAt": "2026-11-22T19:20:21.664Z",
+  "dataVersion": "2026-11-23-chikappa-gift-style",
+  "dataGeneratedAt": "2026-11-22T21:20:56Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3cc9f51d5479c906ceb5abaf8cd387a195f99c192ac31e715ab326ea6345b74f",
+  "inputSha256": "a82cf86f1bb8d48b5eb0048373c18186094694c3203c60ec88c9558ef7b0e8e3",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 200,
+      "count": 201,
       "omittedUnknownDate": 10,
-      "sha256": "ae71a0a1426073f94d2bf34222d5645230d1383d2ebf150847c8e9ccc4fa1214"
+      "sha256": "f88d78dbdf5c9194f282a3bbb9280edee2e17b6461ab297d25ada2baa926309d"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media-alerts.ics",
-      "count": 125,
+      "count": 126,
       "omittedUnknownDate": 2,
-      "sha256": "117a04c2a9ebfd14dc12285cece1713d44ae7d1336842a01f0f5b00d64c6af89"
+      "sha256": "58a8105ab337464f73de71d2ab267da81bd361aec93710e068845c5ceeaea9ca"
     },
     {
       "id": "tokisen-other",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all-alerts.ics",
       "count": 84,
       "omittedUnknownDate": 0,
-      "sha256": "b029e02a4db489e8138cab22c7f81f674def42b2de6c66a7b7bd42b2cf4cc10e"
+      "sha256": "7f59708403b1a9e7dbb3fa6a19df3f11893c0872bf762ae091a66a39c0ddbec2"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "fefae50c77a9c360b925cbc580e6e55f4582d67f8a4aa1612d86d01c492ad50f"
+      "sha256": "ab96dd04b2db19f2ee51fd93cb6c9e8953d399eccbb4be515521432116296da3"
     },
     {
       "id": "ebichu-benefit",

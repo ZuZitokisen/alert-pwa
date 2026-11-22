@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-chikappa-replay-cutoff",
-  "dataGeneratedAt": "2026-11-22T19:20:21.664Z",
+  "dataVersion": "2026-11-23-chikappa-gift-style",
+  "dataGeneratedAt": "2026-11-22T21:20:56Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "b3fc819438858daf8869debbef0e42191890e916f1cc9f6c8fb96e6bb656ff4d",
+  "inputSha256": "fe336f201431e230e14631e85b4d4be59abda262b2ed7fa02bdd8ca1217c8d0c",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 200,
+      "count": 201,
       "omittedUnknownDate": 10,
-      "sha256": "b0317482d32f17259d13f57aa670d5b675b03982d95485d37b227c6e50020ba7"
+      "sha256": "3d96d300aa1cf28f86be11a2d75ad6b012a5bc9a28a456f61f1cba301c606d0c"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media.ics",
-      "count": 125,
+      "count": 126,
       "omittedUnknownDate": 2,
-      "sha256": "c0147b2c28434304b7f9dd09f38a7956f06337e8d41052949d82517de114d1e4"
+      "sha256": "5fa8cbefa4a09c8b07890b11264d67d7ac47499c76e6f0bf58072ed1e8aae66f"
     },
     {
       "id": "tokisen-other",
