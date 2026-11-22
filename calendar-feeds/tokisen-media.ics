@@ -2234,25 +2234,26 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-a1d0850d90f8318ecb6129848776a8afeecaa0fc8655439d00c174b92eab6
  688@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T130128Z
+DTSTAMP:20261122T031625Z
 CREATED:20261119T130128Z
-LAST-MODIFIED:20261119T130128Z
-SEQUENCE:0
+LAST-MODIFIED:20261122T031625Z
+SEQUENCE:1
 DTSTART:20261122T102500Z
-SUMMARY:ROCK IN JAPAN特番 DAY4（超とき宣19:25頃）（かも？）
+SUMMARY:ROCK IN JAPAN特番 DAY4（超とき宣19:25頃）
 DESCRIPTION:9/20公演のライブ映像を配信する特番。番組全
  体は17:00開始、超ときめき♡宣伝部は19:25頃の目安。公
  式表は見逃し防止のため少し早めの時刻を掲載してお
  り、実際の配信時刻は前後します。終了時刻は未確認
- 。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc\n主催者公式
- タイムテーブルで出演目安を確認。本人公式の同枠告
- 知は未確認のため「かも？」。時刻は確定値ではあり
- ません。\n出演目安19:25頃（番組全体17:00開始）\nhttps://r
- ijfes.jp/2026/news/4099/\nhttps://rijfes.s3.amazonaws.com/2026/img/news/ri
- jf2026_tt_day4.jpg\nhttps://www.youtube.com/watch?v=hUqVHmDGdKc
+ 。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc\n本人公式ス
+ ケジュールにDAY4の掲載あり。出演の目安と番組全体の
+ 開始時刻は主催者発表を確認。出演時刻は確定値では
+ ありません。\n出演目安19:25頃（番組全体17:00開始）\nhtt
+ ps://rijfes.jp/2026/news/4099/\nhttps://rijfes.s3.amazonaws.com/2026/img/n
+ ews/rijf2026_tt_day4.jpg\nhttps://toki-sen.com/contents/schedule\nhttps://
+ www.youtube.com/watch?v=hUqVHmDGdKc
 LOCATION:YouTube・JフェスOFFICIAL
 URL:https://rijfes.jp/2026/news/4099/
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2274,6 +2275,26 @@ DESCRIPTION:時刻未定。終日開催という意味ではありません
  ndenbu_staff/status/2122607693617586647
 LOCATION:「Threadsのあの人」公式YouTube
 URL:https://x.com/sendenbu_staff/status/2122281895631454639
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21251eddf77355cf6051ab2dae128703c572d29e6a0ef1f21be7655c0d69c
+ c45@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T031625Z
+CREATED:20261122T031625Z
+LAST-MODIFIED:20261122T031625Z
+SEQUENCE:0
+DTSTART:20261122T153000Z
+DTEND:20261122T155000Z
+SUMMARY:ガチャガチャの森 Presents 超ときめき♡STYLE
+DESCRIPTION:11月22日（日）24:30〜24:50の放送。担当メンバー
+ とゲストは未確認。radikoの聴取はエリア・契約条件に
+ 準じます。\n本人公式の11月22日回の掲載とニッポン放
+ 送の個別日付番組表を照合。\nhttps://toki-sen.com/contents/sch
+ edule\nhttps://www.1242.com/timetable/?target_date=20261122
+LOCATION:ニッポン放送
+URL:https://www.1242.com/timetable/?target_date=20261122
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

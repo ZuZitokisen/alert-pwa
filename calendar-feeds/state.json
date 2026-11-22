@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-gift-collaboration-ultragt",
-  "dataGeneratedAt": "2026-11-22T02:46:25.441Z",
-  "inputSha256": "07ab21dbb570cadd9408006e056160b5f57b464dc8df55f2f5e518e63e9ba7f0",
+  "dataVersion": "2026-11-22-tokisen-style-and-rij",
+  "dataGeneratedAt": "2026-11-22T03:16:25.146Z",
+  "inputSha256": "3a1a89d3d49c64345204e1e962b931b70777d05fb5616355ca2959c22e0359e4",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -15488,17 +15488,18 @@
         "end": null,
         "allDay": false,
         "location": "YouTube・JフェスOFFICIAL",
-        "publicNote": "9/20公演のライブ映像を配信する特番。番組全体は17:00開始、超ときめき♡宣伝部は19:25頃の目安。公式表は見逃し防止のため少し早めの時刻を掲載しており、実際の配信時刻は前後します。終了時刻は未確認。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc\n主催者公式タイムテーブルで出演目安を確認。本人公式の同枠告知は未確認のため「かも？」。時刻は確定値ではありません。\n出演目安19:25頃（番組全体17:00開始）",
-        "status": "possible",
+        "publicNote": "9/20公演のライブ映像を配信する特番。番組全体は17:00開始、超ときめき♡宣伝部は19:25頃の目安。公式表は見逃し防止のため少し早めの時刻を掲載しており、実際の配信時刻は前後します。終了時刻は未確認。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc\n本人公式スケジュールにDAY4の掲載あり。出演の目安と番組全体の開始時刻は主催者発表を確認。出演時刻は確定値ではありません。\n出演目安19:25頃（番組全体17:00開始）",
+        "status": "confirmed",
         "sourceUrls": [
           "https://rijfes.jp/2026/news/4099/",
           "https://rijfes.s3.amazonaws.com/2026/img/news/rijf2026_tt_day4.jpg",
+          "https://toki-sen.com/contents/schedule",
           "https://www.youtube.com/watch?v=hUqVHmDGdKc"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-19T13:01:28.048Z",
-      "modified": "2026-11-19T13:01:28.048Z",
+      "modified": "2026-11-22T03:16:25.146Z",
       "lastTiming": {
         "start": "2026-11-22T19:25:00+09:00",
         "end": null,
@@ -15993,6 +15994,40 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-style-20261122\"]",
+      "uid": "public-v1-21251eddf77355cf6051ab2dae128703c572d29e6a0ef1f21be7655c0d69cc45@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-style-20261122",
+        "category": "media",
+        "title": "ガチャガチャの森 Presents 超ときめき♡STYLE",
+        "start": "2026-11-23T00:30:00+09:00",
+        "end": "2026-11-23T00:50:00+09:00",
+        "allDay": false,
+        "location": "ニッポン放送",
+        "publicNote": "11月22日（日）24:30〜24:50の放送。担当メンバーとゲストは未確認。radikoの聴取はエリア・契約条件に準じます。\n本人公式の11月22日回の掲載とニッポン放送の個別日付番組表を照合。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://toki-sen.com/contents/schedule",
+          "https://www.1242.com/timetable/?target_date=20261122"
+        ],
+        "sourceUrl": "https://www.1242.com/timetable/?target_date=20261122"
+      },
+      "sequence": 0,
+      "created": "2026-11-22T03:16:25.146Z",
+      "modified": "2026-11-22T03:16:25.146Z",
+      "lastTiming": {
+        "start": "2026-11-23T00:30:00+09:00",
+        "end": "2026-11-23T00:50:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-tiktok-close-1123559\"]",
       "uid": "public-v1-2993bc24a2e79fb2ba7c9224f52e95d15b2c2929de47f70f44215902dbe8588e@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -16428,5 +16463,5 @@
       ]
     }
   ],
-  "integritySha256": "602bbbaeea4fc69866920add51644ed82278c79d12eb32391f2c7d5bc7eb82fd"
+  "integritySha256": "bfcd0b2683406a7e4d6c914de54e1c8b4462d657add2a9c00db2e0df33601673"
 }
