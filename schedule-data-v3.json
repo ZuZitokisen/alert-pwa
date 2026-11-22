@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-gift-collaboration-ultragt",
-  "generatedAt": "2026-11-22T02:46:25.441Z",
+  "version": "2026-11-22-tokisen-style-and-rij",
+  "generatedAt": "2026-11-22T03:16:25.146Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12723,13 +12723,18 @@
       "start": "2026-11-22T19:25:00+09:00",
       "end": null,
       "allDay": false,
-      "status": "possible",
+      "status": "confirmed",
       "category": "STREAM",
       "location": "YouTube・JフェスOFFICIAL",
       "note": "9/20公演のライブ映像を配信する特番。番組全体は17:00開始、超ときめき♡宣伝部は19:25頃の目安。公式表は見逃し防止のため少し早めの時刻を掲載しており、実際の配信時刻は前後します。終了時刻は未確認。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc",
-      "evidence": "主催者公式タイムテーブルで出演目安を確認。本人公式の同枠告知は未確認のため「かも？」。時刻は確定値ではありません。",
+      "evidence": "本人公式スケジュールにDAY4の掲載あり。出演の目安と番組全体の開始時刻は主催者発表を確認。出演時刻は確定値ではありません。",
       "sourceUrl": "https://rijfes.jp/2026/news/4099/",
       "sources": [
+        {
+          "url": "https://toki-sen.com/contents/schedule",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T03:16:25.146Z"
+        },
         {
           "url": "https://rijfes.jp/2026/news/4099/",
           "type": "organizer_official",
@@ -12746,13 +12751,13 @@
           "checkedAt": "2026-11-19T13:01:28.048Z"
         }
       ],
-      "checkedAt": "2026-11-19T13:01:28.048Z",
+      "checkedAt": "2026-11-22T03:16:25.146Z",
       "timings": [
         {
           "kind": "broadcast_start",
           "label": "番組全体の配信開始",
           "at": "2026-11-22T17:00:00+09:00",
-          "status": "possible",
+          "status": "confirmed",
           "note": "本人の出演時刻とは別。"
         }
       ],
@@ -12761,6 +12766,39 @@
       "present": true,
       "groupId": "tokisen-rij-day4-stream-20261122",
       "dateLabel": "出演目安19:25頃（番組全体17:00開始）"
+    },
+    {
+      "id": "tokisen-style-20261122",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "ガチャガチャの森 Presents 超ときめき♡STYLE",
+      "start": "2026-11-23T00:30:00+09:00",
+      "end": "2026-11-23T00:50:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "ニッポン放送",
+      "note": "11月22日（日）24:30〜24:50の放送。担当メンバーとゲストは未確認。radikoの聴取はエリア・契約条件に準じます。",
+      "evidence": "本人公式の11月22日回の掲載とニッポン放送の個別日付番組表を照合。",
+      "sourceUrl": "https://www.1242.com/timetable/?target_date=20261122",
+      "sources": [
+        {
+          "url": "https://www.1242.com/timetable/?target_date=20261122",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T03:16:25.146Z"
+        },
+        {
+          "url": "https://toki-sen.com/contents/schedule",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T03:16:25.146Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T03:16:25.146Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-style-20261122"
     },
     {
       "id": "straightangeli-hourly-official-item-1370",
