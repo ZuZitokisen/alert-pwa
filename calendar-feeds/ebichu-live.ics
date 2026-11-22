@@ -81,6 +81,27 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-ea7f9d85b57f8f9568677916e54e3814c5866c8501c3dabc480b51ec2d8f9
+ 392@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T052004Z
+CREATED:20261122T052004Z
+LAST-MODIFIED:20261122T052004Z
+SEQUENCE:0
+DTSTART:20261129T064000Z
+DTEND:20261129T073000Z
+SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-3
+DESCRIPTION:私立恵比寿中学の現地出演枠は15:40〜16:30。イ
+ ベント全体は開場11:30・開演13:00。ABEMA SPECIAL3でDAY-3配信
+ あり。現地出演枠と配信時刻は別です。\n本人公式ニュ
+ ース・予定表で現地出演枠と会場を確認。\nhttps://www.gif
+ t-idol.jp/outline.html\nhttps://www.shiritsuebichu.jp/media/95712/\nhttps:
+ //www.shiritsuebichu.jp/news/16117/
+LOCATION:TOYOTA ARENA TOKYO
+URL:https://www.shiritsuebichu.jp/news/16117/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1cf41d97f787cf32efc8cc38f58667a8f3fcac559be454b0a38e0c3179fd8
  9ae@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z
