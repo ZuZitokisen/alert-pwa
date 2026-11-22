@@ -1863,6 +1863,39 @@ DESCRIPTION:桜木心菜 コメント出演「野中ここなのノナカ
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-1fc662f3c90c9670cdcba4c9a0f3bac86dbfaf731bed0086b9763138b2917
+ eb6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T091627Z
+CREATED:20261122T091627Z
+LAST-MODIFIED:20261122T091627Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:「SOUND OF EBICHU 2026-Band Edition-」リスニングパーティ
+ ー
+DESCRIPTION:ライブ音源の配信企画。メンバーの登場はあり
+ ません。Stationheadの公式アカウント @officialebichu で開催
+ 。Apple Musicの有料会員またはSpotify Premiumが必要（Android
+ はSpotify Premiumのみ）。終了時刻は未発表。\n私立恵比寿
+ 中学公式ニュースで日時・配信サービス・参加条件を
+ 確認。\nhttps://www.shiritsuebichu.jp/news/16298/
+LOCATION:Stationhead
+URL:https://www.shiritsuebichu.jp/news/16298/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT12H
+DESCRIPTION:「SOUND OF EBICHU 2026-Band Edition-」リスニングパー
+ ティー
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:「SOUND OF EBICHU 2026-Band Edition-」リスニングパー
+ ティー
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1c525e40772c67c69fa1e3e0cf014897cdfa3ca55120ade794f1710de6bec
  b60@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z
