@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-rege-snow-straight-ikebukuro",
-  "dataGeneratedAt": "2026-11-22T11:16:44Z",
-  "inputSha256": "586dd9562fd4338d4e79e28268dd2fee2af41bc3190e204ae2c4dd989f53b9c5",
+  "dataVersion": "2026-11-22-tokisen-media-links",
+  "dataGeneratedAt": "2026-11-22T13:19:32Z",
+  "inputSha256": "c7d8a96f66cd46706423c882f93043c13b710dedae26d0ca3fc40694a96db3f5",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -10994,6 +10994,39 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-maquia-bestcosme-makeup-20261120\"]",
+      "uid": "public-v1-2bf92718168288edc0ed2e0c9082ff8e35aabbe9bfb90106584f8706bfd13b6a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-maquia-bestcosme-makeup-20261120",
+        "category": "media",
+        "title": "MAQUIA ベストコスメ2026下半期 メイク編（小泉遥香）",
+        "start": "2026-11-20",
+        "end": null,
+        "allDay": false,
+        "location": "MAQUIA公式YouTube",
+        "publicNote": "小泉遥香とヘア＆メイク・佐々木れながメイクアイテム9点を試すオンデマンド動画。11/20は告知日。視聴：https://www.youtube.com/watch?v=SV0_q80v1K8\n本人公式SNSの告知とMAQUIA公式YouTubeの動画情報を確認。公開時刻は未確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.youtube.com/watch?v=SV0_q80v1K8",
+          "https://x.com/sendenbu_staff/status/2123753688217080126"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-22T13:19:32Z",
+      "modified": "2026-11-22T13:19:32Z",
+      "lastTiming": {
+        "start": "2026-11-20",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-media-1039348-2026-11-15\"]",
       "uid": "public-v1-9f93673b821848014be16703c390b4921a46264231061eabfd9a9da31e93cbae@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -11815,15 +11848,17 @@
         "end": "2026-11-22T01:30:00+09:00",
         "allDay": false,
         "location": "ラジオ日本",
-        "publicNote": "公式カレンダーに掲載された日付。休止・時間変更は発表元を確認。\n本人側の公式発表で確認。",
+        "publicNote": "11/21（土）25:00〜25:30放送。番組案内ではメンバー全員が出演。聴取：https://radiko.jp/mobile/events/14173464\n本人公式の日程と、放送局の当該回のradiko番組案内を確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://radiko.jp/mobile/events/14173464",
           "https://toki-sen.com/contents/508342"
-        ]
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/508342"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-22T13:19:32Z",
       "lastTiming": {
         "start": "2026-11-22T01:00:00+09:00",
         "end": "2026-11-22T01:30:00+09:00",
@@ -12468,15 +12503,18 @@
         "end": null,
         "allDay": false,
         "location": "テレ朝動画logirl",
-        "publicNote": "公式カレンダーに掲載された日付。休止・時間変更は発表元を確認。\n本人側の公式発表で確認。",
+        "publicNote": "第154回。出演：菅田愛貴・伊達花彩（いぎなり東北産）。配信ページ：https://douga.tv-asahi.co.jp/program/42731-42730/70345?auto=t\n本人公式の配信日程と、配信元logirlの当該回告知を確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://toki-sen.com/contents/740481"
-        ]
+          "https://douga.tv-asahi.co.jp/program/42731-42730/70345?auto=t",
+          "https://toki-sen.com/contents/740481",
+          "https://x.com/LoGiRL2015/status/2123719821565293027"
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/740481"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-22T13:19:32Z",
       "lastTiming": {
         "start": "2026-11-20T17:00:00+09:00",
         "end": null,
@@ -15589,18 +15627,21 @@
         "end": null,
         "allDay": false,
         "location": "YouTube・JフェスOFFICIAL",
-        "publicNote": "9/20公演のライブ映像を配信する特番。番組全体は17:00開始、超ときめき♡宣伝部は19:25頃の目安。公式表は見逃し防止のため少し早めの時刻を掲載しており、実際の配信時刻は前後します。終了時刻は未確認。視聴：https://www.youtube.com/watch?v=hUqVHmDGdKc\n本人公式スケジュールにDAY4の掲載あり。出演の目安と番組全体の開始時刻は主催者発表を確認。出演時刻は確定値ではありません。\n出演目安19:25頃（番組全体17:00開始）",
+        "publicNote": "9/20公演のライブ映像を配信した特番。生配信は番組全体17:00開始、とき宣は19:25頃の案内でした。見逃し配信は12/7（月）18:00まで：https://youtu.be/wAMe3gYUSA4　アーカイブの出演位置は未確認。\n本人公式の当日案内と、主催者のアーカイブ公開告知・公式YouTubeを確認。\n出演目安19:25頃（番組全体17:00開始）",
         "status": "confirmed",
         "sourceUrls": [
           "https://rijfes.jp/2026/news/4099/",
           "https://rijfes.s3.amazonaws.com/2026/img/news/rijf2026_tt_day4.jpg",
+          "https://toki-sen.com/contents/1130037?tag=all",
           "https://toki-sen.com/contents/schedule",
-          "https://www.youtube.com/watch?v=hUqVHmDGdKc"
+          "https://www.youtube.com/watch?v=hUqVHmDGdKc",
+          "https://x.com/rockinon_fes/status/2124465667361362113",
+          "https://youtu.be/wAMe3gYUSA4"
         ]
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-19T13:01:28.048Z",
-      "modified": "2026-11-22T03:16:25.146Z",
+      "modified": "2026-11-22T13:19:32Z",
       "lastTiming": {
         "start": "2026-11-22T19:25:00+09:00",
         "end": null,
@@ -16563,5 +16604,5 @@
       ]
     }
   ],
-  "integritySha256": "421a825a55bc82f8f41bc9b616fecfda8130ee15766da308aa4d7cc177b2ff2d"
+  "integritySha256": "b56739a9a75b98eaa1ea5953ae0db2c33da5bcf9be669512bd09150f4b1a7776"
 }
