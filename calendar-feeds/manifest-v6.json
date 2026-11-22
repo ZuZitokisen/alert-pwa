@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-chikappa-gift-style",
-  "dataGeneratedAt": "2026-11-22T21:20:56Z",
+  "dataVersion": "2026-11-23-batten-video-style-radiko",
+  "dataGeneratedAt": "2026-11-22T23:12:58Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "8fc1550e33513b133c89e264935aaea991a48618bf5ab750a7ab1d8a488360a2",
+  "inputSha256": "621e90dcbf505bcd30d773d25e446ae53ecf76e56edcf93ba4ff27739a5236f2",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 201,
       "omittedUnknownDate": 10,
-      "sha256": "3d96d300aa1cf28f86be11a2d75ad6b012a5bc9a28a456f61f1cba301c606d0c"
+      "sha256": "eff450faf0a27541d13c2bca98b94e8f4fc362217fba042c750c7d9702e82c6a"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media.ics",
       "count": 126,
       "omittedUnknownDate": 2,
-      "sha256": "5fa8cbefa4a09c8b07890b11264d67d7ac47499c76e6f0bf58072ed1e8aae66f"
+      "sha256": "de7a80169abadab1b5acd79d845d69f805e5a1dac4e84e2e1ca86ec262e525a5"
     },
     {
       "id": "tokisen-other",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all.ics",
-      "count": 40,
+      "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "56f76042ec61ef36752a44edabecfab9fc4f8155ee0d6841f3792be689f69c7f"
+      "sha256": "2db6c82e1936e4e581dc5f5e489f80504c800b22623494baf0b1f2d82fcfa447"
     },
     {
       "id": "batten-live",
@@ -346,9 +346,9 @@
       "category": "media",
       "label": "ばってん少女隊 / メディア",
       "path": "calendar-feeds/batten-media.ics",
-      "count": 8,
+      "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "0aac8a65154de0984c735659a91a75fa2abf72f181ac671ba56366f16e403f8a"
+      "sha256": "0fdb4adef1b392fd1ef0574233ab5e32384e7e696d3f1a230cbeac7657bf73d3"
     },
     {
       "id": "batten-other",

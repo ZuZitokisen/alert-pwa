@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-23-chikappa-gift-style",
-  "generatedAt": "2026-11-22T21:20:56Z",
+  "version": "2026-11-23-batten-video-style-radiko",
+  "generatedAt": "2026-11-22T23:12:58Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12863,9 +12863,14 @@
           "url": "https://www.1242.com/timetable/?target_date=20261122",
           "type": "broadcaster_official",
           "checkedAt": "2026-11-22T09:16:27Z"
+        },
+        {
+          "url": "https://radiko.jp/mobile/events/14208654",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T23:12:58Z"
         }
       ],
-      "checkedAt": "2026-11-22T09:16:27Z",
+      "checkedAt": "2026-11-22T23:12:58Z",
       "timings": [],
       "deadline": null,
       "revision": 1,

@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-chikappa-gift-style",
-  "dataGeneratedAt": "2026-11-22T21:20:56Z",
+  "dataVersion": "2026-11-23-batten-video-style-radiko",
+  "dataGeneratedAt": "2026-11-22T23:12:58Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a82cf86f1bb8d48b5eb0048373c18186094694c3203c60ec88c9558ef7b0e8e3",
+  "inputSha256": "ca6bef0e9207050794b39fb1d7061eb7d7533ecf6dd0fe048b7ff991c5ad90ba",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 201,
       "omittedUnknownDate": 10,
-      "sha256": "3d96d300aa1cf28f86be11a2d75ad6b012a5bc9a28a456f61f1cba301c606d0c"
+      "sha256": "eff450faf0a27541d13c2bca98b94e8f4fc362217fba042c750c7d9702e82c6a"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media.ics",
       "count": 126,
       "omittedUnknownDate": 2,
-      "sha256": "5fa8cbefa4a09c8b07890b11264d67d7ac47499c76e6f0bf58072ed1e8aae66f"
+      "sha256": "de7a80169abadab1b5acd79d845d69f805e5a1dac4e84e2e1ca86ec262e525a5"
     },
     {
       "id": "tokisen-other",

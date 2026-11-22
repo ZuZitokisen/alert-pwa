@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-23-chikappa-gift-style",
-  "generatedAt": "2026-11-22T21:20:56Z",
+  "version": "2026-11-23-batten-video-style-radiko",
+  "generatedAt": "2026-11-22T23:12:58Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13604,9 +13604,14 @@
           "url": "https://www.1242.com/timetable/?target_date=20261122",
           "type": "broadcaster_official",
           "checkedAt": "2026-11-22T09:16:27Z"
+        },
+        {
+          "url": "https://radiko.jp/mobile/events/14208654",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T23:12:58Z"
         }
       ],
-      "checkedAt": "2026-11-22T09:16:27Z",
+      "checkedAt": "2026-11-22T23:12:58Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -18543,6 +18548,39 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-style-20261129"
+    },
+    {
+      "id": "batten-11th-anniversary-video-20261118",
+      "artistId": "batten",
+      "title": "11周年記念ライブ 動画チケット発売",
+      "source": "curated-calendar",
+      "start": "2026-11-18",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "BATTEN Store",
+      "note": "7月5日・立川ステージガーデンと7月25日・福岡UNITEDLABの2公演を約4時間収録。税込6,000円。BATTEN Storeのアカウントが必要で、購入日から2年間ストリーミング視聴可能。",
+      "evidence": "ばってん少女隊公式の告知とBATTEN Storeの動画チケット商品情報で、11月18日の発売と視聴条件を確認。",
+      "sourceUrl": "https://battengirls.com/contents/1120097",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1120097",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T23:12:58Z"
+        },
+        {
+          "url": "https://store.battengirls.com/collections/new/products/btxx-0013-digital",
+          "type": "seller_official",
+          "checkedAt": "2026-11-22T23:12:58Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T23:12:58Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-11th-anniversary-video-20261118"
     }
   ],
   "notes": [

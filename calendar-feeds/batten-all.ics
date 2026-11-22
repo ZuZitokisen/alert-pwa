@@ -4,6 +4,28 @@ PRODID:-//Alert PWA//Public Calendar Subscription//JA
 CALSCALE:GREGORIAN
 X-WR-CALNAME:ばってん少女隊 / 全予定
 BEGIN:VEVENT
+UID:public-v1-b2f791336076468c53e9fc5546773c3bb482bde569825c51b5ccad442844f
+ 742@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T231258Z
+CREATED:20261122T231258Z
+LAST-MODIFIED:20261122T231258Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+SUMMARY:11周年記念ライブ 動画チケット発売（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n7月5日・立川ステージガーデンと7月25日・福岡UNITEDL
+ ABの2公演を約4時間収録。税込6\,000円。BATTEN Storeのアカ
+ ウントが必要で、購入日から2年間ストリーミング視聴
+ 可能。\nばってん少女隊公式の告知とBATTEN Storeの動画チ
+ ケット商品情報で、11月18日の発売と視聴条件を確認。\
+ nhttps://battengirls.com/contents/1120097\nhttps://store.battengirls.com/c
+ ollections/new/products/btxx-0013-digital
+LOCATION:BATTEN Store
+URL:https://battengirls.com/contents/1120097
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-507d186a1ab51af476068ded4a837e967cd5495aa0671244eca7efc70394e
  63e@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T173209Z
