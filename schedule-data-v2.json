@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-23-chikappa-replay-cutoff",
-  "generatedAt": "2026-11-22T19:20:21.664Z",
+  "version": "2026-11-23-chikappa-gift-style",
+  "generatedAt": "2026-11-22T21:20:56Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3214,7 +3214,7 @@
       "status": "confirmed",
       "category": "STREAM",
       "location": "ABEMA",
-      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。",
+      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1122612",
       "sources": [
@@ -3227,9 +3227,14 @@
           "url": "https://abema.tv/channels/special-plus-2/slots/BDbG4MMo4n7LPy",
           "type": "broadcaster_listing",
           "checkedAt": "2026-11-11T09:28:32Z"
+        },
+        {
+          "url": "https://abema.tv/lp/gift-onair",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T21:20:56Z"
         }
       ],
-      "checkedAt": "2026-11-11T09:28:32Z",
+      "checkedAt": "2026-11-22T21:20:56Z",
       "timings": [
         {
           "label": "配信枠開始（本人出番ではありません）",
@@ -3518,7 +3523,7 @@
       "status": "confirmed",
       "category": "STREAM",
       "location": "ABEMA",
-      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。",
+      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1122612",
       "sources": [
@@ -3531,9 +3536,14 @@
           "url": "https://abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF",
           "type": "broadcaster_listing",
           "checkedAt": "2026-11-11T09:28:32Z"
+        },
+        {
+          "url": "https://abema.tv/lp/gift-onair",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T21:20:56Z"
         }
       ],
-      "checkedAt": "2026-11-11T09:28:32Z",
+      "checkedAt": "2026-11-22T21:20:56Z",
       "timings": [
         {
           "label": "配信枠開始（本人出番ではありません）",
@@ -12018,6 +12028,34 @@
       "deadline": null,
       "revision": 1,
       "present": true
+    },
+    {
+      "id": "tokisen-style-20261129",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "ニッポン放送「超ときめき♡STYLE」",
+      "start": "2026-11-30T00:30:00+09:00",
+      "end": "2026-11-30T00:50:00+09:00",
+      "allDay": false,
+      "status": "possible",
+      "category": "RADIO",
+      "location": "ニッポン放送",
+      "note": "11月29日（日）24:30〜24:50の放送予定。担当メンバーとゲストは番組表に記載なし。radikoの聴取は配信エリア・契約条件によります。",
+      "evidence": "ニッポン放送の日付指定番組表で放送枠を確認。グループ公式の当該回告知は未確認。",
+      "sourceUrl": "https://www.1242.com/timetable/?target_date=20261129",
+      "sources": [
+        {
+          "url": "https://www.1242.com/timetable/?target_date=20261129",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-22T21:20:56Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T21:20:56Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-style-20261129"
     }
   ],
   "notes": [
