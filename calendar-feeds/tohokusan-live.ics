@@ -60,6 +60,25 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-ed62c1406ed28fe05ee9d3c9e44ac7ace65f708a9525d2b2ba9258bf4c058
+ 674@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T024625Z
+CREATED:20261122T024625Z
+LAST-MODIFIED:20261122T024625Z
+SEQUENCE:0
+DTSTART:20261129T061000Z
+DTEND:20261129T064000Z
+SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-3 コラボステージ
+DESCRIPTION:安杜羽加・吉瀬真珠・橘花怜・桜ひなの・伊達
+ 花彩が出演。記載時刻はコラボ全体の枠です。\n本人公
+ 式が単独ライブとは別に、コラボ枠の時刻・会場・出
+ 演メンバーを案内。\nhttps://madeintohoku.com/contents/1101783
+LOCATION:SGCホール有明
+URL:https://madeintohoku.com/contents/1101783
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-5018ad8b8c1d7dcbbfb813762a5263b75721875a4a7eeee14dd942a15f314
  db2@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T084531Z
@@ -289,19 +308,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-7f9a964fc156ba086d0defabc163827bd1a0b4e7c72d18408c70413e42bee
  51f@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261120T091115Z
+DTSTAMP:20261122T024625Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261120T091115Z
-SEQUENCE:1
+LAST-MODIFIED:20261122T024625Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20261211
 SUMMARY:律月ひかる「ULTRA GT FES 2026」（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n開催日のみ公表。開場・開演時刻は未発表。 律月
- ひかるはソロ出演。同じ公演にRE-GEも出演。\n本人公式
- の開催日・本文記載を確認。 双方の本人公式と主催公
- 演ページを照合。\nhttps://madeintohoku.com/contents/1129021\nhttps
- ://madeintohoku.com/contents/1129023\nhttps://re-ge.com/news/item-818/\nht
- tps://ultragt.radiomax.jp/fes
+ 。\n律月ひかるは第2部のみソロ出演。RE-GEは両部に出演
+ するため、第2部で両方を見られます。開場・開演時刻
+ は未確認。\n本人公式の開催日・本文記載を確認。 双
+ 方の本人公式と主催公演ページを照合。 主催者の第1部
+ ・第2部の出演一覧で出演する部を確認。\nhttps://madeintoh
+ oku.com/contents/1129021\nhttps://madeintohoku.com/contents/1129023\nhttps
+ ://re-ge.com/news/item-818/\nhttps://ultragt.radiomax.jp/fes
 LOCATION:渋谷ストリームホール
 URL:https://madeintohoku.com/contents/1129023
 STATUS:CONFIRMED

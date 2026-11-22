@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-after-event",
-  "dataGeneratedAt": "2026-11-22T01:17:55.785Z",
+  "dataVersion": "2026-11-22-gift-collaboration-ultragt",
+  "dataGeneratedAt": "2026-11-22T02:46:25.441Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "0aebb6f5b13ab15a715417f108b624e5a203fcc99ab2beb266978e07d437cae0",
+  "inputSha256": "af63c41c9bc62f692dd0a537d92b9da1b86505b61a588d37af20077620d72eea",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 61,
       "omittedUnknownDate": 0,
-      "sha256": "dedbe15c5b0a0227751f6a57fd7f59c9a82cf8a3926da1d59207ea83d520294a"
+      "sha256": "a73eb9ba549483753ba3082f829ab92dd8414b222657ff722ab49c3d83d8950c"
     },
     {
       "id": "re-ge-live",
@@ -78,7 +78,7 @@
       "path": "calendar-feeds/re-ge-live.ics",
       "count": 9,
       "omittedUnknownDate": 0,
-      "sha256": "e88ce70135a688dd6bee93b3c66eb8bba1d27f7a11ba00a92b5a8940fbf8b712"
+      "sha256": "aea5723e89b45d506e0778924fd3eabc1aba30161bf11006265510d6185aabf7"
     },
     {
       "id": "re-ge-benefit",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all.ics",
-      "count": 37,
+      "count": 38,
       "omittedUnknownDate": 0,
-      "sha256": "1ffa4920fa353642e93310c42c5046da2ab074928ef733df9060c2fcaf7ecfc5"
+      "sha256": "8c8f16dac5d456ef37693128d3f1e82200cf470b0f73951f425f41ec7cdb897e"
     },
     {
       "id": "tohokusan-live",
@@ -226,9 +226,9 @@
       "category": "live",
       "label": "いぎなり東北産 / ライブ・イベント",
       "path": "calendar-feeds/tohokusan-live.ics",
-      "count": 16,
+      "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "67f52c15f55083905da31fd974bf5b0d93d8b84d8e0320e1c79adf408b93def2"
+      "sha256": "fe67c70a3f583aca52baf5bdae2c7c793da4cda36279ef5a7be2880a698034b6"
     },
     {
       "id": "tohokusan-benefit",

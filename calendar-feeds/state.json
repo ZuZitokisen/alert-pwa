@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-batten-after-event",
-  "dataGeneratedAt": "2026-11-22T01:17:55.785Z",
-  "inputSha256": "d21969060c9138635cba82e58bcf6b6c2756110e462948849dc335fdc37f086c",
+  "dataVersion": "2026-11-22-gift-collaboration-ultragt",
+  "dataGeneratedAt": "2026-11-22T02:46:25.441Z",
+  "inputSha256": "07ab21dbb570cadd9408006e056160b5f57b464dc8df55f2f5e518e63e9ba7f0",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -5196,7 +5196,7 @@
         "end": null,
         "allDay": false,
         "location": "渋谷ストリームホール",
-        "publicNote": "本人公式で12/11開催と渋谷ストリームホールを確認。桧山ゆうみは別件のため欠席と告知。開始・終了時刻は未確認。 同じ公演に律月ひかる（いぎなり東北産）がソロ出演。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。 本人公式ニュース本文で会場・欠席告知を補足。 共演者の本人公式と主催公演ページを照合。",
+        "publicNote": "RE-GEは第1部・第2部に出演。第2部には律月ひかる（いぎなり東北産）もソロで出演。桧山ゆうみは別件のため欠席。開場・開演時刻は未確認。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。 本人公式ニュース本文で会場・欠席告知を補足。 共演者の本人公式と主催公演ページを照合。 主催者の第1部・第2部の出演一覧で出演する部を確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://madeintohoku.com/contents/1129021",
@@ -5206,9 +5206,9 @@
         ],
         "sourceUrl": "https://re-ge.com/schedule/item-819/"
       },
-      "sequence": 2,
+      "sequence": 3,
       "created": "2026-11-18T16:35:21.311Z",
-      "modified": "2026-11-20T09:11:15.696Z",
+      "modified": "2026-11-22T02:46:25.441Z",
       "lastTiming": {
         "start": "2026-12-11",
         "end": null,
@@ -8776,6 +8776,38 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-gift-20261129-collab\"]",
+      "uid": "public-v1-ed62c1406ed28fe05ee9d3c9e44ac7ace65f708a9525d2b2ba9258bf4c058674@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-gift-20261129-collab",
+        "category": "live",
+        "title": "GIFT ～Girls Idol Festival Tokyo～ DAY-3 コラボステージ",
+        "start": "2026-11-29T15:10:00+09:00",
+        "end": "2026-11-29T15:40:00+09:00",
+        "allDay": false,
+        "location": "SGCホール有明",
+        "publicNote": "安杜羽加・吉瀬真珠・橘花怜・桜ひなの・伊達花彩が出演。記載時刻はコラボ全体の枠です。\n本人公式が単独ライブとは別に、コラボ枠の時刻・会場・出演メンバーを案内。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1101783"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-22T02:46:25.441Z",
+      "modified": "2026-11-22T02:46:25.441Z",
+      "lastTiming": {
+        "start": "2026-11-29T15:10:00+09:00",
+        "end": "2026-11-29T15:40:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-live"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-higashine-20261122\"]",
       "uid": "public-v1-5018ad8b8c1d7dcbbfb813762a5263b75721875a4a7eeee14dd942a15f314db2@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -9614,7 +9646,7 @@
         "end": null,
         "allDay": false,
         "location": "渋谷ストリームホール",
-        "publicNote": "開催日のみ公表。開場・開演時刻は未発表。 律月ひかるはソロ出演。同じ公演にRE-GEも出演。\n本人公式の開催日・本文記載を確認。 双方の本人公式と主催公演ページを照合。",
+        "publicNote": "律月ひかるは第2部のみソロ出演。RE-GEは両部に出演するため、第2部で両方を見られます。開場・開演時刻は未確認。\n本人公式の開催日・本文記載を確認。 双方の本人公式と主催公演ページを照合。 主催者の第1部・第2部の出演一覧で出演する部を確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://madeintohoku.com/contents/1129021",
@@ -9624,9 +9656,9 @@
         ],
         "sourceUrl": "https://madeintohoku.com/contents/1129023"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-19T08:45:31.941Z",
-      "modified": "2026-11-20T09:11:15.696Z",
+      "modified": "2026-11-22T02:46:25.441Z",
       "lastTiming": {
         "start": "2026-12-11",
         "end": null,
@@ -16396,5 +16428,5 @@
       ]
     }
   ],
-  "integritySha256": "c03dc18e5c0c834577aa0d64513a67cbb514fe540d498d441ad2624ad2163b86"
+  "integritySha256": "602bbbaeea4fc69866920add51644ed82278c79d12eb32391f2c7d5bc7eb82fd"
 }

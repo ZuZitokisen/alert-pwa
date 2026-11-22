@@ -6,24 +6,24 @@ X-WR-CALNAME:RE-GE / ライブ・イベント（通知あり）
 BEGIN:VEVENT
 UID:public-v1-102eef82531fb3237a614fd8574e73f5a2612a8aa2578e26f61e5377f6a3e
  8af@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261120T091115Z
+DTSTAMP:20261122T024625Z
 CREATED:20261118T163521Z
-LAST-MODIFIED:20261120T091115Z
-SEQUENCE:2
+LAST-MODIFIED:20261122T024625Z
+SEQUENCE:3
 DTSTART;VALUE=DATE:20261211
 SUMMARY:FM FUJI「秋本帆華のウルトラGT」初の音楽イベント
  ～ULTRA GT FES 2026～（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n本人公式で12/11開催と渋谷ストリームホールを確認
- 。桧山ゆうみは別件のため欠席と告知。開始・終了時
- 刻は未確認。 同じ公演に律月ひかる（いぎなり東北産
- ）がソロ出演。\n本人公式スケジュール詳細のイベント
- 日付属性・見出し・カテゴリ。公開日を開催日として
- 使用していません。 本人公式ニュース本文で会場・欠
- 席告知を補足。 共演者の本人公式と主催公演ページを
- 照合。\nhttps://madeintohoku.com/contents/1129021\nhttps://re-ge.com/ne
- ws/item-818/\nhttps://re-ge.com/schedule/item-819/\nhttps://ultragt.radiom
- ax.jp/fes
+ 。\nRE-GEは第1部・第2部に出演。第2部には律月ひかる（
+ いぎなり東北産）もソロで出演。桧山ゆうみは別件の
+ ため欠席。開場・開演時刻は未確認。\n本人公式スケジ
+ ュール詳細のイベント日付属性・見出し・カテゴリ。
+ 公開日を開催日として使用していません。 本人公式ニ
+ ュース本文で会場・欠席告知を補足。 共演者の本人公
+ 式と主催公演ページを照合。 主催者の第1部・第2部の
+ 出演一覧で出演する部を確認。\nhttps://madeintohoku.com/conte
+ nts/1129021\nhttps://re-ge.com/news/item-818/\nhttps://re-ge.com/schedule/
+ item-819/\nhttps://ultragt.radiomax.jp/fes
 LOCATION:渋谷ストリームホール
 URL:https://re-ge.com/schedule/item-819/
 STATUS:CONFIRMED
