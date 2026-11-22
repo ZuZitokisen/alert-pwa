@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-style-ebichu-stationhead",
-  "dataGeneratedAt": "2026-11-22T09:16:27Z",
-  "inputSha256": "3578ff6f2592b1bc52c5aa51eda6737841af90039e34ae5a56ccf1b132646f5e",
+  "dataVersion": "2026-11-22-rege-snow-straight-ikebukuro",
+  "dataGeneratedAt": "2026-11-22T11:16:44Z",
+  "inputSha256": "586dd9562fd4338d4e79e28268dd2fee2af41bc3190e204ae2c4dd989f53b9c5",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -6590,6 +6590,38 @@
       ]
     },
     {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-release-830-snow-halation-20261222\"]",
+      "uid": "public-v1-2e44a60633751b3e57014b4e6a3375f45143d57aa61a6100e24c17be9877d441@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-release-830-snow-halation-20261222",
+        "category": "media",
+        "title": "「Snow halation」cover Ver. デジタルリリース",
+        "start": "2026-12-22T00:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "デジタル配信",
+        "publicNote": "μ’sの楽曲「Snow halation」のRE-GEによるカバー。12月22日(火)0:00配信開始。\n本人公式告知でカバー版の配信日時を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-830/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-22T11:16:44Z",
+      "modified": "2026-11-22T11:16:44Z",
+      "lastTiming": {
+        "start": "2026-12-22T00:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-media"
+      ]
+    },
+    {
       "key": "[\"re-ge\",\"curated-calendar\",\"rege-roppongi-newyear-idolfes-20270109\"]",
       "uid": "public-v1-ef0e86cbcd2c82520ff49e0273564f83b1219b5ec8df2d85f93f751c224ed303@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -7847,16 +7879,16 @@
         "start": "2026-12-20",
         "end": null,
         "allDay": false,
-        "location": "",
-        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+        "location": "animate hall BLACK（アニメイト池袋本店 北館9F）",
+        "publicNote": "開催日と会場を本人公式で確認。開始・終了時刻や参加方法などの詳細は後日発表。\n本人公式スケジュール詳細の日程・会場欄を確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://straight-angeli.com/schedule/item-1370/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-19T14:43:07.722Z",
-      "modified": "2026-11-19T14:43:07.722Z",
+      "modified": "2026-11-22T11:16:44Z",
       "lastTiming": {
         "start": "2026-12-20",
         "end": null,
@@ -16531,5 +16563,5 @@
       ]
     }
   ],
-  "integritySha256": "3c5f6a501c547962b3e3e1ccd9817c2ff1b5a90418347b0e4a4ba08c76c3aaa6"
+  "integritySha256": "421a825a55bc82f8f41bc9b616fecfda8130ee15766da308aa4d7cc177b2ff2d"
 }
