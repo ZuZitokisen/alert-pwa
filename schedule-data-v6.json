@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-22-tokisen-style-and-rij",
-  "generatedAt": "2026-11-22T03:16:25.146Z",
+  "version": "2026-11-22-ebichu-gift",
+  "generatedAt": "2026-11-22T05:20:04.291Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -18258,6 +18258,44 @@
       "revision": 1,
       "present": true,
       "groupId": "batten-greatest-ever-show-after-20270221"
+    },
+    {
+      "id": "ebichu-gift-20261129",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "GIFT ～Girls Idol Festival Tokyo～ DAY-3",
+      "start": "2026-11-29T15:40:00+09:00",
+      "end": "2026-11-29T16:30:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "LIVE",
+      "location": "TOYOTA ARENA TOKYO",
+      "note": "私立恵比寿中学の現地出演枠は15:40〜16:30。イベント全体は開場11:30・開演13:00。ABEMA SPECIAL3でDAY-3配信あり。現地出演枠と配信時刻は別です。",
+      "evidence": "本人公式ニュース・予定表で現地出演枠と会場を確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16117/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16117/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T05:20:04.291Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/media/95712/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T05:20:04.291Z"
+        },
+        {
+          "url": "https://www.gift-idol.jp/outline.html",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-22T05:20:04.291Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T05:20:04.291Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-gift-20261129"
     }
   ],
   "notes": [
