@@ -57,19 +57,24 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-877518658be4b24bb2c183ce0b79525be462744ad105641b27c9cb1de0543
  000@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T192021Z
+DTSTAMP:20261122T212056Z
 CREATED:20261121T173209Z
-LAST-MODIFIED:20261122T192021Z
-SEQUENCE:2
+LAST-MODIFIED:20261122T212056Z
+SEQUENCE:3
 DTSTART:20261123T090500Z
 DTEND:20261123T093000Z
 SUMMARY:ちかっぱ祭2026
 DESCRIPTION:ばってん少女隊の出演枠。 ニコ生は11:00配信開
  始。各ライブの後半はニコニコプレミアム会員向け。 
- 見逃し配信は11月30日（月）23:59まで。\nばってん少女隊
- 公式の案内。\nhttps://battengirls.com/contents/1101652\nhttps://live
- .nicovideo.jp/watch/lv351793553\nhttps://prtimes.jp/main/html/rd/p/0000014
- 48.000056982.html\nhttps://www.shiritsuebichu.jp/media/95687/
+ 見逃し配信は11月30日（月）23:59まで。 主催案内では11
+ 月23日10:00から会場入口で当日券を販売予定。現金のみ
+ 、数量限定。一般指定席9\,900円、VIP指定席36\,300円。\n
+ ばってん少女隊公式の案内。\nhttps://battengirls.com/contents/
+ 1101652\nhttps://info6970450.wixsite.com/my-site/post/%E3%81%A1%E3%81%8B%E
+ 3%81%A3%E3%81%B1%E7%A5%AD2026-%E5%BD%93%E6%97%A5%E5%88%B8%E8%B2%A9%E5%A3%B
+ 2-%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B\nhttps://live.nicovideo.jp
+ /watch/lv351793553\nhttps://prtimes.jp/main/html/rd/p/000001448.000056982.
+ html\nhttps://www.shiritsuebichu.jp/media/95687/
 LOCATION:マリンメッセ福岡B館
 URL:https://battengirls.com/contents/1101652
 STATUS:CONFIRMED
