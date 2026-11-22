@@ -1712,4 +1712,23 @@ URL:https://re-ge.com/news/item-782/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-52c0126c78a5824b62224df84fa92dc3b28ea34b34d0742020b2230f52da2
+ d51@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T151435Z
+CREATED:20261122T151435Z
+LAST-MODIFIED:20261122T151435Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261226
+SUMMARY:RE-GE ウインターフリーライブ2026〜寒い冬に、青春
+ の灯火を〜（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n開催日と会場を発表。開始時刻などの詳細は後日発
+ 表。\nアーティスト公式の告知本文に記載。\nhttps://re-ge
+ .com/news/item-832/
+LOCATION:東京・汐留シオサイト 地下歩道
+URL:https://re-ge.com/news/item-832/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

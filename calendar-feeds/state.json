@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-22-tokisen-media-links",
-  "dataGeneratedAt": "2026-11-22T13:19:32Z",
-  "inputSha256": "c7d8a96f66cd46706423c882f93043c13b710dedae26d0ca3fc40694a96db3f5",
+  "dataVersion": "2026-11-23-rege-winter-free-live",
+  "dataGeneratedAt": "2026-11-22T15:14:35Z",
+  "inputSha256": "5e2363c564eb7606791b212566a413c210eb1ce14f2a6ed8e692129d2963df83",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -7255,6 +7255,38 @@
       "modified": "2026-11-11T09:32:46.032709Z",
       "lastTiming": {
         "start": "2026-11-29",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-live"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-winter-free-live-20261226\"]",
+      "uid": "public-v1-52c0126c78a5824b62224df84fa92dc3b28ea34b34d0742020b2230f52da2d51@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-winter-free-live-20261226",
+        "category": "live",
+        "title": "RE-GE ウインターフリーライブ2026〜寒い冬に、青春の灯火を〜",
+        "start": "2026-12-26",
+        "end": null,
+        "allDay": false,
+        "location": "東京・汐留シオサイト 地下歩道",
+        "publicNote": "開催日と会場を発表。開始時刻などの詳細は後日発表。\nアーティスト公式の告知本文に記載。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-832/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-22T15:14:35Z",
+      "modified": "2026-11-22T15:14:35Z",
+      "lastTiming": {
+        "start": "2026-12-26",
         "end": null,
         "allDay": false
       },
@@ -16604,5 +16636,5 @@
       ]
     }
   ],
-  "integritySha256": "b56739a9a75b98eaa1ea5953ae0db2c33da5bcf9be669512bd09150f4b1a7776"
+  "integritySha256": "be20267662aca1ee5b80d8c3303e039b04f7c08f2d375571b7ce1196e4bc942c"
 }
