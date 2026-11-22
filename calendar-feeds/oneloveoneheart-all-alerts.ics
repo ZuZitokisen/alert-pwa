@@ -51,6 +51,27 @@ DESCRIPTION:エアトリ presents 毎日がクリスマス2026
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-28ac8e1abb2264579c676eb909c40d316ae6070e999e87cc99033ff50555a
+ 5b5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261122T171355Z
+CREATED:20261122T171355Z
+LAST-MODIFIED:20261122T171355Z
+SEQUENCE:0
+DTSTART:20261126T115400Z
+DTEND:20261126T135700Z
+SUMMARY:藤咲碧羽：ゴールデンラヴィット！（かも？）
+DESCRIPTION:TBS番組表の金曜チームに藤咲碧羽を掲載。木曜
+ 夜の特番で、翌朝の通常放送とは別。終了時刻はチュ
+ ーリップテレビの番組表による。\n放送局の番組表で確
+ 認。本人側の告知は確認できていないため「かも？」
+ 。\nhttps://www.tbs.co.jp/tv/20261126_C762.html\nhttps://www.tulip-tv.co.
+ jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420
+LOCATION:TBS系
+URL:https://www.tbs.co.jp/tv/20261126_C762.html
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-381902ad9781b828bea82abe2bdd41a4a8ac419efaa9ff9e2b031c09ac08c
  f47@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261118T062010Z

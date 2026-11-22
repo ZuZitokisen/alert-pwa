@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-rege-winter-free-live",
-  "dataGeneratedAt": "2026-11-22T15:14:35Z",
+  "dataVersion": "confirmed-2026-11-23-golden-loveit-v1",
+  "dataGeneratedAt": "2026-11-22T17:13:55.552Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a46c3aba3258f153a07b7d9836aef75e33376639c8ace1086b61f713e68bbd87",
+  "inputSha256": "148b9a5a794870294cb8d3519a39bc6f805f714e8a7ef4b53ca2277ea8f2920d",
   "feeds": [
     {
       "id": "tokisen-all",

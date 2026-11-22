@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-rege-winter-free-live",
-  "dataGeneratedAt": "2026-11-22T15:14:35Z",
+  "dataVersion": "confirmed-2026-11-23-golden-loveit-v1",
+  "dataGeneratedAt": "2026-11-22T17:13:55.552Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "97eb495cb9d4e05d22f815e3693892001f7f3335743f619cbe064be725283a2d",
+  "inputSha256": "d96059f8d11ce45f2f4a779185535495366d3f1534a187c560bee711a00f2ed5",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -166,9 +166,9 @@
       "category": "all",
       "label": "ONE LOVE ONE HEART / 全予定",
       "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
-      "count": 34,
+      "count": 35,
       "omittedUnknownDate": 0,
-      "sha256": "56783c5c9c6a38d52485eeb6c0adc84eacbea84fcb6dca3c811f94fc681fc0ce"
+      "sha256": "1d014635b86a038d7d18f3983afe899dadfbb4697d9833e6188f907913d5ff22"
     },
     {
       "id": "oneloveoneheart-live",
@@ -196,9 +196,9 @@
       "category": "media",
       "label": "ONE LOVE ONE HEART / メディア",
       "path": "calendar-feeds/oneloveoneheart-media-alerts.ics",
-      "count": 9,
+      "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "eab2a78c85a7cc11f5d66f4c68f1a179a0f56845459c6cb54cae75be16295551"
+      "sha256": "4f93f9b35d36a2596d6259f8b97b5ac2bff5a6f270d8b650deeb77c51a3c009b"
     },
     {
       "id": "oneloveoneheart-other",

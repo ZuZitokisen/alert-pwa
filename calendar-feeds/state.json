@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-rege-winter-free-live",
-  "dataGeneratedAt": "2026-11-22T15:14:35Z",
-  "inputSha256": "5e2363c564eb7606791b212566a413c210eb1ce14f2a6ed8e692129d2963df83",
+  "dataVersion": "confirmed-2026-11-23-golden-loveit-v1",
+  "dataGeneratedAt": "2026-11-22T17:13:55.552Z",
+  "inputSha256": "a25bdf6614ad1339c64753343481291aeb780d4b5b547bd3fd116cc1dbe6fdd9",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4183,6 +4183,39 @@
       "memberships": [
         "oneloveoneheart-all",
         "oneloveoneheart-live"
+      ]
+    },
+    {
+      "key": "[\"oneloveoneheart\",\"curated-calendar\",\"oneloveoneheart-golden-loveit-20261126\"]",
+      "uid": "public-v1-28ac8e1abb2264579c676eb909c40d316ae6070e999e87cc99033ff50555a5b5@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "oneloveoneheart",
+        "source": "curated-calendar",
+        "id": "oneloveoneheart-golden-loveit-20261126",
+        "category": "media",
+        "title": "藤咲碧羽：ゴールデンラヴィット！",
+        "start": "2026-11-26T20:54:00+09:00",
+        "end": "2026-11-26T22:57:00+09:00",
+        "allDay": false,
+        "location": "TBS系",
+        "publicNote": "TBS番組表の金曜チームに藤咲碧羽を掲載。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。\n放送局の番組表で確認。本人側の告知は確認できていないため「かも？」。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://www.tbs.co.jp/tv/20261126_C762.html",
+          "https://www.tulip-tv.co.jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-22T17:13:55.552Z",
+      "modified": "2026-11-22T17:13:55.552Z",
+      "lastTiming": {
+        "start": "2026-11-26T20:54:00+09:00",
+        "end": "2026-11-26T22:57:00+09:00",
+        "allDay": false
+      },
+      "memberships": [
+        "oneloveoneheart-all",
+        "oneloveoneheart-media"
       ]
     },
     {
@@ -16636,5 +16669,5 @@
       ]
     }
   ],
-  "integritySha256": "be20267662aca1ee5b80d8c3303e039b04f7c08f2d375571b7ce1196e4bc942c"
+  "integritySha256": "1742d59e45e1828061f04980563929d8afb09170744b74d2daf98378061babef"
 }
