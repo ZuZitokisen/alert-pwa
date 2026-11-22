@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-23-rege-winter-free-live",
-  "generatedAt": "2026-11-22T15:14:35Z",
+  "version": "confirmed-2026-11-23-golden-loveit-v1",
+  "generatedAt": "2026-11-22T17:13:55.552Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -17249,6 +17249,39 @@
       "deadline": null,
       "revision": 1,
       "present": true
+    },
+    {
+      "id": "oneloveoneheart-golden-loveit-20261126",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "藤咲碧羽：ゴールデンラヴィット！",
+      "start": "2026-11-26T20:54:00+09:00",
+      "end": "2026-11-26T22:57:00+09:00",
+      "allDay": false,
+      "status": "possible",
+      "category": "TV",
+      "location": "TBS系",
+      "note": "TBS番組表の金曜チームに藤咲碧羽を掲載。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。",
+      "evidence": "放送局の番組表で確認。本人側の告知は確認できていないため「かも？」。",
+      "sourceUrl": "https://www.tbs.co.jp/tv/20261126_C762.html",
+      "sources": [
+        {
+          "url": "https://www.tbs.co.jp/tv/20261126_C762.html",
+          "type": "放送局公式番組表",
+          "checkedAt": "2026-11-22T17:13:55.552Z"
+        },
+        {
+          "url": "https://www.tulip-tv.co.jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420",
+          "type": "系列局公式番組表",
+          "checkedAt": "2026-11-22T17:13:55.552Z"
+        }
+      ],
+      "checkedAt": "2026-11-22T17:13:55.552Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-golden-loveit-20261126"
     }
   ],
   "notes": [
