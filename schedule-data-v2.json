@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-ebichu-yon-tame-tsurikomachi",
-  "generatedAt": "2026-11-23T19:19:48Z",
+  "version": "2026-11-24-pia-premium-ebichu-details",
+  "generatedAt": "2026-11-23T21:19:11Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2808,6 +2808,40 @@
       "revision": 1,
       "present": true,
       "groupId": "rege-stadagao-20261124"
+    },
+    {
+      "id": "tokisen-20270124-pia-premium-deadline",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー ぴあプレミアム先行締切",
+      "start": "2026-11-24T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "REMIND",
+      "location": "",
+      "note": "チケットぴあのプレミアム会員向け最速抽選「いち早プレリザーブ」。11月30日締切の番組二次先行とは別の受付枠。",
+      "evidence": "販売元のチケットぴあで個別受付を確認。とき宣側の同受付枠の告知は未確認。",
+      "sourceUrl": "https://t.pia.jp/pia/ticketInformation.do?lotRlsCd=40851",
+      "sources": [
+        {
+          "url": "https://t.pia.jp/pia/ticketInformation.do?lotRlsCd=40851",
+          "type": "seller_official",
+          "checkedAt": "2026-11-23T21:19:11Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T21:19:11Z",
+      "timings": [
+        {
+          "label": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー ぴあプレミアム先行締切",
+          "kind": "application_deadline",
+          "at": "2026-11-24T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-11-24T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-newyear-20270124"
     },
     {
       "id": "rege-unit-20261125-86fdf75113",

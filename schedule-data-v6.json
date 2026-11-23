@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-ebichu-yon-tame-tsurikomachi",
-  "generatedAt": "2026-11-23T19:19:48Z",
+  "version": "2026-11-24-pia-premium-ebichu-details",
+  "generatedAt": "2026-11-23T21:19:11Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2808,6 +2808,40 @@
       "revision": 1,
       "present": true,
       "groupId": "rege-stadagao-20261124"
+    },
+    {
+      "id": "tokisen-20270124-pia-premium-deadline",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー ぴあプレミアム先行締切",
+      "start": "2026-11-24T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "REMIND",
+      "location": "",
+      "note": "チケットぴあのプレミアム会員向け最速抽選「いち早プレリザーブ」。11月30日締切の番組二次先行とは別の受付枠。",
+      "evidence": "販売元のチケットぴあで個別受付を確認。とき宣側の同受付枠の告知は未確認。",
+      "sourceUrl": "https://t.pia.jp/pia/ticketInformation.do?lotRlsCd=40851",
+      "sources": [
+        {
+          "url": "https://t.pia.jp/pia/ticketInformation.do?lotRlsCd=40851",
+          "type": "seller_official",
+          "checkedAt": "2026-11-23T21:19:11Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T21:19:11Z",
+      "timings": [
+        {
+          "label": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー ぴあプレミアム先行締切",
+          "kind": "application_deadline",
+          "at": "2026-11-24T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-11-24T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-newyear-20270124"
     },
     {
       "id": "rege-unit-20261125-86fdf75113",
@@ -19034,22 +19068,27 @@
       "artistId": "ebichu",
       "title": "MBS「よんタメ」出演",
       "start": "2026-11-29T04:08:00+09:00",
-      "end": null,
+      "end": "2026-11-29T04:13:00+09:00",
       "allDay": false,
       "status": "confirmed",
       "category": "TV",
       "location": "MBS毎日放送",
       "note": "安本彩花・風見和香・仲村悠菜が出演。公式の放送日表記は11月28日（土）28:08。個別の出演時刻は未発表。",
-      "evidence": "エビ中公式の個別スケジュールで出演者と放送開始を確認。",
+      "evidence": "エビ中公式で出演者と放送開始、MBS公式番組表で放送終了を確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/media/96904/",
       "sources": [
         {
           "url": "https://www.shiritsuebichu.jp/media/96904/",
           "type": "artist_official",
           "checkedAt": "2026-11-23T19:19:48Z"
+        },
+        {
+          "url": "https://www.mbs.jp/pgm_guide/1767020414.shtml",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-23T21:19:11Z"
         }
       ],
-      "checkedAt": "2026-11-23T19:19:48Z",
+      "checkedAt": "2026-11-23T21:19:11Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -19067,7 +19106,7 @@
       "status": "confirmed",
       "category": "MEMO",
       "location": "",
-      "note": "池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。上映時刻は劇場ごとに異なります。11月28日の舞台挨拶とは別です。",
+      "note": "池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。上映時刻は劇場ごとに異なります。11月28日の舞台挨拶とは別です。 数量限定の入場者特典はポストカード。記載のシリアル番号で仲村悠菜のサイン入り台本などの抽選に応募できます。",
       "evidence": "エビ中公式と映画公式で全国公開日を確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/media/96402/",
       "sources": [
@@ -19080,9 +19119,14 @@
           "url": "https://www.tsuri-komachi.jp/",
           "type": "organizer_official",
           "checkedAt": "2026-11-23T19:19:48Z"
+        },
+        {
+          "url": "https://www.tsuri-komachi.jp/theater",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-23T21:19:11Z"
         }
       ],
-      "checkedAt": "2026-11-23T19:19:48Z",
+      "checkedAt": "2026-11-23T21:19:11Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
