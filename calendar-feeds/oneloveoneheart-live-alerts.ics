@@ -36,21 +36,30 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-6f8da60a82552c3831bb67bbf9b29d6557d31c35baa9cefc819c95a0942e8
  d2e@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261118T062010Z
+DTSTAMP:20261123T131549Z
 CREATED:20261118T062010Z
-LAST-MODIFIED:20261118T062010Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261129
-SUMMARY:愛の証明 リリースイベント（時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n日程・開催地のみ公式発表。開始時刻、特典会内容
- 、購入受付などの詳細は未発表。\n本人側の公式発表で
- 確認。時刻未発表は日付のみ。\nhttps://5th.oneloveoneheart.jp
- /
-LOCATION:ららぽーと立川立飛
-URL:https://5th.oneloveoneheart.jp/
+LAST-MODIFIED:20261123T131549Z
+SEQUENCE:1
+DTSTART:20261129T043000Z
+SUMMARY:愛の証明 リリースイベント：ミニライブ
+DESCRIPTION:観覧無料。優先入場には整理番号付優先エリア
+ 入場券が必要。進行により時刻は前後する場合あり。\n
+ 本人公式の個別案内で確認。\nhttps://5th.oneloveoneheart.jp/\n
+ https://oneloveoneheart.jp/live/live-7401/
+LOCATION:ららぽーと立川立飛 2Fイベント広場
+URL:https://oneloveoneheart.jp/live/live-7401/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT5H30M
+DESCRIPTION:愛の証明 リリースイベント：ミニライブ
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:愛の証明 リリースイベント：ミニライブ
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-62413ed2c18df1cfab44a1dea263104c511340032d2706ede5708e4de1fa4
