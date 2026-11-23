@@ -6,22 +6,23 @@ X-WR-CALNAME:ONE LOVE ONE HEART / メディア
 BEGIN:VEVENT
 UID:public-v1-28ac8e1abb2264579c676eb909c40d316ae6070e999e87cc99033ff50555a
  5b5@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T171355Z
+DTSTAMP:20261123T031822Z
 CREATED:20261122T171355Z
-LAST-MODIFIED:20261122T171355Z
-SEQUENCE:0
+LAST-MODIFIED:20261123T031822Z
+SEQUENCE:1
 DTSTART:20261126T115400Z
 DTEND:20261126T135700Z
-SUMMARY:藤咲碧羽：ゴールデンラヴィット！（かも？）
-DESCRIPTION:TBS番組表の金曜チームに藤咲碧羽を掲載。木曜
+SUMMARY:藤咲碧羽：ゴールデンラヴィット！
+DESCRIPTION:公式Xで藤咲碧羽の出演と20:54開始を告知。木曜
  夜の特番で、翌朝の通常放送とは別。終了時刻はチュ
- ーリップテレビの番組表による。\n放送局の番組表で確
- 認。本人側の告知は確認できていないため「かも？」
- 。\nhttps://www.tbs.co.jp/tv/20261126_C762.html\nhttps://www.tulip-tv.co.
- jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420
+ ーリップテレビの番組表による。\n本人側の公式X投稿
+ （公開表示の写し）とTBS番組表で確認。\nhttps://www.tbs.co
+ .jp/tv/20261126_C762.html\nhttps://www.tulip-tv.co.jp/programs/program_det
+ ails.html?e=21810&ed=20261119&p=767525&s=0x9420\nhttps://x.com/LOVEONE_sta
+ ff/status/2123949738286567709
 LOCATION:TBS系
 URL:https://www.tbs.co.jp/tv/20261126_C762.html
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
