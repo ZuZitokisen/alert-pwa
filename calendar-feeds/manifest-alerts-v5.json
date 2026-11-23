@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-cdj-set-time-front-lottery",
-  "dataGeneratedAt": "2026-11-23T01:22:14Z",
+  "dataVersion": "2026-11-23-loveone-golden-loveit-confirmed",
+  "dataGeneratedAt": "2026-11-23T03:18:22.633Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "2d58ad72946738db7d0ed4b2895f3f5e7e3fdeca390e3c229edbeb21b0c4f05c",
+  "inputSha256": "19b328bc18a6a10f35b91257f76fbac269216cf9c87d318ea8e75fff22d7ae70",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -168,7 +168,7 @@
       "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
       "count": 35,
       "omittedUnknownDate": 0,
-      "sha256": "1d014635b86a038d7d18f3983afe899dadfbb4697d9833e6188f907913d5ff22"
+      "sha256": "d86b8b3f7513b0c5b3fb38f9d986a324d741e930dd56031bdfdbbe3d59498296"
     },
     {
       "id": "oneloveoneheart-live",
@@ -198,7 +198,7 @@
       "path": "calendar-feeds/oneloveoneheart-media-alerts.ics",
       "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "4f93f9b35d36a2596d6259f8b97b5ac2bff5a6f270d8b650deeb77c51a3c009b"
+      "sha256": "efeca9c0dbdce1bae10359aa9aa1681ee267901a8b20c2991f2429fa344b6973"
     },
     {
       "id": "oneloveoneheart-other",

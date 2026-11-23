@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-23-cdj-set-time-front-lottery",
-  "generatedAt": "2026-11-23T01:22:14Z",
+  "version": "2026-11-23-loveone-golden-loveit-confirmed",
+  "generatedAt": "2026-11-23T03:18:22.633Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -17288,13 +17288,18 @@
       "start": "2026-11-26T20:54:00+09:00",
       "end": "2026-11-26T22:57:00+09:00",
       "allDay": false,
-      "status": "possible",
+      "status": "confirmed",
       "category": "TV",
       "location": "TBS系",
-      "note": "TBS番組表の金曜チームに藤咲碧羽を掲載。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。",
-      "evidence": "放送局の番組表で確認。本人側の告知は確認できていないため「かも？」。",
+      "note": "公式Xで藤咲碧羽の出演と20:54開始を告知。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。",
+      "evidence": "本人側の公式X投稿（公開表示の写し）とTBS番組表で確認。",
       "sourceUrl": "https://www.tbs.co.jp/tv/20261126_C762.html",
       "sources": [
+        {
+          "url": "https://x.com/LOVEONE_staff/status/2123949738286567709",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T03:18:22.633Z"
+        },
         {
           "url": "https://www.tbs.co.jp/tv/20261126_C762.html",
           "type": "放送局公式番組表",
@@ -17306,7 +17311,7 @@
           "checkedAt": "2026-11-22T17:13:55.552Z"
         }
       ],
-      "checkedAt": "2026-11-22T17:13:55.552Z",
+      "checkedAt": "2026-11-23T03:18:22.633Z",
       "timings": [],
       "deadline": null,
       "revision": 1,

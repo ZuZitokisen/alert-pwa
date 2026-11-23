@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-cdj-set-time-front-lottery",
-  "dataGeneratedAt": "2026-11-23T01:22:14Z",
+  "dataVersion": "2026-11-23-loveone-golden-loveit-confirmed",
+  "dataGeneratedAt": "2026-11-23T03:18:22.633Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "794a60f1c15e7e42f9bc36dffcbad77f7f03e2f9039ef21d38210156e384d3a3",
+  "inputSha256": "ccb0af6f7fe45ede5216ea6ad66b4cfcd168d15bbc110350b91b691be6fbb3ab",
   "feeds": [
     {
       "id": "tokisen-all",

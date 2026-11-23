@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-cdj-set-time-front-lottery",
-  "dataGeneratedAt": "2026-11-23T01:22:14Z",
-  "inputSha256": "fc9686eac5ea5f6ad0546d3974a94bbb0d2888fbb8652a791f6c32d266ff4485",
+  "dataVersion": "2026-11-23-loveone-golden-loveit-confirmed",
+  "dataGeneratedAt": "2026-11-23T03:18:22.633Z",
+  "inputSha256": "b6100995201394294294ea9b6bc942094f3e471dc538e258dbc656c70e43c812",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4234,16 +4234,17 @@
         "end": "2026-11-26T22:57:00+09:00",
         "allDay": false,
         "location": "TBS系",
-        "publicNote": "TBS番組表の金曜チームに藤咲碧羽を掲載。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。\n放送局の番組表で確認。本人側の告知は確認できていないため「かも？」。",
-        "status": "possible",
+        "publicNote": "公式Xで藤咲碧羽の出演と20:54開始を告知。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。\n本人側の公式X投稿（公開表示の写し）とTBS番組表で確認。",
+        "status": "confirmed",
         "sourceUrls": [
           "https://www.tbs.co.jp/tv/20261126_C762.html",
-          "https://www.tulip-tv.co.jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420"
+          "https://www.tulip-tv.co.jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420",
+          "https://x.com/LOVEONE_staff/status/2123949738286567709"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-22T17:13:55.552Z",
-      "modified": "2026-11-22T17:13:55.552Z",
+      "modified": "2026-11-23T03:18:22.633Z",
       "lastTiming": {
         "start": "2026-11-26T20:54:00+09:00",
         "end": "2026-11-26T22:57:00+09:00",
@@ -16777,5 +16778,5 @@
       ]
     }
   ],
-  "integritySha256": "a836f2c6f5ac2d15a7ed7ff40837703befd91f0710f98aef73a2a1ee8dc892fb"
+  "integritySha256": "390cb4d88649ada454da70d51e5bbd84327db7f539f0e027638cfa70cb59b16f"
 }
