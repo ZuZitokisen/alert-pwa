@@ -5,6 +5,26 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:超ときめき♡宣伝部 / 特典会・応募（通知あ
  り）
 BEGIN:VEVENT
+UID:public-v1-637c8710c6c3c4285979503970a1d4bc8dc29193844faf09027354dce8b0e
+ 8e6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T012214Z
+CREATED:20261123T012214Z
+LAST-MODIFIED:20261123T012214Z
+SEQUENCE:0
+DTSTART:20261130T070000Z
+SUMMARY:COUNTDOWN JAPAN 26/27 前方エリア抽選締切（かも？）
+DESCRIPTION:受付は11/25 16:00〜11/30 16:00。第2次抽選先行まで
+ に公演チケットを購入した方が対象。代表者・同行者
+ とも、アーティストごとに本人分のみ申込。\n主催者公
+ 式の前方エリア抽選案内。本人公式による同受付の告
+ 知は未確認。\nhttps://countdownjapan.jp/2627/ticket/\nhttps://www.te
+ apaw.org/rockinon_fes/status/2122887530957946990
+LOCATION:Jフェスアプリ
+URL:https://www.teapaw.org/rockinon_fes/status/2122887530957946990
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-08a0be3384e4568d42ddb7aecb719ca5f51b2763446edc0d43fda848ec68c
  158@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z

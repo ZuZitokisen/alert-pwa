@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-batten-video-style-radiko",
-  "dataGeneratedAt": "2026-11-22T23:12:58Z",
+  "dataVersion": "2026-11-23-cdj-set-time-front-lottery",
+  "dataGeneratedAt": "2026-11-23T01:22:14Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "ca6bef0e9207050794b39fb1d7061eb7d7533ecf6dd0fe048b7ff991c5ad90ba",
+  "inputSha256": "2d58ad72946738db7d0ed4b2895f3f5e7e3fdeca390e3c229edbeb21b0c4f05c",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 201,
+      "count": 202,
       "omittedUnknownDate": 10,
-      "sha256": "0ee440e93f8d4fbb20000f56a09d2419f812b42a93875afc6ee7a0efb8223982"
+      "sha256": "12c68a0d8c66734b55df7624f3329b4e95b7c8b19225c4c51365f9196880a713"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live-alerts.ics",
       "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "9d10441aec72d2b9724ab42166609171e42093b1ddf4ec9642b0dca246281658"
+      "sha256": "3bf6c4995d04ecb343f04aa2ced6c6f624fc076295677012be897894a3bc1385"
     },
     {
       "id": "tokisen-benefit",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit-alerts.ics",
-      "count": 63,
+      "count": 64,
       "omittedUnknownDate": 5,
-      "sha256": "c59c0ade4f083958652ef86c3935e1b7f63ef74f1cc7b5e46d41c3af26abe245"
+      "sha256": "7f74b7c9de6b5a49ad20280035f36d870a939f5ee5e1b257b3f5abb0afb9ac15"
     },
     {
       "id": "tokisen-media",
