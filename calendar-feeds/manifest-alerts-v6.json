@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-loveone-tachikawa-release-details",
-  "dataGeneratedAt": "2026-11-23T13:15:49.248Z",
+  "dataVersion": "2026-11-24-ultra-gt-fes-details",
+  "dataGeneratedAt": "2026-11-23T15:19:33Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f2c163a8700ab5979317cc354972c0d2f2f4c19767ffdee5bdd45696e7004f76",
+  "inputSha256": "d6d0d80aee055546da3364075d0d291fa917b23df03377f7b7d8bc37cf805ff4",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all-alerts.ics",
-      "count": 63,
+      "count": 65,
       "omittedUnknownDate": 0,
-      "sha256": "e74c44db22819aaa0d3a0d4b5cefd6eca392f6059b3b3a475ec3b351ec85703f"
+      "sha256": "b1a08761363367ac8e556dbfd800e368d18b891f08c87c305cd51953ae34da44"
     },
     {
       "id": "re-ge-live",
@@ -76,9 +76,9 @@
       "category": "live",
       "label": "RE-GE / ライブ・イベント",
       "path": "calendar-feeds/re-ge-live-alerts.ics",
-      "count": 10,
+      "count": 11,
       "omittedUnknownDate": 0,
-      "sha256": "647dfc9f486e7805609831cba5b85ad1099a9b7fcefcdd2df642646467773218"
+      "sha256": "9bb27bf3f37b2577757e231aac3b20779cb4688b50c35e87c50458264278a3c8"
     },
     {
       "id": "re-ge-benefit",
@@ -86,9 +86,9 @@
       "category": "benefit",
       "label": "RE-GE / 特典会・応募",
       "path": "calendar-feeds/re-ge-benefit-alerts.ics",
-      "count": 33,
+      "count": 34,
       "omittedUnknownDate": 0,
-      "sha256": "d8098b49412db8fc9a6aa57f41b479e637eb0970e14e9c9fed63c38870b397e2"
+      "sha256": "bda05cd942916d874936563c5ab28ac31ec0850aa2be2196542d57fc20014620"
     },
     {
       "id": "re-ge-media",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
-      "count": 38,
+      "count": 39,
       "omittedUnknownDate": 0,
-      "sha256": "28194d4ad959ef261bdf6f41b428c85547d91ff4e7abf4aa255ca41fdf872cf7"
+      "sha256": "e98365f92fe2e55b77284154ca6d033453e02a2e7e89682e014c804eea0813a4"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live-alerts.ics",
       "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "d851e9612f1924cfe051a55b082e848e8462cbe678a896665fef3b38a817efd6"
+      "sha256": "a99a92989139317edbffdf8e2360597e91058141d43c8cfe7cc8ffc00ffec9ff"
     },
     {
       "id": "tohokusan-benefit",
@@ -236,9 +236,9 @@
       "category": "benefit",
       "label": "いぎなり東北産 / 特典会・応募",
       "path": "calendar-feeds/tohokusan-benefit-alerts.ics",
-      "count": 5,
+      "count": 6,
       "omittedUnknownDate": 0,
-      "sha256": "f6d960eb6b92499585b73a9740e5088a22e2d282bca2f1ec3313b81e3af7b7dd"
+      "sha256": "d63da08fa44ee92203d127ebcaecaea32da3ac08e48b27272711a09460e0632c"
     },
     {
       "id": "tohokusan-media",

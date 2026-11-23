@@ -713,22 +713,41 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-7f9a964fc156ba086d0defabc163827bd1a0b4e7c72d18408c70413e42bee
  51f@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T024625Z
+DTSTAMP:20261123T151933Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261122T024625Z
-SEQUENCE:2
-DTSTART;VALUE=DATE:20261211
-SUMMARY:律月ひかる「ULTRA GT FES 2026」（時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n律月ひかるは第2部のみソロ出演。RE-GEは両部に出演
- するため、第2部で両方を見られます。開場・開演時刻
- は未確認。\n本人公式の開催日・本文記載を確認。 双
- 方の本人公式と主催公演ページを照合。 主催者の第1部
- ・第2部の出演一覧で出演する部を確認。\nhttps://madeintoh
- oku.com/contents/1129021\nhttps://madeintohoku.com/contents/1129023\nhttps
- ://re-ge.com/news/item-818/\nhttps://ultragt.radiomax.jp/fes
+LAST-MODIFIED:20261123T151933Z
+SEQUENCE:3
+DTSTART:20261211T093000Z
+SUMMARY:律月ひかる「ULTRA GT FES 2026」第2部
+DESCRIPTION:律月ひかるは第2部のみソロ出演。第2部にはRE-G
+ Eも出演。開場 18:00、開演 18:30（公演全体の予定、個別
+ 出番の時刻は未発表）。各部入れ替え制。\n出演はアー
+ ティスト公式、各部の開場・開演予定と受付期間は公
+ 式販売ページで確認。\nhttps://livepocket.jp/e/gtfes01\nhttps://m
+ adeintohoku.com/contents/1129021\nhttps://madeintohoku.com/contents/112902
+ 3\nhttps://re-ge.com/news/item-818/\nhttps://ultragt.radiomax.jp/fes
 LOCATION:渋谷ストリームホール
 URL:https://madeintohoku.com/contents/1129023
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a146cd9b29b7772fb80f98f2b3200fc81461aa72d4e45df859504bf3e6ee8
+ 975@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T151933Z
+CREATED:20261123T151933Z
+LAST-MODIFIED:20261123T151933Z
+SEQUENCE:0
+DTSTART:20261126T145900Z
+SUMMARY:ULTRA GT FES 2026 一般抽選締切
+DESCRIPTION:11/23 20:00から受付。各部6\,600円・別途1ドリンク
+ 。律月ひかるの出演は第2部のみ。\n出演はアーティス
+ ト公式、各部の開場・開演予定と受付期間は公式販売
+ ページで確認。\nhttps://livepocket.jp/e/gtfes01\nhttps://madeintoho
+ ku.com/contents/1129021\nhttps://madeintohoku.com/contents/1129023\nhttps:
+ //re-ge.com/news/item-818/
+LOCATION:LivePocket
+URL:https://livepocket.jp/e/gtfes01
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

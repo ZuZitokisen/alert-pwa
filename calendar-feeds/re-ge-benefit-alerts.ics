@@ -892,6 +892,36 @@ DESCRIPTION:ニューイヤーだよ！六本木アイドルフェスティ
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-c650ba041f3da913e1ae18ea10f971eb1f211ef88adb6b3cc6e2800c4d299
+ 50b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T151933Z
+CREATED:20261123T151933Z
+LAST-MODIFIED:20261123T151933Z
+SEQUENCE:0
+DTSTART:20261126T145900Z
+SUMMARY:ULTRA GT FES 2026 一般抽選締切
+DESCRIPTION:11/23 20:00から受付。各部6\,600円・別途1ドリンク
+ 。RE-GEは両部に出演。\n出演はアーティスト公式、各部
+ の開場・開演予定と受付期間は公式販売ページで確認
+ 。\nhttps://livepocket.jp/e/gtfes01\nhttps://madeintohoku.com/contents/11
+ 29021\nhttps://re-ge.com/news/item-818/\nhttps://re-ge.com/schedule/item-8
+ 19/
+LOCATION:LivePocket
+URL:https://livepocket.jp/e/gtfes01
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H59M
+DESCRIPTION:ULTRA GT FES 2026 一般抽選締切
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT59M
+DESCRIPTION:ULTRA GT FES 2026 一般抽選締切
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-ff1c475d3db20647fc060952ca11c9ff2063a1d9a43ed83f15be12fbdcbc7
  33c@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261116T033812Z

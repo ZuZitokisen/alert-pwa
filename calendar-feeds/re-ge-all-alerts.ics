@@ -25,28 +25,33 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-102eef82531fb3237a614fd8574e73f5a2612a8aa2578e26f61e5377f6a3e
  8af@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T024625Z
+DTSTAMP:20261123T151933Z
 CREATED:20261118T163521Z
-LAST-MODIFIED:20261122T024625Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20261211
-SUMMARY:FM FUJI「秋本帆華のウルトラGT」初の音楽イベント
- ～ULTRA GT FES 2026～（時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\nRE-GEは第1部・第2部に出演。第2部には律月ひかる（
- いぎなり東北産）もソロで出演。桧山ゆうみは別件の
- ため欠席。開場・開演時刻は未確認。\n本人公式スケジ
- ュール詳細のイベント日付属性・見出し・カテゴリ。
- 公開日を開催日として使用していません。 本人公式ニ
- ュース本文で会場・欠席告知を補足。 共演者の本人公
- 式と主催公演ページを照合。 主催者の第1部・第2部の
- 出演一覧で出演する部を確認。\nhttps://madeintohoku.com/conte
- nts/1129021\nhttps://re-ge.com/news/item-818/\nhttps://re-ge.com/schedule/
- item-819/\nhttps://ultragt.radiomax.jp/fes
+LAST-MODIFIED:20261123T151933Z
+SEQUENCE:4
+DTSTART:20261211T040000Z
+SUMMARY:ULTRA GT FES 2026 第1部
+DESCRIPTION:RE-GEは両部に出演。桧山ゆうみは欠席。開場 12:
+ 30、開演 13:00（公演全体の予定、個別出番の時刻は未発
+ 表）。各部入れ替え制。\n出演はアーティスト公式、各
+ 部の開場・開演予定と受付期間は公式販売ページで確
+ 認。\nhttps://livepocket.jp/e/gtfes01\nhttps://madeintohoku.com/contents
+ /1129021\nhttps://re-ge.com/news/item-818/\nhttps://re-ge.com/schedule/ite
+ m-819/\nhttps://ultragt.radiomax.jp/fes
 LOCATION:渋谷ストリームホール
 URL:https://re-ge.com/schedule/item-819/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT5H
+DESCRIPTION:ULTRA GT FES 2026 第1部
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:ULTRA GT FES 2026 第1部
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-36a2a68b9b6a98301a5c04db4147dc1da3b122812716089c7bea4ba41800a
@@ -1574,6 +1579,67 @@ ACTION:DISPLAY
 TRIGGER:-PT1H
 DESCRIPTION:#スタダ顔 ライブ 〜まじで頑張ろ！女のスタダ
  ！〜
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-c650ba041f3da913e1ae18ea10f971eb1f211ef88adb6b3cc6e2800c4d299
+ 50b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T151933Z
+CREATED:20261123T151933Z
+LAST-MODIFIED:20261123T151933Z
+SEQUENCE:0
+DTSTART:20261126T145900Z
+SUMMARY:ULTRA GT FES 2026 一般抽選締切
+DESCRIPTION:11/23 20:00から受付。各部6\,600円・別途1ドリンク
+ 。RE-GEは両部に出演。\n出演はアーティスト公式、各部
+ の開場・開演予定と受付期間は公式販売ページで確認
+ 。\nhttps://livepocket.jp/e/gtfes01\nhttps://madeintohoku.com/contents/11
+ 29021\nhttps://re-ge.com/news/item-818/\nhttps://re-ge.com/schedule/item-8
+ 19/
+LOCATION:LivePocket
+URL:https://livepocket.jp/e/gtfes01
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H59M
+DESCRIPTION:ULTRA GT FES 2026 一般抽選締切
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT59M
+DESCRIPTION:ULTRA GT FES 2026 一般抽選締切
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9ca16f8d40f319706fc846d96448b0d49771520739802aa6f452071e275af
+ e05@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T151933Z
+CREATED:20261123T151933Z
+LAST-MODIFIED:20261123T151933Z
+SEQUENCE:0
+DTSTART:20261211T093000Z
+SUMMARY:ULTRA GT FES 2026 第2部
+DESCRIPTION:RE-GEは両部に出演。桧山ゆうみは欠席。開場 18:
+ 00、開演 18:30（公演全体の予定、個別出番の時刻は未発
+ 表）。各部入れ替え制。\n出演はアーティスト公式、各
+ 部の開場・開演予定と受付期間は公式販売ページで確
+ 認。\nhttps://livepocket.jp/e/gtfes01\nhttps://madeintohoku.com/contents
+ /1129021\nhttps://re-ge.com/news/item-818/\nhttps://re-ge.com/schedule/ite
+ m-819/\nhttps://ultragt.radiomax.jp/fes
+LOCATION:渋谷ストリームホール
+URL:https://re-ge.com/schedule/item-819/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10H30M
+DESCRIPTION:ULTRA GT FES 2026 第2部
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:ULTRA GT FES 2026 第2部
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT

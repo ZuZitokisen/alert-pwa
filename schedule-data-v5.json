@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-23-loveone-tachikawa-release-details",
-  "generatedAt": "2026-11-23T13:15:49.248Z",
+  "version": "2026-11-24-ultra-gt-fes-details",
+  "generatedAt": "2026-11-23T15:19:33Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12752,15 +12752,15 @@
       "id": "re-ge-hourly-official-item-819",
       "source": "curated-calendar",
       "artistId": "re-ge",
-      "title": "FM FUJI「秋本帆華のウルトラGT」初の音楽イベント～ULTRA GT FES 2026～",
-      "start": "2026-12-11",
+      "title": "ULTRA GT FES 2026 第1部",
+      "start": "2026-12-11T13:00:00+09:00",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "EVENT",
       "location": "渋谷ストリームホール",
-      "note": "RE-GEは第1部・第2部に出演。第2部には律月ひかる（いぎなり東北産）もソロで出演。桧山ゆうみは別件のため欠席。開場・開演時刻は未確認。",
-      "evidence": "本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。 本人公式ニュース本文で会場・欠席告知を補足。 共演者の本人公式と主催公演ページを照合。 主催者の第1部・第2部の出演一覧で出演する部を確認。",
+      "note": "RE-GEは両部に出演。桧山ゆうみは欠席。開場 12:30、開演 13:00（公演全体の予定、個別出番の時刻は未発表）。各部入れ替え制。",
+      "evidence": "出演はアーティスト公式、各部の開場・開演予定と受付期間は公式販売ページで確認。",
       "sourceUrl": "https://re-ge.com/schedule/item-819/",
       "sources": [
         {
@@ -12782,10 +12782,30 @@
           "url": "https://ultragt.radiomax.jp/fes",
           "type": "organizer",
           "checkedAt": "2026-11-22T02:46:25.441Z"
+        },
+        {
+          "url": "https://livepocket.jp/e/gtfes01",
+          "type": "ticket_official",
+          "checkedAt": "2026-11-23T15:19:20Z"
         }
       ],
-      "checkedAt": "2026-11-22T02:46:25.441Z",
-      "timings": [],
+      "checkedAt": "2026-11-23T15:19:20Z",
+      "timings": [
+        {
+          "label": "開場予定",
+          "kind": "doors_open",
+          "at": "2026-12-11T12:30:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "開演予定（公演全体）",
+          "kind": "show_start",
+          "at": "2026-12-11T13:00:00+09:00",
+          "note": "個別の出演時刻ではありません。",
+          "status": "confirmed"
+        }
+      ],
       "deadline": null,
       "revision": 1,
       "present": true,
@@ -13254,20 +13274,35 @@
     },
     {
       "id": "tohokusan-ultragt-20261211",
-      "title": "律月ひかる「ULTRA GT FES 2026」",
-      "start": "2026-12-11",
+      "title": "律月ひかる「ULTRA GT FES 2026」第2部",
+      "start": "2026-12-11T18:30:00+09:00",
       "end": null,
       "location": "渋谷ストリームホール",
       "sourceUrl": "https://madeintohoku.com/contents/1129023",
-      "note": "律月ひかるは第2部のみソロ出演。RE-GEは両部に出演するため、第2部で両方を見られます。開場・開演時刻は未確認。",
-      "evidence": "本人公式の開催日・本文記載を確認。 双方の本人公式と主催公演ページを照合。 主催者の第1部・第2部の出演一覧で出演する部を確認。",
+      "note": "律月ひかるは第2部のみソロ出演。第2部にはRE-GEも出演。開場 18:00、開演 18:30（公演全体の予定、個別出番の時刻は未発表）。各部入れ替え制。",
+      "evidence": "出演はアーティスト公式、各部の開場・開演予定と受付期間は公式販売ページで確認。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-22T02:46:25.441Z",
-      "timings": [],
+      "checkedAt": "2026-11-23T15:19:20Z",
+      "timings": [
+        {
+          "label": "開場予定",
+          "kind": "doors_open",
+          "at": "2026-12-11T18:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "開演予定（公演全体）",
+          "kind": "show_start",
+          "at": "2026-12-11T18:30:00+09:00",
+          "note": "個別の出演時刻ではありません。",
+          "status": "confirmed"
+        }
+      ],
       "deadline": null,
       "revision": 1,
       "present": true,
@@ -13292,6 +13327,11 @@
           "url": "https://ultragt.radiomax.jp/fes",
           "type": "organizer",
           "checkedAt": "2026-11-22T02:46:25.441Z"
+        },
+        {
+          "url": "https://livepocket.jp/e/gtfes01",
+          "type": "ticket_official",
+          "checkedAt": "2026-11-23T15:19:20Z"
         }
       ]
     },
@@ -17537,6 +17577,177 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-cdj-20261227"
+    },
+    {
+      "id": "rege-ultragt-20261211-part2",
+      "source": "curated-calendar",
+      "artistId": "re-ge",
+      "title": "ULTRA GT FES 2026 第2部",
+      "start": "2026-12-11T18:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "渋谷ストリームホール",
+      "note": "RE-GEは両部に出演。桧山ゆうみは欠席。開場 18:00、開演 18:30（公演全体の予定、個別出番の時刻は未発表）。各部入れ替え制。",
+      "evidence": "出演はアーティスト公式、各部の開場・開演予定と受付期間は公式販売ページで確認。",
+      "sourceUrl": "https://re-ge.com/schedule/item-819/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/schedule/item-819/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-18T16:35:21.311Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-818/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T13:15:00.527Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1129021",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T09:11:15.696Z"
+        },
+        {
+          "url": "https://ultragt.radiomax.jp/fes",
+          "type": "organizer",
+          "checkedAt": "2026-11-22T02:46:25.441Z"
+        },
+        {
+          "url": "https://livepocket.jp/e/gtfes01",
+          "type": "ticket_official",
+          "checkedAt": "2026-11-23T15:19:20Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T15:19:20Z",
+      "timings": [
+        {
+          "label": "開場予定",
+          "kind": "doors_open",
+          "at": "2026-12-11T18:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "開演予定（公演全体）",
+          "kind": "show_start",
+          "at": "2026-12-11T18:30:00+09:00",
+          "note": "個別の出演時刻ではありません。",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "re-ge-hourly-official-item-819"
+    },
+    {
+      "id": "rege-ultragt-20261211-lottery-close",
+      "source": "curated-calendar",
+      "artistId": "re-ge",
+      "title": "ULTRA GT FES 2026 一般抽選締切",
+      "start": "2026-11-26T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "LivePocket",
+      "note": "11/23 20:00から受付。各部6,600円・別途1ドリンク。RE-GEは両部に出演。",
+      "evidence": "出演はアーティスト公式、各部の開場・開演予定と受付期間は公式販売ページで確認。",
+      "sourceUrl": "https://livepocket.jp/e/gtfes01",
+      "sources": [
+        {
+          "url": "https://livepocket.jp/e/gtfes01",
+          "type": "ticket_official",
+          "checkedAt": "2026-11-23T15:19:20Z"
+        },
+        {
+          "url": "https://re-ge.com/schedule/item-819/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-18T16:35:21.311Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-818/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-19T13:15:00.527Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1129021",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T09:11:15.696Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T15:19:20Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-11-23T20:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-11-26T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-11-26T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "re-ge-hourly-official-item-819"
+    },
+    {
+      "id": "tohokusan-ultragt-20261211-lottery-close",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "ULTRA GT FES 2026 一般抽選締切",
+      "start": "2026-11-26T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "LivePocket",
+      "note": "11/23 20:00から受付。各部6,600円・別途1ドリンク。律月ひかるの出演は第2部のみ。",
+      "evidence": "出演はアーティスト公式、各部の開場・開演予定と受付期間は公式販売ページで確認。",
+      "sourceUrl": "https://livepocket.jp/e/gtfes01",
+      "sources": [
+        {
+          "url": "https://livepocket.jp/e/gtfes01",
+          "type": "ticket_official",
+          "checkedAt": "2026-11-23T15:19:20Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1129023",
+          "type": "artist_official",
+          "checkedAt": "2026-11-22T02:46:25.441Z"
+        },
+        {
+          "url": "https://madeintohoku.com/contents/1129021",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T09:11:15.696Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-818/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-20T09:11:15.696Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T15:19:20Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-11-23T20:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-11-26T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-11-26T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-ultragt-20261211"
     }
   ],
   "notes": [
