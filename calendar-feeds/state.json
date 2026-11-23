@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ultra-gt-fes-details",
-  "dataGeneratedAt": "2026-11-23T15:19:33Z",
-  "inputSha256": "d6d0d80aee055546da3364075d0d291fa917b23df03377f7b7d8bc37cf805ff4",
+  "dataVersion": "2026-11-24-tohokusan-omiya-free-live",
+  "dataGeneratedAt": "2026-11-23T17:17:41Z",
+  "inputSha256": "4a01abeb39b0779c2c665f564d35422e9a2a9919bf5cc1a0ee4330106a427b7d",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9840,6 +9840,38 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-omiya-free-live-20261205\"]",
+      "uid": "public-v1-ed869d4bcc4ee9e4b2909a87884e1b39bc02c1f329e7580a05140c2ad3e97cae@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-omiya-free-live-20261205",
+        "category": "live",
+        "title": "「大宮は仙台のとなりフリーライブ」",
+        "start": "2026-12-05",
+        "end": null,
+        "allDay": false,
+        "location": "埼玉・大宮",
+        "publicNote": "同日に2回公演。会場名・開演時刻などの詳細は後日発表。\nいぎなり東北産公式の個別スケジュールで開催日・開催エリア・公演数を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1130236"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-23T17:17:41Z",
+      "modified": "2026-11-23T17:17:41Z",
+      "lastTiming": {
+        "start": "2026-12-05",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-live"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-sapporo-20261123\"]",
       "uid": "public-v1-354e463002133296849f14ff58c76aef1cf4687a6968eab797f34943f5f3255a@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -17017,5 +17049,5 @@
       ]
     }
   ],
-  "integritySha256": "7e6376522893fdd63efc2a8cd902a8f272bbf6f3e4221b976f07fc040594ee2e"
+  "integritySha256": "1c648a9f2941226270c9c03fa80fc8771e45a44da331b230b0150a5b24446542"
 }

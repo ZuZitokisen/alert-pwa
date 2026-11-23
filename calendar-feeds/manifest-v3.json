@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ultra-gt-fes-details",
-  "dataGeneratedAt": "2026-11-23T15:19:33Z",
+  "dataVersion": "2026-11-24-tohokusan-omiya-free-live",
+  "dataGeneratedAt": "2026-11-23T17:17:41Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "d05b584bab38c1daf6e328ee79ff8ae36a5fa6b32a2e0dd037c135f8c94eebc8",
+  "inputSha256": "f0507ca9a320d07c2ab7fe6e720fc5062066288de9025947eb3bcf71c530b5f5",
   "feeds": [
     {
       "id": "tokisen-all",

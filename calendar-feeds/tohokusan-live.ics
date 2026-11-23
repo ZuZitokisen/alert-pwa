@@ -218,6 +218,26 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-ed869d4bcc4ee9e4b2909a87884e1b39bc02c1f329e7580a05140c2ad3e97
+ cae@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T171741Z
+CREATED:20261123T171741Z
+LAST-MODIFIED:20261123T171741Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261205
+SUMMARY:「大宮は仙台のとなりフリーライブ」（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n同日に2回公演。会場名・開演時刻などの詳細は後
+ 日発表。\nいぎなり東北産公式の個別スケジュールで開
+ 催日・開催エリア・公演数を確認。\nhttps://madeintohoku.com
+ /contents/1130236
+LOCATION:埼玉・大宮
+URL:https://madeintohoku.com/contents/1130236
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-354e463002133296849f14ff58c76aef1cf4687a6968eab797f34943f5f32
  55a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T084531Z
