@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ultra-gt-fes-details",
-  "dataGeneratedAt": "2026-11-23T15:19:33Z",
+  "dataVersion": "2026-11-24-tohokusan-omiya-free-live",
+  "dataGeneratedAt": "2026-11-23T17:17:41Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "285a8ddc70b7339597cb0957867ed1100b853762d5c5ee31c8e7c72c75c9621f",
+  "inputSha256": "c6dbfeae6fdd69fac1123a04cad771e5fada185a7d6095cf9e4fec895e8fe3fe",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all.ics",
-      "count": 39,
+      "count": 40,
       "omittedUnknownDate": 0,
-      "sha256": "3c9ccbe20f10e9adb2173676f71d5dd4f6e101cc7982f982e66d8f1f00e8fc3e"
+      "sha256": "d23bd310def54f998daf1b9160fffd09a70e36f6fc3c6d47c9af1946e8705de3"
     },
     {
       "id": "tohokusan-live",
@@ -226,9 +226,9 @@
       "category": "live",
       "label": "いぎなり東北産 / ライブ・イベント",
       "path": "calendar-feeds/tohokusan-live.ics",
-      "count": 17,
+      "count": 18,
       "omittedUnknownDate": 0,
-      "sha256": "c33ed3a9f68e0348cf9b3d8a2690270140b5e80ec82ce2a12ec4aed74ece8766"
+      "sha256": "ee381ea307fc99c926a633595a83d3f935a29b02eddde4dccd70d90bb7bfd6ce"
     },
     {
       "id": "tohokusan-benefit",
