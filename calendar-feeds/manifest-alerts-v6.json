@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ebichu-yon-tame-tsurikomachi",
-  "dataGeneratedAt": "2026-11-23T19:19:48Z",
+  "dataVersion": "2026-11-24-pia-premium-ebichu-details",
+  "dataGeneratedAt": "2026-11-23T21:19:11Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a7a25c35105067700544631afe29b9fe1209ac109e0c288f5b8b362e654c29f6",
+  "inputSha256": "92b76001cc8aa80ea0e0caf3400c83d494e674362c6d456e8025328d120f7c89",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 202,
+      "count": 203,
       "omittedUnknownDate": 10,
-      "sha256": "12c68a0d8c66734b55df7624f3329b4e95b7c8b19225c4c51365f9196880a713"
+      "sha256": "fc3cbdc0cf8c764ea711246f179f71225e984a88472fb53a0e1a0bc27c829d08"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit-alerts.ics",
-      "count": 64,
+      "count": 65,
       "omittedUnknownDate": 5,
-      "sha256": "7f74b7c9de6b5a49ad20280035f36d870a939f5ee5e1b257b3f5abb0afb9ac15"
+      "sha256": "c5010bcd12891da7ad8f0978b9caef5fa9870289e73b7bcfbb3dbf90e7c394ac"
     },
     {
       "id": "tokisen-media",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all-alerts.ics",
       "count": 86,
       "omittedUnknownDate": 0,
-      "sha256": "badf07065e43a52f04057be9b263cdbc6e7cfb0ef798490e8fdcbb3e1f66937f"
+      "sha256": "b1c9e708a57ab80c672ac3ca6d799772e03c9e615ed4e22433f22a52699ed909"
     },
     {
       "id": "ebichu-live",
@@ -298,7 +298,7 @@
       "path": "calendar-feeds/ebichu-media-alerts.ics",
       "count": 48,
       "omittedUnknownDate": 0,
-      "sha256": "09906efeb7f9aaa21bf5e0ca83f837017466d273c2982737e6b75559ac36658f"
+      "sha256": "05e6818a35c626e34cdfc495dfc09e3540a2268eeefbf42a35d087f805f958e5"
     },
     {
       "id": "ebichu-other",
@@ -308,7 +308,7 @@
       "path": "calendar-feeds/ebichu-other-alerts.ics",
       "count": 1,
       "omittedUnknownDate": 0,
-      "sha256": "61dbdfa2d24442458e14cb121737d97f21666c19f9fc5761f2788d90541fb254"
+      "sha256": "67160267818b68dd7ebedc842298ceeff0e125b5dfe2f94a1e6410aaa3499260"
     },
     {
       "id": "batten-all",

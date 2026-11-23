@@ -621,16 +621,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-97e83a62d34c14b9728a35ae6812d92880035282a3a6c08888fe7a40ace80
  00e@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261123T191948Z
+DTSTAMP:20261123T211911Z
 CREATED:20261123T191948Z
-LAST-MODIFIED:20261123T191948Z
-SEQUENCE:0
+LAST-MODIFIED:20261123T211911Z
+SEQUENCE:1
 DTSTART:20261128T190800Z
+DTEND:20261128T191300Z
 SUMMARY:MBS「よんタメ」出演
 DESCRIPTION:安本彩花・風見和香・仲村悠菜が出演。公式の
  放送日表記は11月28日（土）28:08。個別の出演時刻は未
- 発表。\nエビ中公式の個別スケジュールで出演者と放送
- 開始を確認。\nhttps://www.shiritsuebichu.jp/media/96904/
+ 発表。\nエビ中公式で出演者と放送開始、MBS公式番組表
+ で放送終了を確認。\nhttps://www.mbs.jp/pgm_guide/1767020414.shtml
+ \nhttps://www.shiritsuebichu.jp/media/96904/
 LOCATION:MBS毎日放送
 URL:https://www.shiritsuebichu.jp/media/96904/
 STATUS:CONFIRMED
