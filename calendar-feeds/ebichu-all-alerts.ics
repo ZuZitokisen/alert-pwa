@@ -1495,6 +1495,29 @@ DESCRIPTION:MBSラジオ「えびちゅう☆なんやねん！」
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-97e83a62d34c14b9728a35ae6812d92880035282a3a6c08888fe7a40ace80
+ 00e@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T191948Z
+CREATED:20261123T191948Z
+LAST-MODIFIED:20261123T191948Z
+SEQUENCE:0
+DTSTART:20261128T190800Z
+SUMMARY:MBS「よんタメ」出演
+DESCRIPTION:安本彩花・風見和香・仲村悠菜が出演。公式の
+ 放送日表記は11月28日（土）28:08。個別の出演時刻は未
+ 発表。\nエビ中公式の個別スケジュールで出演者と放送
+ 開始を確認。\nhttps://www.shiritsuebichu.jp/media/96904/
+LOCATION:MBS毎日放送
+URL:https://www.shiritsuebichu.jp/media/96904/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:MBS「よんタメ」出演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1d4c46b0b81b87195a801519374a390c7c87cf3a28f5b78fecf1e4b3ff670
  229@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T091555Z
@@ -2266,5 +2289,26 @@ ACTION:DISPLAY
 TRIGGER:-PT1H
 DESCRIPTION:リーディング・オペラOp.4「トスカ」 夜公演
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-361d4cf38f7df30b6c49913639a86f77945e64da37f10359be1b2a0c006db
+ 4ab@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T191948Z
+CREATED:20261123T191948Z
+LAST-MODIFIED:20261123T191948Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+SUMMARY:映画「つりこまち」全国公開（仲村悠菜主演）（
+ 時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。
+ 上映時刻は劇場ごとに異なります。11月28日の舞台挨拶
+ とは別です。\nエビ中公式と映画公式で全国公開日を確
+ 認。\nhttps://www.shiritsuebichu.jp/media/96402/\nhttps://www.tsuri-koma
+ chi.jp/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/media/96402/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

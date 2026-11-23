@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-omiya-free-live",
-  "dataGeneratedAt": "2026-11-23T17:17:41Z",
-  "inputSha256": "4a01abeb39b0779c2c665f564d35422e9a2a9919bf5cc1a0ee4330106a427b7d",
+  "dataVersion": "2026-11-24-ebichu-yon-tame-tsurikomachi",
+  "dataGeneratedAt": "2026-11-23T19:19:48Z",
+  "inputSha256": "a7a25c35105067700544631afe29b9fe1209ac109e0c288f5b8b362e654c29f6",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3160,6 +3160,38 @@
       ]
     },
     {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mbs-yontame-20261129\"]",
+      "uid": "public-v1-97e83a62d34c14b9728a35ae6812d92880035282a3a6c08888fe7a40ace8000e@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mbs-yontame-20261129",
+        "category": "media",
+        "title": "MBS「よんタメ」出演",
+        "start": "2026-11-29T04:08:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MBS毎日放送",
+        "publicNote": "安本彩花・風見和香・仲村悠菜が出演。公式の放送日表記は11月28日（土）28:08。個別の出演時刻は未発表。\nエビ中公式の個別スケジュールで出演者と放送開始を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96904/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-23T19:19:48Z",
+      "modified": "2026-11-23T19:19:48Z",
+      "lastTiming": {
+        "start": "2026-11-29T04:08:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-media"
+      ]
+    },
+    {
       "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-media-96906-2026-11-25\"]",
       "uid": "public-v1-1d4c46b0b81b87195a801519374a390c7c87cf3a28f5b78fecf1e4b3ff670229@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -4153,6 +4185,39 @@
       "memberships": [
         "ebichu-all",
         "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-tsurikomachi-national-release-20261127\"]",
+      "uid": "public-v1-361d4cf38f7df30b6c49913639a86f77945e64da37f10359be1b2a0c006db4ab@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-tsurikomachi-national-release-20261127",
+        "category": "other",
+        "title": "映画「つりこまち」全国公開（仲村悠菜主演）",
+        "start": "2026-11-27",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。上映時刻は劇場ごとに異なります。11月28日の舞台挨拶とは別です。\nエビ中公式と映画公式で全国公開日を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/media/96402/",
+          "https://www.tsuri-komachi.jp/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-23T19:19:48Z",
+      "modified": "2026-11-23T19:19:48Z",
+      "lastTiming": {
+        "start": "2026-11-27",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-other"
       ]
     },
     {
@@ -17049,5 +17114,5 @@
       ]
     }
   ],
-  "integritySha256": "1c648a9f2941226270c9c03fa80fc8771e45a44da331b230b0150a5b24446542"
+  "integritySha256": "99bd6db6f7505aed0eb2127b18564c626e8f9c086374edf376c75d9cc8745141"
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-tohokusan-omiya-free-live",
-  "generatedAt": "2026-11-23T17:17:41Z",
+  "version": "2026-11-24-ebichu-yon-tame-tsurikomachi",
+  "generatedAt": "2026-11-23T19:19:48Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -17776,6 +17776,67 @@
       "revision": 1,
       "present": true,
       "groupId": "tohokusan-omiya-free-live-20261205"
+    },
+    {
+      "id": "ebichu-mbs-yontame-20261129",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "MBS「よんタメ」出演",
+      "start": "2026-11-29T04:08:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "MBS毎日放送",
+      "note": "安本彩花・風見和香・仲村悠菜が出演。公式の放送日表記は11月28日（土）28:08。個別の出演時刻は未発表。",
+      "evidence": "エビ中公式の個別スケジュールで出演者と放送開始を確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96904/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96904/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T19:19:48Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T19:19:48Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-mbs-yontame-20261129"
+    },
+    {
+      "id": "ebichu-tsurikomachi-national-release-20261127",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "映画「つりこまち」全国公開（仲村悠菜主演）",
+      "start": "2026-11-27",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "",
+      "note": "池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。上映時刻は劇場ごとに異なります。11月28日の舞台挨拶とは別です。",
+      "evidence": "エビ中公式と映画公式で全国公開日を確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/media/96402/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/media/96402/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T19:19:48Z"
+        },
+        {
+          "url": "https://www.tsuri-komachi.jp/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-23T19:19:48Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T19:19:48Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-tsurikomachi-national-release-20261127"
     }
   ],
   "notes": [
