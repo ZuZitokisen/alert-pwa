@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-23-loveone-golden-loveit-confirmed",
-  "generatedAt": "2026-11-23T03:18:22.633Z",
+  "version": "2026-11-23-loveone-tachikawa-release-details",
+  "generatedAt": "2026-11-23T13:15:49.248Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -11980,27 +11980,175 @@
       "groupId": "oneloveoneheart-loveit-2026-11-27"
     },
     {
+      "id": "oneloveoneheart-release-2026-11-29-start",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "立川立飛リリースイベント 商品購入整理番号 受付開始",
+      "start": "2026-11-28T19:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "AirWAIT",
+      "note": "購入順の整理番号。優先エリアの入場順とは別。先着で、予定数に達し次第終了。",
+      "evidence": "本人公式の個別案内で確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/live/live-7401/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/live/live-7401/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T13:15:49.248Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T13:15:49.248Z",
+      "timings": [
+        {
+          "label": "商品購入整理番号 受付開始",
+          "kind": "application_start",
+          "at": "2026-11-28T19:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-release-2026-11-29"
+    },
+    {
+      "id": "oneloveoneheart-release-2026-11-29-end",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "立川立飛リリースイベント 商品購入整理番号 受付終了",
+      "start": "2026-11-29T10:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "AirWAIT",
+      "note": "購入順の整理番号。優先エリアの入場順とは別。先着で、予定数に達し次第終了。",
+      "evidence": "本人公式の個別案内で確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/live/live-7401/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/live/live-7401/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T13:15:49.248Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T13:15:49.248Z",
+      "timings": [
+        {
+          "label": "商品購入整理番号 受付終了",
+          "kind": "application_end",
+          "at": "2026-11-29T10:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": "2026-11-29T10:00:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-release-2026-11-29"
+    },
+    {
+      "id": "oneloveoneheart-release-2026-11-29-sale",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "立川立飛リリースイベント 対象商品販売開始",
+      "start": "2026-11-29T10:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "BENEFIT",
+      "location": "ららぽーと立川立飛 2Fイベント広場",
+      "note": "購入整理番号の順に案内。優先エリア入場順とは別。",
+      "evidence": "本人公式の個別案内で確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/live/live-7401/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/live/live-7401/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T13:15:49.248Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T13:15:49.248Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-release-2026-11-29"
+    },
+    {
       "id": "oneloveoneheart-release-2026-11-29",
       "source": "curated-calendar",
       "artistId": "oneloveoneheart",
-      "title": "愛の証明 リリースイベント",
-      "start": "2026-11-29",
+      "title": "愛の証明 リリースイベント：ミニライブ",
+      "start": "2026-11-29T13:30:00+09:00",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "LIVE",
-      "location": "ららぽーと立川立飛",
-      "note": "日程・開催地のみ公式発表。開始時刻、特典会内容、購入受付などの詳細は未発表。",
-      "evidence": "本人側の公式発表で確認。時刻未発表は日付のみ。",
-      "sourceUrl": "https://5th.oneloveoneheart.jp/",
+      "location": "ららぽーと立川立飛 2Fイベント広場",
+      "note": "観覧無料。優先入場には整理番号付優先エリア入場券が必要。進行により時刻は前後する場合あり。",
+      "evidence": "本人公式の個別案内で確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/live/live-7401/",
       "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/live/live-7401/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T13:15:49.248Z"
+        },
         {
           "url": "https://5th.oneloveoneheart.jp/",
           "type": "artist_official",
           "checkedAt": "2026-11-18T06:18:35.860957Z"
         }
       ],
-      "checkedAt": "2026-11-18T06:18:35.860957Z",
+      "checkedAt": "2026-11-23T13:15:49.248Z",
+      "timings": [
+        {
+          "label": "優先入場集合",
+          "kind": "checkin_open",
+          "at": "2026-11-29T12:50:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        },
+        {
+          "label": "対象商品販売",
+          "kind": "sales_start",
+          "at": "2026-11-29T10:00:00+09:00",
+          "note": "",
+          "status": "confirmed"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-release-2026-11-29"
+    },
+    {
+      "id": "oneloveoneheart-release-2026-11-29-benefit",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "愛の証明 リリースイベント：特典会",
+      "start": "2026-11-29T14:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "BENEFIT",
+      "location": "ららぽーと立川立飛 2Fイベント広場",
+      "note": "14:30頃。進行により前後する場合あり。対象の参加券が必要。",
+      "evidence": "本人公式の個別案内で確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/live/live-7401/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/live/live-7401/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-23T13:15:49.248Z"
+        }
+      ],
+      "checkedAt": "2026-11-23T13:15:49.248Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
