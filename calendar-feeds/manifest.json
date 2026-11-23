@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-omiya-free-live",
-  "dataGeneratedAt": "2026-11-23T17:17:41Z",
+  "dataVersion": "2026-11-24-ebichu-yon-tame-tsurikomachi",
+  "dataGeneratedAt": "2026-11-23T19:19:48Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f0ec28c0487ea8384adbba11e655486bef9cce890c6461b00304276eab25531d",
+  "inputSha256": "b06bf91432cf1e8dd14949f7d13eae11cd806b48f2b4745be96e762f1301713e",
   "feeds": [
     {
       "id": "tokisen-all",

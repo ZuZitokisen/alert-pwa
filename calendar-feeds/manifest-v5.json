@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-omiya-free-live",
-  "dataGeneratedAt": "2026-11-23T17:17:41Z",
+  "dataVersion": "2026-11-24-ebichu-yon-tame-tsurikomachi",
+  "dataGeneratedAt": "2026-11-23T19:19:48Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "d92b22bb17d128b3ccfff843c3eadeba69a42208638d6b78aac1d1c913b9d9fc",
+  "inputSha256": "9fab90178246e60fd053d4354bbad9e346cbfb003e842f065f967d16532c13c8",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all.ics",
-      "count": 84,
+      "count": 86,
       "omittedUnknownDate": 0,
-      "sha256": "076ff781d69c031c2f324aa0d1bab992551957d049a57e5862551e9aed149f0c"
+      "sha256": "151a3397f43a7c9a4b793bdd1e5732c9fed4ca00b6a68aac25edea986991f7fd"
     },
     {
       "id": "ebichu-live",
@@ -296,9 +296,9 @@
       "category": "media",
       "label": "私立恵比寿中学 / メディア",
       "path": "calendar-feeds/ebichu-media.ics",
-      "count": 47,
+      "count": 48,
       "omittedUnknownDate": 0,
-      "sha256": "302059840f5fa76609888827f977319368e241db3b2aedddfdc2f04da6f4f0ef"
+      "sha256": "a50803740259f81307802db15f9c8045e134e8a7117189354eed9add3be72977"
     },
     {
       "id": "ebichu-other",
@@ -306,9 +306,9 @@
       "category": "other",
       "label": "私立恵比寿中学 / その他",
       "path": "calendar-feeds/ebichu-other.ics",
-      "count": 0,
+      "count": 1,
       "omittedUnknownDate": 0,
-      "sha256": "62b3bf08734afb9b0259fca620c65895df25d27ee9b029bb021c3ffe632e03b9"
+      "sha256": "b2c1219c3f5dd3f8db69430385cb80266626b0ac38b47859a1786b66e571da13"
     }
   ]
 }
