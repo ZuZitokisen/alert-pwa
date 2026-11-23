@@ -107,4 +107,24 @@ URL:https://madeintohoku.com/contents/1129140
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a146cd9b29b7772fb80f98f2b3200fc81461aa72d4e45df859504bf3e6ee8
+ 975@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T151933Z
+CREATED:20261123T151933Z
+LAST-MODIFIED:20261123T151933Z
+SEQUENCE:0
+DTSTART:20261126T145900Z
+SUMMARY:ULTRA GT FES 2026 一般抽選締切
+DESCRIPTION:11/23 20:00から受付。各部6\,600円・別途1ドリンク
+ 。律月ひかるの出演は第2部のみ。\n出演はアーティス
+ ト公式、各部の開場・開演予定と受付期間は公式販売
+ ページで確認。\nhttps://livepocket.jp/e/gtfes01\nhttps://madeintoho
+ ku.com/contents/1129021\nhttps://madeintohoku.com/contents/1129023\nhttps:
+ //re-ge.com/news/item-818/
+LOCATION:LivePocket
+URL:https://livepocket.jp/e/gtfes01
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
