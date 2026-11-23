@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-23-loveone-golden-loveit-confirmed",
-  "dataGeneratedAt": "2026-11-23T03:18:22.633Z",
+  "dataVersion": "2026-11-23-loveone-tachikawa-release-details",
+  "dataGeneratedAt": "2026-11-23T13:15:49.248Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "19b328bc18a6a10f35b91257f76fbac269216cf9c87d318ea8e75fff22d7ae70",
+  "inputSha256": "e01040d63114a095da01a4de8bd2665834a96303ab6d79b3c1ed8e754f2f4f58",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -166,9 +166,9 @@
       "category": "all",
       "label": "ONE LOVE ONE HEART / 全予定",
       "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
-      "count": 35,
+      "count": 39,
       "omittedUnknownDate": 0,
-      "sha256": "d86b8b3f7513b0c5b3fb38f9d986a324d741e930dd56031bdfdbbe3d59498296"
+      "sha256": "22ff0a6de747e9548c560bdb0882d5dec07de894a9638a55ff4e7519595833be"
     },
     {
       "id": "oneloveoneheart-live",
@@ -178,7 +178,7 @@
       "path": "calendar-feeds/oneloveoneheart-live-alerts.ics",
       "count": 11,
       "omittedUnknownDate": 0,
-      "sha256": "5b90d46b25147c1e9347bdbe14560ff8b903c5e0d25738f18d8e8ca04afa175b"
+      "sha256": "d7229eccbe03bf6cd1b04d2b10a9c2ebed538e0afed5da9547c812a7a4723d9d"
     },
     {
       "id": "oneloveoneheart-benefit",
@@ -186,9 +186,9 @@
       "category": "benefit",
       "label": "ONE LOVE ONE HEART / 特典会・応募",
       "path": "calendar-feeds/oneloveoneheart-benefit-alerts.ics",
-      "count": 12,
+      "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "74c5acc72bf09be1d62b4afc8fc7ae3c078ad0fd58f410a3cc96c5e79a8257a6"
+      "sha256": "b6e6b2ee0f1ddb948665de7b07ec6116c0ab7a208f19b9f80ec6baefc39eed93"
     },
     {
       "id": "oneloveoneheart-media",

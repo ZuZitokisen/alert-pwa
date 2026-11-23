@@ -4,6 +4,120 @@ PRODID:-//Alert PWA//Public Calendar Subscription//JA
 CALSCALE:GREGORIAN
 X-WR-CALNAME:ONE LOVE ONE HEART / 特典会・応募（通知あり）
 BEGIN:VEVENT
+UID:public-v1-a36421ba302c3446fae7fcf2e8ad811cf0043aca464d83fd8debcd43d2738
+ 4f3@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T131549Z
+CREATED:20261123T131549Z
+LAST-MODIFIED:20261123T131549Z
+SEQUENCE:0
+DTSTART:20261129T053000Z
+SUMMARY:愛の証明 リリースイベント：特典会
+DESCRIPTION:14:30頃。進行により前後する場合あり。対象の
+ 参加券が必要。\n本人公式の個別案内で確認。\nhttps://on
+ eloveoneheart.jp/live/live-7401/
+LOCATION:ららぽーと立川立飛 2Fイベント広場
+URL:https://oneloveoneheart.jp/live/live-7401/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT6H30M
+DESCRIPTION:愛の証明 リリースイベント：特典会
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:愛の証明 リリースイベント：特典会
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-79df5ecf21b7baa281310f36d8a1aa5541f96a6c40780a6ededbbfe41fffe
+ 99c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T131549Z
+CREATED:20261123T131549Z
+LAST-MODIFIED:20261123T131549Z
+SEQUENCE:0
+DTSTART:20261129T010000Z
+SUMMARY:立川立飛リリースイベント 商品購入整理番号 受
+ 付終了
+DESCRIPTION:購入順の整理番号。優先エリアの入場順とは別
+ 。先着で、予定数に達し次第終了。\n本人公式の個別案
+ 内で確認。\nhttps://oneloveoneheart.jp/live/live-7401/
+LOCATION:AirWAIT
+URL:https://oneloveoneheart.jp/live/live-7401/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:立川立飛リリースイベント 商品購入整理番号 
+ 受付終了
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:立川立飛リリースイベント 商品購入整理番号 
+ 受付終了
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-932ce36e76389f890c56f4a94eef36c56dbab97887459369297565559bcbf
+ 256@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T131549Z
+CREATED:20261123T131549Z
+LAST-MODIFIED:20261123T131549Z
+SEQUENCE:0
+DTSTART:20261129T010000Z
+SUMMARY:立川立飛リリースイベント 対象商品販売開始
+DESCRIPTION:購入整理番号の順に案内。優先エリア入場順と
+ は別。\n本人公式の個別案内で確認。\nhttps://oneloveonehear
+ t.jp/live/live-7401/
+LOCATION:ららぽーと立川立飛 2Fイベント広場
+URL:https://oneloveoneheart.jp/live/live-7401/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:立川立飛リリースイベント 対象商品販売開始
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:立川立飛リリースイベント 対象商品販売開始
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-66ed9b85eed88ac38b9dd7b6e9e5849814ef605f41024f24a157a883e3fe4
+ cf5@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T131549Z
+CREATED:20261123T131549Z
+LAST-MODIFIED:20261123T131549Z
+SEQUENCE:0
+DTSTART:20261128T100000Z
+SUMMARY:立川立飛リリースイベント 商品購入整理番号 受
+ 付開始
+DESCRIPTION:購入順の整理番号。優先エリアの入場順とは別
+ 。先着で、予定数に達し次第終了。\n本人公式の個別案
+ 内で確認。\nhttps://oneloveoneheart.jp/live/live-7401/
+LOCATION:AirWAIT
+URL:https://oneloveoneheart.jp/live/live-7401/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT11H
+DESCRIPTION:立川立飛リリースイベント 商品購入整理番号 
+ 受付開始
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:立川立飛リリースイベント 商品購入整理番号 
+ 受付開始
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-fe75bd29bd3ca1cb08984ebb0d000ded4cc21f834af7260caf6a4bec800af
  39c@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261118T062010Z
