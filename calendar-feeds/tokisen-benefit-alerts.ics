@@ -5,6 +5,26 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:超ときめき♡宣伝部 / 特典会・応募（通知あ
  り）
 BEGIN:VEVENT
+UID:public-v1-4b9bb6fa250bfa8249205be9720cddb52644c7c93c492581cc31ddf76917b
+ 196@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261123T211911Z
+CREATED:20261123T211911Z
+LAST-MODIFIED:20261123T211911Z
+SEQUENCE:0
+DTSTART:20261124T145900Z
+SUMMARY:超ときめき♡STAGE 2027 あけおめ新年会フォーエバ
+ ー ぴあプレミアム先行締切（かも？）
+DESCRIPTION:チケットぴあのプレミアム会員向け最速抽選「
+ いち早プレリザーブ」。11月30日締切の番組二次先行と
+ は別の受付枠。\n販売元のチケットぴあで個別受付を確
+ 認。とき宣側の同受付枠の告知は未確認。\nhttps://t.pia.j
+ p/pia/ticketInformation.do?lotRlsCd=40851
+LOCATION:
+URL:https://t.pia.jp/pia/ticketInformation.do?lotRlsCd=40851
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-637c8710c6c3c4285979503970a1d4bc8dc29193844faf09027354dce8b0e
  8e6@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261123T012214Z

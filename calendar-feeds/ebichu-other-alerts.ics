@@ -6,19 +6,21 @@ X-WR-CALNAME:私立恵比寿中学 / その他（通知あり）
 BEGIN:VEVENT
 UID:public-v1-361d4cf38f7df30b6c49913639a86f77945e64da37f10359be1b2a0c006db
  4ab@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261123T191948Z
+DTSTAMP:20261123T211911Z
 CREATED:20261123T191948Z
-LAST-MODIFIED:20261123T191948Z
-SEQUENCE:0
+LAST-MODIFIED:20261123T211911Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261127
 SUMMARY:映画「つりこまち」全国公開（仲村悠菜主演）（
  時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
  。\n池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。
  上映時刻は劇場ごとに異なります。11月28日の舞台挨拶
- とは別です。\nエビ中公式と映画公式で全国公開日を確
- 認。\nhttps://www.shiritsuebichu.jp/media/96402/\nhttps://www.tsuri-koma
- chi.jp/
+ とは別です。 数量限定の入場者特典はポストカード。
+ 記載のシリアル番号で仲村悠菜のサイン入り台本など
+ の抽選に応募できます。\nエビ中公式と映画公式で全国
+ 公開日を確認。\nhttps://www.shiritsuebichu.jp/media/96402/\nhttps:/
+ /www.tsuri-komachi.jp/\nhttps://www.tsuri-komachi.jp/theater
 LOCATION:
 URL:https://www.shiritsuebichu.jp/media/96402/
 STATUS:CONFIRMED

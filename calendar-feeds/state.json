@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ebichu-yon-tame-tsurikomachi",
-  "dataGeneratedAt": "2026-11-23T19:19:48Z",
-  "inputSha256": "a7a25c35105067700544631afe29b9fe1209ac109e0c288f5b8b362e654c29f6",
+  "dataVersion": "2026-11-24-pia-premium-ebichu-details",
+  "dataGeneratedAt": "2026-11-23T21:19:11Z",
+  "inputSha256": "92b76001cc8aa80ea0e0caf3400c83d494e674362c6d456e8025328d120f7c89",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3169,21 +3169,23 @@
         "category": "media",
         "title": "MBS「よんタメ」出演",
         "start": "2026-11-29T04:08:00+09:00",
-        "end": null,
+        "end": "2026-11-29T04:13:00+09:00",
         "allDay": false,
         "location": "MBS毎日放送",
-        "publicNote": "安本彩花・風見和香・仲村悠菜が出演。公式の放送日表記は11月28日（土）28:08。個別の出演時刻は未発表。\nエビ中公式の個別スケジュールで出演者と放送開始を確認。",
+        "publicNote": "安本彩花・風見和香・仲村悠菜が出演。公式の放送日表記は11月28日（土）28:08。個別の出演時刻は未発表。\nエビ中公式で出演者と放送開始、MBS公式番組表で放送終了を確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://www.mbs.jp/pgm_guide/1767020414.shtml",
           "https://www.shiritsuebichu.jp/media/96904/"
-        ]
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/media/96904/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-23T19:19:48Z",
-      "modified": "2026-11-23T19:19:48Z",
+      "modified": "2026-11-23T21:19:11Z",
       "lastTiming": {
         "start": "2026-11-29T04:08:00+09:00",
-        "end": null,
+        "end": "2026-11-29T04:13:00+09:00",
         "allDay": false
       },
       "memberships": [
@@ -4200,16 +4202,17 @@
         "end": null,
         "allDay": false,
         "location": "",
-        "publicNote": "池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。上映時刻は劇場ごとに異なります。11月28日の舞台挨拶とは別です。\nエビ中公式と映画公式で全国公開日を確認。",
+        "publicNote": "池袋HUMAXシネマズ、kino cinéma新宿ほかで全国公開。上映時刻は劇場ごとに異なります。11月28日の舞台挨拶とは別です。 数量限定の入場者特典はポストカード。記載のシリアル番号で仲村悠菜のサイン入り台本などの抽選に応募できます。\nエビ中公式と映画公式で全国公開日を確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://www.shiritsuebichu.jp/media/96402/",
-          "https://www.tsuri-komachi.jp/"
+          "https://www.tsuri-komachi.jp/",
+          "https://www.tsuri-komachi.jp/theater"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-23T19:19:48Z",
-      "modified": "2026-11-23T19:19:48Z",
+      "modified": "2026-11-23T21:19:11Z",
       "lastTiming": {
         "start": "2026-11-27",
         "end": null,
@@ -10236,6 +10239,38 @@
       "memberships": [
         "tohokusan-all",
         "tohokusan-live"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-20270124-pia-premium-deadline\"]",
+      "uid": "public-v1-4b9bb6fa250bfa8249205be9720cddb52644c7c93c492581cc31ddf76917b196@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-20270124-pia-premium-deadline",
+        "category": "benefit",
+        "title": "超ときめき♡STAGE 2027 あけおめ新年会フォーエバー ぴあプレミアム先行締切",
+        "start": "2026-11-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "チケットぴあのプレミアム会員向け最速抽選「いち早プレリザーブ」。11月30日締切の番組二次先行とは別の受付枠。\n販売元のチケットぴあで個別受付を確認。とき宣側の同受付枠の告知は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://t.pia.jp/pia/ticketInformation.do?lotRlsCd=40851"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-23T21:19:11Z",
+      "modified": "2026-11-23T21:19:11Z",
+      "lastTiming": {
+        "start": "2026-11-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-benefit"
       ]
     },
     {
@@ -17114,5 +17149,5 @@
       ]
     }
   ],
-  "integritySha256": "99bd6db6f7505aed0eb2127b18564c626e8f9c086374edf376c75d9cc8745141"
+  "integritySha256": "d60a53d092d177ed7baa57727cdc4cfe979de5ba4d384ddef79f2debda1bae3b"
 }
