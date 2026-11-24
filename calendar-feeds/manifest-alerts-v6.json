@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-horoyoi-yuina",
-  "dataGeneratedAt": "2026-11-24T01:17:30Z",
+  "dataVersion": "2026-11-24-ebichu-goods-horoyoi-viewing",
+  "dataGeneratedAt": "2026-11-24T03:16:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "597150119c83b44c1a03401583c415072ed987d0d12ef0a2acf49f746a78637a",
+  "inputSha256": "e8f53f58f39c78d55b080101d6b4eec8d661f82d5a4d9bd4f2dd3e2ad0167e00",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
       "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "836d084841a4d971a1c90890e3dd9129ce1e47d40e95030c1a1ef44aa6fdfdb7"
+      "sha256": "551579192e7513f7a8c94fad2e07242bcfbd1b92ecbae6fd363efe0ee51e484a"
     },
     {
       "id": "tohokusan-live",
@@ -248,7 +248,7 @@
       "path": "calendar-feeds/tohokusan-media-alerts.ics",
       "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "ecaa5c95d2216b1ce2da7fbb5ae678e06317d7264072ed596f9399527f27ab17"
+      "sha256": "943cd3718076cedf44b7afae81001f620ad3ba66b1f0763db0eed088ccf2ba02"
     },
     {
       "id": "tohokusan-other",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 86,
+      "count": 88,
       "omittedUnknownDate": 0,
-      "sha256": "b1c9e708a57ab80c672ac3ca6d799772e03c9e615ed4e22433f22a52699ed909"
+      "sha256": "c23e587768e14f3ad1fb0d53c9e86e955cab6e950a6928ca1cb706cf9cfe20e7"
     },
     {
       "id": "ebichu-live",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit-alerts.ics",
-      "count": 8,
+      "count": 10,
       "omittedUnknownDate": 0,
-      "sha256": "5f9d867e080547e8b21ea0b125e226a63a604ee99b6d8962d4765e4911c7d8fc"
+      "sha256": "8cec1f03ad187597bb89ae52fb6dca680aea061657d60accecc6bf30d25b2473"
     },
     {
       "id": "ebichu-media",

@@ -1358,6 +1358,44 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-669771e390af830503ae56eb7ad576be9f1101860a2e32f815815a4cc8ae0
+ 0ce@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261124T031653Z
+CREATED:20261124T031653Z
+LAST-MODIFIED:20261124T031653Z
+SEQUENCE:0
+DTSTART:20261130T145900Z
+SUMMARY:「SOUND OF EBICHU 2026」・中山莉子生誕生写真 受注締
+ 切
+DESCRIPTION:神奈川・兵庫公演の新作生写真と中山莉子26th
+ 生誕生写真が対象。在庫限りの商品とは別。\n私立恵比
+ 寿中学公式の事後通販告知で受注期間と在庫販売の開
+ 始を確認。\nhttps://www.shiritsuebichu.jp/news/16297/
+LOCATION:MAILIVIS（オンライン通販）
+URL:https://www.shiritsuebichu.jp/news/16297/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-559c171f934e67e3c4b198bc3050b5e8d35a83ded37b717c0e975e227d305
+ f59@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261124T031653Z
+CREATED:20261124T031653Z
+LAST-MODIFIED:20261124T031653Z
+SEQUENCE:0
+DTSTART:20261125T030000Z
+SUMMARY:「SOUND OF EBICHU 2026」グッズ・中山莉子生誕生写真 
+ 事後通販開始
+DESCRIPTION:生写真の受注と在庫限りのグッズ通販が同時に
+ 開始。11/30 23:59締切は受注生写真のみ。\n私立恵比寿中
+ 学公式の事後通販告知で受注期間と在庫販売の開始を
+ 確認。\nhttps://www.shiritsuebichu.jp/news/16297/
+LOCATION:MAILIVIS（オンライン通販）
+URL:https://www.shiritsuebichu.jp/news/16297/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1c525e40772c67c69fa1e3e0cf014897cdfa3ca55120ade794f1710de6bec
  b60@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T011450Z

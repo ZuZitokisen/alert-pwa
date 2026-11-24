@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-horoyoi-yuina",
-  "dataGeneratedAt": "2026-11-24T01:17:30Z",
+  "dataVersion": "2026-11-24-ebichu-goods-horoyoi-viewing",
+  "dataGeneratedAt": "2026-11-24T03:16:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "00e58efb06ce643f3945f7e15a0398977108322a48b41f053c5ce94ceeef1be1",
+  "inputSha256": "af6bad125de604169511aabbcc06735d57f4d45df0c0de9e2e7ffb8862975391",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all.ics",
       "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "3962f8bfd125ca7b1984861b8a98afb7d6dea65d2c04c1ff1db6514f6b231ad5"
+      "sha256": "e54e251cbbba1950a683a1441baf80722207604d6c5112e6626577a9e9d319b3"
     },
     {
       "id": "tohokusan-live",
@@ -248,7 +248,7 @@
       "path": "calendar-feeds/tohokusan-media.ics",
       "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "3e2cd9c0c49598fb2cd097e67920d37109a22d0a204646d95e1f1e73c6b1d541"
+      "sha256": "eb00e912a094aa5b2febfa30bd6a7fe3af17b9cbca6a3aa2c0dc247ae4d3ff09"
     },
     {
       "id": "tohokusan-other",
