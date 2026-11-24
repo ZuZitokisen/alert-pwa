@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-pia-premium-ebichu-details",
-  "generatedAt": "2026-11-23T21:19:11Z",
+  "version": "2026-11-24-tohokusan-horoyoi-yuina",
+  "generatedAt": "2026-11-24T01:17:30Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4601,6 +4601,39 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-sdd-20270110"
+    },
+    {
+      "id": "tohokusan-tbc-horoyoi-yuina-20261201",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "tbc「ひるまでウォッチン！」ほろ酔い結菜ちゃん（葉月結菜）",
+      "start": "2026-12-01T10:24:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "tbc東北放送",
+      "note": "10:24は番組の放送開始時刻です。コーナーの開始時刻は未発表。",
+      "evidence": "いぎなり東北産の公式個別告知で放送日、番組開始時刻と出演を確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1129024",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1129024",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T01:17:30Z"
+        },
+        {
+          "url": "https://www.tbc-sendai.co.jp/watchin/",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-24T01:17:30Z"
+        }
+      ],
+      "checkedAt": "2026-11-24T01:17:30Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-tbc-horoyoi-yuina-20261201"
     },
     {
       "source": "curated-calendar",
