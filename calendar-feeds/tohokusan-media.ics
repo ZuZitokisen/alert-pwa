@@ -288,6 +288,25 @@ STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-34dbe6d092d10f3e49f1d0d2f0c1f26cfb82a55830ff58d0489f7bd5820a1
+ dda@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261124T011730Z
+CREATED:20261124T011730Z
+LAST-MODIFIED:20261124T011730Z
+SEQUENCE:0
+DTSTART:20261201T012400Z
+SUMMARY:tbc「ひるまでウォッチン！」ほろ酔い結菜ちゃん
+ （葉月結菜）
+DESCRIPTION:10:24は番組の放送開始時刻です。コーナーの開
+ 始時刻は未発表。\nいぎなり東北産の公式個別告知で放
+ 送日、番組開始時刻と出演を確認。\nhttps://madeintohoku.com
+ /contents/1129024\nhttps://www.tbc-sendai.co.jp/watchin/
+LOCATION:tbc東北放送
+URL:https://madeintohoku.com/contents/1129024
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-21b45e429a5107cf7a6df733b300e532bee044659fb2a098cb07f0d3256ea
  b8e@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T012018Z

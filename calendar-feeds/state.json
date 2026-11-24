@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-pia-premium-ebichu-details",
-  "dataGeneratedAt": "2026-11-23T21:19:11Z",
-  "inputSha256": "92b76001cc8aa80ea0e0caf3400c83d494e674362c6d456e8025328d120f7c89",
+  "dataVersion": "2026-11-24-tohokusan-horoyoi-yuina",
+  "dataGeneratedAt": "2026-11-24T01:17:30Z",
+  "inputSha256": "597150119c83b44c1a03401583c415072ed987d0d12ef0a2acf49f746a78637a",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -10106,6 +10106,39 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-tbc-horoyoi-yuina-20261201\"]",
+      "uid": "public-v1-34dbe6d092d10f3e49f1d0d2f0c1f26cfb82a55830ff58d0489f7bd5820a1dda@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-tbc-horoyoi-yuina-20261201",
+        "category": "media",
+        "title": "tbc「ひるまでウォッチン！」ほろ酔い結菜ちゃん（葉月結菜）",
+        "start": "2026-12-01T10:24:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "tbc東北放送",
+        "publicNote": "10:24は番組の放送開始時刻です。コーナーの開始時刻は未発表。\nいぎなり東北産の公式個別告知で放送日、番組開始時刻と出演を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1129024",
+          "https://www.tbc-sendai.co.jp/watchin/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-24T01:17:30Z",
+      "modified": "2026-11-24T01:17:30Z",
+      "lastTiming": {
+        "start": "2026-12-01T10:24:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-media"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-tbs-sasuke-idol-complete-20261220\"]",
       "uid": "public-v1-21b45e429a5107cf7a6df733b300e532bee044659fb2a098cb07f0d3256eab8e@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -17149,5 +17182,5 @@
       ]
     }
   ],
-  "integritySha256": "d60a53d092d177ed7baa57727cdc4cfe979de5ba4d384ddef79f2debda1bae3b"
+  "integritySha256": "b6449608ec9c51cb471891cc09a7c28c82311af8ae6833527b06c84b71355ff8"
 }
