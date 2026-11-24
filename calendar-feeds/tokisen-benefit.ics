@@ -77,6 +77,27 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-406432ece698f32b0d86ad34de15ce88e6e2016dbff647559651fd193b74d
+ 8bf@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261124T111647Z
+CREATED:20261124T111647Z
+LAST-MODIFIED:20261124T111647Z
+SEQUENCE:0
+DTSTART:20261126T090000Z
+SUMMARY:どきどきクリスマスパーティー2026 注釈付き指定
+ 席 先着販売開始
+DESCRIPTION:12/12・13公演の通常指定席は完売。注釈付き指
+ 定席は11/26 18:00からチケットぴあで先着販売、10\,800円
+ （税込）。数量限定で売り切れ次第終了。着席指定の
+ 販売なし。席番号は各公演当日に表示。見えにくい・
+ 聴き取りづらい場合があります。\n本人公式の個別告知
+ で確認。\nhttps://toki-sen.com/contents/1130907?tag=all
+LOCATION:チケットぴあ（オンライン）
+URL:https://toki-sen.com/contents/1130907?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-971c7eca06c607bb8aa2bf5ac4d5a2faaa763fecfcdfdc6d90f778e631f2d
  c0a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T052158Z
