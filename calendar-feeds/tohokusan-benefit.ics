@@ -108,6 +108,32 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-6fe535f0d9fa51650d8a25c9e0accc3dcbf5fcf4639aea268954544e93043
+ d25@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261124T131823Z
+CREATED:20261124T131823Z
+LAST-MODIFIED:20261124T131823Z
+SEQUENCE:0
+DTSTART:20261125T080000Z
+SUMMARY:水ヨントン♡11月25日お話し会（かも？）
+DESCRIPTION:17:00 葉月結菜・安杜羽加・吉瀬真珠・桜ひなの
+ ・伊達花彩／18:00 北美梨寧・藤谷美海／19:00 律月ひか
+ る・橘花怜。各開始時刻は販売元掲載。受付状況・空
+ き枠は販売ページをご確認ください。\n販売元の公開個
+ 別ページ9名分で日付と時刻を照合。本人公式の原投稿
+ は未確認。\nhttps://talkport.com/a/1350/1232\nhttps://talkport.com/pu
+ blishers/36656bdc/live\nhttps://talkport.com/publishers/396fe8d9/live\nhtt
+ ps://talkport.com/publishers/3d70336d/live\nhttps://talkport.com/publisher
+ s/63c1a510/live\nhttps://talkport.com/publishers/a10a4ffc/live\nhttps://ta
+ lkport.com/publishers/acd474a3/live\nhttps://talkport.com/publishers/ce45e
+ a65/live\nhttps://talkport.com/publishers/fa6b325f/live\nhttps://talkport.
+ com/publishers/fe62c357/live
+LOCATION:Talkport（オンライン）
+URL:https://talkport.com/a/1350/1232
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-a146cd9b29b7772fb80f98f2b3200fc81461aa72d4e45df859504bf3e6ee8
  975@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261123T151933Z

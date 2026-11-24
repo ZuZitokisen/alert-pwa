@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tokisen-xmas-seats-rege-keion",
-  "dataGeneratedAt": "2026-11-24T11:16:47Z",
+  "dataVersion": "2026-11-24-tohokusan-talkport-1125",
+  "dataGeneratedAt": "2026-11-24T13:18:23Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f0cbf81b82152180ae958ad39a5a787679fe76b92800753ed67071e9dbf2b28c",
+  "inputSha256": "5ff17c7c9eff8167f41c2afafdf0a758dab944f2e7c73212328b7e8be3555231",
   "feeds": [
     {
       "id": "tokisen-all",
