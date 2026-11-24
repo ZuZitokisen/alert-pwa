@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-divercity-tokisen-xmas",
-  "dataGeneratedAt": "2026-11-24T09:17:42Z",
+  "dataVersion": "2026-11-24-tokisen-xmas-seats-rege-keion",
+  "dataGeneratedAt": "2026-11-24T11:16:47Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f06c2bafbb139b91b6d88ced94c1d5ddd22ad9fddde2416fe492e755e9cbb1f2",
+  "inputSha256": "de04529edf1c918f6107aaa5803bce6c5aa7ad8b17b3fd6d6c18d61ee1e77097",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 203,
+      "count": 204,
       "omittedUnknownDate": 10,
-      "sha256": "b9eb99874c9b35181e6b1e9590032cc62babe57946d382d7d3af0936c4891492"
+      "sha256": "24620f98cc84df63329de37cca4910fda7498a441e2459d08049b22a8f6799a8"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live.ics",
       "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "21c2b23f1208dfc772862aaad58f2313c6d66e94be22d5dd95f2d02a543e428e"
+      "sha256": "ff709b9402592c6391172f8eb920f507ee4ebf0ca1d7614442bf5e5b3ca5ba0d"
     },
     {
       "id": "tokisen-benefit",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit.ics",
-      "count": 65,
+      "count": 66,
       "omittedUnknownDate": 5,
-      "sha256": "d0764ea3a19f468346b69fbd4a62db96e6a698035e5b606c16ce56105cc37d75"
+      "sha256": "a53bb0814f101ba12550e57616f300279777065666d68b661f3e15c3342e755c"
     },
     {
       "id": "tokisen-media",
@@ -68,7 +68,7 @@
       "path": "calendar-feeds/re-ge-all.ics",
       "count": 65,
       "omittedUnknownDate": 0,
-      "sha256": "5f6678ff735a301e917d5884fb2d0065bbba229be248d72a924e5a310c948fd5"
+      "sha256": "6e27d45a08afbb6a0ea8ab1409012898126fc0f81ee0e2ba6e2b7902abaea611"
     },
     {
       "id": "re-ge-live",
@@ -88,7 +88,7 @@
       "path": "calendar-feeds/re-ge-benefit.ics",
       "count": 34,
       "omittedUnknownDate": 0,
-      "sha256": "6e683d6b9d9e708746cc23868aca6d1155a503661b60debd65cc4c963ea0ee22"
+      "sha256": "3b916161c695442c1652baf04bfc121409e9a0622833f89dd14acda48fbb29e6"
     },
     {
       "id": "re-ge-media",
