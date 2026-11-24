@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-pia-premium-ebichu-details",
-  "dataGeneratedAt": "2026-11-23T21:19:11Z",
+  "dataVersion": "2026-11-24-tohokusan-horoyoi-yuina",
+  "dataGeneratedAt": "2026-11-24T01:17:30Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "dbcfc10b08a0e8b44af0f1e0f2b1ea7832bd83752d451c0a22b855c2d82fa64f",
+  "inputSha256": "055bd311ce4eb12f2372c245150ea620d95a74842385d44abe2c65565ceaf32d",
   "feeds": [
     {
       "id": "tokisen-all",
