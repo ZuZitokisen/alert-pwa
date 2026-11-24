@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-tohokusan-horoyoi-yuina",
-  "generatedAt": "2026-11-24T01:17:30Z",
+  "version": "2026-11-24-ebichu-goods-horoyoi-viewing",
+  "generatedAt": "2026-11-24T03:16:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4613,7 +4613,7 @@
       "status": "confirmed",
       "category": "TV",
       "location": "tbc東北放送",
-      "note": "10:24は番組の放送開始時刻です。コーナーの開始時刻は未発表。",
+      "note": "10:24は番組の放送開始時刻です。コーナーの開始時刻は未発表。 コーナーはtbc公式YouTubeでも配信。12/1放送分の公開日時と動画URLは未確認。",
       "evidence": "いぎなり東北産の公式個別告知で放送日、番組開始時刻と出演を確認。",
       "sourceUrl": "https://madeintohoku.com/contents/1129024",
       "sources": [
@@ -4625,10 +4625,10 @@
         {
           "url": "https://www.tbc-sendai.co.jp/watchin/",
           "type": "broadcaster_official",
-          "checkedAt": "2026-11-24T01:17:30Z"
+          "checkedAt": "2026-11-24T03:16:53Z"
         }
       ],
-      "checkedAt": "2026-11-24T01:17:30Z",
+      "checkedAt": "2026-11-24T03:16:53Z",
       "timings": [],
       "deadline": null,
       "revision": 1,

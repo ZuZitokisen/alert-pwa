@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-horoyoi-yuina",
-  "dataGeneratedAt": "2026-11-24T01:17:30Z",
+  "dataVersion": "2026-11-24-ebichu-goods-horoyoi-viewing",
+  "dataGeneratedAt": "2026-11-24T03:16:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "055bd311ce4eb12f2372c245150ea620d95a74842385d44abe2c65565ceaf32d",
+  "inputSha256": "ea2bc534b51657464ce50fccf4904881e2ac6c03d40606e2e89d284536186247",
   "feeds": [
     {
       "id": "tokisen-all",

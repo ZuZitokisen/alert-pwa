@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-horoyoi-yuina",
-  "dataGeneratedAt": "2026-11-24T01:17:30Z",
-  "inputSha256": "597150119c83b44c1a03401583c415072ed987d0d12ef0a2acf49f746a78637a",
+  "dataVersion": "2026-11-24-ebichu-goods-horoyoi-viewing",
+  "dataGeneratedAt": "2026-11-24T03:16:53Z",
+  "inputSha256": "e8f53f58f39c78d55b080101d6b4eec8d661f82d5a4d9bd4f2dd3e2ad0167e00",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3762,6 +3762,70 @@
       "memberships": [
         "ebichu-all",
         "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-sound-nakayama-goods-20261125-close\"]",
+      "uid": "public-v1-669771e390af830503ae56eb7ad576be9f1101860a2e32f815815a4cc8ae00ce@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-sound-nakayama-goods-20261125-close",
+        "category": "benefit",
+        "title": "「SOUND OF EBICHU 2026」・中山莉子生誕生写真 受注締切",
+        "start": "2026-11-30T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MAILIVIS（オンライン通販）",
+        "publicNote": "神奈川・兵庫公演の新作生写真と中山莉子26th生誕生写真が対象。在庫限りの商品とは別。\n私立恵比寿中学公式の事後通販告知で受注期間と在庫販売の開始を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16297/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-24T03:16:53Z",
+      "modified": "2026-11-24T03:16:53Z",
+      "lastTiming": {
+        "start": "2026-11-30T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-sound-nakayama-goods-20261125-open\"]",
+      "uid": "public-v1-559c171f934e67e3c4b198bc3050b5e8d35a83ded37b717c0e975e227d305f59@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-sound-nakayama-goods-20261125-open",
+        "category": "benefit",
+        "title": "「SOUND OF EBICHU 2026」グッズ・中山莉子生誕生写真 事後通販開始",
+        "start": "2026-11-25T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "MAILIVIS（オンライン通販）",
+        "publicNote": "生写真の受注と在庫限りのグッズ通販が同時に開始。11/30 23:59締切は受注生写真のみ。\n私立恵比寿中学公式の事後通販告知で受注期間と在庫販売の開始を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16297/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-24T03:16:53Z",
+      "modified": "2026-11-24T03:16:53Z",
+      "lastTiming": {
+        "start": "2026-11-25T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
       ]
     },
     {
@@ -10118,16 +10182,16 @@
         "end": null,
         "allDay": false,
         "location": "tbc東北放送",
-        "publicNote": "10:24は番組の放送開始時刻です。コーナーの開始時刻は未発表。\nいぎなり東北産の公式個別告知で放送日、番組開始時刻と出演を確認。",
+        "publicNote": "10:24は番組の放送開始時刻です。コーナーの開始時刻は未発表。 コーナーはtbc公式YouTubeでも配信。12/1放送分の公開日時と動画URLは未確認。\nいぎなり東北産の公式個別告知で放送日、番組開始時刻と出演を確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://madeintohoku.com/contents/1129024",
           "https://www.tbc-sendai.co.jp/watchin/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-24T01:17:30Z",
-      "modified": "2026-11-24T01:17:30Z",
+      "modified": "2026-11-24T03:16:53Z",
       "lastTiming": {
         "start": "2026-12-01T10:24:00+09:00",
         "end": null,
@@ -17182,5 +17246,5 @@
       ]
     }
   ],
-  "integritySha256": "b6449608ec9c51cb471891cc09a7c28c82311af8ae6833527b06c84b71355ff8"
+  "integritySha256": "2eede1b420ee2c8dcebe7119dce6fc1623c0b0b448a0fdf9c47d7d67ec4278c5"
 }
