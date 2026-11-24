@@ -95,6 +95,61 @@ DESCRIPTION:初！いぎなりアリーナライブ グッズ事前通販
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-3f2517c1ffc7517587a336bc4d68a45f3c6775f15414a4f5ac9eea6ff822d
+ b8a@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261124T091742Z
+CREATED:20261124T091742Z
+LAST-MODIFIED:20261124T091742Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261201
+SUMMARY:いぎなり東北産 Happy APPLE Holidaysクリスマス 開催初
+ 日（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n12月1日〜25日開催。館内装飾・フォトスポット、メ
+ ッセージ付きMV、先着ノベルティ、X・Instagram抽選。企
+ 画ごとの条件・時間は施設案内へ。12月24日のファンミ
+ ーティングは別カード。\n本人公式の企画告知と施設公
+ 式で開催期間を確認。\nhttps://madeintohoku.com/contents/1131601\
+ nhttps://mitsui-shopping-park.com/divercity-tokyo/event/3688304.html
+LOCATION:ダイバーシティ東京 プラザ
+URL:https://madeintohoku.com/contents/1131601
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f34dbfe3274cef42937915dd338f1a2856dd56440888a399d555ec1a5457a
+ 865@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261124T091742Z
+CREATED:20261124T091742Z
+LAST-MODIFIED:20261124T091742Z
+SEQUENCE:0
+DTSTART:20261224T090000Z
+SUMMARY:いぎなり東北産 Happy APPLE Holidaysクリスマス ファン
+ ミーティング
+DESCRIPTION:18:00開始予定、終了未発表。施設公式Xフォロワ
+ ーを対象に先着で参加可能。受付方法などは後日発表
+ 、荒天中止の場合あり。\n本人公式の公演詳細と施設公
+ 式で日時・会場を確認。\nhttps://madeintohoku.com/contents/11316
+ 01\nhttps://mitsui-shopping-park.com/divercity-tokyo/event/3688304.html
+LOCATION:ダイバーシティ東京 プラザ 2F フェスティバル広
+ 場
+URL:https://madeintohoku.com/contents/1131601
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10H
+DESCRIPTION:いぎなり東北産 Happy APPLE Holidaysクリスマス フ
+ ァンミーティング
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:いぎなり東北産 Happy APPLE Holidaysクリスマス フ
+ ァンミーティング
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-7ae5da076d8408096ec5370729469d867460190d50a83f97f92bb6fa43f7d
  90d@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261122T004915Z
