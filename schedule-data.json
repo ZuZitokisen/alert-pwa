@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-ebichu-goods-horoyoi-viewing",
-  "generatedAt": "2026-11-24T03:16:53Z",
+  "version": "2026-11-24-tohokusan-divercity-tokisen-xmas",
+  "generatedAt": "2026-11-24T09:17:42Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -5347,7 +5347,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "京王アリーナTOKYO",
-      "note": "終了時刻は未発表。",
+      "note": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1124898",
       "sources": [
@@ -5355,9 +5355,14 @@
           "url": "https://toki-sen.com/contents/1124898",
           "type": "artist_official",
           "checkedAt": "2026-11-11T08:39:22Z"
+        },
+        {
+          "url": "https://toki-sen.com/contents/1130907?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T09:17:42Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:39:22Z",
+      "checkedAt": "2026-11-24T09:17:42Z",
       "timings": [
         {
           "label": "イベント開場",
@@ -5447,7 +5452,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "京王アリーナTOKYO",
-      "note": "終了時刻は未発表。",
+      "note": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1124898",
       "sources": [
@@ -5455,9 +5460,14 @@
           "url": "https://toki-sen.com/contents/1124898",
           "type": "artist_official",
           "checkedAt": "2026-11-11T08:39:22Z"
+        },
+        {
+          "url": "https://toki-sen.com/contents/1130907?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T09:17:42Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:39:22Z",
+      "checkedAt": "2026-11-24T09:17:42Z",
       "timings": [
         {
           "label": "イベント開場",

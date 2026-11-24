@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ebichu-goods-horoyoi-viewing",
-  "dataGeneratedAt": "2026-11-24T03:16:53Z",
+  "dataVersion": "2026-11-24-tohokusan-divercity-tokisen-xmas",
+  "dataGeneratedAt": "2026-11-24T09:17:42Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "e8f53f58f39c78d55b080101d6b4eec8d661f82d5a4d9bd4f2dd3e2ad0167e00",
+  "inputSha256": "7323256d80e416f69d4c79e26c6fe0dd2d92d2beb662aa76d08f535f9eb7a1d5",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all-alerts.ics",
       "count": 203,
       "omittedUnknownDate": 10,
-      "sha256": "fc3cbdc0cf8c764ea711246f179f71225e984a88472fb53a0e1a0bc27c829d08"
+      "sha256": "603e70fd60d357a853c6d4e4fa619bc571b24fc38b10adb15c43ade05f442964"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live-alerts.ics",
       "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "3bf6c4995d04ecb343f04aa2ced6c6f624fc076295677012be897894a3bc1385"
+      "sha256": "44d7eab933b4b9f9da8befd68ad2e98d13fe4781cb67bccb4164d1beca4edc2d"
     },
     {
       "id": "tokisen-benefit",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
-      "count": 41,
+      "count": 43,
       "omittedUnknownDate": 0,
-      "sha256": "551579192e7513f7a8c94fad2e07242bcfbd1b92ecbae6fd363efe0ee51e484a"
+      "sha256": "033ec079c2ba021b04635c7859649e53621c7b62936376bb1f5758c5071dadd0"
     },
     {
       "id": "tohokusan-live",
@@ -226,9 +226,9 @@
       "category": "live",
       "label": "いぎなり東北産 / ライブ・イベント",
       "path": "calendar-feeds/tohokusan-live-alerts.ics",
-      "count": 18,
+      "count": 20,
       "omittedUnknownDate": 0,
-      "sha256": "2728a2b8c6251eb213a209bc2a0f4a57f4b6e4b6be794931fede672349550523"
+      "sha256": "20041c7249721f011fadca3645c0e64d39f343f088e7899a87ea46d3ff135d3c"
     },
     {
       "id": "tohokusan-benefit",

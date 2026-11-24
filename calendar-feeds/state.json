@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ebichu-goods-horoyoi-viewing",
-  "dataGeneratedAt": "2026-11-24T03:16:53Z",
-  "inputSha256": "e8f53f58f39c78d55b080101d6b4eec8d661f82d5a4d9bd4f2dd3e2ad0167e00",
+  "dataVersion": "2026-11-24-tohokusan-divercity-tokisen-xmas",
+  "dataGeneratedAt": "2026-11-24T09:17:42Z",
+  "inputSha256": "7323256d80e416f69d4c79e26c6fe0dd2d92d2beb662aa76d08f535f9eb7a1d5",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9074,6 +9074,72 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-divercity-christmas-20261201\"]",
+      "uid": "public-v1-3f2517c1ffc7517587a336bc4d68a45f3c6775f15414a4f5ac9eea6ff822db8a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-divercity-christmas-20261201",
+        "category": "live",
+        "title": "いぎなり東北産 Happy APPLE Holidaysクリスマス 開催初日",
+        "start": "2026-12-01",
+        "end": null,
+        "allDay": false,
+        "location": "ダイバーシティ東京 プラザ",
+        "publicNote": "12月1日〜25日開催。館内装飾・フォトスポット、メッセージ付きMV、先着ノベルティ、X・Instagram抽選。企画ごとの条件・時間は施設案内へ。12月24日のファンミーティングは別カード。\n本人公式の企画告知と施設公式で開催期間を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1131601",
+          "https://mitsui-shopping-park.com/divercity-tokyo/event/3688304.html"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-24T09:17:42Z",
+      "modified": "2026-11-24T09:17:42Z",
+      "lastTiming": {
+        "start": "2026-12-01",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-live"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-divercity-christmas-fanmeeting-20261224\"]",
+      "uid": "public-v1-f34dbfe3274cef42937915dd338f1a2856dd56440888a399d555ec1a5457a865@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-divercity-christmas-fanmeeting-20261224",
+        "category": "live",
+        "title": "いぎなり東北産 Happy APPLE Holidaysクリスマス ファンミーティング",
+        "start": "2026-12-24T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ダイバーシティ東京 プラザ 2F フェスティバル広場",
+        "publicNote": "18:00開始予定、終了未発表。施設公式Xフォロワーを対象に先着で参加可能。受付方法などは後日発表、荒天中止の場合あり。\n本人公式の公演詳細と施設公式で日時・会場を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1131601",
+          "https://mitsui-shopping-park.com/divercity-tokyo/event/3688304.html"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-24T09:17:42Z",
+      "modified": "2026-11-24T09:17:42Z",
+      "lastTiming": {
+        "start": "2026-12-24T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-live"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-fmfuji-20261122\"]",
       "uid": "public-v1-7ae5da076d8408096ec5370729469d867460190d50a83f97f92bb6fa43f7d90d@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -10451,15 +10517,16 @@
         "end": null,
         "allDay": false,
         "location": "京王アリーナTOKYO",
-        "publicNote": "終了時刻は未発表。\n本人側の公式発表で確認。",
+        "publicNote": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://toki-sen.com/contents/1124898"
+          "https://toki-sen.com/contents/1124898",
+          "https://toki-sen.com/contents/1130907?tag=all"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-24T09:17:42Z",
       "lastTiming": {
         "start": "2026-12-12T17:00:00+09:00",
         "end": null,
@@ -10483,15 +10550,16 @@
         "end": null,
         "allDay": false,
         "location": "京王アリーナTOKYO",
-        "publicNote": "終了時刻は未発表。\n本人側の公式発表で確認。",
+        "publicNote": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://toki-sen.com/contents/1124898"
+          "https://toki-sen.com/contents/1124898",
+          "https://toki-sen.com/contents/1130907?tag=all"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-11T09:32:46.032709Z",
+      "modified": "2026-11-24T09:17:42Z",
       "lastTiming": {
         "start": "2026-12-13T15:00:00+09:00",
         "end": null,
@@ -17246,5 +17314,5 @@
       ]
     }
   ],
-  "integritySha256": "2eede1b420ee2c8dcebe7119dce6fc1623c0b0b448a0fdf9c47d7d67ec4278c5"
+  "integritySha256": "418190a70c75ae9010a15207d27e5ae4094177f49beb837d681cca51775f24b0"
 }

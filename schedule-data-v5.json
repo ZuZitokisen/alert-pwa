@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-ebichu-goods-horoyoi-viewing",
-  "generatedAt": "2026-11-24T03:16:53Z",
+  "version": "2026-11-24-tohokusan-divercity-tokisen-xmas",
+  "generatedAt": "2026-11-24T09:17:42Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -5380,7 +5380,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "京王アリーナTOKYO",
-      "note": "終了時刻は未発表。",
+      "note": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1124898",
       "sources": [
@@ -5388,9 +5388,14 @@
           "url": "https://toki-sen.com/contents/1124898",
           "type": "artist_official",
           "checkedAt": "2026-11-11T08:39:22Z"
+        },
+        {
+          "url": "https://toki-sen.com/contents/1130907?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T09:17:42Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:39:22Z",
+      "checkedAt": "2026-11-24T09:17:42Z",
       "timings": [
         {
           "label": "イベント開場",
@@ -5480,7 +5485,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "京王アリーナTOKYO",
-      "note": "終了時刻は未発表。",
+      "note": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1124898",
       "sources": [
@@ -5488,9 +5493,14 @@
           "url": "https://toki-sen.com/contents/1124898",
           "type": "artist_official",
           "checkedAt": "2026-11-11T08:39:22Z"
+        },
+        {
+          "url": "https://toki-sen.com/contents/1130907?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T09:17:42Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:39:22Z",
+      "checkedAt": "2026-11-24T09:17:42Z",
       "timings": [
         {
           "label": "イベント開場",
@@ -17982,6 +17992,72 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-sound-nakayama-goods-20261125"
+    },
+    {
+      "id": "tohokusan-divercity-christmas-20261201",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "いぎなり東北産 Happy APPLE Holidaysクリスマス 開催初日",
+      "start": "2026-12-01",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "ダイバーシティ東京 プラザ",
+      "note": "12月1日〜25日開催。館内装飾・フォトスポット、メッセージ付きMV、先着ノベルティ、X・Instagram抽選。企画ごとの条件・時間は施設案内へ。12月24日のファンミーティングは別カード。",
+      "evidence": "本人公式の企画告知と施設公式で開催期間を確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1131601",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1131601",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T09:17:42Z"
+        },
+        {
+          "url": "https://mitsui-shopping-park.com/divercity-tokyo/event/3688304.html",
+          "type": "organizer",
+          "checkedAt": "2026-11-24T09:17:42Z"
+        }
+      ],
+      "checkedAt": "2026-11-24T09:17:42Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-divercity-christmas-2026"
+    },
+    {
+      "id": "tohokusan-divercity-christmas-fanmeeting-20261224",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "いぎなり東北産 Happy APPLE Holidaysクリスマス ファンミーティング",
+      "start": "2026-12-24T18:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "ダイバーシティ東京 プラザ 2F フェスティバル広場",
+      "note": "18:00開始予定、終了未発表。施設公式Xフォロワーを対象に先着で参加可能。受付方法などは後日発表、荒天中止の場合あり。",
+      "evidence": "本人公式の公演詳細と施設公式で日時・会場を確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1131601",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1131601",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T09:17:42Z"
+        },
+        {
+          "url": "https://mitsui-shopping-park.com/divercity-tokyo/event/3688304.html",
+          "type": "organizer",
+          "checkedAt": "2026-11-24T09:17:42Z"
+        }
+      ],
+      "checkedAt": "2026-11-24T09:17:42Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-divercity-christmas-2026"
     }
   ],
   "notes": [

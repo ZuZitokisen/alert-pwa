@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-ebichu-goods-horoyoi-viewing",
-  "dataGeneratedAt": "2026-11-24T03:16:53Z",
+  "dataVersion": "2026-11-24-tohokusan-divercity-tokisen-xmas",
+  "dataGeneratedAt": "2026-11-24T09:17:42Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f78a8f3ea0ae001b759c881256a49c427172e143d51033de7a8717f1d072bee4",
+  "inputSha256": "efab4be8f97938dca16545ece11f532fb379e7f4dbba6696d60235294b0bafb2",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 203,
       "omittedUnknownDate": 10,
-      "sha256": "c928fa88a4e32fec4a4127d83d0eda05c5e0d4a353532828cdd538dd5f73a7e4"
+      "sha256": "b9eb99874c9b35181e6b1e9590032cc62babe57946d382d7d3af0936c4891492"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live.ics",
       "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "cf1fdc423c490db072bbca152d2affdaed187d07b1839e829462a087aa515583"
+      "sha256": "21c2b23f1208dfc772862aaad58f2313c6d66e94be22d5dd95f2d02a543e428e"
     },
     {
       "id": "tokisen-benefit",
