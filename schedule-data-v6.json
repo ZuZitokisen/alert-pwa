@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-tokisen-xmas-seats-rege-keion",
-  "generatedAt": "2026-11-24T11:16:47Z",
+  "version": "2026-11-24-tohokusan-talkport-1125",
+  "generatedAt": "2026-11-24T13:18:23Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -19353,6 +19353,79 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-christmas-2026"
+    },
+    {
+      "id": "tohokusan-talkport-suiyonton-20261125",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "水ヨントン♡11月25日お話し会",
+      "start": "2026-11-25T17:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "BENEFIT",
+      "location": "Talkport（オンライン）",
+      "note": "17:00 葉月結菜・安杜羽加・吉瀬真珠・桜ひなの・伊達花彩／18:00 北美梨寧・藤谷美海／19:00 律月ひかる・橘花怜。各開始時刻は販売元掲載。受付状況・空き枠は販売ページをご確認ください。",
+      "evidence": "販売元の公開個別ページ9名分で日付と時刻を照合。本人公式の原投稿は未確認。",
+      "sourceUrl": "https://talkport.com/a/1350/1232",
+      "sources": [
+        {
+          "url": "https://talkport.com/a/1350/1232",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/fe62c357/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/ce45ea65/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/3d70336d/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/a10a4ffc/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/acd474a3/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/63c1a510/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/36656bdc/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/396fe8d9/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        },
+        {
+          "url": "https://talkport.com/publishers/fa6b325f/live",
+          "type": "seller_official",
+          "checkedAt": "2026-11-24T13:18:23Z"
+        }
+      ],
+      "checkedAt": "2026-11-24T13:18:23Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-talkport-suiyonton-20261125"
     }
   ],
   "notes": [

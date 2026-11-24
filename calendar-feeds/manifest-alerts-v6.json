@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tokisen-xmas-seats-rege-keion",
-  "dataGeneratedAt": "2026-11-24T11:16:47Z",
+  "dataVersion": "2026-11-24-tohokusan-talkport-1125",
+  "dataGeneratedAt": "2026-11-24T13:18:23Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "980dc20cbfb05d7c7bf5656e6bf3375551d910ae9dc0b654f58e3e48f980a942",
+  "inputSha256": "ff97b54e40661910381ff6c9fb7bc3132b42d54e2ebd21a7471b3747aec4b3c6",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
-      "count": 43,
+      "count": 44,
       "omittedUnknownDate": 0,
-      "sha256": "033ec079c2ba021b04635c7859649e53621c7b62936376bb1f5758c5071dadd0"
+      "sha256": "53941d129593afaeced2a9802469936307861a5d503d36008f7405ae08411aaa"
     },
     {
       "id": "tohokusan-live",
@@ -236,9 +236,9 @@
       "category": "benefit",
       "label": "いぎなり東北産 / 特典会・応募",
       "path": "calendar-feeds/tohokusan-benefit-alerts.ics",
-      "count": 6,
+      "count": 7,
       "omittedUnknownDate": 0,
-      "sha256": "d63da08fa44ee92203d127ebcaecaea32da3ac08e48b27272711a09460e0632c"
+      "sha256": "d44bbf6a64cf3f0717294a3231b0252133a73744661a776a1302ac4b4d4fcc4c"
     },
     {
       "id": "tohokusan-media",
