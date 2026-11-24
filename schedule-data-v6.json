@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-tohokusan-divercity-tokisen-xmas",
-  "generatedAt": "2026-11-24T09:17:42Z",
+  "version": "2026-11-24-tokisen-xmas-seats-rege-keion",
+  "generatedAt": "2026-11-24T11:16:47Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2853,8 +2853,8 @@
       "allDay": false,
       "status": "confirmed",
       "category": "REMIND",
-      "location": "HMV&BOOKS SHIBUYA 6F イベントスペースA",
-      "note": "開催予定とは別の受付・販売日時です。在庫・当選・参加を保証しません。 ",
+      "location": "HMV&BOOKS SHIBUYA 6F 特設レジ",
+      "note": "規定枚数に達し次第配券終了。特典会は18:00から6FイベントスペースA。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/schedule/item-770/",
       "sources": [
@@ -2862,9 +2862,14 @@
           "url": "https://re-ge.com/schedule/item-770/",
           "type": "artist_official",
           "checkedAt": "2026-11-11T08:41:14Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-766/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T11:16:47Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:41:14Z",
+      "checkedAt": "2026-11-24T11:16:47Z",
       "timings": [
         {
           "label": "2nd Single発売記念 ユニット特典会【軽音】 CD販売・配券開始",
@@ -2888,7 +2893,7 @@
       "status": "confirmed",
       "category": "BENEFIT",
       "location": "HMV&BOOKS SHIBUYA 6F イベントスペースA",
-      "note": "森瀬こころは当日の出演ユニット一覧に含まれないため、この20時を軽音メンバーの終了時刻へ転用しない。 対象CDの会場購入で参加券を配布。上限到達で終了。参加券の枚数・種類は公式を確認。",
+      "note": "出演：白石るり・禾本珠彩・桧山ゆうみ・那須ほほみ。6F特設レジで17:00から対象CD購入・配券。各列は途切れ次第終了、終了時刻は未発表。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://re-ge.com/schedule/item-770/",
       "sources": [
@@ -2896,9 +2901,14 @@
           "url": "https://re-ge.com/schedule/item-770/",
           "type": "artist_official",
           "checkedAt": "2026-11-11T08:41:14Z"
+        },
+        {
+          "url": "https://re-ge.com/news/item-766/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T11:16:47Z"
         }
       ],
-      "checkedAt": "2026-11-11T08:41:14Z",
+      "checkedAt": "2026-11-24T11:16:47Z",
       "timings": [
         {
           "label": "CD販売・配券開始",
@@ -5380,7 +5390,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "京王アリーナTOKYO",
-      "note": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。",
+      "note": "終了時刻は未発表。 12/12・13公演の通常指定席は完売。注釈付き指定席は11/26 18:00からチケットぴあで先着販売、10,800円（税込）。数量限定で売り切れ次第終了。着席指定の販売なし。席番号は各公演当日に表示。見えにくい・聴き取りづらい場合があります。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1124898",
       "sources": [
@@ -5392,10 +5402,10 @@
         {
           "url": "https://toki-sen.com/contents/1130907?tag=all",
           "type": "artist_official",
-          "checkedAt": "2026-11-24T09:17:42Z"
+          "checkedAt": "2026-11-24T11:16:47Z"
         }
       ],
-      "checkedAt": "2026-11-24T09:17:42Z",
+      "checkedAt": "2026-11-24T11:16:47Z",
       "timings": [
         {
           "label": "イベント開場",
@@ -5485,7 +5495,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "京王アリーナTOKYO",
-      "note": "終了時刻は未発表。 11/24の公演シリーズの公式ニュース見出しで、指定席完売と注釈付き指定席の先着販売が告知されました。対象公演・販売開始時刻・価格は記事本文未確認。",
+      "note": "終了時刻は未発表。 12/12・13公演の通常指定席は完売。注釈付き指定席は11/26 18:00からチケットぴあで先着販売、10,800円（税込）。数量限定で売り切れ次第終了。着席指定の販売なし。席番号は各公演当日に表示。見えにくい・聴き取りづらい場合があります。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1124898",
       "sources": [
@@ -5497,10 +5507,10 @@
         {
           "url": "https://toki-sen.com/contents/1130907?tag=all",
           "type": "artist_official",
-          "checkedAt": "2026-11-24T09:17:42Z"
+          "checkedAt": "2026-11-24T11:16:47Z"
         }
       ],
-      "checkedAt": "2026-11-24T09:17:42Z",
+      "checkedAt": "2026-11-24T11:16:47Z",
       "timings": [
         {
           "label": "イベント開場",
@@ -19309,6 +19319,40 @@
       "revision": 1,
       "present": true,
       "groupId": "tohokusan-divercity-christmas-2026"
+    },
+    {
+      "id": "tokisen-christmas-2026-limited-view-sales-open",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "どきどきクリスマスパーティー2026 注釈付き指定席 先着販売開始",
+      "start": "2026-11-26T18:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "チケットぴあ（オンライン）",
+      "note": "12/12・13公演の通常指定席は完売。注釈付き指定席は11/26 18:00からチケットぴあで先着販売、10,800円（税込）。数量限定で売り切れ次第終了。着席指定の販売なし。席番号は各公演当日に表示。見えにくい・聴き取りづらい場合があります。",
+      "evidence": "本人公式の個別告知で確認。",
+      "sourceUrl": "https://toki-sen.com/contents/1130907?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1130907?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-24T11:16:47Z"
+        }
+      ],
+      "checkedAt": "2026-11-24T11:16:47Z",
+      "timings": [
+        {
+          "label": "注釈付き指定席販売開始",
+          "kind": "application_start",
+          "at": "2026-11-26T18:00:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-christmas-2026"
     }
   ],
   "notes": [
