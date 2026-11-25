@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-talkport-1125",
-  "dataGeneratedAt": "2026-11-24T13:18:23Z",
+  "dataVersion": "2026-11-25-ebichu-superblue-gift",
+  "dataGeneratedAt": "2026-11-25T05:20:05Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "76853789380923c92b30deb1295d670e9e6de77f52728ca7bc1edb78a41c3d3b",
+  "inputSha256": "fd723419e4ea2427adb04b3fea5e495eb8d5fb0843831a4eecfbd8199e5e4f82",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 204,
       "omittedUnknownDate": 10,
-      "sha256": "24620f98cc84df63329de37cca4910fda7498a441e2459d08049b22a8f6799a8"
+      "sha256": "7037ac1440a25c873e3be09893e5e5a8ff474350fb7686dcdc2e5c1feb0889fd"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media.ics",
       "count": 126,
       "omittedUnknownDate": 2,
-      "sha256": "de7a80169abadab1b5acd79d845d69f805e5a1dac4e84e2e1ca86ec262e525a5"
+      "sha256": "d71848f3bf2521a281c5839ed780c6b73f7979fc7167b7815399cac21c12f556"
     },
     {
       "id": "tokisen-other",

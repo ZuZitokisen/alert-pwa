@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-tohokusan-talkport-1125",
-  "generatedAt": "2026-11-24T13:18:23Z",
+  "version": "2026-11-25-ebichu-superblue-gift",
+  "generatedAt": "2026-11-25T05:20:05Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3567,7 +3567,7 @@
       "status": "confirmed",
       "category": "STREAM",
       "location": "ABEMA",
-      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。",
+      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。 11/25にエビ中公式掲載の配信表で14:20〜17:00区間に超ときめき♡宣伝部のパフォーマンスを確認。個別の開始・終了時刻は不明。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1122612",
       "sources": [
@@ -3585,9 +3585,14 @@
           "url": "https://abema.tv/lp/gift-onair",
           "type": "broadcaster_official",
           "checkedAt": "2026-11-22T21:20:56Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16117/",
+          "type": "co_performer_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
         }
       ],
-      "checkedAt": "2026-11-22T21:20:56Z",
+      "checkedAt": "2026-11-25T05:20:05Z",
       "timings": [
         {
           "label": "配信枠開始（本人出番ではありません）",
@@ -13310,14 +13315,14 @@
       "end": "2026-11-29T15:00:00+09:00",
       "location": "SGCホール有明",
       "sourceUrl": "https://madeintohoku.com/contents/1101783",
-      "note": "いぎなり東北産の出演枠は14:10〜15:00。イベント全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMAのSPECIAL3無料配信を案内：https://abema.go.link/kWQg5",
+      "note": "いぎなり東北産の出演枠は14:10〜15:00。イベント全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMAのSPECIAL3無料配信を案内：https://abema.go.link/kWQg5 11/25公開の配信表では19:10〜22:00の区間に掲載。個別配信時刻未発表、現地とは別。",
       "evidence": "本人公式の個別出演時刻・会場と配信案内を確認。公演全体の開始時刻と区別。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-19T09:46:35.640Z",
+      "checkedAt": "2026-11-25T05:20:05Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -13328,6 +13333,11 @@
           "url": "https://madeintohoku.com/contents/1101783",
           "type": "artist_official",
           "checkedAt": "2026-11-19T09:46:35.640Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16117/",
+          "type": "co_performer_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
         }
       ]
     },
