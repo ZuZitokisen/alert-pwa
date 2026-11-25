@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-25-cdj-frontarea-result",
-  "dataGeneratedAt": "2026-11-25T11:18:57Z",
+  "dataVersion": "hourly-2026-11-25T13:04:47.502Z",
+  "dataGeneratedAt": "2026-11-25T13:04:47.502Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a9c82c1fe33e5523b276e21063ffa7b17c730cce73a7deb23afd77f93e1f7f15",
+  "inputSha256": "6f38c44329a5f133762a50069aaa27294d82d7c95c4663b7b578c7ceb9f70166",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -166,9 +166,9 @@
       "category": "all",
       "label": "ONE LOVE ONE HEART / 全予定",
       "path": "calendar-feeds/oneloveoneheart-all.ics",
-      "count": 39,
+      "count": 40,
       "omittedUnknownDate": 0,
-      "sha256": "31d318618b32c427b610de49c8333780aa572afe63f34fa68a45e14002ad0961"
+      "sha256": "9deaed0a84022df5cf1b552ea0233fe2f791b62c09697920d526bfc578db80c8"
     },
     {
       "id": "oneloveoneheart-live",
@@ -196,9 +196,9 @@
       "category": "media",
       "label": "ONE LOVE ONE HEART / メディア",
       "path": "calendar-feeds/oneloveoneheart-media.ics",
-      "count": 10,
+      "count": 11,
       "omittedUnknownDate": 0,
-      "sha256": "4ae1656f3b1d73188658ffec6f55cd3778002fc40d21ba5b17eecb309dfdd75d"
+      "sha256": "83bd2354428e19827230ee3c7ffcb3ae2a12a43d8d01e8ef8407ea47c9553c48"
     },
     {
       "id": "oneloveoneheart-other",

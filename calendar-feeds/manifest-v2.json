@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-25-cdj-frontarea-result",
-  "dataGeneratedAt": "2026-11-25T11:18:57Z",
+  "dataVersion": "hourly-2026-11-25T13:04:47.502Z",
+  "dataGeneratedAt": "2026-11-25T13:04:47.502Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f41fe5f3e7fed94ee3e608d2e62f6f394fb81cf312760b0febd4223b043a6ba4",
+  "inputSha256": "33015aaa02b5cd3da6f199d23df4a539818356fe098281557c1af8871f3e171d",
   "feeds": [
     {
       "id": "tokisen-all",

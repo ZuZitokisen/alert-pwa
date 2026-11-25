@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-25-cdj-frontarea-result",
-  "dataGeneratedAt": "2026-11-25T11:18:57Z",
-  "inputSha256": "a9c82c1fe33e5523b276e21063ffa7b17c730cce73a7deb23afd77f93e1f7f15",
+  "dataVersion": "hourly-2026-11-25T13:04:47.502Z",
+  "dataGeneratedAt": "2026-11-25T13:04:47.502Z",
+  "inputSha256": "6f38c44329a5f133762a50069aaa27294d82d7c95c4663b7b578c7ceb9f70166",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4604,6 +4604,40 @@
       "modified": "2026-11-18T06:20:10Z",
       "lastTiming": {
         "start": "2026-11-20T19:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "oneloveoneheart-all",
+        "oneloveoneheart-media"
+      ]
+    },
+    {
+      "key": "[\"oneloveoneheart\",\"curated-calendar\",\"oneloveoneheart-hourly-fc-ca07bedf-dd6e-4529-8fd3-d30c3af30815\"]",
+      "uid": "public-v1-90e2230b85932583c2174de7e8d4027645f02cb350e354840a9214045d732b2c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "oneloveoneheart",
+        "source": "curated-calendar",
+        "id": "oneloveoneheart-hourly-fc-ca07bedf-dd6e-4529-8fd3-d30c3af30815",
+        "category": "media",
+        "title": "TBS「ゴールデンラヴィット！」（藤咲）",
+        "start": "2026-11-26",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "公式FCカレンダー掲載日。開始時刻・終了時刻・会場詳細は未確認。一覧内部時刻は管理用の場合があるため採用していません。\n本人公式FCの一般公開カレンダーで日付・タイトルを確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://oneloveoneheart.officialfc.jp/calendars/2026/11",
+          "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815"
+        ],
+        "sourceUrl": "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815"
+      },
+      "sequence": 0,
+      "created": "2026-11-25T13:04:47.502Z",
+      "modified": "2026-11-25T13:04:47.502Z",
+      "lastTiming": {
+        "start": "2026-11-26",
         "end": null,
         "allDay": false
       },
@@ -17615,5 +17649,5 @@
       ]
     }
   ],
-  "integritySha256": "c90a326efdf0b9b6814300e2648fbfdb55ed6e813078b7ed5d727fadce6e5906"
+  "integritySha256": "87fcb806e2b4299ee5f1722b6861f59fff6de1b5734fa239e556d02bfd5f8cd2"
 }

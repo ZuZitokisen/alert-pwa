@@ -111,6 +111,29 @@ DESCRIPTION:藤咲碧羽：ハマダ歌謡祭★オオカミ少年
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-90e2230b85932583c2174de7e8d4027645f02cb350e354840a9214045d732
+ b2c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261125T130447Z
+CREATED:20261125T130447Z
+LAST-MODIFIED:20261125T130447Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+SUMMARY:TBS「ゴールデンラヴィット！」（藤咲）（時刻未
+ 定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n公式FCカレンダー掲載日。開始時刻・終了時刻・会
+ 場詳細は未確認。一覧内部時刻は管理用の場合がある
+ ため採用していません。\n本人公式FCの一般公開カレン
+ ダーで日付・タイトルを確認。\nhttps://oneloveoneheart.offici
+ alfc.jp/calendars/2026/11\nhttps://oneloveoneheart.officialfc.jp/schedules
+ /ca07bedf-dd6e-4529-8fd3-d30c3af30815
+LOCATION:
+URL:https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3
+ -d30c3af30815
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-0e95be1d0375624f2ed640ad03a06f4893ef9153a0942738b801aa591df87
  90d@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261118T062010Z

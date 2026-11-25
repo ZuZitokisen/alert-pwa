@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-25-cdj-frontarea-result",
-  "generatedAt": "2026-11-25T11:18:57Z",
+  "version": "hourly-2026-11-25T13:04:47.502Z",
+  "generatedAt": "2026-11-25T13:04:47.502Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -19660,6 +19660,39 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-cdj-20261227"
+    },
+    {
+      "id": "oneloveoneheart-hourly-fc-ca07bedf-dd6e-4529-8fd3-d30c3af30815",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "TBS「ゴールデンラヴィット！」（藤咲）",
+      "start": "2026-11-26",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "",
+      "note": "公式FCカレンダー掲載日。開始時刻・終了時刻・会場詳細は未確認。一覧内部時刻は管理用の場合があるため採用していません。",
+      "evidence": "本人公式FCの一般公開カレンダーで日付・タイトルを確認。",
+      "sourceUrl": "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.officialfc.jp/calendars/2026/11",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T13:04:47.502Z"
+        },
+        {
+          "url": "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T13:04:47.502Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T13:04:47.502Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-hourly-fc-ca07bedf-dd6e-4529-8fd3-d30c3af30815"
     }
   ],
   "notes": [
