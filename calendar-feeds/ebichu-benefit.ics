@@ -110,6 +110,102 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-cb0b7717061b53992a8d1b9f46137290d8c5c6b93ca241770e256f6a912d4
+ 9a0@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261125T052005Z
+CREATED:20261125T052005Z
+LAST-MODIFIED:20261125T052005Z
+SEQUENCE:0
+DTSTART:20270110T010000Z
+DTEND:20270110T110000Z
+SUMMARY:「スーパーブルー」個別握手会・2ショット会
+DESCRIPTION:第1部10:00〜11:00握手、第2部11:30〜12:30・第3部13:0
+ 0〜14:00・第4部14:30〜15:30は2ショット、第5部16:00〜17:00握
+ 手、第6部17:30〜18:30・第7部19:00〜20:00は2ショット。中山
+ 莉子欠席。forTUNE music抽選購入対象。各部受付は開始20
+ 分前から終了30分前まで。\n私立恵比寿中学公式ニュー
+ スで確認。\nhttps://www.shiritsuebichu.jp/news/16252/
+LOCATION:ニューピアホール
+URL:https://www.shiritsuebichu.jp/news/16252/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-9124d05165d038cc5cc48c6f261d32a0487d902bdfdaa729af9bada6589a2
+ 155@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261125T052005Z
+CREATED:20261125T052005Z
+LAST-MODIFIED:20261125T052005Z
+SEQUENCE:0
+DTSTART:20270221T010000Z
+DTEND:20270221T110000Z
+SUMMARY:「スーパーブルー」個別握手会・2ショット会
+DESCRIPTION:第1部10:00〜11:00握手、第2部11:30〜12:30・第3部13:0
+ 0〜14:00・第4部14:30〜15:30は2ショット、第5部16:00〜17:00握
+ 手、第6部17:30〜18:30・第7部19:00〜20:00は2ショット。中山
+ 莉子欠席。forTUNE music抽選購入対象。各部受付は開始20
+ 分前から終了30分前まで。\n私立恵比寿中学公式ニュー
+ スで確認。\nhttps://www.shiritsuebichu.jp/news/16252/
+LOCATION:ニューピアホール
+URL:https://www.shiritsuebichu.jp/news/16252/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-21486a9bc56b069efeedd4ec48796fa88e355e10cdd105ccbaf9fa060bf4c
+ 11c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261125T052005Z
+CREATED:20261125T052005Z
+LAST-MODIFIED:20261125T052005Z
+SEQUENCE:0
+DTSTART:20261126T050000Z
+SUMMARY:「スーパーブルー」特典会 第4次抽選締切
+DESCRIPTION:1/10・2/21特典会の抽選。結果連絡は11/26 18:00以
+ 降。販売予定数に達した場合は受付終了・実施しない
+ 場合あり。申込先 https://fortunemusic.jp/\n私立恵比寿中学
+ 公式ニュースで確認。\nhttps://www.shiritsuebichu.jp/news/16252/
+LOCATION:forTUNE music
+URL:https://www.shiritsuebichu.jp/news/16252/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-a94ca597920df8a679ffae4e07b89e280a9cc4caf96814d8a828172748c25
+ d12@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261125T052005Z
+CREATED:20261125T052005Z
+LAST-MODIFIED:20261125T052005Z
+SEQUENCE:0
+DTSTART:20261203T050000Z
+SUMMARY:「スーパーブルー」特典会 第5次抽選締切
+DESCRIPTION:1/10・2/21特典会の抽選。結果連絡は12/3 18:00以降
+ 。販売予定数に達した場合は受付終了・実施しない場
+ 合あり。申込先 https://fortunemusic.jp/\n私立恵比寿中学公
+ 式ニュースで確認。\nhttps://www.shiritsuebichu.jp/news/16252/
+LOCATION:forTUNE music
+URL:https://www.shiritsuebichu.jp/news/16252/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-98af3aecf892313d47c52e389b473745a1cb2bb4ce3c81ee47a7cfd48b33c
+ 439@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261125T052005Z
+CREATED:20261125T052005Z
+LAST-MODIFIED:20261125T052005Z
+SEQUENCE:0
+DTSTART:20261210T050000Z
+SUMMARY:「スーパーブルー」特典会 第6次抽選締切
+DESCRIPTION:1/10・2/21特典会の抽選。結果連絡は12/10 18:00以
+ 降。販売予定数に達した場合は受付終了・実施しない
+ 場合あり。申込先 https://fortunemusic.jp/\n私立恵比寿中学
+ 公式ニュースで確認。\nhttps://www.shiritsuebichu.jp/news/16252/
+LOCATION:forTUNE music
+URL:https://www.shiritsuebichu.jp/news/16252/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-751682d451d039faa00fbf4366573ccc98fdec8480721fb0bc287afe8dd25
  4f3@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T171804Z

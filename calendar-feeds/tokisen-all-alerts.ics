@@ -504,10 +504,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-4a91cf195949f3bbf1455552d9820007987872340ae8793bb53aff4621a2e
  66a@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T212056Z
+DTSTAMP:20261125T052005Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261122T212056Z
-SEQUENCE:2
+LAST-MODIFIED:20261125T052005Z
+SEQUENCE:3
 DTSTART;VALUE=DATE:20261129
 SUMMARY:GIFT ABEMA配信 11/29（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
@@ -516,9 +516,12 @@ DESCRIPTION:時刻未定。終日開催という意味ではありません
  人出演パートは別。 ABEMAでは放送終了後に無料見逃し
  配信予定。11月27日のDAY1のパフォーマンスは、28日・29
  日の番組内で放送予定。個別の放送時刻と見逃し期限
- は未確認。\n本人側の公式発表で確認。\nhttps://abema.tv/ch
- annels/special-plus-2/slots/BDbG7PPh6hWnxF\nhttps://abema.tv/lp/gift-onair
- \nhttps://toki-sen.com/contents/1122612
+ は未確認。 11/25にエビ中公式掲載の配信表で14:20〜17:00
+ 区間に超ときめき♡宣伝部のパフォーマンスを確認。
+ 個別の開始・終了時刻は不明。\n本人側の公式発表で確
+ 認。\nhttps://abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF\nhtt
+ ps://abema.tv/lp/gift-onair\nhttps://toki-sen.com/contents/1122612\nhttps:
+ //www.shiritsuebichu.jp/news/16117/
 LOCATION:ABEMA
 URL:https://toki-sen.com/contents/1122612
 STATUS:CONFIRMED

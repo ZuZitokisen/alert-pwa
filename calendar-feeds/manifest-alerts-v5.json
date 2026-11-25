@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-24-tohokusan-talkport-1125",
-  "dataGeneratedAt": "2026-11-24T13:18:23Z",
+  "dataVersion": "2026-11-25-ebichu-superblue-gift",
+  "dataGeneratedAt": "2026-11-25T05:20:05Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a931196dd3c78358aa3423c4fbd037be4d2831e897c47cf84f147aa21360e46b",
+  "inputSha256": "4a0cc24f782cfbb622920795896d0fcf99ad4a39c1cad5566aa94dd27749e6aa",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all-alerts.ics",
       "count": 204,
       "omittedUnknownDate": 10,
-      "sha256": "4b253f3f4202bed121304bc5203645477bd07491f0763dc77e46970b108ccaa6"
+      "sha256": "76f9788641231538e72cdce56a5252563c16f61d88d5bc37202e0549a3e4e5e2"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media-alerts.ics",
       "count": 126,
       "omittedUnknownDate": 2,
-      "sha256": "2d8befacaeca7ff5c3fc42629a67a7b127eec2fcee41654e1301fe20301b4236"
+      "sha256": "003bde9c03d3b0d52cf2095f52728fbea8536db5f9ba4b11f17e9df2441340f3"
     },
     {
       "id": "tokisen-other",
@@ -218,7 +218,7 @@
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
       "count": 44,
       "omittedUnknownDate": 0,
-      "sha256": "53941d129593afaeced2a9802469936307861a5d503d36008f7405ae08411aaa"
+      "sha256": "66d2823e8141ccc90a185eaafcffe3162d3c46cc4f41adceb8ecd729865e2d9a"
     },
     {
       "id": "tohokusan-live",
@@ -228,7 +228,7 @@
       "path": "calendar-feeds/tohokusan-live-alerts.ics",
       "count": 20,
       "omittedUnknownDate": 0,
-      "sha256": "20041c7249721f011fadca3645c0e64d39f343f088e7899a87ea46d3ff135d3c"
+      "sha256": "e6cfed8e2d1d4f5ede53520c7e72ea2c5dd24974dcbdb44f94b56715482cffd0"
     },
     {
       "id": "tohokusan-benefit",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 88,
+      "count": 94,
       "omittedUnknownDate": 0,
-      "sha256": "c23e587768e14f3ad1fb0d53c9e86e955cab6e950a6928ca1cb706cf9cfe20e7"
+      "sha256": "25d5e7d6f47685f78141fb9e986da79f5b169ad955021e29e6d814abe4d615a6"
     },
     {
       "id": "ebichu-live",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit-alerts.ics",
-      "count": 10,
+      "count": 15,
       "omittedUnknownDate": 0,
-      "sha256": "8cec1f03ad187597bb89ae52fb6dca680aea061657d60accecc6bf30d25b2473"
+      "sha256": "25baf7f0048c0630417bf36102d363d539395925c0c4f8870925b7b74c36bfb7"
     },
     {
       "id": "ebichu-media",
@@ -296,9 +296,9 @@
       "category": "media",
       "label": "私立恵比寿中学 / メディア",
       "path": "calendar-feeds/ebichu-media-alerts.ics",
-      "count": 48,
+      "count": 49,
       "omittedUnknownDate": 0,
-      "sha256": "05e6818a35c626e34cdfc495dfc09e3540a2268eeefbf42a35d087f805f958e5"
+      "sha256": "487d0fa300ce915d868b78cf600b86097b3737a243a3dcdb87c6e06e29d88977"
     },
     {
       "id": "ebichu-other",

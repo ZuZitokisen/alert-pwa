@@ -122,18 +122,21 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-0c479d54a0c8c4d0191bdc6832bd8837193a219013fc2fe541d130ed8d94e
  092@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261119T094635Z
+DTSTAMP:20261125T052005Z
 CREATED:20261119T084531Z
-LAST-MODIFIED:20261119T094635Z
-SEQUENCE:1
+LAST-MODIFIED:20261125T052005Z
+SEQUENCE:2
 DTSTART:20261129T051000Z
 DTEND:20261129T060000Z
 SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-3
 DESCRIPTION:いぎなり東北産の出演枠は14:10〜15:00。イベン
  ト全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMA
- のSPECIAL3無料配信を案内：https://abema.go.link/kWQg5\n本人公
- 式の個別出演時刻・会場と配信案内を確認。公演全体
- の開始時刻と区別。\nhttps://madeintohoku.com/contents/1101783
+ のSPECIAL3無料配信を案内：https://abema.go.link/kWQg5 11/25公開
+ の配信表では19:10〜22:00の区間に掲載。個別配信時刻未
+ 発表、現地とは別。\n本人公式の個別出演時刻・会場と
+ 配信案内を確認。公演全体の開始時刻と区別。\nhttps://m
+ adeintohoku.com/contents/1101783\nhttps://www.shiritsuebichu.jp/news/16117
+ /
 LOCATION:SGCホール有明
 URL:https://madeintohoku.com/contents/1101783
 STATUS:CONFIRMED
