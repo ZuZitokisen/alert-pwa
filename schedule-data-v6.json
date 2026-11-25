@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-24-tohokusan-talkport-1125",
-  "generatedAt": "2026-11-24T13:18:23Z",
+  "version": "2026-11-25-ebichu-superblue-gift",
+  "generatedAt": "2026-11-25T05:20:05Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3567,7 +3567,7 @@
       "status": "confirmed",
       "category": "STREAM",
       "location": "ABEMA",
-      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。",
+      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。 11/25にエビ中公式掲載の配信表で14:20〜17:00区間に超ときめき♡宣伝部のパフォーマンスを確認。個別の開始・終了時刻は不明。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1122612",
       "sources": [
@@ -3585,9 +3585,14 @@
           "url": "https://abema.tv/lp/gift-onair",
           "type": "broadcaster_official",
           "checkedAt": "2026-11-22T21:20:56Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16117/",
+          "type": "co_performer_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
         }
       ],
-      "checkedAt": "2026-11-22T21:20:56Z",
+      "checkedAt": "2026-11-25T05:20:05Z",
       "timings": [
         {
           "label": "配信枠開始（本人出番ではありません）",
@@ -13310,14 +13315,14 @@
       "end": "2026-11-29T15:00:00+09:00",
       "location": "SGCホール有明",
       "sourceUrl": "https://madeintohoku.com/contents/1101783",
-      "note": "いぎなり東北産の出演枠は14:10〜15:00。イベント全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMAのSPECIAL3無料配信を案内：https://abema.go.link/kWQg5",
+      "note": "いぎなり東北産の出演枠は14:10〜15:00。イベント全体は開場11:30・開演13:00予定。本人公式がDAY3のABEMAのSPECIAL3無料配信を案内：https://abema.go.link/kWQg5 11/25公開の配信表では19:10〜22:00の区間に掲載。個別配信時刻未発表、現地とは別。",
       "evidence": "本人公式の個別出演時刻・会場と配信案内を確認。公演全体の開始時刻と区別。",
       "status": "confirmed",
       "source": "curated-calendar",
       "artistId": "tohokusan",
       "allDay": false,
       "category": "LIVE",
-      "checkedAt": "2026-11-19T09:46:35.640Z",
+      "checkedAt": "2026-11-25T05:20:05Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -13328,6 +13333,11 @@
           "url": "https://madeintohoku.com/contents/1101783",
           "type": "artist_official",
           "checkedAt": "2026-11-19T09:46:35.640Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16117/",
+          "type": "co_performer_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
         }
       ]
     },
@@ -19426,6 +19436,207 @@
       "revision": 1,
       "present": true,
       "groupId": "tohokusan-talkport-suiyonton-20261125"
+    },
+    {
+      "id": "ebichu-superblue-fortune-20270110",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「スーパーブルー」個別握手会・2ショット会",
+      "start": "2027-01-10T10:00:00+09:00",
+      "end": "2027-01-10T20:00:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "BENEFIT",
+      "location": "ニューピアホール",
+      "note": "第1部10:00〜11:00握手、第2部11:30〜12:30・第3部13:00〜14:00・第4部14:30〜15:30は2ショット、第5部16:00〜17:00握手、第6部17:30〜18:30・第7部19:00〜20:00は2ショット。中山莉子欠席。forTUNE music抽選購入対象。各部受付は開始20分前から終了30分前まで。",
+      "evidence": "私立恵比寿中学公式ニュースで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16252/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16252/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T05:20:05Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-superblue-fortune-2027"
+    },
+    {
+      "id": "ebichu-superblue-fortune-20270221",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「スーパーブルー」個別握手会・2ショット会",
+      "start": "2027-02-21T10:00:00+09:00",
+      "end": "2027-02-21T20:00:00+09:00",
+      "allDay": false,
+      "status": "confirmed",
+      "category": "BENEFIT",
+      "location": "ニューピアホール",
+      "note": "第1部10:00〜11:00握手、第2部11:30〜12:30・第3部13:00〜14:00・第4部14:30〜15:30は2ショット、第5部16:00〜17:00握手、第6部17:30〜18:30・第7部19:00〜20:00は2ショット。中山莉子欠席。forTUNE music抽選購入対象。各部受付は開始20分前から終了30分前まで。",
+      "evidence": "私立恵比寿中学公式ニュースで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16252/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16252/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T05:20:05Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-superblue-fortune-2027"
+    },
+    {
+      "id": "ebichu-superblue-fortune-round4-close",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「スーパーブルー」特典会 第4次抽選締切",
+      "start": "2026-11-26T14:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "forTUNE music",
+      "note": "1/10・2/21特典会の抽選。結果連絡は11/26 18:00以降。販売予定数に達した場合は受付終了・実施しない場合あり。申込先 https://fortunemusic.jp/",
+      "evidence": "私立恵比寿中学公式ニュースで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16252/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16252/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T05:20:05Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-11-25T14:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-11-26T14:00:00+09:00"
+        }
+      ],
+      "deadline": "2026-11-26T14:00:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-superblue-fortune-2027"
+    },
+    {
+      "id": "ebichu-superblue-fortune-round5-close",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「スーパーブルー」特典会 第5次抽選締切",
+      "start": "2026-12-03T14:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "forTUNE music",
+      "note": "1/10・2/21特典会の抽選。結果連絡は12/3 18:00以降。販売予定数に達した場合は受付終了・実施しない場合あり。申込先 https://fortunemusic.jp/",
+      "evidence": "私立恵比寿中学公式ニュースで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16252/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16252/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T05:20:05Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-12-01T18:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-03T14:00:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-03T14:00:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-superblue-fortune-2027"
+    },
+    {
+      "id": "ebichu-superblue-fortune-round6-close",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "「スーパーブルー」特典会 第6次抽選締切",
+      "start": "2026-12-10T14:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "forTUNE music",
+      "note": "1/10・2/21特典会の抽選。結果連絡は12/10 18:00以降。販売予定数に達した場合は受付終了・実施しない場合あり。申込先 https://fortunemusic.jp/",
+      "evidence": "私立恵比寿中学公式ニュースで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16252/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16252/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T05:20:05Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-12-08T18:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-10T14:00:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-10T14:00:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-superblue-fortune-2027"
+    },
+    {
+      "id": "ebichu-gift-abema-20261129",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "GIFT ABEMA配信 11/29",
+      "start": "2026-11-29",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "ABEMA SPECIAL3",
+      "note": "配信タイムテーブルは14:20〜17:00の区間に私立恵比寿中学を掲載。個別配信時刻未発表、現地出演枠とは別。無料見逃し配信あり、期限未確認。番組 https://abema.go.link/kWQg5",
+      "evidence": "私立恵比寿中学公式ニュースで確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16117/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16117/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T05:20:05Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T05:20:05Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-gift-20261129"
     }
   ],
   "notes": [
