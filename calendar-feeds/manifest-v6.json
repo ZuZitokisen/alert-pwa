@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-golden-loveit-dedup",
-  "dataGeneratedAt": "2026-11-25T15:21:49.607Z",
+  "dataVersion": "2026-11-26-gift-collab-roster",
+  "dataGeneratedAt": "2026-11-25T17:12:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "82d79f08abd70ecc6a9615c14be03cd58be3334303be72fd9b9575d7deb84e8d",
+  "inputSha256": "5fcdd3e14a19d9791cd4e7570e548597a71adc4b3b0a03d73cecf8fcc2ccd274",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 205,
       "omittedUnknownDate": 10,
-      "sha256": "4546a4133212062ca7b84a13ba8ab7d1c7740291298e681238d8bb0a1785f584"
+      "sha256": "caaf3ad415c9c8572388228365a208c2db360ca0c74d33a356161d7b7246bbfd"
     },
     {
       "id": "tokisen-live",
@@ -28,7 +28,7 @@
       "path": "calendar-feeds/tokisen-live.ics",
       "count": 12,
       "omittedUnknownDate": 3,
-      "sha256": "ff709b9402592c6391172f8eb920f507ee4ebf0ca1d7614442bf5e5b3ca5ba0d"
+      "sha256": "2ef8b291d4c70decec075b8beefc872b175f4ded3804b91710ddcb2ae2afc331"
     },
     {
       "id": "tokisen-benefit",

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-golden-loveit-dedup",
-  "dataGeneratedAt": "2026-11-25T15:21:49.607Z",
-  "inputSha256": "82d79f08abd70ecc6a9615c14be03cd58be3334303be72fd9b9575d7deb84e8d",
+  "dataVersion": "2026-11-26-gift-collab-roster",
+  "dataGeneratedAt": "2026-11-25T17:12:53Z",
+  "inputSha256": "5fcdd3e14a19d9791cd4e7570e548597a71adc4b3b0a03d73cecf8fcc2ccd274",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -11279,19 +11279,20 @@
         "end": "2026-11-28T15:40:00+09:00",
         "allDay": false,
         "location": "",
-        "publicNote": "坂井仁香・菅田愛貴が出演。15:10〜15:40はコラボ全体の枠です。会場は確認中。主催者のタイムテーブルと共演のRain Tree・きゅるりんってしてみてはSGCホール有明、とき宣公式Xはトヨタアリーナ東京と案内しています。\n出演者・時間は公式情報で確認。会場は公式案内に相違があります。",
+        "publicNote": "坂井仁香・菅田愛貴がパフォーマンス、辻野かなみがトーク企画に出演。15:10〜15:40はコラボ全体の枠で、個別の出番時刻は未発表。会場は確認中。主催者のタイムテーブルと共演のRain Tree・きゅるりんってしてみてはSGCホール有明、とき宣公式画像・公式Xはトヨタアリーナ東京と案内しています。\n出演者・時間は公式情報で確認。会場は公式案内に相違があります。",
         "status": "confirmed",
         "sourceUrls": [
           "https://toki-sen.com/contents/1102025?tag=all",
+          "https://toki-sen.com/s3/skiyaki/uploads/ckeditor/pictures/893086/content_IMG_2348.jpeg",
           "https://www.gift-idol.jp/pdf/timetable_1128.pdf",
           "https://x.com/KYURUSHITE/status/2123657592727904625",
           "https://x.com/RainTree_RT/status/2123614832834544027",
           "https://x.com/sendenbu_staff/status/2123612301538505066"
         ]
       },
-      "sequence": 2,
+      "sequence": 3,
       "created": "2026-11-21T03:08:51Z",
-      "modified": "2026-11-22T09:16:27Z",
+      "modified": "2026-11-25T17:12:53Z",
       "lastTiming": {
         "start": "2026-11-28T15:10:00+09:00",
         "end": "2026-11-28T15:40:00+09:00",
@@ -17653,5 +17654,5 @@
       ]
     }
   ],
-  "integritySha256": "30a5ec9b3d43d98138cb4133a1477b890e055a3b61ba5fcf9c92550ee828132d"
+  "integritySha256": "952e773f9ff55bada1076038fea83d990bd9bf1e1b868f85b8eb6617a76eaa55"
 }
