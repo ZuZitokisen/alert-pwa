@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "hourly-2026-11-25T13:04:47.502Z",
-  "generatedAt": "2026-11-25T13:04:47.502Z",
+  "version": "2026-11-26-golden-loveit-dedup",
+  "generatedAt": "2026-11-25T15:21:49.607Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
