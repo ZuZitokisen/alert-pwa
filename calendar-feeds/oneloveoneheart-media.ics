@@ -6,20 +6,23 @@ X-WR-CALNAME:ONE LOVE ONE HEART / メディア
 BEGIN:VEVENT
 UID:public-v1-28ac8e1abb2264579c676eb909c40d316ae6070e999e87cc99033ff50555a
  5b5@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261123T031822Z
+DTSTAMP:20261125T152147Z
 CREATED:20261122T171355Z
-LAST-MODIFIED:20261123T031822Z
-SEQUENCE:1
+LAST-MODIFIED:20261125T152147Z
+SEQUENCE:2
 DTSTART:20261126T115400Z
 DTEND:20261126T135700Z
 SUMMARY:藤咲碧羽：ゴールデンラヴィット！
 DESCRIPTION:公式Xで藤咲碧羽の出演と20:54開始を告知。木曜
  夜の特番で、翌朝の通常放送とは別。終了時刻はチュ
- ーリップテレビの番組表による。\n本人側の公式X投稿
- （公開表示の写し）とTBS番組表で確認。\nhttps://www.tbs.co
- .jp/tv/20261126_C762.html\nhttps://www.tulip-tv.co.jp/programs/program_det
- ails.html?e=21810&ed=20261119&p=767525&s=0x9420\nhttps://x.com/LOVEONE_sta
- ff/status/2123949738286567709
+ ーリップテレビの番組表による。 公式FCカレンダーの
+ 同日の掲載も同一番組として確認。\n本人側の公式X投
+ 稿（公開表示の写し）とTBS番組表で確認。\nhttps://onelove
+ oneheart.officialfc.jp/calendars/2026/11\nhttps://oneloveoneheart.official
+ fc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815\nhttps://www.tbs.co.j
+ p/tv/20261126_C762.html\nhttps://www.tulip-tv.co.jp/programs/program_detai
+ ls.html?e=21810&ed=20261119&p=767525&s=0x9420\nhttps://x.com/LOVEONE_staff
+ /status/2123949738286567709
 LOCATION:TBS系
 URL:https://www.tbs.co.jp/tv/20261126_C762.html
 STATUS:CONFIRMED
@@ -46,24 +49,27 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-90e2230b85932583c2174de7e8d4027645f02cb350e354840a9214045d732
  b2c@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261125T130447Z
+DTSTAMP:20261125T152147Z
 CREATED:20261125T130447Z
-LAST-MODIFIED:20261125T130447Z
-SEQUENCE:0
+LAST-MODIFIED:20261125T152147Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261126
-SUMMARY:TBS「ゴールデンラヴィット！」（藤咲）（時刻未
- 定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n公式FCカレンダー掲載日。開始時刻・終了時刻・会
- 場詳細は未確認。一覧内部時刻は管理用の場合がある
- ため採用していません。\n本人公式FCの一般公開カレン
- ダーで日付・タイトルを確認。\nhttps://oneloveoneheart.offici
- alfc.jp/calendars/2026/11\nhttps://oneloveoneheart.officialfc.jp/schedules
- /ca07bedf-dd6e-4529-8fd3-d30c3af30815
+SUMMARY:TBS「ゴールデンラヴィット！」（藤咲）（旧掲載
+ 取り下げ）（時刻未定）
+DESCRIPTION:日時未定に変更したため旧日時の配信を取り下
+ げ。予定自体の中止ではありません。\n掲載消失。中止
+ とは未確認です。最後に確認した情報を保持していま
+ す。\n時刻未定。終日開催という意味ではありません。
+ \n同一番組の重複掲載を取り下げ。番組自体は中止では
+ ありません。正規予定：藤咲碧羽：ゴールデンラヴィ
+ ット！ 11/26 20:54。\nTBS公式番組表と公式FCカレンダーの
+ 同日掲載を照合。\nhttps://oneloveoneheart.officialfc.jp/calendars/
+ 2026/11\nhttps://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-452
+ 9-8fd3-d30c3af30815\nhttps://www.tbs.co.jp/tv/20261126_C762.html
 LOCATION:
 URL:https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3
  -d30c3af30815
-STATUS:CONFIRMED
+STATUS:CANCELLED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-25T13:04:47.502Z",
-  "dataGeneratedAt": "2026-11-25T13:04:47.502Z",
+  "dataVersion": "2026-11-26-golden-loveit-dedup",
+  "dataGeneratedAt": "2026-11-25T15:21:49.607Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "6f38c44329a5f133762a50069aaa27294d82d7c95c4663b7b578c7ceb9f70166",
+  "inputSha256": "82d79f08abd70ecc6a9615c14be03cd58be3334303be72fd9b9575d7deb84e8d",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -168,7 +168,7 @@
       "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
       "count": 40,
       "omittedUnknownDate": 0,
-      "sha256": "3e65761cecad4cf491a773b4765dbaafc2a0ef4fd666b336ef9bc412fad7e3e5"
+      "sha256": "ec329c4fbba918220ce8429ce00a8e4d4debb8ded3ddda013661597792cb77dd"
     },
     {
       "id": "oneloveoneheart-live",
@@ -198,7 +198,7 @@
       "path": "calendar-feeds/oneloveoneheart-media-alerts.ics",
       "count": 11,
       "omittedUnknownDate": 0,
-      "sha256": "fa6cab69a950d1d23bbdce748d327f54f816e3e4a835d0064dbc599a15d26c0b"
+      "sha256": "7cd481981104a0cef4001091b0519b689338e0d42a397877d0483450767bf0a7"
     },
     {
       "id": "oneloveoneheart-other",

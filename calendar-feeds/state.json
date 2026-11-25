@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-25T13:04:47.502Z",
-  "dataGeneratedAt": "2026-11-25T13:04:47.502Z",
-  "inputSha256": "6f38c44329a5f133762a50069aaa27294d82d7c95c4663b7b578c7ceb9f70166",
+  "dataVersion": "2026-11-26-golden-loveit-dedup",
+  "dataGeneratedAt": "2026-11-25T15:21:49.607Z",
+  "inputSha256": "82d79f08abd70ecc6a9615c14be03cd58be3334303be72fd9b9575d7deb84e8d",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -4558,17 +4558,20 @@
         "end": "2026-11-26T22:57:00+09:00",
         "allDay": false,
         "location": "TBS系",
-        "publicNote": "公式Xで藤咲碧羽の出演と20:54開始を告知。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。\n本人側の公式X投稿（公開表示の写し）とTBS番組表で確認。",
+        "publicNote": "公式Xで藤咲碧羽の出演と20:54開始を告知。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。 公式FCカレンダーの同日の掲載も同一番組として確認。\n本人側の公式X投稿（公開表示の写し）とTBS番組表で確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://oneloveoneheart.officialfc.jp/calendars/2026/11",
+          "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815",
           "https://www.tbs.co.jp/tv/20261126_C762.html",
           "https://www.tulip-tv.co.jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420",
           "https://x.com/LOVEONE_staff/status/2123949738286567709"
-        ]
+        ],
+        "sourceUrl": "https://www.tbs.co.jp/tv/20261126_C762.html"
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-22T17:13:55.552Z",
-      "modified": "2026-11-23T03:18:22.633Z",
+      "modified": "2026-11-25T15:21:47.204Z",
       "lastTiming": {
         "start": "2026-11-26T20:54:00+09:00",
         "end": "2026-11-26T22:57:00+09:00",
@@ -4621,21 +4624,22 @@
         "id": "oneloveoneheart-hourly-fc-ca07bedf-dd6e-4529-8fd3-d30c3af30815",
         "category": "media",
         "title": "TBS「ゴールデンラヴィット！」（藤咲）",
-        "start": "2026-11-26",
+        "start": null,
         "end": null,
         "allDay": false,
         "location": "",
-        "publicNote": "公式FCカレンダー掲載日。開始時刻・終了時刻・会場詳細は未確認。一覧内部時刻は管理用の場合があるため採用していません。\n本人公式FCの一般公開カレンダーで日付・タイトルを確認。",
-        "status": "confirmed",
+        "publicNote": "同一番組の重複掲載を取り下げ。番組自体は中止ではありません。正規予定：藤咲碧羽：ゴールデンラヴィット！ 11/26 20:54。\nTBS公式番組表と公式FCカレンダーの同日掲載を照合。",
+        "status": "missing",
         "sourceUrls": [
           "https://oneloveoneheart.officialfc.jp/calendars/2026/11",
-          "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815"
+          "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815",
+          "https://www.tbs.co.jp/tv/20261126_C762.html"
         ],
         "sourceUrl": "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-25T13:04:47.502Z",
-      "modified": "2026-11-25T13:04:47.502Z",
+      "modified": "2026-11-25T15:21:47.204Z",
       "lastTiming": {
         "start": "2026-11-26",
         "end": null,
@@ -17649,5 +17653,5 @@
       ]
     }
   ],
-  "integritySha256": "87fcb806e2b4299ee5f1722b6861f59fff6de1b5734fa239e556d02bfd5f8cd2"
+  "integritySha256": "30a5ec9b3d43d98138cb4133a1477b890e055a3b61ba5fcf9c92550ee828132d"
 }

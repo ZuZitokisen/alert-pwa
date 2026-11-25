@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-25T13:04:47.502Z",
-  "dataGeneratedAt": "2026-11-25T13:04:47.502Z",
+  "dataVersion": "2026-11-26-golden-loveit-dedup",
+  "dataGeneratedAt": "2026-11-25T15:21:49.607Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "33015aaa02b5cd3da6f199d23df4a539818356fe098281557c1af8871f3e171d",
+  "inputSha256": "b11320d6cdb1ab2639292a9d36b3d6175052a11c241f3576c1fed441a19279f5",
   "feeds": [
     {
       "id": "tokisen-all",

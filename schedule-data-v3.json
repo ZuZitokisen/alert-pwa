@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "hourly-2026-11-25T13:04:47.502Z",
-  "generatedAt": "2026-11-25T13:04:47.502Z",
+  "version": "2026-11-26-golden-loveit-dedup",
+  "generatedAt": "2026-11-25T15:21:49.607Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13398,7 +13398,7 @@
       "status": "confirmed",
       "category": "TV",
       "location": "TBS系",
-      "note": "公式Xで藤咲碧羽の出演と20:54開始を告知。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。",
+      "note": "公式Xで藤咲碧羽の出演と20:54開始を告知。木曜夜の特番で、翌朝の通常放送とは別。終了時刻はチューリップテレビの番組表による。 公式FCカレンダーの同日の掲載も同一番組として確認。",
       "evidence": "本人側の公式X投稿（公開表示の写し）とTBS番組表で確認。",
       "sourceUrl": "https://www.tbs.co.jp/tv/20261126_C762.html",
       "sources": [
@@ -13416,9 +13416,19 @@
           "url": "https://www.tulip-tv.co.jp/programs/program_details.html?e=21810&ed=20261119&p=767525&s=0x9420",
           "type": "系列局公式番組表",
           "checkedAt": "2026-11-22T17:13:55.552Z"
+        },
+        {
+          "url": "https://oneloveoneheart.officialfc.jp/calendars/2026/11",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T13:04:47.502Z"
+        },
+        {
+          "url": "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T13:04:47.502Z"
         }
       ],
-      "checkedAt": "2026-11-23T03:18:22.633Z",
+      "checkedAt": "2026-11-25T15:21:47.204Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -13670,39 +13680,6 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-cdj-20261227"
-    },
-    {
-      "id": "oneloveoneheart-hourly-fc-ca07bedf-dd6e-4529-8fd3-d30c3af30815",
-      "source": "curated-calendar",
-      "artistId": "oneloveoneheart",
-      "title": "TBS「ゴールデンラヴィット！」（藤咲）",
-      "start": "2026-11-26",
-      "end": null,
-      "allDay": false,
-      "status": "confirmed",
-      "category": "TV",
-      "location": "",
-      "note": "公式FCカレンダー掲載日。開始時刻・終了時刻・会場詳細は未確認。一覧内部時刻は管理用の場合があるため採用していません。",
-      "evidence": "本人公式FCの一般公開カレンダーで日付・タイトルを確認。",
-      "sourceUrl": "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815",
-      "sources": [
-        {
-          "url": "https://oneloveoneheart.officialfc.jp/calendars/2026/11",
-          "type": "artist_official",
-          "checkedAt": "2026-11-25T13:04:47.502Z"
-        },
-        {
-          "url": "https://oneloveoneheart.officialfc.jp/schedules/ca07bedf-dd6e-4529-8fd3-d30c3af30815",
-          "type": "artist_official",
-          "checkedAt": "2026-11-25T13:04:47.502Z"
-        }
-      ],
-      "checkedAt": "2026-11-25T13:04:47.502Z",
-      "timings": [],
-      "deadline": null,
-      "revision": 1,
-      "present": true,
-      "groupId": "oneloveoneheart-hourly-fc-ca07bedf-dd6e-4529-8fd3-d30c3af30815"
     }
   ],
   "notes": [
