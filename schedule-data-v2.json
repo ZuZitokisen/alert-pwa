@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-25-ebichu-superblue-gift",
-  "generatedAt": "2026-11-25T05:20:05Z",
+  "version": "2026-11-25-cdj-frontarea-result",
+  "generatedAt": "2026-11-25T11:18:57Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12162,22 +12162,17 @@
       "status": "possible",
       "category": "REMIND",
       "location": "Jフェスアプリ",
-      "note": "受付は11/25 16:00〜11/30 16:00。第2次抽選先行までに公演チケットを購入した方が対象。代表者・同行者とも、アーティストごとに本人分のみ申込。",
-      "evidence": "主催者公式の前方エリア抽選案内。本人公式による同受付の告知は未確認。",
-      "sourceUrl": "https://www.teapaw.org/rockinon_fes/status/2122887530957946990",
+      "note": "受付は11/25 16:00〜11/30 16:00。第1〜2次抽選先行購入者対象、公式リセール購入者は対象外。参加日ごとに第5希望まで、本人分のみ申込。完了画面はスクリーンショット保存。結果は12/4 16:00にJフェスで確認。",
+      "evidence": "主催者公式の個別前方エリア抽選ページで受付日時・対象条件・結果日時を確認。本人公式の同受付告知は未確認。",
+      "sourceUrl": "https://countdownjapan.jp/2627/ticket/frontarea/",
       "sources": [
         {
-          "url": "https://www.teapaw.org/rockinon_fes/status/2122887530957946990",
+          "url": "https://countdownjapan.jp/2627/ticket/frontarea/",
           "type": "organizer",
-          "checkedAt": "2026-11-23T01:22:14Z"
-        },
-        {
-          "url": "https://countdownjapan.jp/2627/ticket/",
-          "type": "organizer",
-          "checkedAt": "2026-11-23T01:22:14Z"
+          "checkedAt": "2026-11-25T11:18:57Z"
         }
       ],
-      "checkedAt": "2026-11-23T01:22:14Z",
+      "checkedAt": "2026-11-25T11:18:57Z",
       "timings": [
         {
           "label": "受付開始",
@@ -12345,6 +12340,34 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-christmas-2026"
+    },
+    {
+      "id": "tokisen-cdj-20261227-front-area-lottery-result",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "COUNTDOWN JAPAN 26/27 前方エリア抽選結果発表",
+      "start": "2026-12-04T16:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "REMIND",
+      "location": "Jフェスアプリ",
+      "note": "Jフェスアプリで抽選結果を確認。前方エリアは当選者本人のみ。通常観覧は抽選結果にかかわらず可能。",
+      "evidence": "主催者公式の個別前方エリア抽選ページで受付日時・対象条件・結果日時を確認。本人公式の同受付告知は未確認。",
+      "sourceUrl": "https://countdownjapan.jp/2627/ticket/frontarea/",
+      "sources": [
+        {
+          "url": "https://countdownjapan.jp/2627/ticket/frontarea/",
+          "type": "organizer",
+          "checkedAt": "2026-11-25T11:18:57Z"
+        }
+      ],
+      "checkedAt": "2026-11-25T11:18:57Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-cdj-20261227"
     }
   ],
   "notes": [
