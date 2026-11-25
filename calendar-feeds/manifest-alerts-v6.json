@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-25-ebichu-superblue-gift",
-  "dataGeneratedAt": "2026-11-25T05:20:05Z",
+  "dataVersion": "2026-11-25-cdj-frontarea-result",
+  "dataGeneratedAt": "2026-11-25T11:18:57Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "7fb3932b9881fefea095b4f8f8edc5cfebd72284c38896da3a78371f905538c4",
+  "inputSha256": "a9c82c1fe33e5523b276e21063ffa7b17c730cce73a7deb23afd77f93e1f7f15",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 204,
+      "count": 205,
       "omittedUnknownDate": 10,
-      "sha256": "76f9788641231538e72cdce56a5252563c16f61d88d5bc37202e0549a3e4e5e2"
+      "sha256": "e726208f46bfbc4c249e6aa738f44e08022e3ba83d3ad78de594d94ac862bd71"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit-alerts.ics",
-      "count": 66,
+      "count": 67,
       "omittedUnknownDate": 5,
-      "sha256": "281a3cfe3be299ea8974ed2f1184ab1e9414f0433145f4986d3589764a49e419"
+      "sha256": "352af09fa5225b3489a233acb687c85633cc4e213e51d917c78f8eb7f9fad586"
     },
     {
       "id": "tokisen-media",
