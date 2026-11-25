@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-26-golden-loveit-dedup",
-  "generatedAt": "2026-11-25T15:21:49.607Z",
+  "version": "2026-11-26-gift-collab-roster",
+  "generatedAt": "2026-11-25T17:12:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12024,7 +12024,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "",
-      "note": "坂井仁香・菅田愛貴が出演。15:10〜15:40はコラボ全体の枠です。会場は確認中。主催者のタイムテーブルと共演のRain Tree・きゅるりんってしてみてはSGCホール有明、とき宣公式Xはトヨタアリーナ東京と案内しています。",
+      "note": "坂井仁香・菅田愛貴がパフォーマンス、辻野かなみがトーク企画に出演。15:10〜15:40はコラボ全体の枠で、個別の出番時刻は未発表。会場は確認中。主催者のタイムテーブルと共演のRain Tree・きゅるりんってしてみてはSGCホール有明、とき宣公式画像・公式Xはトヨタアリーナ東京と案内しています。",
       "evidence": "出演者・時間は公式情報で確認。会場は公式案内に相違があります。",
       "sourceUrl": "https://toki-sen.com/contents/1102025?tag=all",
       "sources": [
@@ -12052,9 +12052,14 @@
           "url": "https://x.com/KYURUSHITE/status/2123657592727904625",
           "type": "artist_official",
           "checkedAt": "2026-11-22T09:16:27Z"
+        },
+        {
+          "url": "https://toki-sen.com/s3/skiyaki/uploads/ckeditor/pictures/893086/content_IMG_2348.jpeg",
+          "type": "artist_official",
+          "checkedAt": "2026-11-25T17:12:53Z"
         }
       ],
-      "checkedAt": "2026-11-22T09:16:27Z",
+      "checkedAt": "2026-11-25T17:12:53Z",
       "deadline": null,
       "revision": 1,
       "present": true,
