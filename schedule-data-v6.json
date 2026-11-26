@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-26-official-seven-artist-updates",
-  "generatedAt": "2026-11-26T13:14:54Z",
+  "version": "2026-11-27-batten-ueda-talkport",
+  "generatedAt": "2026-11-26T17:14:06Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -19999,6 +19999,33 @@
       "revision": 1,
       "present": true,
       "groupId": "oneloveoneheart-1liter-tears"
+    },
+    {
+      "id": "batten-ueda-talkport-20261127",
+      "artistId": "batten",
+      "title": "上田理子 26th talkportサイン会",
+      "source": "curated-calendar",
+      "start": "2026-11-27T21:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "BENEFIT",
+      "location": "talkport（オンライン）",
+      "note": "商品はトレカ。販売開始は11/25 20:00。終了時刻未記載。",
+      "evidence": "ばってん少女隊公式個別スケジュールで確認。",
+      "sourceUrl": "https://battengirls.com/contents/1131708",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1131708",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T17:14:06Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T17:14:06Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
     }
   ],
   "notes": [
