@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-26-gift-collab-roster",
-  "generatedAt": "2026-11-25T17:12:53Z",
+  "version": "2026-11-26-official-seven-artist-updates",
+  "generatedAt": "2026-11-26T13:14:54Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -14572,7 +14572,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "東京ガーデンシアター",
-      "note": "出演者の変更告知は公式特設ページを確認。",
+      "note": "出演者の変更告知は公式特設ページを確認。 イープラス3次抽選：11/26 12:00〜12/9 23:59。",
       "evidence": "私立恵比寿中学公式サイトで確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/this-is-gr8/",
       "sources": [
@@ -14580,9 +14580,14 @@
           "url": "https://www.shiritsuebichu.jp/this-is-gr8/",
           "type": "artist_official",
           "checkedAt": "2026-11-21T01:14:50Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16082/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
         }
       ],
-      "checkedAt": "2026-11-21T01:14:50Z",
+      "checkedAt": "2026-11-26T13:14:54Z",
       "timings": [
         {
           "kind": "open",
@@ -14607,7 +14612,7 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "東京ガーデンシアター",
-      "note": "出演者の変更告知は公式特設ページを確認。",
+      "note": "出演者の変更告知は公式特設ページを確認。 イープラス3次抽選：11/26 12:00〜12/9 23:59。",
       "evidence": "私立恵比寿中学公式サイトで確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/this-is-gr8/",
       "sources": [
@@ -14615,9 +14620,14 @@
           "url": "https://www.shiritsuebichu.jp/this-is-gr8/",
           "type": "artist_official",
           "checkedAt": "2026-11-21T01:14:50Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16082/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
         }
       ],
-      "checkedAt": "2026-11-21T01:14:50Z",
+      "checkedAt": "2026-11-26T13:14:54Z",
       "timings": [
         {
           "kind": "open",
@@ -15068,17 +15078,17 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "EX THEATER ROPPONGI",
-      "note": "",
+      "note": "11/26公式発表：両公演チケット完売。公演中止ではありません。",
       "evidence": "私立恵比寿中学の公式サイトで確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/news/16089/",
       "sources": [
         {
           "url": "https://www.shiritsuebichu.jp/news/16089/",
           "type": "artist_official",
-          "checkedAt": "2026-11-21T03:12:33Z"
+          "checkedAt": "2026-11-26T13:14:54Z"
         }
       ],
-      "checkedAt": "2026-11-21T03:12:33Z",
+      "checkedAt": "2026-11-26T13:14:54Z",
       "timings": [
         {
           "kind": "doors_open",
@@ -15102,17 +15112,17 @@
       "status": "confirmed",
       "category": "LIVE",
       "location": "EX THEATER ROPPONGI",
-      "note": "",
+      "note": "11/26公式発表：両公演チケット完売。公演中止ではありません。",
       "evidence": "私立恵比寿中学の公式サイトで確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/news/16089/",
       "sources": [
         {
           "url": "https://www.shiritsuebichu.jp/news/16089/",
           "type": "artist_official",
-          "checkedAt": "2026-11-21T03:12:33Z"
+          "checkedAt": "2026-11-26T13:14:54Z"
         }
       ],
-      "checkedAt": "2026-11-21T03:12:33Z",
+      "checkedAt": "2026-11-26T13:14:54Z",
       "timings": [
         {
           "kind": "doors_open",
@@ -15136,22 +15146,22 @@
       "status": "confirmed",
       "category": "BENEFIT",
       "location": "チケットぴあ",
-      "note": "対象公演は12月26日。空席状況は公式販売先で確認。",
+      "note": "対象公演は12月26日。空席状況は公式販売先で確認。 11/26公式発表：両公演チケット完売。公演中止ではありません。",
       "evidence": "私立恵比寿中学の公式サイトで確認。",
       "sourceUrl": "https://www.shiritsuebichu.jp/news/16089/",
       "sources": [
         {
-          "url": "https://www.shiritsuebichu.jp/news/16089/",
-          "type": "artist_official",
-          "checkedAt": "2026-11-21T03:12:33Z"
-        },
-        {
           "url": "https://w.pia.jp/t/ebichu/",
           "type": "organizer_official",
           "checkedAt": "2026-11-21T03:12:33Z"
+        },
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16089/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
         }
       ],
-      "checkedAt": "2026-11-21T03:12:33Z",
+      "checkedAt": "2026-11-26T13:14:54Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
@@ -19675,6 +19685,320 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-cdj-20261227"
+    },
+    {
+      "id": "tokisen-real-2026-11-29-cd-trading-card-sales",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "ときめけみらい 当日CD予約販売（ランダムトレカのみ）",
+      "start": "2026-11-29T13:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "TOC有明Convention Hall",
+      "note": "FC会員対象。CD予約でメンバー指定ランダムトレカ1枚、サイン入り当たりは1日最大144名。1会計5枚まで。イベント参加券付きCD販売はなし。",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://toki-sen.com/contents/1132196?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1132196?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "販売開始",
+          "kind": "application_start",
+          "at": "2026-11-29T13:00:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-real-2026-11-29"
+    },
+    {
+      "id": "batten-riko-26th-goods-sales-20261126",
+      "source": "curated-calendar",
+      "artistId": "batten",
+      "title": "上田理子 26th Anniversary 生誕グッズ販売開始",
+      "start": "2026-11-26T21:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "公式オンラインストア",
+      "note": "Tシャツ、トレカケース、アクリルスタンド、生写真など。販売終了時刻は未発表。",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://battengirls.com/contents/1131717",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1131717",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "販売開始",
+          "kind": "application_start",
+          "at": "2026-11-26T21:30:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-riko-26th-goods"
+    },
+    {
+      "id": "batten-kiina-mahoiku-tapestry-deadline",
+      "source": "curated-calendar",
+      "artistId": "batten",
+      "title": "魔法少女育成計画 応援タペストリー抽選販売 締切",
+      "start": "2026-12-04T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "ODD STORE",
+      "note": "11/25受付開始。https://store.odd-inc.co.jp/",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://battengirls.com/contents/1109249",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1109249",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "date": "2026-11-25"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-04T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-04T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-kiina-mahoiku-202701"
+    },
+    {
+      "id": "batten-kiina-mahoiku-funtocast-rehearsal-deadline",
+      "source": "curated-calendar",
+      "artistId": "batten",
+      "title": "魔法少女育成計画 Fun to Cast 稽古期間受付締切",
+      "start": "2026-12-15T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "Fun to Cast",
+      "note": "11/25受付開始。https://funtocast.com/mahoikustage_202701",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://battengirls.com/contents/1109249",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1109249",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "date": "2026-11-25"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-15T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-15T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-kiina-mahoiku-202701"
+    },
+    {
+      "id": "batten-kiina-mahoiku-funtocast-performance-deadline",
+      "source": "curated-calendar",
+      "artistId": "batten",
+      "title": "魔法少女育成計画 Fun to Cast 公演期間受付締切",
+      "start": "2026-12-24T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "Fun to Cast",
+      "note": "11/25受付開始。https://funtocast.com/mahoikustage_202701",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://battengirls.com/contents/1109249",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1109249",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "date": "2026-11-25"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-24T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-24T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-kiina-mahoiku-202701"
+    },
+    {
+      "id": "ebichu-gr8-ticket-3rd-open-20261126",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "大学芸会2027「This is GR8」イープラス3次先行開始",
+      "start": "2026-11-26T12:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "イープラス",
+      "note": "イープラス プレオーダー3次（抽選）。2/6・7東京ガーデンシアター公演。 https://eplus.jp/shiritsuebichu/",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16082/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16082/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-11-26T12:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-09T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-09T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-this-is-gr8"
+    },
+    {
+      "id": "ebichu-gr8-ticket-3rd-deadline-20261209",
+      "source": "curated-calendar",
+      "artistId": "ebichu",
+      "title": "大学芸会2027「This is GR8」イープラス3次先行締切",
+      "start": "2026-12-09T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "イープラス",
+      "note": "イープラス プレオーダー3次（抽選）。2/6・7東京ガーデンシアター公演。 https://eplus.jp/shiritsuebichu/",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16082/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16082/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-09T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-09T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-this-is-gr8"
+    },
+    {
+      "id": "tohokusan-appare-kanagawa-20261202",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "律月ひかる・桜ひなの：Appare!かながわ大冒険",
+      "start": "2026-12-02T23:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "tvkテレビ神奈川",
+      "note": "放送後TVerで30日間見逃し配信。終了時刻は公式個別案内に記載なし。",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://madeintohoku.com/contents/1122479",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1122479",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tohokusan-appare-kanagawa-20261202"
+    },
+    {
+      "id": "oneloveoneheart-each-1liter-tears-release-20270226",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "映画「1リットルの涙」公開（イーチ出演）",
+      "start": "2027-02-26",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "全国公開（上映館・時刻は各劇場で確認）",
+      "note": "イーチは杉浦まり役。公開日。",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/news/news-7407/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/news/news-7407/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-1liter-tears"
     }
   ],
   "notes": [
