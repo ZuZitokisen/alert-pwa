@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-official-seven-artist-updates",
-  "dataGeneratedAt": "2026-11-26T13:14:54Z",
-  "inputSha256": "11d406e2f4f373b247b042cd60eb6df7f793678a3499bf174f0d2795c421e7ff",
+  "dataVersion": "2026-11-27-batten-ueda-talkport",
+  "dataGeneratedAt": "2026-11-26T17:14:06Z",
+  "inputSha256": "4b7ceff4cbce3c33627c7790da85d5a7a8755a077f7e00ae9e8e44a83968fa30",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1374,6 +1374,38 @@
       "memberships": [
         "batten-all",
         "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-ueda-talkport-20261127\"]",
+      "uid": "public-v1-d0ac252e01b4e7d8280028ce5746261f9af684a890d4bfef6bc0dd15d5045ef3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-ueda-talkport-20261127",
+        "category": "benefit",
+        "title": "上田理子 26th talkportサイン会",
+        "start": "2026-11-27T21:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "talkport（オンライン）",
+        "publicNote": "商品はトレカ。販売開始は11/25 20:00。終了時刻未記載。\nばってん少女隊公式個別スケジュールで確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1131708"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T17:14:06Z",
+      "modified": "2026-11-26T17:14:06Z",
+      "lastTiming": {
+        "start": "2026-11-27T21:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
       ]
     },
     {
@@ -17946,5 +17978,5 @@
       ]
     }
   ],
-  "integritySha256": "20c4d99916eed3f053f7a4ced202cfc8343cde3ff9611e08937300a6d24fc982"
+  "integritySha256": "a7e8249ddadf5578e8f25cf29f10f8c1728479b5ebfbc9f82afdecf43a44f262"
 }

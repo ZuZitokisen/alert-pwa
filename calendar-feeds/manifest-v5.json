@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-official-seven-artist-updates",
-  "dataGeneratedAt": "2026-11-26T13:14:54Z",
+  "dataVersion": "2026-11-27-batten-ueda-talkport",
+  "dataGeneratedAt": "2026-11-26T17:14:06Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a2672a2f2d5f536e90a3ad696f8d5cc1a90383f4b08c1388ac731f112c9d583d",
+  "inputSha256": "ac9f9f952fa06e54681ab45d34d3834dbaa763327ff07b10b875e5ea0eea2929",
   "feeds": [
     {
       "id": "tokisen-all",
