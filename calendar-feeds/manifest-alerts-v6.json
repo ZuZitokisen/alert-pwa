@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-official-seven-artist-updates",
-  "dataGeneratedAt": "2026-11-26T13:14:54Z",
+  "dataVersion": "2026-11-27-batten-ueda-talkport",
+  "dataGeneratedAt": "2026-11-26T17:14:06Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "11d406e2f4f373b247b042cd60eb6df7f793678a3499bf174f0d2795c421e7ff",
+  "inputSha256": "4b7ceff4cbce3c33627c7790da85d5a7a8755a077f7e00ae9e8e44a83968fa30",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all-alerts.ics",
-      "count": 45,
+      "count": 46,
       "omittedUnknownDate": 0,
-      "sha256": "674a508c9aa9291e955358bdfc3865b1daa436f8ebcfcc6160bd650045a2e5e1"
+      "sha256": "603a14acb623caed73a2057374eaa65cc6d6d4d1fda2f74d32ce4a44c06b67d7"
     },
     {
       "id": "batten-live",
@@ -336,9 +336,9 @@
       "category": "benefit",
       "label": "ばってん少女隊 / 特典会・応募",
       "path": "calendar-feeds/batten-benefit-alerts.ics",
-      "count": 16,
+      "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "b145979c238eafdc2c79e7edc4c9dc41f78f136b2eb57ca12f21a729fc608dba"
+      "sha256": "544c61f0427cab90c81f8829630a829a2b670a26f8ab79375e1babdb257ea074"
     },
     {
       "id": "batten-media",
