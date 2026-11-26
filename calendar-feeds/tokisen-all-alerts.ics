@@ -4182,6 +4182,37 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-bf55312780b29c3aac5cc13861842498bad44c7564a30e3620ccc061fcae3
+ ead@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261126T131454Z
+CREATED:20261126T131454Z
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:0
+DTSTART:20261129T040000Z
+SUMMARY:ときめけみらい 当日CD予約販売（ランダムトレカ
+ のみ）
+DESCRIPTION:FC会員対象。CD予約でメンバー指定ランダムト
+ レカ1枚、サイン入り当たりは1日最大144名。1会計5枚ま
+ で。イベント参加券付きCD販売はなし。\n本人側の公式
+ 個別告知で確認。\nhttps://toki-sen.com/contents/1132196?tag=all
+LOCATION:TOC有明Convention Hall
+URL:https://toki-sen.com/contents/1132196?tag=all
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT5H
+DESCRIPTION:ときめけみらい 当日CD予約販売（ランダムトレ
+ カのみ）
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:ときめけみらい 当日CD予約販売（ランダムトレ
+ カのみ）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-8ea81a739cde7868deb7d40ce2d60e2cdfc8fb9f63bcfdaaf948c150a10d6
  e5a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z

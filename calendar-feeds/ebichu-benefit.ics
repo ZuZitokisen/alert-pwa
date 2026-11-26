@@ -72,6 +72,42 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-dbfc4316fa8b1368d3276e56e37eb34662d37f435cf4ef4fe75433e209e8b
+ ec7@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261126T131454Z
+CREATED:20261126T131454Z
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:0
+DTSTART:20261209T145900Z
+SUMMARY:大学芸会2027「This is GR8」イープラス3次先行締切
+DESCRIPTION:イープラス プレオーダー3次（抽選）。2/6・7東
+ 京ガーデンシアター公演。 https://eplus.jp/shiritsuebichu/\n本
+ 人側の公式個別告知で確認。\nhttps://www.shiritsuebichu.jp/new
+ s/16082/
+LOCATION:イープラス
+URL:https://www.shiritsuebichu.jp/news/16082/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b09690e7f900c566fa54e41d67cf6109fa42caedcfe73741db02c4de58f93
+ 8bb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261126T131454Z
+CREATED:20261126T131454Z
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:0
+DTSTART:20261126T030000Z
+SUMMARY:大学芸会2027「This is GR8」イープラス3次先行開始
+DESCRIPTION:イープラス プレオーダー3次（抽選）。2/6・7東
+ 京ガーデンシアター公演。 https://eplus.jp/shiritsuebichu/\n本
+ 人側の公式個別告知で確認。\nhttps://www.shiritsuebichu.jp/new
+ s/16082/
+LOCATION:イープラス
+URL:https://www.shiritsuebichu.jp/news/16082/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-669771e390af830503ae56eb7ad576be9f1101860a2e32f815815a4cc8ae0
  0ce@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261124T031653Z
@@ -260,16 +296,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-097714a01f3b4de3b035e6cd5acf3c2bf1619e9063721758f0155b6a3ceb3
  8be@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T031233Z
+DTSTAMP:20261126T131454Z
 CREATED:20261121T031233Z
-LAST-MODIFIED:20261121T031233Z
-SEQUENCE:0
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:1
 DTSTART:20261121T010000Z
 SUMMARY:えびちゅうのトンチキ☆クリスマス！ 一般発売開
  始（先着）
 DESCRIPTION:対象公演は12月26日。空席状況は公式販売先で
- 確認。\n私立恵比寿中学の公式サイトで確認。\nhttps://w.
- pia.jp/t/ebichu/\nhttps://www.shiritsuebichu.jp/news/16089/
+ 確認。 11/26公式発表：両公演チケット完売。公演中止
+ ではありません。\n私立恵比寿中学の公式サイトで確認
+ 。\nhttps://w.pia.jp/t/ebichu/\nhttps://www.shiritsuebichu.jp/news/16089/
 LOCATION:チケットぴあ
 URL:https://www.shiritsuebichu.jp/news/16089/
 STATUS:CONFIRMED

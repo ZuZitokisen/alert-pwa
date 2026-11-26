@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-gift-collab-roster",
-  "dataGeneratedAt": "2026-11-25T17:12:53Z",
+  "dataVersion": "2026-11-26-official-seven-artist-updates",
+  "dataGeneratedAt": "2026-11-26T13:14:54Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "58179875efe649a0ff97677f288ef03dc65d9333dbaaec9e999aa9e3c0da5749",
+  "inputSha256": "6e81b428719e078a1d469d21d503fc4c288ef9654dd01458f693f85c6852b96b",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 205,
+      "count": 206,
       "omittedUnknownDate": 10,
-      "sha256": "caaf3ad415c9c8572388228365a208c2db360ca0c74d33a356161d7b7246bbfd"
+      "sha256": "9c449f760fe2a0fdf98d502504fb18551a0897e71c8bc6602d797a48fd33fb80"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit.ics",
-      "count": 67,
+      "count": 68,
       "omittedUnknownDate": 5,
-      "sha256": "cacafca3b52c21300a482f5d480d22bc303887882986350dabc1e551f6d64e23"
+      "sha256": "05344203cf4cd6b17ac713740f9f27ed5251c396f57e0f6c288b4f8d4fa2068a"
     },
     {
       "id": "tokisen-media",

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-gift-collab-roster",
-  "dataGeneratedAt": "2026-11-25T17:12:53Z",
-  "inputSha256": "5fcdd3e14a19d9791cd4e7570e548597a71adc4b3b0a03d73cecf8fcc2ccd274",
+  "dataVersion": "2026-11-26-official-seven-artist-updates",
+  "dataGeneratedAt": "2026-11-26T13:14:54Z",
+  "inputSha256": "11d406e2f4f373b247b042cd60eb6df7f793678a3499bf174f0d2795c421e7ff",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -920,6 +920,102 @@
       ]
     },
     {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-funtocast-performance-deadline\"]",
+      "uid": "public-v1-d0033b1724c1494f4ae43b98682d192e2f120874fc750af09a0338dc4a023437@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-funtocast-performance-deadline",
+        "category": "benefit",
+        "title": "魔法少女育成計画 Fun to Cast 公演期間受付締切",
+        "start": "2026-12-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Fun to Cast",
+        "publicNote": "11/25受付開始。https://funtocast.com/mahoikustage_202701\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-12-24T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-funtocast-rehearsal-deadline\"]",
+      "uid": "public-v1-42704b06e60ee46925f6cd60594b0408f6f83604f7bf3f80cdb5e52f7d080f86@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-funtocast-rehearsal-deadline",
+        "category": "benefit",
+        "title": "魔法少女育成計画 Fun to Cast 稽古期間受付締切",
+        "start": "2026-12-15T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "Fun to Cast",
+        "publicNote": "11/25受付開始。https://funtocast.com/mahoikustage_202701\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-12-15T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-kiina-mahoiku-tapestry-deadline\"]",
+      "uid": "public-v1-fe3d212c4e1a42d046ba64d316b4fe2041652a47e8fd48549775a3b38b93d7a3@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-kiina-mahoiku-tapestry-deadline",
+        "category": "benefit",
+        "title": "魔法少女育成計画 応援タペストリー抽選販売 締切",
+        "start": "2026-12-04T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ODD STORE",
+        "publicNote": "11/25受付開始。https://store.odd-inc.co.jp/\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1109249"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-12-04T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
       "key": "[\"batten\",\"curated-calendar\",\"batten-mbs-yanyan-20261123\"]",
       "uid": "public-v1-7a7e58a73facbb2d24a72fbfa0ba11d140fea53483a7cc7b97f8445eb0612c91@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -1107,6 +1203,38 @@
       "modified": "2026-11-21T21:17:40.778Z",
       "lastTiming": {
         "start": "2026-11-22",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-riko-26th-goods-sales-20261126\"]",
+      "uid": "public-v1-6cdfb75ea4d41c4452f481d940af864d26a1379cc3b0b6829eb7b580d7913d52@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-riko-26th-goods-sales-20261126",
+        "category": "benefit",
+        "title": "上田理子 26th Anniversary 生誕グッズ販売開始",
+        "start": "2026-11-26T21:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "公式オンラインストア",
+        "publicNote": "Tシャツ、トレカケース、アクリルスタンド、生写真など。販売終了時刻は未発表。\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1131717"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-11-26T21:30:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -2298,15 +2426,17 @@
         "end": null,
         "allDay": false,
         "location": "東京ガーデンシアター",
-        "publicNote": "出演者の変更告知は公式特設ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "出演者の変更告知は公式特設ページを確認。 イープラス3次抽選：11/26 12:00〜12/9 23:59。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16082/",
           "https://www.shiritsuebichu.jp/this-is-gr8/"
-        ]
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/this-is-gr8/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-26T13:14:54Z",
       "lastTiming": {
         "start": "2027-02-06T18:00:00+09:00",
         "end": null,
@@ -2330,15 +2460,17 @@
         "end": null,
         "allDay": false,
         "location": "東京ガーデンシアター",
-        "publicNote": "出演者の変更告知は公式特設ページを確認。\n私立恵比寿中学公式サイトで確認。",
+        "publicNote": "出演者の変更告知は公式特設ページを確認。 イープラス3次抽選：11/26 12:00〜12/9 23:59。\n私立恵比寿中学公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16082/",
           "https://www.shiritsuebichu.jp/this-is-gr8/"
-        ]
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/this-is-gr8/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T01:14:50Z",
-      "modified": "2026-11-21T01:14:50Z",
+      "modified": "2026-11-26T13:14:54Z",
       "lastTiming": {
         "start": "2027-02-07T16:00:00+09:00",
         "end": null,
@@ -2373,6 +2505,70 @@
       "modified": "2026-11-21T01:14:50Z",
       "lastTiming": {
         "start": "2026-11-23T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-gr8-ticket-3rd-deadline-20261209\"]",
+      "uid": "public-v1-dbfc4316fa8b1368d3276e56e37eb34662d37f435cf4ef4fe75433e209e8bec7@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-gr8-ticket-3rd-deadline-20261209",
+        "category": "benefit",
+        "title": "大学芸会2027「This is GR8」イープラス3次先行締切",
+        "start": "2026-12-09T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イープラス",
+        "publicNote": "イープラス プレオーダー3次（抽選）。2/6・7東京ガーデンシアター公演。 https://eplus.jp/shiritsuebichu/\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16082/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-12-09T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-gr8-ticket-3rd-open-20261126\"]",
+      "uid": "public-v1-b09690e7f900c566fa54e41d67cf6109fa42caedcfe73741db02c4de58f938bb@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-gr8-ticket-3rd-open-20261126",
+        "category": "benefit",
+        "title": "大学芸会2027「This is GR8」イープラス3次先行開始",
+        "start": "2026-11-26T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "イープラス",
+        "publicNote": "イープラス プレオーダー3次（抽選）。2/6・7東京ガーデンシアター公演。 https://eplus.jp/shiritsuebichu/\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16082/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-11-26T12:00:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -4296,7 +4492,7 @@
         "end": null,
         "allDay": false,
         "location": "チケットぴあ",
-        "publicNote": "対象公演は12月26日。空席状況は公式販売先で確認。\n私立恵比寿中学の公式サイトで確認。",
+        "publicNote": "対象公演は12月26日。空席状況は公式販売先で確認。 11/26公式発表：両公演チケット完売。公演中止ではありません。\n私立恵比寿中学の公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://w.pia.jp/t/ebichu/",
@@ -4304,9 +4500,9 @@
         ],
         "sourceUrl": "https://www.shiritsuebichu.jp/news/16089/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T03:12:33Z",
-      "modified": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-26T13:14:54Z",
       "lastTiming": {
         "start": "2026-11-21T10:00:00+09:00",
         "end": null,
@@ -4330,15 +4526,15 @@
         "end": null,
         "allDay": false,
         "location": "EX THEATER ROPPONGI",
-        "publicNote": "私立恵比寿中学の公式サイトで確認。",
+        "publicNote": "11/26公式発表：両公演チケット完売。公演中止ではありません。\n私立恵比寿中学の公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://www.shiritsuebichu.jp/news/16089/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T03:12:33Z",
-      "modified": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-26T13:14:54Z",
       "lastTiming": {
         "start": "2026-12-26T15:00:00+09:00",
         "end": null,
@@ -4362,15 +4558,15 @@
         "end": null,
         "allDay": false,
         "location": "EX THEATER ROPPONGI",
-        "publicNote": "私立恵比寿中学の公式サイトで確認。",
+        "publicNote": "11/26公式発表：両公演チケット完売。公演中止ではありません。\n私立恵比寿中学の公式サイトで確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://www.shiritsuebichu.jp/news/16089/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T03:12:33Z",
-      "modified": "2026-11-21T03:12:33Z",
+      "modified": "2026-11-26T13:14:54Z",
       "lastTiming": {
         "start": "2026-12-26T18:30:00+09:00",
         "end": null,
@@ -4543,6 +4739,38 @@
       "memberships": [
         "oneloveoneheart-all",
         "oneloveoneheart-live"
+      ]
+    },
+    {
+      "key": "[\"oneloveoneheart\",\"curated-calendar\",\"oneloveoneheart-each-1liter-tears-release-20270226\"]",
+      "uid": "public-v1-52346fd613f217b993cec7f4633028bc72b21fe1516a3dcebfe72030019366ac@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "oneloveoneheart",
+        "source": "curated-calendar",
+        "id": "oneloveoneheart-each-1liter-tears-release-20270226",
+        "category": "other",
+        "title": "映画「1リットルの涙」公開（イーチ出演）",
+        "start": "2027-02-26",
+        "end": null,
+        "allDay": false,
+        "location": "全国公開（上映館・時刻は各劇場で確認）",
+        "publicNote": "イーチは杉浦まり役。公開日。\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://oneloveoneheart.jp/news/news-7407/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2027-02-26",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "oneloveoneheart-all",
+        "oneloveoneheart-other"
       ]
     },
     {
@@ -9209,6 +9437,38 @@
       "memberships": [
         "straightangeli-all",
         "straightangeli-media"
+      ]
+    },
+    {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-appare-kanagawa-20261202\"]",
+      "uid": "public-v1-712a9f93ad062b5ed28d3b5f55c3db27c5828c859e61918324231bce219d2c90@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-appare-kanagawa-20261202",
+        "category": "media",
+        "title": "律月ひかる・桜ひなの：Appare!かながわ大冒険",
+        "start": "2026-12-02T23:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "tvkテレビ神奈川",
+        "publicNote": "放送後TVerで30日間見逃し配信。終了時刻は公式個別案内に記載なし。\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1122479"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-12-02T23:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-media"
       ]
     },
     {
@@ -16037,6 +16297,38 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-real-2026-11-29-cd-trading-card-sales\"]",
+      "uid": "public-v1-bf55312780b29c3aac5cc13861842498bad44c7564a30e3620ccc061fcae3ead@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-real-2026-11-29-cd-trading-card-sales",
+        "category": "benefit",
+        "title": "ときめけみらい 当日CD予約販売（ランダムトレカのみ）",
+        "start": "2026-11-29T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TOC有明Convention Hall",
+        "publicNote": "FC会員対象。CD予約でメンバー指定ランダムトレカ1枚、サイン入り当たりは1日最大144名。1会計5枚まで。イベント参加券付きCD販売はなし。\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://toki-sen.com/contents/1132196?tag=all"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-26T13:14:54Z",
+      "modified": "2026-11-26T13:14:54Z",
+      "lastTiming": {
+        "start": "2026-11-29T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-benefit"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-real-2026-11-29-firstcome-close\"]",
       "uid": "public-v1-8ea81a739cde7868deb7d40ce2d60e2cdfc8fb9f63bcfdaaf948c150a10d6e5a@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -17654,5 +17946,5 @@
       ]
     }
   ],
-  "integritySha256": "952e773f9ff55bada1076038fea83d990bd9bf1e1b868f85b8eb6617a76eaa55"
+  "integritySha256": "20c4d99916eed3f053f7a4ced202cfc8343cde3ff9611e08937300a6d24fc982"
 }

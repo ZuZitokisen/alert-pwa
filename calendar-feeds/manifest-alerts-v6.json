@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-gift-collab-roster",
-  "dataGeneratedAt": "2026-11-25T17:12:53Z",
+  "dataVersion": "2026-11-26-official-seven-artist-updates",
+  "dataGeneratedAt": "2026-11-26T13:14:54Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "5fcdd3e14a19d9791cd4e7570e548597a71adc4b3b0a03d73cecf8fcc2ccd274",
+  "inputSha256": "11d406e2f4f373b247b042cd60eb6df7f793678a3499bf174f0d2795c421e7ff",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 205,
+      "count": 206,
       "omittedUnknownDate": 10,
-      "sha256": "cb715121c0ef35804206a3e2c52eeb4ce36f3b514d1bd02819342a255f966b75"
+      "sha256": "20452900c2522f28e23fa15eb2bfbc99079003431de737ce710229e92ebf8418"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit-alerts.ics",
-      "count": 67,
+      "count": 68,
       "omittedUnknownDate": 5,
-      "sha256": "352af09fa5225b3489a233acb687c85633cc4e213e51d917c78f8eb7f9fad586"
+      "sha256": "2ddb435089be5026828ead04b7f101997e81b6b75d80f4aaec2b018f8b28030e"
     },
     {
       "id": "tokisen-media",
@@ -166,9 +166,9 @@
       "category": "all",
       "label": "ONE LOVE ONE HEART / 全予定",
       "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
-      "count": 40,
+      "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "ec329c4fbba918220ce8429ce00a8e4d4debb8ded3ddda013661597792cb77dd"
+      "sha256": "7db63b7329b8231db6c5ba46cea9f82b4dbf0c2da152ada6f8de92e4572bf55c"
     },
     {
       "id": "oneloveoneheart-live",
@@ -206,9 +206,9 @@
       "category": "other",
       "label": "ONE LOVE ONE HEART / その他",
       "path": "calendar-feeds/oneloveoneheart-other-alerts.ics",
-      "count": 2,
+      "count": 3,
       "omittedUnknownDate": 0,
-      "sha256": "4b611102c600c5c0fffaf54c968ed01516b00b7ee1eaa76d77d69c9e142aca67"
+      "sha256": "274e3a8b2111887bbc04a7259f1bcfd57f27a745ff8305f40fc57deaab58801b"
     },
     {
       "id": "tohokusan-all",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
-      "count": 44,
+      "count": 45,
       "omittedUnknownDate": 0,
-      "sha256": "66d2823e8141ccc90a185eaafcffe3162d3c46cc4f41adceb8ecd729865e2d9a"
+      "sha256": "189d0fb215e45a59af38efbbc4256e9ced2454ab0b42fc667ecc63a9892950ba"
     },
     {
       "id": "tohokusan-live",
@@ -246,9 +246,9 @@
       "category": "media",
       "label": "いぎなり東北産 / メディア",
       "path": "calendar-feeds/tohokusan-media-alerts.ics",
-      "count": 17,
+      "count": 18,
       "omittedUnknownDate": 0,
-      "sha256": "943cd3718076cedf44b7afae81001f620ad3ba66b1f0763db0eed088ccf2ba02"
+      "sha256": "fdd6708076322b067b8ea7371940e603c90a4e1b8556ac5af195cdd1bb41f7ea"
     },
     {
       "id": "tohokusan-other",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 94,
+      "count": 96,
       "omittedUnknownDate": 0,
-      "sha256": "25d5e7d6f47685f78141fb9e986da79f5b169ad955021e29e6d814abe4d615a6"
+      "sha256": "31951e65483bd9333ecde4792402786eae96c583c54d91be297ba9ee0296071d"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "ab96dd04b2db19f2ee51fd93cb6c9e8953d399eccbb4be515521432116296da3"
+      "sha256": "4ded85718fe012d7d3ea6ceabcb4f65b44a8552b0705e6963f92df5b3e4d94be"
     },
     {
       "id": "ebichu-benefit",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit-alerts.ics",
-      "count": 15,
+      "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "25baf7f0048c0630417bf36102d363d539395925c0c4f8870925b7b74c36bfb7"
+      "sha256": "59a244f69ed494eea8c6c5f01850300340c2f4c566c4845e5a71c8601ab2d7d9"
     },
     {
       "id": "ebichu-media",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all-alerts.ics",
-      "count": 41,
+      "count": 45,
       "omittedUnknownDate": 0,
-      "sha256": "7073ad0d0cd8654c17cd264ce71595f401ffb53e19d0f640a77c0340b574c3f9"
+      "sha256": "674a508c9aa9291e955358bdfc3865b1daa436f8ebcfcc6160bd650045a2e5e1"
     },
     {
       "id": "batten-live",
@@ -336,9 +336,9 @@
       "category": "benefit",
       "label": "ばってん少女隊 / 特典会・応募",
       "path": "calendar-feeds/batten-benefit-alerts.ics",
-      "count": 12,
+      "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "9a57d5e6d54a0cd7fb5bcb2a51c795b314327570e4dca580ed7de03347152c24"
+      "sha256": "b145979c238eafdc2c79e7edc4c9dc41f78f136b2eb57ca12f21a729fc608dba"
     },
     {
       "id": "batten-media",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-26-gift-collab-roster",
-  "generatedAt": "2026-11-25T17:12:53Z",
+  "version": "2026-11-26-official-seven-artist-updates",
+  "generatedAt": "2026-11-26T13:14:54Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13685,6 +13685,68 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-cdj-20261227"
+    },
+    {
+      "id": "tokisen-real-2026-11-29-cd-trading-card-sales",
+      "source": "curated-calendar",
+      "artistId": "tokisen",
+      "title": "ときめけみらい 当日CD予約販売（ランダムトレカのみ）",
+      "start": "2026-11-29T13:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "TOC有明Convention Hall",
+      "note": "FC会員対象。CD予約でメンバー指定ランダムトレカ1枚、サイン入り当たりは1日最大144名。1会計5枚まで。イベント参加券付きCD販売はなし。",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://toki-sen.com/contents/1132196?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1132196?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [
+        {
+          "label": "販売開始",
+          "kind": "application_start",
+          "at": "2026-11-29T13:00:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-real-2026-11-29"
+    },
+    {
+      "id": "oneloveoneheart-each-1liter-tears-release-20270226",
+      "source": "curated-calendar",
+      "artistId": "oneloveoneheart",
+      "title": "映画「1リットルの涙」公開（イーチ出演）",
+      "start": "2027-02-26",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "全国公開（上映館・時刻は各劇場で確認）",
+      "note": "イーチは杉浦まり役。公開日。",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://oneloveoneheart.jp/news/news-7407/",
+      "sources": [
+        {
+          "url": "https://oneloveoneheart.jp/news/news-7407/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-26T13:14:54Z"
+        }
+      ],
+      "checkedAt": "2026-11-26T13:14:54Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "oneloveoneheart-1liter-tears"
     }
   ],
   "notes": [
