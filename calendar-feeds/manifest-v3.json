@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-gift-collab-roster",
-  "dataGeneratedAt": "2026-11-25T17:12:53Z",
+  "dataVersion": "2026-11-26-official-seven-artist-updates",
+  "dataGeneratedAt": "2026-11-26T13:14:54Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "fbab57e15865aded876a492c939e8b5721c4e72d3a8e682b54435cdc42ac3ee2",
+  "inputSha256": "8611cad13b3f5d4795f7cbc752846ce0860b58ac96ac04430f2c25a58c33675e",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 205,
+      "count": 206,
       "omittedUnknownDate": 10,
-      "sha256": "caaf3ad415c9c8572388228365a208c2db360ca0c74d33a356161d7b7246bbfd"
+      "sha256": "9c449f760fe2a0fdf98d502504fb18551a0897e71c8bc6602d797a48fd33fb80"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit.ics",
-      "count": 67,
+      "count": 68,
       "omittedUnknownDate": 5,
-      "sha256": "cacafca3b52c21300a482f5d480d22bc303887882986350dabc1e551f6d64e23"
+      "sha256": "05344203cf4cd6b17ac713740f9f27ed5251c396f57e0f6c288b4f8d4fa2068a"
     },
     {
       "id": "tokisen-media",
@@ -166,9 +166,9 @@
       "category": "all",
       "label": "ONE LOVE ONE HEART / 全予定",
       "path": "calendar-feeds/oneloveoneheart-all.ics",
-      "count": 40,
+      "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "69542a73847c5b278a0497936e9ffd2b400a0b6fc59e6b76e124407d217028f4"
+      "sha256": "2ee8ef0f67efec40328f536c2489c71f084b8b46e2136cfdeb2347e45feb3d82"
     },
     {
       "id": "oneloveoneheart-live",
@@ -206,9 +206,9 @@
       "category": "other",
       "label": "ONE LOVE ONE HEART / その他",
       "path": "calendar-feeds/oneloveoneheart-other.ics",
-      "count": 2,
+      "count": 3,
       "omittedUnknownDate": 0,
-      "sha256": "9c3eab319def51767586808b387f0bef60043f61f231d9da52d5a707a8523f33"
+      "sha256": "48a472f10f28d0f722d4f0a7a9c4da93cecf9760f420cabc34c792f122879676"
     }
   ]
 }

@@ -4,6 +4,23 @@ PRODID:-//Alert PWA//Public Calendar Subscription//JA
 CALSCALE:GREGORIAN
 X-WR-CALNAME:いぎなり東北産 / 全予定
 BEGIN:VEVENT
+UID:public-v1-712a9f93ad062b5ed28d3b5f55c3db27c5828c859e61918324231bce219d2
+ c90@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261126T131454Z
+CREATED:20261126T131454Z
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:0
+DTSTART:20261202T140000Z
+SUMMARY:律月ひかる・桜ひなの：Appare!かながわ大冒険
+DESCRIPTION:放送後TVerで30日間見逃し配信。終了時刻は公式
+ 個別案内に記載なし。\n本人側の公式個別告知で確認。
+ \nhttps://madeintohoku.com/contents/1122479
+LOCATION:tvkテレビ神奈川
+URL:https://madeintohoku.com/contents/1122479
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-d8185ae46ff34a646e7cd6b047b438e7aa72d24497611144307c4794167c5
  ef1@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T084531Z

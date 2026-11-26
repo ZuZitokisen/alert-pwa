@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-26-gift-collab-roster",
-  "dataGeneratedAt": "2026-11-25T17:12:53Z",
+  "dataVersion": "2026-11-26-official-seven-artist-updates",
+  "dataGeneratedAt": "2026-11-26T13:14:54Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "e76d3e02fa7483710a70a7d453905c19f904bdc8ab2b28799f973e7152660356",
+  "inputSha256": "a2672a2f2d5f536e90a3ad696f8d5cc1a90383f4b08c1388ac731f112c9d583d",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 205,
+      "count": 206,
       "omittedUnknownDate": 10,
-      "sha256": "caaf3ad415c9c8572388228365a208c2db360ca0c74d33a356161d7b7246bbfd"
+      "sha256": "9c449f760fe2a0fdf98d502504fb18551a0897e71c8bc6602d797a48fd33fb80"
     },
     {
       "id": "tokisen-live",
@@ -36,9 +36,9 @@
       "category": "benefit",
       "label": "超ときめき♡宣伝部 / 特典会・応募",
       "path": "calendar-feeds/tokisen-benefit.ics",
-      "count": 67,
+      "count": 68,
       "omittedUnknownDate": 5,
-      "sha256": "cacafca3b52c21300a482f5d480d22bc303887882986350dabc1e551f6d64e23"
+      "sha256": "05344203cf4cd6b17ac713740f9f27ed5251c396f57e0f6c288b4f8d4fa2068a"
     },
     {
       "id": "tokisen-media",
@@ -166,9 +166,9 @@
       "category": "all",
       "label": "ONE LOVE ONE HEART / 全予定",
       "path": "calendar-feeds/oneloveoneheart-all.ics",
-      "count": 40,
+      "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "69542a73847c5b278a0497936e9ffd2b400a0b6fc59e6b76e124407d217028f4"
+      "sha256": "2ee8ef0f67efec40328f536c2489c71f084b8b46e2136cfdeb2347e45feb3d82"
     },
     {
       "id": "oneloveoneheart-live",
@@ -206,9 +206,9 @@
       "category": "other",
       "label": "ONE LOVE ONE HEART / その他",
       "path": "calendar-feeds/oneloveoneheart-other.ics",
-      "count": 2,
+      "count": 3,
       "omittedUnknownDate": 0,
-      "sha256": "9c3eab319def51767586808b387f0bef60043f61f231d9da52d5a707a8523f33"
+      "sha256": "48a472f10f28d0f722d4f0a7a9c4da93cecf9760f420cabc34c792f122879676"
     },
     {
       "id": "tohokusan-all",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all.ics",
-      "count": 44,
+      "count": 45,
       "omittedUnknownDate": 0,
-      "sha256": "4fa86cdce19a7d869be0fb4f2a703939881830f767e412db1170e4d8edb47120"
+      "sha256": "f98e95113cdf55d22207609231d97e16289882cabef340e10fff49b682ff8e5c"
     },
     {
       "id": "tohokusan-live",
@@ -246,9 +246,9 @@
       "category": "media",
       "label": "いぎなり東北産 / メディア",
       "path": "calendar-feeds/tohokusan-media.ics",
-      "count": 17,
+      "count": 18,
       "omittedUnknownDate": 0,
-      "sha256": "eb00e912a094aa5b2febfa30bd6a7fe3af17b9cbca6a3aa2c0dc247ae4d3ff09"
+      "sha256": "318068beeb3e9a284752bfa630a0f61b963cc475ff6cfddaa4d319f7edd5d7bb"
     },
     {
       "id": "tohokusan-other",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all.ics",
-      "count": 94,
+      "count": 96,
       "omittedUnknownDate": 0,
-      "sha256": "37fd6bbe3b3ccb6dca5b69a5daceb25d0dcc26bc696384a99f777223ede2b207"
+      "sha256": "ea13c86e7962eab52e854e7dc4684651bfadcda8c2aa2f1d586ba0460ce68d42"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live.ics",
       "count": 29,
       "omittedUnknownDate": 0,
-      "sha256": "2c369fed69ccc48a82a5e4fc9189eedf71134d128c44437e704abcb4274dbf3c"
+      "sha256": "914f4fb761ae30788ee9ca18e2b10a301a89cbf245fb6245ca1ee15a8269b977"
     },
     {
       "id": "ebichu-benefit",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit.ics",
-      "count": 15,
+      "count": 17,
       "omittedUnknownDate": 0,
-      "sha256": "9fe7b3990965dc69432e42d6cb6397c39e4cc5892a0d3794ad1433b67958642c"
+      "sha256": "d89a8591d08c7df0979ed37a94b4ce254e9d2fffb6849548bbbd44277fa89756"
     },
     {
       "id": "ebichu-media",

@@ -110,15 +110,16 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-1cf41d97f787cf32efc8cc38f58667a8f3fcac559be454b0a38e0c3179fd8
  9ae@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261126T131454Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:1
 DTSTART:20270206T090000Z
 SUMMARY:私立恵比寿中学 大学芸会2027「This is GR8」
-DESCRIPTION:出演者の変更告知は公式特設ページを確認。\n
- 私立恵比寿中学公式サイトで確認。\nhttps://www.shiritsuebic
- hu.jp/this-is-gr8/
+DESCRIPTION:出演者の変更告知は公式特設ページを確認。 
+ イープラス3次抽選：11/26 12:00〜12/9 23:59。\n私立恵比寿
+ 中学公式サイトで確認。\nhttps://www.shiritsuebichu.jp/news/1608
+ 2/\nhttps://www.shiritsuebichu.jp/this-is-gr8/
 LOCATION:東京ガーデンシアター
 URL:https://www.shiritsuebichu.jp/this-is-gr8/
 STATUS:CONFIRMED
@@ -127,15 +128,16 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-6154396542894fea7952e609d7a571ed1da1803df1d142a567243e524cda9
  541@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T011450Z
+DTSTAMP:20261126T131454Z
 CREATED:20261121T011450Z
-LAST-MODIFIED:20261121T011450Z
-SEQUENCE:0
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:1
 DTSTART:20270207T070000Z
 SUMMARY:私立恵比寿中学 大学芸会2027「This is GR8」
-DESCRIPTION:出演者の変更告知は公式特設ページを確認。\n
- 私立恵比寿中学公式サイトで確認。\nhttps://www.shiritsuebic
- hu.jp/this-is-gr8/
+DESCRIPTION:出演者の変更告知は公式特設ページを確認。 
+ イープラス3次抽選：11/26 12:00〜12/9 23:59。\n私立恵比寿
+ 中学公式サイトで確認。\nhttps://www.shiritsuebichu.jp/news/1608
+ 2/\nhttps://www.shiritsuebichu.jp/this-is-gr8/
 LOCATION:東京ガーデンシアター
 URL:https://www.shiritsuebichu.jp/this-is-gr8/
 STATUS:CONFIRMED
@@ -492,14 +494,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-15bd5b19a408b2791cd0d1d42633f17bf847ae36b24ddd12856d59b9ca6be
  cc3@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T031233Z
+DTSTAMP:20261126T131454Z
 CREATED:20261121T031233Z
-LAST-MODIFIED:20261121T031233Z
-SEQUENCE:0
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:1
 DTSTART:20261226T060000Z
 SUMMARY:えびちゅうのトンチキ☆クリスマス！ 第1部
-DESCRIPTION:私立恵比寿中学の公式サイトで確認。\nhttps://ww
- w.shiritsuebichu.jp/news/16089/
+DESCRIPTION:11/26公式発表：両公演チケット完売。公演中止
+ ではありません。\n私立恵比寿中学の公式サイトで確認
+ 。\nhttps://www.shiritsuebichu.jp/news/16089/
 LOCATION:EX THEATER ROPPONGI
 URL:https://www.shiritsuebichu.jp/news/16089/
 STATUS:CONFIRMED
@@ -508,14 +511,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-54ca5b9705990b5e03b22a1402e5893377944626b0df8034377d99284fd31
  d4b@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T031233Z
+DTSTAMP:20261126T131454Z
 CREATED:20261121T031233Z
-LAST-MODIFIED:20261121T031233Z
-SEQUENCE:0
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:1
 DTSTART:20261226T093000Z
 SUMMARY:えびちゅうのトンチキ☆クリスマス！ 第2部
-DESCRIPTION:私立恵比寿中学の公式サイトで確認。\nhttps://ww
- w.shiritsuebichu.jp/news/16089/
+DESCRIPTION:11/26公式発表：両公演チケット完売。公演中止
+ ではありません。\n私立恵比寿中学の公式サイトで確認
+ 。\nhttps://www.shiritsuebichu.jp/news/16089/
 LOCATION:EX THEATER ROPPONGI
 URL:https://www.shiritsuebichu.jp/news/16089/
 STATUS:CONFIRMED

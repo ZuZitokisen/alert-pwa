@@ -51,6 +51,24 @@ DESCRIPTION:エアトリ presents 毎日がクリスマス2026
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-52346fd613f217b993cec7f4633028bc72b21fe1516a3dcebfe7203001936
+ 6ac@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261126T131454Z
+CREATED:20261126T131454Z
+LAST-MODIFIED:20261126T131454Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270226
+SUMMARY:映画「1リットルの涙」公開（イーチ出演）（時刻
+ 未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nイーチは杉浦まり役。公開日。\n本人側の公式個別
+ 告知で確認。\nhttps://oneloveoneheart.jp/news/news-7407/
+LOCATION:全国公開（上映館・時刻は各劇場で確認）
+URL:https://oneloveoneheart.jp/news/news-7407/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-28ac8e1abb2264579c676eb909c40d316ae6070e999e87cc99033ff50555a
  5b5@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261125T152147Z
