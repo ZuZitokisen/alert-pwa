@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.45';
+const APP_RELEASE='0.7.46';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const artistOrder=['ebichu','batten','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
@@ -392,7 +392,20 @@ function changeCard(change){
 function renderChanges(){const list=state.changes.filter(c=>matchesArtist((c.after||c.before)?.artistId)).map(changeCard);$('#changes').replaceChildren(...(list.length?list:[el('p','新着・変更はまだありません。','empty')]));}
 function renderStorage(){$('#storage-status').replaceChildren(el('span','このブラウザへの保存'),el('strong',storageFailed?'利用できません':'端末内のみ'));}
 function render(){reconcileReadMarker();renderArtists();renderCalendar();renderCards();renderChanges();renderStorage();$('#favorite-count').textContent=state.events.filter(e=>favorites.has(F.stableEventKey(e))).length;$('#unread').textContent=state.changes.filter(c=>c.id>readThrough).length;const source=state.sources[0];$('#connection').classList.toggle('offline',!!source?.error);$('#connection').textContent=source?.error?source.error:`${state.events.length}件 · データ更新 ${prettyDate(state.generatedAt)}`;if(state.storageAvailable===false){storageFailed=true;renderStorage();}}
-async function refresh({notice=false}={}){const g=++requestGeneration;try{const r=await scheduleRequest('state'),next=await r.json();if(g!==requestGeneration)return false;if(!Array.isArray(next.events))throw Error('read');state=next;render();if(!r.ok){toast(next.baselineReady?'予定の更新を取得できませんでした。保存済みの情報を表示しています。':'予定の初回取得ができませんでした。接続を確認してください。');return false;}if(notice)toast('アプリと予定を再読み込みしました。お気に入りは保持しています。');return true;}catch{if(g!==requestGeneration)return false;toast('予定を読み込めませんでした。接続を確認して再読み込みしてください。');return false;}}
+function markFurinReady(mode){
+ const root=globalThis.document?.documentElement;if(!root)return;
+ const publish=()=>{root.dataset.furinReady=mode;globalThis.window?.dispatchEvent?.(new Event('furin-calendar-ready'));};
+ // Wait until the rendered calendar/agenda DOM has reached a frame boundary.
+ if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>requestAnimationFrame(publish));else publish();
+}
+async function refresh({notice=false,bootstrap=false}={}){
+ const g=++requestGeneration;
+ if(bootstrap){try{
+   const cached=await scheduleRequest('cached-state'),saved=await cached.json();
+   if(g!==requestGeneration)return false;
+   if(saved.baselineReady&&Array.isArray(saved.events)){state=saved;render();markFurinReady('cached');}
+ }catch{}}
+try{const r=await scheduleRequest('state'),next=await r.json();if(g!==requestGeneration)return false;if(!Array.isArray(next.events))throw Error('read');state=next;render();markFurinReady(next.baselineReady?(r.ok?'ready':'cached'):'unavailable');if(!r.ok){toast(next.baselineReady?'予定の更新を取得できませんでした。保存済みの情報を表示しています。':'予定の初回取得ができませんでした。接続を確認してください。');return false;}if(notice)toast('アプリと予定を再読み込みしました。お気に入りは保持しています。');return true;}catch{if(g!==requestGeneration)return false;try{render();}catch{}markFurinReady(state.baselineReady?'cached':'unavailable');toast('予定を読み込めませんでした。接続を確認して再読み込みしてください。');return false;}}
 let appUpdating=false;
 const APP_RELOAD_NOTICE='alert-pwa-reload-notice-v1';
 function rememberAppReload(){try{sessionStorage.setItem(APP_RELOAD_NOTICE,String(Date.now()));}catch{}}
@@ -560,4 +573,4 @@ function movePeriod(direction){const d=dayDate(period);d.setUTCMonth(d.getUTCMon
 $('#prev-period').onclick=()=>movePeriod(-1);$('#next-period').onclick=()=>movePeriod(1);$('#today').onclick=selectToday;$('#read-all').onclick=()=>{readThrough=Math.max(readThrough,...state.changes.map(c=>c.id));save(readKey,readThrough);render();toast('確認済みにしました。履歴は残ります。');};$('#select-visible').onchange=()=>{for(const e of visibleCards().filter(e=>F.exportEligibility(e).eligible)){const key=F.stableEventKey(e);$('#select-visible').checked?selected.add(key):selected.delete(key);}save('alert-pwa-selected-v1',[...selected]);renderCards();};$('#export-selected').onclick=()=>openExport(state.events.filter(e=>selected.has(F.stableEventKey(e))));
 setupNewsTabs();$('#available-app-update').onclick=showAvailableAppRelease;
 document.querySelectorAll('[data-view]').forEach(link=>link.addEventListener('click',preventActiveTabNavigation));
-$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('click',resetCalendarDateTap,true);window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();initScheduleScroll();refresh({notice:takeAppReloadNotice()});window.addEventListener('furin-launch-closed',checkAppRelease,{once:true});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);
+$('#source-list').replaceChildren(...artists.map(a=>{const row=el('div','','source-item'),link=el('a','公式サイト ↗');link.href=a.officialUrl;link.target='_blank';link.rel='noopener noreferrer';row.append(el('strong',a.name),link);return row;}));window.addEventListener('click',resetCalendarDateTap,true);window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',()=>{if(!document.hidden){refresh();checkAppRelease();}});if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>toast('オフライン用の準備ができませんでした。'));renderArtists();route();initScheduleScroll();refresh({notice:takeAppReloadNotice(),bootstrap:true});window.addEventListener('furin-launch-closed',checkAppRelease,{once:true});checkAppRelease();setInterval(()=>{if(!document.hidden)checkAppRelease();},300000);
