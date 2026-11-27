@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-ebichu-myfave",
-  "dataGeneratedAt": "2026-11-27T03:13:53Z",
-  "inputSha256": "6400ab47763c64275cc9c0df8852c2d808d33357166e136ae6cb25bc01531432",
+  "dataVersion": "2026-11-27-afternoon-official",
+  "dataGeneratedAt": "2026-11-27T05:17:55Z",
+  "inputSha256": "78ac12608991b243378b5688e6c10dda1f25a747b942c89234add498485e5ea1",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -204,6 +204,70 @@
       "memberships": [
         "batten-all",
         "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fc-booth-20261128\"]",
+      "uid": "public-v1-ed32723c7f7049ad63a3a02d72962c225bfe0accbf70d3451e4641d873d5857a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fc-booth-20261128",
+        "category": "live",
+        "title": "「ちゅぴ」リリースイベント FCブース",
+        "start": "2026-11-28T10:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ららぽーと立川立飛",
+        "publicNote": "特典会終了まで。ミニライブ中受付なし。11/16～当日の新規入隊者・紹介者対象のステッカー（数量限定）。\n本人公式の個別告知に基づく。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1129602"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T05:17:55Z",
+      "modified": "2026-11-27T05:17:55Z",
+      "lastTiming": {
+        "start": "2026-11-28T10:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-chupi-fc-booth-20261129\"]",
+      "uid": "public-v1-f32c100695d4fa80ebbc0fb1356e4367186b585a0eb8eb98c4df0331ccf0d416@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-chupi-fc-booth-20261129",
+        "category": "live",
+        "title": "「ちゅぴ」リリースイベント FCブース",
+        "start": "2026-11-29T10:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "ららぽーと豊洲",
+        "publicNote": "特典会終了まで。ミニライブ中受付なし。11/16～当日の新規入隊者・紹介者対象のステッカー（数量限定）。\n本人公式の個別告知に基づく。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1129602"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T05:17:55Z",
+      "modified": "2026-11-27T05:17:55Z",
+      "lastTiming": {
+        "start": "2026-11-29T10:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
       ]
     },
     {
@@ -620,6 +684,38 @@
       "memberships": [
         "batten-all",
         "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-idol-collection-festival-20270322\"]",
+      "uid": "public-v1-e1642e26a55f86b29a41cc4909d82602a865eb985304f08ca56192c20483b291@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-idol-collection-festival-20270322",
+        "category": "live",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T",
+        "start": "2027-03-22",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "公式ニュース一覧で3/22（月祝）出演決定。時刻・会場等は個別記事未確認。\n本人公式ニュース一覧の11/27告知見出し。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/news"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T05:17:55Z",
+      "modified": "2026-11-27T05:17:55Z",
+      "lastTiming": {
+        "start": "2027-03-22",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
       ]
     },
     {
@@ -11766,6 +11862,38 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-haruka-flat-20261210\"]",
+      "uid": "public-v1-8f65596e29177019bd445d6ec7fea604c70093b5aebf2383414401074a17fc57@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-haruka-flat-20261210",
+        "category": "media",
+        "title": "小泉遥香 TBSラジオ「パンサー向井のふらっと」",
+        "start": "2026-12-10T08:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TBSラジオ",
+        "publicNote": "生放送。終了時刻未確認。\n本人公式の個別告知に基づく。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://toki-sen.com/contents/1132273?tag=all"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T05:17:55Z",
+      "modified": "2026-11-27T05:17:55Z",
+      "lastTiming": {
+        "start": "2026-12-10T08:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-jr-10-from_date\"]",
       "uid": "public-v1-98a50177ccbbcdf393e6ab21715c3b28ec492514692d05275beb2ced810c67ca@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -12211,6 +12339,38 @@
       "memberships": [
         "tokisen-all",
         "tokisen-media"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-kanami-randa-20261223\"]",
+      "uid": "public-v1-aa0d9d95d4148ed3ee65c9a1f4ea934528b11adcbda81e7691f94581c0a034cd@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-kanami-randa-20261223",
+        "category": "other",
+        "title": "辻野かなみ掲載「RANDA 2WAY FUR BAG BOOK」発売",
+        "start": "2026-12-23",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "発売日のみ。\n本人公式の個別告知に基づく。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://toki-sen.com/contents/1132270"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T05:17:55Z",
+      "modified": "2026-11-27T05:17:55Z",
+      "lastTiming": {
+        "start": "2026-12-23",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-other"
       ]
     },
     {
@@ -18010,5 +18170,5 @@
       ]
     }
   ],
-  "integritySha256": "7e8a4336e5ec10cc4b7ad0f8c01e80db1888b6866ab7c6f5e4b7b7f48d26a5b0"
+  "integritySha256": "e8bdd54fb3ae915f6a56aac737310c5f6bda0d409be79c9d309490e9aab6599d"
 }

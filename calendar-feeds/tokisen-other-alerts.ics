@@ -3,4 +3,22 @@ VERSION:2.0
 PRODID:-//Alert PWA//Public Calendar Subscription//JA
 CALSCALE:GREGORIAN
 X-WR-CALNAME:超ときめき♡宣伝部 / その他（通知あり）
+BEGIN:VEVENT
+UID:public-v1-aa0d9d95d4148ed3ee65c9a1f4ea934528b11adcbda81e7691f94581c0a03
+ 4cd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T051755Z
+CREATED:20261127T051755Z
+LAST-MODIFIED:20261127T051755Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261223
+SUMMARY:辻野かなみ掲載「RANDA 2WAY FUR BAG BOOK」発売（時刻
+ 未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n発売日のみ。\n本人公式の個別告知に基づく。\nhttps
+ ://toki-sen.com/contents/1132270
+LOCATION:
+URL:https://toki-sen.com/contents/1132270
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
