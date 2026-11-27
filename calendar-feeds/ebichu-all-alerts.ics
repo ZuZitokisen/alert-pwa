@@ -1780,6 +1780,24 @@ STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-90b49561c9f1eb26aaf08744f0f91c0540283c9c125a087cc8148306f377a
+ 2dd@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T031353Z
+CREATED:20261127T031353Z
+LAST-MODIFIED:20261127T031353Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261128
+SUMMARY:仲村悠菜掲載「my fave vol.4」発売（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n仲村悠菜と吉本此那の「つりこまち」対談掲載。発
+ 売日のみ。\n本人公式ニュースで発売日・掲載内容を確
+ 認。\nhttps://www.shiritsuebichu.jp/news/16304/
+LOCATION:
+URL:https://www.shiritsuebichu.jp/news/16304/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-bf58fc4b18591e808265356f29ef46fd85d4f4256222bc91ef180db393616
  ace@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T111604Z
