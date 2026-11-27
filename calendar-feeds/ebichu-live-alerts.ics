@@ -5,6 +5,87 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:私立恵比寿中学 / ライブ・イベント（通知あ
  り）
 BEGIN:VEVENT
+UID:public-v1-8916f3fec65a3d0797ec64d921a05fecbebc3dea9d0ace1033b78cec41250
+ 5d1@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T091519Z
+CREATED:20261127T091519Z
+LAST-MODIFIED:20261127T091519Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270205
+SUMMARY:有明ガーデン限定クリアPPスタンド配布 最終日（
+ 時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n非公演日1/27〜2/5限定。対象店3\,000円以上でトレカ2
+ 枚＋クリアPPスタンド（全8種ランダム）。時刻未発表
+ 。\n私立恵比寿中学公式ニュースで確認。時刻未発表。
+ \nhttps://www.shiritsuebichu.jp/news/16305/
+LOCATION:有明ガーデン
+URL:https://www.shiritsuebichu.jp/news/16305/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-efcbc7674d61472dcbe01555b9f8eaab17186fdf48eadc9da554edef80abe
+ 028@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T091519Z
+CREATED:20261127T091519Z
+LAST-MODIFIED:20261127T091519Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270206
+SUMMARY:Ariake is GR8 公演日企画（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象店舗3\,000円以上でランダムトレカ2枚。館内BGM
+ ・大型ビジョンジャック。コラボメニュー・フォトス
+ ポット。\n私立恵比寿中学公式ニュースで確認。時刻未
+ 発表。\nhttps://www.shiritsuebichu.jp/news/16305/
+LOCATION:有明ガーデン
+URL:https://www.shiritsuebichu.jp/news/16305/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-b504d3403f3b7a382c519be84eebb3e2f391f7ec4419420f8ec9cea6e802b
+ 07c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T091519Z
+CREATED:20261127T091519Z
+LAST-MODIFIED:20261127T091519Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270207
+SUMMARY:Ariake is GR8 公演日企画・コラボ最終日（時刻未定
+ ）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n対象店舗3\,000円以上でランダムトレカ2枚。館内BGM
+ ・大型ビジョンジャック。コラボ最終日。\n私立恵比寿
+ 中学公式ニュースで確認。時刻未発表。\nhttps://www.shirit
+ suebichu.jp/news/16305/
+LOCATION:有明ガーデン
+URL:https://www.shiritsuebichu.jp/news/16305/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-682ef350bc391a9942bc1e24135edb67ffb513ece40a039403b49d0f0f6ea
+ e0c@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T091519Z
+CREATED:20261127T091519Z
+LAST-MODIFIED:20261127T091519Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270127
+SUMMARY:えびちゅう×有明ガーデン「Ariake is GR8」開始（時
+ 刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nコラボ期間1/27〜2/7。対象店舗の1\,500円以上購入で
+ ランダムトレカ1枚、1/27〜2/5の3\,000円以上でトレカ2枚
+ ＋ランダムクリアPPスタンド。コラボメニュー・フォト
+ スポット・Photomatic（追加詳細後日）。\n私立恵比寿中
+ 学公式ニュースで確認。時刻未発表。\nhttps://www.shiritsue
+ bichu.jp/news/16305/
+LOCATION:有明ガーデン
+URL:https://www.shiritsuebichu.jp/news/16305/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-21eb31595755d22c24521d32b3d20215ecce005b2f1c1fd07380fbe0409d6
  4ee@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T014213Z

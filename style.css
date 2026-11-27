@@ -488,3 +488,21 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 /* Full menu label fits the narrowest phone without adding another control. */
 .sidebar nav a[data-view=changes] .nav-label{min-width:0;line-height:1.1;text-align:center}
 @media(max-width:700px){.sidebar nav a[data-view=changes] .nav-label{font-size:clamp(9px,2.55vw,11px);white-space:normal;text-wrap:balance}}
+
+/* Scroll content melts into the top edge, matching the lower navigation fade.
+   System status controls remain system-owned. The overlay never intercepts taps. */
+:root{--furin-safe-top:max(env(safe-area-inset-top,0px),var(--furin-native-safe-top,0px));--furin-top-feather:26px}
+@media(max-width:700px),(display-mode:standalone){
+ html:not([data-furin-launch]) body::before{
+  content:"";position:fixed;inset:0 0 auto;z-index:19;pointer-events:none;
+  height:calc(var(--furin-safe-top) + var(--furin-top-feather));
+  background:linear-gradient(to bottom,var(--bg) 0,var(--bg) var(--furin-safe-top),transparent 100%);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 var(--furin-safe-top),transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0,#000 var(--furin-safe-top),transparent 100%);
+ }
+}
+@media(max-width:700px){
+ main{padding-top:calc(23px + var(--furin-safe-top))}
+ #calendar-view .calendar-panel,#calendar-view #agenda-title{scroll-margin-top:calc(var(--furin-safe-top) + 24px)}
+}
