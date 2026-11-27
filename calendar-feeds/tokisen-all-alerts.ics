@@ -622,6 +622,25 @@ DESCRIPTION:小泉遥香 TBSラジオ「パンサー向井のふらっと
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-6c99c326654269ca22ee4ee7db1927a976f2d96025ff8d88961391a4b7f61
+ b7b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T071426Z
+CREATED:20261127T071426Z
+LAST-MODIFIED:20261127T071426Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261223
+SUMMARY:坂井仁香 表紙「NAILEX 2027年2月号 SPECIAL EDITION」発
+ 売（かも？）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n表紙および中面16ページ。発売日のみ。\n出版社公
+ 式個別記事で確認。本人公式告知は未確認。\nhttps://nail
+ ex.jp/magazine/nailex202702special
+LOCATION:
+URL:https://nailex.jp/magazine/nailex202702special
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-98a50177ccbbcdf393e6ab21715c3b28ec492514692d05275beb2ced810c6
  7ca@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261111T093246Z

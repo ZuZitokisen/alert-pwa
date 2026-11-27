@@ -172,18 +172,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-e1642e26a55f86b29a41cc4909d82602a865eb985304f08ca56192c20483b
  291@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261127T051755Z
+DTSTAMP:20261127T071426Z
 CREATED:20261127T051755Z
-LAST-MODIFIED:20261127T051755Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20270322
-SUMMARY:IDOL COLLECTION FESTIVAL supported by UP-T（時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n公式ニュース一覧で3/22（月祝）出演決定。時刻・
- 会場等は個別記事未確認。\n本人公式ニュース一覧の11/
- 27告知見出し。\nhttps://battengirls.com/contents/news
-LOCATION:
-URL:https://battengirls.com/contents/news
+LAST-MODIFIED:20261127T071426Z
+SEQUENCE:1
+DTSTART:20270322T040000Z
+SUMMARY:IDOL COLLECTION FESTIVAL supported by UP-T
+DESCRIPTION:開場12:00、開演13:00。個別出演時刻は未発表。S
+ ブロック10\,000円、Aブロック5\,000円、2階席10\,000円（各1
+ D別）。https://tiget.net/events/541727\n本人側の公式個別告知
+ で確認。\nhttps://battengirls.com/contents/1132457\nhttps://battengirl
+ s.com/contents/news
+LOCATION:大阪・なんばHatch
+URL:https://battengirls.com/contents/1132457
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
