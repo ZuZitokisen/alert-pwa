@@ -7,7 +7,7 @@ const kindNames={new:'新着',updated:'更新',unavailable:'掲載消失',restor
 const colors={BENEFIT:'#eaa75d',LIVE:'#e65091',EVENT:'#eaa75d',STREAM:'#8a6cdb',TV:'#6886d3',RADIO:'#4da79f',REMIND:'#cf8958',MEMO:'#8693a7'};
 const icons={BENEFIT:'◇',LIVE:'♬',EVENT:'◇',STREAM:'▷',TV:'▣',RADIO:'◉',REMIND:'◷',MEMO:'▤'};
 const artists=globalThis.ALERT_ARTISTS;
-const APP_RELEASE='0.7.43';
+const APP_RELEASE='0.7.44';
 const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const WEEKDAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const artistOrder=['ebichu','batten','tokisen','tohokusan','oneloveoneheart','straightangeli','re-ge'];
@@ -354,7 +354,16 @@ function agendaEntries(){const bounds=agendaBounds(),days=[];for(let key=bounds.
 function renderAgenda(){
  const bounds=agendaBounds(),label=key=>new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',month:'long',day:'numeric',weekday:'short'}).format(dayDate(key));
  $('#agenda-title').textContent=agendaRange==='month'?bounds.start.slice(0,7).replaceAll('-','.'):agendaRange==='week'?`${label(bounds.start)} 〜 ${label(addDays(bounds.end,-1))}`:selectedDate.replaceAll('-','.');
- const entries=agendaEntries();$('#agenda').replaceChildren(...(entries.length?entries.map(e=>card(e)):[el('p','該当する予定はありません。','empty')]));
+ const entries=agendaEntries(), agenda=$('#agenda'), rail=agendaRange==='day'&&$('#agenda-sort').value==='date';
+ agenda.classList.toggle('time-rail',rail&&entries.length>0);
+ agenda.replaceChildren(...(entries.length?entries.map(e=>{
+   const node=card(e);if(!rail)return node;
+   const row=el('div','','time-rail-row'), time=el('time',e.allDay?'終日':timeOnly(e.start),'rail-time');
+   if(e.start)time.dateTime=e.start;
+   if(e.start&&F.dateKey(e.start)<selectedDate)time.textContent='継続';
+   if(e.start&&e.start.length>10&&!e.allDay&&F.dateKey(e.start)===selectedDate&&!e.end)node.querySelector('.card-time').classList.add('rail-duplicate-time');
+   row.append(time,node);return row;
+ }):[el('p','該当する予定はありません。','empty')]));
  const undated=agendaCandidates().filter(e=>!e.start);$('#undated-section').hidden=!undated.length;$('#undated-count').textContent=`${undated.length}件`;$('#undated').replaceChildren(...undated.map(e=>card(e)));
 }
 function renderCalendar(){
@@ -500,11 +509,11 @@ if(location.hash==='#notification-changes'){selectedArtists.clear();artist='all'
 const hash=location.hash.slice(1),previousView=view;
 if(hash==='settings'||hash==='about')$('#news-other-tab')?.click();
 view=['calendar','favorites','changes'].includes(hash)?hash:['find','cards','watch'].includes(hash)?'search':['about','settings'].includes(hash)?'changes':'calendar';
-const names={calendar:'Schedule',search:'Search',favorites:'Favorite',changes:'News'};
+const names={calendar:'Schedule',search:'Search',favorites:'Favorite',changes:'News & Setting'};
 $('#view-title').textContent=names[view];
 const menuIcon=$(`nav [data-view="${view}"] > span:first-child`);
 if(menuIcon){const icon=menuIcon.cloneNode(true);icon.className='view-title-icon';icon.setAttribute('aria-hidden','true');$('#view-title').prepend(icon);}
-const back=$('#back-to-view'),leavingLegacySearch=view==='search'&&hash==='find'&&!back.hidden;back.hidden=!['cards','watch'].includes(hash);back.href='#changes';back.setAttribute('aria-label','Newsに戻る');
+const back=$('#back-to-view'),leavingLegacySearch=view==='search'&&hash==='find'&&!back.hidden;back.hidden=!['cards','watch'].includes(hash);back.href='#changes';back.setAttribute('aria-label','News & Settingに戻る');
 document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!==`${view==='search'?'cards':view}-view`);
 const nav=$('.sidebar nav');
 if(nav&&view!==previousView){
