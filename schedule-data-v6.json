@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "hourly-2026-11-27T19:30:58.398Z",
-  "generatedAt": "2026-11-27T19:30:58.398Z",
+  "version": "2026-11-28-straightangeli-rekomen-midnight",
+  "generatedAt": "2026-11-27T21:20:00Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -20715,23 +20715,23 @@
       "source": "curated-calendar",
       "artistId": "straightangeli",
       "title": "文化放送「レコメン！」松元寧音・相羽星良が出演",
-      "start": "2026-11-30",
+      "start": "2026-12-01",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "RADIO",
       "location": "",
-      "note": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。",
-      "evidence": "本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+      "note": "公式表記は11月30日（月）24時過ぎ（暦日12月1日）。「レコメン！ピックアップ！」出演。具体的な出演分・終了時刻は未発表。",
+      "evidence": "本人公式の個別スケジュール本文に11月30日24時過ぎと明記。",
       "sourceUrl": "https://straight-angeli.com/schedule/item-1375/",
       "sources": [
         {
           "url": "https://straight-angeli.com/schedule/item-1375/",
           "type": "artist_official",
-          "checkedAt": "2026-11-27T19:30:58.398Z"
+          "checkedAt": "2026-11-27T21:20:00Z"
         }
       ],
-      "checkedAt": "2026-11-27T19:30:58.398Z",
+      "checkedAt": "2026-11-27T21:20:00Z",
       "timings": [],
       "deadline": null,
       "revision": 1,

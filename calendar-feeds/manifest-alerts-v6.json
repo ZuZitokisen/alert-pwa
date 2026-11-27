@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-27T19:30:58.398Z",
-  "dataGeneratedAt": "2026-11-27T19:30:58.398Z",
+  "dataVersion": "2026-11-28-straightangeli-rekomen-midnight",
+  "dataGeneratedAt": "2026-11-27T21:20:00Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "8b8a4adf286bf9d00903d54ca092e3f477f777640dd219fc7e60c14b1517f171",
+  "inputSha256": "552ccb0e2da5e1eb3a2ef3c7bb375e1d8a17650152dbc7e0516cfa85e0f3cecf",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -118,7 +118,7 @@
       "path": "calendar-feeds/straightangeli-all-alerts.ics",
       "count": 40,
       "omittedUnknownDate": 0,
-      "sha256": "f5296ff986beafe7656b5bda19dce5b0c8aaa7e6a70778b84acfcf462e0095bd"
+      "sha256": "edd455f888ba9ca93ff3bd5687fe702dcf66fd7f4cebd81420d5dfacd33ed8db"
     },
     {
       "id": "straightangeli-live",
@@ -148,7 +148,7 @@
       "path": "calendar-feeds/straightangeli-media-alerts.ics",
       "count": 24,
       "omittedUnknownDate": 0,
-      "sha256": "ca79d13f604971260e7570bb54d48731ba3f83daa0bd1d3e006c1cf8e79cd058"
+      "sha256": "b3128e351507b2ffd2cfbbecf409eb3654b81ba20606261e00db35826bfda1bd"
     },
     {
       "id": "straightangeli-other",
