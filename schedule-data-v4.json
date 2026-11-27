@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-ebichu-myfave",
-  "generatedAt": "2026-11-27T03:13:53Z",
+  "version": "2026-11-27-afternoon-official",
+  "generatedAt": "2026-11-27T05:17:55Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -15370,6 +15370,62 @@
       "revision": 1,
       "present": true,
       "groupId": "oneloveoneheart-1liter-tears"
+    },
+    {
+      "id": "tokisen-kanami-randa-20261223",
+      "artistId": "tokisen",
+      "title": "辻野かなみ掲載「RANDA 2WAY FUR BAG BOOK」発売",
+      "source": "curated-calendar",
+      "start": "2026-12-23",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "",
+      "note": "発売日のみ。",
+      "evidence": "本人公式の個別告知に基づく。",
+      "sourceUrl": "https://toki-sen.com/contents/1132270",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1132270",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T05:17:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T05:17:55Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-kanami-randa-20261223"
+    },
+    {
+      "id": "tokisen-haruka-flat-20261210",
+      "artistId": "tokisen",
+      "title": "小泉遥香 TBSラジオ「パンサー向井のふらっと」",
+      "source": "curated-calendar",
+      "start": "2026-12-10T08:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "TBSラジオ",
+      "note": "生放送。終了時刻未確認。",
+      "evidence": "本人公式の個別告知に基づく。",
+      "sourceUrl": "https://toki-sen.com/contents/1132273?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1132273?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T05:17:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T05:17:55Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-haruka-flat-20261210"
     }
   ],
   "notes": [
