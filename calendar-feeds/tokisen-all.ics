@@ -488,20 +488,21 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-6c99c326654269ca22ee4ee7db1927a976f2d96025ff8d88961391a4b7f61
  b7b@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261127T071426Z
+DTSTAMP:20261127T151500Z
 CREATED:20261127T071426Z
-LAST-MODIFIED:20261127T071426Z
-SEQUENCE:0
+LAST-MODIFIED:20261127T151500Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261223
 SUMMARY:坂井仁香 表紙「NAILEX 2027年2月号 SPECIAL EDITION」発
- 売（かも？）（時刻未定）
+ 売（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n表紙および中面16ページ。発売日のみ。\n出版社公
- 式個別記事で確認。本人公式告知は未確認。\nhttps://nail
- ex.jp/magazine/nailex202702special
+ 。\n表紙および中面16ページ。発売日のみ。\n本人公式
+ スケジュールと出版社公式記事で確認。\nhttps://nailex.jp/
+ magazine/nailex202702special\nhttps://toki-sen.com/contents/1132624?tag=al
+ l
 LOCATION:
-URL:https://nailex.jp/magazine/nailex202702special
-STATUS:TENTATIVE
+URL:https://toki-sen.com/contents/1132624?tag=all
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-aipri-batten-talkport-details",
-  "dataGeneratedAt": "2026-11-27T13:17:04Z",
+  "dataVersion": "2026-11-28-hitoka-nailex-confirmed",
+  "dataGeneratedAt": "2026-11-27T15:15:00Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "2ed95d40cef1c3e287d36bcf255587a786219d4a059474d6ee398bd1154d7975",
+  "inputSha256": "4f34645db4a519e077809619c9be7f93de4be4687b89e21fcc5f35775f6beb8b",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 209,
       "omittedUnknownDate": 10,
-      "sha256": "fc938770fac909b47a38b050448706932f6ef0735a43b4eab852bfc50afdca75"
+      "sha256": "926eeb2cc476dc380067eadc6a31bfc014471d88e3655cf2f8b78cb10efc2b05"
     },
     {
       "id": "tokisen-live",
@@ -58,7 +58,7 @@
       "path": "calendar-feeds/tokisen-other.ics",
       "count": 2,
       "omittedUnknownDate": 0,
-      "sha256": "7e88d9f4eaebce0bb92096b1dd0d3e0255840e958d8c9933fef230a000cd28ce"
+      "sha256": "cca40ec9c8ed385e99996e7edad099ed7f1336019e863a8fdba48babcb48c442"
     },
     {
       "id": "re-ge-all",
