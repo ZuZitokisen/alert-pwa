@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-aipri-batten-talkport-details",
-  "dataGeneratedAt": "2026-11-27T13:17:04Z",
-  "inputSha256": "380b427e5c0dd898db7d38e89b474c23d3a4bf0549493bc30c6262abc36a755c",
+  "dataVersion": "2026-11-28-hitoka-nailex-confirmed",
+  "dataGeneratedAt": "2026-11-27T15:15:00Z",
+  "inputSha256": "00757a4c448036f170e4f9d59244f294f8845fbff310ec272a79b9b9d11f6496",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12388,15 +12388,17 @@
         "end": null,
         "allDay": false,
         "location": "",
-        "publicNote": "表紙および中面16ページ。発売日のみ。\n出版社公式個別記事で確認。本人公式告知は未確認。",
-        "status": "possible",
+        "publicNote": "表紙および中面16ページ。発売日のみ。\n本人公式スケジュールと出版社公式記事で確認。",
+        "status": "confirmed",
         "sourceUrls": [
-          "https://nailex.jp/magazine/nailex202702special"
-        ]
+          "https://nailex.jp/magazine/nailex202702special",
+          "https://toki-sen.com/contents/1132624?tag=all"
+        ],
+        "sourceUrl": "https://toki-sen.com/contents/1132624?tag=all"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-27T07:14:26Z",
-      "modified": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T15:15:00Z",
       "lastTiming": {
         "start": "2026-12-23",
         "end": null,
@@ -18684,5 +18686,5 @@
       ]
     }
   ],
-  "integritySha256": "fd8baf43569d0b6b8e04458b42df6fbaa46412705577680521b74402f3f2fdd9"
+  "integritySha256": "7849b0bd204cf86d966dfb782a10df2e2087c9674023e33148b7fc0c787a2527"
 }
