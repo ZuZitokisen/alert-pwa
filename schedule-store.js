@@ -1,7 +1,7 @@
 'use strict';
 /* Manually checked, same-origin schedule snapshots. This store does not watch
  * source sites, ask for permissions, send Push, or write outside this device.
- * A state request always fetches the JSON. Failed/invalid batches never replace
+ * A state request fetches the JSON; cached-state exposes only already validated local data. Failed/invalid batches never replace
  * the last good data. Cache and history are intentionally separate from demos.
  */
 (() => {
@@ -255,10 +255,11 @@
   }
   restore();
   globalThis.scheduleRequest = async action => {
+    if (action === 'cached-state') return result(state.baselineReady);
     if (action !== 'state') return { ok: false, json: async () => ({ error: '不明な操作です。' }) };
     const generation = ++requestGeneration;
     try {
-      const response = await globalThis.fetch(DATA_URL, { cache: 'no-cache', mode: 'same-origin', credentials: 'same-origin', redirect: 'error' });
+      const response = await globalThis.fetch(DATA_URL, { cache: 'no-cache', mode: 'same-origin', credentials: 'same-origin', redirect: 'error', signal: globalThis.AbortSignal?.timeout?.(10000) });
       if (!response.ok || response.redirected) throw new Error('fetch-failed');
       const type = response.headers?.get('content-type');
       if (type && !/^application\/(?:[\w.+-]+\+)?json(?:\s*;|$)/i.test(type)) throw new Error('invalid-data');

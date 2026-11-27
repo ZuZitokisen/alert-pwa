@@ -5,9 +5,9 @@ import vm from 'node:vm';
 const load = path => fs.readFileSync(new URL('./'+path,import.meta.url),'utf8');
 const html=load('index.html'), css=load('style.css'), sw=load('sw.js');
 const source=html.match(/<script id="furin-launch-script">([\s\S]*?)<\/script>/)[1];
-function setup({hash='',reduced=false,reload=false,loaded=true,failed=false,silent=false,noAudio=false,stalled=false}={}){
+function setup({hash='',reduced=false,reload=false,loaded=true,failed=false,silent=false,noAudio=false,stalled=false,ready=true}={}){
  const events={}, docEvents={}, imageEvents={}, windowEvents={}, timers=new Map(), dispatched=[];
- const root={dataset:{theme:'dark'}}, shell={inert:false}, meta={content:'#17171d',setAttribute(_,v){this.content=v;}};
+ const root={dataset:{theme:'dark',...(ready?{furinReady:'ready'}:{})}}, shell={inert:false}, meta={content:'#17171d',setAttribute(_,v){this.content=v;}};
  const logo={complete:loaded,naturalWidth:loaded&&!failed?2048:0,addEventListener(k,fn){imageEvents[k]=fn;}};
  const intro={hidden:true,querySelector(){return logo;},addEventListener(k,fn){events[k]=fn;}};
  let focused=0, nextTimer=0, sounds=0;
@@ -70,8 +70,8 @@ test('launch uses the exact dedicated white backdrop, centered asset and indepen
  assert.match(html,/html\[data-furin-launch=\"fading\"\] #furin-launch\{opacity:0\}/);
  assert.match(source,/\},1600\);/);
  assert.match(html,/<span id="furin-launch-cue">TAP TO START<\/span>/);
- assert.match(html,/furin-launch-logo\.png\?v=0\.7\.45/);
- assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.45/);
+ assert.match(html,/furin-launch-logo\.png\?v=0\.7\.46/);
+ assert.match(sw,/furin-launch-logo\.png\?v=0\.7\.46/);
  assert.equal(fs.readFileSync(new URL('./furin-launch-logo.png',import.meta.url)).subarray(1,4).toString(),'PNG');
  assert.match(css,/#view-title:focus\{outline:none\}/);
  assert.match(css,/button:focus-visible/);
@@ -98,9 +98,26 @@ test('short glass chime is a cached WAV, and blocked playback does not block nav
  assert.equal(audio.subarray(8,12).toString(),'WAVE');
  assert.equal(audio.readUInt16LE(22),1);assert.equal(audio.readUInt32LE(24),22050);
  assert.ok(audio.length>62000&&audio.length<80000);
- assert.match(html,/furin-glass-chime\.wav\?v=0\.7\.45/);
- assert.match(sw,/furin-glass-chime\.wav\?v=0\.7\.45/);
+ assert.match(html,/furin-glass-chime\.wav\?v=0\.7\.46/);
+ assert.match(sw,/furin-glass-chime\.wav\?v=0\.7\.46/);
  assert.match(load('.github/workflows/hourly-public-refresh.yml'),/furin-glass-chime\.wav/);
  assert.match(html,/freesound.org\/people\/nlux\/sounds\/620967/);
  assert.match(html,/creativecommons.org\/licenses\/by\/4.0/);
+});
+
+test('slow calendar keeps the logo and the loader until actual readiness, then one fade',()=>{
+ const f=setup({ready:false,noAudio:true});
+ f.events.click();
+ assert.equal(f.root.dataset.furinLaunch,'leaving');
+ assert.equal(f.root.dataset.furinLaunchWaiting,'true');
+ f.fire(1600);assert.equal(f.root.dataset.furinLaunch,'loading');assert.equal(f.intro.hidden,false);
+ f.root.dataset.furinReady='ready';f.windowEvents['furin-calendar-ready']();
+ assert.equal(f.root.dataset.furinLaunch,'fading');assert.equal(f.root.dataset.furinLaunchWaiting,'true');
+ f.events.transitionend({target:f.intro,propertyName:'opacity'});assert.equal(f.intro.hidden,true);assert.equal(f.root.dataset.furinLaunchWaiting,undefined);
+});
+test('cached ready data skips waiting; reduced motion waits without movement and timeout escapes',()=>{
+ const fast=setup({noAudio:true});fast.events.click();assert.equal(fast.root.dataset.furinLaunchWaiting,undefined);fast.fire(1600);assert.equal(fast.root.dataset.furinLaunch,'fading');
+ const reduced=setup({noAudio:true,reduced:true,ready:false});reduced.events.click();assert.equal(reduced.root.dataset.furinLaunch,'loading');
+ reduced.root.dataset.furinReady='cached';reduced.windowEvents['furin-calendar-ready']();assert.equal(reduced.intro.hidden,true);
+ const timeout=setup({noAudio:true,ready:false});timeout.events.click();timeout.fire(1600);timeout.fire(18000);assert.equal(timeout.root.dataset.furinLaunch,'fading');timeout.fire(350);assert.equal(timeout.intro.hidden,true);
 });

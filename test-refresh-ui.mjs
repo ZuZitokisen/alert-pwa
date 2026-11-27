@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const source=fs.readFileSync(new URL('./app.js',import.meta.url),'utf8');
-const refreshSource=source.slice(source.indexOf('async function refresh('),source.indexOf('function route(){'));
+const refreshSource=source.slice(source.indexOf('function markFurinReady('),source.indexOf('function route(){'));
 function fixture({update,saved=new Map()}={}){
  const button={disabled:false,attributes:{},setAttribute(k,v){this.attributes[k]=v;},removeAttribute(k){delete this.attributes[k];}};
  const messages=[],calls=[],state={events:[{id:'kept'}],changes:[]};
