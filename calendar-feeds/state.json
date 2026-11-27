@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-idol-collection-nailex",
-  "dataGeneratedAt": "2026-11-27T07:14:26Z",
-  "inputSha256": "a4554000aa79d8410b7dd6b0dc43cbb751ed906fb22b5ba1d0eda70681afd453",
+  "dataVersion": "2026-11-27-ebichu-ariake-gr8",
+  "dataGeneratedAt": "2026-11-27T09:15:19Z",
+  "inputSha256": "1c7730080f4a827df58ea94fa9bd4533a72053097dda88af8a1e72e8415eeac2",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1727,6 +1727,134 @@
       "memberships": [
         "batten-all",
         "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-ariake-gr8-early-end\"]",
+      "uid": "public-v1-8916f3fec65a3d0797ec64d921a05fecbebc3dea9d0ace1033b78cec412505d1@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-ariake-gr8-early-end",
+        "category": "live",
+        "title": "有明ガーデン限定クリアPPスタンド配布 最終日",
+        "start": "2027-02-05",
+        "end": null,
+        "allDay": false,
+        "location": "有明ガーデン",
+        "publicNote": "非公演日1/27〜2/5限定。対象店3,000円以上でトレカ2枚＋クリアPPスタンド（全8種ランダム）。時刻未発表。\n私立恵比寿中学公式ニュースで確認。時刻未発表。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16305/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T09:15:19Z",
+      "modified": "2026-11-27T09:15:19Z",
+      "lastTiming": {
+        "start": "2027-02-05",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-ariake-gr8-show1\"]",
+      "uid": "public-v1-efcbc7674d61472dcbe01555b9f8eaab17186fdf48eadc9da554edef80abe028@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-ariake-gr8-show1",
+        "category": "live",
+        "title": "Ariake is GR8 公演日企画",
+        "start": "2027-02-06",
+        "end": null,
+        "allDay": false,
+        "location": "有明ガーデン",
+        "publicNote": "対象店舗3,000円以上でランダムトレカ2枚。館内BGM・大型ビジョンジャック。コラボメニュー・フォトスポット。\n私立恵比寿中学公式ニュースで確認。時刻未発表。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16305/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T09:15:19Z",
+      "modified": "2026-11-27T09:15:19Z",
+      "lastTiming": {
+        "start": "2027-02-06",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-ariake-gr8-show2\"]",
+      "uid": "public-v1-b504d3403f3b7a382c519be84eebb3e2f391f7ec4419420f8ec9cea6e802b07c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-ariake-gr8-show2",
+        "category": "live",
+        "title": "Ariake is GR8 公演日企画・コラボ最終日",
+        "start": "2027-02-07",
+        "end": null,
+        "allDay": false,
+        "location": "有明ガーデン",
+        "publicNote": "対象店舗3,000円以上でランダムトレカ2枚。館内BGM・大型ビジョンジャック。コラボ最終日。\n私立恵比寿中学公式ニュースで確認。時刻未発表。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16305/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T09:15:19Z",
+      "modified": "2026-11-27T09:15:19Z",
+      "lastTiming": {
+        "start": "2027-02-07",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-ariake-gr8-start\"]",
+      "uid": "public-v1-682ef350bc391a9942bc1e24135edb67ffb513ece40a039403b49d0f0f6eae0c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-ariake-gr8-start",
+        "category": "live",
+        "title": "えびちゅう×有明ガーデン「Ariake is GR8」開始",
+        "start": "2027-01-27",
+        "end": null,
+        "allDay": false,
+        "location": "有明ガーデン",
+        "publicNote": "コラボ期間1/27〜2/7。対象店舗の1,500円以上購入でランダムトレカ1枚、1/27〜2/5の3,000円以上でトレカ2枚＋ランダムクリアPPスタンド。コラボメニュー・フォトスポット・Photomatic（追加詳細後日）。\n私立恵比寿中学公式ニュースで確認。時刻未発表。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16305/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T09:15:19Z",
+      "modified": "2026-11-27T09:15:19Z",
+      "lastTiming": {
+        "start": "2027-01-27",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
       ]
     },
     {
@@ -18491,5 +18619,5 @@
       ]
     }
   ],
-  "integritySha256": "8d0a8297ffba48ea9d8821f8767c92239d37bbe0805a76913a76adfd13d9a684"
+  "integritySha256": "6783e6a2d7c5e56bc78786dfa955b70a24cfd3ab197cee4f12b44ba244c063c6"
 }

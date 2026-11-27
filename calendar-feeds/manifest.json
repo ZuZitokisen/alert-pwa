@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-idol-collection-nailex",
-  "dataGeneratedAt": "2026-11-27T07:14:26Z",
+  "dataVersion": "2026-11-27-ebichu-ariake-gr8",
+  "dataGeneratedAt": "2026-11-27T09:15:19Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "4bdddb9cb4321194a133664d053700d076995d20b973381ed8c151561284dda9",
+  "inputSha256": "89040a4cd7af57823ac499749141fa12afb60d6987386f1b275ae8a830b256f6",
   "feeds": [
     {
       "id": "tokisen-all",
