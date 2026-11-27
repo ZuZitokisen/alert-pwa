@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-batten-ueda-talkport",
-  "dataGeneratedAt": "2026-11-26T17:14:06Z",
+  "dataVersion": "2026-11-27-ebichu-myfave",
+  "dataGeneratedAt": "2026-11-27T03:13:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "9f86c5b94b80ad04d3370f4cfc65ca1c538b159902f863016a929cc96bd665c7",
+  "inputSha256": "43b0d434a47077b676418dae66ce7a24dc3b3b936dd5ee0c8e664955ad7aa2ff",
   "feeds": [
     {
       "id": "tokisen-all",

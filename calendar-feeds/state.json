@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-batten-ueda-talkport",
-  "dataGeneratedAt": "2026-11-26T17:14:06Z",
-  "inputSha256": "4b7ceff4cbce3c33627c7790da85d5a7a8755a077f7e00ae9e8e44a83968fa30",
+  "dataVersion": "2026-11-27-ebichu-myfave",
+  "dataGeneratedAt": "2026-11-27T03:13:53Z",
+  "inputSha256": "6400ab47763c64275cc9c0df8852c2d808d33357166e136ae6cb25bc01531432",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3716,6 +3716,38 @@
       "memberships": [
         "ebichu-all",
         "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-myfave4-nakamura-20261128\"]",
+      "uid": "public-v1-90b49561c9f1eb26aaf08744f0f91c0540283c9c125a087cc8148306f377a2dd@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-myfave4-nakamura-20261128",
+        "category": "other",
+        "title": "仲村悠菜掲載「my fave vol.4」発売",
+        "start": "2026-11-28",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "仲村悠菜と吉本此那の「つりこまち」対談掲載。発売日のみ。\n本人公式ニュースで発売日・掲載内容を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://www.shiritsuebichu.jp/news/16304/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T03:13:53Z",
+      "modified": "2026-11-27T03:13:53Z",
+      "lastTiming": {
+        "start": "2026-11-28",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-other"
       ]
     },
     {
@@ -17978,5 +18010,5 @@
       ]
     }
   ],
-  "integritySha256": "a7e8249ddadf5578e8f25cf29f10f8c1728479b5ebfbc9f82afdecf43a44f262"
+  "integritySha256": "7e8a4336e5ec10cc4b7ad0f8c01e80db1888b6866ab7c6f5e4b7b7f48d26a5b0"
 }
