@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-ebichu-myfave",
-  "dataGeneratedAt": "2026-11-27T03:13:53Z",
+  "dataVersion": "2026-11-27-afternoon-official",
+  "dataGeneratedAt": "2026-11-27T05:17:55Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "08e9742199e12eb6940590ab2ab2e4c31a699fb168ebb826ff015d31696696d3",
+  "inputSha256": "9e513c7bcff29c9a882c0ecf76eaa54b247b0366478f311b09bbcd72b7f4a217",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 206,
+      "count": 208,
       "omittedUnknownDate": 10,
-      "sha256": "20452900c2522f28e23fa15eb2bfbc99079003431de737ce710229e92ebf8418"
+      "sha256": "71840fae100c2267dfe835cac14662766fda39d05c19aceb1aab3346a988bcf1"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media-alerts.ics",
-      "count": 126,
+      "count": 127,
       "omittedUnknownDate": 2,
-      "sha256": "003bde9c03d3b0d52cf2095f52728fbea8536db5f9ba4b11f17e9df2441340f3"
+      "sha256": "ed1fe732ed967940d818bfdd7191dc22a32d87cdccacf6db2797a267f379dbb8"
     },
     {
       "id": "tokisen-other",
@@ -56,9 +56,9 @@
       "category": "other",
       "label": "超ときめき♡宣伝部 / その他",
       "path": "calendar-feeds/tokisen-other-alerts.ics",
-      "count": 0,
+      "count": 1,
       "omittedUnknownDate": 0,
-      "sha256": "0ed4bbc7784bf422f00a61b8d37092c108a0c75940aaf1b8bf7fc46aa40ab715"
+      "sha256": "7dafc22e630accae217925030f9e2d60596a873161a1155d0d9fa032716f531b"
     },
     {
       "id": "re-ge-all",

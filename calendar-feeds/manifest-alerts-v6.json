@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-ebichu-myfave",
-  "dataGeneratedAt": "2026-11-27T03:13:53Z",
+  "dataVersion": "2026-11-27-afternoon-official",
+  "dataGeneratedAt": "2026-11-27T05:17:55Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "6400ab47763c64275cc9c0df8852c2d808d33357166e136ae6cb25bc01531432",
+  "inputSha256": "78ac12608991b243378b5688e6c10dda1f25a747b942c89234add498485e5ea1",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all-alerts.ics",
-      "count": 206,
+      "count": 208,
       "omittedUnknownDate": 10,
-      "sha256": "20452900c2522f28e23fa15eb2bfbc99079003431de737ce710229e92ebf8418"
+      "sha256": "71840fae100c2267dfe835cac14662766fda39d05c19aceb1aab3346a988bcf1"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media-alerts.ics",
-      "count": 126,
+      "count": 127,
       "omittedUnknownDate": 2,
-      "sha256": "003bde9c03d3b0d52cf2095f52728fbea8536db5f9ba4b11f17e9df2441340f3"
+      "sha256": "ed1fe732ed967940d818bfdd7191dc22a32d87cdccacf6db2797a267f379dbb8"
     },
     {
       "id": "tokisen-other",
@@ -56,9 +56,9 @@
       "category": "other",
       "label": "超ときめき♡宣伝部 / その他",
       "path": "calendar-feeds/tokisen-other-alerts.ics",
-      "count": 0,
+      "count": 1,
       "omittedUnknownDate": 0,
-      "sha256": "0ed4bbc7784bf422f00a61b8d37092c108a0c75940aaf1b8bf7fc46aa40ab715"
+      "sha256": "7dafc22e630accae217925030f9e2d60596a873161a1155d0d9fa032716f531b"
     },
     {
       "id": "re-ge-all",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all-alerts.ics",
-      "count": 46,
+      "count": 49,
       "omittedUnknownDate": 0,
-      "sha256": "603a14acb623caed73a2057374eaa65cc6d6d4d1fda2f74d32ce4a44c06b67d7"
+      "sha256": "5c6493b18de97ebc069fce84dac8abb0efa76e2dd0994e1d376f5912c0f8e27a"
     },
     {
       "id": "batten-live",
@@ -326,9 +326,9 @@
       "category": "live",
       "label": "ばってん少女隊 / ライブ・イベント",
       "path": "calendar-feeds/batten-live-alerts.ics",
-      "count": 20,
+      "count": 23,
       "omittedUnknownDate": 0,
-      "sha256": "e561db03c4cdc0f6a43888c00a1fdff97185abdb046c1a9258c7003cec4fea57"
+      "sha256": "ce7701858956e84f1bae518ee49fe0d06a35e58d76c4d7dcc46ac1d8178c0b88"
     },
     {
       "id": "batten-benefit",

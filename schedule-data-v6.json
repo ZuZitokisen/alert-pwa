@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-ebichu-myfave",
-  "generatedAt": "2026-11-27T03:13:53Z",
+  "version": "2026-11-27-afternoon-official",
+  "generatedAt": "2026-11-27T05:17:55Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -20054,6 +20054,146 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-myfave4-nakamura-20261128"
+    },
+    {
+      "id": "tokisen-kanami-randa-20261223",
+      "artistId": "tokisen",
+      "title": "辻野かなみ掲載「RANDA 2WAY FUR BAG BOOK」発売",
+      "source": "curated-calendar",
+      "start": "2026-12-23",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "",
+      "note": "発売日のみ。",
+      "evidence": "本人公式の個別告知に基づく。",
+      "sourceUrl": "https://toki-sen.com/contents/1132270",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1132270",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T05:17:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T05:17:55Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-kanami-randa-20261223"
+    },
+    {
+      "id": "tokisen-haruka-flat-20261210",
+      "artistId": "tokisen",
+      "title": "小泉遥香 TBSラジオ「パンサー向井のふらっと」",
+      "source": "curated-calendar",
+      "start": "2026-12-10T08:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "TBSラジオ",
+      "note": "生放送。終了時刻未確認。",
+      "evidence": "本人公式の個別告知に基づく。",
+      "sourceUrl": "https://toki-sen.com/contents/1132273?tag=all",
+      "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1132273?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T05:17:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T05:17:55Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-haruka-flat-20261210"
+    },
+    {
+      "id": "batten-chupi-fc-booth-20261128",
+      "artistId": "batten",
+      "title": "「ちゅぴ」リリースイベント FCブース",
+      "source": "curated-calendar",
+      "start": "2026-11-28T10:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "ららぽーと立川立飛",
+      "note": "特典会終了まで。ミニライブ中受付なし。11/16～当日の新規入隊者・紹介者対象のステッカー（数量限定）。",
+      "evidence": "本人公式の個別告知に基づく。",
+      "sourceUrl": "https://battengirls.com/contents/1129602",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1129602",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T05:17:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T05:17:55Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-chupi-fc-booth-20261128"
+    },
+    {
+      "id": "batten-chupi-fc-booth-20261129",
+      "artistId": "batten",
+      "title": "「ちゅぴ」リリースイベント FCブース",
+      "source": "curated-calendar",
+      "start": "2026-11-29T10:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "ららぽーと豊洲",
+      "note": "特典会終了まで。ミニライブ中受付なし。11/16～当日の新規入隊者・紹介者対象のステッカー（数量限定）。",
+      "evidence": "本人公式の個別告知に基づく。",
+      "sourceUrl": "https://battengirls.com/contents/1129602",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/1129602",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T05:17:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T05:17:55Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-chupi-fc-booth-20261129"
+    },
+    {
+      "id": "batten-idol-collection-festival-20270322",
+      "artistId": "batten",
+      "title": "IDOL COLLECTION FESTIVAL supported by UP-T",
+      "source": "curated-calendar",
+      "start": "2027-03-22",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "",
+      "note": "公式ニュース一覧で3/22（月祝）出演決定。時刻・会場等は個別記事未確認。",
+      "evidence": "本人公式ニュース一覧の11/27告知見出し。",
+      "sourceUrl": "https://battengirls.com/contents/news",
+      "sources": [
+        {
+          "url": "https://battengirls.com/contents/news",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T05:17:55Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T05:17:55Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "batten-idol-collection-festival-20270322"
     }
   ],
   "notes": [
