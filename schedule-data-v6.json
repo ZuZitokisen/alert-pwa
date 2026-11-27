@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-aipri-batten-talkport-details",
-  "generatedAt": "2026-11-27T13:17:04Z",
+  "version": "2026-11-28-hitoka-nailex-confirmed",
+  "generatedAt": "2026-11-27T15:15:00Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -20508,20 +20508,25 @@
       "start": "2026-12-23",
       "end": null,
       "allDay": false,
-      "status": "possible",
+      "status": "confirmed",
       "category": "MEMO",
       "location": "",
       "note": "表紙および中面16ページ。発売日のみ。",
-      "evidence": "出版社公式個別記事で確認。本人公式告知は未確認。",
-      "sourceUrl": "https://nailex.jp/magazine/nailex202702special",
+      "evidence": "本人公式スケジュールと出版社公式記事で確認。",
+      "sourceUrl": "https://toki-sen.com/contents/1132624?tag=all",
       "sources": [
+        {
+          "url": "https://toki-sen.com/contents/1132624?tag=all",
+          "type": "artist_official_schedule",
+          "checkedAt": "2026-11-27T15:15:00Z"
+        },
         {
           "url": "https://nailex.jp/magazine/nailex202702special",
           "type": "organizer",
           "checkedAt": "2026-11-27T07:14:26Z"
         }
       ],
-      "checkedAt": "2026-11-27T07:14:26Z",
+      "checkedAt": "2026-11-27T15:15:00Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
