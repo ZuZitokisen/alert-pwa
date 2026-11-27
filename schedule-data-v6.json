@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-batten-ueda-talkport",
-  "generatedAt": "2026-11-26T17:14:06Z",
+  "version": "2026-11-27-ebichu-myfave",
+  "generatedAt": "2026-11-27T03:13:53Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -20026,6 +20026,34 @@
       "deadline": null,
       "revision": 1,
       "present": true
+    },
+    {
+      "id": "ebichu-myfave4-nakamura-20261128",
+      "artistId": "ebichu",
+      "title": "仲村悠菜掲載「my fave vol.4」発売",
+      "source": "curated-calendar",
+      "start": "2026-11-28",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "",
+      "note": "仲村悠菜と吉本此那の「つりこまち」対談掲載。発売日のみ。",
+      "evidence": "本人公式ニュースで発売日・掲載内容を確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16304/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16304/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T03:13:53Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T03:13:53Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-myfave4-nakamura-20261128"
     }
   ],
   "notes": [
