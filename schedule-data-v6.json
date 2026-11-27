@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-batten-talkport-dec5",
-  "generatedAt": "2026-11-27T11:20:31Z",
+  "version": "2026-11-27-aipri-batten-talkport-details",
+  "generatedAt": "2026-11-27T13:17:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -20644,24 +20644,62 @@
       "id": "batten-ueda-talkport-20261205",
       "source": "curated-calendar",
       "artistId": "batten",
-      "title": "上田理子 talkportサイン会",
-      "start": "2026-12-05",
+      "title": "上田理子 26th talkportサイン会",
+      "start": "2026-12-05T21:00:00+09:00",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "EVENT",
-      "location": "talkport",
-      "note": "公式12月カレンダーに掲載。開始時刻・受付詳細は個別ページを確認でき次第更新。",
-      "evidence": "本人側の公式月別スケジュールで日付と出演者を確認。",
-      "sourceUrl": "https://battengirls.com/vertical_calendar/2026/12",
+      "location": "talkport（オンライン）",
+      "note": "商品はトレカ。11/25 20:00 販売開始。終了時刻未記載。",
+      "evidence": "ばってん少女隊公式個別スケジュールで確認。",
+      "sourceUrl": "https://battengirls.com/contents/1130297",
       "sources": [
         {
           "url": "https://battengirls.com/vertical_calendar/2026/12",
           "type": "artist_official",
           "checkedAt": "2026-11-27T11:20:31Z"
+        },
+        {
+          "url": "https://battengirls.com/contents/1130297",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T13:17:04Z"
         }
       ],
-      "checkedAt": "2026-11-27T11:20:31Z",
+      "checkedAt": "2026-11-27T13:17:04Z",
+      "timings": [
+        {
+          "label": "販売開始",
+          "kind": "application_start",
+          "at": "2026-11-25T20:00:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true
+    },
+    {
+      "id": "tohokusan-onegai-aipri-5-20261203",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "「おねがいアイプリ」5だん 稼動予定（東北産コーデカード）",
+      "start": "2026-12-03",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "アミューズメントゲーム",
+      "note": "るんちゃん・わかりん・かーやさんのコーデを着た3種のカードが登場予定。ED主題歌「おねがいテレパシー」もゲームで遊べる。",
+      "evidence": "いぎなり東北産公式個別告知で日付を確認。稼動予定。",
+      "sourceUrl": "https://madeintohoku.com/contents/1129175",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1129175",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T13:17:04Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T13:17:04Z",
       "timings": [],
       "deadline": null,
       "revision": 1,
