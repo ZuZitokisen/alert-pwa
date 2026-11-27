@@ -435,19 +435,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-2fc626f33c0de5df03a615cd0e65813052a58aa934be5e1e1c1b0e4ccd103
  fc2@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261127T193058Z
+DTSTAMP:20261127T212000Z
 CREATED:20261127T193058Z
-LAST-MODIFIED:20261127T193058Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261130
+LAST-MODIFIED:20261127T212000Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20261201
 SUMMARY:文化放送「レコメン！」松元寧音・相羽星良が出
  演（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n本人公式スケジュールの日付を確認。開始・終了時
- 刻と会場は自動抽出対象外。\n本人公式スケジュール詳
- 細のイベント日付属性・見出し・カテゴリ。公開日を
- 開催日として使用していません。\nhttps://straight-angeli.com
- /schedule/item-1375/
+ 。\n公式表記は11月30日（月）24時過ぎ（暦日12月1日）。
+ 「レコメン！ピックアップ！」出演。具体的な出演分
+ ・終了時刻は未発表。\n本人公式の個別スケジュール本
+ 文に11月30日24時過ぎと明記。\nhttps://straight-angeli.com/sched
+ ule/item-1375/
 LOCATION:
 URL:https://straight-angeli.com/schedule/item-1375/
 STATUS:CONFIRMED
