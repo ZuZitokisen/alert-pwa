@@ -401,6 +401,25 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-b717588f1acefe726f51c9861cd5e945f8df69f0511209abc409c5667349c
+ 2d6@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T112031Z
+CREATED:20261127T112031Z
+LAST-MODIFIED:20261127T112031Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261205
+SUMMARY:上田理子 talkportサイン会（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n公式12月カレンダーに掲載。開始時刻・受付詳細は
+ 個別ページを確認でき次第更新。\n本人側の公式月別ス
+ ケジュールで日付と出演者を確認。\nhttps://battengirls.com/
+ vertical_calendar/2026/12
+LOCATION:talkport
+URL:https://battengirls.com/vertical_calendar/2026/12
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-ad257c98f7d941ec26db84f1607cb38c9abc6246d0fb3a48a7c81fa519f16
  679@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T173209Z
