@@ -451,3 +451,40 @@ dialog::backdrop{overflow:hidden;overscroll-behavior:none;touch-action:none}
 #artist-filters [data-artist=batten] .artist-symbol{width:26px;height:26px}
 :where(:root[data-theme=dark]) #artist-filters>button[data-artist=batten]{--artist-muted:#ec9f77}
 @media(max-width:357px){#artist-filters [data-artist=batten] .artist-symbol{max-width:22px;max-height:22px}}
+
+/* Next generation proposal: date overview + chronological action rail.
+   Existing interactions, artists, certainty, and detail remain unchanged. */
+:root{--furin-rail-width:56px;--furin-row-gap:9px;--furin-date-scale:1}
+#agenda.time-rail{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--furin-row-gap);position:relative}
+.time-rail-row{display:grid;grid-template-columns:var(--furin-rail-width) minmax(0,1fr);gap:7px;position:relative;align-items:start}
+.time-rail-row::before{content:'';position:absolute;width:1px;left:calc(var(--furin-rail-width) - 4px);top:24px;bottom:calc(-1 * var(--furin-row-gap) - 24px);background:var(--line)}
+.time-rail-row:last-child::before{display:none}
+.rail-time{font-size:12px;font-weight:650;letter-spacing:-.025em;white-space:nowrap;color:var(--ink);font-variant-numeric:tabular-nums;align-self:start;padding:20px 8px 0 0;text-align:right;position:relative}
+.rail-time::after{content:'';position:absolute;top:24px;right:1px;width:5px;height:5px;background:var(--muted);border-radius:50%;box-shadow:0 0 0 2px var(--surface)}
+.time-rail-row .event-card{min-width:0;margin:0}
+.time-rail-row .event-card .card-body{padding:12px 12px 8px}
+.time-rail-row .event-card .card-open{padding-right:76px}
+.time-rail-row .event-card .card-top{top:12px;right:12px}
+.time-rail-row .event-card h3{font-size:15px}
+.time-rail-row .event-card .card-actions{margin-top:5px}
+@media(min-width:1100px){
+ .calendar-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(340px,.88fr);align-items:start;gap:24px}
+ .calendar-panel{position:sticky;top:12px;align-self:start}
+ .agenda-panel{padding-top:0;min-width:0}
+ #agenda,#undated{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:420px){
+ :root{--furin-rail-width:47px}
+ .time-rail-row{gap:5px}
+ .rail-time{font-size:11px}
+ .time-rail-row .event-card .card-open{padding-right:0}
+ .time-rail-row .event-card .card-top{position:static;flex-direction:row;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+ .time-rail-row .event-card h3{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){.time-rail-row,.rail-time{transition:none!important}}
+
+.rail-duplicate-time{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* Full menu label fits the narrowest phone without adding another control. */
+.sidebar nav a[data-view=changes] .nav-label{min-width:0;line-height:1.1;text-align:center}
+@media(max-width:700px){.sidebar nav a[data-view=changes] .nav-label{font-size:clamp(9px,2.55vw,11px);white-space:normal;text-wrap:balance}}

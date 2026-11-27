@@ -16,10 +16,10 @@ function fixture(initialHash=''){
  return {context,views,links,title,back,detail,go};
 }
 test('Schedule does not show a back control',()=>{const f=fixture();assert.deepEqual(f.go('#calendar'),['calendar-view']);assert.equal(f.back.hidden,true);assert.equal(f.title.textContent,'Schedule');});
-test('News owns change history and specifications',()=>{const f=fixture();assert.deepEqual(f.go('#changes'),['changes-view']);assert.equal(f.title.textContent,'News');assert.equal(f.back.hidden,true);assert.ok(!html.includes('id="about-view"'));assert.ok(html.includes('id="news-history-panel"'));});
+test('News owns change history and specifications',()=>{const f=fixture();assert.deepEqual(f.go('#changes'),['changes-view']);assert.equal(f.title.textContent,'News & Setting');assert.equal(f.back.hidden,true);assert.ok(!html.includes('id="about-view"'));assert.ok(html.includes('id="news-history-panel"'));});
 test('Favorite and Schedule remain independent routes',()=>{const f=fixture();assert.deepEqual(f.go('#favorites'),['favorites-view']);assert.equal(f.title.textContent,'Favorite');assert.deepEqual(f.go('#calendar'),['calendar-view']);});
-test('all-events route returns to News without losing legacy access',()=>{const f=fixture();f.go('#cards');assert.equal(f.title.textContent,'Search');assert.equal(f.back.href,'#changes');assert.equal(f.back.attributes['aria-label'],'Newsに戻る');assert.equal(f.back.hidden,false);assert.deepEqual(f.go(f.back.href),['changes-view']);});
-test('direct legacy about and settings URLs resolve to News',()=>{for(const route of ['about','settings']){const f=fixture();assert.deepEqual(f.go('#'+route),['changes-view']);assert.equal(f.title.textContent,'News');assert.equal(f.back.hidden,true);}});
+test('all-events route returns to News without losing legacy access',()=>{const f=fixture();f.go('#cards');assert.equal(f.title.textContent,'Search');assert.equal(f.back.href,'#changes');assert.equal(f.back.attributes['aria-label'],'News & Settingに戻る');assert.equal(f.back.hidden,false);assert.deepEqual(f.go(f.back.href),['changes-view']);});
+test('direct legacy about and settings URLs resolve to News',()=>{for(const route of ['about','settings']){const f=fixture();assert.deepEqual(f.go('#'+route),['changes-view']);assert.equal(f.title.textContent,'News & Setting');assert.equal(f.back.hidden,true);}});
 test('unknown routes stay within app and old watch route remains valid',()=>{const f=fixture();assert.deepEqual(f.go('#unknown'),['calendar-view']);assert.deepEqual(f.go('#watch'),['cards-view']);});
 test('entering and leaving News reveals heading and closes dialogs',()=>{const f=fixture();f.detail.open=true;f.go('#changes');assert.equal(f.detail.open,false);assert.equal(f.context.closed,1);assert.equal(f.context.scrollCount,1);assert.equal(f.title.focused,1);f.go('#changes');assert.equal(f.context.scrollCount,1);f.go('#calendar');assert.equal(f.context.scrollCount,2);});
 test('redundant i screen is removed and the existing back control remains available',()=>{assert.ok(!html.includes('class="icon-button mobile-info information-icon"'));assert.ok(!html.includes('⚙'));assert.match(html,/id="back-to-view"[^>]+href="#calendar"[^>]+hidden/);assert.ok(!html.includes('配信環境の接続後に設定</button>'));});
@@ -40,7 +40,7 @@ test('regular screens omit introductory copy and keep important guidance in info
  assert.ok(!source.includes('リマインド例'));assert.ok(html.includes('更新間隔は端末側に依存'));
 });
 
-test('notification News entry resets artist filter but ordinary News preserves it',()=>{const f=fixture();f.go('#changes');assert.deepEqual([...f.context.selectedArtists],['tokisen']);f.go('#notification-changes');assert.equal(f.context.selectedArtists.size,0);assert.equal(f.context.artist,'all');assert.equal(f.context.location.hash,'#changes');assert.equal(f.title.textContent,'News');assert.equal(f.context.artistRenders,1);assert.equal(f.context.changeRenders,1);});
+test('notification News entry resets artist filter but ordinary News preserves it',()=>{const f=fixture();f.go('#changes');assert.deepEqual([...f.context.selectedArtists],['tokisen']);f.go('#notification-changes');assert.equal(f.context.selectedArtists.size,0);assert.equal(f.context.artist,'all');assert.equal(f.context.location.hash,'#changes');assert.equal(f.title.textContent,'News & Setting');assert.equal(f.context.artistRenders,1);assert.equal(f.context.changeRenders,1);});
 
 test('re-activating the visible tab scrolls smoothly to top without changing route or focus',()=>{
  for(const name of ['calendar','favorites','search','changes']){
