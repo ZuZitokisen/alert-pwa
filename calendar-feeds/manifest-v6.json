@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-batten-talkport-dec5",
-  "dataGeneratedAt": "2026-11-27T11:20:31Z",
+  "dataVersion": "2026-11-27-aipri-batten-talkport-details",
+  "dataGeneratedAt": "2026-11-27T13:17:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3649b4cb668b8e06a94fa1a1e65b07852cee50f7d294257d85a2ee8310558b80",
+  "inputSha256": "380b427e5c0dd898db7d38e89b474c23d3a4bf0549493bc30c6262abc36a755c",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all.ics",
-      "count": 45,
+      "count": 46,
       "omittedUnknownDate": 0,
-      "sha256": "f98e95113cdf55d22207609231d97e16289882cabef340e10fff49b682ff8e5c"
+      "sha256": "7e07ddef8969c63bfe3aabe44dd98300f3ba61441e052d24d19d612deea6f27e"
     },
     {
       "id": "tohokusan-live",
@@ -256,9 +256,9 @@
       "category": "other",
       "label": "いぎなり東北産 / その他",
       "path": "calendar-feeds/tohokusan-other.ics",
-      "count": 0,
+      "count": 1,
       "omittedUnknownDate": 0,
-      "sha256": "73a4b76109bc5f8975cfcdf05305cb907db14a1e983b1c007c2146f9b742e640"
+      "sha256": "a9ca5514d0e3e242a6213ad2b6ca7e1452f33d0cf0687852f091eaeff0c1ae0b"
     },
     {
       "id": "ebichu-all",
@@ -318,7 +318,7 @@
       "path": "calendar-feeds/batten-all.ics",
       "count": 54,
       "omittedUnknownDate": 0,
-      "sha256": "e90e6be7cd28fc1ea47354c6255221311c4a235267b4d70b686295fa4ba6aa62"
+      "sha256": "6191bdf62dcb45df932f9b085ecea9a715d8ac912530db73f29a818719ffec32"
     },
     {
       "id": "batten-live",
@@ -328,7 +328,7 @@
       "path": "calendar-feeds/batten-live.ics",
       "count": 24,
       "omittedUnknownDate": 0,
-      "sha256": "88b177224a1a9687c06b6eabdc2834fb5fac00505fccd8e16296201dc7ec0008"
+      "sha256": "27f385be2189d669f26bd3188a1bc41aac5fc00542c94adaa4acd4746446b7d3"
     },
     {
       "id": "batten-benefit",

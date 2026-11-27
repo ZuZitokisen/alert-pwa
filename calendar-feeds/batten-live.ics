@@ -403,19 +403,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-b717588f1acefe726f51c9861cd5e945f8df69f0511209abc409c5667349c
  2d6@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261127T112031Z
+DTSTAMP:20261127T131704Z
 CREATED:20261127T112031Z
-LAST-MODIFIED:20261127T112031Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261205
-SUMMARY:上田理子 talkportサイン会（時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n公式12月カレンダーに掲載。開始時刻・受付詳細は
- 個別ページを確認でき次第更新。\n本人側の公式月別ス
- ケジュールで日付と出演者を確認。\nhttps://battengirls.com/
- vertical_calendar/2026/12
-LOCATION:talkport
-URL:https://battengirls.com/vertical_calendar/2026/12
+LAST-MODIFIED:20261127T131704Z
+SEQUENCE:1
+DTSTART:20261205T120000Z
+SUMMARY:上田理子 26th talkportサイン会
+DESCRIPTION:商品はトレカ。11/25 20:00 販売開始。終了時刻未
+ 記載。\nばってん少女隊公式個別スケジュールで確認。
+ \nhttps://battengirls.com/contents/1130297\nhttps://battengirls.com/vertic
+ al_calendar/2026/12
+LOCATION:talkport（オンライン）
+URL:https://battengirls.com/contents/1130297
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
