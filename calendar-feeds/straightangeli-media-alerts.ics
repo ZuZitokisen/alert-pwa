@@ -91,6 +91,27 @@ DESCRIPTION:日本テレビ「バズリズム02」【番組枠】
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-2fc626f33c0de5df03a615cd0e65813052a58aa934be5e1e1c1b0e4ccd103
+ fc2@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T193058Z
+CREATED:20261127T193058Z
+LAST-MODIFIED:20261127T193058Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261130
+SUMMARY:文化放送「レコメン！」松元寧音・相羽星良が出
+ 演（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\n本人公式スケジュールの日付を確認。開始・終了時
+ 刻と会場は自動抽出対象外。\n本人公式スケジュール詳
+ 細のイベント日付属性・見出し・カテゴリ。公開日を
+ 開催日として使用していません。\nhttps://straight-angeli.com
+ /schedule/item-1375/
+LOCATION:
+URL:https://straight-angeli.com/schedule/item-1375/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-f2c57de9b66d40879337b36203fba2971c9b8b3d492a1ff3e13ffca43e95c
  42a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261112T045559Z

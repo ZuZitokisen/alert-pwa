@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-28-hitoka-nailex-confirmed",
-  "generatedAt": "2026-11-27T15:15:00Z",
+  "version": "hourly-2026-11-27T19:30:58.398Z",
+  "generatedAt": "2026-11-27T19:30:58.398Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -20709,6 +20709,34 @@
       "deadline": null,
       "revision": 1,
       "present": true
+    },
+    {
+      "id": "straightangeli-hourly-official-item-1375",
+      "source": "curated-calendar",
+      "artistId": "straightangeli",
+      "title": "文化放送「レコメン！」松元寧音・相羽星良が出演",
+      "start": "2026-11-30",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "",
+      "note": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。",
+      "evidence": "本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+      "sourceUrl": "https://straight-angeli.com/schedule/item-1375/",
+      "sources": [
+        {
+          "url": "https://straight-angeli.com/schedule/item-1375/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T19:30:58.398Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T19:30:58.398Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "straightangeli-hourly-official-item-1375"
     }
   ],
   "notes": [

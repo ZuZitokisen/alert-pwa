@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-hitoka-nailex-confirmed",
-  "dataGeneratedAt": "2026-11-27T15:15:00Z",
-  "inputSha256": "00757a4c448036f170e4f9d59244f294f8845fbff310ec272a79b9b9d11f6496",
+  "dataVersion": "hourly-2026-11-27T19:30:58.398Z",
+  "dataGeneratedAt": "2026-11-27T19:30:58.398Z",
+  "inputSha256": "8b8a4adf286bf9d00903d54ca092e3f477f777640dd219fc7e60c14b1517f171",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9409,6 +9409,38 @@
       ]
     },
     {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-hourly-official-item-1375\"]",
+      "uid": "public-v1-2fc626f33c0de5df03a615cd0e65813052a58aa934be5e1e1c1b0e4ccd103fc2@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-hourly-official-item-1375",
+        "category": "media",
+        "title": "文化放送「レコメン！」松元寧音・相羽星良が出演",
+        "start": "2026-11-30",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://straight-angeli.com/schedule/item-1375/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T19:30:58.398Z",
+      "modified": "2026-11-27T19:30:58.398Z",
+      "lastTiming": {
+        "start": "2026-11-30",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-media"
+      ]
+    },
+    {
       "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-nene-jrt-20261113\"]",
       "uid": "public-v1-f2c57de9b66d40879337b36203fba2971c9b8b3d492a1ff3e13ffca43e95c42a@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -18686,5 +18718,5 @@
       ]
     }
   ],
-  "integritySha256": "7849b0bd204cf86d966dfb782a10df2e2087c9674023e33148b7fc0c787a2527"
+  "integritySha256": "d589c055eb511a6473f4e559ed412f62c0dbf1aae97d571f71d7255f32068ca9"
 }

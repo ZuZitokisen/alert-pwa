@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-hitoka-nailex-confirmed",
-  "dataGeneratedAt": "2026-11-27T15:15:00Z",
+  "dataVersion": "hourly-2026-11-27T19:30:58.398Z",
+  "dataGeneratedAt": "2026-11-27T19:30:58.398Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "454ac42465951c32f7477abd2324f7dc6b0c03881b3e572f0178b385425d6f62",
+  "inputSha256": "b6ec133a5519ba80de139f841277278e72751624be0b897a3df6e30b7e86e8b5",
   "feeds": [
     {
       "id": "tokisen-all",
