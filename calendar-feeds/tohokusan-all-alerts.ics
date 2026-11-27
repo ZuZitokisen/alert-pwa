@@ -959,6 +959,27 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-fe9b8b1f2658bb9b47e63102c3536d07b350003afcec20d8902bf8962f412
+ c4f@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261127T131704Z
+CREATED:20261127T131704Z
+LAST-MODIFIED:20261127T131704Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261203
+SUMMARY:「おねがいアイプリ」5だん 稼動予定（東北産コ
+ ーデカード）（時刻未定）
+DESCRIPTION:時刻未定。終日開催という意味ではありません
+ 。\nるんちゃん・わかりん・かーやさんのコーデを着た
+ 3種のカードが登場予定。ED主題歌「おねがいテレパシ
+ ー」もゲームで遊べる。\nいぎなり東北産公式個別告知
+ で日付を確認。稼動予定。\nhttps://madeintohoku.com/contents/11
+ 29175
+LOCATION:アミューズメントゲーム
+URL:https://madeintohoku.com/contents/1129175
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-354e463002133296849f14ff58c76aef1cf4687a6968eab797f34943f5f32
  55a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261119T084531Z

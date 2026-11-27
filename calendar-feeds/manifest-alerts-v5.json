@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-batten-talkport-dec5",
-  "dataGeneratedAt": "2026-11-27T11:20:31Z",
+  "dataVersion": "2026-11-27-aipri-batten-talkport-details",
+  "dataGeneratedAt": "2026-11-27T13:17:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "93a516181535e3c7b20be5d77731e650dd7d148672fa6101a18c8873970dde86",
+  "inputSha256": "d20870b80e74ec0c01c89394729e187c134e3067889dc3bcc94bed93b459091b",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -216,9 +216,9 @@
       "category": "all",
       "label": "いぎなり東北産 / 全予定",
       "path": "calendar-feeds/tohokusan-all-alerts.ics",
-      "count": 45,
+      "count": 46,
       "omittedUnknownDate": 0,
-      "sha256": "189d0fb215e45a59af38efbbc4256e9ced2454ab0b42fc667ecc63a9892950ba"
+      "sha256": "a69a3718113a5e7fa462e9d66d5e706efa8a8328b04429733b14003148a8d36c"
     },
     {
       "id": "tohokusan-live",
@@ -256,9 +256,9 @@
       "category": "other",
       "label": "いぎなり東北産 / その他",
       "path": "calendar-feeds/tohokusan-other-alerts.ics",
-      "count": 0,
+      "count": 1,
       "omittedUnknownDate": 0,
-      "sha256": "74885fcc302472065e96be61c3491fd9a833ee0c99b08417d66242970dfc75da"
+      "sha256": "9abb2194869ab8a92941e59791665deb6e6b55a792f41cda5aeedbfb92d93726"
     },
     {
       "id": "ebichu-all",

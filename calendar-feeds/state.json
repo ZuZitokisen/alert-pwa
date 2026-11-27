@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-batten-talkport-dec5",
-  "dataGeneratedAt": "2026-11-27T11:20:31Z",
-  "inputSha256": "3649b4cb668b8e06a94fa1a1e65b07852cee50f7d294257d85a2ee8310558b80",
+  "dataVersion": "2026-11-27-aipri-batten-talkport-details",
+  "dataGeneratedAt": "2026-11-27T13:17:04Z",
+  "inputSha256": "380b427e5c0dd898db7d38e89b474c23d3a4bf0549493bc30c6262abc36a755c",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1641,22 +1641,23 @@
         "source": "curated-calendar",
         "id": "batten-ueda-talkport-20261205",
         "category": "live",
-        "title": "上田理子 talkportサイン会",
-        "start": "2026-12-05",
+        "title": "上田理子 26th talkportサイン会",
+        "start": "2026-12-05T21:00:00+09:00",
         "end": null,
         "allDay": false,
-        "location": "talkport",
-        "publicNote": "公式12月カレンダーに掲載。開始時刻・受付詳細は個別ページを確認でき次第更新。\n本人側の公式月別スケジュールで日付と出演者を確認。",
+        "location": "talkport（オンライン）",
+        "publicNote": "商品はトレカ。11/25 20:00 販売開始。終了時刻未記載。\nばってん少女隊公式個別スケジュールで確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://battengirls.com/contents/1130297",
           "https://battengirls.com/vertical_calendar/2026/12"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-27T11:20:31Z",
-      "modified": "2026-11-27T11:20:31Z",
+      "modified": "2026-11-27T13:17:04Z",
       "lastTiming": {
-        "start": "2026-12-05",
+        "start": "2026-12-05T21:00:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -11174,6 +11175,38 @@
       ]
     },
     {
+      "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-onegai-aipri-5-20261203\"]",
+      "uid": "public-v1-fe9b8b1f2658bb9b47e63102c3536d07b350003afcec20d8902bf8962f412c4f@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tohokusan",
+        "source": "curated-calendar",
+        "id": "tohokusan-onegai-aipri-5-20261203",
+        "category": "other",
+        "title": "「おねがいアイプリ」5だん 稼動予定（東北産コーデカード）",
+        "start": "2026-12-03",
+        "end": null,
+        "allDay": false,
+        "location": "アミューズメントゲーム",
+        "publicNote": "るんちゃん・わかりん・かーやさんのコーデを着た3種のカードが登場予定。ED主題歌「おねがいテレパシー」もゲームで遊べる。\nいぎなり東北産公式個別告知で日付を確認。稼動予定。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://madeintohoku.com/contents/1129175"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T13:17:04Z",
+      "modified": "2026-11-27T13:17:04Z",
+      "lastTiming": {
+        "start": "2026-12-03",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tohokusan-all",
+        "tohokusan-other"
+      ]
+    },
+    {
       "key": "[\"tohokusan\",\"curated-calendar\",\"tohokusan-sapporo-20261123\"]",
       "uid": "public-v1-354e463002133296849f14ff58c76aef1cf4687a6968eab797f34943f5f3255a@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -18651,5 +18684,5 @@
       ]
     }
   ],
-  "integritySha256": "cade41a1dbb7a3c64795c920c457d670cc266cae55d29b77a00f364c1811955b"
+  "integritySha256": "fd8baf43569d0b6b8e04458b42df6fbaa46412705577680521b74402f3f2fdd9"
 }

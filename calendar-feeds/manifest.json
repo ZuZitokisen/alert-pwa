@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-batten-talkport-dec5",
-  "dataGeneratedAt": "2026-11-27T11:20:31Z",
+  "dataVersion": "2026-11-27-aipri-batten-talkport-details",
+  "dataGeneratedAt": "2026-11-27T13:17:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "c3ea35516d69f0e54093b07d97c58be8fd910964735ed1d3e5dedff377b32145",
+  "inputSha256": "ab303e9966f7ee60e7d0b73632a17ca57be841bb3f6fba17012949a261697a8b",
   "feeds": [
     {
       "id": "tokisen-all",

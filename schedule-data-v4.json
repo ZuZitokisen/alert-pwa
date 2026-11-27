@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-batten-talkport-dec5",
-  "generatedAt": "2026-11-27T11:20:31Z",
+  "version": "2026-11-27-aipri-batten-talkport-details",
+  "generatedAt": "2026-11-27T13:17:04Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -15618,6 +15618,33 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-hitoka-nailex-20261223"
+    },
+    {
+      "id": "tohokusan-onegai-aipri-5-20261203",
+      "source": "curated-calendar",
+      "artistId": "tohokusan",
+      "title": "「おねがいアイプリ」5だん 稼動予定（東北産コーデカード）",
+      "start": "2026-12-03",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "MEMO",
+      "location": "アミューズメントゲーム",
+      "note": "るんちゃん・わかりん・かーやさんのコーデを着た3種のカードが登場予定。ED主題歌「おねがいテレパシー」もゲームで遊べる。",
+      "evidence": "いぎなり東北産公式個別告知で日付を確認。稼動予定。",
+      "sourceUrl": "https://madeintohoku.com/contents/1129175",
+      "sources": [
+        {
+          "url": "https://madeintohoku.com/contents/1129175",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T13:17:04Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T13:17:04Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
     }
   ],
   "notes": [
