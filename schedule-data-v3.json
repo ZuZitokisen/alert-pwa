@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-afternoon-official",
-  "generatedAt": "2026-11-27T05:17:55Z",
+  "version": "2026-11-27-idol-collection-nailex",
+  "generatedAt": "2026-11-27T07:14:26Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -13803,6 +13803,198 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-haruka-flat-20261210"
+    },
+    {
+      "id": "rege-idol-collection-festival-20270322",
+      "artistId": "re-ge",
+      "title": "IDOL COLLECTION FESTIVAL supported by UP-T",
+      "source": "curated-calendar",
+      "start": "2027-03-22T13:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "大阪・なんばHatch",
+      "note": "開場12:00、開演13:00。個別出演時刻は未発表。Sブロック10,000円、Aブロック5,000円、2階席10,000円（各1D別）。https://tiget.net/events/541727",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://re-ge.com/news/item-835/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-835/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T07:14:26Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T07:14:26Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-idol-collection-festival-20270322"
+    },
+    {
+      "id": "rege-idol-collection-festival-20270322-lottery-start",
+      "artistId": "re-ge",
+      "title": "IDOL COLLECTION FESTIVAL supported by UP-T 先行抽選受付開始",
+      "source": "curated-calendar",
+      "start": "2026-11-27T12:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "TIGET",
+      "note": "先行抽選はカード決済のみ。https://tiget.net/events/541727",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://re-ge.com/news/item-835/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-835/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T07:14:26Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T07:14:26Z",
+      "timings": [
+        {
+          "label": "先行抽選受付開始",
+          "kind": "application_start",
+          "at": "2026-11-27T12:00:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-idol-collection-festival-20270322"
+    },
+    {
+      "id": "rege-idol-collection-festival-20270322-lottery-end",
+      "artistId": "re-ge",
+      "title": "IDOL COLLECTION FESTIVAL supported by UP-T 先行抽選受付締切",
+      "source": "curated-calendar",
+      "start": "2026-12-13T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "TIGET",
+      "note": "先行抽選はカード決済のみ。https://tiget.net/events/541727",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://re-ge.com/news/item-835/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-835/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T07:14:26Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T07:14:26Z",
+      "timings": [
+        {
+          "label": "先行抽選受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-13T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-13T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-idol-collection-festival-20270322"
+    },
+    {
+      "id": "rege-idol-collection-festival-20270322-general-start",
+      "artistId": "re-ge",
+      "title": "IDOL COLLECTION FESTIVAL supported by UP-T 一般先着販売開始",
+      "source": "curated-calendar",
+      "start": "2026-12-18T19:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "TIGET",
+      "note": "先行抽選はカード決済のみ。https://tiget.net/events/541727",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://re-ge.com/news/item-835/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-835/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T07:14:26Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T07:14:26Z",
+      "timings": [
+        {
+          "label": "一般先着販売開始",
+          "kind": "ticket_sales_start",
+          "at": "2026-12-18T19:00:00+09:00"
+        }
+      ],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-idol-collection-festival-20270322"
+    },
+    {
+      "id": "rege-idol-collection-festival-20270322-general-end",
+      "artistId": "re-ge",
+      "title": "IDOL COLLECTION FESTIVAL supported by UP-T 一般先着販売終了",
+      "source": "curated-calendar",
+      "start": "2027-03-21T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "TIGET",
+      "note": "先行抽選はカード決済のみ。https://tiget.net/events/541727",
+      "evidence": "本人側の公式個別告知で確認。",
+      "sourceUrl": "https://re-ge.com/news/item-835/",
+      "sources": [
+        {
+          "url": "https://re-ge.com/news/item-835/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T07:14:26Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T07:14:26Z",
+      "timings": [
+        {
+          "label": "一般先着販売終了",
+          "kind": "ticket_sales_end",
+          "at": "2027-03-21T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2027-03-21T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "rege-idol-collection-festival-20270322"
+    },
+    {
+      "id": "tokisen-hitoka-nailex-20261223",
+      "artistId": "tokisen",
+      "title": "坂井仁香 表紙「NAILEX 2027年2月号 SPECIAL EDITION」発売",
+      "source": "curated-calendar",
+      "start": "2026-12-23",
+      "end": null,
+      "allDay": false,
+      "status": "possible",
+      "category": "MEMO",
+      "location": "",
+      "note": "表紙および中面16ページ。発売日のみ。",
+      "evidence": "出版社公式個別記事で確認。本人公式告知は未確認。",
+      "sourceUrl": "https://nailex.jp/magazine/nailex202702special",
+      "sources": [
+        {
+          "url": "https://nailex.jp/magazine/nailex202702special",
+          "type": "organizer",
+          "checkedAt": "2026-11-27T07:14:26Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T07:14:26Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-hitoka-nailex-20261223"
     }
   ],
   "notes": [

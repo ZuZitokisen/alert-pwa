@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-afternoon-official",
-  "dataGeneratedAt": "2026-11-27T05:17:55Z",
+  "dataVersion": "2026-11-27-idol-collection-nailex",
+  "dataGeneratedAt": "2026-11-27T07:14:26Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "986d997533f65e3fb761b08d9ccb3c53c36d81904dc2b6dcd904cc7b6e7ddb40",
+  "inputSha256": "e5b0e70b2cf4865a85690bc25c59f15e67027c98c7e1aa4f9d468f6039e31309",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 208,
+      "count": 209,
       "omittedUnknownDate": 10,
-      "sha256": "2ef845c7d3f7613bba6128eb1d07ff3c087d182551ba3540bf9cf37f10ee008c"
+      "sha256": "fc938770fac909b47a38b050448706932f6ef0735a43b4eab852bfc50afdca75"
     },
     {
       "id": "tokisen-live",
@@ -56,9 +56,9 @@
       "category": "other",
       "label": "超ときめき♡宣伝部 / その他",
       "path": "calendar-feeds/tokisen-other.ics",
-      "count": 1,
+      "count": 2,
       "omittedUnknownDate": 0,
-      "sha256": "315e0a5fb3d51b08f515282a3e481ff62a3b80c50485d30ec995cc31ffad3793"
+      "sha256": "7e88d9f4eaebce0bb92096b1dd0d3e0255840e958d8c9933fef230a000cd28ce"
     },
     {
       "id": "re-ge-all",
@@ -66,9 +66,9 @@
       "category": "all",
       "label": "RE-GE / 全予定",
       "path": "calendar-feeds/re-ge-all.ics",
-      "count": 65,
+      "count": 70,
       "omittedUnknownDate": 0,
-      "sha256": "6e27d45a08afbb6a0ea8ab1409012898126fc0f81ee0e2ba6e2b7902abaea611"
+      "sha256": "88851cbb67fb09a07213ec5cf418a65124ed4124c34d36fdf70486e3703bb4af"
     },
     {
       "id": "re-ge-live",
@@ -76,9 +76,9 @@
       "category": "live",
       "label": "RE-GE / ライブ・イベント",
       "path": "calendar-feeds/re-ge-live.ics",
-      "count": 11,
+      "count": 12,
       "omittedUnknownDate": 0,
-      "sha256": "7298f4c7b0a78e86dc2206421fe52aea8bb234d4ef151daf968ac049941e25b7"
+      "sha256": "0994ba673005f2c9bcf739db97fba671f3869e8931ee9446328dc45c3f9cd9aa"
     },
     {
       "id": "re-ge-benefit",
@@ -86,9 +86,9 @@
       "category": "benefit",
       "label": "RE-GE / 特典会・応募",
       "path": "calendar-feeds/re-ge-benefit.ics",
-      "count": 34,
+      "count": 38,
       "omittedUnknownDate": 0,
-      "sha256": "3b916161c695442c1652baf04bfc121409e9a0622833f89dd14acda48fbb29e6"
+      "sha256": "694fb844fda025e2d24c85ef9cabe328ef1039592fc9f11ade6884199c3b7827"
     },
     {
       "id": "re-ge-media",

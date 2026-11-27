@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-afternoon-official",
-  "dataGeneratedAt": "2026-11-27T05:17:55Z",
-  "inputSha256": "78ac12608991b243378b5688e6c10dda1f25a747b942c89234add498485e5ea1",
+  "dataVersion": "2026-11-27-idol-collection-nailex",
+  "dataGeneratedAt": "2026-11-27T07:14:26Z",
+  "inputSha256": "a4554000aa79d8410b7dd6b0dc43cbb751ed906fb22b5ba1d0eda70681afd453",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -695,27 +695,156 @@
         "id": "batten-idol-collection-festival-20270322",
         "category": "live",
         "title": "IDOL COLLECTION FESTIVAL supported by UP-T",
-        "start": "2027-03-22",
+        "start": "2027-03-22T13:00:00+09:00",
         "end": null,
         "allDay": false,
-        "location": "",
-        "publicNote": "公式ニュース一覧で3/22（月祝）出演決定。時刻・会場等は個別記事未確認。\n本人公式ニュース一覧の11/27告知見出し。",
+        "location": "大阪・なんばHatch",
+        "publicNote": "開場12:00、開演13:00。個別出演時刻は未発表。Sブロック10,000円、Aブロック5,000円、2階席10,000円（各1D別）。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
         "status": "confirmed",
         "sourceUrls": [
+          "https://battengirls.com/contents/1132457",
           "https://battengirls.com/contents/news"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-27T05:17:55Z",
-      "modified": "2026-11-27T05:17:55Z",
+      "modified": "2026-11-27T07:14:26Z",
       "lastTiming": {
-        "start": "2027-03-22",
+        "start": "2027-03-22T13:00:00+09:00",
         "end": null,
         "allDay": false
       },
       "memberships": [
         "batten-all",
         "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-idol-collection-festival-20270322-general-end\"]",
+      "uid": "public-v1-cf9763db4a6f1e491403c7b843f8ae129bacd62347021eda8e5d59be7111d994@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-idol-collection-festival-20270322-general-end",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 一般先着販売終了",
+        "start": "2027-03-21T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1132457"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2027-03-21T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-idol-collection-festival-20270322-general-start\"]",
+      "uid": "public-v1-d2a3ce6569205b2ee3bf31f7e74aa3671caaceb519e0916f409b1103465c9a7c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-idol-collection-festival-20270322-general-start",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 一般先着販売開始",
+        "start": "2026-12-18T19:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1132457"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2026-12-18T19:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-idol-collection-festival-20270322-lottery-end\"]",
+      "uid": "public-v1-62f277381d9cd7af62b1d50adb1e3f6ab4f02ebe149b865864a5e24fffb17e19@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-idol-collection-festival-20270322-lottery-end",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 先行抽選受付締切",
+        "start": "2026-12-13T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1132457"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2026-12-13T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-idol-collection-festival-20270322-lottery-start\"]",
+      "uid": "public-v1-2c967317749915eb031fc4a436171ae6e93591a6ff24eaaef45e22c1179b2309@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-idol-collection-festival-20270322-lottery-start",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 先行抽選受付開始",
+        "start": "2026-11-27T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1132457"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2026-11-27T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
       ]
     },
     {
@@ -6796,6 +6925,166 @@
       ]
     },
     {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-idol-collection-festival-20270322\"]",
+      "uid": "public-v1-c8230e1b2b82beceecbe2e2f51bc3599c1eff15818d8f255793d2072454dd120@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-idol-collection-festival-20270322",
+        "category": "live",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T",
+        "start": "2027-03-22T13:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "大阪・なんばHatch",
+        "publicNote": "開場12:00、開演13:00。個別出演時刻は未発表。Sブロック10,000円、Aブロック5,000円、2階席10,000円（各1D別）。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-835/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2027-03-22T13:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-live"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-idol-collection-festival-20270322-general-end\"]",
+      "uid": "public-v1-9357bcbbcbfff89a16244900cf22ecf4013766046f0cad1b7a9a39b769b5fbc2@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-idol-collection-festival-20270322-general-end",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 一般先着販売終了",
+        "start": "2027-03-21T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-835/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2027-03-21T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-idol-collection-festival-20270322-general-start\"]",
+      "uid": "public-v1-4c417f68054338f15191008521173e997066fb1b688a67bec4d66b029f5e8653@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-idol-collection-festival-20270322-general-start",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 一般先着販売開始",
+        "start": "2026-12-18T19:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-835/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2026-12-18T19:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-idol-collection-festival-20270322-lottery-end\"]",
+      "uid": "public-v1-777c9d7ef9c50fcdf6e1629cd53317842aea79ce59791a5397fda7ac36c3201a@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-idol-collection-festival-20270322-lottery-end",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 先行抽選受付締切",
+        "start": "2026-12-13T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-835/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2026-12-13T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
+      ]
+    },
+    {
+      "key": "[\"re-ge\",\"curated-calendar\",\"rege-idol-collection-festival-20270322-lottery-start\"]",
+      "uid": "public-v1-0d20345b18576e27e8c23ab0a13775ac7e997b18ad213903df9567899050381d@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "re-ge",
+        "source": "curated-calendar",
+        "id": "rege-idol-collection-festival-20270322-lottery-start",
+        "category": "benefit",
+        "title": "IDOL COLLECTION FESTIVAL supported by UP-T 先行抽選受付開始",
+        "start": "2026-11-27T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "TIGET",
+        "publicNote": "先行抽選はカード決済のみ。https://tiget.net/events/541727\n本人側の公式個別告知で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://re-ge.com/news/item-835/"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2026-11-27T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "re-ge-all",
+        "re-ge-benefit"
+      ]
+    },
+    {
       "key": "[\"re-ge\",\"curated-calendar\",\"rege-oshidera-tv-20261113\"]",
       "uid": "public-v1-0e6825afb5baafa24477e2fd30f608454326151504d4f1555695ba99174b7539@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -11891,6 +12180,38 @@
       "memberships": [
         "tokisen-all",
         "tokisen-media"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-hitoka-nailex-20261223\"]",
+      "uid": "public-v1-6c99c326654269ca22ee4ee7db1927a976f2d96025ff8d88961391a4b7f61b7b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-hitoka-nailex-20261223",
+        "category": "other",
+        "title": "坂井仁香 表紙「NAILEX 2027年2月号 SPECIAL EDITION」発売",
+        "start": "2026-12-23",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "表紙および中面16ページ。発売日のみ。\n出版社公式個別記事で確認。本人公式告知は未確認。",
+        "status": "possible",
+        "sourceUrls": [
+          "https://nailex.jp/magazine/nailex202702special"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T07:14:26Z",
+      "modified": "2026-11-27T07:14:26Z",
+      "lastTiming": {
+        "start": "2026-12-23",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-other"
       ]
     },
     {
@@ -18170,5 +18491,5 @@
       ]
     }
   ],
-  "integritySha256": "e8bdd54fb3ae915f6a56aac737310c5f6bda0d409be79c9d309490e9aab6599d"
+  "integritySha256": "8d0a8297ffba48ea9d8821f8767c92239d37bbe0805a76913a76adfd13d9a684"
 }
