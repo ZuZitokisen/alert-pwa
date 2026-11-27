@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-ebichu-ariake-gr8",
-  "dataGeneratedAt": "2026-11-27T09:15:19Z",
+  "dataVersion": "2026-11-27-batten-talkport-dec5",
+  "dataGeneratedAt": "2026-11-27T11:20:31Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "1c7730080f4a827df58ea94fa9bd4533a72053097dda88af8a1e72e8415eeac2",
+  "inputSha256": "3649b4cb668b8e06a94fa1a1e65b07852cee50f7d294257d85a2ee8310558b80",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all-alerts.ics",
-      "count": 53,
+      "count": 54,
       "omittedUnknownDate": 0,
-      "sha256": "c24c355d6bd35f2ff5c0b4ef992aa6b8618524b68175676b3dc115edbbf76901"
+      "sha256": "2b52e3892aac74309d2f7b597be0e6e20e64e3799335baf84f9f88a6e7bbf572"
     },
     {
       "id": "batten-live",
@@ -326,9 +326,9 @@
       "category": "live",
       "label": "ばってん少女隊 / ライブ・イベント",
       "path": "calendar-feeds/batten-live-alerts.ics",
-      "count": 23,
+      "count": 24,
       "omittedUnknownDate": 0,
-      "sha256": "eab613668dbe07f287bfc9a250be08bf3dae2906f8e0112361fceb171eae4aa5"
+      "sha256": "2a4d5cfc002aeb8fae92a635f7819d73d0432157834b41c367893879f1b968fe"
     },
     {
       "id": "batten-benefit",

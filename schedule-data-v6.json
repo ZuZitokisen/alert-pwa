@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27-ebichu-ariake-gr8",
-  "generatedAt": "2026-11-27T09:15:19Z",
+  "version": "2026-11-27-batten-talkport-dec5",
+  "generatedAt": "2026-11-27T11:20:31Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -20639,6 +20639,33 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-ariake-gr8-2027"
+    },
+    {
+      "id": "batten-ueda-talkport-20261205",
+      "source": "curated-calendar",
+      "artistId": "batten",
+      "title": "上田理子 talkportサイン会",
+      "start": "2026-12-05",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "talkport",
+      "note": "公式12月カレンダーに掲載。開始時刻・受付詳細は個別ページを確認でき次第更新。",
+      "evidence": "本人側の公式月別スケジュールで日付と出演者を確認。",
+      "sourceUrl": "https://battengirls.com/vertical_calendar/2026/12",
+      "sources": [
+        {
+          "url": "https://battengirls.com/vertical_calendar/2026/12",
+          "type": "artist_official",
+          "checkedAt": "2026-11-27T11:20:31Z"
+        }
+      ],
+      "checkedAt": "2026-11-27T11:20:31Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true
     }
   ],
   "notes": [

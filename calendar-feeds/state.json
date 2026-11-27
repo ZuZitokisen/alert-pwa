@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-ebichu-ariake-gr8",
-  "dataGeneratedAt": "2026-11-27T09:15:19Z",
-  "inputSha256": "1c7730080f4a827df58ea94fa9bd4533a72053097dda88af8a1e72e8415eeac2",
+  "dataVersion": "2026-11-27-batten-talkport-dec5",
+  "dataGeneratedAt": "2026-11-27T11:20:31Z",
+  "inputSha256": "3649b4cb668b8e06a94fa1a1e65b07852cee50f7d294257d85a2ee8310558b80",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1631,6 +1631,38 @@
       "memberships": [
         "batten-all",
         "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-ueda-talkport-20261205\"]",
+      "uid": "public-v1-b717588f1acefe726f51c9861cd5e945f8df69f0511209abc409c5667349c2d6@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-ueda-talkport-20261205",
+        "category": "live",
+        "title": "上田理子 talkportサイン会",
+        "start": "2026-12-05",
+        "end": null,
+        "allDay": false,
+        "location": "talkport",
+        "publicNote": "公式12月カレンダーに掲載。開始時刻・受付詳細は個別ページを確認でき次第更新。\n本人側の公式月別スケジュールで日付と出演者を確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/vertical_calendar/2026/12"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-27T11:20:31Z",
+      "modified": "2026-11-27T11:20:31Z",
+      "lastTiming": {
+        "start": "2026-12-05",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-live"
       ]
     },
     {
@@ -18619,5 +18651,5 @@
       ]
     }
   ],
-  "integritySha256": "6783e6a2d7c5e56bc78786dfa955b70a24cfd3ab197cee4f12b44ba244c063c6"
+  "integritySha256": "cade41a1dbb7a3c64795c920c457d670cc266cae55d29b77a00f364c1811955b"
 }

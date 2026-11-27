@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-27-ebichu-ariake-gr8",
-  "dataGeneratedAt": "2026-11-27T09:15:19Z",
+  "dataVersion": "2026-11-27-batten-talkport-dec5",
+  "dataGeneratedAt": "2026-11-27T11:20:31Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "3e63fb40554ca097030e9d4403dad4fda55ec3a33767fb30bf8b60bb0839fa18",
+  "inputSha256": "dea0144f0ba307f5bebac7f2d290b95a64d059bf79ff407e68e6f10681cb355f",
   "feeds": [
     {
       "id": "tokisen-all",
