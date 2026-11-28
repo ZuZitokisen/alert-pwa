@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-ebichu-gift-performance-love-reservation",
-  "dataGeneratedAt": "2026-11-28T13:18:39Z",
-  "inputSha256": "58add99634d91c97a665b1c9115838d91811b3169eba8a9d5e5de3e1f6c57acc",
+  "dataVersion": "2026-11-29-hiyori-koresawa-locks",
+  "dataGeneratedAt": "2026-11-28T19:15:32Z",
+  "inputSha256": "364e30eb4adf0ba877dd20b271c5dae284b2d0d0e20dd8f351b1f6f95f7f4b51",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12748,6 +12748,72 @@
       ]
     },
     {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-hiyori-koresawa-locks-20261208\"]",
+      "uid": "public-v1-98c49a1df5191a89706ce51b9172f2be8959cabbe143ea8110d88918e3b86d51@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-hiyori-koresawa-locks-20261208",
+        "category": "media",
+        "title": "吉川ひより TOKYO FM「コレサワLOCKS!」",
+        "start": "2026-12-08",
+        "end": null,
+        "allDay": false,
+        "location": "TOKYO FM／JFN",
+        "publicNote": "個別回の開始・終了時刻は未確認。\n本人公式X（11/28）と番組公式X（11/26）の両投稿内容を公開検索索引で照合。X原ページ直接取得は403。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://x.com/sendenbu_staff/status/2126510453585334285",
+          "https://x.com/sol_info/status/2125960644243652682"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-28T19:15:32Z",
+      "modified": "2026-11-28T19:15:32Z",
+      "lastTiming": {
+        "start": "2026-12-08",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
+      "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-hiyori-koresawa-locks-20261209\"]",
+      "uid": "public-v1-7adac44594fa578d07d249991baf01988e80369f30748d8a2e2ed7350fa2e4a1@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "tokisen",
+        "source": "curated-calendar",
+        "id": "tokisen-hiyori-koresawa-locks-20261209",
+        "category": "media",
+        "title": "吉川ひより TOKYO FM「コレサワLOCKS!」",
+        "start": "2026-12-09",
+        "end": null,
+        "allDay": false,
+        "location": "TOKYO FM／JFN",
+        "publicNote": "個別回の開始・終了時刻は未確認。\n本人公式X（11/28）と番組公式X（11/26）の両投稿内容を公開検索索引で照合。X原ページ直接取得は403。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://x.com/sendenbu_staff/status/2126510453585334285",
+          "https://x.com/sol_info/status/2125960644243652682"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-28T19:15:32Z",
+      "modified": "2026-11-28T19:15:32Z",
+      "lastTiming": {
+        "start": "2026-12-09",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "tokisen-all",
+        "tokisen-media"
+      ]
+    },
+    {
       "key": "[\"tokisen\",\"curated-calendar\",\"tokisen-jr-10-from_date\"]",
       "uid": "public-v1-98a50177ccbbcdf393e6ab21715c3b28ec492514692d05275beb2ced810c67ca@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -19024,5 +19090,5 @@
       ]
     }
   ],
-  "integritySha256": "98a8ffbbe26c83f6ccb07d29fc6aa71d3c4a40a6cd17d90849b28c1b8468faa8"
+  "integritySha256": "9b959059cb3a0ac7ee1d89f6f1a4f1e474a01037fc795101b235c53458437ea3"
 }
