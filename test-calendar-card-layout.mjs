@@ -285,8 +285,8 @@ test('News favorite toggles shared identity without opening change details',()=>
 test('News missing record retains previous facts and does not claim cancellation',()=>{
  const e=event('missing-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'unavailable',before:e,after:null,fields:[],revision:2,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');const n=f.get('changes').querySelector('.event-card');assert.ok(n.classList.contains('missing'));assert.equal(n.classList.contains('cancelled'),false);assert.equal(n.querySelector('h3').textContent,e.title);assert.match(n.querySelector('.card-bottom-note').textContent,/中止とは判断していません/);assert.equal(f.context.news.before.present,true);n.querySelector('.card-open').click();assert.match(f.get('detail-content').textContent,/中止とは判断しません/);
 });
-test('v0.7.46 markup and worker asset versions match without touching push config',()=>{
- const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-46/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.46'));assert.ok(sw.includes(file+'?v=0.7.46'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
+test('v0.7.47 markup and worker asset versions match without touching push config',()=>{
+ const sw=fs.readFileSync(new URL('./sw.js',import.meta.url),'utf8');assert.match(sw,/static-shell-v7-47/);for(const file of ['app.js','style.css','artist-config.js','schedule-store.js','calendar-subscriptions.js','pwa-update.js']){assert.ok(html.includes(file+'?v=0.7.47'));assert.ok(sw.includes(file+'?v=0.7.47'));}assert.ok(html.includes('v0.7.12'));assert.ok(html.includes('v0.7.9'));
 });
 
 test('News creation/missing captions avoid duplicates and time changes collapse',()=>{const e=event('compact-news','2026-11-12'),f=fixture({events:[e]});f.context.news={kind:'new',after:e,fields:['start','end','title'],revision:1,detected:'2026-11-12T04:00:00Z'};f.run('state.changes=[news];renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'New!');f.context.news.kind='updated';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'更新 · 日時変更・タイトル変更');f.context.news.kind='unavailable';f.run('renderChanges()');assert.equal(f.get('changes').querySelector('.card-bottom-note').textContent,'中止とは判断していません');assert.equal((f.get('changes').textContent.match(/掲載消失/g)||[]).length,1);});
@@ -617,4 +617,16 @@ test('calendar registration opens the native confirmation once, and URL copies w
  const style=fs.readFileSync(new URL('./style.css',import.meta.url),'utf8');
  assert.match(style,/#detail:has\(#detail-content\[data-panel=subscriptions\]\)\{[\s\S]*?inset-block-start:var\(--subscription-top\)/);
  assert.match(style,/subscription-chevron\{transform:rotate\(90deg\)\}/);
+});
+
+test('day agenda uses full-width cards without a timeline rail and keeps time inside each card',()=>{
+ const f=fixture({events:[event('timed','2026-11-12T10:00:00+09:00'),event('unknown','2026-11-12',{allDay:false})]});
+ const agenda=f.get('agenda');
+ assert.equal(agenda.classList.contains('time-rail'),false);
+ assert.equal(agenda.querySelectorAll('.time-rail-row').length,0);
+ assert.equal(agenda.querySelectorAll('.rail-time').length,0);
+ assert.equal(agenda.children.length,2);
+ assert.ok(agenda.children.every(node=>node.classList.contains('event-card')));
+ assert.match(agenda.children.find(n=>n.querySelector('h3').textContent==='timed').querySelector('.card-time').textContent,/10:00/);
+ assert.match(agenda.children.find(n=>n.querySelector('h3').textContent==='unknown').querySelector('.card-time').textContent,/時刻未定/);
 });
