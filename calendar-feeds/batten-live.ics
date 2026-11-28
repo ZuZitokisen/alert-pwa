@@ -102,18 +102,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-f77e6fb4a609e90282310f18cf73f6c2091ca4a257430717b3ab06c8b742e
  8ff@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261121T231640Z
+DTSTAMP:20261128T031644Z
 CREATED:20261121T231640Z
-LAST-MODIFIED:20261121T231640Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261129
+LAST-MODIFIED:20261128T031644Z
+SEQUENCE:1
+DTSTART:20261129T040000Z
 SUMMARY:「ちゅぴ」リリースイベント ファイナル（豊洲）
- （時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\nミニライブ・特典会、PARKGOLF（DJ）、KURUMI（和太鼓
- ）とスペシャルステージ。詳細・時刻は後日発表。\nば
- ってん少女隊公式の案内。\nhttps://battengirls.com/contents/112
- 9038
+DESCRIPTION:10:30対象商品販売、13:00ミニライブ①、13:30新規
+ ＋紹介者・カムバック向けお手振り会、14:15特典会、18:
+ 00 DJ・和太鼓（ばってん出演なし）、18:35すぺしゃるミ
+ ニライブ。\nばってん少女隊公式の案内。\nhttps://battengi
+ rls.com/contents/1129038
 LOCATION:ららぽーと豊洲 ウッドデッキ（特設）
 URL:https://battengirls.com/contents/1129038
 STATUS:CONFIRMED
