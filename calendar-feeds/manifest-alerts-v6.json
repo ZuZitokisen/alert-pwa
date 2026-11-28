@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-gift-stream-batten-finale-times",
-  "dataGeneratedAt": "2026-11-28T03:16:44Z",
+  "dataVersion": "2026-11-28-mayama-score-batten-pia",
+  "dataGeneratedAt": "2026-11-28T07:15:41Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "dbe67fa74a8a70225a3bf34e7b8ddbfb0f3f1ee4b14587aa975cefd1eb53a974",
+  "inputSha256": "758aa3fc4d78c95fe64d47db796430c3e4251f60a8b20027f0eb8d62809afc4c",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 101,
+      "count": 106,
       "omittedUnknownDate": 0,
-      "sha256": "dcb669fd9e33a6a8706cf412119814d94e4f2606146cc3b028fc7829052f6e15"
+      "sha256": "b59772bb08fbb5f49966e2c5fa23766d70a447329906819e91ebe2c77d020a15"
     },
     {
       "id": "ebichu-live",
@@ -276,9 +276,9 @@
       "category": "live",
       "label": "私立恵比寿中学 / ライブ・イベント",
       "path": "calendar-feeds/ebichu-live-alerts.ics",
-      "count": 33,
+      "count": 34,
       "omittedUnknownDate": 0,
-      "sha256": "c39464442725dafc74200d2b33a66fac048a49b81073da57c6ac65b05e79112e"
+      "sha256": "ae085589118c5e96d1bde9f09fe66388348d7deecb6e290a71940f7f9242dd61"
     },
     {
       "id": "ebichu-benefit",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit-alerts.ics",
-      "count": 17,
+      "count": 21,
       "omittedUnknownDate": 0,
-      "sha256": "59a244f69ed494eea8c6c5f01850300340c2f4c566c4845e5a71c8601ab2d7d9"
+      "sha256": "239bf9e63e8c01a2c93947bb7f07da5e52d945305c81d166b7ee3fa6e6545c13"
     },
     {
       "id": "ebichu-media",
@@ -316,9 +316,9 @@
       "category": "all",
       "label": "ばってん少女隊 / 全予定",
       "path": "calendar-feeds/batten-all-alerts.ics",
-      "count": 54,
+      "count": 56,
       "omittedUnknownDate": 0,
-      "sha256": "524f06f01619bed66c39bb70fb75be462e88efd03a6fff321ce6dcd3aaf27dd2"
+      "sha256": "6ef9bdd71019698b9faa8367da1490ef1876f6ed490ce20d3285ba4f879c26ac"
     },
     {
       "id": "batten-live",
@@ -336,9 +336,9 @@
       "category": "benefit",
       "label": "ばってん少女隊 / 特典会・応募",
       "path": "calendar-feeds/batten-benefit-alerts.ics",
-      "count": 21,
+      "count": 23,
       "omittedUnknownDate": 0,
-      "sha256": "01197e59ffa0b2d5e7e7e39c744811ea6d03bd5f3146698ac92b04d68ffdccd5"
+      "sha256": "63da685eacaab41fb5f284e944b19c7b455f6649db3d84c2dd6510c18ebfb6ea"
     },
     {
       "id": "batten-media",

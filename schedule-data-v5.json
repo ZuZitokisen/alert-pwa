@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-28-gift-stream-batten-finale-times",
-  "generatedAt": "2026-11-28T03:16:44Z",
+  "version": "2026-11-28-mayama-score-batten-pia",
+  "generatedAt": "2026-11-28T07:15:41Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -19065,6 +19065,204 @@
       "revision": 1,
       "present": true,
       "groupId": "straightangeli-hourly-official-item-1375"
+    },
+    {
+      "id": "ebichu-mayama-score-20270109",
+      "artistId": "ebichu",
+      "title": "真山りか「SCORE!!〜Musical friends〜」ゲスト出演",
+      "source": "curated-calendar",
+      "start": "2027-01-09T18:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "EVENT",
+      "location": "日本青年館ホール",
+      "note": "主催者公式でも出演を確認。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16308/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        },
+        {
+          "url": "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T07:15:41Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-mayama-score-20270109"
+    },
+    {
+      "id": "ebichu-mayama-score-20270109-official-close",
+      "artistId": "ebichu",
+      "title": "真山りか「SCORE!!」公式サイト先行締切",
+      "source": "curated-calendar",
+      "start": "2026-12-04T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "",
+      "note": "受付期間は主催者公式で確認。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16308/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        },
+        {
+          "url": "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T07:15:41Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-11-25T12:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-04T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-04T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-mayama-score-20270109"
+    },
+    {
+      "id": "ebichu-mayama-score-20270109-fast-close",
+      "artistId": "ebichu",
+      "title": "真山りか「SCORE!!」プレイガイド最速先行締切",
+      "source": "curated-calendar",
+      "start": "2026-12-09T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "",
+      "note": "受付期間は主催者公式で確認。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16308/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        },
+        {
+          "url": "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T07:15:41Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-12-05T12:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-09T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-09T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-mayama-score-20270109"
+    },
+    {
+      "id": "ebichu-mayama-score-20270109-guide-close",
+      "artistId": "ebichu",
+      "title": "真山りか「SCORE!!」プレイガイド先行締切",
+      "source": "curated-calendar",
+      "start": "2026-12-15T23:59:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "",
+      "note": "受付期間は主催者公式で確認。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16308/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        },
+        {
+          "url": "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T07:15:41Z",
+      "timings": [
+        {
+          "label": "受付開始",
+          "kind": "application_start",
+          "at": "2026-12-11T12:00:00+09:00"
+        },
+        {
+          "label": "受付締切",
+          "kind": "application_deadline",
+          "at": "2026-12-15T23:59:00+09:00"
+        }
+      ],
+      "deadline": "2026-12-15T23:59:00+09:00",
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-mayama-score-20270109"
+    },
+    {
+      "id": "ebichu-mayama-score-20270109-general",
+      "artistId": "ebichu",
+      "title": "真山りか「SCORE!!」一般発売開始",
+      "source": "curated-calendar",
+      "start": "2026-12-19T10:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "REMIND",
+      "location": "",
+      "note": "発売時刻は主催者公式で確認。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/",
+      "sources": [
+        {
+          "url": "https://www.shiritsuebichu.jp/news/16308/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        },
+        {
+          "url": "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "type": "organizer_official",
+          "checkedAt": "2026-11-28T07:15:41Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T07:15:41Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "ebichu-mayama-score-20270109"
     }
   ],
   "notes": [
