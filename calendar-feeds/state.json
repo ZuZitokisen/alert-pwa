@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-straightangeli-rekomen-midnight",
-  "dataGeneratedAt": "2026-11-27T21:20:00Z",
-  "inputSha256": "552ccb0e2da5e1eb3a2ef3c7bb375e1d8a17650152dbc7e0516cfa85e0f3cecf",
+  "dataVersion": "hourly-2026-11-28T02:13:04.181Z",
+  "dataGeneratedAt": "2026-11-28T02:13:04.181Z",
+  "inputSha256": "40b5d28f800dfb43d49b6322fba8a81df92791b288bd346b6260f83f82033f8c",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9417,21 +9417,21 @@
         "id": "straightangeli-hourly-official-item-1375",
         "category": "media",
         "title": "文化放送「レコメン！」松元寧音・相羽星良が出演",
-        "start": "2026-12-01",
+        "start": "2026-11-30",
         "end": null,
         "allDay": false,
         "location": "",
-        "publicNote": "公式表記は11月30日（月）24時過ぎ（暦日12月1日）。「レコメン！ピックアップ！」出演。具体的な出演分・終了時刻は未発表。\n本人公式の個別スケジュール本文に11月30日24時過ぎと明記。",
+        "publicNote": "本人公式スケジュールの日付を確認。開始・終了時刻と会場は自動抽出対象外。\n本人公式スケジュール詳細のイベント日付属性・見出し・カテゴリ。公開日を開催日として使用していません。",
         "status": "confirmed",
         "sourceUrls": [
           "https://straight-angeli.com/schedule/item-1375/"
         ]
       },
-      "sequence": 1,
+      "sequence": 2,
       "created": "2026-11-27T19:30:58.398Z",
-      "modified": "2026-11-27T21:20:00Z",
+      "modified": "2026-11-28T02:13:04.181Z",
       "lastTiming": {
-        "start": "2026-12-01",
+        "start": "2026-11-30",
         "end": null,
         "allDay": false
       },
@@ -18718,5 +18718,5 @@
       ]
     }
   ],
-  "integritySha256": "aa34727adee0c3e4de69e0362089e3adb30608978b0279e0b67870d89b8efbee"
+  "integritySha256": "ae323bb3d711dec7e2e66160ba17d62835bc7d966331f9fd2e1c1f854a5df3c5"
 }

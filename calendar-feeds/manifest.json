@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-straightangeli-rekomen-midnight",
-  "dataGeneratedAt": "2026-11-27T21:20:00Z",
+  "dataVersion": "hourly-2026-11-28T02:13:04.181Z",
+  "dataGeneratedAt": "2026-11-28T02:13:04.181Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "859a8c102ea377a4162913098cc59779a64b26fee5a023f80c9aac01cb2efd2d",
+  "inputSha256": "df0cff5be4df0773d41d2c516c7694e6a6adf7cee82c2457fa597fd97f461282",
   "feeds": [
     {
       "id": "tokisen-all",
