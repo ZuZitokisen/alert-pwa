@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-28-ebichu-gift-performance-love-reservation",
-  "generatedAt": "2026-11-28T13:18:39Z",
+  "version": "2026-11-29-hiyori-koresawa-locks",
+  "generatedAt": "2026-11-28T19:15:32Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -11105,6 +11105,72 @@
       "revision": 1,
       "present": true,
       "groupId": "tokisen-hitoka-nailex-20261223"
+    },
+    {
+      "id": "tokisen-hiyori-koresawa-locks-20261208",
+      "artistId": "tokisen",
+      "title": "吉川ひより TOKYO FM「コレサワLOCKS!」",
+      "source": "curated-calendar",
+      "start": "2026-12-08",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "TOKYO FM／JFN",
+      "note": "個別回の開始・終了時刻は未確認。",
+      "evidence": "本人公式X（11/28）と番組公式X（11/26）の両投稿内容を公開検索索引で照合。X原ページ直接取得は403。",
+      "sourceUrl": "https://x.com/sendenbu_staff/status/2126510453585334285",
+      "sources": [
+        {
+          "url": "https://x.com/sendenbu_staff/status/2126510453585334285",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T19:15:32Z"
+        },
+        {
+          "url": "https://x.com/sol_info/status/2125960644243652682",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-28T19:15:32Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T19:15:32Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-hiyori-koresawa-locks-20261208"
+    },
+    {
+      "id": "tokisen-hiyori-koresawa-locks-20261209",
+      "artistId": "tokisen",
+      "title": "吉川ひより TOKYO FM「コレサワLOCKS!」",
+      "source": "curated-calendar",
+      "start": "2026-12-09",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "RADIO",
+      "location": "TOKYO FM／JFN",
+      "note": "個別回の開始・終了時刻は未確認。",
+      "evidence": "本人公式X（11/28）と番組公式X（11/26）の両投稿内容を公開検索索引で照合。X原ページ直接取得は403。",
+      "sourceUrl": "https://x.com/sendenbu_staff/status/2126510453585334285",
+      "sources": [
+        {
+          "url": "https://x.com/sendenbu_staff/status/2126510453585334285",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T19:15:32Z"
+        },
+        {
+          "url": "https://x.com/sol_info/status/2125960644243652682",
+          "type": "broadcaster_official",
+          "checkedAt": "2026-11-28T19:15:32Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T19:15:32Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "tokisen-hiyori-koresawa-locks-20261209"
     }
   ],
   "notes": [
