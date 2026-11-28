@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-28-mayama-score-batten-pia",
-  "generatedAt": "2026-11-28T07:15:41Z",
+  "version": "2026-11-28-straightangeli-medaka-premiere",
+  "generatedAt": "2026-11-28T11:15:19Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -19263,6 +19263,72 @@
       "revision": 1,
       "present": true,
       "groupId": "ebichu-mayama-score-20270109"
+    },
+    {
+      "id": "straightangeli-medaka-s2-premiere-tv",
+      "source": "curated-calendar",
+      "artistId": "straightangeli",
+      "title": "TVアニメ「黒岩メダカに私の可愛いが通じない Season2」放送開始（ED：初恋のディストーション）",
+      "start": "2027-01-06T00:00:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "TV",
+      "location": "テレ東系列",
+      "note": "公式表記は1月5日(火)深夜。新曲がEDテーマに採用。本人出演・楽曲発売日を示すものではありません。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://straight-angeli.com/news/item-1372/",
+      "sources": [
+        {
+          "url": "https://straight-angeli.com/news/item-1372/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T11:15:19Z"
+        },
+        {
+          "url": "https://monaxmedaka.com/music/",
+          "type": "organizer",
+          "checkedAt": "2026-11-28T11:15:19Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T11:15:19Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "straightangeli-medaka-s2"
+    },
+    {
+      "id": "straightangeli-medaka-s2-premiere-stream",
+      "source": "curated-calendar",
+      "artistId": "straightangeli",
+      "title": "TVアニメ「黒岩メダカに私の可愛いが通じない Season2」先行配信開始（ED：初恋のディストーション）",
+      "start": "2027-01-06T00:30:00+09:00",
+      "end": null,
+      "allDay": false,
+      "status": "confirmed",
+      "category": "STREAM",
+      "location": "dアニメストア／U-NEXT／アニメ放題",
+      "note": "公式表記は1月5日(火)深夜。新曲がEDテーマに採用。本人出演・楽曲発売日を示すものではありません。",
+      "evidence": "本人側の公式発表で確認。",
+      "sourceUrl": "https://straight-angeli.com/news/item-1372/",
+      "sources": [
+        {
+          "url": "https://straight-angeli.com/news/item-1372/",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T11:15:19Z"
+        },
+        {
+          "url": "https://monaxmedaka.com/music/",
+          "type": "organizer",
+          "checkedAt": "2026-11-28T11:15:19Z"
+        }
+      ],
+      "checkedAt": "2026-11-28T11:15:19Z",
+      "timings": [],
+      "deadline": null,
+      "revision": 1,
+      "present": true,
+      "groupId": "straightangeli-medaka-s2"
     }
   ],
   "notes": [
