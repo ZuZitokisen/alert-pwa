@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-28-straightangeli-medaka-premiere",
-  "generatedAt": "2026-11-28T11:15:19Z",
+  "version": "2026-11-28-ebichu-gift-performance-love-reservation",
+  "generatedAt": "2026-11-28T13:18:39Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -12174,17 +12174,17 @@
       "status": "confirmed",
       "category": "BENEFIT",
       "location": "ららぽーと立川立飛 2Fイベント広場",
-      "note": "購入整理番号の順に案内。優先エリア入場順とは別。",
+      "note": "購入整理番号の順に案内。優先エリア入場順とは別。 11/28更新：サイトメンテナンスによりCD予約は予約用紙へ記入して受付。",
       "evidence": "本人公式の個別案内で確認。",
       "sourceUrl": "https://oneloveoneheart.jp/live/live-7401/",
       "sources": [
         {
           "url": "https://oneloveoneheart.jp/live/live-7401/",
           "type": "artist_official",
-          "checkedAt": "2026-11-23T13:15:49.248Z"
+          "checkedAt": "2026-11-28T13:18:39Z"
         }
       ],
-      "checkedAt": "2026-11-23T13:15:49.248Z",
+      "checkedAt": "2026-11-28T13:18:39Z",
       "timings": [],
       "deadline": null,
       "revision": 1,

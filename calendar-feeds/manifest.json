@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-straightangeli-medaka-premiere",
-  "dataGeneratedAt": "2026-11-28T11:15:19Z",
+  "dataVersion": "2026-11-28-ebichu-gift-performance-love-reservation",
+  "dataGeneratedAt": "2026-11-28T13:18:39Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "0c38ff5347242facd134b8c2238d5526ae5ee1ca14bccdf7d1c243adeff9abfe",
+  "inputSha256": "71c36a50095ef8bccfe826910da22532d01742c8c5ee60f457e4e49080d8b5fc",
   "feeds": [
     {
       "id": "tokisen-all",

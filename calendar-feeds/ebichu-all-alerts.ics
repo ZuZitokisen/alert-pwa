@@ -825,19 +825,21 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-ea7f9d85b57f8f9568677916e54e3814c5866c8501c3dabc480b51ec2d8f9
  392@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T052004Z
+DTSTAMP:20261128T131839Z
 CREATED:20261122T052004Z
-LAST-MODIFIED:20261122T052004Z
-SEQUENCE:0
+LAST-MODIFIED:20261128T131839Z
+SEQUENCE:1
 DTSTART:20261129T064000Z
 DTEND:20261129T073000Z
 SUMMARY:GIFT ～Girls Idol Festival Tokyo～ DAY-3
 DESCRIPTION:私立恵比寿中学の現地出演枠は15:40〜16:30。イ
  ベント全体は開場11:30・開演13:00。ABEMA SPECIAL3でDAY-3配信
- あり。現地出演枠と配信時刻は別です。\n本人公式ニュ
- ース・予定表で現地出演枠と会場を確認。\nhttps://www.gif
- t-idol.jp/outline.html\nhttps://www.shiritsuebichu.jp/media/95712/\nhttps:
- //www.shiritsuebichu.jp/news/16117/
+ あり。現地出演枠と配信時刻は別です。 11/28公式発表
+ ：桜井えまはダンスパフォーマンスのみで出演。\n本人
+ 公式ニュース・予定表で現地出演枠と会場を確認。\nhtt
+ ps://www.gift-idol.jp/outline.html\nhttps://www.shiritsuebichu.jp/media/95
+ 712/\nhttps://www.shiritsuebichu.jp/news/16117/\nhttps://www.shiritsuebich
+ u.jp/news/16309/
 LOCATION:TOYOTA ARENA TOKYO
 URL:https://www.shiritsuebichu.jp/news/16117/
 STATUS:CONFIRMED
@@ -856,18 +858,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-7b00d5dd03f062b2bb0d418321064f92dd05dd014102c4467c915b6d7079c
  e9f@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261125T052005Z
+DTSTAMP:20261128T131839Z
 CREATED:20261125T052005Z
-LAST-MODIFIED:20261125T052005Z
-SEQUENCE:0
+LAST-MODIFIED:20261128T131839Z
+SEQUENCE:1
 DTSTART;VALUE=DATE:20261129
 SUMMARY:GIFT ABEMA配信 11/29（時刻未定）
 DESCRIPTION:時刻未定。終日開催という意味ではありません
  。\n配信タイムテーブルは14:20〜17:00の区間に私立恵比
  寿中学を掲載。個別配信時刻未発表、現地出演枠とは
  別。無料見逃し配信あり、期限未確認。番組 https://abema
- .go.link/kWQg5\n私立恵比寿中学公式ニュースで確認。\nhttps
- ://www.shiritsuebichu.jp/news/16117/
+ .go.link/kWQg5 11/28公式発表：桜井えまはダンスパフォーマ
+ ンスのみで出演。\n私立恵比寿中学公式ニュースで確認
+ 。\nhttps://www.shiritsuebichu.jp/news/16117/\nhttps://www.shiritsuebichu
+ .jp/news/16309/
 LOCATION:ABEMA SPECIAL3
 URL:https://www.shiritsuebichu.jp/news/16117/
 STATUS:CONFIRMED

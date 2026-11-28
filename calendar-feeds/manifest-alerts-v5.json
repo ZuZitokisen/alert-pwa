@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-straightangeli-medaka-premiere",
-  "dataGeneratedAt": "2026-11-28T11:15:19Z",
+  "dataVersion": "2026-11-28-ebichu-gift-performance-love-reservation",
+  "dataGeneratedAt": "2026-11-28T13:18:39Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "b8da5ac25bf81d396c162682282bfe5aae384dd67ca9bc33c7689a6a21e1ef7b",
+  "inputSha256": "b8fef0209d0c910b317b2e181c8c086a642926e9526b57ae39cfc6f40e4f626e",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -168,7 +168,7 @@
       "path": "calendar-feeds/oneloveoneheart-all-alerts.ics",
       "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "7db63b7329b8231db6c5ba46cea9f82b4dbf0c2da152ada6f8de92e4572bf55c"
+      "sha256": "005a20313a523b558325cd8990a76d237ac4f03f85d48eb49d225cd689dbbdb0"
     },
     {
       "id": "oneloveoneheart-live",
@@ -188,7 +188,7 @@
       "path": "calendar-feeds/oneloveoneheart-benefit-alerts.ics",
       "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "b6e6b2ee0f1ddb948665de7b07ec6116c0ab7a208f19b9f80ec6baefc39eed93"
+      "sha256": "26c438e9b2e8ddb88b346f4cf39c1b58446b3e100f755f98b719d74eb450e08f"
     },
     {
       "id": "oneloveoneheart-media",
@@ -268,7 +268,7 @@
       "path": "calendar-feeds/ebichu-all-alerts.ics",
       "count": 106,
       "omittedUnknownDate": 0,
-      "sha256": "b59772bb08fbb5f49966e2c5fa23766d70a447329906819e91ebe2c77d020a15"
+      "sha256": "adcaad60b2ad3fd39d2a958689f5bfb084d6b7a671f43bf4121e4f4cd7e49904"
     },
     {
       "id": "ebichu-live",
@@ -278,7 +278,7 @@
       "path": "calendar-feeds/ebichu-live-alerts.ics",
       "count": 34,
       "omittedUnknownDate": 0,
-      "sha256": "ae085589118c5e96d1bde9f09fe66388348d7deecb6e290a71940f7f9242dd61"
+      "sha256": "974beaef03ba94548f358d1c09c950f78f6f2fd44bfbe784fda2378fccecab96"
     },
     {
       "id": "ebichu-benefit",
@@ -298,7 +298,7 @@
       "path": "calendar-feeds/ebichu-media-alerts.ics",
       "count": 49,
       "omittedUnknownDate": 0,
-      "sha256": "487d0fa300ce915d868b78cf600b86097b3737a243a3dcdb87c6e06e29d88977"
+      "sha256": "7a3c61ddaa2e5a2452107e4705093c0d88cee31921793c8bdce59386bb2bb22a"
     },
     {
       "id": "ebichu-other",
