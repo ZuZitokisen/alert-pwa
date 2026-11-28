@@ -6,20 +6,17 @@ X-WR-CALNAME:超ときめき♡宣伝部 / メディア
 BEGIN:VEVENT
 UID:public-v1-2321fef8ecbc37bb7786715830df0a4ab43500e35353dd3106982ece0e5c0
  a76@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261122T212056Z
+DTSTAMP:20261128T031644Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261122T212056Z
-SEQUENCE:2
-DTSTART;VALUE=DATE:20261128
-SUMMARY:GIFT ABEMA配信 11/28（時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n 配信開催日は本人公式掲載。本人の現地出演日は11
- /27・28。11/29現地出演として登録しない。放送全体と本
- 人出演パートは別。 ABEMAでは放送終了後に無料見逃し
- 配信予定。11月27日のDAY1のパフォーマンスは、28日・29
- 日の番組内で放送予定。個別の放送時刻と見逃し期限
- は未確認。\n本人側の公式発表で確認。\nhttps://abema.tv/ch
- annels/special-plus-2/slots/BDbG4MMo4n7LPy\nhttps://abema.tv/lp/gift-onair
+LAST-MODIFIED:20261128T031644Z
+SEQUENCE:3
+DTSTART:20261128T092000Z
+SUMMARY:GIFT ABEMA配信 11/28
+DESCRIPTION:本人公式で18:20ごろ全曲生中継。放送進行によ
+ り前後する場合あり。アーカイブ12/6 23:59まで。番組全
+ 体の配信枠と本人パートは別。\n本人側の公式発表で確
+ 認。\nhttps://abema.tv/channels/special-plus-2/slots/BDbG4MMo4n7LPy\nhtt
+ ps://abema.tv/lp/gift-onair\nhttps://toki-sen.com/contents/1102025?tag=all
  \nhttps://toki-sen.com/contents/1122612
 LOCATION:ABEMA
 URL:https://toki-sen.com/contents/1122612
@@ -29,24 +26,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-4a91cf195949f3bbf1455552d9820007987872340ae8793bb53aff4621a2e
  66a@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261125T052005Z
+DTSTAMP:20261128T031644Z
 CREATED:20261111T093246Z
-LAST-MODIFIED:20261125T052005Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20261129
-SUMMARY:GIFT ABEMA配信 11/29（時刻未定）
-DESCRIPTION:時刻未定。終日開催という意味ではありません
- 。\n 配信開催日は本人公式掲載。本人の現地出演日は11
- /27・28。11/29現地出演として登録しない。放送全体と本
- 人出演パートは別。 ABEMAでは放送終了後に無料見逃し
- 配信予定。11月27日のDAY1のパフォーマンスは、28日・29
- 日の番組内で放送予定。個別の放送時刻と見逃し期限
- は未確認。 11/25にエビ中公式掲載の配信表で14:20〜17:00
- 区間に超ときめき♡宣伝部のパフォーマンスを確認。
- 個別の開始・終了時刻は不明。\n本人側の公式発表で確
- 認。\nhttps://abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF\nhtt
- ps://abema.tv/lp/gift-onair\nhttps://toki-sen.com/contents/1122612\nhttps:
- //www.shiritsuebichu.jp/news/16117/
+LAST-MODIFIED:20261128T031644Z
+SEQUENCE:4
+DTSTART:20261129T073000Z
+SUMMARY:GIFT ABEMA配信 11/29
+DESCRIPTION:本人公式で16:30ごろDAY1ステージのディレイ配信
+ 。11/29現地出演ではありません。放送進行により前後す
+ る場合あり。アーカイブ12/6 23:59まで。番組全体の配信
+ 枠と本人パートは別。\n本人側の公式発表で確認。\nhttp
+ s://abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF\nhttps://abema.t
+ v/lp/gift-onair\nhttps://toki-sen.com/contents/1102025?tag=all\nhttps://to
+ ki-sen.com/contents/1122612\nhttps://www.shiritsuebichu.jp/news/16117/
 LOCATION:ABEMA
 URL:https://toki-sen.com/contents/1122612
 STATUS:CONFIRMED

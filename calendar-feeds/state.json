@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-28T02:13:04.181Z",
-  "dataGeneratedAt": "2026-11-28T02:13:04.181Z",
-  "inputSha256": "40b5d28f800dfb43d49b6322fba8a81df92791b288bd346b6260f83f82033f8c",
+  "dataVersion": "2026-11-28-gift-stream-batten-finale-times",
+  "dataGeneratedAt": "2026-11-28T03:16:44Z",
+  "inputSha256": "dbe67fa74a8a70225a3bf34e7b8ddbfb0f3f1ee4b14587aa975cefd1eb53a974",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -471,21 +471,21 @@
         "id": "batten-chupi-toyosu-finale-20261129",
         "category": "live",
         "title": "「ちゅぴ」リリースイベント ファイナル（豊洲）",
-        "start": "2026-11-29",
+        "start": "2026-11-29T13:00:00+09:00",
         "end": null,
         "allDay": false,
         "location": "ららぽーと豊洲 ウッドデッキ（特設）",
-        "publicNote": "ミニライブ・特典会、PARKGOLF（DJ）、KURUMI（和太鼓）とスペシャルステージ。詳細・時刻は後日発表。\nばってん少女隊公式の案内。",
+        "publicNote": "10:30対象商品販売、13:00ミニライブ①、13:30新規＋紹介者・カムバック向けお手振り会、14:15特典会、18:00 DJ・和太鼓（ばってん出演なし）、18:35すぺしゃるミニライブ。\nばってん少女隊公式の案内。",
         "status": "confirmed",
         "sourceUrls": [
           "https://battengirls.com/contents/1129038"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-21T23:16:40.725Z",
-      "modified": "2026-11-21T23:16:40.725Z",
+      "modified": "2026-11-28T03:16:44Z",
       "lastTiming": {
-        "start": "2026-11-29",
+        "start": "2026-11-29T13:00:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -12246,24 +12246,25 @@
         "id": "tokisen-gift-abema-20261128",
         "category": "media",
         "title": "GIFT ABEMA配信 11/28",
-        "start": "2026-11-28",
+        "start": "2026-11-28T18:20:00+09:00",
         "end": null,
         "allDay": false,
         "location": "ABEMA",
-        "publicNote": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。\n本人側の公式発表で確認。",
+        "publicNote": "本人公式で18:20ごろ全曲生中継。放送進行により前後する場合あり。アーカイブ12/6 23:59まで。番組全体の配信枠と本人パートは別。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://abema.tv/channels/special-plus-2/slots/BDbG4MMo4n7LPy",
           "https://abema.tv/lp/gift-onair",
+          "https://toki-sen.com/contents/1102025?tag=all",
           "https://toki-sen.com/contents/1122612"
         ],
         "sourceUrl": "https://toki-sen.com/contents/1122612"
       },
-      "sequence": 2,
+      "sequence": 3,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-22T21:20:56Z",
+      "modified": "2026-11-28T03:16:44Z",
       "lastTiming": {
-        "start": "2026-11-28",
+        "start": "2026-11-28T18:20:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -12281,25 +12282,26 @@
         "id": "tokisen-gift-abema-20261129",
         "category": "media",
         "title": "GIFT ABEMA配信 11/29",
-        "start": "2026-11-29",
+        "start": "2026-11-29T16:30:00+09:00",
         "end": null,
         "allDay": false,
         "location": "ABEMA",
-        "publicNote": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。 11/25にエビ中公式掲載の配信表で14:20〜17:00区間に超ときめき♡宣伝部のパフォーマンスを確認。個別の開始・終了時刻は不明。\n本人側の公式発表で確認。",
+        "publicNote": "本人公式で16:30ごろDAY1ステージのディレイ配信。11/29現地出演ではありません。放送進行により前後する場合あり。アーカイブ12/6 23:59まで。番組全体の配信枠と本人パートは別。\n本人側の公式発表で確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://abema.tv/channels/special-plus-2/slots/BDbG7PPh6hWnxF",
           "https://abema.tv/lp/gift-onair",
+          "https://toki-sen.com/contents/1102025?tag=all",
           "https://toki-sen.com/contents/1122612",
           "https://www.shiritsuebichu.jp/news/16117/"
         ],
         "sourceUrl": "https://toki-sen.com/contents/1122612"
       },
-      "sequence": 3,
+      "sequence": 4,
       "created": "2026-11-11T09:32:46.032709Z",
-      "modified": "2026-11-25T05:20:05Z",
+      "modified": "2026-11-28T03:16:44Z",
       "lastTiming": {
-        "start": "2026-11-29",
+        "start": "2026-11-29T16:30:00+09:00",
         "end": null,
         "allDay": false
       },
@@ -18718,5 +18720,5 @@
       ]
     }
   ],
-  "integritySha256": "ae323bb3d711dec7e2e66160ba17d62835bc7d966331f9fd2e1c1f854a5df3c5"
+  "integritySha256": "078bb1d723114889fee4f144166006f213710ff6b08dd568fa7cf618612022fe"
 }

@@ -2,13 +2,13 @@
   "schemaVersion": 6,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-28T02:13:04.181Z",
-  "dataGeneratedAt": "2026-11-28T02:13:04.181Z",
+  "dataVersion": "2026-11-28-gift-stream-batten-finale-times",
+  "dataGeneratedAt": "2026-11-28T03:16:44Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "40b5d28f800dfb43d49b6322fba8a81df92791b288bd346b6260f83f82033f8c",
+  "inputSha256": "dbe67fa74a8a70225a3bf34e7b8ddbfb0f3f1ee4b14587aa975cefd1eb53a974",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all-alerts.ics",
       "count": 209,
       "omittedUnknownDate": 10,
-      "sha256": "4523cb1417bae0485abf84b0941363007946e53641348072c0121508d3695591"
+      "sha256": "d1e254fb131539eb2071a9bb0af9a19248e46c2212060435052386af2f793113"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media-alerts.ics",
       "count": 127,
       "omittedUnknownDate": 2,
-      "sha256": "ed1fe732ed967940d818bfdd7191dc22a32d87cdccacf6db2797a267f379dbb8"
+      "sha256": "26cdef830b4367713bfbf82fe61be2b0fc46d0758ca6c2bcbdf15d4afb734d00"
     },
     {
       "id": "tokisen-other",
@@ -318,7 +318,7 @@
       "path": "calendar-feeds/batten-all-alerts.ics",
       "count": 54,
       "omittedUnknownDate": 0,
-      "sha256": "03a6519a885451df6bcdb8876850fc42e605a76e469a53918b598ea4e1261f63"
+      "sha256": "524f06f01619bed66c39bb70fb75be462e88efd03a6fff321ce6dcd3aaf27dd2"
     },
     {
       "id": "batten-live",
@@ -328,7 +328,7 @@
       "path": "calendar-feeds/batten-live-alerts.ics",
       "count": 24,
       "omittedUnknownDate": 0,
-      "sha256": "c349f866d58d9c96267f9e055f330ea60311cc074ecf1d2d9c24131ca4a549a4"
+      "sha256": "5683f071c11ca47bd17d62c06431e9a8dd7c581b53f2f10f9a3276a706312150"
     },
     {
       "id": "batten-benefit",

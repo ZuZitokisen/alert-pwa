@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "hourly-2026-11-28T02:13:04.181Z",
-  "dataGeneratedAt": "2026-11-28T02:13:04.181Z",
+  "dataVersion": "2026-11-28-gift-stream-batten-finale-times",
+  "dataGeneratedAt": "2026-11-28T03:16:44Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "f7a501a0c3d613fad1f5dcb0f5527e47dcfff214d913510246149e23ff2f81d8",
+  "inputSha256": "d36cf0377113d21db0bdb049d5e6b93f0ead3549b88619d2b54c1c97aafbe838",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -18,7 +18,7 @@
       "path": "calendar-feeds/tokisen-all.ics",
       "count": 209,
       "omittedUnknownDate": 10,
-      "sha256": "926eeb2cc476dc380067eadc6a31bfc014471d88e3655cf2f8b78cb10efc2b05"
+      "sha256": "955603ad05f742bc8530316cee44dfd28b564e18009c15582d332dbe3b64f3df"
     },
     {
       "id": "tokisen-live",
@@ -48,7 +48,7 @@
       "path": "calendar-feeds/tokisen-media.ics",
       "count": 127,
       "omittedUnknownDate": 2,
-      "sha256": "980575caa1ab3316c3c0ae9ea545c97e7f133934c378db392b7913412051a22e"
+      "sha256": "87ac351a21e84a193114cf4452ff0d9b43b3ba94ec00d68befa3e5b6bc0efe9e"
     },
     {
       "id": "tokisen-other",
