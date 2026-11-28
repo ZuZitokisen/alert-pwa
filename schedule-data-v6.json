@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "hourly-2026-11-28T02:13:04.181Z",
-  "generatedAt": "2026-11-28T02:13:04.181Z",
+  "version": "2026-11-28-gift-stream-batten-finale-times",
+  "generatedAt": "2026-11-28T03:16:44Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -3252,13 +3252,13 @@
       "source": "curated-calendar",
       "artistId": "tokisen",
       "title": "GIFT ABEMA配信 11/28",
-      "start": "2026-11-28",
+      "start": "2026-11-28T18:20:00+09:00",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "STREAM",
       "location": "ABEMA",
-      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。",
+      "note": "本人公式で18:20ごろ全曲生中継。放送進行により前後する場合あり。アーカイブ12/6 23:59まで。番組全体の配信枠と本人パートは別。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1122612",
       "sources": [
@@ -3276,9 +3276,14 @@
           "url": "https://abema.tv/lp/gift-onair",
           "type": "broadcaster_official",
           "checkedAt": "2026-11-22T21:20:56Z"
+        },
+        {
+          "url": "https://toki-sen.com/contents/1102025?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T03:16:44Z"
         }
       ],
-      "checkedAt": "2026-11-22T21:20:56Z",
+      "checkedAt": "2026-11-28T03:16:44Z",
       "timings": [
         {
           "label": "配信枠開始（本人出番ではありません）",
@@ -3291,6 +3296,11 @@
           "kind": "broadcast_end",
           "at": "2026-11-29T00:00:00+09:00",
           "status": "possible"
+        },
+        {
+          "label": "本人配信予定（時刻は目安）",
+          "kind": "performance_start",
+          "at": "2026-11-28T18:20:00+09:00"
         }
       ],
       "deadline": null,
@@ -3561,13 +3571,13 @@
       "source": "curated-calendar",
       "artistId": "tokisen",
       "title": "GIFT ABEMA配信 11/29",
-      "start": "2026-11-29",
+      "start": "2026-11-29T16:30:00+09:00",
       "end": null,
       "allDay": false,
       "status": "confirmed",
       "category": "STREAM",
       "location": "ABEMA",
-      "note": " 配信開催日は本人公式掲載。本人の現地出演日は11/27・28。11/29現地出演として登録しない。放送全体と本人出演パートは別。 ABEMAでは放送終了後に無料見逃し配信予定。11月27日のDAY1のパフォーマンスは、28日・29日の番組内で放送予定。個別の放送時刻と見逃し期限は未確認。 11/25にエビ中公式掲載の配信表で14:20〜17:00区間に超ときめき♡宣伝部のパフォーマンスを確認。個別の開始・終了時刻は不明。",
+      "note": "本人公式で16:30ごろDAY1ステージのディレイ配信。11/29現地出演ではありません。放送進行により前後する場合あり。アーカイブ12/6 23:59まで。番組全体の配信枠と本人パートは別。",
       "evidence": "本人側の公式発表で確認。",
       "sourceUrl": "https://toki-sen.com/contents/1122612",
       "sources": [
@@ -3590,9 +3600,14 @@
           "url": "https://www.shiritsuebichu.jp/news/16117/",
           "type": "co_performer_official",
           "checkedAt": "2026-11-25T05:20:05Z"
+        },
+        {
+          "url": "https://toki-sen.com/contents/1102025?tag=all",
+          "type": "artist_official",
+          "checkedAt": "2026-11-28T03:16:44Z"
         }
       ],
-      "checkedAt": "2026-11-25T05:20:05Z",
+      "checkedAt": "2026-11-28T03:16:44Z",
       "timings": [
         {
           "label": "配信枠開始（本人出番ではありません）",
@@ -3605,6 +3620,11 @@
           "kind": "broadcast_end",
           "at": "2026-11-30T00:00:00+09:00",
           "status": "possible"
+        },
+        {
+          "label": "本人配信予定（時刻は目安）",
+          "kind": "performance_start",
+          "at": "2026-11-29T16:30:00+09:00"
         }
       ],
       "deadline": null,
@@ -17457,11 +17477,11 @@
     {
       "id": "batten-chupi-toyosu-finale-20261129",
       "title": "「ちゅぴ」リリースイベント ファイナル（豊洲）",
-      "start": "2026-11-29",
+      "start": "2026-11-29T13:00:00+09:00",
       "end": null,
       "category": "EVENT",
       "location": "ららぽーと豊洲 ウッドデッキ（特設）",
-      "note": "ミニライブ・特典会、PARKGOLF（DJ）、KURUMI（和太鼓）とスペシャルステージ。詳細・時刻は後日発表。",
+      "note": "10:30対象商品販売、13:00ミニライブ①、13:30新規＋紹介者・カムバック向けお手振り会、14:15特典会、18:00 DJ・和太鼓（ばってん出演なし）、18:35すぺしゃるミニライブ。",
       "source": "curated-calendar",
       "artistId": "batten",
       "allDay": false,
@@ -17472,11 +17492,37 @@
         {
           "url": "https://battengirls.com/contents/1129038",
           "type": "artist_official",
-          "checkedAt": "2026-11-21T23:16:40.616Z"
+          "checkedAt": "2026-11-28T03:16:44Z"
         }
       ],
-      "checkedAt": "2026-11-21T23:16:40.616Z",
-      "timings": [],
+      "checkedAt": "2026-11-28T03:16:44Z",
+      "timings": [
+        {
+          "label": "対象商品販売",
+          "kind": "sales_start",
+          "at": "2026-11-29T10:30:00+09:00"
+        },
+        {
+          "label": "ミニライブ①",
+          "kind": "performance_start",
+          "at": "2026-11-29T13:00:00+09:00"
+        },
+        {
+          "label": "対象者お手振り会",
+          "kind": "benefit_start",
+          "at": "2026-11-29T13:30:00+09:00"
+        },
+        {
+          "label": "特典会",
+          "kind": "benefit_start",
+          "at": "2026-11-29T14:15:00+09:00"
+        },
+        {
+          "label": "すぺしゃるミニライブ",
+          "kind": "performance_start",
+          "at": "2026-11-29T18:35:00+09:00"
+        }
+      ],
       "deadline": null,
       "revision": 1,
       "present": true
