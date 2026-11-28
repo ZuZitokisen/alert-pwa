@@ -2,13 +2,13 @@
   "schemaVersion": 3,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-gift-stream-batten-finale-times",
-  "dataGeneratedAt": "2026-11-28T03:16:44Z",
+  "dataVersion": "2026-11-28-mayama-score-batten-pia",
+  "dataGeneratedAt": "2026-11-28T07:15:41Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "b8f3725ac5a9fadfaf750a3c152c33462906d23c4ed949bca27ec77a1a3e1bca",
+  "inputSha256": "33a52dbcb2b53cc28b098217665345623d935ac7bcb04b67e49687101ba54114",
   "feeds": [
     {
       "id": "tokisen-all",

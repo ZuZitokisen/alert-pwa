@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-gift-stream-batten-finale-times",
-  "dataGeneratedAt": "2026-11-28T03:16:44Z",
-  "inputSha256": "dbe67fa74a8a70225a3bf34e7b8ddbfb0f3f1ee4b14587aa975cefd1eb53a974",
+  "dataVersion": "2026-11-28-mayama-score-batten-pia",
+  "dataGeneratedAt": "2026-11-28T07:15:41Z",
+  "inputSha256": "758aa3fc4d78c95fe64d47db796430c3e4251f60a8b20027f0eb8d62809afc4c",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -1728,6 +1728,70 @@
       "memberships": [
         "batten-all",
         "batten-live"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-year-end-20261227-pia-close\"]",
+      "uid": "public-v1-d1c6cfa9c6c12a83c8a7561cd4aca8e937d4f5cb0e5be982cc2e761f3b8f0837@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-year-end-20261227-pia-close",
+        "category": "benefit",
+        "title": "BATTEN END-OF-YEAR PARTY 2026 ぴあ独占先行締切",
+        "start": "2026-12-02T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1107970"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-28T07:15:41Z",
+      "modified": "2026-11-28T07:15:41Z",
+      "lastTiming": {
+        "start": "2026-12-02T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
+      ]
+    },
+    {
+      "key": "[\"batten\",\"curated-calendar\",\"batten-year-end-20261227-pia-open\"]",
+      "uid": "public-v1-04caaed663dca9bb64bb7d8cca9a4dc357bb5dbe3a62c4177a4817e4413caddf@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "batten",
+        "source": "curated-calendar",
+        "id": "batten-year-end-20261227-pia-open",
+        "category": "benefit",
+        "title": "BATTEN END-OF-YEAR PARTY 2026 ぴあ独占先行開始",
+        "start": "2026-11-28T12:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://battengirls.com/contents/1107970"
+        ]
+      },
+      "sequence": 0,
+      "created": "2026-11-28T07:15:41Z",
+      "modified": "2026-11-28T07:15:41Z",
+      "lastTiming": {
+        "start": "2026-11-28T12:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "batten-all",
+        "batten-benefit"
       ]
     },
     {
@@ -3567,6 +3631,176 @@
       "memberships": [
         "ebichu-all",
         "ebichu-media"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mayama-score-20270109\"]",
+      "uid": "public-v1-7b9d2a202f2441c1dffc8b2defcbbfeb90808e6f5aa6e32a6ef158185f89124b@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mayama-score-20270109",
+        "category": "live",
+        "title": "真山りか「SCORE!!〜Musical friends〜」ゲスト出演",
+        "start": "2027-01-09T18:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "日本青年館ホール",
+        "publicNote": "主催者公式でも出演を確認。\n本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "https://www.shiritsuebichu.jp/news/16308/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/"
+      },
+      "sequence": 0,
+      "created": "2026-11-28T07:15:41Z",
+      "modified": "2026-11-28T07:15:41Z",
+      "lastTiming": {
+        "start": "2027-01-09T18:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-live"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mayama-score-20270109-fast-close\"]",
+      "uid": "public-v1-7a4786918115ebc36503a4f0f32c1b59caa7da466039f8b38ec32c88f7b70d2c@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mayama-score-20270109-fast-close",
+        "category": "benefit",
+        "title": "真山りか「SCORE!!」プレイガイド最速先行締切",
+        "start": "2026-12-09T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "受付期間は主催者公式で確認。\n本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "https://www.shiritsuebichu.jp/news/16308/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/"
+      },
+      "sequence": 0,
+      "created": "2026-11-28T07:15:41Z",
+      "modified": "2026-11-28T07:15:41Z",
+      "lastTiming": {
+        "start": "2026-12-09T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mayama-score-20270109-general\"]",
+      "uid": "public-v1-521e5f41679b5ec18b522e52bfd1e843e51f1f88c6726c626c362d858594449e@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mayama-score-20270109-general",
+        "category": "benefit",
+        "title": "真山りか「SCORE!!」一般発売開始",
+        "start": "2026-12-19T10:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "発売時刻は主催者公式で確認。\n本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "https://www.shiritsuebichu.jp/news/16308/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/"
+      },
+      "sequence": 0,
+      "created": "2026-11-28T07:15:41Z",
+      "modified": "2026-11-28T07:15:41Z",
+      "lastTiming": {
+        "start": "2026-12-19T10:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mayama-score-20270109-guide-close\"]",
+      "uid": "public-v1-c0b8714ef6d3fd4d77347b77c51ade7a23d38e3930abd3be59cccca615fb7f5f@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mayama-score-20270109-guide-close",
+        "category": "benefit",
+        "title": "真山りか「SCORE!!」プレイガイド先行締切",
+        "start": "2026-12-15T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "受付期間は主催者公式で確認。\n本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "https://www.shiritsuebichu.jp/news/16308/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/"
+      },
+      "sequence": 0,
+      "created": "2026-11-28T07:15:41Z",
+      "modified": "2026-11-28T07:15:41Z",
+      "lastTiming": {
+        "start": "2026-12-15T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
+      ]
+    },
+    {
+      "key": "[\"ebichu\",\"curated-calendar\",\"ebichu-mayama-score-20270109-official-close\"]",
+      "uid": "public-v1-f472aba3a80c1d515e3bf02c701f98173b8ef9e5bca28f20ff8c25c27bb3e534@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "ebichu",
+        "source": "curated-calendar",
+        "id": "ebichu-mayama-score-20270109-official-close",
+        "category": "benefit",
+        "title": "真山りか「SCORE!!」公式サイト先行締切",
+        "start": "2026-12-04T23:59:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "",
+        "publicNote": "受付期間は主催者公式で確認。\n本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://contentsbusiness.aoi-pro.com/aoistage/work/score2027/",
+          "https://www.shiritsuebichu.jp/news/16308/"
+        ],
+        "sourceUrl": "https://www.shiritsuebichu.jp/news/16308/"
+      },
+      "sequence": 0,
+      "created": "2026-11-28T07:15:41Z",
+      "modified": "2026-11-28T07:15:41Z",
+      "lastTiming": {
+        "start": "2026-12-04T23:59:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "ebichu-all",
+        "ebichu-benefit"
       ]
     },
     {
@@ -18720,5 +18954,5 @@
       ]
     }
   ],
-  "integritySha256": "078bb1d723114889fee4f144166006f213710ff6b08dd568fa7cf618612022fe"
+  "integritySha256": "448643c53960bb666a18163d3670ba688aa923cf4fbf0590868b47d8076dfdd2"
 }

@@ -529,6 +529,33 @@ DESCRIPTION:舞台「けものフレンズ」～きみをむちゅうにそ
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-7b9d2a202f2441c1dffc8b2defcbbfeb90808e6f5aa6e32a6ef158185f891
+ 24b@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261128T071541Z
+CREATED:20261128T071541Z
+LAST-MODIFIED:20261128T071541Z
+SEQUENCE:0
+DTSTART:20270109T090000Z
+SUMMARY:真山りか「SCORE!!〜Musical friends〜」ゲスト出演
+DESCRIPTION:主催者公式でも出演を確認。\n本人側の公式発
+ 表で確認。\nhttps://contentsbusiness.aoi-pro.com/aoistage/work/score2
+ 027/\nhttps://www.shiritsuebichu.jp/news/16308/
+LOCATION:日本青年館ホール
+URL:https://www.shiritsuebichu.jp/news/16308/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10H
+DESCRIPTION:真山りか「SCORE!!〜Musical friends〜」ゲスト出演
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:真山りか「SCORE!!〜Musical friends〜」ゲスト出演
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-1d01a61a5dd36d8a96d91012d57873101dca8c2b3261d923265fb7d427159
  4d0@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261121T131516Z

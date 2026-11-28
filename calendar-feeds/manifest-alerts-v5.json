@@ -2,13 +2,13 @@
   "schemaVersion": 5,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-gift-stream-batten-finale-times",
-  "dataGeneratedAt": "2026-11-28T03:16:44Z",
+  "dataVersion": "2026-11-28-mayama-score-batten-pia",
+  "dataGeneratedAt": "2026-11-28T07:15:41Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "e31a87d1ea4cc5275d1f09a18830429a529edc378da75b2b70125e13ce142d2d",
+  "inputSha256": "052a1a31f7143984a682de36caf9197caf819b0c23849ca221eeeac541548266",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -266,9 +266,9 @@
       "category": "all",
       "label": "私立恵比寿中学 / 全予定",
       "path": "calendar-feeds/ebichu-all-alerts.ics",
-      "count": 101,
+      "count": 106,
       "omittedUnknownDate": 0,
-      "sha256": "dcb669fd9e33a6a8706cf412119814d94e4f2606146cc3b028fc7829052f6e15"
+      "sha256": "b59772bb08fbb5f49966e2c5fa23766d70a447329906819e91ebe2c77d020a15"
     },
     {
       "id": "ebichu-live",
@@ -276,9 +276,9 @@
       "category": "live",
       "label": "私立恵比寿中学 / ライブ・イベント",
       "path": "calendar-feeds/ebichu-live-alerts.ics",
-      "count": 33,
+      "count": 34,
       "omittedUnknownDate": 0,
-      "sha256": "c39464442725dafc74200d2b33a66fac048a49b81073da57c6ac65b05e79112e"
+      "sha256": "ae085589118c5e96d1bde9f09fe66388348d7deecb6e290a71940f7f9242dd61"
     },
     {
       "id": "ebichu-benefit",
@@ -286,9 +286,9 @@
       "category": "benefit",
       "label": "私立恵比寿中学 / 特典会・応募",
       "path": "calendar-feeds/ebichu-benefit-alerts.ics",
-      "count": 17,
+      "count": 21,
       "omittedUnknownDate": 0,
-      "sha256": "59a244f69ed494eea8c6c5f01850300340c2f4c566c4845e5a71c8601ab2d7d9"
+      "sha256": "239bf9e63e8c01a2c93947bb7f07da5e52d945305c81d166b7ee3fa6e6545c13"
     },
     {
       "id": "ebichu-media",
