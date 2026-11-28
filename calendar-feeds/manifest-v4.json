@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-mayama-score-batten-pia",
-  "dataGeneratedAt": "2026-11-28T07:15:41Z",
+  "dataVersion": "2026-11-28-straightangeli-medaka-premiere",
+  "dataGeneratedAt": "2026-11-28T11:15:19Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "54b602447f23a0802b37bb2f8e99b0b8a4300b3f12c61dcb3a19c3b353d70da1",
+  "inputSha256": "c8d07029cd7a067907084ede931b027812265fe4e0d0f640c3921c935baafb0c",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -116,9 +116,9 @@
       "category": "all",
       "label": "Straight Angeli / 全予定",
       "path": "calendar-feeds/straightangeli-all.ics",
-      "count": 40,
+      "count": 42,
       "omittedUnknownDate": 0,
-      "sha256": "5f20a44bd2319ff6c53bef572575994f01717bc17e41aabd329c65f864128a70"
+      "sha256": "898cefe5b294d1411badb36bd7805bceeac7f548f8e6deb053009b252352f43c"
     },
     {
       "id": "straightangeli-live",
@@ -146,9 +146,9 @@
       "category": "media",
       "label": "Straight Angeli / メディア",
       "path": "calendar-feeds/straightangeli-media.ics",
-      "count": 24,
+      "count": 26,
       "omittedUnknownDate": 0,
-      "sha256": "858fc0b327c1c7b50977679c646e43412ae07d3473971023abe1213705b25e6e"
+      "sha256": "c9a480ba369e39f160a7ad85cc471b1655220838459bc14d2a7d6dafd1bc8e03"
     },
     {
       "id": "straightangeli-other",
