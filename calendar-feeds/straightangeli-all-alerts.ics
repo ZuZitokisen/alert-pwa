@@ -617,6 +617,56 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:public-v1-b2fd06c612f6aff9de289b4d0a47f31c7e250e24d7073e4b35b673e60cfd9
+ 4bb@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261128T111519Z
+CREATED:20261128T111519Z
+LAST-MODIFIED:20261128T111519Z
+SEQUENCE:0
+DTSTART:20270105T153000Z
+SUMMARY:TVアニメ「黒岩メダカに私の可愛いが通じない Seas
+ on2」先行配信開始（ED：初恋のディストーション）
+DESCRIPTION:公式表記は1月5日(火)深夜。新曲がEDテーマに採
+ 用。本人出演・楽曲発売日を示すものではありません
+ 。\n本人側の公式発表で確認。\nhttps://monaxmedaka.com/music/\
+ nhttps://straight-angeli.com/news/item-1372/
+LOCATION:dアニメストア／U-NEXT／アニメ放題
+URL:https://straight-angeli.com/news/item-1372/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:TVアニメ「黒岩メダカに私の可愛いが通じない 
+ Season2」先行配信開始（ED：初恋のディストーション）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:public-v1-f6edca9c2e6287f09061a15434827fec7cb19081840118ef1a6b884ff0858
+ 949@alert-pwa.zuzitokisen.github.io
+DTSTAMP:20261128T111519Z
+CREATED:20261128T111519Z
+LAST-MODIFIED:20261128T111519Z
+SEQUENCE:0
+DTSTART:20270105T150000Z
+SUMMARY:TVアニメ「黒岩メダカに私の可愛いが通じない Seas
+ on2」放送開始（ED：初恋のディストーション）
+DESCRIPTION:公式表記は1月5日(火)深夜。新曲がEDテーマに採
+ 用。本人出演・楽曲発売日を示すものではありません
+ 。\n本人側の公式発表で確認。\nhttps://monaxmedaka.com/music/\
+ nhttps://straight-angeli.com/news/item-1372/
+LOCATION:テレ東系列
+URL:https://straight-angeli.com/news/item-1372/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:TVアニメ「黒岩メダカに私の可愛いが通じない 
+ Season2」放送開始（ED：初恋のディストーション）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:public-v1-f2c57de9b66d40879337b36203fba2971c9b8b3d492a1ff3e13ffca43e95c
  42a@alert-pwa.zuzitokisen.github.io
 DTSTAMP:20261112T045559Z

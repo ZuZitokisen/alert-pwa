@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-mayama-score-batten-pia",
-  "dataGeneratedAt": "2026-11-28T07:15:41Z",
+  "dataVersion": "2026-11-28-straightangeli-medaka-premiere",
+  "dataGeneratedAt": "2026-11-28T11:15:19Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "a3764fb6f8bbb52d55645585561b1b145b4dece5e980b68bc2ac012e3ede8fea",
+  "inputSha256": "0c38ff5347242facd134b8c2238d5526ae5ee1ca14bccdf7d1c243adeff9abfe",
   "feeds": [
     {
       "id": "tokisen-all",

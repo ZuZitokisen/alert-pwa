@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-mayama-score-batten-pia",
-  "dataGeneratedAt": "2026-11-28T07:15:41Z",
-  "inputSha256": "758aa3fc4d78c95fe64d47db796430c3e4251f60a8b20027f0eb8d62809afc4c",
+  "dataVersion": "2026-11-28-straightangeli-medaka-premiere",
+  "dataGeneratedAt": "2026-11-28T11:15:19Z",
+  "inputSha256": "8ec2a6dd66baa6e9cec064c39423ee0d39082e08cb85ab26169ba7c27bd8988c",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -9675,6 +9675,74 @@
       ]
     },
     {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-medaka-s2-premiere-stream\"]",
+      "uid": "public-v1-b2fd06c612f6aff9de289b4d0a47f31c7e250e24d7073e4b35b673e60cfd94bb@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-medaka-s2-premiere-stream",
+        "category": "media",
+        "title": "TVアニメ「黒岩メダカに私の可愛いが通じない Season2」先行配信開始（ED：初恋のディストーション）",
+        "start": "2027-01-06T00:30:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "dアニメストア／U-NEXT／アニメ放題",
+        "publicNote": "公式表記は1月5日(火)深夜。新曲がEDテーマに採用。本人出演・楽曲発売日を示すものではありません。\n本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://monaxmedaka.com/music/",
+          "https://straight-angeli.com/news/item-1372/"
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1372/"
+      },
+      "sequence": 0,
+      "created": "2026-11-28T11:15:19Z",
+      "modified": "2026-11-28T11:15:19Z",
+      "lastTiming": {
+        "start": "2027-01-06T00:30:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-media"
+      ]
+    },
+    {
+      "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-medaka-s2-premiere-tv\"]",
+      "uid": "public-v1-f6edca9c2e6287f09061a15434827fec7cb19081840118ef1a6b884ff0858949@alert-pwa.zuzitokisen.github.io",
+      "event": {
+        "artistId": "straightangeli",
+        "source": "curated-calendar",
+        "id": "straightangeli-medaka-s2-premiere-tv",
+        "category": "media",
+        "title": "TVアニメ「黒岩メダカに私の可愛いが通じない Season2」放送開始（ED：初恋のディストーション）",
+        "start": "2027-01-06T00:00:00+09:00",
+        "end": null,
+        "allDay": false,
+        "location": "テレ東系列",
+        "publicNote": "公式表記は1月5日(火)深夜。新曲がEDテーマに採用。本人出演・楽曲発売日を示すものではありません。\n本人側の公式発表で確認。",
+        "status": "confirmed",
+        "sourceUrls": [
+          "https://monaxmedaka.com/music/",
+          "https://straight-angeli.com/news/item-1372/"
+        ],
+        "sourceUrl": "https://straight-angeli.com/news/item-1372/"
+      },
+      "sequence": 0,
+      "created": "2026-11-28T11:15:19Z",
+      "modified": "2026-11-28T11:15:19Z",
+      "lastTiming": {
+        "start": "2027-01-06T00:00:00+09:00",
+        "end": null,
+        "allDay": false
+      },
+      "memberships": [
+        "straightangeli-all",
+        "straightangeli-media"
+      ]
+    },
+    {
       "key": "[\"straightangeli\",\"curated-calendar\",\"straightangeli-nene-jrt-20261113\"]",
       "uid": "public-v1-f2c57de9b66d40879337b36203fba2971c9b8b3d492a1ff3e13ffca43e95c42a@alert-pwa.zuzitokisen.github.io",
       "event": {
@@ -18954,5 +19022,5 @@
       ]
     }
   ],
-  "integritySha256": "448643c53960bb666a18163d3670ba688aa923cf4fbf0590868b47d8076dfdd2"
+  "integritySha256": "25bf9f499a0c9937c20d97e06d7bc5a9468efc8f98a1e48fc9b9ff7db7658ad4"
 }
