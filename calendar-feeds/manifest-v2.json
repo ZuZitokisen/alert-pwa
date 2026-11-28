@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-ebichu-gift-performance-love-reservation",
-  "dataGeneratedAt": "2026-11-28T13:18:39Z",
+  "dataVersion": "2026-11-29-hiyori-koresawa-locks",
+  "dataGeneratedAt": "2026-11-28T19:15:32Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "5f137b4c6e272187ea2a100a9d5e63a3dfc15eba52a2584606bef215e9cf1ab2",
+  "inputSha256": "e737cf5eb70dfcd601a1bb63f77fabb21e3b63abbd84397205cc592b9edd1f19",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -16,9 +16,9 @@
       "category": "all",
       "label": "超ときめき♡宣伝部 / 全予定",
       "path": "calendar-feeds/tokisen-all.ics",
-      "count": 209,
+      "count": 211,
       "omittedUnknownDate": 10,
-      "sha256": "955603ad05f742bc8530316cee44dfd28b564e18009c15582d332dbe3b64f3df"
+      "sha256": "d984bedb11eeebe13dbc78be3c06bf86c3acc98aa561cdff1ff514220a6d9426"
     },
     {
       "id": "tokisen-live",
@@ -46,9 +46,9 @@
       "category": "media",
       "label": "超ときめき♡宣伝部 / メディア",
       "path": "calendar-feeds/tokisen-media.ics",
-      "count": 127,
+      "count": 129,
       "omittedUnknownDate": 2,
-      "sha256": "87ac351a21e84a193114cf4452ff0d9b43b3ba94ec00d68befa3e5b6bc0efe9e"
+      "sha256": "30a641ae5561051e4e40ecfa429197be549584e68d999d25d5798782a07c6354"
     },
     {
       "id": "tokisen-other",
