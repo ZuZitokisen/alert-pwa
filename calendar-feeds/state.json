@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-straightangeli-medaka-premiere",
-  "dataGeneratedAt": "2026-11-28T11:15:19Z",
-  "inputSha256": "8ec2a6dd66baa6e9cec064c39423ee0d39082e08cb85ab26169ba7c27bd8988c",
+  "dataVersion": "2026-11-28-ebichu-gift-performance-love-reservation",
+  "dataGeneratedAt": "2026-11-28T13:18:39Z",
+  "inputSha256": "58add99634d91c97a665b1c9115838d91811b3169eba8a9d5e5de3e1f6c57acc",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
@@ -2841,18 +2841,19 @@
         "end": "2026-11-29T16:30:00+09:00",
         "allDay": false,
         "location": "TOYOTA ARENA TOKYO",
-        "publicNote": "私立恵比寿中学の現地出演枠は15:40〜16:30。イベント全体は開場11:30・開演13:00。ABEMA SPECIAL3でDAY-3配信あり。現地出演枠と配信時刻は別です。\n本人公式ニュース・予定表で現地出演枠と会場を確認。",
+        "publicNote": "私立恵比寿中学の現地出演枠は15:40〜16:30。イベント全体は開場11:30・開演13:00。ABEMA SPECIAL3でDAY-3配信あり。現地出演枠と配信時刻は別です。 11/28公式発表：桜井えまはダンスパフォーマンスのみで出演。\n本人公式ニュース・予定表で現地出演枠と会場を確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://www.gift-idol.jp/outline.html",
           "https://www.shiritsuebichu.jp/media/95712/",
-          "https://www.shiritsuebichu.jp/news/16117/"
+          "https://www.shiritsuebichu.jp/news/16117/",
+          "https://www.shiritsuebichu.jp/news/16309/"
         ],
         "sourceUrl": "https://www.shiritsuebichu.jp/news/16117/"
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-22T05:20:04.291Z",
-      "modified": "2026-11-22T05:20:04.291Z",
+      "modified": "2026-11-28T13:18:39Z",
       "lastTiming": {
         "start": "2026-11-29T15:40:00+09:00",
         "end": "2026-11-29T16:30:00+09:00",
@@ -2876,15 +2877,16 @@
         "end": null,
         "allDay": false,
         "location": "ABEMA SPECIAL3",
-        "publicNote": "配信タイムテーブルは14:20〜17:00の区間に私立恵比寿中学を掲載。個別配信時刻未発表、現地出演枠とは別。無料見逃し配信あり、期限未確認。番組 https://abema.go.link/kWQg5\n私立恵比寿中学公式ニュースで確認。",
+        "publicNote": "配信タイムテーブルは14:20〜17:00の区間に私立恵比寿中学を掲載。個別配信時刻未発表、現地出演枠とは別。無料見逃し配信あり、期限未確認。番組 https://abema.go.link/kWQg5 11/28公式発表：桜井えまはダンスパフォーマンスのみで出演。\n私立恵比寿中学公式ニュースで確認。",
         "status": "confirmed",
         "sourceUrls": [
-          "https://www.shiritsuebichu.jp/news/16117/"
+          "https://www.shiritsuebichu.jp/news/16117/",
+          "https://www.shiritsuebichu.jp/news/16309/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-25T05:20:05Z",
-      "modified": "2026-11-25T05:20:05Z",
+      "modified": "2026-11-28T13:18:39Z",
       "lastTiming": {
         "start": "2026-11-29",
         "end": null,
@@ -5903,15 +5905,15 @@
         "end": null,
         "allDay": false,
         "location": "ららぽーと立川立飛 2Fイベント広場",
-        "publicNote": "購入整理番号の順に案内。優先エリア入場順とは別。\n本人公式の個別案内で確認。",
+        "publicNote": "購入整理番号の順に案内。優先エリア入場順とは別。 11/28更新：サイトメンテナンスによりCD予約は予約用紙へ記入して受付。\n本人公式の個別案内で確認。",
         "status": "confirmed",
         "sourceUrls": [
           "https://oneloveoneheart.jp/live/live-7401/"
         ]
       },
-      "sequence": 0,
+      "sequence": 1,
       "created": "2026-11-23T13:15:49.248Z",
-      "modified": "2026-11-23T13:15:49.248Z",
+      "modified": "2026-11-28T13:18:39Z",
       "lastTiming": {
         "start": "2026-11-29T10:00:00+09:00",
         "end": null,
@@ -19022,5 +19024,5 @@
       ]
     }
   ],
-  "integritySha256": "25bf9f499a0c9937c20d97e06d7bc5a9468efc8f98a1e48fc9b9ff7db7658ad4"
+  "integritySha256": "98a8ffbbe26c83f6ccb07d29fc6aa71d3c4a40a6cd17d90849b28c1b8468faa8"
 }

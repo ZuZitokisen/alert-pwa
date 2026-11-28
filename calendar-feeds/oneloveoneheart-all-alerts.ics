@@ -425,15 +425,16 @@ END:VEVENT
 BEGIN:VEVENT
 UID:public-v1-932ce36e76389f890c56f4a94eef36c56dbab97887459369297565559bcbf
  256@alert-pwa.zuzitokisen.github.io
-DTSTAMP:20261123T131549Z
+DTSTAMP:20261128T131839Z
 CREATED:20261123T131549Z
-LAST-MODIFIED:20261123T131549Z
-SEQUENCE:0
+LAST-MODIFIED:20261128T131839Z
+SEQUENCE:1
 DTSTART:20261129T010000Z
 SUMMARY:立川立飛リリースイベント 対象商品販売開始
 DESCRIPTION:購入整理番号の順に案内。優先エリア入場順と
- は別。\n本人公式の個別案内で確認。\nhttps://oneloveonehear
- t.jp/live/live-7401/
+ は別。 11/28更新：サイトメンテナンスによりCD予約は予
+ 約用紙へ記入して受付。\n本人公式の個別案内で確認。
+ \nhttps://oneloveoneheart.jp/live/live-7401/
 LOCATION:ららぽーと立川立飛 2Fイベント広場
 URL:https://oneloveoneheart.jp/live/live-7401/
 STATUS:CONFIRMED

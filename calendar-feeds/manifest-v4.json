@@ -2,13 +2,13 @@
   "schemaVersion": 4,
   "production": true,
   "namespace": "alert-pwa.zuzitokisen.github.io",
-  "dataVersion": "2026-11-28-straightangeli-medaka-premiere",
-  "dataGeneratedAt": "2026-11-28T11:15:19Z",
+  "dataVersion": "2026-11-28-ebichu-gift-performance-love-reservation",
+  "dataGeneratedAt": "2026-11-28T13:18:39Z",
   "coverage": {
     "from": "2026-11-11",
     "through": "2027-03-31"
   },
-  "inputSha256": "c8d07029cd7a067907084ede931b027812265fe4e0d0f640c3921c935baafb0c",
+  "inputSha256": "4acd956613bb388fe0208ce237d1c0d9168935cf5de50713c74f74cf5873f1bc",
   "feeds": [
     {
       "id": "tokisen-all",
@@ -168,7 +168,7 @@
       "path": "calendar-feeds/oneloveoneheart-all.ics",
       "count": 41,
       "omittedUnknownDate": 0,
-      "sha256": "2ee8ef0f67efec40328f536c2489c71f084b8b46e2136cfdeb2347e45feb3d82"
+      "sha256": "f18f9da69be546cf1242aba4e3f172580f2e3b3e9aa9c25db6ee260b01b168be"
     },
     {
       "id": "oneloveoneheart-live",
@@ -188,7 +188,7 @@
       "path": "calendar-feeds/oneloveoneheart-benefit.ics",
       "count": 16,
       "omittedUnknownDate": 0,
-      "sha256": "1c3dd0e188491b565c72e687878b26f641a3c09002b7826ab1017b9a71813123"
+      "sha256": "049951951c67dedf20d0219964f1e4cc4521dd80d50afd230451505386606af3"
     },
     {
       "id": "oneloveoneheart-media",
